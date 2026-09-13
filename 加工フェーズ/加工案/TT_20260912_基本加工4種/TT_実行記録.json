@@ -1,0 +1,235 @@
+{
+  "version": "1.0",
+  "date": "2026-09-12",
+  "rulebook": "main-process-20260912",
+  "kit": "本戦/配布データ/pwscup2026-kit-main_revised0912",
+  "python": "スターターキット/初版/starter/.venv/bin/python",
+  "generation_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "inputs": {
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B.csv": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+    "予備戦/配布データ/PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B.csv": "cc8bda42a0708b8a9b2904cf40fc2ec86bc216e2671b616a086d27f3b1b9454d",
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+    "予備戦/配布データ/PWSCup2026_prelim_common/A_bg.csv": "f4817fba6c1434d6b74221c2b5abe90e4a53e80d8fa17e12602d43adae0a3126",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/participant_data/A_bg.csv": "8ff0fa1f647771083d35ec7708d3bc8b0c6d7f3ed542c8a05bf1887d4b38682e"
+  },
+  "experiments": [
+    {
+      "script": "TT-01-行シャッフル.py",
+      "script_sha256": "a12e613d7d68c4370c03a039baf7b7bc9c108db2e121955ca38ff675964618af",
+      "csv": "C_TT-01-行シャッフル.csv",
+      "zip": "TT-01-B_row_shuffle.zip",
+      "zip_sha256": "d34758dfb43e898a3a4d95c469dfec55ff7fc2103f203f7bef212e194992a062",
+      "a_bg": "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv",
+      "runs": [
+        {
+          "version": "1.0",
+          "method": "row_shuffle",
+          "rows": 1049,
+          "output": "C_TT-01-行シャッフル.csv",
+          "sha256": "d0ec58b7c26479dfa8513dc362646072aa015b0740d28de1353bc86d79b3c2ad",
+          "elapsed_seconds": 0.014384208945557475
+        },
+        {
+          "version": "1.0",
+          "method": "row_shuffle",
+          "rows": 1049,
+          "output": "C_TT-01-行シャッフル.csv",
+          "sha256": "d0ec58b7c26479dfa8513dc362646072aa015b0740d28de1353bc86d79b3c2ad",
+          "elapsed_seconds": 0.010249999817460775
+        }
+      ],
+      "byte_identical": true,
+      "alternate_prelim_B": {
+        "version": "1.0",
+        "method": "row_shuffle",
+        "rows": 1049,
+        "output": "C_TT-01-行シャッフル.csv",
+        "sha256": "ea373f7cd36cdf9d9ee60ff13af38e46e424f12a3c941eae465eb500f7f04dc9",
+        "elapsed_seconds": 0.010758499847725034
+      },
+      "official_format_ok": true,
+      "n_expected_check": true,
+      "rows": 1049,
+      "unique_rows": 1049,
+      "onset_count": 102,
+      "death_count": 78,
+      "row_multiset_equals_B": true,
+      "timed_run": {
+        "version": "1.0",
+        "method": "row_shuffle",
+        "rows": 1049,
+        "output": "C_TT-01-行シャッフル.csv",
+        "sha256": "d0ec58b7c26479dfa8513dc362646072aa015b0740d28de1353bc86d79b3c2ad",
+        "elapsed_seconds": 0.010188749991357327
+      },
+      "generation_peak_rss_bytes": 36945920,
+      "nonfinite_input_rejected": true
+    },
+    {
+      "script": "TT-02-本戦Abg_1NN.py",
+      "script_sha256": "ea3d39c4a40c06cc4c0f46ab52e728359f90101f1df09d5864c8e1a87b6f926d",
+      "csv": "C_TT-02-本戦Abg_1NN.csv",
+      "zip": "TT-02-main_Abg_1NN.zip",
+      "zip_sha256": "043dd750f14d27ad62ab72e6642f3dc94350ba71fa57f3a93935cf67e785078a",
+      "a_bg": "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv",
+      "runs": [
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-02-本戦Abg_1NN.csv",
+          "sha256": "bd56f6be4b90d6cbdadedd34874ffe9da35f44d564c3971a9d52cc13f86e3151",
+          "elapsed_seconds": 0.25144320796243846
+        },
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-02-本戦Abg_1NN.csv",
+          "sha256": "bd56f6be4b90d6cbdadedd34874ffe9da35f44d564c3971a9d52cc13f86e3151",
+          "elapsed_seconds": 0.2522674170322716
+        }
+      ],
+      "byte_identical": true,
+      "alternate_prelim_B": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-02-本戦Abg_1NN.csv",
+        "sha256": "074012adf12b71aba67b75269c4139ccb5269c0dbfb914676afd934aed52226d",
+        "elapsed_seconds": 0.251501833088696
+      },
+      "official_format_ok": true,
+      "n_expected_check": true,
+      "rows": 1049,
+      "unique_rows": 856,
+      "onset_count": 101,
+      "death_count": 59,
+      "timed_run": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-02-本戦Abg_1NN.csv",
+        "sha256": "bd56f6be4b90d6cbdadedd34874ffe9da35f44d564c3971a9d52cc13f86e3151",
+        "elapsed_seconds": 0.2558490000665188
+      },
+      "generation_peak_rss_bytes": 57753600,
+      "nonfinite_input_rejected": true
+    },
+    {
+      "script": "TT-03-予備戦Abg_1NN.py",
+      "script_sha256": "ea3d39c4a40c06cc4c0f46ab52e728359f90101f1df09d5864c8e1a87b6f926d",
+      "csv": "C_TT-03-予備戦Abg_1NN.csv",
+      "zip": "TT-03-prelim_Abg_1NN.zip",
+      "zip_sha256": "5dd9620096cb14b614944b7a492a8387711f69324455bb7ecf941ed7f6ca6efc",
+      "a_bg": "予備戦/配布データ/PWSCup2026_prelim_common/A_bg.csv",
+      "runs": [
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-03-予備戦Abg_1NN.csv",
+          "sha256": "961e8749ea04419a075cd8eaf2835be6c3ead815004713c2c0f3ebeb7925c556",
+          "elapsed_seconds": 0.2545735000167042
+        },
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-03-予備戦Abg_1NN.csv",
+          "sha256": "961e8749ea04419a075cd8eaf2835be6c3ead815004713c2c0f3ebeb7925c556",
+          "elapsed_seconds": 0.2525183327961713
+        }
+      ],
+      "byte_identical": true,
+      "alternate_prelim_B": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-03-予備戦Abg_1NN.csv",
+        "sha256": "08dcfc6086b9a623a72a521b1bf4401b84d696032c0f184bca6d5fa9d830f20c",
+        "elapsed_seconds": 0.25239941594190896
+      },
+      "official_format_ok": true,
+      "n_expected_check": true,
+      "rows": 1049,
+      "unique_rows": 899,
+      "onset_count": 99,
+      "death_count": 65,
+      "timed_run": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-03-予備戦Abg_1NN.csv",
+        "sha256": "961e8749ea04419a075cd8eaf2835be6c3ead815004713c2c0f3ebeb7925c556",
+        "elapsed_seconds": 0.26196049991995096
+      },
+      "generation_peak_rss_bytes": 57622528,
+      "nonfinite_input_rejected": true
+    },
+    {
+      "script": "TT-04-キットAbg_1NN.py",
+      "script_sha256": "ea3d39c4a40c06cc4c0f46ab52e728359f90101f1df09d5864c8e1a87b6f926d",
+      "csv": "C_TT-04-キットAbg_1NN.csv",
+      "zip": "TT-04-starterkit_Abg_1NN.zip",
+      "zip_sha256": "b60cfbbd698ae4ad691347be4fa83b3fe49779cdc0e320c0a7bcc4dde24c5ae0",
+      "a_bg": "本戦/配布データ/pwscup2026-kit-main_revised0912/participant_data/A_bg.csv",
+      "runs": [
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-04-キットAbg_1NN.csv",
+          "sha256": "c353b0fd2a485326869e6c78e1d7a7be46336ff50428aa928ae4899c74e73f0b",
+          "elapsed_seconds": 0.25170949986204505
+        },
+        {
+          "version": "1.0",
+          "method": "nearest_neighbor",
+          "rows": 1049,
+          "output": "C_TT-04-キットAbg_1NN.csv",
+          "sha256": "c353b0fd2a485326869e6c78e1d7a7be46336ff50428aa928ae4899c74e73f0b",
+          "elapsed_seconds": 0.253542167134583
+        }
+      ],
+      "byte_identical": true,
+      "alternate_prelim_B": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-04-キットAbg_1NN.csv",
+        "sha256": "f3499efa3ce3b6be727a49639afccbefbabb4eed9862d09ed301498752c42ff0",
+        "elapsed_seconds": 0.2541497088968754
+      },
+      "official_format_ok": true,
+      "n_expected_check": true,
+      "rows": 1049,
+      "unique_rows": 867,
+      "onset_count": 98,
+      "death_count": 67,
+      "timed_run": {
+        "version": "1.0",
+        "method": "nearest_neighbor",
+        "rows": 1049,
+        "output": "C_TT-04-キットAbg_1NN.csv",
+        "sha256": "c353b0fd2a485326869e6c78e1d7a7be46336ff50428aa928ae4899c74e73f0b",
+        "elapsed_seconds": 0.260376833146438
+      },
+      "generation_peak_rss_bytes": 57688064,
+      "nonfinite_input_rejected": true
+    }
+  ],
+  "sources": {
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/participant_data/scoring_config.yaml": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+  },
+  "evaluation_adapter_recheck": "facets identical"
+}
