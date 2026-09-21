@@ -17,10 +17,10 @@ def main():
     if args.out.exists():
         raise ValueError("確認記録は新しいファイル名にしてください")
     records = []
-    # 加工案直下の3方式だけを検査し、他メンバーのファイルは対象にしない。
+    # 親フォルダ内の3方式だけを検査し、他メンバーのファイルは対象にしない。
     folders = ['TT-01-背景条件合成', 'TT-02-群集約合成', 'TT-03-多元ドナー合成']
     for folder in folders:
-        script = here.parent / folder / (folder+".py")
+        script = here / folder / (folder+".py")
         spec = importlib.util.spec_from_file_location("tt_check_"+script.stem, script)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
