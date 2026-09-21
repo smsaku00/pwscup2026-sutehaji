@@ -1,0 +1,176 @@
+[
+  {
+    "version": "1.0.0",
+    "method": "背景条件合成",
+    "seed": 20260920,
+    "rows": 1049,
+    "input_sha256": {
+      "B.csv": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+      "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23"
+    },
+    "code_sha256": "83423c4cba326a114210ca075699ceacdc717a90ee1066878dc4536c546f3d39",
+    "output_sha256": "f1bd6743e684ea2f3925f006e34eb85ab5da018375738dcdfac6b6f853703f65",
+    "seconds": 0.282816665712744,
+    "peak_rss_mb": 158.515625,
+    "warnings": [],
+    "source": {
+      "version": "main-process-20260912",
+      "release_commit": "3dd71bd",
+      "schema_sha256": "1b79ba5b45cfdb80ebc67c120b4066bc2d89ac232579397fc3422d2ca21373ae",
+      "config_sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+      "url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "lifelines": "0.30.3"
+    },
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "settings": {
+      "B_WEIGHT": 0.85,
+      "MIN_STAT_ROWS": 16,
+      "CORR_RIDGE": 0.08,
+      "MIN_GROUP": 32,
+      "NEIGHBORS": 128,
+      "DONOR_SMOOTH": 0.18,
+      "COX_RIDGE": 0.002,
+      "COX_STEPS": 3,
+      "GRID": [
+        0.0,
+        0.005,
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99,
+        0.995,
+        1.0
+      ]
+    }
+  },
+  {
+    "version": "1.0.0",
+    "method": "群集約合成",
+    "seed": 20260920,
+    "rows": 1049,
+    "input_sha256": {
+      "B.csv": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+      "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23"
+    },
+    "code_sha256": "0eedff9cec63713241690d5614de2041da4bb91960d443fc2251c21ed03b07d3",
+    "output_sha256": "c08f1bcde087e5752edfcc7a10a0dcb79c79dbf359302c1cd4263343b7569744",
+    "seconds": 0.26975558418780565,
+    "peak_rss_mb": 159.6875,
+    "warnings": [],
+    "source": {
+      "version": "main-process-20260912",
+      "release_commit": "3dd71bd",
+      "schema_sha256": "1b79ba5b45cfdb80ebc67c120b4066bc2d89ac232579397fc3422d2ca21373ae",
+      "config_sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+      "url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "lifelines": "0.30.3"
+    },
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "settings": {
+      "B_WEIGHT": 0.85,
+      "MIN_STAT_ROWS": 16,
+      "CORR_RIDGE": 0.08,
+      "MIN_GROUP": 32,
+      "NEIGHBORS": 128,
+      "DONOR_SMOOTH": 0.18,
+      "COX_RIDGE": 0.002,
+      "COX_STEPS": 3,
+      "GRID": [
+        0.0,
+        0.005,
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99,
+        0.995,
+        1.0
+      ]
+    }
+  },
+  {
+    "version": "1.0.0",
+    "method": "多元ドナー合成",
+    "seed": 20260920,
+    "rows": 1049,
+    "input_sha256": {
+      "B.csv": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+      "A_bg.csv": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23"
+    },
+    "code_sha256": "ce16551f808d04baa57938bb7f83dd46c7e1750c60cca0f41d15328c3ae66cd0",
+    "output_sha256": "60969f63487959821e047ca4382ffc9bea4173bfbd8975a016ba7eb0a85a0be7",
+    "seconds": 1.1987373330630362,
+    "peak_rss_mb": 164.5,
+    "warnings": [],
+    "source": {
+      "version": "main-process-20260912",
+      "release_commit": "3dd71bd",
+      "schema_sha256": "1b79ba5b45cfdb80ebc67c120b4066bc2d89ac232579397fc3422d2ca21373ae",
+      "config_sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+      "url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "lifelines": "0.30.3"
+    },
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "settings": {
+      "B_WEIGHT": 0.85,
+      "MIN_STAT_ROWS": 16,
+      "CORR_RIDGE": 0.08,
+      "MIN_GROUP": 32,
+      "NEIGHBORS": 128,
+      "DONOR_SMOOTH": 0.18,
+      "COX_RIDGE": 0.002,
+      "COX_STEPS": 3,
+      "GRID": [
+        0.0,
+        0.005,
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.95,
+        0.975,
+        0.99,
+        0.995,
+        1.0
+      ]
+    }
+  }
+]

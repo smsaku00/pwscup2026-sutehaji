@@ -1,0 +1,10 @@
+{
+  "version": "main-process-20260912",
+  "release_commit": "3dd71bd",
+  "schema_sha256": "1b79ba5b45cfdb80ebc67c120b4066bc2d89ac232579397fc3422d2ca21373ae",
+  "config_sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+  "url": "https://github.com/pwscup/pwscup2026-kit/releases/tag/main-process-20260912",
+  "pdf_name": "PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+  "pdf_sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+  "pdf_pages": 25
+}

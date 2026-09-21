@@ -1,0 +1,197 @@
+[
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "非有限値",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "欠測",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "値域外",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "整数条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "二値条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "県名不正",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "重複ID",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "正解列の混入",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "不足列",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "打ち切り不整合",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "時刻不正",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "CSV重複ヘッダー",
+    "ok": true
+  },
+  {
+    "method": "TT-01-背景条件合成",
+    "check": "旧出力の保持",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "非有限値",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "欠測",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "値域外",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "整数条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "二値条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "県名不正",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "重複ID",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "正解列の混入",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "不足列",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "打ち切り不整合",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "時刻不正",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "CSV重複ヘッダー",
+    "ok": true
+  },
+  {
+    "method": "TT-02-群集約合成",
+    "check": "旧出力の保持",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "非有限値",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "欠測",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "値域外",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "整数条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "二値条件違反",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "県名不正",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "重複ID",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "正解列の混入",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "不足列",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "打ち切り不整合",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "時刻不正",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "CSV重複ヘッダー",
+    "ok": true
+  },
+  {
+    "method": "TT-03-多元ドナー合成",
+    "check": "旧出力の保持",
+    "ok": true
+  }
+]

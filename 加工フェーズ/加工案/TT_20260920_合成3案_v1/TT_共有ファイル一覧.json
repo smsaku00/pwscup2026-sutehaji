@@ -1,0 +1,97 @@
+{
+  "shared_date": "2026-09-21",
+  "code_version": "1.0.0",
+  "document_version": "1.0.2",
+  "data": "本戦Team28 B/A_bg全件・seed20260920",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "target_directory": "加工フェーズ/加工案/TT_20260920_合成3案_v1",
+  "python_csv_unchanged": true,
+  "local_links_valid": true,
+  "absolute_paths_removed": true,
+  "files": {
+    "C_TT-01-背景条件合成.csv": {
+      "bytes": 127051,
+      "sha256": "f1bd6743e684ea2f3925f006e34eb85ab5da018375738dcdfac6b6f853703f65"
+    },
+    "C_TT-02-群集約合成.csv": {
+      "bytes": 126996,
+      "sha256": "c08f1bcde087e5752edfcc7a10a0dcb79c79dbf359302c1cd4263343b7569744"
+    },
+    "C_TT-03-多元ドナー合成.csv": {
+      "bytes": 126216,
+      "sha256": "60969f63487959821e047ca4382ffc9bea4173bfbd8975a016ba7eb0a85a0be7"
+    },
+    "README.md": {
+      "bytes": 3722,
+      "sha256": "dc2f98ab41b95f4bf2dd92c7ac93b1be5415d0b78f967e3e5396fe49915b800f"
+    },
+    "TT-01-背景条件合成.md": {
+      "bytes": 16684,
+      "sha256": "46add6305dd7cbe5b05f6e510743071b3beb9cec5696ddec6de305ca801a5830"
+    },
+    "TT-01-背景条件合成.py": {
+      "bytes": 18343,
+      "sha256": "83423c4cba326a114210ca075699ceacdc717a90ee1066878dc4536c546f3d39"
+    },
+    "TT-02-群集約合成.md": {
+      "bytes": 16652,
+      "sha256": "6d2bce99b5081a3f12c6d581e0f06a5cc6aa0497c61c16635bab99c0b0c05435"
+    },
+    "TT-02-群集約合成.py": {
+      "bytes": 19266,
+      "sha256": "0eedff9cec63713241690d5614de2041da4bb91960d443fc2251c21ed03b07d3"
+    },
+    "TT-03-多元ドナー合成.md": {
+      "bytes": 17047,
+      "sha256": "9c6dd40e94cdd3aa03146c130f6a9ee8113ad3838edde1e5edbc6be48ed0bb41"
+    },
+    "TT-03-多元ドナー合成.py": {
+      "bytes": 20663,
+      "sha256": "ce16551f808d04baa57938bb7f83dd46c7e1750c60cca0f41d15328c3ae66cd0"
+    },
+    "TT_予備戦対戦比較.csv": {
+      "bytes": 5688,
+      "sha256": "d2addade37871cedc81162cc1ee85407a9e6f485a3311839221cfb86c4b26a82"
+    },
+    "TT_攻撃内訳.csv": {
+      "bytes": 33648,
+      "sha256": "9024d61e7e9e56dee1e3d7004baaf9af5e3b2cd847afaa2f7f498cf3bdad65b2"
+    },
+    "TT_有用性ばらつき.csv": {
+      "bytes": 921,
+      "sha256": "a4228c3b546f96328f513adf434504e527e066a448157088c214d41e5b71411e"
+    },
+    "TT_有用性内訳.csv": {
+      "bytes": 73534,
+      "sha256": "d5f4e47f3751249274c71278b7211f4de51d683ca4b7ed11e863e8a2a9ac52e9"
+    },
+    "TT_比較結果.md": {
+      "bytes": 4344,
+      "sha256": "904bd6f84efce1fe2b816fe98196297e9ced1ea3f9917326c0ea4e5b17c99892"
+    },
+    "TT_生成実行記録.json": {
+      "bytes": 4949,
+      "sha256": "55b861cf0a229620fdeb07e13afdbcf66ea0eae54d63a0af7b24047188d01f07"
+    },
+    "TT_確認結果.json": {
+      "bytes": 2645,
+      "sha256": "8b29e8d005f8893aaa99f6c75687fef402493de64a30df20275655a75018633a"
+    },
+    "TT_追加確認結果.json": {
+      "bytes": 3786,
+      "sha256": "f55cc9f4870ee4045f7209582e0593c329a9c96954ab4549f0ac754781c1a6a8"
+    },
+    "requirements.txt": {
+      "bytes": 59,
+      "sha256": "ad0e0ec97a5ecae088a851c077033db2a2f16da75c1a92cc59fb5854c2c33fad"
+    },
+    "参照情報.json": {
+      "bytes": 514,
+      "sha256": "e380e196d5c771239e5a2b8c461fdbd12df2238add82bfd0d655a57bea4dbf8e"
+    },
+    "形式と履歴の確認.py": {
+      "bytes": 3851,
+      "sha256": "3b898c636efad10223c208038332356acfce55e4fc754e05d6b6077c40530360"
+    }
+  }
+}
