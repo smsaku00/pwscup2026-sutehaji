@@ -1,0 +1,15 @@
+{
+  "model_frozen_before_splits": true,
+  "splits": [
+    9501,
+    9502,
+    9503,
+    9504
+  ],
+  "marginal_stratification": "is_rare + onset for evaluation splitting only",
+  "paired_controls": "same sex, prefecture, 10-year age band, onset; no replacement",
+  "auc_ci": "300 within-split bootstrap resamples; descriptive, model-training uncertainty not included",
+  "multiplicity": "Holm across 24 AUC and paired-AIA tests",
+  "not_official": "Holdout queries are from B, not the nonshared block; no official phi correction. Constant10 baseline ignores C, and its excess cannot be corrected by synthetic data.",
+  "reuse": "4 splits reuse the same B; not independent cohorts"
+}

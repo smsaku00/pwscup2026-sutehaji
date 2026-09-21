@@ -1,0 +1,49 @@
+{
+  "cohort": 28,
+  "round": "final",
+  "codabench_submitted": false,
+  "checks": [
+    {
+      "method": "zhang_04_copula_bgtime",
+      "zip": "zhang_04_copula_bgtime.zip",
+      "zip_sha256": "148cf7685185e53da0d32a494b93a44c984107f8602c1ed7eb54eacbb9ecf9e4",
+      "C_sha256": "85d568f4d764b985f32770037abbd9aeeeba298b54550e4170ac2722bf553e42",
+      "rows": 1049,
+      "columns": 13,
+      "token_exact": true,
+      "official_validation_passed": true,
+      "same_zip_on_independent_run": true,
+      "duplicates": 0,
+      "B_exact_rows": 0,
+      "A_bg_exact_rows": 0
+    },
+    {
+      "method": "zhang_05_conditional_bgtime",
+      "zip": "zhang_05_conditional_bgtime.zip",
+      "zip_sha256": "b3c2082534e0aaff32a173730bd8c806630199ee312f44b9a7599a30e315babd",
+      "C_sha256": "57beea457d29d9189427cf1657a9e2bd870a118b2ab24f6ceab27ee693e1caac",
+      "rows": 1049,
+      "columns": 13,
+      "token_exact": true,
+      "official_validation_passed": true,
+      "same_zip_on_independent_run": true,
+      "duplicates": 0,
+      "B_exact_rows": 0,
+      "A_bg_exact_rows": 0
+    },
+    {
+      "method": "zhang_06_mixture_btime",
+      "zip": "zhang_06_mixture_btime.zip",
+      "zip_sha256": "3bf524d567339d253998f09d0a6bd806a3afbcf9891a0e8457e3c678101f89a8",
+      "C_sha256": "165b3e5f84f1864178e4920214fb0a875597a77a7c660816ebc9c99e057845a9",
+      "rows": 1049,
+      "columns": 13,
+      "token_exact": true,
+      "official_validation_passed": true,
+      "same_zip_on_independent_run": true,
+      "duplicates": 0,
+      "B_exact_rows": 0,
+      "A_bg_exact_rows": 0
+    }
+  ]
+}

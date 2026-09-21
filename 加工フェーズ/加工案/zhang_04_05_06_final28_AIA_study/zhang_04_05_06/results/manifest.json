@@ -1,0 +1,38 @@
+{
+  "round": "final",
+  "cohort": 28,
+  "kit": "main-process-20260912",
+  "B_sha256": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+  "files": {
+    "zhang_04_copula_bgtime": {
+      "seed": 28201,
+      "settings": {
+        "method": "zhang_04_copula_bgtime",
+        "seed": 28201,
+        "cox_scaled_loss": 0.008577963629832036
+      },
+      "C_sha256": "85d568f4d764b985f32770037abbd9aeeeba298b54550e4170ac2722bf553e42",
+      "zip_sha256": "148cf7685185e53da0d32a494b93a44c984107f8602c1ed7eb54eacbb9ecf9e4"
+    },
+    "zhang_05_conditional_bgtime": {
+      "seed": 28221,
+      "settings": {
+        "method": "zhang_05_conditional_bgtime",
+        "seed": 28221,
+        "cox_scaled_loss": 0.019345830094064504
+      },
+      "C_sha256": "57beea457d29d9189427cf1657a9e2bd870a118b2ab24f6ceab27ee693e1caac",
+      "zip_sha256": "b3c2082534e0aaff32a173730bd8c806630199ee312f44b9a7599a30e315babd"
+    },
+    "zhang_06_mixture_btime": {
+      "seed": 28261,
+      "settings": {
+        "method": "zhang_06_mixture_btime",
+        "seed": 28261,
+        "cox_scaled_loss": 0.006801304519404184
+      },
+      "C_sha256": "165b3e5f84f1864178e4920214fb0a875597a77a7c660816ebc9c99e057845a9",
+      "zip_sha256": "3bf524d567339d253998f09d0a6bd806a3afbcf9891a0e8457e3c678101f89a8"
+    }
+  }
+}

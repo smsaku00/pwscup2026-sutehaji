@@ -1,0 +1,126 @@
+[
+  {
+    "cov": "donor",
+    "outcome": "old",
+    "U": 0.8393905678584355,
+    "U_gen": 0.9275355610493471,
+    "U_spec": 0.8590294918932163,
+    "U_rare": 0.8740859232175503,
+    "U_valid": 0.8393905678584355,
+    "loss": 0.01769440898251547,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "conditional",
+    "outcome": "old",
+    "U": 0.8499003526133836,
+    "U_gen": 0.9074911662246747,
+    "U_spec": 0.8499003526133836,
+    "U_rare": 0.9150260160315007,
+    "U_valid": 1.0,
+    "loss": 0.04581501600441708,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "donor",
+    "outcome": "background",
+    "U": 0.8379068572546128,
+    "U_gen": 0.9275355610493471,
+    "U_spec": 0.8660482142349267,
+    "U_rare": 0.8740859232175503,
+    "U_valid": 0.8379068572546128,
+    "loss": 0.006709825534356736,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "conditional",
+    "outcome": "background",
+    "U": 0.9074911662246747,
+    "U_gen": 0.9074911662246747,
+    "U_spec": 0.9639544969341457,
+    "U_rare": 0.9150260160315007,
+    "U_valid": 1.0,
+    "loss": 0.019345830094064504,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "copula",
+    "outcome": "background",
+    "U": 0.8851427366052596,
+    "U_gen": 0.9421364581296197,
+    "U_spec": 0.9747264886007022,
+    "U_rare": 0.8851427366052596,
+    "U_valid": 0.9992850333651097,
+    "loss": 0.0042365759944625785,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "factor",
+    "outcome": "old",
+    "U": 0.8139393939393937,
+    "U_gen": 0.8265209699787911,
+    "U_spec": 0.9620367397304577,
+    "U_rare": 0.8139393939393937,
+    "U_valid": 1.0,
+    "loss": 0.005396027988547174,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "cov": "factor",
+    "outcome": "background",
+    "U": 0.8139393939393937,
+    "U_gen": 0.8265209699787911,
+    "U_spec": 0.9601713650835797,
+    "U_rare": 0.8139393939393937,
+    "U_valid": 1.0,
+    "loss": 0.008493235182622988,
+    "round": "final exploratory",
+    "role": "rejected architecture"
+  },
+  {
+    "round": "final exploratory",
+    "role": "rejected architecture",
+    "covariance_model": "tree_old",
+    "U": 0.8878593983712815,
+    "U_gen": 0.8880158957876391,
+    "U_spec": 0.9610623466072253,
+    "U_rare": 0.8878593983712815,
+    "U_valid": 0.9996460042643118
+  },
+  {
+    "round": "final exploratory",
+    "role": "rejected architecture",
+    "covariance_model": "tree_background",
+    "U": 0.8878593983712815,
+    "U_gen": 0.8880158957876391,
+    "U_spec": 0.9542877186367874,
+    "U_rare": 0.8878593983712815,
+    "U_valid": 0.9989310376294215
+  },
+  {
+    "round": "final exploratory",
+    "role": "candidate",
+    "covariance_model": "mixture_old",
+    "U": 0.9062648985989832,
+    "U_gen": 0.9062648985989832,
+    "U_spec": 0.9706093826904983,
+    "U_rare": 0.9239130434782609,
+    "U_valid": 1.0
+  },
+  {
+    "round": "final exploratory",
+    "role": "rejected architecture",
+    "covariance_model": "mixture_background",
+    "U": 0.8659600360439582,
+    "U_gen": 0.9062648985989832,
+    "U_spec": 0.8659600360439582,
+    "U_rare": 0.9239130434782609,
+    "U_valid": 0.9992850333651097
+  }
+]
