@@ -1,0 +1,37 @@
+{
+  "rulebook": "main-process-20260912",
+  "local_kit": "pwscup2026-kit-main_revised0912",
+  "note": "ローカルに配置されたmain-process-20260912キットを参照した。公式ファイル自体は非同梱。Gitコミットは未確認。",
+  "files": [
+    {
+      "path": "rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+      "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2"
+    },
+    {
+      "path": "starter/src/pwscup2026/attack/aia.py",
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a"
+    },
+    {
+      "path": "starter/src/pwscup2026/kit/validate.py",
+      "sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e"
+    },
+    {
+      "path": "starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "path": "starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+    },
+    {
+      "path": "participant_data/schema.json",
+      "sha256": "1b79ba5b45cfdb80ebc67c120b4066bc2d89ac232579397fc3422d2ca21373ae"
+    },
+    {
+      "path": "participant_data/scoring_config.yaml",
+      "sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22"
+    }
+  ],
+  "official_repository": "https://github.com/pwscup/pwscup2026-kit",
+  "rulebook_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/rulebook/PWS_Cup2026_%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF_main-process-20260912.pdf"
+}
