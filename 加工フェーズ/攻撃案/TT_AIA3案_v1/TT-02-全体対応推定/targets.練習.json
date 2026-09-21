@@ -1,0 +1,12 @@
+[
+  {
+    "target_k": 1,
+    "c_path": "starter-kit/participant_data/targets/C_1.csv",
+    "aia_challenge_path": "starter-kit/participant_data/targets/aia_challenge_1.csv"
+  },
+  {
+    "target_k": 2,
+    "c_path": "starter-kit/participant_data/targets/C_2.csv",
+    "aia_challenge_path": "starter-kit/participant_data/targets/aia_challenge_2.csv"
+  }
+]
