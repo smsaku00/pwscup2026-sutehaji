@@ -1,0 +1,16 @@
+{
+  "sheets": [
+    "読み方",
+    "全体一覧",
+    "MIA比較表",
+    "AIA比較表",
+    "得点内訳",
+    "有用性",
+    "有用性内訳",
+    "加工案別集約",
+    "評価条件・実行記録"
+  ],
+  "all_pair_rows": 112,
+  "utility_rows": 14,
+  "matrix_values_match_json": true
+}

@@ -1,0 +1,10 @@
+{
+  "aia_success": 980,
+  "utility_success": 140,
+  "successful_processes": 1120,
+  "source_inputs_unchanged": true,
+  "predictions_independently_rescored": 980,
+  "rare_aia_evaluated": false,
+  "phi_applied": false,
+  "test_cases_passed": 23
+}

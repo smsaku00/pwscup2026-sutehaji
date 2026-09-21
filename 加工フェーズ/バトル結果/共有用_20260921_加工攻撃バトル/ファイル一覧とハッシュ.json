@@ -1,0 +1,188 @@
+{
+  "created": "2026-09-21",
+  "copied_files": [
+    {
+      "path": "01_本戦Team28_AIA980対戦/全体集計.xlsx",
+      "source": "Zhang_main10_20260921_44d2e68/summary/全体集計.xlsx",
+      "sha256": "d884fdd52b7d4ee1fcb3f18233feecd04c564de994b63fd83a0298a4fc9e6373"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/全980対戦.csv",
+      "source": "Zhang_main10_20260921_44d2e68/summary/全980対戦.csv",
+      "sha256": "704fe0a44b853ccb4219d948c3477bd1b9027e275e7b1fda5e3494c5c509cd35"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/加工攻撃別集約.csv",
+      "source": "Zhang_main10_20260921_44d2e68/summary/加工攻撃別集約.csv",
+      "sha256": "6fd050390cc1f647d2a6a005596ed3b2b6bf9352e839a4cebdeea2efc6ba07cc"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/加工案別集約.csv",
+      "source": "Zhang_main10_20260921_44d2e68/summary/加工案別集約.csv",
+      "sha256": "809ec6394e9d24d9d2eb04cf35a7abb3494cd2b5182247891a1b227a424f7142"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/有用性140件.csv",
+      "source": "Zhang_main10_20260921_44d2e68/summary/有用性140件.csv",
+      "sha256": "9017078aede8fcc01fd48171a890851648e1c2a256cbd18f84f6a604bd68b8a2"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/検証記録/実行・再採点の検証.json",
+      "source": "Zhang_main10_20260921_44d2e68/summary/検証結果.json",
+      "sha256": "1aeb0b726cf2578224620dc913f1005f422267916a548ec2bed20bacf14fac49"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/検証記録/Excelの検証.json",
+      "source": "Zhang_main10_20260921_44d2e68/report_qa/保存ファイル検証.json",
+      "sha256": "197696b033c5b648d04cf4d7307e359a8c6b9336dc2d2f264d237bcee027f4aa"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/全体の結果.xlsx",
+      "source": "GitHub_20260921_44d2e68/results/全体の結果.xlsx",
+      "sha256": "6c294079961c4c98c3d6c2f87548ebb1f35cb66567b75cf3bbca6440b0033839"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/バトル結果_AIA.csv",
+      "source": "GitHub_20260921_44d2e68/results/バトル結果_AIA.csv",
+      "sha256": "565288323fc1da786a845fd679c740d4b9e8751e3d978ce22b4502ad14119eee"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/バトル結果_MIA.csv",
+      "source": "GitHub_20260921_44d2e68/results/バトル結果_MIA.csv",
+      "sha256": "7bff00dc3b0024af4a1e4ae6ad3c5f7bf898c25b18798c0f6756c842d3bb5485"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/加工案別集約.csv",
+      "source": "GitHub_20260921_44d2e68/results/加工案別集約.csv",
+      "sha256": "4183b1543d2296e6a05ae27b51f5299e04975031f0ee2172c84bdc821e9fda9d"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/有用性内訳.csv",
+      "source": "GitHub_20260921_44d2e68/results/有用性内訳.csv",
+      "sha256": "9120f80e19cddeac10ed3f424f8af05a19af54b0b5fb2e88a22e00fdd1073177"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/検証記録/実行・集計の検証.json",
+      "source": "GitHub_20260921_44d2e68/results/検証結果.json",
+      "sha256": "78e9b9ebf86cceec5b206db4d94cacf9e4ecc2af235559ede23ed869b10a7cc9"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/検証記録/Excelの検証.json",
+      "source": "GitHub_20260921_44d2e68/results/Excel検証結果.json",
+      "sha256": "0aa0e1f2cf2707b711ad102a732bfe245af4aee34ec8b6aaa77231fc9255d58c"
+    },
+    {
+      "path": "03_使用プログラムと条件/GitHubソースの版とハッシュ.json",
+      "source": "Zhang_main10_20260921_44d2e68/source_manifest.json",
+      "sha256": "7b5f1778cc64579678ed6ce227373f77a0164392e7638a2346fe6bfc1491961e"
+    }
+  ],
+  "files": [
+    {
+      "path": "00_はじめに.md",
+      "bytes": 2784,
+      "sha256": "8d95d0ffe90b5d5bd59a097c3662f8e0468fbc888a49870b2b60304e70592580"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/全体集計.xlsx",
+      "bytes": 115986,
+      "sha256": "d884fdd52b7d4ee1fcb3f18233feecd04c564de994b63fd83a0298a4fc9e6373"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/検証記録/Excelの検証.json",
+      "bytes": 225,
+      "sha256": "197696b033c5b648d04cf4d7307e359a8c6b9336dc2d2f264d237bcee027f4aa"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/検証記録/実行・再採点の検証.json",
+      "bytes": 245,
+      "sha256": "1aeb0b726cf2578224620dc913f1005f422267916a548ec2bed20bacf14fac49"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/全980対戦.csv",
+      "bytes": 102142,
+      "sha256": "704fe0a44b853ccb4219d948c3477bd1b9027e275e7b1fda5e3494c5c509cd35"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/加工攻撃別集約.csv",
+      "bytes": 19441,
+      "sha256": "6fd050390cc1f647d2a6a005596ed3b2b6bf9352e839a4cebdeea2efc6ba07cc"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/加工案別集約.csv",
+      "bytes": 2757,
+      "sha256": "809ec6394e9d24d9d2eb04cf35a7abb3494cd2b5182247891a1b227a424f7142"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/詳細CSV/有用性140件.csv",
+      "bytes": 16137,
+      "sha256": "9017078aede8fcc01fd48171a890851648e1c2a256cbd18f84f6a604bd68b8a2"
+    },
+    {
+      "path": "01_本戦Team28_AIA980対戦/説明.md",
+      "bytes": 4782,
+      "sha256": "2104ca78afd8b600aad7b933084d458ac1474586d2485d98758f6fb81a71769d"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/全体の結果.xlsx",
+      "bytes": 155210,
+      "sha256": "6c294079961c4c98c3d6c2f87548ebb1f35cb66567b75cf3bbca6440b0033839"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/検証記録/Excelの検証.json",
+      "bytes": 301,
+      "sha256": "0aa0e1f2cf2707b711ad102a732bfe245af4aee34ec8b6aaa77231fc9255d58c"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/検証記録/実行・集計の検証.json",
+      "bytes": 5159,
+      "sha256": "78e9b9ebf86cceec5b206db4d94cacf9e4ecc2af235559ede23ed869b10a7cc9"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/バトル結果_AIA.csv",
+      "bytes": 8692,
+      "sha256": "565288323fc1da786a845fd679c740d4b9e8751e3d978ce22b4502ad14119eee"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/バトル結果_MIA.csv",
+      "bytes": 7508,
+      "sha256": "7bff00dc3b0024af4a1e4ae6ad3c5f7bf898c25b18798c0f6756c842d3bb5485"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/加工案別集約.csv",
+      "bytes": 6143,
+      "sha256": "4183b1543d2296e6a05ae27b51f5299e04975031f0ee2172c84bdc821e9fda9d"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/詳細CSV/有用性内訳.csv",
+      "bytes": 55974,
+      "sha256": "9120f80e19cddeac10ed3f424f8af05a19af54b0b5fb2e88a22e00fdd1073177"
+    },
+    {
+      "path": "02_参考_予備戦Team05_112対戦/説明.md",
+      "bytes": 4681,
+      "sha256": "c926643a0e83f14a9a06cb5d459e5ae79b8f563d9c7c4916e795e0371d9a7268"
+    },
+    {
+      "path": "03_使用プログラムと条件/GitHubソースの版とハッシュ.json",
+      "bytes": 4938,
+      "sha256": "7b5f1778cc64579678ed6ce227373f77a0164392e7638a2346fe6bfc1491961e"
+    },
+    {
+      "path": "03_使用プログラムと条件/使用プログラム一覧.csv",
+      "bytes": 3161,
+      "sha256": "4b84ddbbd3d316e3013ebb28e627fbd0784a52b54f0c7f14fa86505b2b3414bc"
+    },
+    {
+      "path": "03_使用プログラムと条件/共通条件.md",
+      "bytes": 1564,
+      "sha256": "029658d45e47f50b353e1f57ae48f259168a58e9e5e2720df7ea98e6c86f252b"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 3602,
+      "sha256": "f6a27c0b8e5e5982fd91df6d9947509bdce978c6b96e5c3c9ba88e8b74e72578"
+    }
+  ],
+  "note": "この一覧自身はハッシュ対象から除外。copied_filesは元資料との対応。"
+}
