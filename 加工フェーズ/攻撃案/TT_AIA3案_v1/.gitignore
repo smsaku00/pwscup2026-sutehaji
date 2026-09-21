@@ -1,0 +1,16 @@
+# 共有対象だけを追跡。配布物・生成CSV・認証情報は含めない。
+*
+!/.gitignore
+!/README.md
+!/TT-01-部分属性照合.md
+!/TT-01-部分属性照合.py
+!/TT-02-全体対応推定.md
+!/TT-02-全体対応推定.py
+!/TT-03-条件分布推定.md
+!/TT-03-条件分布推定.py
+!/requirements.txt
+!/targets.例.json
+!/targets.練習.json
+!/動作確認.py
+!/参照情報.json
+!/確認結果.json
