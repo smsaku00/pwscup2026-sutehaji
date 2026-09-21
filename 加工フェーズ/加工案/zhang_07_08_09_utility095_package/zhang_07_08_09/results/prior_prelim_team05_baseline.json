@@ -1,0 +1,33 @@
+{
+  "data": "PRELIM team05 ONLY; not final cohort28",
+  "team05_score": {
+    "U": 0.9825875274,
+    "MIA 成分": 0.0,
+    "AIA 成分": 0.4615384615384613,
+    "Anon": 0.5384615384615388
+  },
+  "constant10_member": {
+    "sum": 143.0,
+    "count": 163.0,
+    "mean": 0.8773006134969326
+  },
+  "constant10_control": {
+    "sum": 135.0,
+    "count": 163.0,
+    "mean": 0.8282208588957055
+  },
+  "constant10_R": 0.285714285714286,
+  "attackers20_max_R": 0.4615384615384613,
+  "attacker_2_success_by_label": {
+    "control": 0.8282208588957055,
+    "member": 0.8773006134969326
+  },
+  "attacker_8_success_by_label": {
+    "control": 0.7607361963190185,
+    "member": 0.8466257668711656
+  },
+  "attacker_23_success_by_label": {
+    "control": 0.7607361963190185,
+    "member": 0.8711656441717791
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "splits": [
+    9601,
+    9602,
+    9603,
+    9604
+  ],
+  "frozen_before_evaluation": true,
+  "train_test": [
+    734,
+    315
+  ],
+  "stratification": "true rare + onset, evaluation only",
+  "matching": "sex, prefecture, 10-year age band, onset; no replacement",
+  "uncertainty": "1000 paired bootstrap draws per split; 60-test Holm for primary MIA / early-time MIA / official AIA",
+  "scope": "Overlapping B splits, not independent trials. No official hidden controls or phi correction. Non-significance does not prove privacy.",
+  "selection": "All three methods reported. The exploratory decoy variant is reported separately."
+}

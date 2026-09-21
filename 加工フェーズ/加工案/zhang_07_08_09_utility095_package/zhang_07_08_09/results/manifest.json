@@ -1,0 +1,38 @@
+{
+  "round": "final",
+  "cohort": 28,
+  "kit": "main-process-20260912",
+  "B_sha256": "ce19f42734519240840c7153e6f2ab300c2da1cd5fb9091652da6b33d1a36f4b",
+  "files": {
+    "zhang_07_copula_calibrated": {
+      "seed": 28201,
+      "settings": {
+        "method": "zhang_07_copula_calibrated",
+        "seed": 28201,
+        "cox_scaled_loss": 0.006094600460950876
+      },
+      "C_sha256": "5123d0ef389e36bdc5fb6517c3d66651fe87b41ad739d625c0daac8eeeec647a",
+      "zip_sha256": "0ffaf4bbfd517bd26469a113295b08357fb3ba9c4c70ecabaf0a793cafda9fca"
+    },
+    "zhang_08_conditional_calibrated": {
+      "seed": 28221,
+      "settings": {
+        "method": "zhang_08_conditional_calibrated",
+        "seed": 28221,
+        "cox_scaled_loss": 0.056798078225263504
+      },
+      "C_sha256": "2fde6a36b4d83e6d42f5774f54c42eb376c079e7633adaf0ee06691a9fb964e4",
+      "zip_sha256": "748499706f8a100f602348364aac49dba06afd493e15befa4fa3d32853d22eff"
+    },
+    "zhang_09_mixture_calibrated": {
+      "seed": 28261,
+      "settings": {
+        "method": "zhang_09_mixture_calibrated",
+        "seed": 28261,
+        "cox_scaled_loss": 0.003642322785906092
+      },
+      "C_sha256": "4f449342610d91397667a566f269f1d82d2fa0c3a21f1ecc3cdd9dec707442bb",
+      "zip_sha256": "1e554d9a8267413aaf2c42fab48786b487857dca60792e997b9b0d5741efaa8a"
+    }
+  }
+}

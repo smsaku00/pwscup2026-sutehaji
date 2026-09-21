@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-19",
+  "files": {
+    "shared_methods.py": "eccbd35bcc100cdd2819e51b3525a02a9e52a345e121b79e5a7cd5d84628a51e",
+    "generate_three.py": "d574a733dc7bac1968b99785bf061c164157cc4b6803f6149c328bbd40cced25",
+    "reproduce.py": "eafeced6c1b3c25258e7724c25da25e304719c7f7e7ae21dc1455f5ad01817f7",
+    "calibration.py": "30146df71f11f4077a8603a9afc5b66c078f48acc13b6358e60d123cf5910335",
+    "decoy.py": "db45c822e504190c9ba63c296e3dcbda22004ad39e8370f6686e26b12d5f1451"
+  },
+  "holdout_splits": [
+    9601,
+    9602,
+    9603,
+    9604
+  ],
+  "parameters": {
+    "B_weight": 0.5,
+    "radial_iterations": 1,
+    "copula_seed": 28201,
+    "conditional_seed": 28221,
+    "mixture_seed": 28261,
+    "decoy_seed": 28707,
+    "decoy_proposals": 6000
+  },
+  "rule": "Do not tune using fresh holdout results"
+}

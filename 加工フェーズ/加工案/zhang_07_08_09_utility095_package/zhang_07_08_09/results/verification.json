@@ -1,0 +1,35 @@
+[
+  {
+    "method": "zhang_07_copula_calibrated",
+    "rows": 1049,
+    "cols": 13,
+    "second_execution_identical": true,
+    "zip_sha256": "0ffaf4bbfd517bd26469a113295b08357fb3ba9c4c70ecabaf0a793cafda9fca",
+    "exact_rows_in_B": 0,
+    "exact_rows_in_A_bg": 0,
+    "duplicate_rows": 0,
+    "official_zip_validation": true
+  },
+  {
+    "method": "zhang_08_conditional_calibrated",
+    "rows": 1049,
+    "cols": 13,
+    "second_execution_identical": true,
+    "zip_sha256": "748499706f8a100f602348364aac49dba06afd493e15befa4fa3d32853d22eff",
+    "exact_rows_in_B": 0,
+    "exact_rows_in_A_bg": 0,
+    "duplicate_rows": 0,
+    "official_zip_validation": true
+  },
+  {
+    "method": "zhang_09_mixture_calibrated",
+    "rows": 1049,
+    "cols": 13,
+    "second_execution_identical": true,
+    "zip_sha256": "1e554d9a8267413aaf2c42fab48786b487857dca60792e997b9b0d5741efaa8a",
+    "exact_rows_in_B": 0,
+    "exact_rows_in_A_bg": 0,
+    "duplicate_rows": 0,
+    "official_zip_validation": true
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "proposals": 6000,
+  "accepted": 167,
+  "training_hits_before": 724,
+  "training_hits_after": 523,
+  "training_n": 1049,
+  "official_training_hits_before": 724,
+  "official_training_hits_after": 523,
+  "example_predictions": [
+    {
+      "true_time": 9.998631074606434,
+      "before_time": 10.0,
+      "after_time": 9.34154688569473
+    },
+    {
+      "true_time": 9.998631074606434,
+      "before_time": 10.0,
+      "after_time": 2.9785167112210846
+    },
+    {
+      "true_time": 9.998631074606434,
+      "before_time": 10.0,
+      "after_time": 2.3144492894794606
+    }
+  ],
+  "status": "Experimental only; holdout revealed membership leakage from predicted time.",
+  "U": 0.9528419478145257,
+  "facets": {
+    "U_gen": 0.9610387885642763,
+    "U_spec": 0.9607621283569974,
+    "U_rare": 0.9528419478145257,
+    "U_valid": 0.9997616777883699
+  },
+  "zip_sha256": "b5c241591979105a4eddcf5e0bb3e45e604987ece18deb713b73d28d22a6fe3a",
+  "validated": true
+}
