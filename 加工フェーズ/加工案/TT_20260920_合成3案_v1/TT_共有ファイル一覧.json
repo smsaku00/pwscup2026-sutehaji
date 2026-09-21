@@ -1,53 +1,53 @@
 {
   "shared_date": "2026-09-21",
   "code_version": "1.0.0",
-  "document_version": "1.0.2",
+  "document_version": "1.0.3",
   "data": "本戦Team28 B/A_bg全件・seed20260920",
   "repository": "smsaku00/pwscup2026-sutehaji",
-  "target_directory": "加工フェーズ/加工案/TT_20260920_合成3案_v1",
+  "target_directory": "加工フェーズ/加工案",
   "python_csv_unchanged": true,
   "local_links_valid": true,
   "absolute_paths_removed": true,
   "files": {
-    "C_TT-01-背景条件合成.csv": {
+    "../TT-01-背景条件合成/C_TT-01-背景条件合成.csv": {
       "bytes": 127051,
       "sha256": "f1bd6743e684ea2f3925f006e34eb85ab5da018375738dcdfac6b6f853703f65"
     },
-    "C_TT-02-群集約合成.csv": {
-      "bytes": 126996,
-      "sha256": "c08f1bcde087e5752edfcc7a10a0dcb79c79dbf359302c1cd4263343b7569744"
+    "../TT-01-背景条件合成/TT-01-背景条件合成.md": {
+      "bytes": 17258,
+      "sha256": "7134e928b82b5109c31542efbfce46ff0ca666430a4918310c5fb14334b8b1aa"
     },
-    "C_TT-03-多元ドナー合成.csv": {
-      "bytes": 126216,
-      "sha256": "60969f63487959821e047ca4382ffc9bea4173bfbd8975a016ba7eb0a85a0be7"
-    },
-    "README.md": {
-      "bytes": 3722,
-      "sha256": "dc2f98ab41b95f4bf2dd92c7ac93b1be5415d0b78f967e3e5396fe49915b800f"
-    },
-    "TT-01-背景条件合成.md": {
-      "bytes": 16684,
-      "sha256": "46add6305dd7cbe5b05f6e510743071b3beb9cec5696ddec6de305ca801a5830"
-    },
-    "TT-01-背景条件合成.py": {
+    "../TT-01-背景条件合成/TT-01-背景条件合成.py": {
       "bytes": 18343,
       "sha256": "83423c4cba326a114210ca075699ceacdc717a90ee1066878dc4536c546f3d39"
     },
-    "TT-02-群集約合成.md": {
-      "bytes": 16652,
-      "sha256": "6d2bce99b5081a3f12c6d581e0f06a5cc6aa0497c61c16635bab99c0b0c05435"
+    "../TT-02-群集約合成/C_TT-02-群集約合成.csv": {
+      "bytes": 126996,
+      "sha256": "c08f1bcde087e5752edfcc7a10a0dcb79c79dbf359302c1cd4263343b7569744"
     },
-    "TT-02-群集約合成.py": {
+    "../TT-02-群集約合成/TT-02-群集約合成.md": {
+      "bytes": 17226,
+      "sha256": "ab7e7e0a0cf8f915b7cfeb5f7f8b5398b5535d8b0e99f4a6b2b46a4413705063"
+    },
+    "../TT-02-群集約合成/TT-02-群集約合成.py": {
       "bytes": 19266,
       "sha256": "0eedff9cec63713241690d5614de2041da4bb91960d443fc2251c21ed03b07d3"
     },
-    "TT-03-多元ドナー合成.md": {
-      "bytes": 17047,
-      "sha256": "9c6dd40e94cdd3aa03146c130f6a9ee8113ad3838edde1e5edbc6be48ed0bb41"
+    "../TT-03-多元ドナー合成/C_TT-03-多元ドナー合成.csv": {
+      "bytes": 126216,
+      "sha256": "60969f63487959821e047ca4382ffc9bea4173bfbd8975a016ba7eb0a85a0be7"
     },
-    "TT-03-多元ドナー合成.py": {
+    "../TT-03-多元ドナー合成/TT-03-多元ドナー合成.md": {
+      "bytes": 17621,
+      "sha256": "a69307cecc4a398095df9e88feef6318c30f1c330ea07750bea417c0f3b42488"
+    },
+    "../TT-03-多元ドナー合成/TT-03-多元ドナー合成.py": {
       "bytes": 20663,
       "sha256": "ce16551f808d04baa57938bb7f83dd46c7e1750c60cca0f41d15328c3ae66cd0"
+    },
+    "README.md": {
+      "bytes": 4364,
+      "sha256": "4023d711b4d0bc6f0290b30abefb4b4e79759a730f9b7967fd0d1e2dde097241"
     },
     "TT_予備戦対戦比較.csv": {
       "bytes": 5688,
@@ -90,8 +90,15 @@
       "sha256": "e380e196d5c771239e5a2b8c461fdbd12df2238add82bfd0d655a57bea4dbf8e"
     },
     "形式と履歴の確認.py": {
-      "bytes": 3851,
-      "sha256": "3b898c636efad10223c208038332356acfce55e4fc754e05d6b6077c40530360"
+      "bytes": 4100,
+      "sha256": "be149fdaeeaff8d234f1fac4f0252ff9c4040685d27b10c399eaeedf4b3a8a71"
     }
-  }
+  },
+  "method_directories": [
+    "TT-01-背景条件合成",
+    "TT-02-群集約合成",
+    "TT-03-多元ドナー合成"
+  ],
+  "common_directory": "TT_20260920_合成3案_v1",
+  "paths_relative_to": "このJSONの所在フォルダ"
 }
