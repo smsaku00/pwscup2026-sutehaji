@@ -1,0 +1,22 @@
+{
+  "comparisons": 420,
+  "new_comparisons": 180,
+  "reused_comparisons": 240,
+  "panels": 5,
+  "attacks": 12,
+  "overlapping_9_scores_reproduced": 9,
+  "constant_truth_recomputed": true,
+  "all_C_hashes_verified": true,
+  "github_C_bytes_verified": true,
+  "candidate_github_commit": "cd19c46191efeee56a3fd7616074a1b1e8e9e893",
+  "same_attack_B_background_challenge_truth_scorer_verified": true,
+  "same_C_used_across_5_panels": true,
+  "phi_applied": false,
+  "source_result_sha256": {
+    "属性交換候補を含む7案比較/results/panel_01/バトル詳細.json": "6cff3f0d5715fae1615838170848c5ca368ef958c29a5ee0641bed365743c538",
+    "属性交換候補を含む7案比較/results/panel_02/バトル詳細.json": "ef6ee74c926755f363f94534d76d3462130aac3de1c94518bc674f08ae0b12db",
+    "属性交換候補を含む7案比較/results/panel_03/バトル詳細.json": "fbc5328ef967e5e14da5f599f73719d1906b054c18843978427cb1f56a2de2fb",
+    "属性交換候補を含む7案比較/results/panel_04/バトル詳細.json": "1ec59755069fb59f0514742f6c05623567ab4fc1eef33496d86d87c7eca0234d",
+    "属性交換候補を含む7案比較/results/panel_05/バトル詳細.json": "f7eeca0fda2ee4822e4075beef5cf5b7b32ba43c925241ff17af02deffacd059"
+  }
+}
