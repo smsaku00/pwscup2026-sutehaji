@@ -103,8 +103,8 @@
     },
     {
       "path": "7案_共通5パネル比較/README.md",
-      "bytes": 16248,
-      "sha256": "46739910ea9293c4133b8e2a22da910c727a5d1c3dd6af5ba5cf544ae17374ba"
+      "bytes": 16458,
+      "sha256": "d57e8e51cdf55f72400dbdaccfd114142eb463bae508642b1f546a2b40cd7b76"
     },
     {
       "path": "7案_共通5パネル比較/Seo03_手法別パネル表.csv",
@@ -213,8 +213,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3298,
-      "sha256": "de464643821f39790008ea51dc2319033540b1300a5d87c7b737b759ce65e9de"
+      "bytes": 4320,
+      "sha256": "0b962aef4adbea59ef06ee8752d96d95442d9de8702e411ec862bc2693d44aeb"
     },
     {
       "path": "summary/0921同条件980比較.csv",
@@ -292,6 +292,136 @@
       "sha256": "c9a6e379d26deeb04afe8eb6b1dc9feffdd1108e8bf5656015c0b166c3dfc283"
     },
     {
+      "path": "本番C固定_Zhangパネル比較/360件の詳細.csv",
+      "bytes": 50378,
+      "sha256": "edb45aed428da1c644620769c1791d593c7a39120f17d1b6fccbac2d87df277a"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/3案の要約.csv",
+      "bytes": 1818,
+      "sha256": "72909b67bb43eda38cb15b5d9d6477362e6e2b7b3267ea8ddf4226db25760352"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/Excel検証.json",
+      "bytes": 302,
+      "sha256": "ee6ef44869a218f3082a2d633c2bbb027e7739ef9967e853ee71131b0cad5b06"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/README.md",
+      "bytes": 13092,
+      "sha256": "e2c1ee1566edfb513efd99c3fc47b82552d28f346f7b9e6bbfa935eb4bbfb99e"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/パネル別基準.csv",
+      "bytes": 1422,
+      "sha256": "9f48cde3e1af805605f4345c5b7e75f703bbc5bf3c4107e71a71b5a5da479711"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/パネル別比較.csv",
+      "bytes": 6781,
+      "sha256": "56c5e67643ed0c8efc887ad7ef9680bf21ff073fdd5c886a5987fb704b12b179"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Seo03_手法別パネル表.csv",
+      "bytes": 2129,
+      "sha256": "914f50b3a24d46559c7038025ef33c18153c2c94f833b8b005a55844dfc60cc2"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Seo03_手法別パネル表.png",
+      "bytes": 210036,
+      "sha256": "e997982232fe03e18fc5b918ea80ae39ff86f653dc26655908ec892ee0176cc8"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Zhang04_手法別パネル表.csv",
+      "bytes": 2120,
+      "sha256": "72e3a6b094c58fadc0fecd1dd3b2877cd897b5576c86670e1e73c57625dc0a10"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Zhang04_手法別パネル表.png",
+      "bytes": 204216,
+      "sha256": "4afddcdee51fbd5d356a3271c2d760db65dbf768f4c68b7f56602afcc41e0b31"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Zhang11_手法別パネル表.csv",
+      "bytes": 1996,
+      "sha256": "105a94799287980a93949b38db9b547149b78a8c3cc5fe4bc650be110da6a14f"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/予備戦対照_Zhang11_手法別パネル表.png",
+      "bytes": 199200,
+      "sha256": "ef79e12eaeea4d56eb896a02c4277766d2046caa62c924285a2ca9476d0c355c"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/分析.py",
+      "bytes": 4634,
+      "sha256": "3f839394edd4ea4adbeeac3c290b99e792d8efe91a3a5314e12a58a2dbc2f10d"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/手法別統計.csv",
+      "bytes": 9124,
+      "sha256": "d365166b30cf95c19be37ccf8b2e4a5c975d6defbd839e612d55bf55886832d5"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/本番C固定_Zhangパネル比較.xlsx",
+      "bytes": 75583,
+      "sha256": "7f222a65551a7f71fab72deba31ae346fc79c1c907b144c2590d4e409f0b51cc"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/条件と検証.json",
+      "bytes": 1918,
+      "sha256": "dd38b36a02cf650ae0d6dcfbf722c97f5e63d2d9f48ce9ea49cbebabb207a689"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Seo03_手法別パネル表.csv",
+      "bytes": 2833,
+      "sha256": "9bc51c4c227261db6f404d8143ceaecb8566da426fdd644760cff55570b6122b"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Seo03_手法別パネル表.png",
+      "bytes": 233243,
+      "sha256": "b74f5263ca34005f5c4f72b368c3a579cdc02cf1cae8f1046acaac463af7e173"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Zhang04_手法別パネル表.csv",
+      "bytes": 2549,
+      "sha256": "6b76df8f95bf7d7bcf2eb72f4fbcfcf1f2b6177061351f53e929e2a7162db9dd"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Zhang04_手法別パネル表.png",
+      "bytes": 226914,
+      "sha256": "9f8d11c649a7337b3a582c0855f89f96776b6ad2ccc7f5d5206cfda2818998df"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Zhang11_手法別パネル表.csv",
+      "bytes": 2490,
+      "sha256": "9bd34d89de91f31f2787b731bd7c54d1ebbd2641c240aed9ebf709d53ee0fb1e"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/練習対照_Zhang11_手法別パネル表.png",
+      "bytes": 225564,
+      "sha256": "31564c6502789b90a71163327a854f1cae3fa10768429193fe66e052382e0dfc"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/背景基準検証.json",
+      "bytes": 618,
+      "sha256": "ed9d29f96f3c298ef93f3356fee54f7148b3c92a1f53d5350bcf3ca6c2b5301f"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/背景標本10000件.csv",
+      "bytes": 326330,
+      "sha256": "a05df6e7fe65e8468bfd8832ba158447fd2ee6d3f3b6e97449f6031fdf3c6523"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/評価したCと有用性.csv",
+      "bytes": 716,
+      "sha256": "067a5ef75054d119f5b5693ded6a1af205a35c1b0320157e917a641459356c56"
+    },
+    {
+      "path": "本番C固定_Zhangパネル比較/説明.md",
+      "bytes": 1468,
+      "sha256": "5a74d52abf485f537f2023fe7d7a04b843d7058d98afd59a359c674942dee63e"
+    },
+    {
       "path": "条件と検証/engine_changes.json",
       "bytes": 394,
       "sha256": "9359d1fce8df14a4df70b27e86864012acf21cd20183e666a9f4df0bbb8fb262"
@@ -348,8 +478,8 @@
     },
     {
       "path": "説明.md",
-      "bytes": 12908,
-      "sha256": "46d9992b4616c61af1b8b69b46606d6988476e62d307783b81ee49c9dbbf16aa"
+      "bytes": 13898,
+      "sha256": "1640e4e8ae49bed28a6eda7aa45b0e32770159cabcc8059c4618e99fb8bdda53"
     }
   ],
   "excluded": [

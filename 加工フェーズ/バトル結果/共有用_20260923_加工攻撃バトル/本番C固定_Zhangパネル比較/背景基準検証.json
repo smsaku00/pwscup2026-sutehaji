@@ -1,0 +1,26 @@
+{
+  "trials": 1000,
+  "panels": 10,
+  "comparisons": 10000,
+  "sample_seed": 2026092301,
+  "sample_indices_sha256": "11feb55d372f5101ecd1f14befe0264928760a7a64ed3c268d35900998d4239c",
+  "official_prediction_checks": {
+    "exact_full_query_samples": [
+      0,
+      499,
+      999
+    ],
+    "compared_predictions": 9780,
+    "tie_fallback_fixture": {
+      "sex_fallback_predictions": 2,
+      "all_fallback_predictions": 4,
+      "tie_predictions": 3
+    }
+  },
+  "fallback": {
+    "sex_fallback_predictions": 6292,
+    "all_fallback_predictions": 0,
+    "tie_predictions": 0
+  },
+  "official_phi_applied": false
+}

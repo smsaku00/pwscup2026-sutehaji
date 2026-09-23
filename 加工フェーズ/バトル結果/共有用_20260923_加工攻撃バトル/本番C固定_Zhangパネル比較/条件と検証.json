@@ -1,0 +1,33 @@
+{
+  "comparisons": 360,
+  "panels": 10,
+  "attacks": 12,
+  "failures": 0,
+  "fixed_C_hashes_verified": true,
+  "full_background_5143_preserved": true,
+  "same_attack_B_all_panels": true,
+  "source_inputs_unchanged": true,
+  "constant_and_hit_scores_verified": true,
+  "utility_recomputed_on_attacked_C": true,
+  "official_phi_applied": false,
+  "rare_AIA_available": false,
+  "MIA_evaluated": false,
+  "source_result_sha256": {
+    "results/prelim_01/バトル詳細.json": "eacb4cd54d31ad3bfa048a4d93226a6349665e3751c1942b0eae07882a7e7494",
+    "results/prelim_02/バトル詳細.json": "05bc0d6deab3a878aaa5e46e86f5fa14f332d5aea8084ebd5c15f3dd0006c897",
+    "results/prelim_03/バトル詳細.json": "c13df4386c7f439218dbf4012c3e7d78ba85fdc1578372a09fefe464e694fbb6",
+    "results/prelim_04/バトル詳細.json": "864437f6019142fee820043415533bca5de4aca1d41de441d006d969bc2f500d",
+    "results/prelim_05/バトル詳細.json": "6e8361b4ce1886e3fb7517c59dc57ec5bfaf69017c556a7f41220ff2a751f7d7",
+    "results/practice_01/バトル詳細.json": "7c338111ed77e6f431c1fc914f61cbda8bc4116dfef67943a5a602e369be51c1",
+    "results/practice_02/バトル詳細.json": "ccd426a642556229431cc6d20505196343c1e81d836f666d3402a271e125e8de",
+    "results/practice_03/バトル詳細.json": "5c2fb393b94251f81163fa890f840024dbaf9ef13a33afcc2d7a46e69c3afd5b",
+    "results/practice_04/バトル詳細.json": "2c219cc4a7d0dfe1ed3638181335daae436e8188cd096251991563bafd989ba3",
+    "results/practice_05/バトル詳細.json": "44e4a8542acab55fd25ab440a68695f6dc12816d80a6c1982690efb81be3bdf5"
+  },
+  "source_code_commit": "b388da9ddc583961d26c706a554e6dd475bc4fb5",
+  "C_sha256": {
+    "Zhang11": "1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97",
+    "Zhang04": "ca3fb79a87aa37f2bda392d07d1d02874a753b863b9b313df7aa2444fe11bc14",
+    "Seo03": "abb686221afcf3af437639ee9098588f347ccbac869a81c3925c1d3d6661e81e"
+  }
+}
