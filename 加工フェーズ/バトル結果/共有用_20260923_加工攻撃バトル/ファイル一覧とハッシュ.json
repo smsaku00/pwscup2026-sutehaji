@@ -213,8 +213,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4320,
-      "sha256": "0b962aef4adbea59ef06ee8752d96d95442d9de8702e411ec862bc2693d44aeb"
+      "bytes": 4536,
+      "sha256": "9e16f086dd3ead0e54f94874d5e08eed1fb5b427766e3e911063ecdbaf8540d3"
     },
     {
       "path": "summary/0921同条件980比較.csv",
@@ -303,13 +303,13 @@
     },
     {
       "path": "本番C固定_Zhangパネル比較/Excel検証.json",
-      "bytes": 302,
-      "sha256": "ee6ef44869a218f3082a2d633c2bbb027e7739ef9967e853ee71131b0cad5b06"
+      "bytes": 493,
+      "sha256": "4c8248f376e85fdb35cb44e066471adcaf937ed55ad58f881de9ae35d8112db9"
     },
     {
       "path": "本番C固定_Zhangパネル比較/README.md",
-      "bytes": 13092,
-      "sha256": "e2c1ee1566edfb513efd99c3fc47b82552d28f346f7b9e6bbfa935eb4bbfb99e"
+      "bytes": 18067,
+      "sha256": "493cacacaeaa33f62b72368443a7d15ff95bbd8d8a4ca8bb5844c8ea7c67b5cc"
     },
     {
       "path": "本番C固定_Zhangパネル比較/パネル別基準.csv",
@@ -353,8 +353,8 @@
     },
     {
       "path": "本番C固定_Zhangパネル比較/分析.py",
-      "bytes": 4634,
-      "sha256": "3f839394edd4ea4adbeeac3c290b99e792d8efe91a3a5314e12a58a2dbc2f10d"
+      "bytes": 5602,
+      "sha256": "512604f033bb9fb9641bab666fe11c94a298a69bc934b10c55060706222e383c"
     },
     {
       "path": "本番C固定_Zhangパネル比較/手法別統計.csv",
@@ -363,8 +363,8 @@
     },
     {
       "path": "本番C固定_Zhangパネル比較/本番C固定_Zhangパネル比較.xlsx",
-      "bytes": 75583,
-      "sha256": "7f222a65551a7f71fab72deba31ae346fc79c1c907b144c2590d4e409f0b51cc"
+      "bytes": 76979,
+      "sha256": "e1bbc2c9804df67180b6e150f18f67c357eec4b712e1bbdd8cbb277f6359f5bd"
     },
     {
       "path": "本番C固定_Zhangパネル比較/条件と検証.json",
@@ -402,6 +402,11 @@
       "sha256": "31564c6502789b90a71163327a854f1cae3fa10768429193fe66e052382e0dfc"
     },
     {
+      "path": "本番C固定_Zhangパネル比較/背景基準との差_要約.csv",
+      "bytes": 1353,
+      "sha256": "b6fc6af520e7335d68848eb75cf0f28d39abe510d16e349e7cf0d8cf691f758b"
+    },
+    {
       "path": "本番C固定_Zhangパネル比較/背景基準検証.json",
       "bytes": 618,
       "sha256": "ed9d29f96f3c298ef93f3356fee54f7148b3c92a1f53d5350bcf3ca6c2b5301f"
@@ -418,8 +423,8 @@
     },
     {
       "path": "本番C固定_Zhangパネル比較/説明.md",
-      "bytes": 1468,
-      "sha256": "5a74d52abf485f537f2023fe7d7a04b843d7058d98afd59a359c674942dee63e"
+      "bytes": 2256,
+      "sha256": "815ba3c79b8910f9038c7045d6b6291b6dfe7f6624fa1ff7665398411500c16e"
     },
     {
       "path": "条件と検証/engine_changes.json",
@@ -478,8 +483,8 @@
     },
     {
       "path": "説明.md",
-      "bytes": 13898,
-      "sha256": "1640e4e8ae49bed28a6eda7aa45b0e32770159cabcc8059c4618e99fb8bdda53"
+      "bytes": 14114,
+      "sha256": "3ad0ec91981d16288dc95ed8963229f155c3c979289616d5a7b84c1c52080981"
     }
   ],
   "excluded": [

@@ -50,5 +50,18 @@ def main():
                 else:v=next(float(x['AIA得点']) for x in rows if x['攻撃手法']==m['攻撃手法'] and int(x['パネル'])==i)
                 same(m['P'+str(i)],v)
             for k,v in stats([float(m['P'+str(i)]) for i in range(1,6)]).items():same(m[k],v)
-    print('360評価・背景標本10000件・定数・各手法×パネル・統計・模擬基準差引・U内訳を照合しました。')
+    gaps=read('背景基準との差_要約.csv');assert len(gaps)==6
+    assert len({(r['対照の出所'],r['加工案']) for r in gaps})==6
+    for r in gaps:
+        chosen=[x for x in panels if all(x[k]==r[k] for k in ['対照の出所','加工案'])];assert len(chosen)==5
+        adj=[max(0,float(x['定数込み最大'])-float(x['背景標本基準'])) for x in chosen]
+        worst=chosen[adj.index(max(adj))]
+        for x in chosen:same(x['12攻撃の最大'],x['定数込み最大'])
+        same(r['差引後最大のパネル'],worst['パネル'])
+        same(r['そのパネルのAIA最大（定数込み）'],worst['定数込み最大'])
+        same(r['同じパネルの背景基準'],worst['背景標本基準'])
+        same(r['AIA最大−背景基準（0未満は0）'],max(adj))
+        same(r['1−差引後（AIAだけの参考値）'],1-max(adj))
+        for k,v in stats(adj).items():same(r['差引後5パネル_'+k],v)
+    print('360評価・背景標本10000件・各統計・U内訳・同一パネルで引いた背景基準との差と最悪パネルを照合しました。')
 if __name__=='__main__':main()
