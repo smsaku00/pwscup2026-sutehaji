@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 1350,
-      "sha256": "4fec28ff8060950d5a1b31038996f16583a9a7f873bd5fbc7bbb49174f5de0f6"
+      "bytes": 2232,
+      "sha256": "868dea9c779c5c4f8c37c5a0583a99045e22977efa889fa698d08a4b3931d4fb"
     },
     {
       "path": "summary/0921同条件980比較.csv",
@@ -48,8 +48,8 @@
     },
     {
       "path": "summary/加工15案_比較図.png",
-      "bytes": 175742,
-      "sha256": "e8719b5efae252617e96e9337a34e58b154152b85b5bccad1d586010ed8a597e"
+      "bytes": 250091,
+      "sha256": "8b0314f20c0b8b39903c84f6535078dffeea8375f4de3a8d9357f580dfee1b84"
     },
     {
       "path": "summary/加工15案の比較.csv",
@@ -58,8 +58,8 @@
     },
     {
       "path": "summary/固定C4案_比較図.png",
-      "bytes": 85886,
-      "sha256": "38106e4a0ae065dfdef4ff20a51fc3524d869c1e36b02096784936430dad72bd"
+      "bytes": 177770,
+      "sha256": "5b0f7aa005e4c22fdf85612b142bd1a1d63c372117fdc687089aaf0196f2e6fc"
     },
     {
       "path": "summary/固定C4案の比較.csv",
@@ -128,13 +128,18 @@
     },
     {
       "path": "条件と検証/実行条件.md",
-      "bytes": 2685,
-      "sha256": "63e66f71db58df98ba4262a1066478a56d5a3d5af9f8b025d95db22b883de6cd"
+      "bytes": 3457,
+      "sha256": "5f80b1ac9a668b541364a7de08035bda1fa3fdd0a4b83a1dc314f8a4fbaad8e6"
+    },
+    {
+      "path": "条件と検証/評価方法の詳細.md",
+      "bytes": 9749,
+      "sha256": "fb74a559144669b0e5a9d9952b6676f4522b49b25f089955395e928fe50a8245"
     },
     {
       "path": "説明.md",
-      "bytes": 9432,
-      "sha256": "ee53768955c70443c04482e544fe61252feecbfe326c96f8d009e3a215d9ee41"
+      "bytes": 11889,
+      "sha256": "d9697805d21d19a3db473c4be47dc87f2c1810a96f82202698fa1850f3c5fb42"
     }
   ],
   "excluded": [
