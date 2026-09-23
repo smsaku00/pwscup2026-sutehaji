@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-23",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "purpose": "Team sharing of three fixed processed C candidates; exploratory, not adopted/submitted.",
+  "base": {
+    "name": "Z09",
+    "method": "zhang_04_copula_bgtime",
+    "generation_seed": 2026092209,
+    "c_sha256": "9af259ce010b3db9fa9482435662e3f9db290f48a2529c8a2c4d1dbde4babafc",
+    "source_commit": "44d2e68514a81105bd3e0e2ab2b064b8ba2fd6e5"
+  },
+  "candidates": [
+    "labs_n50_r3",
+    "prefecture_n50_r1",
+    "combined_n10_r3"
+  ],
+  "columns": [
+    "age",
+    "sex",
+    "prefecture",
+    "BMI",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "smoking",
+    "FPG",
+    "time",
+    "onset",
+    "death"
+  ],
+  "rows_per_candidate": 1049,
+  "score_scope": "Official local U; mock overall AIA/MIA only, no official anonymity.",
+  "excluded": [
+    "B",
+    "B_self",
+    "A_bg",
+    "utility_ref",
+    "challenge",
+    "truth",
+    "membership mapping",
+    "individual attack predictions",
+    "token"
+  ],
+  "files": {
+    "C_combined_n10_r3.csv": "5bd562161b10428a162aaf58c12413a92cc40d4b9a8364f9126a2060f2f0003a",
+    "C_labs_n50_r3.csv": "d491177dfd8549e1c05d147dc53bf2385bc1399aa9afb29203432b9d96b30a07",
+    "C_prefecture_n50_r1.csv": "4f935b6f20b26d2bd6374f8ea28201825f25f455dd8e649cca64dca7964a8f21",
+    "README.md": "c17a416e62bef637c22cdb4a16226d3fcc56167eb4e32aef46daa104188760ab",
+    "apply_swaps.py": "21b18d9d20e8475f70df67ef87a30408b524893e8d9d04bec15bf9442b4da902",
+    "swaps_combined_n10_r3.json": "06d72251fe5dc309e7dcb53a95fe1348c1a06d7a8fc08649d1675e969640ebc1",
+    "swaps_labs_n50_r3.json": "80d67bb308791481b1ae9ee98efee2c173333b875b6e96ab5b85ff4c48c3c140",
+    "swaps_prefecture_n50_r1.json": "e6ba1a6e17f7e7cf93eecdf064640dfe3bba6dfa1b34b216a490b7eb72c516b0",
+    "候補情報.json": "f05564f9d2d7b30b764171fba65bad29ac9f1b2448e3e2735ceb19f595e552ae",
+    "評価比較.csv": "a561e4025b5187f757fe4ca1bac6be99947394c691ce37c4a6489301bc69f795",
+    "評価比較.png": "c1bee61042f103808b93b984f69374b80df2d2102942e0e6bfffdbebde9f7855"
+  }
+}

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "labs_n50_r3",
+    "mode": "labs",
+    "pairs_per_operation": 50,
+    "seed_id": 3,
+    "U": 0.937482982613093,
+    "facets": {
+      "U_gen": 0.9386743584703113,
+      "U_spec": 0.9694234758999705,
+      "U_rare": 0.937482982613093,
+      "U_valid": 0.9992850333651097
+    },
+    "changed_rows": 100,
+    "changed_cells": 100,
+    "changes": {
+      "age": 0,
+      "sex": 0,
+      "prefecture": 0,
+      "BMI": 0,
+      "SBP": 20,
+      "TG": 26,
+      "HDL": 32,
+      "ALT": 22,
+      "smoking": 0,
+      "FPG": 0,
+      "time": 0,
+      "onset": 0,
+      "death": 0
+    },
+    "c_sha256": "d491177dfd8549e1c05d147dc53bf2385bc1399aa9afb29203432b9d96b30a07",
+    "evaluation": {
+      "candidate": "labs_n50_r3",
+      "U": 0.937482982613093,
+      "original_7_worst_R": 0.25,
+      "original_7_mean_panel_worst_R": 0.1346063218390805,
+      "all_8_worst_R": 0.3043478260869567,
+      "all_8_mean_panel_worst_R": 0.15121501749125443,
+      "original_7_worst_diagnostic_clipped_excess": 0.10004853647704703,
+      "all_8_worst_diagnostic_clipped_excess": 0.15439636256400374,
+      "MIA_max_TPR": 0.07692307692307693,
+      "MIA_mean_TPR": 0.05128205128205129
+    }
+  },
+  {
+    "id": "prefecture_n50_r1",
+    "mode": "prefecture",
+    "pairs_per_operation": 50,
+    "seed_id": 1,
+    "U": 0.937482982613093,
+    "facets": {
+      "U_gen": 0.9381609463982171,
+      "U_spec": 0.9692979444644736,
+      "U_rare": 0.937482982613093,
+      "U_valid": 0.9992850333651097
+    },
+    "changed_rows": 100,
+    "changed_cells": 100,
+    "changes": {
+      "age": 0,
+      "sex": 0,
+      "prefecture": 100,
+      "BMI": 0,
+      "SBP": 0,
+      "TG": 0,
+      "HDL": 0,
+      "ALT": 0,
+      "smoking": 0,
+      "FPG": 0,
+      "time": 0,
+      "onset": 0,
+      "death": 0
+    },
+    "c_sha256": "4f935b6f20b26d2bd6374f8ea28201825f25f455dd8e649cca64dca7964a8f21",
+    "evaluation": {
+      "candidate": "prefecture_n50_r1",
+      "U": 0.937482982613093,
+      "original_7_worst_R": 0.25,
+      "original_7_mean_panel_worst_R": 0.1346063218390805,
+      "all_8_worst_R": 0.3255813953488374,
+      "all_8_mean_panel_worst_R": 0.15277021995646695,
+      "original_7_worst_diagnostic_clipped_excess": 0.10004853647704703,
+      "all_8_worst_diagnostic_clipped_excess": 0.17562993182588443,
+      "MIA_max_TPR": 0.07692307692307693,
+      "MIA_mean_TPR": 0.05128205128205129
+    }
+  },
+  {
+    "id": "combined_n10_r3",
+    "mode": "combined",
+    "pairs_per_operation": 10,
+    "seed_id": 3,
+    "U": 0.937482982613093,
+    "facets": {
+      "U_gen": 0.9383134949813353,
+      "U_spec": 0.9688490166221219,
+      "U_rare": 0.937482982613093,
+      "U_valid": 0.9992850333651097
+    },
+    "changed_rows": 40,
+    "changed_cells": 40,
+    "changes": {
+      "age": 0,
+      "sex": 0,
+      "prefecture": 20,
+      "BMI": 0,
+      "SBP": 4,
+      "TG": 4,
+      "HDL": 8,
+      "ALT": 4,
+      "smoking": 0,
+      "FPG": 0,
+      "time": 0,
+      "onset": 0,
+      "death": 0
+    },
+    "c_sha256": "5bd562161b10428a162aaf58c12413a92cc40d4b9a8364f9126a2060f2f0003a",
+    "evaluation": {
+      "candidate": "combined_n10_r3",
+      "U": 0.937482982613093,
+      "original_7_worst_R": 0.25,
+      "original_7_mean_panel_worst_R": 0.1346063218390805,
+      "all_8_worst_R": 0.31111111111111095,
+      "all_8_mean_panel_worst_R": 0.1490103622431208,
+      "original_7_worst_diagnostic_clipped_excess": 0.10004853647704703,
+      "all_8_worst_diagnostic_clipped_excess": 0.16115964758815798,
+      "MIA_max_TPR": 0.07692307692307693,
+      "MIA_mean_TPR": 0.05128205128205129
+    }
+  }
+]
