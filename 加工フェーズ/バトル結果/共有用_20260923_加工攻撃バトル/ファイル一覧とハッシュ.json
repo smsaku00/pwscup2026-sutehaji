@@ -2,9 +2,89 @@
   "source_commit": "b388da9ddc583961d26c706a554e6dd475bc4fb5",
   "files": [
     {
+      "path": "3案_AIA詳細比較/360件の詳細.csv",
+      "bytes": 36063,
+      "sha256": "d78eaf5f7f719a1ab0a810155da8f53c3a164216bbdea91896ce9160f17af75a"
+    },
+    {
+      "path": "3案_AIA詳細比較/3案_AIA詳細比較.xlsx",
+      "bytes": 60084,
+      "sha256": "e187f13dc75568c257eb491d3581795955dfe8178ef2f6bbb2562256f9d146b3"
+    },
+    {
+      "path": "3案_AIA詳細比較/3案の要約.csv",
+      "bytes": 1147,
+      "sha256": "a5b34eb7255e15ad121f0fb6db77665454630ea2fd42fc8a7200dee1af3b3fb4"
+    },
+    {
+      "path": "3案_AIA詳細比較/Excel検証.json",
+      "bytes": 252,
+      "sha256": "fe98a5a8b7ced880fcccd9cb906af206017536a481bbefed7b22dcd36c151662"
+    },
+    {
+      "path": "3案_AIA詳細比較/README.md",
+      "bytes": 11022,
+      "sha256": "2250ead21ec9f4af2397ef26de085312d013455a06b4c68e96fb6ffbdfce8ee7"
+    },
+    {
+      "path": "3案_AIA詳細比較/Seo03_手法別パネル表.csv",
+      "bytes": 2952,
+      "sha256": "a7b44e2f08ca6585830539dba3574468915fa58cd650b3426fd6cf70693e9e0f"
+    },
+    {
+      "path": "3案_AIA詳細比較/Seo03_手法別パネル表.png",
+      "bytes": 373275,
+      "sha256": "87ff47f6d1b8218ea88a4543197b4be1e97ac6b999be41d54da0463d2468d381"
+    },
+    {
+      "path": "3案_AIA詳細比較/Zhang04_手法別パネル表.csv",
+      "bytes": 2625,
+      "sha256": "8c82b1750b9e4a064d74978b0469ed2cd61cb8fb38201307ea23342ecf85447e"
+    },
+    {
+      "path": "3案_AIA詳細比較/Zhang04_手法別パネル表.png",
+      "bytes": 353592,
+      "sha256": "dab179324a5153627baadf01b921cc708795074ee4ebdbaea6f5bcbd02a92167"
+    },
+    {
+      "path": "3案_AIA詳細比較/Zhang11_手法別パネル表.csv",
+      "bytes": 2593,
+      "sha256": "cc5fb41f98220ee009a253b8237ee89233b2187b2274f103f2f74bd55187cb3f"
+    },
+    {
+      "path": "3案_AIA詳細比較/Zhang11_手法別パネル表.png",
+      "bytes": 351920,
+      "sha256": "24c2cf084c5b896dcd696a1de034d9fde6a20a62e3443586e400da73d0faf8df"
+    },
+    {
+      "path": "3案_AIA詳細比較/パネル別比較.csv",
+      "bytes": 4499,
+      "sha256": "93011f4a37f455ebea8aab8909ab2a2fda33b91505310eb0b285647129b2f9fd"
+    },
+    {
+      "path": "3案_AIA詳細比較/分析.py",
+      "bytes": 4916,
+      "sha256": "cb439f45cc98dbbf8fa252c8655c9729c45ea26f3e342a8456700e521c651e46"
+    },
+    {
+      "path": "3案_AIA詳細比較/定数10年_パネル別.csv",
+      "bytes": 412,
+      "sha256": "11dfd713c0e38c2225b4134b2496205249f1f8afd761bfc231e90510451674b4"
+    },
+    {
+      "path": "3案_AIA詳細比較/手法別統計と定数比較.csv",
+      "bytes": 7574,
+      "sha256": "cd621258306c6a80c1a73bf6fd90b813cb86ec0fb03c2e942091734bbfe84c24"
+    },
+    {
+      "path": "3案_AIA詳細比較/集計条件と検証.json",
+      "bytes": 637,
+      "sha256": "ee7573de37ce5c65e421146c68f684c5c52b4e27dd75259888b3877df1809a6f"
+    },
+    {
       "path": "README.md",
-      "bytes": 2232,
-      "sha256": "868dea9c779c5c4f8c37c5a0583a99045e22977efa889fa698d08a4b3931d4fb"
+      "bytes": 2480,
+      "sha256": "faaa825e5f5f7644c572e4e82a636d8de1f4027365ad422f191dff745707bd9c"
     },
     {
       "path": "summary/0921同条件980比較.csv",
@@ -138,8 +218,8 @@
     },
     {
       "path": "説明.md",
-      "bytes": 11889,
-      "sha256": "d9697805d21d19a3db473c4be47dc87f2c1810a96f82202698fa1850f3c5fb42"
+      "bytes": 12137,
+      "sha256": "bcc9892c5281c1e76417205fda688c72c3debcc5a94a35d9e9bf8894759ec934"
     }
   ],
   "excluded": [
