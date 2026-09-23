@@ -1,0 +1,22 @@
+{
+  "team": 28,
+  "worlds": {
+    "main": 10,
+    "prelim_controls": 5,
+    "practice_controls": 5
+  },
+  "prefecture": "神奈川県",
+  "P_proxy": "fixed 313 of 387 same-prefecture B, 14 rare retained; hidden true P unknown",
+  "target_selection": "independent random MILP objective subject to 163/16/13/4 and pair capacity",
+  "controls": "main: held-out main A_bg; prelim/practice: separate-world controls",
+  "control_rare_truth": "unknown in all three A_bg sources",
+  "background": "main: 4980 after holdout; prelim/practice: original main 5143",
+  "phi": "1000 independently drawn uniform 1049-row A_bg samples; starter 1-NN, QI standardized by panel A_bg SD, sex/pref block, tau=0.5, mean of clipped R",
+  "phi_is_official": false,
+  "seed": 20260923,
+  "input_sha256": {
+    "main": "899e34e54459d32fc147e2261fb6aedbbacae370cea30336f1944e397b3e7185",
+    "prelim": "daa1b5714dba16d64df7673741b8946e1071eb275ae8a004c6b03c0944aa7305",
+    "practice": "1dc2b76d0e3020f82a78f938b7937204b512de1858aef24a92bfa45472cb04d2"
+  }
+}
