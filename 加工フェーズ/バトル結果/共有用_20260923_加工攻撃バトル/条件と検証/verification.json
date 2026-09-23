@@ -1,0 +1,104 @@
+{
+  "completed_jobs": [
+    {
+      "job": "main10_01",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_02",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_03",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_04",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_05",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_06",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_07",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_08",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_09",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main10_10",
+      "rows": 180,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "fixed5_01",
+      "rows": 52,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "fixed5_02",
+      "rows": 48,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "fixed5_03",
+      "rows": 48,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "fixed5_04",
+      "rows": 48,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "fixed5_05",
+      "rows": 48,
+      "source_inputs_unchanged": true
+    },
+    {
+      "job": "main_MIA",
+      "rows": 60,
+      "source_inputs_unchanged": true
+    }
+  ],
+  "main_AIA": 1800,
+  "fixed_AIA": 240,
+  "supplement_AIA_with_MIA": 45,
+  "unique_MIA": 76,
+  "utility_full_input_C": 15,
+  "previous_AIA_reproduced": 980,
+  "previous_C_byte_identical": 140,
+  "previous_fixed_AIA_reproduced": 160,
+  "fixed_history_hashes": {
+    "本戦/バトル/属性交換比較_Z09_20260922/summary/AIA詳細.csv": "48e894d7da1c3e2ddfb2eff41df0390f64b8f3572caf3c882d9759ecb60dec1a",
+    "本戦/バトル/C非依存評価監査_20260922/reference/fixed_predictions.csv": "e6ecf86eb48db382d2b1eec909a2366ec8dc12578bc703694b8561dae0991d2c"
+  },
+  "zhang04_11_continuous7_identical": true,
+  "zhang04_11_changed_time_rows": 117,
+  "zhang04_11_AIA_better": 10,
+  "zhang04_11_AIA_worse": 8,
+  "zhang04_11_AIA_equal": 102,
+  "phi_applied": false,
+  "official_Anon_computed": false,
+  "failures": []
+}

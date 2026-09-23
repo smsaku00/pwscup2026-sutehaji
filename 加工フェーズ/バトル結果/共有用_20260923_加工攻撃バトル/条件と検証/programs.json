@@ -1,0 +1,391 @@
+{
+  "defenses": [
+    {
+      "name": "TT-01-行シャッフル",
+      "path": "programs/defense/TT-01-行シャッフル/TT-01-行シャッフル.py",
+      "source": "sources/加工フェーズ/加工案/TT_20260912_基本加工4種/TT-01-行シャッフル.py",
+      "sha256": "a12e613d7d68c4370c03a039baf7b7bc9c108db2e121955ca38ff675964618af",
+      "assets": []
+    },
+    {
+      "name": "TT-比較-背景1NN",
+      "path": "programs/defense/TT-比較-背景1NN/TT-比較-背景1NN.py",
+      "source": "sources/加工フェーズ/加工案/TT_20260912_基本加工4種/TT-02-本戦Abg_1NN.py",
+      "sha256": "ea3d39c4a40c06cc4c0f46ab52e728359f90101f1df09d5864c8e1a87b6f926d",
+      "assets": []
+    },
+    {
+      "name": "TT-01-背景条件合成",
+      "path": "programs/defense/TT-01-背景条件合成/TT-01-背景条件合成.py",
+      "source": "sources/加工フェーズ/加工案/TT_20260920_合成3案_v1/TT-01-背景条件合成/TT-01-背景条件合成.py",
+      "sha256": "83423c4cba326a114210ca075699ceacdc717a90ee1066878dc4536c546f3d39",
+      "assets": []
+    },
+    {
+      "name": "TT-02-群集約合成",
+      "path": "programs/defense/TT-02-群集約合成/TT-02-群集約合成.py",
+      "source": "sources/加工フェーズ/加工案/TT_20260920_合成3案_v1/TT-02-群集約合成/TT-02-群集約合成.py",
+      "sha256": "0eedff9cec63713241690d5614de2041da4bb91960d443fc2251c21ed03b07d3",
+      "assets": []
+    },
+    {
+      "name": "TT-03-多元ドナー合成",
+      "path": "programs/defense/TT-03-多元ドナー合成/TT-03-多元ドナー合成.py",
+      "source": "sources/加工フェーズ/加工案/TT_20260920_合成3案_v1/TT-03-多元ドナー合成/TT-03-多元ドナー合成.py",
+      "sha256": "ce16551f808d04baa57938bb7f83dd46c7e1750c60cca0f41d15328c3ae66cd0",
+      "assets": []
+    },
+    {
+      "name": "seo-01-順位混合Cox調整",
+      "path": "programs/defense/seo-01-順位混合Cox調整/seo-01-順位混合Cox調整.py",
+      "source": "sources/加工フェーズ/加工案/seo-01/seo-01-順位混合Cox調整.py",
+      "sha256": "2a544aa9043511a7ef4530e67c7b06afdd68c8132c67c7a919c9311a5c5c0502",
+      "assets": []
+    },
+    {
+      "name": "seo-02-順位CopulaWald調整",
+      "path": "programs/defense/seo-02-順位CopulaWald調整/seo-02-順位CopulaWald調整.py",
+      "source": "sources/加工フェーズ/加工案/seo-02/seo-02-順位CopulaWald調整.py",
+      "sha256": "9e821fb134b9268af1d94b7439b98cab6993e283d8b7eb2118c3a3a2e8dad3e7",
+      "assets": []
+    },
+    {
+      "name": "seo-03-順位混合Wald調整",
+      "path": "programs/defense/seo-03-順位混合Wald調整/seo-03-順位混合Wald調整.py",
+      "source": "sources/加工フェーズ/加工案/seo-03/seo-03-順位混合Wald調整.py",
+      "sha256": "aa087465b188c307f6a8dd3fdfd136219e6250c873547bee288e3afb7be76162",
+      "assets": []
+    },
+    {
+      "name": "zhang_04_copula_bgtime",
+      "path": "programs/defense/zhang_04_copula_bgtime/zhang_04_copula_bgtime.py",
+      "source": "sources/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/code",
+      "sha256": "e9c035d4e9e7605f4bb4a76c037f1695274771955cf4ae53bb08c480919254da",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "20cce099938d9ebd4d5114cb6c96fcc0f3a0a2a5a68849ecea8cf2f4e6845b35"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "381901d258fb8200582400776cffc305b2fa9f1071c068fc07a68a59f1c2891b"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_05_conditional_bgtime",
+      "path": "programs/defense/zhang_05_conditional_bgtime/zhang_05_conditional_bgtime.py",
+      "source": "sources/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/code",
+      "sha256": "fa6ea075c57f876b9f7ba4a3cc0cc85c1c9c9217ffd09274c74aaa43a3dae7c2",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "20cce099938d9ebd4d5114cb6c96fcc0f3a0a2a5a68849ecea8cf2f4e6845b35"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "381901d258fb8200582400776cffc305b2fa9f1071c068fc07a68a59f1c2891b"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_06_mixture_btime",
+      "path": "programs/defense/zhang_06_mixture_btime/zhang_06_mixture_btime.py",
+      "source": "sources/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/code",
+      "sha256": "ab0e83db209dbb2464c91ae1436165f4627550e91be8c828be8c135f2c940e16",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "20cce099938d9ebd4d5114cb6c96fcc0f3a0a2a5a68849ecea8cf2f4e6845b35"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "381901d258fb8200582400776cffc305b2fa9f1071c068fc07a68a59f1c2891b"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_07_copula_calibrated",
+      "path": "programs/defense/zhang_07_copula_calibrated/zhang_07_copula_calibrated.py",
+      "source": "sources/加工フェーズ/加工案/zhang_07_08_09_utility095_package/zhang_07_08_09/code",
+      "sha256": "9094843a3756827892d556bcd904a75cb546f3a6d6db036357b418092f35d43b",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "d574a733dc7bac1968b99785bf061c164157cc4b6803f6149c328bbd40cced25"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "eccbd35bcc100cdd2819e51b3525a02a9e52a345e121b79e5a7cd5d84628a51e"
+        },
+        {
+          "name": "calibration.py",
+          "sha256": "30146df71f11f4077a8603a9afc5b66c078f48acc13b6358e60d123cf5910335"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_08_conditional_calibrated",
+      "path": "programs/defense/zhang_08_conditional_calibrated/zhang_08_conditional_calibrated.py",
+      "source": "sources/加工フェーズ/加工案/zhang_07_08_09_utility095_package/zhang_07_08_09/code",
+      "sha256": "1e3e6cd760657f1d22870efdce0b04958e08f8d7c09374c2a2d156335c4dda66",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "d574a733dc7bac1968b99785bf061c164157cc4b6803f6149c328bbd40cced25"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "eccbd35bcc100cdd2819e51b3525a02a9e52a345e121b79e5a7cd5d84628a51e"
+        },
+        {
+          "name": "calibration.py",
+          "sha256": "30146df71f11f4077a8603a9afc5b66c078f48acc13b6358e60d123cf5910335"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_09_mixture_calibrated",
+      "path": "programs/defense/zhang_09_mixture_calibrated/zhang_09_mixture_calibrated.py",
+      "source": "sources/加工フェーズ/加工案/zhang_07_08_09_utility095_package/zhang_07_08_09/code",
+      "sha256": "033c73550cd935b94d4555b609ff49db698b3be89d207a45517e2c448b00ebd0",
+      "assets": [
+        {
+          "name": "generate_three.py",
+          "sha256": "d574a733dc7bac1968b99785bf061c164157cc4b6803f6149c328bbd40cced25"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "eccbd35bcc100cdd2819e51b3525a02a9e52a345e121b79e5a7cd5d84628a51e"
+        },
+        {
+          "name": "calibration.py",
+          "sha256": "30146df71f11f4077a8603a9afc5b66c078f48acc13b6358e60d123cf5910335"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    },
+    {
+      "name": "zhang_11_normal_wald",
+      "path": "programs/defense/zhang_11_normal_wald/zhang_11_normal_wald.py",
+      "source": "sources/加工フェーズ/加工案/zhang_11_normal_wald_package/zhang_11_normal_wald_package/code",
+      "sha256": "24cc154d465911921aa8af8617bdcb6598df943f194b17546a8882b3c96ff6a0",
+      "assets": [
+        {
+          "name": "generate_normal_wald.py",
+          "sha256": "e94b2138ae460a7f57eb7f4aff143b2448431ed03b2900f9cb904088ee0d1a65"
+        },
+        {
+          "name": "generate.py",
+          "sha256": "2b2af52c9dc0f6bb9f3e3762e55be4bdf2c67fe071375b37289f9595dbba0c1e"
+        },
+        {
+          "name": "generate_three.py",
+          "sha256": "20cce099938d9ebd4d5114cb6c96fcc0f3a0a2a5a68849ecea8cf2f4e6845b35"
+        },
+        {
+          "name": "shared_methods.py",
+          "sha256": "381901d258fb8200582400776cffc305b2fa9f1071c068fc07a68a59f1c2891b"
+        },
+        {
+          "name": "schema.json",
+          "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+        }
+      ]
+    }
+  ],
+  "attacks": [
+    {
+      "name": "TT-01-部分属性照合",
+      "path": "programs/attack/TT-01-部分属性照合/TT-01-部分属性照合.py",
+      "source": "sources/加工フェーズ/攻撃案/TT_AIA3案_v1/TT-01-部分属性照合/TT-01-部分属性照合.py",
+      "sha256": "6297f0eac5c9d586a58aa03161722a80836f95a9eb782fecd0dfb2298cac61a2",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "TT-02-全体対応推定",
+      "path": "programs/attack/TT-02-全体対応推定/TT-02-全体対応推定.py",
+      "source": "sources/加工フェーズ/攻撃案/TT_AIA3案_v1/TT-02-全体対応推定/TT-02-全体対応推定.py",
+      "sha256": "5c64e682a52fc286066240f87d921e91449f1b69a5bf0290ac4d4d1c6ccf6714",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "TT-03-条件分布推定",
+      "path": "programs/attack/TT-03-条件分布推定/TT-03-条件分布推定.py",
+      "source": "sources/加工フェーズ/攻撃案/TT_AIA3案_v1/TT-03-条件分布推定/TT-03-条件分布推定.py",
+      "sha256": "067dd0d3fbb26d6da8c266c8858ef9e9b3eeab3772e8f412e8399083752817dc",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "seo-01-近傍対比と条件付時間窓",
+      "path": "programs/attack/seo-01-近傍対比と条件付時間窓/seo-01-近傍対比と条件付時間窓.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-01/seo-01-近傍対比と条件付時間窓.py",
+      "sha256": "7644e9e20fa3d043c4d5a0fc06a14fd7c05a04a401d1ed1a1e0c4a3f48f12cd6",
+      "assets": [],
+      "kind": "both"
+    },
+    {
+      "name": "seo-02-多尺度密度比と差分時間窓",
+      "path": "programs/attack/seo-02-多尺度密度比と差分時間窓/seo-02-多尺度密度比と差分時間窓.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-02/seo-02-多尺度密度比と差分時間窓.py",
+      "sha256": "f5ebe3d5fad771d7504c8aafce5d29861764cd090161a26fe3aa3f7c25d55511",
+      "assets": [],
+      "kind": "both"
+    },
+    {
+      "name": "seo-03-正則化生成比と全体割当",
+      "path": "programs/attack/seo-03-正則化生成比と全体割当/seo-03-正則化生成比と全体割当.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-03/seo-03-正則化生成比と全体割当.py",
+      "sha256": "85ff44af2282c1392cd19b9ee2db48f00c060630b7b63f3c0f4dc120a20ed666",
+      "assets": [],
+      "kind": "both"
+    },
+    {
+      "name": "seo-04a-多重縮小生成比MIA",
+      "path": "programs/attack/seo-04a-多重縮小生成比MIA/seo-04a-多重縮小生成比MIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-04/seo-04a-多重縮小生成比MIA.py",
+      "sha256": "6bd08607349abaf3d314310a9cf3f2f6db13d1a730e3c0f8ddcf5338f99602d6",
+      "assets": [
+        {
+          "name": "seo-03-正則化生成比と全体割当.py",
+          "sha256": "85ff44af2282c1392cd19b9ee2db48f00c060630b7b63f3c0f4dc120a20ed666"
+        }
+      ],
+      "kind": "mia"
+    },
+    {
+      "name": "seo-04b-容量付き全体割当AIA",
+      "path": "programs/attack/seo-04b-容量付き全体割当AIA/seo-04b-容量付き全体割当AIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-04/seo-04b-容量付き全体割当AIA.py",
+      "sha256": "673a4b8a7c125ed56b32208c1c81fbbf533f6a3b89acee6f2cafff9a81ba6fd9",
+      "assets": [
+        {
+          "name": "seo-03-正則化生成比と全体割当.py",
+          "sha256": "85ff44af2282c1392cd19b9ee2db48f00c060630b7b63f3c0f4dc120a20ed666"
+        }
+      ],
+      "kind": "aia"
+    },
+    {
+      "name": "seo-01-部分対応AIA",
+      "path": "programs/attack/seo-01-部分対応AIA/seo-01-部分対応AIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-いろんな攻撃/seo-01-部分対応AIA.py",
+      "sha256": "a49dd87b6815f1ae8a74169e406d5d9ae4236a9ea15830d5a9568589a810445a",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "seo-02-時間窓BoostingAIA",
+      "path": "programs/attack/seo-02-時間窓BoostingAIA/seo-02-時間窓BoostingAIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-いろんな攻撃/seo-02-時間窓BoostingAIA.py",
+      "sha256": "f829e38058d2b579bcc62e34404e72456d032d049c3c67e84616bb7a4607f89f",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "seo-03-Shadow窓順位AIA",
+      "path": "programs/attack/seo-03-Shadow窓順位AIA/seo-03-Shadow窓順位AIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-いろんな攻撃/seo-03-Shadow窓順位AIA.py",
+      "sha256": "88abd0452fcc712ea885d0405aeaafb80deb13507e3b7d134ef000a6e2459e67",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "seo-04-選別最近傍AIA",
+      "path": "programs/attack/seo-04-選別最近傍AIA/seo-04-選別最近傍AIA.py",
+      "source": "sources/加工フェーズ/攻撃案/seo-いろんな攻撃/seo-04-選別最近傍AIA.py",
+      "sha256": "972e9cb55a92c2b606b392397ca485237d533ac7a257683b5a74e5eb16c7f9ce",
+      "assets": [],
+      "kind": "aia"
+    },
+    {
+      "name": "公式参照1NN_AIA",
+      "path": "programs/attack/公式参照1NN_AIA/公式参照1NN_AIA.py",
+      "source": "official kit AIA; I/O adapter",
+      "sha256": "8c33da3f52809ee660d2f9b8f8b5c13e81a1db28a4d71bd5e644109432e92d8a",
+      "assets": [
+        {
+          "name": "official_aia.py",
+          "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a"
+        }
+      ],
+      "kind": "aia"
+    }
+  ],
+  "fixed": [
+    {
+      "name": "Z09_original",
+      "path": "programs/fixed/Z09_original/Z09_original.py",
+      "source": "本戦/バトル/有用性維持_焼きなまし試行_20260922/bases/Z09/C.csv",
+      "sha256": "cdb8b3a6ba322c07e6cce12335ddb0bb3144ecc1fa02ba3ee7fd58c2d2e0e609",
+      "assets": [
+        {
+          "name": "fixed.csv",
+          "sha256": "9af259ce010b3db9fa9482435662e3f9db290f48a2529c8a2c4d1dbde4babafc"
+        }
+      ]
+    },
+    {
+      "name": "labs_n50_r3",
+      "path": "programs/fixed/labs_n50_r3/labs_n50_r3.py",
+      "source": "本戦/加工フェーズ/共有用/GitHub_Z09属性3候補_20260923/TT_20260923_Z09属性交換3候補_v1/C_labs_n50_r3.csv",
+      "sha256": "cdb8b3a6ba322c07e6cce12335ddb0bb3144ecc1fa02ba3ee7fd58c2d2e0e609",
+      "assets": [
+        {
+          "name": "fixed.csv",
+          "sha256": "d491177dfd8549e1c05d147dc53bf2385bc1399aa9afb29203432b9d96b30a07"
+        }
+      ]
+    },
+    {
+      "name": "prefecture_n50_r1",
+      "path": "programs/fixed/prefecture_n50_r1/prefecture_n50_r1.py",
+      "source": "本戦/加工フェーズ/共有用/GitHub_Z09属性3候補_20260923/TT_20260923_Z09属性交換3候補_v1/C_prefecture_n50_r1.csv",
+      "sha256": "cdb8b3a6ba322c07e6cce12335ddb0bb3144ecc1fa02ba3ee7fd58c2d2e0e609",
+      "assets": [
+        {
+          "name": "fixed.csv",
+          "sha256": "4f935b6f20b26d2bd6374f8ea28201825f25f455dd8e649cca64dca7964a8f21"
+        }
+      ]
+    },
+    {
+      "name": "combined_n10_r3",
+      "path": "programs/fixed/combined_n10_r3/combined_n10_r3.py",
+      "source": "本戦/加工フェーズ/共有用/GitHub_Z09属性3候補_20260923/TT_20260923_Z09属性交換3候補_v1/C_combined_n10_r3.csv",
+      "sha256": "cdb8b3a6ba322c07e6cce12335ddb0bb3144ecc1fa02ba3ee7fd58c2d2e0e609",
+      "assets": [
+        {
+          "name": "fixed.csv",
+          "sha256": "5bd562161b10428a162aaf58c12413a92cc40d4b9a8364f9126a2060f2f0003a"
+        }
+      ]
+    }
+  ]
+}

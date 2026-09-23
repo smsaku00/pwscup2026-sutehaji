@@ -1,0 +1,148 @@
+{
+  "source_commit": "b388da9ddc583961d26c706a554e6dd475bc4fb5",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1350,
+      "sha256": "4fec28ff8060950d5a1b31038996f16583a9a7f873bd5fbc7bbb49174f5de0f6"
+    },
+    {
+      "path": "summary/0921同条件980比較.csv",
+      "bytes": 81133,
+      "sha256": "d6de6724780667b9a7ddb98b5b77d961d4333e65cd2eca0ecf3d0aff36a4aea4"
+    },
+    {
+      "path": "summary/AIAパネル別攻撃最大.csv",
+      "bytes": 26302,
+      "sha256": "e99cf47d4b8d1a0ff2763acc003e96eec8377eec34988af9a45340325f0f9efb"
+    },
+    {
+      "path": "summary/AIA全2085比較.csv",
+      "bytes": 240583,
+      "sha256": "e6f86e97de6bcb6a49e9922a335cf01e319808f617c3ecf138a963195164464a"
+    },
+    {
+      "path": "summary/C非依存_全員10年.csv",
+      "bytes": 485,
+      "sha256": "c32765311ce52ccf9f4442047a52716f08c1d3ce79d0679823393c1411b3d6b2"
+    },
+    {
+      "path": "summary/MIA全76比較.csv",
+      "bytes": 7557,
+      "sha256": "fb5eb712ccfc3ba6c37d549634a5009a99b523d27b7fbf86568a321cffd41e50"
+    },
+    {
+      "path": "summary/zhang04対11_120比較.csv",
+      "bytes": 6835,
+      "sha256": "3d5213749e5e8b8ac749ef8ee65bd8c21f798234e7979ce4fe162a51cd412dc3"
+    },
+    {
+      "path": "summary/パネル生成Cの有用性.csv",
+      "bytes": 58319,
+      "sha256": "8b9f2056987db3ac3df07bccb7ef570133bae9fd7cc3a39419caaadbea329126"
+    },
+    {
+      "path": "summary/全体集計.xlsx",
+      "bytes": 160868,
+      "sha256": "c5b36bc4436745c10baac12a55bf44759f6ad173af6aa3a0da9c7b31395c771a"
+    },
+    {
+      "path": "summary/加工15案_比較図.png",
+      "bytes": 175742,
+      "sha256": "e8719b5efae252617e96e9337a34e58b154152b85b5bccad1d586010ed8a597e"
+    },
+    {
+      "path": "summary/加工15案の比較.csv",
+      "bytes": 3463,
+      "sha256": "6b1bb6918f3005d1f4eeeaee39c35eeaccb0cd0192cb4b74dbcf39e02c7ed76b"
+    },
+    {
+      "path": "summary/固定C4案_比較図.png",
+      "bytes": 85886,
+      "sha256": "38106e4a0ae065dfdef4ff20a51fc3524d869c1e36b02096784936430dad72bd"
+    },
+    {
+      "path": "summary/固定C4案の比較.csv",
+      "bytes": 601,
+      "sha256": "fb11a04b4e271f154ba5fbcc29a5a56b6c1721ce7e22f172e8570eab9335aaa6"
+    },
+    {
+      "path": "summary/攻撃別成績.csv",
+      "bytes": 1005,
+      "sha256": "d12662fdf7bb25625bd424dd115168d43b74a2135abc41f1b66ea8678814c170"
+    },
+    {
+      "path": "summary/本戦全入力Cの有用性.csv",
+      "bytes": 3772,
+      "sha256": "8c8441d79693effabb6af4754f8cc63c66a77ff35373a4ae04884db99566e977"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 4292,
+      "sha256": "c9a6e379d26deeb04afe8eb6b1dc9feffdd1108e8bf5656015c0b166c3dfc283"
+    },
+    {
+      "path": "条件と検証/engine_changes.json",
+      "bytes": 394,
+      "sha256": "9359d1fce8df14a4df70b27e86864012acf21cd20183e666a9f4df0bbb8fb262"
+    },
+    {
+      "path": "条件と検証/programs.json",
+      "bytes": 16789,
+      "sha256": "53c6132788cc0384dfadac8bad8fee8dc5d7ae4d97fe75c4f7086f627d597fd1"
+    },
+    {
+      "path": "条件と検証/runtime_versions.json",
+      "bytes": 417,
+      "sha256": "7743bae2a67279ea7a9b4546074a9da7f755e93d53709b2e46d5e81e148d604e"
+    },
+    {
+      "path": "条件と検証/source_manifest.json",
+      "bytes": 23744,
+      "sha256": "34c3afcdb872920027d4423549e2ed1223adfaa40874e288e5d053edf2ded58b"
+    },
+    {
+      "path": "条件と検証/verification.json",
+      "bytes": 2376,
+      "sha256": "c6f1703cb2f843af59c660cb09abbf868b5e963366bf8f5b1f6ffb456df59ae8"
+    },
+    {
+      "path": "条件と検証/workbook_export_verification.json",
+      "bytes": 188,
+      "sha256": "23dce34bb093eea2bd7cb87ff81ab9598b5ca940602c6251459da0cb847fb377"
+    },
+    {
+      "path": "条件と検証/使用プログラム一覧.csv",
+      "bytes": 6358,
+      "sha256": "d67dca47943de4fe940f23c525b445304514b58fcd2d7b716052f55bb9335ab0"
+    },
+    {
+      "path": "条件と検証/入力とコードのSHA256.json",
+      "bytes": 25715,
+      "sha256": "f57bb9c90590ce512c9949c4ab988746e171a7478096bafef0990f1ee285fb48"
+    },
+    {
+      "path": "条件と検証/実行器テスト.json",
+      "bytes": 132,
+      "sha256": "54f3b2befec7e9f5fdc6f67224b2c7cb63322c2f69034230e5d86d0c12d859da"
+    },
+    {
+      "path": "条件と検証/実行条件.md",
+      "bytes": 2685,
+      "sha256": "63e66f71db58df98ba4262a1066478a56d5a3d5af9f8b025d95db22b883de6cd"
+    },
+    {
+      "path": "説明.md",
+      "bytes": 9432,
+      "sha256": "ee53768955c70443c04482e544fe61252feecbfe326c96f8d009e3a215d9ee41"
+    }
+  ],
+  "excluded": [
+    "individual-level data",
+    "truth",
+    "individual predictions",
+    "generated C",
+    "tokens",
+    "work logs"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "previous_sha256": "b2b0780a2fc3deb3ca90b7f1a1afafb5d03ecad450cf6c0c96689777ffea52eb",
+  "current_sha256": "c681be443ca257757fbd7bdd1f74435f6df785fea1a0c8ffeb7e8a03dd27ab94",
+  "changes": [
+    "fixed C CSV asset whitelist",
+    "utility novel reference: official full A_bg",
+    "CSV-only intermediate reports"
+  ],
+  "attack_scoring_changed": false,
+  "generation_logic_changed": false
+}
