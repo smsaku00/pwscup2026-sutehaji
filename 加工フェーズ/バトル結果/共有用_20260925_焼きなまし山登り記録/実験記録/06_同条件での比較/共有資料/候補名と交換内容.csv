@@ -1,0 +1,9 @@
+﻿候補,正式名,元の案,総交換回数,交換内容,交換した行（CSVのデータ行、1始まり）
+Zhang11（元のC）,Zhang11（元のC）,Zhang11,0,元のC,
+Zhang04（元のC）,Zhang04（元のC）,Zhang04,0,元のC,
+初回合格案,Zhang04-HC1,Zhang04,1,年齢×1,age: 43と960
+長時間案1,Zhang11-HCv2-1,Zhang11,1,TG×1,TG: 316と1049
+長時間案2,Zhang11-HCv2-2,Zhang11,1,TG×1,TG: 43と142
+長時間案3,Zhang04-HCv2-1,Zhang04,1,年齢×1,age: 43と205
+長時間案4,Zhang04-HCv2-2,Zhang04,3,TG×1＋time×2,TG: 152と279 / time: 309と380 / time: 131と567
+長時間案5,Zhang04-HCv2-3,Zhang04,4,年齢×1＋time×3,age: 43と960 / time: 69と181 / time: 68と131 / time: 380と476

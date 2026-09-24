@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "cases": 8,
+  "new_AIA_evaluations": 960,
+  "new_MIA_evaluations": 192,
+  "AIA_reference_prediction_checks": 792,
+  "MIA_reference_prediction_checks": 132,
+  "all_panels_same_for_all_candidates": true,
+  "previous_C_preserved": true,
+  "official_anonymity_predicted": false
+}

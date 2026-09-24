@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "new_aia_panels": 40,
+  "new_mia_panels": 20,
+  "old_generator_reproduction": 2,
+  "fixed_cases": 7,
+  "mia_eligible_count": 9606,
+  "seeds_fixed_before_results": true
+}

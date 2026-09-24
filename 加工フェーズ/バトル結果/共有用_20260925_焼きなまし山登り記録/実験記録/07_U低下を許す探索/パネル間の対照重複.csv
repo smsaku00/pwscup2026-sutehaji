@@ -1,0 +1,16 @@
+﻿パネル1,パネル2,共通対照人数
+dev1,dev2,217
+dev1,holdout,224
+dev1,small1,95
+dev1,small2,79
+dev1,small3,93
+dev2,holdout,220
+dev2,small1,94
+dev2,small2,74
+dev2,small3,84
+holdout,small1,99
+holdout,small2,93
+holdout,small3,90
+small1,small2,43
+small1,small3,47
+small2,small3,41

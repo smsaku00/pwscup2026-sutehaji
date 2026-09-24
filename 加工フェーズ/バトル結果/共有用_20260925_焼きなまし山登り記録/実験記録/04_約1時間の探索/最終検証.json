@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "candidates_checked": 4,
+  "all_final_C_cli_verified": true,
+  "official_anonymity_predicted": false,
+  "eligible": 1,
+  "recommended": [
+    {
+      "候補": "Zhang04-HC1",
+      "内部ID": "Zhang04-S01-B01-P1-00683-confirm",
+      "ベース": "Zhang04",
+      "総交換回数": 1,
+      "U維持": true,
+      "探索2組で改善": true,
+      "確認387人で改善": true,
+      "確認163人3組で悪化なし": true,
+      "MIA全12比較で悪化なし": true,
+      "採用条件合格": true
+    }
+  ]
+}

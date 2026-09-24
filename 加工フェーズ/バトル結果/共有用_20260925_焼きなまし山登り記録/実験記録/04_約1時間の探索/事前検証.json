@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "cli_comparisons": 48,
+  "cache_comparisons": 120,
+  "mia_cli_checks": 4,
+  "exact_hit_masks": true
+}

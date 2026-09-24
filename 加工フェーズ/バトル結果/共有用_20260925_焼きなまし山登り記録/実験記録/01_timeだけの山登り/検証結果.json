@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "engine_sha256": "58254c296c0b51cf272c28d9cde7bcfb30d84598ff1702d1038b2f5d28f340c7",
+  "source_hashes_unchanged": true,
+  "records": [
+    {
+      "base": "Zhang11",
+      "replayed_swaps": 6,
+      "steps": 154,
+      "monotone": true,
+      "strict_acceptance": true,
+      "original_columns_unchanged": true
+    },
+    {
+      "base": "Zhang04",
+      "replayed_swaps": 8,
+      "steps": 171,
+      "monotone": true,
+      "strict_acceptance": true,
+      "original_columns_unchanged": true
+    },
+    {
+      "base": "Seo03",
+      "replayed_swaps": 2,
+      "steps": 247,
+      "monotone": true,
+      "strict_acceptance": true,
+      "original_columns_unchanged": true
+    }
+  ],
+  "original_C_and_swap_cli_checks": 18,
+  "final_cli_checks": 9,
+  "full_saved_C_utility_checked": true,
+  "official_Anon_calculated": false
+}

@@ -1,0 +1,705 @@
+{
+  "passed": true,
+  "candidates": 450,
+  "attack_scores": 5400,
+  "full_utility_scores": 450,
+  "candidate_structure_validated": true,
+  "inputs_unchanged": true,
+  "baseline_predictions_compared": 36,
+  "selected_candidate_cli_comparisons": 36,
+  "checks": [
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A12",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A12/公式参照1NN_AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A12/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A12/F_aia_公式参照1NN_AIA.csv",
+      "prediction_sha256": "b3790f79ce76eb17558cd21a1ad6d0d40e4e513b386017010a7e9359b6b49d6d",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A06",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A06/seo-03-正則化生成比と全体割当.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A06/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A06/F_aia_seo-03-正則化生成比と全体割当.csv",
+      "prediction_sha256": "dc64670162f79121a45587007785255a84d7b60607ab51df855a21935cea0e8f",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A02",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A02/TT-02-全体対応推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A02/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A02/F_aia_TT-02-全体対応推定.csv",
+      "prediction_sha256": "d8b6bfa9d84fe48a873f7f738e9940a263e8b3959a64dbc8c187700e7b8cb026",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A07",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A07/seo-04b-容量付き全体割当AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A07/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A07/F_aia_seo-04b-容量付き全体割当AIA.csv",
+      "prediction_sha256": "70b4f4d1a43e9ca480990c82e95a7ca7cf648263120bfaf411893a6040348166",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A01",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A01/TT-01-部分属性照合.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A01/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A01/F_aia_TT-01-部分属性照合.csv",
+      "prediction_sha256": "a6b2925d07fefd10b16891fb3235b23c89a72c98354a06cd6a50108e0ddb7c11",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A11",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A11/seo-04-選別最近傍AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A11/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A11/F_aia_seo-04-選別最近傍AIA.csv",
+      "prediction_sha256": "2fba37131f268012c4bbf0d9a709523550f10bd3b8c96bf50b217f2a605a6615",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A08",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A08/seo-01-部分対応AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A08/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A08/F_aia_seo-01-部分対応AIA.csv",
+      "prediction_sha256": "b2192469290a2af192c87cccd72b477d0a8b41227db488cc214ab3cd7414809c",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A03",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A03/TT-03-条件分布推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A03/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A03/F_aia_TT-03-条件分布推定.csv",
+      "prediction_sha256": "b979e677626ca6ee2061561ece73d2d3d5a4ffdc3fa82cfca29d4afb60dd6b53",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A09",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A09/seo-02-時間窓BoostingAIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A09/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A09/F_aia_seo-02-時間窓BoostingAIA.csv",
+      "prediction_sha256": "ae9804015c0c63e5a4cbcffce511514119afc90186f65991496ac60289fd4ff3",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A10",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A10/seo-03-Shadow窓順位AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A10/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A10/F_aia_seo-03-Shadow窓順位AIA.csv",
+      "prediction_sha256": "f87039763f6ec195a7b85d858630436a7cde70f8ec80d40e7d85ebafa975f95e",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A04",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A04/seo-01-近傍対比と条件付時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A04/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A04/F_aia_seo-01-近傍対比と条件付時間窓.csv",
+      "prediction_sha256": "813fb0c56c7aecfd72d64a352e150624a0f61f7b7959c82e95c91bb3926e43e2",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang11-TG-006",
+      "attack": "A05",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A05/seo-02-多尺度密度比と差分時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A05/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang11-TG-006/A05/F_aia_seo-02-多尺度密度比と差分時間窓.csv",
+      "prediction_sha256": "b8db9e85a3d18661539cf2888d6dde833cfd2c62a9462c9620bf9860dd922fec",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A12",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A12/公式参照1NN_AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A12/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A12/F_aia_公式参照1NN_AIA.csv",
+      "prediction_sha256": "fd25fdcf671350eff0e8603e96b2a787c31ca06cb5ef73fa9b74e148f17268e6",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A06",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A06/seo-03-正則化生成比と全体割当.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A06/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A06/F_aia_seo-03-正則化生成比と全体割当.csv",
+      "prediction_sha256": "25a4169bcc1d7b5f7b23435134efe2dc0793501e09099778e3ee75e7f11ea317",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A02",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A02/TT-02-全体対応推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A02/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A02/F_aia_TT-02-全体対応推定.csv",
+      "prediction_sha256": "25e2183ee85afe1ef22bcebaf8bc5f29d31f4a1853d732b68db3670d1435d42d",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A07",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A07/seo-04b-容量付き全体割当AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A07/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A07/F_aia_seo-04b-容量付き全体割当AIA.csv",
+      "prediction_sha256": "d4358993213dc8fb394e2ab0560e38b72a3b000644a7d443a103d1cf525a2f23",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A01",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A01/TT-01-部分属性照合.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A01/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A01/F_aia_TT-01-部分属性照合.csv",
+      "prediction_sha256": "63a2567bb8bf4a9252e407c577cb26087beaea76165dce845c4f98c28564d7b4",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A11",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A11/seo-04-選別最近傍AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A11/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A11/F_aia_seo-04-選別最近傍AIA.csv",
+      "prediction_sha256": "2fbb7fd10c87d04160abff1ac7bcdfabe178d78c8ec1fbe7192cd9acf61599a9",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A08",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A08/seo-01-部分対応AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A08/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A08/F_aia_seo-01-部分対応AIA.csv",
+      "prediction_sha256": "6ea5d014449de1a27e0be86c06cf31325092d1ddab9fa90e4ec47cd92302aa3a",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A03",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A03/TT-03-条件分布推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A03/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A03/F_aia_TT-03-条件分布推定.csv",
+      "prediction_sha256": "49478dd64165ce4ec86b7eaa24ce9e701588440f8d59b34bc8677ec205004507",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A09",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A09/seo-02-時間窓BoostingAIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A09/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A09/F_aia_seo-02-時間窓BoostingAIA.csv",
+      "prediction_sha256": "55abeb71a956dda91d8485ae2751fa49d8c3083b718f06485a017e484bbb0764",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A10",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A10/seo-03-Shadow窓順位AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A10/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A10/F_aia_seo-03-Shadow窓順位AIA.csv",
+      "prediction_sha256": "2d6a0abc0a810e0f0dbc3795c53c1fdc83da5c4c0afc49f05f4dc13bb14923b7",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A04",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A04/seo-01-近傍対比と条件付時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A04/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A04/F_aia_seo-01-近傍対比と条件付時間窓.csv",
+      "prediction_sha256": "abf6fca3ccd944672ae29d6766cd0bf8cfa865155ba5f6a2764c9743e2010ea0",
+      "returncode": 0
+    },
+    {
+      "candidate": "Zhang04-time-011",
+      "attack": "A05",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A05/seo-02-多尺度密度比と差分時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A05/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Zhang04-time-011/A05/F_aia_seo-02-多尺度密度比と差分時間窓.csv",
+      "prediction_sha256": "9fe16c06013db00cf1aeeb577cfbd714137eb332482db8859d5bc03384ee7d68",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A12",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A12/公式参照1NN_AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A12/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A12/F_aia_公式参照1NN_AIA.csv",
+      "prediction_sha256": "9fc72f01843bc86f576f585d4b916c7770823496022111bfd64ce25d14998ea9",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A06",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A06/seo-03-正則化生成比と全体割当.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A06/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A06/F_aia_seo-03-正則化生成比と全体割当.csv",
+      "prediction_sha256": "650f47aec1c0f48677f89038daba91f219ce910d908fc69c548520dc905cbf00",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A02",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A02/TT-02-全体対応推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A02/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A02/F_aia_TT-02-全体対応推定.csv",
+      "prediction_sha256": "02a907c0e4618124fb7ed9f4069f30211d6e11cbf7ef653f1728e87dc602a3eb",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A07",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A07/seo-04b-容量付き全体割当AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A07/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A07/F_aia_seo-04b-容量付き全体割当AIA.csv",
+      "prediction_sha256": "40878a480298e95689bf8b9403a98e337109513525f4274b6ee0a7cb473a6ef5",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A01",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A01/TT-01-部分属性照合.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A01/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A01/F_aia_TT-01-部分属性照合.csv",
+      "prediction_sha256": "99c5a1e1f9b2aeffb815aa9ccf40bea7b66306ed97a76b67fbc3d42ab2a6641c",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A11",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A11/seo-04-選別最近傍AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A11/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A11/F_aia_seo-04-選別最近傍AIA.csv",
+      "prediction_sha256": "472f52ac061b463339ac48bfa5fbde8132215302caadbeca8b62c22608bad481",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A08",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A08/seo-01-部分対応AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A08/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A08/F_aia_seo-01-部分対応AIA.csv",
+      "prediction_sha256": "c6228f4c970d7dce20f4c36c8316c9837addb7e9d158e295e2bc94f9d0738771",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A03",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A03/TT-03-条件分布推定.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A03/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A03/F_aia_TT-03-条件分布推定.csv",
+      "prediction_sha256": "17b7bd8324a54aa3c0734ef53328bbaff648bef3e64653ffa942046ad36c4550",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A09",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A09/seo-02-時間窓BoostingAIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A09/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A09/F_aia_seo-02-時間窓BoostingAIA.csv",
+      "prediction_sha256": "52ffa468e07192f8e8afe2c8e788746d1027be6757b960a4fe6d46dab14d391f",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A10",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A10/seo-03-Shadow窓順位AIA.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A10/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A10/F_aia_seo-03-Shadow窓順位AIA.csv",
+      "prediction_sha256": "d22f3b16752dfff71d0ead9043b6296d8a196f57d4e54a6123aa2db0779140ac",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A04",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A04/seo-01-近傍対比と条件付時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A04/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A04/F_aia_seo-01-近傍対比と条件付時間窓.csv",
+      "prediction_sha256": "b7c89f60c699dadd20301855b3b8ff167d4bf05e9848451de12ebfb1fbbde386",
+      "returncode": 0
+    },
+    {
+      "candidate": "Seo03-SBP-020",
+      "attack": "A05",
+      "passed": true,
+      "command": [
+        "/Users/taisei1105/pws2026-local/スターターキット/初版/starter/.venv/bin/python",
+        "-B",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A05/seo-02-多尺度密度比と差分時間窓.py",
+        "--b",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/B_attacker.csv",
+        "--a-bg",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/public/A_bg.csv",
+        "--targets",
+        "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A05/targets.json"
+      ],
+      "prediction": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/初回450候補_ベース順次_16並列/final_cli/Seo03-SBP-020/A05/F_aia_seo-02-多尺度密度比と差分時間窓.csv",
+      "prediction_sha256": "9f982eb356f4db1662dd5ad9c70065f2123490d2778f2f7b5449d6d953201463",
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 396.23989545786753,
+  "independent_panel_validation": false,
+  "previous_pilot_results_reused": false,
+  "optimization_parity_checks": 21,
+  "sequential_base_order": [
+    "Zhang11",
+    "Zhang04",
+    "Seo03"
+  ]
+}

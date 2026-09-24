@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "cases": 12,
+  "new_candidates": 5,
+  "aia_scores": 1728,
+  "mia_scores": 432,
+  "rare_attack_predictions": 48,
+  "rare_metrics": 144,
+  "matched_prior_checks": 1267,
+  "rare_controls_true_labels": true,
+  "rare_source_exact_overlap_B": 0,
+  "rare_source_exact_overlap_background": 0,
+  "swap_smoothing_commutes_all_bases": true,
+  "input_hashes_unchanged": true,
+  "seconds": 372.4048746661283
+}

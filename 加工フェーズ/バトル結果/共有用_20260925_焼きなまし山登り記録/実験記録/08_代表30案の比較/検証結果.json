@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": 30,
+  "aia_scores": 1080,
+  "panels": 3,
+  "matched_prediction_checks": 192,
+  "max_prediction_difference": 0.0,
+  "input_hashes_unchanged": true,
+  "seconds": 107.47889358410612
+}

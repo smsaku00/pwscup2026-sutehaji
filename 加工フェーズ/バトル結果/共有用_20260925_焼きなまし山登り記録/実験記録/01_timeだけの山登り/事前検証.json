@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "engine_sha256": "58254c296c0b51cf272c28d9cde7bcfb30d84598ff1702d1038b2f5d28f340c7",
+  "records": [
+    {
+      "base": "Zhang11",
+      "prediction_comparisons": 6,
+      "hit_masks_equal": true,
+      "full_and_fast_utility_equal": true,
+      "initial": {
+        "value": 0.11106752013214848,
+        "scores": {
+          "A02": {
+            "AIA": 0.05331410353726887,
+            "target_rate": 0.8383069973914711,
+            "control_rate": 0.8292010019239846,
+            "target_hits": 324,
+            "control_hits": 319
+          },
+          "A06": {
+            "AIA": 0.11106752013214848,
+            "target_rate": 0.8437180092206047,
+            "control_rate": 0.82419138200167,
+            "target_hits": 326,
+            "control_hits": 317
+          },
+          "A07": {
+            "AIA": 0.10996611760396408,
+            "target_rate": 0.8387083892982901,
+            "control_rate": 0.8187803701725364,
+            "target_hits": 324,
+            "control_hits": 315
+          }
+        }
+      }
+    },
+    {
+      "base": "Zhang04",
+      "prediction_comparisons": 6,
+      "hit_masks_equal": true,
+      "full_and_fast_utility_equal": true,
+      "initial": {
+        "value": 0.14335668238774102,
+        "scores": {
+          "A02": {
+            "AIA": 0.040998937300743464,
+            "target_rate": 0.836203579337133,
+            "control_rate": 0.8292010019239846,
+            "target_hits": 323,
+            "control_hits": 319
+          },
+          "A06": {
+            "AIA": 0.12130351326198151,
+            "target_rate": 0.8433166173137857,
+            "control_rate": 0.8216865720405127,
+            "target_hits": 326,
+            "control_hits": 316
+          },
+          "A07": {
+            "AIA": 0.14335668238774102,
+            "target_rate": 0.8408118073526284,
+            "control_rate": 0.814172142157041,
+            "target_hits": 325,
+            "control_hits": 313
+          }
+        }
+      }
+    },
+    {
+      "base": "Seo03",
+      "prediction_comparisons": 6,
+      "hit_masks_equal": true,
+      "full_and_fast_utility_equal": true,
+      "initial": {
+        "value": 0.13384158415841577,
+        "scores": {
+          "A02": {
+            "AIA": 0.13384158415841577,
+            "target_rate": 0.8412131992594476,
+            "control_rate": 0.8166769521181981,
+            "target_hits": 325,
+            "control_hits": 314
+          },
+          "A06": {
+            "AIA": 0.008424530249845508,
+            "target_rate": 0.8256724870221804,
+            "control_rate": 0.82419138200167,
+            "target_hits": 320,
+            "control_hits": 317
+          },
+          "A07": {
+            "AIA": 0.021742574257425627,
+            "target_rate": 0.8206628670998658,
+            "control_rate": 0.8166769521181981,
+            "target_hits": 318,
+            "control_hits": 314
+          }
+        }
+      }
+    }
+  ]
+}

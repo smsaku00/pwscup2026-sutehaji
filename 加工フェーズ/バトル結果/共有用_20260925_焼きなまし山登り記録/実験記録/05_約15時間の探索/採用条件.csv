@@ -1,0 +1,6 @@
+﻿候補,内部ID,ベース,総交換回数,U維持,探索2組で改善,確認387人で改善,確認163人3組で悪化なし,MIA全12比較で悪化なし,採用条件合格
+Zhang11-HCv2-1,Zhang11-R00070-P1-0549-confirm,Zhang11,1,True,True,True,True,False,False
+Zhang11-HCv2-2,seed-Zhang11-00-confirm,Zhang11,1,True,True,True,False,True,False
+Zhang04-HCv2-3,Zhang04-R00012-P2-0374-confirm,Zhang04,4,True,True,True,False,False,False
+Zhang04-HCv2-2,Zhang04-R00029-P3-0434-confirm,Zhang04,3,True,True,True,False,False,False
+Zhang04-HCv2-1,Zhang04-R00051-P1-0064-confirm,Zhang04,1,True,True,True,False,True,False

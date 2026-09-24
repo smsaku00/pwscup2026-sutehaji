@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_hashes": true,
+  "source_record_comparisons": 4278,
+  "original_panels": 10,
+  "new_development_panels": 3,
+  "final_panels": 6,
+  "final_same_member_comparisons": 3,
+  "same_prefecture_age_band_exception_per_panel": 1,
+  "saved_attack_jobs": 558,
+  "background_samples_per_method": 10,
+  "reference_baseline_trials": 1000,
+  "final_candidates": 3,
+  "final_C_attack_comparisons": 432,
+  "full_utility_verified": true,
+  "selection_uses_final_results": false,
+  "official_phi_applied": false,
+  "official_Anon_calculated": false,
+  "code_hashes": {
+    "探索.py": "abcb9ea2e838f28b1d3377fad2a6aa667da93f325fdb49cfbf4bd41a84f99213",
+    "背景基準.py": "1a67d6f07d930e6387b886ddbc7a569ccb61f7e9df9b35816dba65ef3febd1e5",
+    "準備.py": "cc1bb151e0ebcc3474ac311ab404f9e305158d428b195a3a975a070f8b085893",
+    "実行.py": "721d815fd78107a9e8f17b05f32008b850cdc5053897eeb712b631930829597f",
+    "評価.py": "4dd946a7de21c1c285875f9dad67426f32b07951ca61d178c50398fa497b9abd",
+    "common.py": "84e83b859913b168d3e7d0426dc634eaac966aeeaa5346243d847a142322ee9c",
+    "探索_主要攻撃.py": "eba885e42c9928394b1fdcf15df138b18314d5086e60297da447abcf1aee8702",
+    "分析.py": "caf05c70b3bdece758086da1253b3d124061767996acded814d9790b3d0f59e9",
+    "報告.py": "a07f09de53488f16cdde285377ccf21de292bc8fae9f649a4a6b6bbe96a0c3b3",
+    "主要攻撃.py": "68459bdb5536ed6a2844b6fe7c277722f446619ff362c3c2a42f5682dacf0fdf"
+  }
+}

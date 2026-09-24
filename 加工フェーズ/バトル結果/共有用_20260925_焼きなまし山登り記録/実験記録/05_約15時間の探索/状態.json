@@ -1,0 +1,45 @@
+{
+  "started_epoch": 1790193770.804011,
+  "status": "complete",
+  "stage": "完了",
+  "phase_index": 6,
+  "phase_total": 6,
+  "pid": 56684,
+  "target_end_epoch": 1790247770.804011,
+  "updated_epoch": 1790246546.639939,
+  "search_end_epoch": 1790245970.804011,
+  "base_deadlines": {
+    "Zhang11": 1790228594.9962287,
+    "Zhang04": 1790245970.804011
+  },
+  "schedule_created_epoch": 1790193843.380664,
+  "previous_search_candidates": 8400,
+  "new_search_candidates": 316800,
+  "base": "Zhang04",
+  "batch_done": 4,
+  "batch_total": 4,
+  "attack_calls_batch": 288,
+  "batch_outcomes": {
+    "全攻撃を採点済み": 4
+  },
+  "latest": "6組で全12攻撃を確認: 4/4",
+  "round": 54,
+  "swaps": "1 / 5",
+  "base_deadline_epoch": 1790245970.804011,
+  "best_AIA": 0.0996599362380453,
+  "U_floor": 0.9219987812309569,
+  "base_candidates": 97200,
+  "no_gain_rounds": 0,
+  "active_parents": [
+    "original-Zhang04",
+    "Zhang04-R00012-P2-0374",
+    "Zhang04-R00053-P3-0111"
+  ],
+  "per_base_candidates": {
+    "Zhang11": 219600,
+    "Zhang04": 97200
+  },
+  "mia_done": 84,
+  "mia_total": 84,
+  "elapsed_seconds": 52775.83592295647
+}

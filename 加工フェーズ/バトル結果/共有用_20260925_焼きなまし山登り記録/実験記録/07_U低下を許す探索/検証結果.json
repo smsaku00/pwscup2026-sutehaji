@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "unique_confirmed_C": 4,
+  "AIA_confirmation_evaluations": 192,
+  "MIA_confirmation_evaluations": 48,
+  "frozen_inputs_unchanged": true,
+  "unused_panel_seed": 202609242223,
+  "selected_before_holdout": true,
+  "elapsed_seconds": 994.0389640331268
+}

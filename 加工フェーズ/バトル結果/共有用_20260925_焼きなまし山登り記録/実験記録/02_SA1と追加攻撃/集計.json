@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Zhang11-SA1",
+    "U": 0.9219987812309569,
+    "additional_improved": 0,
+    "additional_worse": 4,
+    "additional_same": 5,
+    "other9_before": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 0.10114322691975726,
+      "max_attacks": [
+        "seo-02-多尺度密度比と差分時間窓"
+      ]
+    },
+    "other9_after": {
+      "min": 0.0,
+      "median": 0.038451584975085155,
+      "max": 0.10114322691975726,
+      "max_attacks": [
+        "seo-02-多尺度密度比と差分時間窓"
+      ]
+    },
+    "all12_before": {
+      "min": 0.0,
+      "median": 0.04715652041900617,
+      "max": 0.11106752013214848,
+      "max_attacks": [
+        "seo-03-正則化生成比と全体割当"
+      ]
+    },
+    "all12_after": {
+      "min": 0.0,
+      "median": 0.03983877023207946,
+      "max": 0.10114322691975726,
+      "max_attacks": [
+        "seo-02-多尺度密度比と差分時間窓"
+      ]
+    },
+    "with_constant_before": 0.11106752013214848,
+    "with_constant_after": 0.10114322691975726
+  },
+  {
+    "name": "Zhang04-SA1",
+    "U": 0.9219987812309569,
+    "additional_improved": 1,
+    "additional_worse": 0,
+    "additional_same": 8,
+    "other9_before": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 0.08756295160937026,
+      "max_attacks": [
+        "seo-01-近傍対比と条件付時間窓"
+      ]
+    },
+    "other9_after": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 0.08756295160937026,
+      "max_attacks": [
+        "seo-01-近傍対比と条件付時間窓"
+      ]
+    },
+    "all12_before": {
+      "min": 0.0,
+      "median": 0.04070265256323254,
+      "max": 0.14335668238774102,
+      "max_attacks": [
+        "seo-04b-容量付き全体割当AIA"
+      ]
+    },
+    "all12_after": {
+      "min": 0.0,
+      "median": 0.01936358161011825,
+      "max": 0.08756295160937026,
+      "max_attacks": [
+        "seo-01-近傍対比と条件付時間窓"
+      ]
+    },
+    "with_constant_before": 0.14335668238774102,
+    "with_constant_after": 0.08756295160937026
+  },
+  {
+    "name": "Seo03-SA1",
+    "U": 0.9245188708729272,
+    "additional_improved": 4,
+    "additional_worse": 2,
+    "additional_same": 3,
+    "other9_before": {
+      "min": 0.022606081818366996,
+      "median": 0.07329206672326694,
+      "max": 0.11071985633827218,
+      "max_attacks": [
+        "seo-03-Shadow窓順位AIA"
+      ]
+    },
+    "other9_after": {
+      "min": 0.0,
+      "median": 0.07245456536019189,
+      "max": 0.11373479358514495,
+      "max_attacks": [
+        "seo-03-Shadow窓順位AIA"
+      ]
+    },
+    "all12_before": {
+      "min": 0.008424530249845508,
+      "median": 0.05890600421479586,
+      "max": 0.13384158415841577,
+      "max_attacks": [
+        "TT-02-全体対応推定"
+      ]
+    },
+    "all12_after": {
+      "min": 0.0,
+      "median": 0.05395690709512441,
+      "max": 0.11373479358514495,
+      "max_attacks": [
+        "seo-03-Shadow窓順位AIA"
+      ]
+    },
+    "with_constant_before": 0.13384158415841577,
+    "with_constant_after": 0.11373479358514495
+  }
+]

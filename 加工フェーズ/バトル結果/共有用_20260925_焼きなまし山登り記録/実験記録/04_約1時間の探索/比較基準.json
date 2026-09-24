@@ -1,0 +1,98 @@
+{
+  "dev1": {
+    "定数10": {
+      "AIA": 0.11267281105990747,
+      "target_rate": 0.8462228191817621,
+      "control_rate": 0.8266961919628273,
+      "target_hits": 327,
+      "control_hits": 318
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.0,
+      "target_rate": 0.7055520694501346,
+      "control_rate": 0.7070788107597924,
+      "target_hits": 271,
+      "control_hits": 270
+    }
+  },
+  "dev2": {
+    "定数10": {
+      "AIA": 0.02145992145991994,
+      "target_rate": 0.846222819181762,
+      "control_rate": 0.8428504011326099,
+      "target_hits": 327,
+      "control_hits": 323
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.0,
+      "target_rate": 0.7055520694501347,
+      "control_rate": 0.7346317203325228,
+      "target_hits": 271,
+      "control_hits": 281
+    }
+  },
+  "holdout": {
+    "定数10": {
+      "AIA": 0.03681218735788997,
+      "target_rate": 0.8462228191817621,
+      "control_rate": 0.8403455911714525,
+      "target_hits": 327,
+      "control_hits": 322
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.0,
+      "target_rate": 0.7055520694501346,
+      "control_rate": 0.7145932406432643,
+      "target_hits": 271,
+      "control_hits": 273
+    }
+  },
+  "small1": {
+    "定数10": {
+      "AIA": 0.0,
+      "target_rate": 0.8588957055214724,
+      "control_rate": 0.8834355828220859,
+      "target_hits": 140,
+      "control_hits": 144
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.0,
+      "target_rate": 0.7177914110429447,
+      "control_rate": 0.7730061349693251,
+      "target_hits": 117,
+      "control_hits": 126
+    }
+  },
+  "small2": {
+    "定数10": {
+      "AIA": 0.039999999999999765,
+      "target_rate": 0.852760736196319,
+      "control_rate": 0.8466257668711656,
+      "target_hits": 139,
+      "control_hits": 138
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.08333333333333325,
+      "target_rate": 0.7300613496932515,
+      "control_rate": 0.7055214723926381,
+      "target_hits": 119,
+      "control_hits": 115
+    }
+  },
+  "small3": {
+    "定数10": {
+      "AIA": 0.07142857142857166,
+      "target_rate": 0.8404907975460123,
+      "control_rate": 0.8282208588957055,
+      "target_hits": 137,
+      "control_hits": 135
+    },
+    "背景だけの公式1NN": {
+      "AIA": 0.0,
+      "target_rate": 0.6932515337423313,
+      "control_rate": 0.7177914110429447,
+      "target_hits": 113,
+      "control_hits": 117
+    }
+  }
+}

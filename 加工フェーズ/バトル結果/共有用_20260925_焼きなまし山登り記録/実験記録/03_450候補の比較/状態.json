@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "completed": 450,
+  "total": 450,
+  "elapsed_seconds": 396.23989545786753,
+  "started_epoch": 1790184495.216581,
+  "per_base": {
+    "Zhang11": 150,
+    "Zhang04": 150,
+    "Seo03": 150
+  },
+  "base": "Seo03",
+  "base_total": 150,
+  "selected": [
+    "Zhang11-TG-006",
+    "Zhang04-time-011",
+    "Seo03-SBP-020"
+  ],
+  "completed_at": "2026-09-24T02:34:59+0900",
+  "summaries": [
+    {
+      "base": "Zhang11",
+      "original_max_AIA": 0.11106752013214848,
+      "best_candidate": "Zhang11-TG-006",
+      "selected_max_AIA": 0.09821952241306965,
+      "selected_U": 0.9219987812309569,
+      "selected_total_swaps": 1,
+      "improved_candidates": 7,
+      "constant10_AIA": 0.08625970664365769,
+      "max_AIA_minus_constant": 0.011959815769411963,
+      "with_constant_max": 0.09821952241306965,
+      "SA1_max_AIA": 0.10114322691975726,
+      "SA1_swaps": 6
+    },
+    {
+      "base": "Zhang04",
+      "original_max_AIA": 0.14335668238774102,
+      "best_candidate": "Zhang04-time-011",
+      "selected_max_AIA": 0.12017821782178076,
+      "selected_U": 0.9219987812309569,
+      "selected_total_swaps": 1,
+      "improved_candidates": 12,
+      "constant10_AIA": 0.08625970664365769,
+      "max_AIA_minus_constant": 0.03391851117812307,
+      "with_constant_max": 0.12017821782178076,
+      "SA1_max_AIA": 0.08756295160937026,
+      "SA1_swaps": 8
+    },
+    {
+      "base": "Seo03",
+      "original_max_AIA": 0.13384158415841577,
+      "best_candidate": "Seo03-SBP-020",
+      "selected_max_AIA": 0.12017821782178197,
+      "selected_U": 0.9245188708729272,
+      "selected_total_swaps": 1,
+      "improved_candidates": 1,
+      "constant10_AIA": 0.08625970664365769,
+      "max_AIA_minus_constant": 0.03391851117812428,
+      "with_constant_max": 0.12017821782178197,
+      "SA1_max_AIA": 0.11373479358514495,
+      "SA1_swaps": 2
+    }
+  ]
+}

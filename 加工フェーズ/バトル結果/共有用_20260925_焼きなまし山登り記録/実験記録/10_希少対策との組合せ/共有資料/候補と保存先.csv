@@ -1,0 +1,13 @@
+﻿候補名,内部ID,元の山登り案,新規,sha256,保存先
+Zhang04｜元案,Zhang04_original,Zhang04-HCv2-3,False,ca3fb79a87aa37f2bda392d07d1d02874a753b863b9b313df7aa2444fe11bc14,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang04_original.csv
+Zhang04｜山登りのみ,Zhang04_hill,Zhang04-HCv2-3,False,f8a9c86f3079fe455db210da8586ad6ce0e21ba16a7e6271af6bba06dbd9d7ed,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang04_hill.csv
+Zhang04｜希少対策のみ,Zhang04_rare,Zhang04-HCv2-3,True,0330e98519d45d32910d37b0c5fee65ae8e3be1e4d1f03b13e40ae9a8ce2f15c,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang04_rare.csv
+Zhang04｜山登り＋希少対策,Zhang04_combined,Zhang04-HCv2-3,True,86ff267b259221ec454a79a62845f7e88243ecafec40692c11679fa7cf4496c2,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang04_combined.csv
+Zhang11｜元案,Zhang11_original,Zhang11-HCv2-1,False,1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang11_original.csv
+Zhang11｜山登りのみ,Zhang11_hill,Zhang11-HCv2-1,False,a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang11_hill.csv
+Zhang11｜希少対策のみ,Zhang11_rare,Zhang11-HCv2-1,False,22535242439e68778411a432f3cfc29bd15c1754671aef252b4664e80ac3a322,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang11_rare.csv
+Zhang11｜山登り＋希少対策,Zhang11_combined,Zhang11-HCv2-1,True,7ba5cc230431412437231f36da98dec695ff939acbb0dbfeff4854f976609674,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Zhang11_combined.csv
+Seo03｜元案,Seo03_original,Seo03-1回交換最良,False,abb686221afcf3af437639ee9098588f347ccbac869a81c3925c1d3d6661e81e,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Seo03_original.csv
+Seo03｜山登りのみ,Seo03_hill,Seo03-1回交換最良,False,e7a78ff68ac83109cb902da8d38df7fa1d55bb03c6ea6243105754b0c37580ae,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Seo03_hill.csv
+Seo03｜希少対策のみ,Seo03_rare,Seo03-1回交換最良,True,1ac6503fd0092c2d87d361465e2545ff8401bc35e8af52d979549f063418ba02,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Seo03_rare.csv
+Seo03｜山登り＋希少対策,Seo03_combined,Seo03-1回交換最良,True,e217b1c687d7967e7e3eddb70d380869b64180010ef3e82f98f0717eadd48ffc,/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/C/Seo03_combined.csv

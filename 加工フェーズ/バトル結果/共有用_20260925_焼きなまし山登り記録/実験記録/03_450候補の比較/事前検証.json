@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bases": [
+    "Zhang11",
+    "Zhang04",
+    "Seo03"
+  ],
+  "prediction_comparisons": 36,
+  "exact_hit_masks": true,
+  "original_U_matches": true
+}

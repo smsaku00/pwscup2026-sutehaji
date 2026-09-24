@@ -1,0 +1,242 @@
+{
+  "created": "2026-09-25T00:16:25+0900",
+  "cases": [
+    {
+      "id": "C02",
+      "name": "Zhang04",
+      "base": "Zhang04",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C02.csv",
+      "stage": "元の加工案",
+      "order": 0,
+      "swaps": 0,
+      "ops": [],
+      "aliases": [
+        "Zhang04"
+      ],
+      "origins": [
+        "元の加工案"
+      ],
+      "source_id": "",
+      "note": "",
+      "key": "ed55e320b42036b7f4fa21d07fab6bbaed60952b52ef92d792c458c62abbc42c",
+      "changed_rows": 0,
+      "changed_cells": 0,
+      "attributes": [],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C02.csv",
+      "sha256": "ca3fb79a87aa37f2bda392d07d1d02874a753b863b9b313df7aa2444fe11bc14",
+      "target_id": 9911
+    },
+    {
+      "id": "C27",
+      "name": "Zhang04-HCv2-3",
+      "base": "Zhang04",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C27.csv",
+      "stage": "長時間の山登り",
+      "order": 6,
+      "swaps": 4,
+      "ops": [
+        {
+          "attribute": "age",
+          "i": 42,
+          "j": 959,
+          "row1": 43,
+          "row2": 960,
+          "old1": 64.0,
+          "old2": 53.0
+        },
+        {
+          "attribute": "time",
+          "i": 68,
+          "j": 180,
+          "row1": 69,
+          "row2": 181,
+          "old1": 1.4431059061489622,
+          "old2": 9.284225237368487
+        },
+        {
+          "attribute": "time",
+          "i": 67,
+          "j": 130,
+          "row1": 68,
+          "row2": 131,
+          "old1": 4.745019705074315,
+          "old2": 9.33029988352084
+        },
+        {
+          "attribute": "time",
+          "i": 379,
+          "j": 475,
+          "row1": 380,
+          "row2": 476,
+          "old1": 0.6889656322225043,
+          "old2": 9.116815617741858
+        }
+      ],
+      "aliases": [
+        "Zhang04-HCv2-3"
+      ],
+      "origins": [
+        "長時間の山登り"
+      ],
+      "source_id": "Zhang04-R00012-P2-0374",
+      "note": "",
+      "key": "7e1c21899415929779531914559817dae2a3814a7637a3a7b729d119b9de828d",
+      "changed_rows": 8,
+      "changed_cells": 8,
+      "attributes": [
+        "age",
+        "time"
+      ],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C27.csv",
+      "sha256": "f8a9c86f3079fe455db210da8586ad6ce0e21ba16a7e6271af6bba06dbd9d7ed",
+      "target_id": 9912
+    },
+    {
+      "id": "C01",
+      "name": "Zhang11",
+      "base": "Zhang11",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C01.csv",
+      "stage": "元の加工案",
+      "order": 0,
+      "swaps": 0,
+      "ops": [],
+      "aliases": [
+        "Zhang11"
+      ],
+      "origins": [
+        "元の加工案"
+      ],
+      "source_id": "",
+      "note": "",
+      "key": "da938588098c216da6da58c78773455bc41695b690e5661a6eec2d46432c1a25",
+      "changed_rows": 0,
+      "changed_cells": 0,
+      "attributes": [],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C01.csv",
+      "sha256": "1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97",
+      "target_id": 9913
+    },
+    {
+      "id": "C26",
+      "name": "Zhang11-HCv2-1",
+      "base": "Zhang11",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C26.csv",
+      "stage": "長時間の山登り",
+      "order": 6,
+      "swaps": 1,
+      "ops": [
+        {
+          "attribute": "TG",
+          "i": 315,
+          "j": 1048,
+          "row1": 316,
+          "row2": 1049,
+          "old1": 51.149806753261906,
+          "old2": 156.01640048988648
+        }
+      ],
+      "aliases": [
+        "Zhang11-HCv2-1"
+      ],
+      "origins": [
+        "長時間の山登り"
+      ],
+      "source_id": "Zhang11-R00070-P1-0549",
+      "note": "",
+      "key": "d8ca1949a3ccfaea828338f53f2eba3a7f9b12dd64f8100f8e6af8b53291b70f",
+      "changed_rows": 2,
+      "changed_cells": 2,
+      "attributes": [
+        "TG"
+      ],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C26.csv",
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+      "target_id": 9914
+    },
+    {
+      "id": "new_seo",
+      "name": "zhang11_seo",
+      "base": "Zhang11",
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/zhang11_seo_team28.csv",
+      "swaps": null,
+      "ops": [],
+      "stage": "GitHub追加案",
+      "source": "GitHub main@1d87a2fdcdea31f21bf9045e7b4bb1e0874662fd",
+      "target_id": 9915,
+      "sha256": "22535242439e68778411a432f3cfc29bd15c1754671aef252b4664e80ac3a322"
+    },
+    {
+      "id": "C03",
+      "name": "Seo03",
+      "base": "Seo03",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C03.csv",
+      "stage": "元の加工案",
+      "order": 0,
+      "swaps": 0,
+      "ops": [],
+      "aliases": [
+        "Seo03"
+      ],
+      "origins": [
+        "元の加工案"
+      ],
+      "source_id": "",
+      "note": "",
+      "key": "e6124fb43d41d579d5735b75f07c4bade465fb834ba42cc4270635df1d0a71d0",
+      "changed_rows": 0,
+      "changed_cells": 0,
+      "attributes": [],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C03.csv",
+      "sha256": "abb686221afcf3af437639ee9098588f347ccbac869a81c3925c1d3d6661e81e",
+      "target_id": 9916
+    },
+    {
+      "id": "C21",
+      "name": "Seo03-1回交換最良",
+      "base": "Seo03",
+      "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り実験一覧_有用性と387人AIA3組/C/C21.csv",
+      "stage": "450候補テスト",
+      "order": 4,
+      "swaps": 1,
+      "ops": [
+        {
+          "attribute": "SBP",
+          "row1": 109,
+          "row2": 570,
+          "i": 108,
+          "j": 569
+        }
+      ],
+      "aliases": [
+        "Seo03-SBP-020",
+        "Seo03-1回交換最良"
+      ],
+      "origins": [
+        "450候補テスト"
+      ],
+      "source_id": "Seo03-SBP-020",
+      "note": "",
+      "key": "635cf59607d8701eb4a6caf9e621254159eb9b79cbdb6d486de1e59f48e4539b",
+      "changed_rows": 2,
+      "changed_cells": 2,
+      "attributes": [
+        "SBP"
+      ],
+      "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0925/7案_追加20組比較/C/C21.csv",
+      "sha256": "e7a78ff68ac83109cb902da8d38df7fa1d55bb03c6ea6243105754b0c37580ae",
+      "target_id": 9917
+    }
+  ],
+  "new_panels_per_kind": 20,
+  "seed_scheme": {
+    "387": 202609250100,
+    "163": 202609250200,
+    "MIA": 202609250300
+  },
+  "purpose": "confirmation only; no C optimization",
+  "base_order": [
+    "Zhang04",
+    "Zhang11",
+    "Seo03"
+  ]
+}

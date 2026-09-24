@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "new_AIA_scores": 3360,
+  "new_MIA_scores": 560,
+  "existing_AIA_scores": 1008,
+  "existing_MIA_scores": 252,
+  "U_checks": 7,
+  "unchanged_inputs": true,
+  "seconds": 474.89498337497935
+}

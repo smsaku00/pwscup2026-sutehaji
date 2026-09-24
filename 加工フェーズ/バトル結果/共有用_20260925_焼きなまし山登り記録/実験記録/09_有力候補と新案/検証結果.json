@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": 7,
+  "aia_scores": 1008,
+  "mia_scores": 252,
+  "matched_checks": 600,
+  "input_hashes_unchanged": true,
+  "new_changed_rows": 6,
+  "seconds": 78.94984041713178
+}

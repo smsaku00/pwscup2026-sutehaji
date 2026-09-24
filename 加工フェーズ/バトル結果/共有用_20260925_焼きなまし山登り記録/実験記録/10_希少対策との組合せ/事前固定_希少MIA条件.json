@@ -1,0 +1,95 @@
+{
+  "seed": 202609242358,
+  "panel": {
+    "id": "rare_diagnostic",
+    "b": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/inputs/rare_diagnostic/B.csv",
+    "truth": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/inputs/rare_diagnostic/truth.csv",
+    "members": 26,
+    "controls": 1023,
+    "rare_members": 24,
+    "rare_controls": 48,
+    "seed": 202609242358,
+    "audit": [
+      {
+        "origin": "予備戦",
+        "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/inputs/rare_sources/予備戦_B_self.csv",
+        "rows": 1049,
+        "rare": 24,
+        "exact_overlap_B": 0,
+        "exact_overlap_background": 0
+      },
+      {
+        "origin": "練習用",
+        "path": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/希少対策と山登り_12案組合せ比較/inputs/rare_sources/練習用_B_self.csv",
+        "rows": 1049,
+        "rare": 24,
+        "exact_overlap_B": 0,
+        "exact_overlap_background": 0
+      }
+    ],
+    "diagnostic_only": true
+  },
+  "cases": [
+    {
+      "id": "Zhang04_original",
+      "sha256": "ca3fb79a87aa37f2bda392d07d1d02874a753b863b9b313df7aa2444fe11bc14"
+    },
+    {
+      "id": "Zhang04_hill",
+      "sha256": "f8a9c86f3079fe455db210da8586ad6ce0e21ba16a7e6271af6bba06dbd9d7ed"
+    },
+    {
+      "id": "Zhang04_rare",
+      "sha256": "0330e98519d45d32910d37b0c5fee65ae8e3be1e4d1f03b13e40ae9a8ce2f15c"
+    },
+    {
+      "id": "Zhang04_combined",
+      "sha256": "86ff267b259221ec454a79a62845f7e88243ecafec40692c11679fa7cf4496c2"
+    },
+    {
+      "id": "Zhang11_original",
+      "sha256": "1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97"
+    },
+    {
+      "id": "Zhang11_hill",
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091"
+    },
+    {
+      "id": "Zhang11_rare",
+      "sha256": "22535242439e68778411a432f3cfc29bd15c1754671aef252b4664e80ac3a322"
+    },
+    {
+      "id": "Zhang11_combined",
+      "sha256": "7ba5cc230431412437231f36da98dec695ff939acbb0dbfeff4854f976609674"
+    },
+    {
+      "id": "Seo03_original",
+      "sha256": "abb686221afcf3af437639ee9098588f347ccbac869a81c3925c1d3d6661e81e"
+    },
+    {
+      "id": "Seo03_hill",
+      "sha256": "e7a78ff68ac83109cb902da8d38df7fa1d55bb03c6ea6243105754b0c37580ae"
+    },
+    {
+      "id": "Seo03_rare",
+      "sha256": "1ac6503fd0092c2d87d361465e2545ff8401bc35e8af52d979549f063418ba02"
+    },
+    {
+      "id": "Seo03_combined",
+      "sha256": "e217b1c687d7967e7e3eddb70d380869b64180010ef3e82f98f0717eadd48ffc"
+    }
+  ],
+  "attacks": [
+    "A04",
+    "A05",
+    "A06",
+    "M04"
+  ],
+  "primary": "true rare TPR at FPR=0.01; 24 positive, 48 negative",
+  "sensitivity": [
+    "source-specific controls",
+    "FPR=0.05",
+    "AUC"
+  ],
+  "no_parameter_search": true
+}

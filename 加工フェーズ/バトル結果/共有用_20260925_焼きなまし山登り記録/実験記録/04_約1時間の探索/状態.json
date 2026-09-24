@@ -1,0 +1,23 @@
+{
+  "started_epoch": 1790188029.961613,
+  "status": "complete",
+  "stage": "完了",
+  "phase_index": 6,
+  "phase_total": 6,
+  "pid": 50443,
+  "updated_epoch": 1790191758.91172,
+  "swaps": 4,
+  "best_AIA": 0.11267281105990747,
+  "U_floor": 0.9219987812309569,
+  "base": "Zhang04",
+  "batch_done": 4,
+  "batch_total": 4,
+  "attack_calls_batch": 288,
+  "batch_outcomes": {
+    "全攻撃を採点済み": 4
+  },
+  "latest": "6組で全12攻撃を確認: 4/4",
+  "mia_done": 72,
+  "mia_total": 72,
+  "elapsed_seconds": 3728.9501049518585
+}

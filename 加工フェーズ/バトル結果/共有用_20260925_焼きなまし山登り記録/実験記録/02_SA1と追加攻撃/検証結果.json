@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "engine_sha256": "ef99fd91e69ea6c3818330b4764aa8e1229dacece26a91573d4f6f895955ffdc",
+  "input_hashes_unchanged": true,
+  "new_cli_jobs": 27,
+  "reused_predictions": 45,
+  "total_predictions": 72,
+  "records": [
+    {
+      "name": "Zhang11-SA1",
+      "C_copy_identical": true,
+      "other_columns_unchanged": true,
+      "predictions_checked": 24,
+      "three_optimization_scores_match": true,
+      "U": 0.9219987812309569
+    },
+    {
+      "name": "Zhang04-SA1",
+      "C_copy_identical": true,
+      "other_columns_unchanged": true,
+      "predictions_checked": 24,
+      "three_optimization_scores_match": true,
+      "U": 0.9219987812309569
+    },
+    {
+      "name": "Seo03-SA1",
+      "C_copy_identical": true,
+      "other_columns_unchanged": true,
+      "predictions_checked": 24,
+      "three_optimization_scores_match": true,
+      "U": 0.9245188708729272
+    }
+  ],
+  "same_development_panel": true,
+  "independent_panel_validation": false
+}

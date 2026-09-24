@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Zhang04-HCv2-3",
+    "submission_id": 943267,
+    "status": "Finished",
+    "official_results_url": "https://www.codabench.org/competitions/17698/detailed_results/943267/",
+    "team_verified": 28,
+    "official_U": 0.9219987812309569,
+    "official_U_gen": 0.9365619257678839,
+    "official_U_spec": 0.9404861959400377,
+    "official_U_rare": 0.9219987812309569,
+    "official_U_valid": 1.0,
+    "official_protection": 1.0,
+    "C_sha256": "f8a9c86f3079fe455db210da8586ad6ce0e21ba16a7e6271af6bba06dbd9d7ed"
+  },
+  {
+    "name": "Zhang11-HCv2-1",
+    "submission_id": 943284,
+    "status": "Finished",
+    "official_results_url": "https://www.codabench.org/competitions/17698/detailed_results/943284/",
+    "team_verified": 28,
+    "official_U": 0.9219987812309569,
+    "official_U_gen": 0.9365353145591871,
+    "official_U_spec": 0.9597756026939496,
+    "official_U_rare": 0.9219987812309569,
+    "official_U_valid": 1.0,
+    "official_protection": 1.0,
+    "C_sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091"
+  }
+]

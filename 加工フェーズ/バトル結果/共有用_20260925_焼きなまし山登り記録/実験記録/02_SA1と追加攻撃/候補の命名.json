@@ -1,0 +1,41 @@
+[
+  {
+    "base": "Zhang11",
+    "name": "Zhang11-SA1",
+    "original": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/bases/Zhang11/C.csv",
+    "candidate": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/候補C/Zhang11-SA1.csv",
+    "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/results/Zhang11/C.csv",
+    "accepted": 6,
+    "changed_rows": 12,
+    "U": 0.9219987812309569,
+    "original_U": 0.9219987812309569,
+    "C_sha256": "f6557aaf10cd32c921a318a9d18cdcfdf5d57861d578d587dc61a9d023ec6e6d",
+    "utility_path": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/有用性/Zhang11-SA1.json"
+  },
+  {
+    "base": "Zhang04",
+    "name": "Zhang04-SA1",
+    "original": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/bases/Zhang04/C.csv",
+    "candidate": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/候補C/Zhang04-SA1.csv",
+    "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/results/Zhang04/C.csv",
+    "accepted": 8,
+    "changed_rows": 16,
+    "U": 0.9219987812309569,
+    "original_U": 0.9219987812309569,
+    "C_sha256": "70ec2a9be973620377084331a78e122947938e0770e9200564bb8be75a2b5f14",
+    "utility_path": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/有用性/Zhang04-SA1.json"
+  },
+  {
+    "base": "Seo03",
+    "name": "Seo03-SA1",
+    "original": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/bases/Seo03/C.csv",
+    "candidate": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/候補C/Seo03-SA1.csv",
+    "source": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/山登り_time_3ベース/results/Seo03/C.csv",
+    "accepted": 2,
+    "changed_rows": 4,
+    "U": 0.9245188708729272,
+    "original_U": 0.9245188708729272,
+    "C_sha256": "577c437ec99c7fe3aadda13dab81d376ba0ae2a5d5cbf2c414635cda2a1e9c29",
+    "utility_path": "/Users/taisei1105/pws2026-local/本戦/バトル/0924/SA1_3候補_追加AIA比較/有用性/Seo03-SA1.json"
+  }
+]
