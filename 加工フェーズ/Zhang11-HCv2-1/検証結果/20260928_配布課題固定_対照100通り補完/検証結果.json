@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "main_imputations": 100,
+  "sensitivity_imputations": 300,
+  "preliminary_holdouts": 21,
+  "official_score_matches_independent_formula": true,
+  "current_C_predictions_match_saved": true,
+  "input_hashes_unchanged": true,
+  "seconds": 20.261028542008717,
+  "analysis_sha256": "8b8960c70d21dc3b1d0decb41218d70872c8e8986590e50de45d32bd758bd451",
+  "main_scenarios_unique": 100,
+  "all_public_QI_preserved": true,
+  "all_scenarios_meet_counts": true,
+  "all_time_values_in_range": true
+}
