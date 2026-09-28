@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "independent_cases": 1584,
+  "method": "stdlib CSV + explicit numpy arithmetic; no scipy cdist, no analysis-module import",
+  "max_numeric_error": 1.7763568394002505e-15,
+  "nearest_tie_cases": 6,
+  "max_specificity_span_over_tied_C": 0.0,
+  "input_hashes_verified": 27,
+  "unknown_pairs": 242,
+  "self_team_cases": 72,
+  "plot_visual_check": "See publication verification; not checked by this script",
+  "output_sha256": {
+    "チーム別まとめ.csv": "c0f4ab6cbedd51e4f0083a90fb6d3f58a1993eff2d5728256b96875bdbf79849",
+    "チーム別候補.csv": "5003347999e9d32ffc114901ea3768008b8ed8cbaf0f11d08ab51fd38046f13c",
+    "候補242組.csv": "2e2f1cac516154204673d182d49089ec50265637da011fa29605244b38c5c0b4",
+    "候補別まとめ.csv": "8d5c7cf893944231b2086a4376549e13de5e5b39720fb122eb788d2cdaa62676",
+    "全設定診断.csv": "54b625261e4e0692b2860a8f92c6adb48bfab32a4f166a0339419cbe811d7772",
+    "希少24行の区分.csv": "c8f186232b8eb81e725736704eb67dd53edb321c623c8b3cc154bd7ca5f5fddb",
+    "既知非会員比較.csv": "7a855c741cb084d07a52e8beeaac096e9846dc76a5be4eb5fca3829b9843a733",
+    "自チーム28検証.csv": "5217de925eae0d782962de3a770430e564b596685a17ca0e6ff3cb0b9bcd0d67"
+  }
+}
