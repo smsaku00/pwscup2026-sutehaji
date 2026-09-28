@@ -1,0 +1,36 @@
+{
+  "candidate": "Zhang11-HCv2-1",
+  "base": "Zhang11",
+  "total_swaps": 1,
+  "changed_cells": 2,
+  "data_rows": 1049,
+  "columns": 13,
+  "input_file": "元のZhang11.csv",
+  "input_sha256": "1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97",
+  "output_sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+  "source_candidate_id": "Zhang11-R00070-P1-0549",
+  "row_number_definition": "row1/row2: ヘッダーを除く1始まり。i/j: 0始まり。",
+  "operations": [
+    {
+      "attribute": "TG",
+      "i": 315,
+      "j": 1048,
+      "row1": 316,
+      "row2": 1049,
+      "old1": 51.149806753261906,
+      "old2": 156.01640048988648
+    }
+  ],
+  "after": [
+    {
+      "row": 316,
+      "attribute": "TG",
+      "value": "156.01640048988648"
+    },
+    {
+      "row": 1049,
+      "attribute": "TG",
+      "value": "51.149806753261906"
+    }
+  ]
+}

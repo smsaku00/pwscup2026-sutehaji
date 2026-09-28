@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "candidate": "Zhang11-HCv2-1",
+  "new_attack_experiments": false,
+  "python": "3.12.14",
+  "pandas": "2.3.3",
+  "rows": 1049,
+  "columns": 13,
+  "differences": [
+    {
+      "row": 316,
+      "column": "TG",
+      "before": "51.149806753261906",
+      "after": "156.01640048988648"
+    },
+    {
+      "row": 1049,
+      "column": "TG",
+      "before": "156.01640048988648",
+      "after": "51.149806753261906"
+    }
+  ],
+  "replay_source_matches_historical_function": true,
+  "historical_source_matches_github_blob": "77289ec46370b110ffafa06b832b6b8bc66ff944",
+  "reference_matches_github_C_blob": "ef18b9297cf46454cf10a7a6f377e873014d7cf6",
+  "output_matches_submitted_C_bytes": true,
+  "check_only_passed": true,
+  "existing_output_rejected": true,
+  "already_swapped_input_rejected": true,
+  "input_sha256": "1757407970bf17aa201341bb4724b867eb76b06283969962a34007f30ab6bb97",
+  "output_sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+  "code_sha256": {
+    "入れ替え.py": "4e60d2491ea9da83583c380a332568f9a4d2ef8f43ce09f39453b2e9f1bd2e28",
+    "当時の交換処理.py": "905ab32a36438b2240b35e7d2699ecde47c98b081e9aa3e490f269bc9d514a2f"
+  }
+}
