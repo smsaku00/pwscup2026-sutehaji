@@ -1,0 +1,16 @@
+{
+  "official_mia_format": true,
+  "rows": 1049,
+  "target_columns": 22,
+  "unchanged_nonrare_rows": 1025,
+  "unchanged_nonrare_cells": 22550,
+  "rare_rows": 24,
+  "rare_cells": 528,
+  "changed_cells": 528,
+  "all_unknown_11_tied_high": true,
+  "team_mapping_matches_saved_design": true,
+  "official_score_checks": 1452,
+  "max_abs_score_error": 3.469446951953614e-18,
+  "actual_main_score": "未採点",
+  "submitted": false
+}

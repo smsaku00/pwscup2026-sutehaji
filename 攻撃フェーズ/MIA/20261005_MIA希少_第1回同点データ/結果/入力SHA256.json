@@ -1,0 +1,22 @@
+{
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/F_mia.csv": "f183400ca0f7b121cab1f42ebf001b24acf3f5dfb68f69c6e12cf2c6aa36a4a2",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/本戦_非会員163人.csv": "2d4b31a8b216ee51919402894343e5eb6aa91f0641d4ed511824cc4aa46a6477",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/出力SHA256.json": "29cd84437fd7216cd9224a12f302621961451896bc7aadec986582ee2171deac",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/入力SHA256.json": "ba6afc8d4101148e2368ecf635c867e12924b5666bd6e55719c904ebdf81c4a9",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA希少_2回200通り検証/結果/200通り結果.json": "2b15ac356931d4948028296c780d2b5594a6480b9eefbe8e53230233a23334e5",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA希少_2回200通り検証/結果/出力SHA256.json": "a279a03eaab17ab3e2e12ae2951d919823b3fa20e97bfc570f84bfc72e732a74",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA希少_2回200通り検証/結果/同点人数.csv": "d3c882e1b32448a6ce701a7579d2530d91f3ad227eb79be87c7595e9167e6fb3",
+  "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+  "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+  "本戦/攻撃フェーズ/Tashiro/20261005_MIA希少_第1回同点データ/分析.py": "69787581a8db808906468d57d7fee3fa4e6421a104342a8d694b53196da83596",
+  "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+  "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+}

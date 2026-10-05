@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-05T19:52:37.886521+09:00",
+  "python": "3.12.15",
+  "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "command": [
+    "本戦/攻撃フェーズ/Tashiro/20261005_MIA希少_第1回同点データ/分析.py"
+  ],
+  "scope": "希少MIAの1回目。AIA・token・ZIP・提出なし",
+  "baseline": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/F_mia.csv"
+}
