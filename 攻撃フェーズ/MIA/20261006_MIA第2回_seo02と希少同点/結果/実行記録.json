@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-06T19:45:29.699146+09:00",
+  "python": "3.12.15",
+  "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1",
+  "elapsed_seconds": 20.02320987499843,
+  "command": [
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回_seo02と希少同点/分析.py"
+  ],
+  "scope": "承認された第2回MIAのみを作成。未公開正解・提出APIは利用していない。"
+}

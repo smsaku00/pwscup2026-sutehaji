@@ -1,0 +1,112 @@
+[
+  {
+    "team": "0",
+    "top20_common": 10,
+    "spearman": 0.19023624601553998
+  },
+  {
+    "team": "1",
+    "top20_common": 1,
+    "spearman": 0.19014346270308177
+  },
+  {
+    "team": "2",
+    "top20_common": 1,
+    "spearman": 0.4487541218464466
+  },
+  {
+    "team": "3",
+    "top20_common": 0,
+    "spearman": 0.09043120133996159
+  },
+  {
+    "team": "4",
+    "top20_common": 8,
+    "spearman": 0.20922079650182382
+  },
+  {
+    "team": "5",
+    "top20_common": 1,
+    "spearman": 0.2509848825228759
+  },
+  {
+    "team": "6",
+    "top20_common": 3,
+    "spearman": 0.08357533333030609
+  },
+  {
+    "team": "7",
+    "top20_common": 9,
+    "spearman": 0.1702779056014493
+  },
+  {
+    "team": "8",
+    "top20_common": 0,
+    "spearman": -0.04727603697892709
+  },
+  {
+    "team": "9",
+    "top20_common": 5,
+    "spearman": 0.11254190881820882
+  },
+  {
+    "team": "10",
+    "top20_common": 2,
+    "spearman": 0.2057975503281311
+  },
+  {
+    "team": "11",
+    "top20_common": 2,
+    "spearman": 0.16559809144057402
+  },
+  {
+    "team": "12",
+    "top20_common": 1,
+    "spearman": 0.023171848971357933
+  },
+  {
+    "team": "13",
+    "top20_common": 7,
+    "spearman": 0.23106876522246278
+  },
+  {
+    "team": "14",
+    "top20_common": 1,
+    "spearman": 0.13656287325192668
+  },
+  {
+    "team": "15",
+    "top20_common": 2,
+    "spearman": 0.19447991879877105
+  },
+  {
+    "team": "16",
+    "top20_common": 3,
+    "spearman": 0.28426430241223755
+  },
+  {
+    "team": "17",
+    "top20_common": 6,
+    "spearman": 0.12382307569423653
+  },
+  {
+    "team": "22",
+    "top20_common": 5,
+    "spearman": 0.19331263075680946
+  },
+  {
+    "team": "25",
+    "top20_common": 5,
+    "spearman": 0.16419950563177813
+  },
+  {
+    "team": "26",
+    "top20_common": 3,
+    "spearman": 0.0841308347762902
+  },
+  {
+    "team": "27",
+    "top20_common": 5,
+    "spearman": 0.1071676745333032
+  }
+]

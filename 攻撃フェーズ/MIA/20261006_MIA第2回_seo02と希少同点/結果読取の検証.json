@@ -1,0 +1,9 @@
+{
+  "status": "全項目成功",
+  "all_102_lookup_cases": true,
+  "invalid_or_rounded_scores_rejected": 7,
+  "ambiguous_score_rejected": true,
+  "html_cli_checked": true,
+  "first_round_report_rejected": true,
+  "reader_sha256": "ee0f4142d66900e274f2837ce65bc3c8086e7fa39415ffb8c39f3e0f71fa074b"
+}
