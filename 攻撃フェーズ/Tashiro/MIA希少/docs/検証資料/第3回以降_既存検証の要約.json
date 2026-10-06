@@ -1,0 +1,199 @@
+{
+  "created_date": "2026-10-06",
+  "scope": "既存検証の要約。実際の第3回以降の提出設定・採点結果ではない。本戦の個人の正解を使用していない。",
+  "formula_and_single_team_checks": {
+    "official_git_blob": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+    "formula_checks": 624,
+    "max_formula_error": 1.3877787807814457e-17,
+    "single_team": {
+      "1": {
+        "candidates": 11,
+        "depth_counts": {
+          "3": 5,
+          "4": 6
+        },
+        "largest_group_path": [
+          11,
+          6,
+          3,
+          2,
+          1
+        ]
+      },
+      "2": {
+        "candidates": 55,
+        "depth_counts": {
+          "2": 1,
+          "3": 4,
+          "4": 21,
+          "5": 29
+        },
+        "largest_group_path": [
+          55,
+          28,
+          13,
+          5,
+          2,
+          1
+        ]
+      }
+    },
+    "pair_example_scores": [
+      0.0,
+      0.0275,
+      0.07333333333333333
+    ],
+    "two_team_mean_example": [
+      0.0,
+      0.0575,
+      0.115,
+      0.1725
+    ],
+    "scope": "1チームの全候補と説明用の数値のみ。複数チーム同時特定の保証ではない。"
+  },
+  "preliminary_local_replay": {
+    "scope": "予備戦Team5の公開正解で採点したローカル再現。大会への提出なし。",
+    "target_teams": 20,
+    "count_candidates_after_round1": 24,
+    "count_candidates_after_round2": 1,
+    "last_probe_round": 7,
+    "true_positive_count": 9,
+    "correct_positive_count": 9,
+    "false_positive_count": 0,
+    "verification": {
+      "status": "全項目一致",
+      "replayed_average_scores": 7,
+      "independent_scoring_frames": 9,
+      "max_independent_per_team_score_error": 0.0,
+      "minimum_distinct_mean_gap": 1.3227513227513228e-06,
+      "maximum_observed_mean_error": 1.734723475976807e-18,
+      "inference_receives": [
+        "初期の候補ID・既知非会員ID・対象列",
+        "各回の希少平均点のみ"
+      ],
+      "verification_code_sha256": "a35eb5b589abdda7b9b299931150d06105facb370d035263348e41b1e39f1ce2"
+    }
+  },
+  "main_simulation_summary": {
+    "count_configurations": 102,
+    "assignments": 10200,
+    "successes": 10200,
+    "failures": 0,
+    "failed_case_ids": [],
+    "finish_rounds": {
+      "7": 8776,
+      "6": 1423,
+      "5": 1
+    },
+    "minimum_mean_gap": 4.360718646432932e-08,
+    "maximum_observed_mean_error": 1.3877787807814457e-17,
+    "maximum_local_design_trials": 46,
+    "total_new_score_calls": 59775,
+    "total_positive_memberships_checked": 94200,
+    "round2_comparison": {
+      "original": {
+        "distinct_scores": 99,
+        "uniquely_identifiable_configurations": 96,
+        "ambiguous_groups": [
+          [
+            26,
+            68
+          ],
+          [
+            33,
+            75
+          ],
+          [
+            34,
+            76
+          ]
+        ],
+        "minimum_distinct_gap": "107/183783600"
+      },
+      "team25_to21": {
+        "distinct_scores": 102,
+        "uniquely_identifiable_configurations": 102,
+        "ambiguous_groups": [],
+        "minimum_distinct_gap": "1/936000"
+      }
+    }
+  },
+  "main_simulation_verification": {
+    "status": "全項目一致",
+    "unique_assignments_checked": 10200,
+    "count_configurations_checked": 102,
+    "all_person_query_tables_checked": 49575,
+    "direct_fraction_tables_checked": 478,
+    "score_only_replayed_cases": 104,
+    "minimum_gap_case": "N054-A043",
+    "maximum_trials_case": "N054-A086",
+    "minimum_mean_gap": 4.360718646432932e-08,
+    "maximum_observed_mean_error": 1.3877787807814457e-17,
+    "maximum_local_design_trials": 46,
+    "possible_assignments_under_all_102_configurations": 241164000,
+    "total_positive_memberships_checked": 94200,
+    "verification_code_sha256": "c380835a989d45bfc26e2872efeb1828da4ed23f8944f50975de30fef15b4caa"
+  },
+  "matched_count_configuration": {
+    "case_id": "N015",
+    "counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 1,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 2,
+      "11": 1,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 2,
+      "17": 1,
+      "22": 0,
+      "25": 2,
+      "26": 0,
+      "27": 0
+    },
+    "active_teams": 6,
+    "total_members": 9,
+    "original_round2": "3931/252450",
+    "revised_round2": "110863/7674480",
+    "trials": 100,
+    "successes": 100,
+    "failures": 0,
+    "finish_rounds": {
+      "7": 84,
+      "6": 16
+    },
+    "minimum_mean_gap": 1.9425019425019426e-07,
+    "maximum_local_design_trials": 11
+  },
+  "possible_assignments_for_N015": 2494800,
+  "explanation_example": {
+    "two_members_selected4_remaining7": {
+      "hits0_remaining_pairs": 21,
+      "hits1_remaining_pairs": 28,
+      "hits2_remaining_pairs": 6
+    },
+    "six_team_initial_response_upper_bound": 216
+  },
+  "source_sha256": {
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA希少_本戦102配置検証/結果/集計結果.json": "befcbba889c15bf10c13fa2fd5b12666704e1001dc362b7b4ea9d86105c3574e",
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA希少_本戦102配置検証/結果/検証結果.json": "7e0ca8ba3fa371aad341c492d0b7c0fb786a5a4bb1bae36ca38938305cdd82cd",
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA希少_予備戦7回探索検証/結果/結果.json": "2da2aa1b34876408660a317ec70024ca8de46a7eea7ff009a6258c0148cc2675",
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA希少_予備戦7回探索検証/結果/検証結果.json": "8b455a192dde40662400e132e158d5a23244ed8553e2e911cd8de41024674409",
+    "本戦/攻撃フェーズ/Tashiro/20261006_MIA希少_3回目以降の説明/分析.py": "630373fc099c91d9839ebeba61fe4f08b1fb46b443a008b5ecc39fc8ca36242a"
+  },
+  "official_source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-attack-20260928/starter/src/pwscup2026/scoring/attack_score.py",
+  "notes": [
+    "仮の100件で成功しても、本戦での成功確率100%を意味しない。",
+    "次回の実CSVから点数の対応を再検査する必要がある。",
+    "元の10,200ケース全体を今回新規実行したものではなく、保存済み結果から要約した。説明例・1チームの候補探索は読み取り専用で再確認した。"
+  ]
+}
