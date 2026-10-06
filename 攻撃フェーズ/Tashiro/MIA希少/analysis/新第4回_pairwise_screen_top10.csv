@@ -1,0 +1,11 @@
+rank,bucket,h6,h10,h11,h16,h17,h25,states,team10x16,team10x25,team16x25
+1,122,0,1,0,1,1,1,1296,pass,pass,pass
+2,123,1,1,0,1,1,1,1064,pass,pass,pass
+3,87,1,1,0,1,0,1,982,pass,pass,pass
+4,110,0,1,0,0,1,1,926,pass,pass,pass
+5,120,0,0,0,1,1,1,924,pass,pass,pass
+6,86,0,1,0,1,0,1,897,pass,pass,pass
+7,50,0,1,0,1,1,0,794,pass,pass,pass
+8,129,1,1,1,1,1,1,699,pass,pass,pass
+9,121,1,0,0,1,1,1,682,pass,pass,pass
+10,51,1,1,0,1,1,0,649,pass,pass,pass
