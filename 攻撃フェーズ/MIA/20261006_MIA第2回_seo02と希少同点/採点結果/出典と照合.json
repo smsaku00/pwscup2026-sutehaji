@@ -1,0 +1,17 @@
+{
+  "source_archive": "scoring_result (6).zip",
+  "archive_sha256": "4e6e49585d88152038ca49033b2c3ffc20d3d84dbe3cf762ba0cf738e3074fca",
+  "first_report_sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+  "second_report_sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+  "mia_csv_sha256": [
+    "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "92c780eee9762989a8140feee6fac3258b2bd3e27eee3146fccaa07a811412ae"
+  ],
+  "mia_csv_git_blob_sha": [
+    "da76f6a111f1ea3a3476a2d213f640c31272cde5",
+    "c01f7ce1e92c02b9593f68bf6358184ab37fac9a"
+  ],
+  "decoder_source_sha256": "4d32855b3537214017c0dbb1af28e9e257fafc8281705a49039395a6e08e2260",
+  "official_scorer_git_blob": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+  "scope": "MIAの公式結果と人数の導出。原本HTML・scores.jsonにはAIAの公式値も含む。"
+}

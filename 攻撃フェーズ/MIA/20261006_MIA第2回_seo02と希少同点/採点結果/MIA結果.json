@@ -1,0 +1,86 @@
+{
+  "official_mia": {
+    "round1": {
+      "tpr_at_low_fpr": 0.03434084434084434,
+      "tpr_rare": 0.014934210526315791,
+      "auc": 0.5834342948682125
+    },
+    "round2": {
+      "tpr_at_low_fpr": 0.010909090909090908,
+      "tpr_rare": 0.014445669283130584,
+      "auc": 0.6137569063561341
+    }
+  },
+  "mia_per_target_round2": {
+    "0": 1,
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "22": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1
+  },
+  "observed_constants": {
+    "low_fpr": 0.01,
+    "tau_time": 0.5,
+    "aia_rare_se_z": 1.64,
+    "mia_band_edges": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "derived_rare_members": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 1,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "22": 0,
+    "25": 2,
+    "26": 0,
+    "27": 0
+  },
+  "active_teams": 6,
+  "total_rare_members": 9,
+  "identified_person_ids": null,
+  "count_candidates_after_round1": 102,
+  "count_candidates_after_round2": 1,
+  "matched_precomputed_case": "N015",
+  "lookup_score_error": 0.0,
+  "exact_rare_mean_round1": "227/15200",
+  "exact_rare_mean_round2": "110863/7674480",
+  "official_function_reproduced_means": [
+    0.014934210526315791,
+    0.014445669283130584
+  ],
+  "interpretation": "共有条件と提出CSVが保存設定に一致する前提の人数推定。個人は未特定。"
+}
