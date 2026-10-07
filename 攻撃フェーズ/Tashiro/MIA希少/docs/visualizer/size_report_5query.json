@@ -1,0 +1,31 @@
+{
+  "html_bytes": 45956,
+  "html_sha256": "1feedc522039fa9215ad6170029f17a161b7d77363ac376c500de041ee6ef881",
+  "format": "single offline HTML with both complete per-team policies",
+  "single_team_states": [
+    11,
+    55
+  ],
+  "single_team_max_depth": [
+    4,
+    5
+  ],
+  "guarantee_method": "単独Team全候補のreplayと216平均点の全列挙。6Team全配置はこの2つを合成して保証する。",
+  "source_files": [
+    {
+      "path": "docs/検証資料/追加5回の全候補確認.json",
+      "bytes": 17944,
+      "sha256": "62e258ae05ce1cbe8dc5432d4a6c58f9d96066cded310856296ded07001e2747"
+    },
+    {
+      "path": "analysis/full_depth4_20261007/universal_score_encoding.json",
+      "bytes": 4855,
+      "sha256": "2e8bff902be6d85b4509537e93ec293d26369a0faaaf05e82fbd308690b94bc4"
+    },
+    {
+      "path": "analysis/full_depth4_20261007/padding_rule.json",
+      "bytes": 760,
+      "sha256": "34076f0288ffbfc17ade46b35be84e11eb85b6c9aefbc78c47eb3c3d141f3227"
+    }
+  ]
+}

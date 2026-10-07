@@ -67,7 +67,7 @@ function simulatedViewer(initialHash = '') {
   for (const match of html.matchAll(/<([a-z][\w-]*)\b[^>]*\bid="([^"]+)"[^>]*>/gi)) ids.set(match[2], new Element(match[1], match[2]));
   const buttonIDs = [...html.matchAll(/<button\b[^>]*\bid="([^"]+)"[^>]*>/gi)].map(m => m[1]);
   ids.get('mia-data').textContent = scripts[1][2];
-  ids.get('mode').value = 'dog'; ids.get('sort').value = 'count'; ids.get('error').hidden = true;
+  ids.get('sort').value = 'count'; ids.get('error').hidden = true;
   const location = { hash: initialHash, pathname: '/MIA_4query_tree.html', search: '' };
   const document = {
     getElementById(id) { const el = ids.get(id); assert(el, `Unknown DOM id ${id}`); return el; },
@@ -155,13 +155,12 @@ function simulatedViewer(initialHash = '') {
   assert.equal(csv.split('\r\n').length, 21);
   assert(csv.includes('Team6,Team10,Team11,Team16,Team17,Team25,response_code,response_counts'));
   assert.equal(new Set(csv.split('\r\n').slice(1).map(line => line.split(',')[7])).size, 20);
-  viewer.ids.get('mode').value = 'real'; viewer.ids.get('mode').onchange();
   assert(viewer.ids.get('question').innerHTML.includes('Team 6'));
   assert(viewer.ids.get('question').innerHTML.includes('264'));
-  viewer.ids.get('mode').value = 'dog'; viewer.ids.get('mode').onchange();
-  assert(viewer.ids.get('question').innerHTML.includes('飼い主A'));
-  assert(viewer.ids.get('question').innerHTML.includes('犬6'));
-  result.controls_checked.push('back', 'terminal candidate CSV export', 'dog and real ID modes');
+  assert(viewer.ids.get('question').innerHTML.includes('調べる候補ID'));
+  assert.equal(viewer.ids.get('team-order').textContent, 'Team 6・Team 10・Team 11・Team 16・Team 17・Team 25');
+  assert(viewer.ids.get('mapping').textContent.includes('Team 10＝2人'));
+  result.controls_checked.push('back', 'terminal candidate CSV export', 'actual candidate IDs and Team labels');
 
   await viewer.click('reset'); assert.deepEqual(viewer.snapshot().history, []);
   viewer.ids.get('filter').value = '253'; viewer.ids.get('filter').oninput();

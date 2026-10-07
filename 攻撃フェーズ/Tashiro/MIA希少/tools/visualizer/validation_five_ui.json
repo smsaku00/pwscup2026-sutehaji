@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "environment": "Node VM with simulated DOM; generated page scripts and SVG markup",
+  "html_bytes": 45956,
+  "html_sha256": "1feedc522039fa9215ad6170029f17a161b7d77363ac376c500de041ee6ef881",
+  "source_policies_matched": 2,
+  "demo_team10_counts": [
+    55,
+    28,
+    13,
+    5,
+    2,
+    1
+  ],
+  "demo_means_exact": [
+    "233/18000",
+    "169/9000",
+    "7/2000",
+    "553/27000",
+    "11/6000"
+  ],
+  "controls_checked": [
+    "actual IDs in SVG",
+    "pair-card intersection",
+    "response preview without navigation",
+    "candidate-card inspection",
+    "full five-question demo",
+    "one-member Team early completion and zero placeholders",
+    "padding rows",
+    "JSON path export",
+    "removed-card stack mismatches without state mutation",
+    "remaining-only card filter",
+    "back and earlier step",
+    "reset",
+    "reachable mean navigation",
+    "full-example shortcut",
+    "deep route restoration and URL replacement"
+  ],
+  "negative_cases": [
+    "locally legal all-zero vector has no joint placement and does not navigate",
+    "capacity-legal decoded mean with no joint placement",
+    "midpoint mean",
+    "out-of-margin mean",
+    "nonzero decoded hit for completed Team leaves route unchanged"
+  ],
+  "visual_browser_validation": false
+}

@@ -6,8 +6,8 @@
   "certificate_gzip_bytes": 1080682,
   "certificate_expanded_json_bytes": 16487312,
   "certificate_base64_bytes": 1440984,
-  "html_bytes": 1501180,
-  "html_gzip_bytes": 1108583,
+  "html_bytes": 1500969,
+  "html_gzip_bytes": 1108432,
   "source_files": [
     {
       "path": "orbits/283/certificate.json.gz",

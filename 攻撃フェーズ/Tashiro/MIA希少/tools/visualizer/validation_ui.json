@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM with simulated DOM; native GZIP DecompressionStream",
-  "html_bytes": 1501180,
-  "html_sha256": "6ddc930c65437b63aa70ebd45ea901a0e36bc5bfff9805c205f2cc033fb18258",
+  "html_bytes": 1500969,
+  "html_sha256": "537f881c2cf5c40cfc0e992edc8b3cfa56b3824a81e2675205c179422fa3b8bb",
   "embedded_certificates_source_matched": 53,
   "native_gzip_certificates_loaded": 53,
   "demo_remaining_counts": [
@@ -23,7 +23,7 @@
     "JSON path export",
     "back",
     "terminal candidate CSV export",
-    "dog and real ID modes",
+    "actual candidate IDs and Team labels",
     "reset",
     "answer filtering and sorting",
     "alternative transported branch through round 6",

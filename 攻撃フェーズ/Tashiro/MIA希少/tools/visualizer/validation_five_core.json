@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "scope": "All 11 one-member and 55 two-member states, plus score-alphabet and disjoint-placement composition checks",
+  "states_replayed": 66,
+  "questions_checked": 49,
+  "leaves_checked": 66,
+  "maximum_depth_by_capacity": {
+    "1": 4,
+    "2": 5
+  },
+  "depth_distribution_by_capacity": {
+    "1": {
+      "3": 5,
+      "4": 6
+    },
+    "2": {
+      "2": 1,
+      "3": 4,
+      "4": 21,
+      "5": 29
+    }
+  },
+  "padding_checks": 147,
+  "score_patterns": 216,
+  "mean_collisions": 0,
+  "demo_team10_remaining": [
+    55,
+    28,
+    13,
+    5,
+    2,
+    1
+  ],
+  "demo_means_exact": [
+    "233/18000",
+    "169/9000",
+    "7/2000",
+    "553/27000",
+    "11/6000"
+  ],
+  "initial_reachable_joint_patterns": 146,
+  "disjoint_search_random_cases": 200,
+  "minimum_mean_gap_exact": "1/54000",
+  "source_sha256": "62e258ae05ce1cbe8dc5432d4a6c58f9d96066cded310856296ded07001e2747",
+  "documented_demo_membership_masks": [
+    64,
+    1025,
+    2,
+    260,
+    512,
+    24
+  ],
+  "core_sha256": "3b394b36f8e9e5527e407dd813974709ae39aea07e76efb4f683c11519b7692d"
+}

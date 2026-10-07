@@ -32,7 +32,6 @@ MAN = json.loads((SRC / 'manifest.json').read_text())
 TEAMS = [6,10,11,16,17,25]
 IDS = MAN['candidate_ids']
 CAPS = MAN['caps']
-OWNERS = list('ABCDEF')
 font_path = args.font or Path('/System/Library/Fonts/Supplemental/Arial Unicode.ttf')
 if font_path.is_file():
     FONT = 'EmbeddedJapanese'
@@ -87,11 +86,11 @@ def decode(code):
         result.append(code % 3); code //= 3
     return result
 
-def dog_nums(mask):
-    return [i+1 for i in range(11) if (mask >> i) & 1]
+def candidate_ids(mask):
+    return [id_ for i,id_ in enumerate(IDS) if (mask >> i) & 1]
 
 def members(mask):
-    return '・'.join(map(str,dog_nums(mask))) or 'なし'
+    return '・'.join(map(str,candidate_ids(mask))) or 'なし'
 
 def tuple_str(code):
     return '(' + ', '.join(map(str,decode(code))) + ')'
@@ -114,15 +113,15 @@ OUT.parent.mkdir(parents=True,exist_ok=True)
 C=canvas.Canvas(str(OUT),pagesize=A4,invariant=1,pageCompression=1)
 C.setTitle('MIA希少 4回完全決定木ビューア - 図表ガイド')
 C.setAuthor('pwscup2026-sutehaji')
-C.setSubject('第3〜第6回の全分岐と犬の具体例')
+C.setSubject('第3〜第6回の全分岐と候補IDの照合')
 
 # Page 1: the complete strategy and the one-route example.
 page_header(1,'全分岐から、1本の経路をたどる',
             '第3回の回答に合わせて第4回を選び、同様に第5・6回へ進みます。'
             'このPDFは具体例、HTMLは第3〜6回の全分岐を閲覧できます。')
 box(LEFT,680,WIDTH,78,GOLD,colors.HexColor('#ECD79E'))
-p('犬の例: 11匹の犬を、飼い主A〜Fに1・2・1・2・1・2匹ずつ割り当てます。'
-  '合計9匹が所属し、残る2匹はどの飼い主にも属しません。',LEFT+13,667,WIDTH-26)
+p('候補は11個のIDです。Team 6・10・11・16・17・25にそれぞれ1・2・1・2・1・2人、'
+  '合計9人が所属します。残り2人はこの6Teamのいずれにも属しません。',LEFT+13,667,WIDTH-26)
 p('以下は保存された説明用の仮定経路です。本番の所属結果を示すものではありません。',
   LEFT+13,625,WIDTH-26,'small')
 
@@ -148,8 +147,8 @@ for i,n in enumerate(counts):
 
 side_x=LEFT+311;side_w=WIDTH-311
 text('図の読み方',side_x,564,12,BLUE)
-p('箱は残る所属配置の数。矢印は返ってきた6人の回答です。'
-  '回答の順番はA・B・C・D・E・Fです。',side_x,552,side_w)
+p('箱は残る所属配置の数。矢印は返ってきた6Teamの回答です。'
+  '回答の順番はTeam 6・10・11・16・17・25です。',side_x,552,side_w)
 text('実際には1経路だけ',side_x,466,12,BLUE)
 p('第3回は209種類の回答に分かれます。第5回後は全経路で1,340,358分岐ですが、'
   '自分が選んだ枝だけを開いて確認できます。',side_x,453,side_w)
@@ -160,43 +159,42 @@ p('53個の証明書を圧縮してHTML内に保存。必要な分だけ展開�
 text('HTMLビューアの使い方',LEFT,191,13,BLUE)
 p('1. GitHubでHTMLを「Download raw file」から保存し、最新版のChrome・Edge・Safariで開く。'
   '<br/>2. 「具体例を1手進める」で上の経路を確認。「最後の20候補を見る」で3ページ目の表へ。'
-  '<br/>3. 回答の行を選ぶと任意の枝へ進めます。「犬の例／実ID・Team」で表示を切り替えます。',
+  '<br/>3. 回答の行を選ぶと任意の枝へ進めます。質問と所属配置は実際の候補ID・Teamで表示します。',
   LEFT,178,WIDTH,'body')
 p('平均点の入力は保存済み点数表と現在の到達可能な回答で照合します。'
   '「現在の経路を保存」「残る全候補をCSVで保存」から記録を書き出せます。',LEFT,116,WIDTH,'small')
 C.showPage()
 
-# Page 2: four saved question tables, translated faithfully to dog numbers.
-page_header(2,'4回の質問: どの犬を見せるか',
-            '各飼い主に、表の犬を見せます。飼い主は「この中に自分の犬が何匹いるか」を答えます。'
-            '犬の番号はすべて1〜11です。')
+# Page 2: four saved question tables using actual candidate IDs and Teams.
+page_header(2,'4回の質問: 調べる候補ID',
+            '各Teamで表の候補IDを選びます。回答は、その中に所属する人数です。'
+            '回答の順番はTeam 6・10・11・16・17・25です。')
 cols=2;tw=(WIDTH-20)/2
 for qidx in range(4):
     x=LEFT+(tw+20)*(qidx%2);top=675-267*(qidx//2)
     text(f'第{3+qidx}回の質問',x,top,14,BLUE)
     p(f'この例の回答: {tuple_str(codes[qidx])}',x,top-10,tw,'small')
-    rows=[['飼い主','見せる犬の番号','回答']]
+    rows=[['Team','調べる候補ID','回答']]
     for t in range(6):
-        rows.append([OWNERS[t],members(WIT['query_masks_normalized'][qidx][t]),str(decode(codes[qidx])[t])])
+        rows.append([str(TEAMS[t]),members(WIT['query_masks_normalized'][qidx][t]),str(decode(codes[qidx])[t])])
     table(rows,x,top-37,[38,tw-73,35],row_height=24,font=9.0)
     before,after=counts[qidx],counts[qidx+1]
     p(f'候補: {before:,} → {after:,}通り',x,top-216,tw,'small')
 
-text('犬と実ID、飼い主とTeamの対応',LEFT,145,12,BLUE)
-dog_map=' / '.join(f'{i+1}＝{ID}' for i,ID in enumerate(IDS))
-p('犬の番号＝実ID: '+dog_map,LEFT,132,WIDTH,'small')
-p('A＝Team 6 / B＝Team 10 / C＝Team 11 / D＝Team 16 / E＝Team 17 / F＝Team 25',
+text('候補IDと実提出の設定',LEFT,145,12,BLUE)
+p('候補ID: '+'、'.join(map(str,IDS)),LEFT,132,WIDTH,'small')
+p('所属人数: Team 6＝1 / 10＝2 / 11＝1 / 16＝2 / 17＝1 / 25＝2（計9人、所属なし2人）',
   LEFT,102,WIDTH,'small')
-p('実提出ではHTMLの実ID表示で追加IDと高側合計を確認してください。'
+p('実提出ではHTMLの質問表で追加IDと高側合計を確認してください。'
   'confidenceは選択候補＋追加IDを0.4、その他の希少行を0.1とします（保存済みpadding規則）。',
   LEFT,83,WIDTH,'small')
 C.showPage()
 
-# Page 3: all 20 final candidates, including the unassigned dogs.
+# Page 3: all 20 final assignments, including the unassigned candidate IDs.
 page_header(3,'最後の20配置は、1回ですべて分かれる',
             '第5回までの回答が (0,1,0,1,0,0) → (1,0,1,0,0,1) → (0,1,0,0,0,1) の場合。'
-            '下の数字は犬の番号で、右端は第6回に返るA〜Fの人数です。')
-rows=[['配置','A','B','C','D','E','F','所属なし','第6回の回答']]
+            '下の数字は候補IDで、右端は第6回に返る6Teamの人数です（Team 6・10・11・16・17・25順）。')
+rows=[['配置',*[f'Team {team}' for team in TEAMS],'所属なし','第6回の回答']]
 seen=[]
 for num,(state,code) in enumerate(zip(WIT['q5_cell_states'],WIT['q6_response_codes']),1):
     union=0
@@ -207,12 +205,12 @@ for num,(state,code) in enumerate(zip(WIT['q5_cell_states'],WIT['q6_response_cod
     rows.append([str(num),*[members(m) for m in state],members(((1<<11)-1)^union),
                  '('+','.join(map(str,counts_actual))+')'])
 assert len(set(seen)) == len(seen) == 20
-bottom=table(rows,LEFT,674,[30,40,55,40,55,40,55,75,WIDTH-390],row_height=22,font=8.8)
+bottom=table(rows,LEFT,674,[30,42,56,44,56,44,56,72,WIDTH-400],row_height=22,font=8.8)
 box(LEFT,bottom-17,WIDTH,69,colors.HexColor('#E8F5F2'),colors.HexColor('#B3D8D1'))
 p('右端の20回答はすべて異なります。第6回の回答と一致する行が1つだけ残るため、'
   'この枝では所属配置を確定できます。例の回答 (1,1,0,0,1,1) は配置1です。',
   LEFT+12,bottom-29,WIDTH-24)
-p('照合方法: 各飼い主の所属犬と、2ページ目の第6回で見せる犬との共通数を数えます。'
+p('照合方法: 各Teamの所属IDと、2ページ目の第6回で選ぶ候補IDとの共通数を数えます。'
   '20行の回答は証明書の保存値に加え、所属配置と質問から再計算して一致を確認しました。',
   LEFT,116,WIDTH,'small')
 p('出典: manifest.json / example_witness_code30.json / 53個のcertificate.json.gz。'
