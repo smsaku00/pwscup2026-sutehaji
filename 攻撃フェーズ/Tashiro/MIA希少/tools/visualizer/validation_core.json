@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "reachable_q3_branches": 209,
+  "empty_q3_branches": [
+    10,
+    82,
+    90,
+    91,
+    94,
+    118,
+    334
+  ],
+  "representative_state_hashes": 53,
+  "transported_state_sets": 209,
+  "branch_state_hashes": 209,
+  "total_states": 2494800,
+  "encoded_nodes_total": 1375470,
+  "q4_branches_total": 34902,
+  "q4_max_bucket": 1338,
+  "q5_cells_total": 1340358,
+  "q5_max_cell": 44,
+  "q6_nodes_total": 1340358,
+  "terminal_singleton_outcomes": 2494800,
+  "maximum_additional_depth": 4,
+  "query_padding_checks": 8252814,
+  "collisions": 0,
+  "decoded_mean_scores": 216,
+  "midpoint_rejections": 215,
+  "witness_states": 20,
+  "witness_history": [
+    30,
+    253,
+    246,
+    328
+  ],
+  "minimum_mean_gap_exact": "1/54000",
+  "source_files": [
+    "manifest.json",
+    "independent_full_audit.json",
+    "universal_score_encoding.json",
+    "example_witness_code30.json",
+    "orbits/*/certificate.json.gz"
+  ],
+  "core_sha256": "b8ed39c92a18d60ac33f3ab4c73fddacffbd7e4d627bbfb8328163b601b26924"
+}

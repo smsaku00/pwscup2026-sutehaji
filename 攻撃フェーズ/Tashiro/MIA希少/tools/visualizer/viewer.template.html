@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MIA希少｜4回完全決定木</title>
+<style>
+:root{color-scheme:light;--ink:#172c3c;--muted:#566976;--line:#d6e1e6;--blue:#176b85;--pale:#edf5f7;--gold:#a4631b}
+*{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:var(--ink);font:15px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1320px;margin:auto;padding:28px 24px 60px}header{display:flex;justify-content:space-between;gap:20px;align-items:start}h1{font-size:29px;margin:3px 0 8px;letter-spacing:.02em}h2{font-size:20px;margin:0 0 12px}h3{font-size:16px}p{margin:8px 0}.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--blue);font-weight:700}.muted{color:var(--muted)}.badge{background:#d9eee4;color:#245d44;border-radius:20px;padding:6px 14px;white-space:nowrap;font-size:12px;font-weight:700}.notice{border-left:3px solid #d3a458;background:#fff7e9;padding:10px 14px;margin:18px 0;font-size:13px}.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}button,select,input{font:inherit;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);padding:8px 12px}button{cursor:pointer}button:hover{border-color:var(--blue);background:var(--pale)}button:disabled{cursor:wait;opacity:.55}.primary{background:var(--blue);color:white;border-color:var(--blue)}.primary:hover{background:#155b71;color:white}.layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(340px,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:18px}.scroll{overflow:auto;max-height:570px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid #e7edf0;vertical-align:top}th{position:sticky;top:0;background:var(--pale);font-weight:600}td.num{text-align:right;font-variant-numeric:tabular-nums}.answer{cursor:pointer}.answer:hover{background:#f0f8fa}.answer:focus{outline:2px solid var(--blue);outline-offset:-2px}.answer.selected{background:#e1f1f5}code{font-size:12px}.stepper{display:flex;overflow:auto;gap:8px;margin:22px 0}.step{flex:1;min-width:160px;background:white;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:left}.step.active{background:var(--blue);color:white}.step .count{font-size:23px;display:block;font-weight:700}.step .caption{font-size:12px;display:block}#error{color:#963d24;background:#fff0e9;padding:12px;border-radius:8px;margin:12px 0}#status{font-size:13px;color:var(--blue)}details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:600}.small{font-size:12px}.inline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}a{color:var(--blue)}.completion{background:#eef8f1;border:1px solid #b9d9c4;padding:14px;border-radius:8px}.legend{line-height:1.8}.download{white-space:nowrap}.predict{margin-top:20px}#pagination{display:flex;gap:12px;align-items:center;margin:10px 0}footer{font-size:12px;color:var(--muted)}@media(max-width:900px){.layout{grid-template-columns:1fr}main{padding:18px 12px}h1{font-size:25px}header{display:block}.badge{display:inline-block;margin-top:8px}.stepper{margin:18px 0}.card{padding:16px}}@media print{.controls,#pagination,.download,header .badge{display:none}body{background:white}.layout{display:block}.scroll{max-height:none;overflow:visible}.card{break-inside:avoid}.stepper{overflow:visible}.step{min-width:0}details{display:none}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">MIA RARE · COMPLETE DECISION TREE</div><h1>MIA希少｜4回完全決定木</h1><p class="muted">回答の枝を選び、第3〜第6回の質問と残る所属配置を確認できます。</p></div><span class="badge">全209回答・全53証明書を内蔵</span></header>
+<div class="notice">「具体例」は説明用の仮定経路です。実際の所属結果ではありません。犬の例では、11匹を6人の飼い主に合計9匹割り当て、2匹はどの飼い主にも属しません。</div>
+<div class="controls"><button id="demo" class="primary">具体例を1手進める</button><button id="last20">最後の20候補を見る</button><button id="back">1手戻る</button><button id="reset">最初に戻る</button><label for="mode">表示</label><select id="mode"><option value="dog">犬の例</option><option value="real">実ID・Team</option></select><button id="export" class="download">現在の経路を保存</button></div>
+<div id="status" role="status" aria-live="polite">準備中…</div><div id="error" role="alert" hidden></div>
+<nav id="steps" class="stepper" aria-label="選択した回答の経路"></nav>
+<div class="layout"><section>
+<div class="card"><h2 id="question-title">第3回の質問</h2><p id="question-description" class="muted"></p><div id="question" class="scroll"></div><p class="small muted">選んだ候補と追加する既知非所属IDに confidence 0.4、その他の希少行に 0.1 を設定する質問です。高側の合計人数は各回で固定します。</p></div>
+<div class="card" id="prediction-card"><h2>候補と予想回答の照合</h2><p id="prediction-note" class="small muted"></p><button id="csv" class="download">残る全候補をCSVで保存</button><div id="pagination"><button id="prev-page">前の50件</button><span id="page-label"></span><button id="next-page">次の50件</button></div><div id="prediction" class="scroll"></div></div>
+</section><section><div class="card"><h2 id="answers-title">返ってくる回答を選ぶ</h2><p class="small muted">人数の順番は <span id="team-order"></span>。各行を選ぶと次の質問が開きます。</p><div class="inline"><input id="filter" placeholder="回答・codeを検索" aria-label="回答・codeを検索"><select id="sort" aria-label="回答の並び順"><option value="count">候補数が多い順</option><option value="code">code順</option></select></div><p id="answer-summary" class="small muted"></p><div id="answers" class="scroll"></div><details><summary>平均点から回答を選ぶ</summary><p class="small muted">保存された216回答の点数表で復号し、この経路で到達できる回答かも確認します。第1・2回で導出した人数と保存質問の設定が前提です。</p><div class="inline"><input id="mean" placeholder="例：0.00489" aria-label="平均点"><button id="decode">復号して進む</button></div><p id="decode-note" class="small"></p></details></div>
+<div class="card"><details open><summary>読み方と出典</summary><p class="legend small">質問表は「どの犬をどの飼い主に見せるか」、回答は「その中に自分の犬が何匹いるか」を表します。実ID表示に切り替えると、人選・既知非所属の追加ID・高側の合計人数を確認できます。</p><p class="small" id="mapping"></p><p class="small">全2,494,800配置、最大追加4回、最終衝突0の証明書を使用しています。第5回後は全経路合計1,340,358分岐です。最後の質問の回答は、その枝で残る配置から再計算します。</p><p class="small muted">内蔵データ：<code>analysis/full_depth4_20261007/</code> の manifest、53個の certificate.json.gz、点数表、padding規則、検証集計、保存具体例。選んだ軌道の証明書だけを展開します。外部通信は不要です。</p><p class="small"><a href="https://github.com/smsaku00/pwscup2026-sutehaji/tree/main/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/MIA%E5%B8%8C%E5%B0%91/analysis/full_depth4_20261007" target="_blank" rel="noopener">GitHubの証明書</a> · <a href="MIA_4query_tree_guide.pdf">図表ガイドPDF</a></p><p class="small muted">最新版のChrome・Edge・Safariで開いてください。GitHub上のHTML表示はソース表示のため、Download raw fileで保存してブラウザで開きます。</p></details></div></section></div>
+<footer>回答codeは、表示する正規化済み質問に対する各人数を3進数で符号化した値です。すべての分岐は保存証明書に基づきます。</footer>
+</main>
+<script>/*__CORE__*/</script>
+<script id="mia-data" type="application/json">/*__DATA__*/</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('mia-data').textContent), core=MIA_TREE;
+const $=id=>document.getElementById(id), fmt=n=>n.toLocaleString('ja-JP');
+const teamIDs=data.padding.team_order, caps=data.manifest.caps, ids=data.padding.candidate_ids;
+let history=[],rows=null,node={query:data.manifest.q3_query},outcomes=new Map(),page=0,busy=false;
+const certCache=new Map(), DEMO=[data.example.q3_code,data.example.q4_code,data.example.q5_code,data.example.q6_response_codes[0]];
+let routeCounts=[data.summary.total_states];
+const dog=()=>$('mode').value==='dog';
+const teamName=t=>dog()?'飼い主'+String.fromCharCode(65+t):'Team '+teamIDs[t];
+const candidateNames=m=>ids.flatMap((id,b)=>m>>b&1?[dog()?'犬'+(b+1):String(id)]:[]).join('、')||'—';
+const answerText=c=>'('+core.counts(Number(c)).join(', ')+')';
+const score=c=>data.encoding.integer_values[String(c)]/data.encoding.mean_denominator;
+function fail(error){$('error').hidden=false;$('error').textContent=error.message||String(error);}
+function saveFile(name,content,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+async function certificate(rep){
+ if(certCache.has(rep))return certCache.get(rep);
+ if(typeof DecompressionStream==='undefined')throw Error('このブラウザでは内蔵データを展開できません。最新版のChrome・Edge・Safariで開いてください。');
+ if(!Object.hasOwn(data.certificates,String(rep)))throw Error('この枝の内蔵証明書がありません。完全版HTMLを再取得してください。');
+ const bytes=Uint8Array.from(atob(data.certificates[String(rep)]),ch=>ch.charCodeAt(0));
+ const text=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+ const cert=JSON.parse(text);if(cert.q3_code!==rep||cert.depth!==3)throw Error('内蔵証明書の識別情報が一致しません。');
+ if(certCache.size>=3)certCache.delete(certCache.keys().next().value);certCache.set(rep,cert);return cert;
+}
+function assertOutcomes(currentRows,currentNode){
+ if(currentNode.leaf){if(currentRows.length!==1)throw Error('証明書の葉が1配置ではありません。');return new Map();}
+ const grouped=core.groups(currentRows,currentNode.query);
+ if(currentNode.terminal){if([...grouped.values()].some(g=>g.length!==1))throw Error('最後の質問で配置が衝突しています。');}
+ else if([...grouped.keys()].some(c=>!Object.hasOwn(currentNode.children,String(c)))||Object.keys(currentNode.children).length!==grouped.size)throw Error('証明書の回答分岐と候補集合が一致しません。');
+ return grouped;
+}
+async function navigate(next){
+ let nextRows=null,nextNode={query:data.manifest.q3_query},counts=[data.summary.total_states];
+ if(next.length>4)throw Error('回答は最大4回です。');
+ if(next.length){const orbit=data.manifest.orbits.find(o=>o.q3_codes.includes(next[0]));if(!orbit)throw Error('この第3回回答には到達できません。');
+  const cert=await certificate(orbit.representative),mapping=orbit.mappings[String(next[0])];
+  nextNode=core.normalize(core.moveTree(cert.tree,mapping.candidate_old_to_new,mapping.team_old_to_new));nextRows=core.generate(next[0]);
+  if(nextRows.length!==data.q3Counts[String(next[0])])throw Error('第3回の候補数が検証記録と一致しません。');counts.push(nextRows.length);
+  for(const c of next.slice(1)){if(nextNode.leaf)throw Error('確定後の回答が指定されています。');const grouped=assertOutcomes(nextRows,nextNode);if(!grouped.has(c))throw Error('この経路には存在しない回答です。');nextRows=grouped.get(c);nextNode=nextNode.terminal?{leaf:true}:nextNode.children[String(c)];counts.push(nextRows.length);}
+ }
+ const nextOutcomes=next.length?assertOutcomes(nextRows,nextNode):new Map(Object.entries(data.q3Counts).map(([c,n])=>[Number(c),{length:n}]));
+ history=next;rows=nextRows;node=nextNode;outcomes=nextOutcomes;routeCounts=counts;page=0;$('filter').value='';$('decode-note').textContent='';
+ window.history.replaceState(null,'',location.pathname+location.search+(history.length?'#codes='+history.join(','):''));render();
+}
+async function run(action){if(busy)return;busy=true;$('error').hidden=true;$('status').textContent='証明書と候補集合を確認しています…';document.querySelectorAll('button').forEach(b=>b.disabled=true);try{await action();$('status').textContent=node.leaf?'1配置に確定しました。':`第${3+history.length}回 · ${fmt(outcomes.size)}種類の到達可能な回答`;}catch(e){fail(e);$('status').textContent='入力を確認してください。';}finally{busy=false;document.querySelectorAll('button').forEach(b=>b.disabled=false);$('back').disabled=!history.length;$('demo').disabled=history.length===4;$('csv').disabled=!rows;$('prev-page').disabled=!rows||page===0;$('next-page').disabled=!rows||(page+1)*50>=rows.length;}}
+function choose(code){return run(()=>navigate([...history,Number(code)]));}
+function renderSteps(){const steps=$('steps');steps.replaceChildren();routeCounts.forEach((n,i)=>{const b=document.createElement('button');b.className='step'+(i===history.length?' active':'');b.innerHTML=`<span class="caption">${i===4||i===history.length&&node.leaf?'特定結果':'第'+(3+i)+'回の前'}</span><span class="count">${fmt(n)}通り</span><span class="caption">${i?'回答 '+answerText(history[i-1]):'開始'}</span>`;b.onclick=()=>run(()=>navigate(history.slice(0,i)));steps.append(b);});}
+function renderQuestion(){
+ $('team-order').textContent=teamIDs.map((_,t)=>teamName(t)).join('・');
+ $('question-title').textContent=node.leaf?'所属配置が確定':`第${3+history.length}回の質問`;
+ $('question-description').textContent=node.leaf?'選択した回答が実際の回答なら、下の配置に一意に定まります。':`残り${fmt(rows?rows.length:data.summary.total_states)}通り。候補の見せ方は保存済みの質問です。`;
+ if(node.leaf){$('question').innerHTML='<div class="completion"><table><thead><tr><th>所属先</th><th>確定した候補</th></tr></thead><tbody>'+rows[0].map((m,t)=>`<tr><td>${teamName(t)}</td><td>${candidateNames(m)}</td></tr>`).join('')+`<tr><td>どこにも属さない候補</td><td>${candidateNames(2047^rows[0].reduce((a,m)=>a|m,0))}</td></tr></tbody></table></div>`;}
+ else{$('question').innerHTML='<table><thead><tr><th>所属先</th><th>'+(dog()?'見せる犬':'調べる候補ID')+'</th><th>追加する既知非所属ID</th><th>高側合計</th></tr></thead><tbody>'+node.query.map((m,t)=>{const n=data.padding.total_high[t]-core.popcount(m);if(n<1||n>13)throw Error('既知非所属IDの追加人数が範囲外です。');return `<tr><td>${teamName(t)}</td><td>${candidateNames(m)}</td><td>${data.padding.known_negative_ids.slice(0,n).join('、')}</td><td class="num">${data.padding.total_high[t]}</td></tr>`;}).join('')+'</tbody></table>';}
+ $('mapping').textContent='犬の対応：'+ids.map((id,b)=>'犬'+(b+1)+'＝ID '+id).join('、')+'。飼い主A〜F＝Team '+teamIDs.join('・')+'。';
+}
+function renderAnswers(){
+ const list=[...outcomes.entries()],filter=$('filter').value.trim().replace(/\s/g,'');
+ list.sort($('sort').value==='code'?(a,b)=>a[0]-b[0]:(a,b)=>b[1].length-a[1].length||a[0]-b[0]);
+ const visible=list.filter(([c])=>!filter||String(c).includes(filter)||answerText(c).replace(/\s/g,'').includes(filter));
+ $('answers-title').textContent=node.leaf?'この経路は完了':'返ってくる回答を選ぶ';
+ $('answer-summary').textContent=node.leaf?'追加の質問は不要です。':`${fmt(visible.length)} / ${fmt(list.length)}回答を表示。人数はこの質問の候補部分についての回答です。`;
+ const container=$('answers');container.innerHTML='<table><thead><tr><th>6チームの回答</th><th>残る候補</th><th>予想平均点</th><th>code</th></tr></thead><tbody>'+visible.map(([c,g])=>`<tr class="answer" data-code="${c}" tabindex="0" role="button" aria-label="回答 ${answerText(c)}、残り ${g.length}通り"><td>${answerText(c)}</td><td class="num">${fmt(g.length)}</td><td class="num">${score(c).toFixed(8)}</td><td class="num">${c}</td></tr>`).join('')+'</tbody></table>';
+ container.querySelectorAll('[data-code]').forEach(el=>{el.onclick=()=>choose(el.dataset.code);el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(el.dataset.code);}};});
+}
+function renderPrediction(){
+ $('prediction-note').textContent=!rows?'第3回の回答を選ぶと、その枝の全候補を確認できます。':node.leaf?'1配置に確定しました。':`残る${fmt(rows.length)}配置と、この質問への予想回答です。${node.terminal?'各回答がすべて異なるため、最後の1問で特定できます。':''}`;
+ $('pagination').hidden=!rows;$('csv').disabled=!rows;
+ if(!rows){$('prediction').replaceChildren();return;}
+ const start=page*50,end=Math.min(start+50,rows.length);$('page-label').textContent=`${fmt(start+1)}〜${fmt(end)} / ${fmt(rows.length)}`;$('prev-page').disabled=page===0;$('next-page').disabled=end===rows.length;
+ $('prediction').innerHTML='<table><thead><tr><th>#</th>'+teamIDs.map((_,t)=>`<th>${teamName(t)}</th>`).join('')+`<th>${node.leaf?'結果':'予想回答'}</th></tr></thead><tbody>`+rows.slice(start,end).map((row,i)=>`<tr><td>${start+i+1}</td>`+row.map(m=>`<td>${candidateNames(m)}</td>`).join('')+`<td>${node.leaf?'確定':answerText(core.response(row,node.query))}</td></tr>`).join('')+'</tbody></table>';
+}
+function render(){renderSteps();renderQuestion();renderAnswers();renderPrediction();}
+$('mode').onchange=render;$('filter').oninput=renderAnswers;$('sort').onchange=renderAnswers;
+$('reset').onclick=()=>run(()=>navigate([]));$('back').onclick=()=>run(()=>navigate(history.slice(0,-1)));
+$('demo').onclick=()=>run(()=>navigate(DEMO.slice(0,history.every((c,i)=>c===DEMO[i])?Math.min(history.length+1,4):1)));
+$('last20').onclick=()=>run(()=>navigate(DEMO.slice(0,3)));
+$('prev-page').onclick=()=>{page=Math.max(0,page-1);renderPrediction();};$('next-page').onclick=()=>{if(rows&&(page+1)*50<rows.length)page++;renderPrediction();};
+$('decode').onclick=()=>run(async()=>{if(node.leaf)throw Error('すでに1配置に確定しています。');let code;try{code=core.decodeMean($('mean').value,data.encoding);}catch(e){throw Error('平均点を読み取れませんでした。数値と桁数を確認してください。保存した点数表の範囲外や回答の境界にある値は選べません。');}if(!outcomes.has(code))throw Error('復号した回答は現在の経路には存在しません。点数と提出した質問を確認してください。');await navigate([...history,code]);$('decode-note').textContent='復号した回答：'+answerText(code)+' / code '+code;});
+$('export').onclick=()=>saveFile('MIA_4query_path.json',JSON.stringify({codes:history,remaining:rows?rows.length:data.summary.total_states,complete:!!node.leaf,query_masks:node.query||null,members_by_team:node.leaf?Object.fromEntries(rows[0].map((m,t)=>[teamIDs[t],core.maskIDs(m,ids)])):null},null,2),'application/json');
+$('csv').onclick=()=>{if(!rows)return;const csv=[['index',...teamIDs.map(t=>'Team'+t),'response_code','response_counts'],...rows.map((row,i)=>[i+1,...row.map(m=>core.maskIDs(m,ids).join(' ')),node.leaf?'':core.response(row,node.query),node.leaf?'':core.counts(core.response(row,node.query)).join(' ')])].map(row=>row.join(',')).join('\r\n');saveFile('MIA_remaining_candidates.csv','\uFEFF'+csv,'text/csv;charset=utf-8');};
+const hash=location.hash.match(/^#codes=([0-9,]+)$/);run(()=>navigate(hash?hash[1].split(',').map(Number):[]));
+</script></body></html>

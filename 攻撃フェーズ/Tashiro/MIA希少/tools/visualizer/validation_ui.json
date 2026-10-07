@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "environment": "Node VM with simulated DOM; native GZIP DecompressionStream",
+  "html_bytes": 1501180,
+  "html_sha256": "6ddc930c65437b63aa70ebd45ea901a0e36bc5bfff9805c205f2cc033fb18258",
+  "embedded_certificates_source_matched": 53,
+  "native_gzip_certificates_loaded": 53,
+  "demo_remaining_counts": [
+    40428,
+    631,
+    20,
+    1
+  ],
+  "transported_branch_history": [
+    246,
+    352,
+    597,
+    34
+  ],
+  "controls_checked": [
+    "four-step demo",
+    "leaf assignment with two unassigned candidates",
+    "JSON path export",
+    "back",
+    "terminal candidate CSV export",
+    "dog and real ID modes",
+    "reset",
+    "answer filtering and sorting",
+    "alternative transported branch through round 6",
+    "pagination",
+    "reachable score navigation",
+    "20-state shortcut",
+    "shareable route replacement",
+    "saved hash route restoration",
+    "busy navigation guard"
+  ],
+  "negative_cases": [
+    "legal but unreachable decoded answer",
+    "midpoint score",
+    "out-of-margin score",
+    "missing certificate stops without changing the route",
+    "unsupported decompression stops without changing the route"
+  ],
+  "visual_browser_validation": false
+}
