@@ -1,0 +1,7 @@
+{
+  "audit_status": "FAIL",
+  "candidate": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_第3回MIA_固定5bitと非会員較正/候補/F_mia.csv",
+  "error_type": "ValueError",
+  "error": "rare confidence differs: record 47, Team6",
+  "auditor_sha256": "b6e6170294cbe0bf52608669e0d9ea9b70ec66b5a2ee67dec42176d406c8ef54"
+}

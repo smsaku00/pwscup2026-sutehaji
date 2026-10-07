@@ -1,0 +1,304 @@
+{
+  "audit_status": "PASS",
+  "decoder_sha256": "4239065ef2b36b3700a162c9bec81c88148087480b3dd6f90470e74601d409ef",
+  "auditor_sha256": "b7047e63958aecaf74c4fad61700c9bca27b23cfee2a8cc1103d1cd158ab2b3f",
+  "seed": 20261008,
+  "random_legal_configuration_cases": 100,
+  "partial_prefix_cases": 400,
+  "targeted_legal_configuration_cases": 198,
+  "targeted_single_pair_coverage_by_team": {
+    "6": 11,
+    "10": 55,
+    "11": 11,
+    "16": 55,
+    "17": 11,
+    "25": 55
+  },
+  "all_five_mean_results_identify_nine_and_outside_two": true,
+  "partial_prefix_true_candidate_retention": true,
+  "next_fixed_question_and_padding_match": true,
+  "mean_generation": "actual official score_mia on 1049-row confidence arrays and AST-extracted official _nanmean; actual candidate used for round 3; agreed fixed rare scores substituted in memory for rounds 4-7",
+  "synthetic_truth_notice": "all test assignments are synthetic; no real individual membership is asserted",
+  "local_signatures": {
+    "single_cases": 11,
+    "pair_cases": 55,
+    "signature_collisions": 0
+  },
+  "rejections": [
+    {
+      "case": "NaN",
+      "rejected": true,
+      "reason": "平均点は公式詳細結果の有限な数値を入力してください"
+    },
+    {
+      "case": "infinity",
+      "rejected": true,
+      "reason": "平均点は公式詳細結果の有限な数値を入力してください"
+    },
+    {
+      "case": "negative infinity",
+      "rejected": true,
+      "reason": "平均点は公式詳細結果の有限な数値を入力してください"
+    },
+    {
+      "case": "above one",
+      "rejected": true,
+      "reason": "平均点は[0,1]の範囲が必要です"
+    },
+    {
+      "case": "negative score",
+      "rejected": true,
+      "reason": "平均点は[0,1]の範囲が必要です"
+    },
+    {
+      "case": "malformed score",
+      "rejected": true,
+      "reason": "平均点は公式詳細結果の有限な数値を入力してください"
+    },
+    {
+      "case": "zero denominator",
+      "rejected": true,
+      "reason": "平均点は公式詳細結果の有限な数値を入力してください"
+    },
+    {
+      "case": "empty observation history",
+      "rejected": true,
+      "reason": "平均点は第3回から順に1〜5個が必要です"
+    },
+    {
+      "case": "six observations instead of five",
+      "rejected": true,
+      "reason": "平均点は第3回から順に1〜5個が必要です"
+    },
+    {
+      "case": "all-zero first counts cannot assign nine distinct members to the six unselected candidates",
+      "rejected": true,
+      "reason": "6チームの候補に重複禁止を満たす配置がありません。履歴または提出設定を確認してください"
+    },
+    {
+      "case": "repeated inconsistent five-round history",
+      "rejected": true,
+      "reason": "Team6: 履歴と一致する候補がありません"
+    },
+    {
+      "case": "four-decimal rounded display incompatible with the exact alphabet",
+      "rejected": true,
+      "reason": "平均点が符号表に一意一致しません。実提出の設定・生の結果値・桁数を確認してください"
+    },
+    {
+      "case": "same identified individual forced into Team6 and Team11",
+      "rejected": true,
+      "reason": "6チームの候補に重複禁止を満たす配置がありません。履歴または提出設定を確認してください"
+    }
+  ],
+  "cli_checks": [
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 2,
+      "all_identified": false
+    },
+    {
+      "returncode": 2,
+      "rejected": true
+    },
+    {
+      "returncode": 2,
+      "rejected": true
+    },
+    {
+      "returncode": 0,
+      "rounds_read": 5,
+      "all_identified": true
+    }
+  ],
+  "round_order_experiment": {
+    "reversed_histories_tested": 100,
+    "rejected": 100,
+    "accepted_as_legal_alternative": 0,
+    "accepted_examples": [],
+    "limitation": "A mean-only API cannot always detect shuffled round order if it happens to encode another legal assignment; chronological round identity must be supplied correctly by the operator."
+  },
+  "concrete_undetectable_round_order_error": {
+    "nonidentity_bit_permutation_automorphisms": 1,
+    "permutation_zero_based": [
+      0,
+      2,
+      1,
+      4,
+      3
+    ],
+    "input_round_order": [
+      3,
+      5,
+      4,
+      7,
+      6
+    ],
+    "candidate_id_remapping": {
+      "47": 47,
+      "76": 76,
+      "90": 304,
+      "115": 264,
+      "169": 383,
+      "264": 115,
+      "304": 90,
+      "383": 169,
+      "462": 462,
+      "495": 675,
+      "675": 495
+    },
+    "legal_cases_accepted_after_this_misordering": 100,
+    "cases_with_changed_member_assignments": 99,
+    "examples": [
+      {
+        "original": {
+          "6": [
+            264
+          ],
+          "10": [
+            462,
+            675
+          ],
+          "11": [
+            304
+          ],
+          "16": [
+            90,
+            495
+          ],
+          "17": [
+            76
+          ],
+          "25": [
+            115,
+            383
+          ]
+        },
+        "decoded_misordered": {
+          "6": [
+            115
+          ],
+          "10": [
+            462,
+            495
+          ],
+          "11": [
+            90
+          ],
+          "16": [
+            304,
+            675
+          ],
+          "17": [
+            76
+          ],
+          "25": [
+            169,
+            264
+          ]
+        },
+        "misordered_means": [
+          "0.01438888888888889",
+          "0.014796296296296299",
+          "0.01538888888888889",
+          "0.00775925925925926",
+          "0.019981481481481482"
+        ]
+      },
+      {
+        "original": {
+          "6": [
+            462
+          ],
+          "10": [
+            264,
+            675
+          ],
+          "11": [
+            169
+          ],
+          "16": [
+            90,
+            495
+          ],
+          "17": [
+            115
+          ],
+          "25": [
+            47,
+            383
+          ]
+        },
+        "decoded_misordered": {
+          "6": [
+            462
+          ],
+          "10": [
+            115,
+            495
+          ],
+          "11": [
+            383
+          ],
+          "16": [
+            304,
+            675
+          ],
+          "17": [
+            264
+          ],
+          "25": [
+            47,
+            169
+          ]
+        },
+        "misordered_means": [
+          "0.02303703703703704",
+          "0.016462962962962964",
+          "0.016648148148148148",
+          "0.014148148148148148",
+          "0.006722222222222223"
+        ]
+      }
+    ],
+    "required_operation": "Match each raw detailed-results mean to its actual submission CSV and round before chronological entry. Numeric validity and disjointness checks cannot replace that provenance check."
+  },
+  "four_decimal_rejection_example": {
+    "raw_official_mean": "0.01438888888888889",
+    "four_decimal_display": "0.0144"
+  },
+  "precision_origin_limitation": "A decimal string alone cannot prove it is raw; a rounded display that coincides exactly with an alphabet value cannot be identified as rounded. Use the raw detailed-results key, not the display.",
+  "source_sha256": {
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "本戦/攻撃フェーズ/Tashiro/20261008_第3回MIA_固定5bitと非会員較正/候補/F_mia.csv": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+  },
+  "review": "No membership misidentification, false true-candidate exclusion, wrong fixed next query, or failure to reject incompatible/no-overlap histories was found under the documented chronological raw-mean input contract."
+}

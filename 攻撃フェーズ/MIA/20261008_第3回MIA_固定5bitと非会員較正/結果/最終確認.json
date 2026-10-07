@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "completed_jst": "2026-10-08T01:41:12.398747+09:00",
+  "round": 3,
+  "final_csv": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+  "F_mia_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+  "rows": 1049,
+  "targets": 22,
+  "own_team_excluded": 28,
+  "rare_method": "固定5bitの第1問・事前固定した第3〜7回質問",
+  "ordinary_method": "Gen-LRA7 + 県性別非会員較正500 + 自対象除外中央値補正0.1",
+  "zero_member_team_rare_cells": 384,
+  "ordinary_submit_cells_independently_exact": 19250,
+  "rare_cells_independently_exact": 528,
+  "known_nonrare_negative_zero_cells": 3300,
+  "audits": {
+    "全体監査.json": {
+      "sha256": "e9a0c27b495f5f1cb566ae41cbcb62c881f2da43470266607d0244a21a4770f2",
+      "passed": true
+    },
+    "希少監査_再検証.json": {
+      "sha256": "5d379e04e0b00604df2d95bce92e89a06a629576b6e2ebcc00c01f040c3f16f5",
+      "passed": true
+    },
+    "統合監査.json": {
+      "sha256": "29342fe9e945f7bb2e740339359c59b7e3466c636762f807af86cbcfbb8931bb",
+      "passed": true
+    },
+    "復号監査_ラベル版最終.json": {
+      "sha256": "1850402a006e545293fd1f97e16d65876319943715fa91bd95538d77bda7ea9e",
+      "passed": true
+    },
+    "再作成一致.json": {
+      "sha256": "b2ff015c5043ecd919479df89ea841c5b9654651d96797506e49a345d51f2e86",
+      "passed": true
+    }
+  },
+  "deliberate_csv_or_formula_mutations_rejected": {
+    "ordinary": 6,
+    "rare": 10,
+    "integration": 28,
+    "total": 44
+  },
+  "decoder_checks": {
+    "random_legal_configurations": 100,
+    "targeted_single_pair_coverage": 198,
+    "partial_histories": 400,
+    "invalid_history_cases_rejected": 13,
+    "labeled_argument_permutations": 100,
+    "invalid_labeled_inputs_rejected": 14
+  },
+  "reproduction": {
+    "csv_byte_identical": true,
+    "byte_identical_generated_files": 8,
+    "identical_arrays": 9,
+    "settings_notice": "作成時設定.jsonは再作成一致の対象。設定.jsonのstatusと最終hash情報のみ確定時に更新。"
+  },
+  "official_validation_after_promotion": {
+    "called": true,
+    "function": "validate_mia_submission",
+    "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+    "source_sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+    "passed": true,
+    "errors": []
+  },
+  "pinned_inputs_checked_again": 63,
+  "all_watched_files_checked_again": 105,
+  "inputs_and_old_submissions_unchanged": true,
+  "original_candidate_csv": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_第3回MIA_固定5bitと非会員較正/候補/F_mia.csv",
+  "historical_audit_path_notice": "監査報告の候補パスは監査時点の記録。結果へ移動後もCSVは同じSHA256。報告原本は書き換えていない。",
+  "initial_rare_audit_failure_preserved": "希少監査.jsonの初回FAILは17桁文字列をDecimalで直接比較した監査器の誤検出。CSV変更なし。監査器修正後の希少監査_再検証.jsonがPASS。",
+  "operational_requirement": "詳細結果の生のmia.tpr_rareを実提出CSV・採点原本・回番号と照合し、--round-meansで入力。誤ラベルは別の合法所属に見える場合があり、数字だけで原本対応は証明できない。",
+  "source_sha256": {
+    "README.md": "72b1039d9aaced8cb26ed51f772f3573dd65a4b28256fbe9d55cde52038b4ec9",
+    "audit_integration.py": "8826497d85ba9d3c00d6b5f05a474ec01545cc01b1c8f80aa461067aed920ee2",
+    "audit_main.py": "1ac3a9a4258586b7acb2cbafeb4a075850e3cd7e78dbcbd6efefd57dba16a5d6",
+    "audit_rare.py": "1c6881876c10aeb088f0f1b369d41e970b1ebe5b40370fb453e133b363bd9c16",
+    "decoder_audit.py": "493743c95f7349f8c089fb4702904d419c9baec7af81eb2ae7534c752c18863b",
+    "input_pins.json": "b50a0af55be9660076eda1c900bdcb349f85fda789b5e23aa9cf58d92736f9b5",
+    "作成.py": "08ceedce047aa6513921cfe601e748e8e192520be4f88e947ff416fb3f9e3427",
+    "確定.py": "e41c4e3cf3827b7f2958e42d0b11828510a008bbd31cab0e51ff947ad531d517",
+    "結果読取.py": "8b905c80ef5d6bc83f3e6ebed6a6399a1477a37581a241a08b5c0dee1a3b520c",
+    "説明.md": "2b42e52bc629159f8f687bc6d59bcb88e9117016dfb21a3486e92415d8e62301"
+  },
+  "performance_notice": "未知の本戦個人所属に対する改善量は未検証。形式と合意した計算・符号・復号の監査結果。",
+  "scope": "MIAのみ。F_aia/token/ZIPは未作成。大会へ未提出。",
+  "submitted": false,
+  "main_individual_truth_used": false
+}

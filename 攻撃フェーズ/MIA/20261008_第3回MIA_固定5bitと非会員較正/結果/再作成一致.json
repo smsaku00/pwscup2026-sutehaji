@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "F_mia_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+  "F_mia_byte_identical": true,
+  "byte_identical_files": {
+    "F_mia.csv": true,
+    "通常者計算過程.csv": true,
+    "固定5bit符号.csv": true,
+    "2人組55通り.csv": true,
+    "非会員較正の対象.csv": true,
+    "平均点対応表.json": true,
+    "inputs_manifest.json": true,
+    "設定.json": true
+  },
+  "npz_arrays_identical": {
+    "teams": true,
+    "record_ids": true,
+    "normal_ids": true,
+    "raw7": true,
+    "calibrated": true,
+    "ordinary_rank": true,
+    "other_median": true,
+    "cross_corrected": true,
+    "submit_rank": true
+  },
+  "reproduction_path": "/private/tmp/pws2026_mia_round3_reproduction_20261008",
+  "execution_record": {
+    "started_jst": "2026-10-08T01:28:18.657739+09:00",
+    "elapsed_seconds": 13.433649584010709,
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "builder_sha256": "08ceedce047aa6513921cfe601e748e8e192520be4f88e947ff416fb3f9e3427",
+    "F_mia_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "references": {
+      "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833"
+    },
+    "main_truth_used": false,
+    "submitted": false
+  },
+  "notice": "reproduction ran same pinned builder twice; independent numerical audit is recorded separately"
+}

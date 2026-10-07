@@ -1,0 +1,310 @@
+{
+  "audit_status": "PASS",
+  "candidate": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_第3回MIA_固定5bitと非会員較正/候補/F_mia.csv",
+  "candidate_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+  "auditor_sha256": "1c6881876c10aeb088f0f1b369d41e970b1ebe5b40370fb453e133b363bd9c16",
+  "auditor_independence": "no import of builder, generated settings, or generated encoding; exact original-input matching; direct official score_mia and AST-extracted official aggregation functions",
+  "original_inputs": {
+    "private_records": 163,
+    "rare_records": 24,
+    "known_negative_rare_records": 13,
+    "unknown_rare_records": 11,
+    "matching": "exact decimal equality of seven QIs; one-to-one keys",
+    "rare_ids": [
+      47,
+      76,
+      90,
+      115,
+      126,
+      136,
+      169,
+      264,
+      271,
+      273,
+      304,
+      317,
+      383,
+      440,
+      462,
+      480,
+      495,
+      625,
+      637,
+      643,
+      668,
+      675,
+      814,
+      841
+    ],
+    "known_negative_ids": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440,
+      480,
+      625,
+      637,
+      643,
+      668,
+      814,
+      841
+    ],
+    "candidate_ids": [
+      47,
+      76,
+      90,
+      115,
+      169,
+      264,
+      304,
+      383,
+      462,
+      495,
+      675
+    ],
+    "source_sha256": {
+      "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+      "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+      "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+      "本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/MIA結果.json": "411e00d38ffbe7cb38bb73c654b129ca6377a198ad9031e409cccdc19dd725a4"
+    },
+    "count_status": "conditional result derived from prior official scores, not a released individual truth map"
+  },
+  "rare_csv_cells": {
+    "all_rare_cells_checked": 528,
+    "active_rare_cells_checked": 144,
+    "zero_member_team_cells_checked": 384,
+    "first_question_ids": [
+      115,
+      169,
+      264,
+      383,
+      462
+    ],
+    "team_order": [
+      6,
+      10,
+      11,
+      16,
+      17,
+      25
+    ],
+    "counts": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "total_high": [
+      6,
+      7,
+      7,
+      11,
+      10,
+      12
+    ],
+    "padding_counts": [
+      1,
+      2,
+      2,
+      6,
+      5,
+      7
+    ]
+  },
+  "fixed_five_bit_signatures": {
+    "questions": [
+      [
+        115,
+        169,
+        264,
+        383,
+        462
+      ],
+      [
+        47,
+        115,
+        304,
+        462,
+        675
+      ],
+      [
+        47,
+        90,
+        264,
+        462,
+        495
+      ],
+      [
+        47,
+        76,
+        264,
+        304,
+        383
+      ],
+      [
+        47,
+        76,
+        90,
+        115,
+        169
+      ]
+    ],
+    "bit_order": "submission rounds 3,4,5,6,7 from left to right",
+    "single_signatures": {
+      "47": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "76": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "90": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "115": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "169": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "264": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "304": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "383": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "462": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "495": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "675": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "single_cases": 11,
+    "pair_cases": 55,
+    "single_collisions": 0,
+    "pair_collisions": 0,
+    "legal_joint_configurations": 2494800,
+    "proof_type": "composition of independent team signatures; no joint-state replay claimed",
+    "proof": "Each of the three one-member teams is uniquely identified among 11 single signatures, and each of the three two-member teams among 55 pair signatures. The six team answers are recovered separately from each of five means. Therefore any two distinct legal joint configurations differ in at least one team's unique five-count signature. This covers all 2,494,800 disjoint legal configurations and also the larger product set permitting team overlap."
+  },
+  "official_score_alphabet": {
+    "official_per_team_cases": 78,
+    "official_mean_cases": 216,
+    "score_collisions": 0,
+    "minimum_gap_exact": "1/54000",
+    "maximum_official_score_error": 6.938893903907228e-18,
+    "five_decimal_alphabet_unique": true,
+    "operational_score_source": "raw detailed-results mia.tpr_rare; four-decimal leaderboard display is insufficient",
+    "zero_positive_team_nan_exclusion": true
+  },
+  "actual_csv_official_scoring": {
+    "actual_csv_single_and_pair_cases": 198,
+    "actual_zero_positive_team_cases": 16,
+    "nonrare_isolation_cases": 198,
+    "maximum_actual_csv_score_error": 6.938893903907228e-18,
+    "synthetic_truth_notice": "all single/pair possibilities used for scorer checking; no unreleased individual truth was used"
+  },
+  "official_source_sha256": {
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+  },
+  "deliberate_mutations": [
+    {
+      "mutation": "misidentified_record",
+      "rejected": true
+    },
+    {
+      "mutation": "reversed_first_and_last_bits",
+      "rejected": true
+    },
+    {
+      "mutation": "broken_high_score_tie",
+      "rejected": true
+    },
+    {
+      "mutation": "shifted_known_negative_padding",
+      "rejected": true
+    },
+    {
+      "mutation": "zero_member_team_rare_zero_omission",
+      "rejected": true
+    },
+    {
+      "mutation": "active_unknown_candidate_false_zero",
+      "rejected": true
+    },
+    {
+      "mutation": "nonfinite_rare_confidence",
+      "rejected": true
+    },
+    {
+      "mutation": "swapped_team_column_order",
+      "rejected": true
+    },
+    {
+      "mutation": "removed_candidate_row",
+      "rejected": true
+    },
+    {
+      "mutation": "colliding_five_bit_signatures",
+      "rejected": true
+    }
+  ],
+  "scope": "rare MIA and agreed fixed five-bit operation; nonrare calibrated ranking is audited separately",
+  "conditional_guarantee": "Assumes the previously derived team counts and public sharing conditions, unmodified score_mia/aggregation, correct future five fixed question CSVs, and sufficient score precision. This audit does not claim to have observed the actual individual memberships."
+}
