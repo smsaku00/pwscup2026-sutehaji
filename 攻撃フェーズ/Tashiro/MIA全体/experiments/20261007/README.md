@@ -31,7 +31,7 @@
 PWS作業ルートの `.venv/bin/python -B` を使います。依存追加はありません。配布データと予備戦の公開正解が配置されたローカル作業ルートで実行してください。掲載コードだけでは公式入力を補いません。
 
 ```bash
-.venv/bin/python -B 本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py --check-inputs
+.venv/bin/python -B 本戦/攻撃フェーズ/Tashiro/MIA全体/experiments/20261007/検証.py --check-inputs
 ```
 
 `検証.py` は掲載済みCSVの対象別値から平均・改善数を再集計し、コードと入力のハッシュを照合します。攻撃データを持たない環境では `--check-inputs` を省略すると集計・掲載ファイルの整合性だけを確認できます。
