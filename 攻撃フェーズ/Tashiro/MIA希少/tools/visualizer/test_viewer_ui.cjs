@@ -15,7 +15,7 @@ const html = fs.readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length, 3);
 const embedded = JSON.parse(scripts[1][2]);
-const sizes = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/size_report.json')));
+const sizes = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/resources/size_report.json')));
 const proof = path.join(root, 'analysis/full_depth4_20261007');
 const sourceHashes = new Map(sizes.source_files.map(f => [f.path, f.sha256]));
 const result = {

@@ -19,8 +19,8 @@ const QUERIES = [1330, 1069, 678, 87, 779];
 const CAPS = [1, 2, 1, 2, 1, 2];
 const DEMO = [128, 3, 4, 24, 32, 320];
 const COLORS = ['#2476b8', '#008576', '#bc6913', '#a4497a', '#6552ad'];
-const report = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/size_report_5query.json'), 'utf8'));
-const sourceCode = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/nonadaptive_code.json'), 'utf8'));
+const report = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/resources/size_report_5query.json'), 'utf8'));
+const sourceCode = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/resources/nonadaptive_code.json'), 'utf8'));
 const encoding = JSON.parse(fs.readFileSync(path.join(root, 'analysis/full_depth4_20261007/universal_score_encoding.json'), 'utf8'));
 assert.deepEqual(data.ids, IDS); assert.deepEqual(data.query_masks, QUERIES); assert.deepEqual(data.caps, CAPS);
 assert.deepEqual(data.demo_masks, DEMO); assert.deepEqual(data.encoding, encoding);
@@ -201,7 +201,7 @@ async function main() {
     assert.equal([...staticMarkup.matchAll(new RegExp('id="'+id+'"','g'))].length,1);
     assert(staticMarkup.indexOf('id="'+id+'"')<staticMarkup.indexOf('id="help-overlay"'));
   }assert(!staticMarkup.includes('答え'));assert(!staticMarkup.includes('質問'));assert(!staticMarkup.includes('調査'));
-  const oldPatterns=fs.readFileSync(path.join(root,'docs/visualizer/MIA_5query_patterns.html'));assert.equal(oldPatterns.length,80630);
+  const oldPatterns=Buffer.from(fs.readFileSync(path.join(root,'docs/visualizer/archive/MIA_5query_patterns.html'),'utf8').replace(/href="(?:\.\.\/)?(?:resources\/)?(MIA_[^"]+\.html|nonadaptive_code\.json)"/g,'href="$1"'));assert.equal(oldPatterns.length,80630);
   assert.equal(crypto.createHash('sha256').update(oldPatterns).digest('hex'),'393f21626465099138e3780d2dff546fab0536e6321cc8bba08533864e80cb2c');
   result.team_answer_cases=0;
   for(const team of [0,1,2,3,4,5]) {

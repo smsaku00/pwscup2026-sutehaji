@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from artifact_layout import artifact_path, rewrite_links
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -10,7 +11,7 @@ DEST = ROOT / 'docs' / 'visualizer'
 
 
 def main():
-    code_path = DEST / 'nonadaptive_code.json'
+    code_path = artifact_path('nonadaptive_code.json')
     encoding_path = ROOT / 'analysis/full_depth4_20261007/universal_score_encoding.json'
     padding_path = ROOT / 'analysis/full_depth4_20261007/padding_rule.json'
     code = json.loads(code_path.read_text(encoding='utf-8'))
@@ -74,7 +75,9 @@ def main():
             html = html.replace(f'/*__{key}__*/', value)
         if re.search(r'/\*__[A-Z_]+__\*/', html):
             raise ValueError('unreplaced fixed-page placeholder')
-        output = DEST / f'MIA_5query_{name}.html'
+        output = artifact_path(f'MIA_5query_{name}.html')
+        output.parent.mkdir(parents=True, exist_ok=True)
+        html = rewrite_links(html, output)
         output.write_text(html, encoding='utf-8')
         report = {'strategy': 'nonadaptive', 'html_bytes': output.stat().st_size,
                   'html_sha256': hashlib.sha256(output.read_bytes()).hexdigest(), 'format': format_name,
@@ -83,7 +86,7 @@ def main():
                   'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
                                    'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                                   for p in (code_path, encoding_path, padding_path)]}
-        (DEST / report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        artifact_path(report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(json.dumps({'file': output.name, 'bytes': report['html_bytes'], 'sha256': report['html_sha256']}, ensure_ascii=False))
 
 

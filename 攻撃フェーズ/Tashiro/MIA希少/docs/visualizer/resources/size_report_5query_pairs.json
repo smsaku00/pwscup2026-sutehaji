@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 89593,
-  "html_sha256": "201f5ce1ce69a2cd40c634af64c3eae416b72ee1a510cf30b514a0882110ae44",
-  "format": "single offline HTML; one-member rows or two-member pair edges eliminated by five revealed results; visible Team/ID selectors and three playback speeds; overview-only/candidates-only/both views and faint excluded rows; manual result/filter steps and explicit automatic playback",
+  "html_bytes": 70155,
+  "html_sha256": "7589a1f5b11204b7fba99275bad122dd816b7aa35640217ad4b4e46a6f336f9c",
+  "format": "preserved offline HTML; six-Team response table and five transparent sheets with 55 pair cells",
   "single_team_states": [
     11,
     55
@@ -19,7 +19,7 @@
   },
   "source_files": [
     {
-      "path": "docs/visualizer/nonadaptive_code.json",
+      "path": "docs/visualizer/resources/nonadaptive_code.json",
       "bytes": 2168,
       "sha256": "e715dbb0a955cfc4fc7347b0ec3f935c3e0af6c9badaf9b2c1e462f4c404e451"
     },

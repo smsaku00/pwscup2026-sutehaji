@@ -2,6 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
+from artifact_layout import artifact_path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -52,7 +53,8 @@ def main():
               'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
                                'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                               for p in [PROOF, encoding_path, padding_path]]}
-    (DEST / 'size_report_5query_adaptive.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    artifact_path('size_report_5query_adaptive.json').parent.mkdir(parents=True, exist_ok=True)
+    artifact_path('size_report_5query_adaptive.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: v for k, v in report.items() if k != 'source_files'}, ensure_ascii=False))
 
 

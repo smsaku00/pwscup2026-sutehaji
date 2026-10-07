@@ -1,9 +1,21 @@
 # MIA希少 docs — 説明・証明・探索履歴の索引
 
-- 更新日：2026年10月7日
+- 更新日：2026年10月8日
 - 共通入口：[MIA希少のREADME](../README.md)
 - 現在の結論：5回案・4回案の保証の確認済み、本番の個人所属は未特定
 - 番号05〜15：各段階の探索履歴、本文の「現在」「次」は当時の判断
+
+## 図解で理解する
+
+**[図解資料の入口](visualizer/README.md)** から、用途に合う資料を選べます。
+
+| 目的 | 資料 |
+|---|---|
+| 初めて見る人に、固定5回の流れを説明する | **[非適応5回版の教材](visualizer/MIA_5query_cards.html)** |
+| 適応4回の全分岐を確認する | [完全決定木ビューア](visualizer/MIA_4query_tree.html) |
+| HTML・PDF・説明書を一式保存する | [配布ZIP](visualizer/downloads/MIA_visualizer_bundle.zip) |
+
+旧表示・詳しい操作説明・データは [visualizer/](visualizer/) の用途別フォルダにまとめています。
 
 ## 1 最初に読む説明
 

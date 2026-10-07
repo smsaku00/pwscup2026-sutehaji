@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM with simulated DOM; independent enumeration of fixed questions and rendered card markup",
-  "html_bytes": 60018,
-  "html_sha256": "9658be66f805bf5012f31a516c885e36b5da9641820fc1671c19584a0dfadb19",
+  "html_bytes": 60037,
+  "html_sha256": "04ade77d8d9634b1d0eef5fcb70f54fe162954f659522a1ebb824b9cea414cb8",
   "one_member_examples": 11,
   "two_member_examples": 55,
   "example_prefixes_checked": 396,

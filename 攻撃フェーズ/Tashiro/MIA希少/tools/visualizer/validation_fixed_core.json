@@ -216,7 +216,7 @@
   },
   "source_files": [
     {
-      "path": "docs/visualizer/nonadaptive_code.json",
+      "path": "docs/visualizer/resources/nonadaptive_code.json",
       "sha256": "e715dbb0a955cfc4fc7347b0ec3f935c3e0af6c9badaf9b2c1e462f4c404e451"
     },
     {

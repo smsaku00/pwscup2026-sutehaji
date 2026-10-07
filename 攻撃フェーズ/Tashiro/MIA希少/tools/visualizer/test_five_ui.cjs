@@ -15,7 +15,7 @@ const html = fs.readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length, 5);
 const data = JSON.parse(scripts[2][2]);
-const report = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/size_report_5query_adaptive.json'), 'utf8'));
+const report = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/resources/size_report_5query_adaptive.json'), 'utf8'));
 const source = JSON.parse(fs.readFileSync(path.join(root, 'docs/検証資料/追加5回の全候補確認.json'), 'utf8'));
 const clean = node => Object.hasOwn(node, 'member_mask') ? { member_mask: node.member_mask } : {
   query_mask: node.query_mask, before: node.before,

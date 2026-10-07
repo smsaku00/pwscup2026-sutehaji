@@ -5,6 +5,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+from artifact_layout import artifact_path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -70,7 +71,9 @@ def main():
              'html_bytes': args.output.stat().st_size,
              'html_gzip_bytes': len(gzip.compress(html.encode(), mtime=0)),
              'source_files': sources}
-    (args.output.parent / 'size_report.json').write_text(json.dumps(stats, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    report_path = artifact_path('size_report.json') if args.output.resolve() == (DEST / 'MIA_4query_tree.html').resolve() else args.output.parent / 'size_report.json'
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(stats, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: v for k, v in stats.items() if k != 'source_files'}, ensure_ascii=False))
 
 
