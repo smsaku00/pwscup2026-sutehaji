@@ -1,0 +1,86 @@
+{
+  "checked_jst": "2026-10-07T08:00:19.039122+09:00",
+  "status": "passed",
+  "run_code_hashes_checked": 11,
+  "input_files_checked": 135,
+  "pairs": [
+    {
+      "detail": "結果/予備戦_対象別比較.csv",
+      "aggregate": "結果/予備戦_集約比較.csv",
+      "target_rows": 360,
+      "groups": 18
+    },
+    {
+      "detail": "追加結果_最終版/予備戦_追加対象別比較.csv",
+      "aggregate": "追加結果_最終版/予備戦_追加集約比較.csv",
+      "target_rows": 1100,
+      "groups": 55
+    },
+    {
+      "detail": "補助結果/対照一致_対象別比較.csv",
+      "aggregate": "補助結果/対照一致_集約比較.csv",
+      "target_rows": 400,
+      "groups": 20
+    },
+    {
+      "detail": "参照結果_拡張版/参照_対象別比較.csv",
+      "aggregate": "参照結果_拡張版/参照_集約比較.csv",
+      "target_rows": 1080,
+      "groups": 54
+    },
+    {
+      "detail": "背景再標本化結果/背景再標本化_対象別比較.csv",
+      "aggregate": "背景再標本化結果/背景再標本化_集約比較.csv",
+      "target_rows": 680,
+      "groups": 34
+    },
+    {
+      "detail": "学習結果_順位校正版/学習_対象別比較.csv",
+      "aggregate": "学習結果_順位校正版/学習_集約比較.csv",
+      "target_rows": 500,
+      "groups": 25
+    },
+    {
+      "detail": "属性部分集合結果/部分集合_対象別比較.csv",
+      "aggregate": "属性部分集合結果/部分集合_集約比較.csv",
+      "target_rows": 520,
+      "groups": 26
+    },
+    {
+      "detail": "低FPR結果/低FPR_対象別比較.csv",
+      "aggregate": "低FPR結果/低FPR_集約比較.csv",
+      "target_rows": 400,
+      "groups": 20
+    },
+    {
+      "detail": "固定候補の感度結果/感度検証_対象別比較.csv",
+      "aggregate": "固定候補の感度結果/感度検証_集約比較.csv",
+      "target_rows": 720,
+      "groups": 36
+    },
+    {
+      "detail": "非会員較正結果/非会員較正_対象別比較.csv",
+      "aggregate": "非会員較正結果/非会員較正_集約比較.csv",
+      "target_rows": 400,
+      "groups": 20
+    },
+    {
+      "detail": "非会員較正の感度結果/較正感度_対象別比較.csv",
+      "aggregate": "非会員較正の感度結果/較正感度_集約比較.csv",
+      "target_rows": 860,
+      "groups": 43
+    },
+    {
+      "detail": "非会員較正の感度結果/較正低FPR_対象別比較.csv",
+      "aggregate": "非会員較正の感度結果/較正低FPR_集約比較.csv",
+      "target_rows": 480,
+      "groups": 24
+    }
+  ],
+  "target_rows_checked": 7500,
+  "aggregate_groups_checked": 375,
+  "report_rows_checked": 12,
+  "official_tpr_max_error": 0.0,
+  "writes_submission_files": false,
+  "verifier_sha256": "6a76c8f9619ae9ae44a0b0f669b5a17eea4f068d9bfbdfdfbca93684f9c43617"
+}

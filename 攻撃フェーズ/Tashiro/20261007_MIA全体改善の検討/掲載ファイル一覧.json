@@ -1,0 +1,432 @@
+{
+  "created_jst": "2026-10-07T08:02:22.097356+09:00",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "branch": "main",
+  "destination": "攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/",
+  "purpose": "MIA全体の方法検討・集計・説明を共有する。提出ではない。",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4593,
+      "sha256": "2fb81980d01ab25ef5ffde6a03fcf5c4f51a4015e83a06138262464d2b9cd9b9",
+      "git_blob_sha1": "11c1a2fb5e890950f633606717b0f680f9125cf2",
+      "kind": "analysis"
+    },
+    {
+      "path": "説明.md",
+      "bytes": 15022,
+      "sha256": "a95e3a94e12f92c65ce770e01e2cfa219fb10d134b3f30199658068e104c58c3",
+      "git_blob_sha1": "2c4eab5b15f089c65f09e08af831afdea461d896",
+      "kind": "analysis"
+    },
+    {
+      "path": "目標と公式結果.json",
+      "bytes": 1539,
+      "sha256": "9077e46a59f1798baf1fe81c2ee3fa2b614ee93fc1898ef4289208f1b1853130",
+      "git_blob_sha1": "14d860022d045ef9bd0b43ce61dfe354900cc282",
+      "kind": "analysis"
+    },
+    {
+      "path": "集計検証結果.json",
+      "bytes": 2879,
+      "sha256": "0b2cb187dd43ac583b18f224a652b020dc5308149b3e90421d10144f26513fbf",
+      "git_blob_sha1": "335e59c4e5af969ec775d24b28420d730c69a4cf",
+      "kind": "analysis"
+    },
+    {
+      "path": "ブートストラップの検討.py",
+      "bytes": 8335,
+      "sha256": "21e28d906ea7078b5109421f4a0fa51876ff16f0187004941dec1322a85e783c",
+      "git_blob_sha1": "c9262f2efea8bac3ddd357b9fe3200a8b525e0d7",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPRと対象偏りの検討.py",
+      "bytes": 9973,
+      "sha256": "c48d919441e2031431b9fa1de397f5c05bca04df521180de3751a3e6a9ecf155",
+      "git_blob_sha1": "63fd044bf3446b1448ef7b1cbad8ddd87be35325",
+      "kind": "analysis"
+    },
+    {
+      "path": "公開準備.py",
+      "bytes": 3119,
+      "sha256": "de26a77004440776a29ef461eb937ba16f2a8055a90d9eca4085a19d00da6333",
+      "git_blob_sha1": "ffb76a18d8324a47ef11d95999a113cd7bf8edc6",
+      "kind": "analysis"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 16899,
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "git_blob_sha1": "9ac70646f19f967bb1694c7e8e48dc241114fb53",
+      "kind": "analysis"
+    },
+    {
+      "path": "参照データの検討.py",
+      "bytes": 11165,
+      "sha256": "556bc5e1000d00a4dc3499c557dfee2ce43506462b4edd6533aacca0ee233ec6",
+      "git_blob_sha1": "7210a44adbe608152ffeb2fc7dae6cdcd5b53710",
+      "kind": "analysis"
+    },
+    {
+      "path": "固定候補の感度検証.py",
+      "bytes": 5566,
+      "sha256": "cecb2cac528843c977cd7f5b274629433cd099f7d7c469e8d9cd105ece66eacc",
+      "git_blob_sha1": "a8e1f7a5ef5f3c30307c613db62b88c26ecfb4ff",
+      "kind": "analysis"
+    },
+    {
+      "path": "学習による順位補正の検討.py",
+      "bytes": 9478,
+      "sha256": "4f6471502598f7b0ed9fdd52e436975352ba42e65aaf229d523ae905cb4bc6e7",
+      "git_blob_sha1": "96cb7e988887b48898fa9bbfd5c5ec41b3f100a6",
+      "kind": "analysis"
+    },
+    {
+      "path": "対照を揃えた補助検証.py",
+      "bytes": 5720,
+      "sha256": "44d584d9fb8595cf7612d1857528d81b409d6234584b2ce9c42185ba60fea0ab",
+      "git_blob_sha1": "a4f5dcd3c814236980938bd22458cdb745023b89",
+      "kind": "analysis"
+    },
+    {
+      "path": "属性部分集合の検討.py",
+      "bytes": 3548,
+      "sha256": "387cb16470471c5e729077c2e270c723ee6c4bf81524db812311b0c4fdceb6d4",
+      "git_blob_sha1": "30283425e0143f7737f36bcac4d5a0cc88e77c39",
+      "kind": "analysis"
+    },
+    {
+      "path": "検証.py",
+      "bytes": 10624,
+      "sha256": "6a76c8f9619ae9ae44a0b0f669b5a17eea4f068d9bfbdfdfbca93684f9c43617",
+      "git_blob_sha1": "17c1a1142a49bf462a8065e25174ba162f08ee7f",
+      "kind": "analysis"
+    },
+    {
+      "path": "記録と図の作成.py",
+      "bytes": 9991,
+      "sha256": "5c6b69e0501c4ebcd0f6db520d0d0d7a4e905cc664128f6c753f176f1d39205f",
+      "git_blob_sha1": "e675ad42efca83e1b25b7c3456b409955bbe1869",
+      "kind": "analysis"
+    },
+    {
+      "path": "追加検討.py",
+      "bytes": 8114,
+      "sha256": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+      "git_blob_sha1": "503f956b9e3a0ec1b49d1bbb553a6eae70878ec3",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員を使う順位較正の検討.py",
+      "bytes": 7846,
+      "sha256": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833",
+      "git_blob_sha1": "e686885ce60124ecc4b29935ed4a48ad483275d6",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度検証.py",
+      "bytes": 7948,
+      "sha256": "f75d0c9e8acf8e42ccf24dda7c89170f21d6510b6853a32658937b9d3bbdff1f",
+      "git_blob_sha1": "95111477d6c3e580bf407f3bcf6c97fd2cb46108",
+      "kind": "analysis"
+    },
+    {
+      "path": "結果/予備戦_対象別比較.csv",
+      "bytes": 18136,
+      "sha256": "2c0644a8be6d0844f6a18240818e5dc765fdd363f5d47a5fc8cb9b8980af3012",
+      "git_blob_sha1": "ec2ab49ea44d3988680bbda8fff37f269906e362",
+      "kind": "analysis"
+    },
+    {
+      "path": "結果/予備戦_集約比較.csv",
+      "bytes": 1569,
+      "sha256": "471e92f19ffa058fdf656bd698977b5bb68ea1a92a608d08484a8f8adfc7796b",
+      "git_blob_sha1": "4eeaa409e118df5a4b92cc525702777219673933",
+      "kind": "analysis"
+    },
+    {
+      "path": "追加結果_最終版/予備戦_追加対象別比較.csv",
+      "bytes": 57787,
+      "sha256": "ed121d6ccb18d1b84075fea10d2e608326de8a70f91a75a96695e9fa9466e83a",
+      "git_blob_sha1": "1f48d4dc8135490095f5d5b9821ae8a6d9fc8003",
+      "kind": "analysis"
+    },
+    {
+      "path": "追加結果_最終版/予備戦_追加集約比較.csv",
+      "bytes": 4820,
+      "sha256": "198b6bca1b33d6fc9f9ff74c54e7f59171186cfd0a7dc333b2a620767fce8530",
+      "git_blob_sha1": "a3d0edefa57aeb0a3b2e66521bccc93acb3de863",
+      "kind": "analysis"
+    },
+    {
+      "path": "補助結果/対照一致_対象別比較.csv",
+      "bytes": 28276,
+      "sha256": "ef1d4c65fc2787f8f2e4382f606d0f352eced117796bbf0706318bd82e2b04a3",
+      "git_blob_sha1": "e113970dd65570eb1de53ef36814bdd7012e2a9d",
+      "kind": "analysis"
+    },
+    {
+      "path": "補助結果/対照一致_集約比較.csv",
+      "bytes": 1906,
+      "sha256": "0e69c7a4c6544362702bf0f7b92491229eb66708e091eeccccd75ffad68b84ad",
+      "git_blob_sha1": "bac118900551d8b2ca8986315ddf26f0b6885048",
+      "kind": "analysis"
+    },
+    {
+      "path": "参照結果_拡張版/参照_対象別比較.csv",
+      "bytes": 65485,
+      "sha256": "7d4cb5a66d6d13a8746a0eb1d4527c69a1652993aeceebef08bf346d9bacab06",
+      "git_blob_sha1": "a877425dc92045810125dc0fa08c8b5117a01ba3",
+      "kind": "analysis"
+    },
+    {
+      "path": "参照結果_拡張版/参照_集約比較.csv",
+      "bytes": 5092,
+      "sha256": "3f8ef3377afe8d08e87eef2c5d39038458afc234ac4c6d063d76953383295702",
+      "git_blob_sha1": "0af407152a79b38451954a220b06351b8caf4c8f",
+      "kind": "analysis"
+    },
+    {
+      "path": "参照結果_拡張版/参照の人数.csv",
+      "bytes": 11055,
+      "sha256": "26217f46bbf0ba7d54f9ae7177d1e640650f9aa901865e1b3817ef5e9cde69e5",
+      "git_blob_sha1": "8d1827ea7cf9323714d6a393a6ab99332163dcdc",
+      "kind": "analysis"
+    },
+    {
+      "path": "背景再標本化結果/本戦の順位安定性.csv",
+      "bytes": 2009,
+      "sha256": "928e290a78b9183b11b921f9bcc60644bb7ddc5c22bed031e9cd422c70aa37f4",
+      "git_blob_sha1": "22cf0b5c7b3da235f283fc36021aec46227f98b8",
+      "kind": "analysis"
+    },
+    {
+      "path": "背景再標本化結果/背景再標本化_対象別比較.csv",
+      "bytes": 36555,
+      "sha256": "77859f3b1f3a8dab242af5d713aeb64e4855ec7433348c5b4b9df1aed72e5df3",
+      "git_blob_sha1": "33e21367501b9050c4f236aad9269ce2b5ce2679",
+      "kind": "analysis"
+    },
+    {
+      "path": "背景再標本化結果/背景再標本化_集約比較.csv",
+      "bytes": 3856,
+      "sha256": "5013606b0bd4a95eb398a9ef8d582c8c633e09345719a34f73fcfaaf8b3bbfab",
+      "git_blob_sha1": "122e5c42c943e16aeee2b48c80a7b283beb87e47",
+      "kind": "analysis"
+    },
+    {
+      "path": "学習結果_順位校正版/交差検証の分割.csv",
+      "bytes": 649,
+      "sha256": "2332fc08db4b274b2c84056764f5c02feceb5e6f43d22371731f32eef7163945",
+      "git_blob_sha1": "f30fb75fe1bc0c4e582282eb7fff95c8b05769e5",
+      "kind": "analysis"
+    },
+    {
+      "path": "学習結果_順位校正版/学習_対象別比較.csv",
+      "bytes": 30092,
+      "sha256": "9008b69368b59bcb821adaaf11e31f24d102411a869873610b2895eb2120bc17",
+      "git_blob_sha1": "8449b57bf9af35053008db16e02a08c9e9c916d8",
+      "kind": "analysis"
+    },
+    {
+      "path": "学習結果_順位校正版/学習_集約比較.csv",
+      "bytes": 2941,
+      "sha256": "c95d8be91985b3eb4cd597a8d676e955a30ded26a4dee0f03b67b1d27b818be5",
+      "git_blob_sha1": "cc1b56540ee2a4f3f74ce90c2595c8a068dbbf5c",
+      "kind": "analysis"
+    },
+    {
+      "path": "学習結果_順位校正版/標準化後の係数.csv",
+      "bytes": 9562,
+      "sha256": "ed9eeb1f073f2a4b82cf9b5aba224963da29e6bdac5a300636a1343eaf8a6f00",
+      "git_blob_sha1": "619422f83ab3c21d2857f7b5ec39a09f88b4c253",
+      "kind": "analysis"
+    },
+    {
+      "path": "属性部分集合結果/部分集合_対象別比較.csv",
+      "bytes": 25544,
+      "sha256": "24f1e62fe026e56e73c97f4a35c54994621e33b759e2bff07a0953ee4c75f6a7",
+      "git_blob_sha1": "e0f87ddc8d0bd3ea914e94332b820032009fb4a5",
+      "kind": "analysis"
+    },
+    {
+      "path": "属性部分集合結果/部分集合_集約比較.csv",
+      "bytes": 2226,
+      "sha256": "e196adfb98fe7229bf0a5794c19876b091044f07dc065f3412ccf248e92c8d58",
+      "git_blob_sha1": "72fdf99d638688bf81b2f49f900180ab1d415eaa",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPR結果/予備戦の上位候補診断.csv",
+      "bytes": 10015,
+      "sha256": "f7e56ad7085d0f39fbde5a1b9639c7a5e98e5f871f4ab3ec712a8d01e61ca501",
+      "git_blob_sha1": "098e73da46e2de942339ebe930a3dcb6e7b420be",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPR結果/低FPR_対象別比較.csv",
+      "bytes": 25183,
+      "sha256": "8e25fd9948a7f5cd24ab60b45383a34600f54c1c9998997dfc2073eb949be591",
+      "git_blob_sha1": "62971d7fb30695bf590d12e567a92b11f51f156f",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPR結果/低FPR_集約比較.csv",
+      "bytes": 2925,
+      "sha256": "29cbd5452d0f5d0a3e6f2124dfa48d7838d650d26b8f1d948eb1f63ab4194f39",
+      "git_blob_sha1": "80f60185d4c04c867c3161696f4a6d71fb866b95",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPR結果/参照人数.csv",
+      "bytes": 1090,
+      "sha256": "4ba0a6f40cf0d46e660120636eba2796524a570b33d1c362adb089a4652391ff",
+      "git_blob_sha1": "480d1ab9a9fca361d3aa07212d9dfb72454131a7",
+      "kind": "analysis"
+    },
+    {
+      "path": "低FPR結果/本戦の上位候補診断.csv",
+      "bytes": 7612,
+      "sha256": "52530230de53a7362c5811daf152cddf95baf7b60b730467c3100378fbfa69e4",
+      "git_blob_sha1": "95a2fa970fee7d71730d5380c175c4cf2c694a00",
+      "kind": "analysis"
+    },
+    {
+      "path": "固定候補の感度結果/感度検証_対象別比較.csv",
+      "bytes": 51869,
+      "sha256": "acf11a4c1c05fef5b323b64182d254d91a54cc8d491016ebcaa214a8860a76d6",
+      "git_blob_sha1": "79e958bbd1ba328c155b8d61cd0aa840059dd0c1",
+      "kind": "analysis"
+    },
+    {
+      "path": "固定候補の感度結果/感度検証_集約比較.csv",
+      "bytes": 6034,
+      "sha256": "80d2c5340bdb5d74a93f0a8e475bcd83d4378d8ef21f8b95911229b0cb613b47",
+      "git_blob_sha1": "a2e7448a8bbcd7f4da01b1ee3bf498de6d12e6bf",
+      "kind": "analysis"
+    },
+    {
+      "path": "固定候補の感度結果/背景の抽出条件.csv",
+      "bytes": 367,
+      "sha256": "022402e298dfd54121cff41aeea6c5f5716cc542f7a7bff685475be77b7cf068",
+      "git_blob_sha1": "4f4a1eee2bddbd222a3c20b743cc0c728bfceadf",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正結果/較正に使った人数.csv",
+      "bytes": 354,
+      "sha256": "6c41d9703255bf38261f9c9f0e989adf31428d36f6e28f4e73234b5a20d80eab",
+      "git_blob_sha1": "9288a2a68797931e2deed6a3d62a7e7307d2d76d",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正結果/非会員較正_対象別比較.csv",
+      "bytes": 23995,
+      "sha256": "e0ed7971e59db646719f36146459ebcc12cb91923644837e747505bc9e405b94",
+      "git_blob_sha1": "03fd969879d22423994aa5e467bc020702ab00a0",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正結果/非会員較正_集約比較.csv",
+      "bytes": 1927,
+      "sha256": "1631c663f75907c9355a6d872f2abbf4654e1b1ba5a8006342704168d4429348",
+      "git_blob_sha1": "9768ac75cca2a4907ef8b302488fa8c8bd4d3d79",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/本戦の較正順位診断.csv",
+      "bytes": 9483,
+      "sha256": "7d7fad7d25805ee74ef7680e7dba67ccafa9f44f2553e0de686a7262f4cb1122",
+      "git_blob_sha1": "2405897d1d58cb159411f7db1832fafb436d982a",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/背景の抽出条件.csv",
+      "bytes": 314,
+      "sha256": "8841bf11d14ffa76b8f69be3e09716845d3ec1883535193e6ada62ac29165276",
+      "git_blob_sha1": "09a7840ad0c6d269c4bbf59664501c79446cea94",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/較正低FPR_対象別比較.csv",
+      "bytes": 24154,
+      "sha256": "6d59b7c8e799a322a0973584d008c1f06c51e2559fcf04a958c6c983ef1da7c6",
+      "git_blob_sha1": "f0f62604ebc9b974d4c9c557779e1ea22a060796",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/較正低FPR_集約比較.csv",
+      "bytes": 1369,
+      "sha256": "6897bbe56030ec79c400730aaaf54b20fa530ef7775b2f42045be02300a7fdc7",
+      "git_blob_sha1": "2e376ac8413f51286962fcb28f0cffcd0e5fdbcd",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/較正感度_対象別比較.csv",
+      "bytes": 62736,
+      "sha256": "2b0ab5c9a9376750bab3feeef0d9f2c6e8cbd3f32256576b2230ec34b1e58361",
+      "git_blob_sha1": "f32b2bc69fda171d7fc15e9ca075cffd16128808",
+      "kind": "analysis"
+    },
+    {
+      "path": "非会員較正の感度結果/較正感度_集約比較.csv",
+      "bytes": 7320,
+      "sha256": "39ef1eedbc0c6ee4365aa40641d089c0112dec25a7ac5388e132481cc1a96ea4",
+      "git_blob_sha1": "bea7a66e704ab56b160bbafba35a9cc02e1d6034",
+      "kind": "analysis"
+    },
+    {
+      "path": "共有集計_確認版/主要候補の比較.csv",
+      "bytes": 2193,
+      "sha256": "52dd22166523f4ebe8a4d7b21e4af68c5e21ceef4d170c9df85a2a532a7118b2",
+      "git_blob_sha1": "62df1cf77cc8fa3685bf10a5b525825aab31d054",
+      "kind": "analysis"
+    },
+    {
+      "path": "共有集計_確認版/主要候補の比較.png",
+      "bytes": 104478,
+      "sha256": "728d7d90f1a6c392cff607f5147c6ea0f4ca9e0a683404d9e4bfe63fe06a8fb6",
+      "git_blob_sha1": "852f2cc7cef610f1d7cf06350bbc22fcc7622dc2",
+      "kind": "figure"
+    },
+    {
+      "path": "共有集計_確認版/主要候補の比較.svg",
+      "bytes": 96435,
+      "sha256": "6ec8d3017f35b1c15fc87ac4d723c754bbe74e874770d67bc89a499fd2ce62ed",
+      "git_blob_sha1": "49f938764c20d1c5727ae2a54f117dd7bf787e81",
+      "kind": "figure"
+    },
+    {
+      "path": "共有集計_確認版/固定候補の背景感度.csv",
+      "bytes": 7237,
+      "sha256": "9f6c0b0b6872a1baea822ed7501ae8739b734018e97f79e1e813affd928fdc84",
+      "git_blob_sha1": "cc805c4a69ab2c3eb8ca8aa91c3b1e2751717e3a",
+      "kind": "analysis"
+    },
+    {
+      "path": "共有集計_確認版/実行記録.json",
+      "bytes": 35289,
+      "sha256": "27185753c44affb62e0175fce61d08b45b1f16f95dd2d8467deb412ef6f41e30",
+      "git_blob_sha1": "5cfa29ddaa447538b75de6a8551af97563e74043",
+      "kind": "analysis"
+    },
+    {
+      "path": "共有集計_確認版/背景を変えた感度.png",
+      "bytes": 202394,
+      "sha256": "772c827e05cca65d638b4449794cf39bcf475a72f6fe3a04097592942910d830",
+      "git_blob_sha1": "8b7b26edf6bda9db08bf65b2aab2d596e28363ce",
+      "kind": "figure"
+    },
+    {
+      "path": "共有集計_確認版/背景を変えた感度.svg",
+      "bytes": 77877,
+      "sha256": "174052ddc1c7c6253b9f5c8e48437edeeab12852e0c0fe3156bff1b12b5eabd0",
+      "git_blob_sha1": "3f550ab9eeb6b9c31eecbd9a9e32201025b231c2",
+      "kind": "figure"
+    }
+  ],
+  "total_bytes": 1212569,
+  "manifest_note": "この一覧自身は自己参照を避けてfilesに含めない。GitHubのtreeで各blobを照合する。",
+  "codabench_access_or_submission": false
+}

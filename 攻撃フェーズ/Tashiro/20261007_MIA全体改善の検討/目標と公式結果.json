@@ -1,0 +1,52 @@
+{
+  "goal_mia_all": 0.0647,
+  "goal_source": "2026-10-07ユーザー共有値。CodaBenchでの取得・検証はしない。",
+  "saved_official_source": "本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/MIA結果.json",
+  "saved_source_sha256": "411e00d38ffbe7cb38bb73c654b129ca6377a198ad9031e409cccdc19dd725a4",
+  "official_mia": {
+    "round1": {
+      "tpr_at_low_fpr": 0.03434084434084434,
+      "tpr_rare": 0.014934210526315791,
+      "auc": 0.5834342948682125
+    },
+    "round2": {
+      "tpr_at_low_fpr": 0.010909090909090908,
+      "tpr_rare": 0.014445669283130584,
+      "auc": 0.6137569063561341
+    }
+  },
+  "derived_rare_members": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 1,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "22": 0,
+    "25": 2,
+    "26": 0,
+    "27": 0
+  },
+  "rare_count_scope": "共有条件と提出CSVが保存設定に一致する前提の人数推定。個人は未特定。",
+  "identified_person_ids": null,
+  "gap_from_best_official": 0.030359155659155652,
+  "effective_extra_true_positive_estimate_range": [
+    16.69753561253561,
+    18.033338461538456
+  ],
+  "estimate_assumption": "各対象25〜27人で、改善が対象全体に分散する場合の概算。",
+  "rare_only_upper_gain": 0.016363636363636365,
+  "rare_only_upper_total": 0.050704480704480706
+}
