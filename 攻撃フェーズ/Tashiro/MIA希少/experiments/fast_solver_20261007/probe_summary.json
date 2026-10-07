@@ -1,0 +1,21 @@
+{
+  "q3_code": 30,
+  "states": 40428,
+  "state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2",
+  "mode": "bounded two-team grid; necessary-condition pruning",
+  "workers": 2,
+  "seeds": [310071,310072],
+  "grid_wall_seconds": 6.4161726979999685,
+  "candidate_evaluations": 1024,
+  "survivors": 0,
+  "overall_status": "UNKNOWN_NOT_A_FULL_DEPTH3_PROOF",
+  "small_child_probes": [
+    {"q4_code":621,"states":4,"status":"SAT","seconds":0.01220339500002865,"independently_verified":4},
+    {"q4_code":514,"states":6,"status":"SAT","seconds":0.014678457000002254,"independently_verified":6},
+    {"q4_code":540,"states":6,"status":"SAT","seconds":0.01342286999999942,"independently_verified":6},
+    {"q4_code":549,"states":6,"status":"SAT","seconds":0.013501665999967827,"independently_verified":6},
+    {"q4_code":630,"states":8,"status":"SAT","seconds":0.012916726000014478,"independently_verified":8},
+    {"q4_code":63,"states":9,"status":"SAT","seconds":0.03235234499999251,"independently_verified":9}
+  ],
+  "notes":["Two grids share the baseline query; 1024 is evaluations, not necessarily distinct candidates.","This small-child smoke test does not solve the q3 orbit."]
+}
