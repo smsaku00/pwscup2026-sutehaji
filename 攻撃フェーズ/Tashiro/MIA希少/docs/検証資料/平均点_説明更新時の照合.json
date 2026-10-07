@@ -1,0 +1,24 @@
+{
+  "alphabet_responses": 216,
+  "exact_collisions": 0,
+  "minimum_gap_exact": "1/54000",
+  "minimum_gap": 1.8518518518518518e-05,
+  "legal_padding_checks": 78,
+  "total_high": [
+    6,
+    7,
+    7,
+    11,
+    10,
+    12
+  ],
+  "official_per_team_cases": 78,
+  "official_mean_cases": 216,
+  "official_zero_positive_rare_is_nan": true,
+  "official_aggregation_mode": "exact _finite/_nanmean functions extracted from official source",
+  "official_max_absolute_error": 6.938893903907228e-18,
+  "official_sources": {
+    "pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+  }
+}

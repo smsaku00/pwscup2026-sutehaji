@@ -1,0 +1,1854 @@
+[
+  {
+    "representative": 283,
+    "q3_codes": [
+      283,
+      355,
+      363
+    ],
+    "states_per_code": 53796,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 53796,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 215,
+      "q4_max_bucket": 1002,
+      "q5_cells": 21591,
+      "q5_max_cell": 18,
+      "q6_nodes": 21591,
+      "encoded_nodes": 21807,
+      "all_normalized": true,
+      "q3_code": 283,
+      "representative": 283,
+      "state_hash": "697a99ffd0740ba90e4cdbb60070105c89d1f8365ebf4dc20716b17e646ed8e2",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 274,
+    "q3_codes": [
+      274,
+      282,
+      354
+    ],
+    "states_per_code": 53628,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 53628,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 216,
+      "q4_max_bucket": 1162,
+      "q5_cells": 17832,
+      "q5_max_cell": 44,
+      "q6_nodes": 17832,
+      "encoded_nodes": 18049,
+      "all_normalized": true,
+      "q3_code": 274,
+      "representative": 274,
+      "state_hash": "fa2c34a13fff9da8b5881241e983fbb07ea642e21c1eb144ea1837707e3219d1",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 273,
+    "q3_codes": [
+      273
+    ],
+    "states_per_code": 51132,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 51132,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 216,
+      "q4_max_bucket": 1029,
+      "q5_cells": 16736,
+      "q5_max_cell": 37,
+      "q6_nodes": 16736,
+      "encoded_nodes": 16953,
+      "all_normalized": true,
+      "q3_code": 273,
+      "representative": 273,
+      "state_hash": "152a6a8fa945dec3863aa3948fc51c98f7112ec0464b119ec80ffb7920a966c1",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 30,
+    "q3_codes": [
+      30,
+      246,
+      270
+    ],
+    "states_per_code": 40428,
+    "q4_query_raw": [
+      432,
+      962,
+      939,
+      562,
+      392,
+      951
+    ],
+    "replay": {
+      "states": 40428,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 208,
+      "q4_max_bucket": 899,
+      "q5_cells": 16321,
+      "q5_max_cell": 20,
+      "q6_nodes": 16321,
+      "encoded_nodes": 16530,
+      "all_normalized": true,
+      "q3_code": 30,
+      "representative": 30,
+      "state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 364,
+    "q3_codes": [
+      364
+    ],
+    "states_per_code": 36996,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 36996,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 213,
+      "q4_max_bucket": 894,
+      "q5_cells": 17956,
+      "q5_max_cell": 16,
+      "q6_nodes": 17956,
+      "encoded_nodes": 18170,
+      "all_normalized": true,
+      "q3_code": 364,
+      "representative": 364,
+      "state_hash": "ef1cd36bb4a416f9893b7e72261f0f15a5019539c2155f276f91ce50a0c803f3",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 39,
+    "q3_codes": [
+      39,
+      111,
+      247,
+      255,
+      271,
+      351
+    ],
+    "states_per_code": 35796,
+    "q4_query_raw": [
+      1477,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 35796,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 203,
+      "q4_max_bucket": 1338,
+      "q5_cells": 15778,
+      "q5_max_cell": 27,
+      "q6_nodes": 15778,
+      "encoded_nodes": 15982,
+      "all_normalized": true,
+      "q3_code": 39,
+      "representative": 39,
+      "state_hash": "fe2e2a71bb2d89a9fd82641ee5c582bd508874d8cfc7d5815b97a958bce3b0f0",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 31,
+    "q3_codes": [
+      31,
+      279,
+      327
+    ],
+    "states_per_code": 30720,
+    "q4_query_raw": [
+      66,
+      993,
+      160,
+      49,
+      280,
+      76
+    ],
+    "replay": {
+      "states": 30720,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 216,
+      "q4_max_bucket": 884,
+      "q5_cells": 13893,
+      "q5_max_cell": 18,
+      "q6_nodes": 13893,
+      "encoded_nodes": 14110,
+      "all_normalized": true,
+      "q3_code": 31,
+      "representative": 31,
+      "state_hash": "eaee61cfa47c2b6e40aeb20c1190c17a472cd121d5e11d387664bccef52c46cd",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 3,
+    "q3_codes": [
+      3,
+      27,
+      243
+    ],
+    "states_per_code": 23976,
+    "q4_query_raw": [
+      144,
+      63,
+      212,
+      580,
+      296,
+      578
+    ],
+    "replay": {
+      "states": 23976,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 211,
+      "q4_max_bucket": 930,
+      "q5_cells": 11656,
+      "q5_max_cell": 24,
+      "q6_nodes": 11656,
+      "encoded_nodes": 11868,
+      "all_normalized": true,
+      "q3_code": 3,
+      "representative": 3,
+      "state_hash": "693e9f97a02f3ad5b7e046a3b168b2dc12b9decb261ebe8f1a7f5c030ae41478",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 120,
+    "q3_codes": [
+      120,
+      256,
+      352
+    ],
+    "states_per_code": 22548,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 22548,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 201,
+      "q4_max_bucket": 642,
+      "q5_cells": 12101,
+      "q5_max_cell": 13,
+      "q6_nodes": 12101,
+      "encoded_nodes": 12303,
+      "all_normalized": true,
+      "q3_code": 120,
+      "representative": 120,
+      "state_hash": "3a444c7ad38f9a5855803c93eb9437a2779192db458e1f2f0b7619e6fb3ec328",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 40,
+    "q3_codes": [
+      40,
+      112,
+      280,
+      328,
+      336,
+      360
+    ],
+    "states_per_code": 21144,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 21144,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 199,
+      "q4_max_bucket": 482,
+      "q5_cells": 11346,
+      "q5_max_cell": 12,
+      "q6_nodes": 11346,
+      "encoded_nodes": 11546,
+      "all_normalized": true,
+      "q3_code": 40,
+      "representative": 40,
+      "state_hash": "c7060ecac3d3f8b96714b0e5ed36fdbc29626022f25a7dd170f8c825e120e846",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 367,
+    "q3_codes": [
+      367,
+      391,
+      607
+    ],
+    "states_per_code": 20376,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 20376,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 185,
+      "q4_max_bucket": 578,
+      "q5_cells": 10358,
+      "q5_max_cell": 12,
+      "q6_nodes": 10358,
+      "encoded_nodes": 10544,
+      "all_normalized": true,
+      "q3_code": 367,
+      "representative": 367,
+      "state_hash": "2ef4b11e5c02af0173ea64bcb3bab8bca2732102a295268e423d7446719aedb4",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 286,
+    "q3_codes": [
+      286,
+      366,
+      382,
+      390,
+      526,
+      598
+    ],
+    "states_per_code": 18024,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 18024,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 189,
+      "q4_max_bucket": 416,
+      "q5_cells": 9950,
+      "q5_max_cell": 10,
+      "q6_nodes": 9950,
+      "encoded_nodes": 10140,
+      "all_normalized": true,
+      "q3_code": 286,
+      "representative": 286,
+      "state_hash": "6deb3b1200feda67273c1b0f99a47a833f2ac365679572aa058860956e7cc407",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 310,
+    "q3_codes": [
+      310,
+      358,
+      606
+    ],
+    "states_per_code": 16080,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 16080,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 210,
+      "q4_max_bucket": 376,
+      "q5_cells": 9938,
+      "q5_max_cell": 8,
+      "q6_nodes": 9938,
+      "encoded_nodes": 10149,
+      "all_normalized": true,
+      "q3_code": 310,
+      "representative": 310,
+      "state_hash": "13bbae923a3d7c63dd38b6fd5f8365de40d2c2f263c4e8f264f1fad052a4004d",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 285,
+    "q3_codes": [
+      285,
+      381,
+      517
+    ],
+    "states_per_code": 14568,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 14568,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 209,
+      "q4_max_bucket": 391,
+      "q5_cells": 8294,
+      "q5_max_cell": 8,
+      "q6_nodes": 8294,
+      "encoded_nodes": 8504,
+      "all_normalized": true,
+      "q3_code": 285,
+      "representative": 285,
+      "state_hash": "65bd10116f4e438c6e234aa32b48275283a54228cad5935e33ae962718bf2ce0",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 12,
+    "q3_codes": [
+      12,
+      108,
+      244
+    ],
+    "states_per_code": 13800,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 13800,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 192,
+      "q4_max_bucket": 329,
+      "q5_cells": 7982,
+      "q5_max_cell": 11,
+      "q6_nodes": 7982,
+      "encoded_nodes": 8175,
+      "all_normalized": true,
+      "q3_code": 12,
+      "representative": 12,
+      "state_hash": "aa7f837d056d9a1754531b1752f07f09304fd65dcbf9722f1929570984f72eb6",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 42,
+    "q3_codes": [
+      42,
+      138,
+      258,
+      378,
+      490,
+      514
+    ],
+    "states_per_code": 13548,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 13548,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 191,
+      "q4_max_bucket": 460,
+      "q5_cells": 7626,
+      "q5_max_cell": 13,
+      "q6_nodes": 7626,
+      "encoded_nodes": 7818,
+      "all_normalized": true,
+      "q3_code": 42,
+      "representative": 42,
+      "state_hash": "c4f95ebb6a4b08145b07b3e76c27a8d58bda59c3867d333d47d066ee5a8db8e7",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 123,
+    "q3_codes": [
+      123,
+      147,
+      259,
+      379,
+      499,
+      595
+    ],
+    "states_per_code": 13548,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 13548,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 178,
+      "q4_max_bucket": 520,
+      "q5_cells": 7204,
+      "q5_max_cell": 11,
+      "q6_nodes": 7204,
+      "encoded_nodes": 7383,
+      "all_normalized": true,
+      "q3_code": 123,
+      "representative": 123,
+      "state_hash": "a9e8de5bb82b7bd9d4d073f283be3b428c358b595663a8f5f8cbf043ac567960",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 4,
+    "q3_codes": [
+      4,
+      28,
+      36,
+      84,
+      252,
+      324
+    ],
+    "states_per_code": 12828,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 12828,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 181,
+      "q4_max_bucket": 459,
+      "q5_cells": 7706,
+      "q5_max_cell": 12,
+      "q6_nodes": 7706,
+      "encoded_nodes": 7888,
+      "all_normalized": true,
+      "q3_code": 4,
+      "representative": 4,
+      "state_hash": "4b1ee5ca3bedab364ca657e9eebe5353677ad75dbfb48acd7c4c267e49b7b84d",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 277,
+    "q3_codes": [
+      277,
+      301,
+      309,
+      357,
+      525,
+      597
+    ],
+    "states_per_code": 12192,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 12192,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 211,
+      "q4_max_bucket": 298,
+      "q5_cells": 8090,
+      "q5_max_cell": 8,
+      "q6_nodes": 8090,
+      "encoded_nodes": 8302,
+      "all_normalized": true,
+      "q3_code": 277,
+      "representative": 277,
+      "state_hash": "cb04b4aee30e2923203e08793f6d52533d9fd22345d6fa0e523815a771d3759c",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 66,
+    "q3_codes": [
+      66,
+      114,
+      250,
+      298,
+      498,
+      594
+    ],
+    "states_per_code": 12036,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 12036,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 190,
+      "q4_max_bucket": 390,
+      "q5_cells": 6987,
+      "q5_max_cell": 10,
+      "q6_nodes": 6987,
+      "encoded_nodes": 7178,
+      "all_normalized": true,
+      "q3_code": 66,
+      "representative": 66,
+      "state_hash": "ef4242500b8f5b4c5b151e3f679e3b1101397bdbfc7459f26103cf02438a5e05",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 43,
+    "q3_codes": [
+      43,
+      139,
+      339,
+      387,
+      523,
+      571
+    ],
+    "states_per_code": 11820,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 11820,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 185,
+      "q4_max_bucket": 388,
+      "q5_cells": 7169,
+      "q5_max_cell": 12,
+      "q6_nodes": 7169,
+      "encoded_nodes": 7355,
+      "all_normalized": true,
+      "q3_code": 43,
+      "representative": 43,
+      "state_hash": "d215bc4084c11aab6dd8afc33a2b75a0cb935b7592b4221c9908686e0fb178e1",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 67,
+    "q3_codes": [
+      67,
+      115,
+      307,
+      331,
+      579,
+      603
+    ],
+    "states_per_code": 11172,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 11172,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 185,
+      "q4_max_bucket": 376,
+      "q5_cells": 6663,
+      "q5_max_cell": 10,
+      "q6_nodes": 6663,
+      "encoded_nodes": 6849,
+      "all_normalized": true,
+      "q3_code": 67,
+      "representative": 67,
+      "state_hash": "6f3f009be2bbeead8d857f701ced80098c4db24b5b58784dc74d85688bac5e86",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 33,
+    "q3_codes": [
+      33,
+      57,
+      249,
+      297,
+      489,
+      513
+    ],
+    "states_per_code": 10404,
+    "q4_query_raw": [
+      432,
+      962,
+      939,
+      562,
+      392,
+      951
+    ],
+    "replay": {
+      "states": 10404,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 169,
+      "q4_max_bucket": 352,
+      "q5_cells": 6170,
+      "q5_max_cell": 9,
+      "q6_nodes": 6170,
+      "encoded_nodes": 6340,
+      "all_normalized": true,
+      "q3_code": 33,
+      "representative": 33,
+      "state_hash": "844515f999965c9948e2df6a26dd61fcea4eca869556077220e85b01c453483a",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 276,
+    "q3_codes": [
+      276,
+      300,
+      516
+    ],
+    "states_per_code": 10224,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 10224,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 198,
+      "q4_max_bucket": 352,
+      "q5_cells": 6664,
+      "q5_max_cell": 9,
+      "q6_nodes": 6664,
+      "encoded_nodes": 6863,
+      "all_normalized": true,
+      "q3_code": 276,
+      "representative": 276,
+      "state_hash": "ac7753838aa64d834905f11b78ee22f02d972633d6c4442cfa2395bb4b632ef3",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 15,
+    "q3_codes": [
+      15,
+      135,
+      487
+    ],
+    "states_per_code": 9036,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 9036,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 198,
+      "q4_max_bucket": 432,
+      "q5_cells": 5383,
+      "q5_max_cell": 11,
+      "q6_nodes": 5383,
+      "encoded_nodes": 5582,
+      "all_normalized": true,
+      "q3_code": 15,
+      "representative": 15,
+      "state_hash": "a4e69f45ecc01d507b2f6f29ed0f9d869f8895e1247c400cc60cba6506188d1a",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 6,
+    "q3_codes": [
+      6,
+      54,
+      486
+    ],
+    "states_per_code": 9024,
+    "q4_query_raw": [
+      144,
+      20,
+      144,
+      515,
+      136,
+      518
+    ],
+    "replay": {
+      "states": 9024,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 170,
+      "q4_max_bucket": 501,
+      "q5_cells": 4775,
+      "q5_max_cell": 13,
+      "q6_nodes": 4775,
+      "encoded_nodes": 4946,
+      "all_normalized": true,
+      "q3_code": 6,
+      "representative": 6,
+      "state_hash": "a52334032b8a39781d6cf2ef75e474467ceaf02ffd524aea9629690ea196c0ff",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 124,
+    "q3_codes": [
+      124,
+      148,
+      340,
+      388,
+      580,
+      604
+    ],
+    "states_per_code": 8748,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 8748,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 179,
+      "q4_max_bucket": 338,
+      "q5_cells": 5745,
+      "q5_max_cell": 8,
+      "q6_nodes": 5745,
+      "encoded_nodes": 5925,
+      "all_normalized": true,
+      "q3_code": 124,
+      "representative": 124,
+      "state_hash": "e083b116bb53c6288e72036ab375ec027a52c3f1e2dcfd655a14de240b24abe8",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 34,
+    "q3_codes": [
+      34,
+      58,
+      306,
+      330,
+      522,
+      570
+    ],
+    "states_per_code": 8724,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 8724,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 203,
+      "q4_max_bucket": 340,
+      "q5_cells": 5443,
+      "q5_max_cell": 7,
+      "q6_nodes": 5443,
+      "encoded_nodes": 5647,
+      "all_normalized": true,
+      "q3_code": 34,
+      "representative": 34,
+      "state_hash": "d7dd7c8d96e7c45387ea61b65a04abc9a9f274ec8b180b376c0c93ec1543a42a",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 0,
+    "q3_codes": [
+      0
+    ],
+    "states_per_code": 8496,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 8496,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 168,
+      "q4_max_bucket": 252,
+      "q5_cells": 5041,
+      "q5_max_cell": 9,
+      "q6_nodes": 5041,
+      "encoded_nodes": 5210,
+      "all_normalized": true,
+      "q3_code": 0,
+      "representative": 0,
+      "state_hash": "63cb8fff678428740b9f63f1958c303f1642bb5ec79bbf4feaa7535faf102748",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 7,
+    "q3_codes": [
+      7,
+      55,
+      63,
+      87,
+      495,
+      567
+    ],
+    "states_per_code": 7308,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 7308,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 105,
+      "q4_max_bucket": 582,
+      "q5_cells": 3736,
+      "q5_max_cell": 13,
+      "q6_nodes": 3736,
+      "encoded_nodes": 3842,
+      "all_normalized": true,
+      "q3_code": 7,
+      "representative": 7,
+      "state_hash": "6e8cc5aa98b8265c0cd20520fb900b14eb88e8d57c26dbd9ad24417501cfdbc1",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 121,
+    "q3_codes": [
+      121,
+      337,
+      361
+    ],
+    "states_per_code": 6264,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 6264,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 188,
+      "q4_max_bucket": 188,
+      "q5_cells": 5500,
+      "q5_max_cell": 5,
+      "q6_nodes": 5500,
+      "encoded_nodes": 5689,
+      "all_normalized": true,
+      "q3_code": 121,
+      "representative": 121,
+      "state_hash": "085372f36ea8d90ee9734ff44b24a74777a9fdd449001cb5d20c857a6a1d7dee",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 394,
+    "q3_codes": [
+      394,
+      610,
+      634
+    ],
+    "states_per_code": 5988,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 5988,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 127,
+      "q4_max_bucket": 204,
+      "q5_cells": 4036,
+      "q5_max_cell": 6,
+      "q6_nodes": 4036,
+      "encoded_nodes": 4164,
+      "all_normalized": true,
+      "q3_code": 394,
+      "representative": 394,
+      "state_hash": "eebfb3b55ccb64c0b80cef5d476e0d0b4d19270aca34a6416bfbadc17b3001b2",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 16,
+    "q3_codes": [
+      16,
+      96,
+      136,
+      144,
+      496,
+      568
+    ],
+    "states_per_code": 5304,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 5304,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 162,
+      "q4_max_bucket": 144,
+      "q5_cells": 3409,
+      "q5_max_cell": 10,
+      "q6_nodes": 3409,
+      "encoded_nodes": 3572,
+      "all_normalized": true,
+      "q3_code": 16,
+      "representative": 16,
+      "state_hash": "dbc76f74d0ad87e26b66e885cf0443eef7aaaff1b3a3c869185dc69648b53786",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 64,
+    "q3_codes": [
+      64,
+      88,
+      576
+    ],
+    "states_per_code": 4872,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 4872,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 132,
+      "q4_max_bucket": 160,
+      "q5_cells": 3325,
+      "q5_max_cell": 8,
+      "q6_nodes": 3325,
+      "encoded_nodes": 3458,
+      "all_normalized": true,
+      "q3_code": 64,
+      "representative": 64,
+      "state_hash": "56673f3d8fa2956fe7c2f5a83c7aedfc76012988dc899ec8aed95d7c35b57e96",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 150,
+    "q3_codes": [
+      150,
+      502,
+      622
+    ],
+    "states_per_code": 4524,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 4524,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 122,
+      "q4_max_bucket": 268,
+      "q5_cells": 2895,
+      "q5_max_cell": 6,
+      "q6_nodes": 2895,
+      "encoded_nodes": 3018,
+      "all_normalized": true,
+      "q3_code": 150,
+      "representative": 150,
+      "state_hash": "a2fbaf0a0bd5d98e33d33bb990b6cb22bd69b9d4d19578cc6009f4ba1f698480",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 151,
+    "q3_codes": [
+      151,
+      583,
+      631
+    ],
+    "states_per_code": 4512,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 4512,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 123,
+      "q4_max_bucket": 268,
+      "q5_cells": 2966,
+      "q5_max_cell": 6,
+      "q6_nodes": 2966,
+      "encoded_nodes": 3090,
+      "all_normalized": true,
+      "q3_code": 151,
+      "representative": 151,
+      "state_hash": "35cabf91eb4901a7c48f06ba20e45ef9af933c6812742378a9c8d390147eaf42",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 393,
+    "q3_codes": [
+      393,
+      529,
+      625
+    ],
+    "states_per_code": 4164,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 4164,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 108,
+      "q4_max_bucket": 152,
+      "q5_cells": 3014,
+      "q5_max_cell": 6,
+      "q6_nodes": 3014,
+      "encoded_nodes": 3123,
+      "all_normalized": true,
+      "q3_code": 393,
+      "representative": 393,
+      "state_hash": "4e92828e9d6f90da5af40c2eab58d04d868061f599d9bfa6d18dbbd80dfdcf93",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 13,
+    "q3_codes": [
+      13,
+      93,
+      109,
+      117,
+      253,
+      325
+    ],
+    "states_per_code": 3612,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 3612,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 158,
+      "q4_max_bucket": 96,
+      "q5_cells": 3506,
+      "q5_max_cell": 2,
+      "q6_nodes": 3506,
+      "encoded_nodes": 3665,
+      "all_normalized": true,
+      "q3_code": 13,
+      "representative": 13,
+      "state_hash": "d38eb8e0d2d12a1d337b9bcbdc4d5f309b7b8a8ea9bf50fb5937c0009245c890",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 313,
+    "q3_codes": [
+      313,
+      385,
+      553,
+      601,
+      609,
+      633
+    ],
+    "states_per_code": 3516,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 3516,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 173,
+      "q4_max_bucket": 109,
+      "q5_cells": 2988,
+      "q5_max_cell": 4,
+      "q6_nodes": 2988,
+      "encoded_nodes": 3162,
+      "all_normalized": true,
+      "q3_code": 313,
+      "representative": 313,
+      "state_hash": "6e89e298feceb7ab79e197478d6d35a6edbf58726c288538ab38e3cb7ede0473",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 37,
+    "q3_codes": [
+      37,
+      85,
+      333
+    ],
+    "states_per_code": 3504,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 3504,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 152,
+      "q4_max_bucket": 110,
+      "q5_cells": 3093,
+      "q5_max_cell": 4,
+      "q6_nodes": 3093,
+      "encoded_nodes": 3246,
+      "all_normalized": true,
+      "q3_code": 37,
+      "representative": 37,
+      "state_hash": "477ccfbf40457bee65ef156f799a7cbcf3b67cf0dc06607ee5bd67bd7bca5853",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 70,
+    "q3_codes": [
+      70,
+      142,
+      550,
+      574,
+      582,
+      630
+    ],
+    "states_per_code": 3012,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 3012,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 158,
+      "q4_max_bucket": 119,
+      "q5_cells": 2422,
+      "q5_max_cell": 4,
+      "q6_nodes": 2422,
+      "encoded_nodes": 2581,
+      "all_normalized": true,
+      "q3_code": 70,
+      "representative": 70,
+      "state_hash": "3a73b8a654ebc64d72250587fd8b2a17f32248d066823462070b2781fe4fed1a",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 69,
+    "q3_codes": [
+      69,
+      141,
+      493,
+      501,
+      541,
+      621
+    ],
+    "states_per_code": 3000,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 3000,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 131,
+      "q4_max_bucket": 198,
+      "q5_cells": 2211,
+      "q5_max_cell": 4,
+      "q6_nodes": 2211,
+      "encoded_nodes": 2343,
+      "all_normalized": true,
+      "q3_code": 69,
+      "representative": 69,
+      "state_hash": "425e9df5e2cbcd41c0ff4a249a5e84b00c32993731c8b91507d69e056b7fbf89",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 312,
+    "q3_codes": [
+      312,
+      384,
+      520,
+      528,
+      544,
+      624
+    ],
+    "states_per_code": 2316,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 2316,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 135,
+      "q4_max_bucket": 108,
+      "q5_cells": 1974,
+      "q5_max_cell": 4,
+      "q6_nodes": 1974,
+      "encoded_nodes": 2110,
+      "all_normalized": true,
+      "q3_code": 312,
+      "representative": 312,
+      "state_hash": "e9a15c68af6c974aaf7460e23fc3ccf1771d105591f4ca153f6c47a2dd40fd71",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 1,
+    "q3_codes": [
+      1,
+      9,
+      81
+    ],
+    "states_per_code": 2088,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 2088,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 132,
+      "q4_max_bucket": 70,
+      "q5_cells": 1892,
+      "q5_max_cell": 4,
+      "q6_nodes": 1892,
+      "encoded_nodes": 2025,
+      "all_normalized": true,
+      "q3_code": 1,
+      "representative": 1,
+      "state_hash": "78d9f972db34838f2c4afbb8bcc2512c2e20b777c076303a7a9adc306f90aac5",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 304,
+    "q3_codes": [
+      304,
+      552,
+      600
+    ],
+    "states_per_code": 1884,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 1884,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 150,
+      "q4_max_bucket": 97,
+      "q5_cells": 1726,
+      "q5_max_cell": 4,
+      "q6_nodes": 1726,
+      "encoded_nodes": 1877,
+      "all_normalized": true,
+      "q3_code": 304,
+      "representative": 304,
+      "state_hash": "380256049a01055b1b87fc12eb5232f6cdc265609e77b5912aecad2ffa0be9df",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 60,
+    "q3_codes": [
+      60,
+      492,
+      540
+    ],
+    "states_per_code": 1788,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 1788,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 115,
+      "q4_max_bucket": 123,
+      "q5_cells": 1436,
+      "q5_max_cell": 4,
+      "q6_nodes": 1436,
+      "encoded_nodes": 1552,
+      "all_normalized": true,
+      "q3_code": 60,
+      "representative": 60,
+      "state_hash": "d9fb7f8e7bc0a391a4ffd07d0fe657c4368756b8fb8e2d508c9c5e3830a6ff44",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 97,
+    "q3_codes": [
+      97,
+      145,
+      577
+    ],
+    "states_per_code": 1524,
+    "q4_query_raw": [
+      283,
+      482,
+      39,
+      538,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 1524,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 90,
+      "q4_max_bucket": 48,
+      "q5_cells": 1012,
+      "q5_max_cell": 4,
+      "q6_nodes": 1012,
+      "encoded_nodes": 1103,
+      "all_normalized": true,
+      "q3_code": 97,
+      "representative": 97,
+      "state_hash": "6c865adb27e839fc1d3054cb72c903acc1983d330702dcb03e39bc47a80a05ce",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 303,
+    "q3_codes": [
+      303,
+      519,
+      543
+    ],
+    "states_per_code": 1500,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 1500,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 109,
+      "q4_max_bucket": 114,
+      "q5_cells": 1286,
+      "q5_max_cell": 5,
+      "q6_nodes": 1286,
+      "encoded_nodes": 1396,
+      "all_normalized": true,
+      "q3_code": 303,
+      "representative": 303,
+      "state_hash": "10780afff6b96aa1ff4dfa8537b9ea4144577ac19b0976ec75bcadbaae6edd90",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 61,
+    "q3_codes": [
+      61,
+      549,
+      573
+    ],
+    "states_per_code": 1272,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 1272,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 143,
+      "q4_max_bucket": 71,
+      "q5_cells": 1219,
+      "q5_max_cell": 3,
+      "q6_nodes": 1219,
+      "encoded_nodes": 1363,
+      "all_normalized": true,
+      "q3_code": 61,
+      "representative": 61,
+      "state_hash": "bf577c11b3b99884e8fbc8eca43fedb4cc195404218608d3fe10afc7343a54e8",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 637,
+    "q3_codes": [
+      637
+    ],
+    "states_per_code": 1164,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 1164,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 62,
+      "q4_max_bucket": 56,
+      "q5_cells": 970,
+      "q5_max_cell": 3,
+      "q6_nodes": 970,
+      "encoded_nodes": 1033,
+      "all_normalized": true,
+      "q3_code": 637,
+      "representative": 637,
+      "state_hash": "ffdd9b5f30f61aeeb590e7ce97142b52eff4f0687f0ef1181bb383809b20c52c",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 556,
+    "q3_codes": [
+      556,
+      628,
+      636
+    ],
+    "states_per_code": 528,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 528,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 55,
+      "q4_max_bucket": 32,
+      "q5_cells": 510,
+      "q5_max_cell": 2,
+      "q6_nodes": 510,
+      "encoded_nodes": 566,
+      "all_normalized": true,
+      "q3_code": 556,
+      "representative": 556,
+      "state_hash": "8fc921ee29cc83818c7eb85391f9c51453984f71ce96ed03bf253e21a6a38e24",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 547,
+    "q3_codes": [
+      547,
+      555,
+      627
+    ],
+    "states_per_code": 228,
+    "q4_query_raw": [
+      888,
+      211,
+      39,
+      93,
+      724,
+      111
+    ],
+    "replay": {
+      "states": 228,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 62,
+      "q4_max_bucket": 27,
+      "q5_cells": 221,
+      "q5_max_cell": 2,
+      "q6_nodes": 221,
+      "encoded_nodes": 284,
+      "all_normalized": true,
+      "q3_code": 547,
+      "representative": 547,
+      "state_hash": "d3d23e997bc93fce1740feb26b6e03175158d195ed8288aafa1e95d89e098690",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  },
+  {
+    "representative": 546,
+    "q3_codes": [
+      546
+    ],
+    "states_per_code": 168,
+    "q4_query_raw": [
+      453,
+      461,
+      522,
+      566,
+      1201,
+      1924
+    ],
+    "replay": {
+      "states": 168,
+      "collisions": 0,
+      "max_additional_depth": 4,
+      "q4_branches": 22,
+      "q4_max_bucket": 26,
+      "q5_cells": 160,
+      "q5_max_cell": 2,
+      "q6_nodes": 160,
+      "encoded_nodes": 183,
+      "all_normalized": true,
+      "q3_code": 546,
+      "representative": 546,
+      "state_hash": "1d5f35ec3be3bb94e940569d9689406cebf68f4d87ea524091b7a0587d50a691",
+      "transported_state_set_equal": true,
+      "max_q4_to_q6_depth": 3
+    }
+  }
+]

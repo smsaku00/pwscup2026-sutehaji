@@ -1,0 +1,12 @@
+{
+  "verified_states": 40428,
+  "collisions": 0,
+  "max_depth": 3,
+  "q4_branches": 208,
+  "q4_max_bucket": 899,
+  "q5_cells": 16321,
+  "q5_max_cell": 20,
+  "q6_queries": 16321,
+  "q3_code": 30,
+  "state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2"
+}

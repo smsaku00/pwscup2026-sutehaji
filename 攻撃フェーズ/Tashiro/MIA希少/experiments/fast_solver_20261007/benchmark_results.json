@@ -1,0 +1,63 @@
+{
+  "model": "ideal count-vector oracle; no official scorer",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2",
+  "q3_code": 30,
+  "states": 40428,
+  "tests": [
+    {
+      "name": "662_state_depth2_necessary_cold",
+      "reference_seconds": 0.1858766490000221,
+      "fast_seconds": 0.009360466000032375,
+      "reference_runs": [0.204445647, 0.1847146300000304, 0.1858766490000221],
+      "fast_runs": [0.009360466000032375, 0.009305735999987519, 0.00973100499999191],
+      "identical": true,
+      "allowed_masks_by_team": [1024, 128, 768, 120, 768, 0]
+    },
+    {
+      "name": "9_distinct_q4_screens",
+      "states_each": 40428,
+      "reference_cold_total_seconds": 3.958694438000009,
+      "fast_cold_total_seconds": 1.5362868619999972,
+      "reference_warm_batch_seconds": 3.182890151000038,
+      "fast_warm_batch_seconds": 0.02358926499999825,
+      "reference_warm_runs": [3.1847778159999507, 3.182890151000038, 3.1218857620000335],
+      "fast_warm_runs": [0.023594302999981664, 0.02358926499999825, 0.021868830000016715],
+      "identical": true,
+      "candidate_queries": [
+        [432,1598,1108,721,557,1096],
+        [432,1598,1108,877,557,1096],
+        [432,1598,1108,147,557,1096],
+        [432,638,1108,721,557,1096],
+        [432,638,1108,877,557,1096],
+        [432,638,1108,147,557,1096],
+        [432,63,1108,721,557,1096],
+        [432,63,1108,877,557,1096],
+        [432,63,1108,147,557,1096]
+      ],
+      "per_query_bad_child_counts": [1,2,2,2,3,2,1,4,4],
+      "constraint_cache_hits": 206,
+      "constraint_cache_misses": 10
+    },
+    {
+      "name": "20_last_question_cells_cold_solver",
+      "reference_seconds": 0.4636742410000352,
+      "fast_seconds": 0.2504956410000432,
+      "reference_runs": [0.4636742410000352,0.47052056899997297,0.46168956499997194],
+      "fast_runs": [0.2504956410000432,0.25131113700001606,0.24544295799995552],
+      "cells": 20,
+      "cell_sizes": [4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,9,12,12,12],
+      "all_classifications_match": true,
+      "SAT": 20
+    }
+  ],
+  "limitations": [
+    "Reference is a reconstruction of the earlier loop-based method, not old timing logs.",
+    "Both versions run on identical inputs on one CPU process; warm and cold are separate.",
+    "The benchmark times kernels and screening, not completion of all 53 orbits.",
+    "All timings include returned results; imports and generation of the synthetic states are excluded.",
+    "No official mean-TPR precision, padding, or CSV end-to-end validation is included."
+  ]
+}

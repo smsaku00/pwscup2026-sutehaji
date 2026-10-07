@@ -1,0 +1,50 @@
+{
+  "candidate_ids": [
+    47,
+    76,
+    90,
+    115,
+    169,
+    264,
+    304,
+    383,
+    462,
+    495,
+    675
+  ],
+  "known_negative_ids": [
+    126,
+    136,
+    271,
+    273,
+    317,
+    440,
+    480,
+    625,
+    637,
+    643,
+    668,
+    814,
+    841
+  ],
+  "team_order": [
+    6,
+    10,
+    11,
+    16,
+    17,
+    25
+  ],
+  "total_high": [
+    6,
+    7,
+    7,
+    11,
+    10,
+    12
+  ],
+  "rule": "Complement every 11-bit mask with popcount > 5; select the first total_high[t]-popcount(normalized mask) known-negative IDs in ascending order. Assign 0.4 to the selected candidates and padding, and 0.1 to the other rare rows.",
+  "other_teams_rare_positive_count": 0,
+  "other_teams": 16,
+  "nonrare_rows": "Do not affect the rare channel."
+}

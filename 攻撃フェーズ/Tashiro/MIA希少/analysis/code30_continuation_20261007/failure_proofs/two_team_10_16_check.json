@@ -1,0 +1,24 @@
+{
+  "valid_cores": 7552,
+  "grid_replays": [
+    {
+      "fixed_query": [
+        432,
+        449,
+        939,
+        721,
+        557,
+        951
+      ],
+      "varying_team_indices": [
+        1,
+        3
+      ],
+      "independently_excluded": 1048576,
+      "total_candidates": 1048576,
+      "restricted_status": "UNSAT"
+    }
+  ],
+  "overall_status": "UNKNOWN",
+  "seconds": 3.851586833014153
+}

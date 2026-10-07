@@ -1,0 +1,2 @@
+# Optional: bounded CEGIS query generation only. Not needed for witnesses/checkers.
+z3-solver==5.1.0.0

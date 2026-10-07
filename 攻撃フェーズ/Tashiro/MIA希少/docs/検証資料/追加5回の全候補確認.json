@@ -1,0 +1,673 @@
+{
+  "scope": "単独Team全候補のreplayと216平均点の全列挙。6Team全配置はこの2つを合成して保証する。",
+  "team_order": [
+    6,
+    10,
+    11,
+    16,
+    17,
+    25
+  ],
+  "candidate_ids": [
+    47,
+    76,
+    90,
+    115,
+    169,
+    264,
+    304,
+    383,
+    462,
+    495,
+    675
+  ],
+  "caps": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "total_high": [
+    6,
+    7,
+    7,
+    11,
+    10,
+    12
+  ],
+  "single_team": {
+    "1": {
+      "states_replayed": 11,
+      "collisions": 0,
+      "max_depth": 4,
+      "depth_distribution": {
+        "3": 5,
+        "4": 6
+      },
+      "maximum_candidates_after_0_to_5_questions": [
+        11,
+        6,
+        3,
+        2,
+        1,
+        1
+      ],
+      "trace_AK": null
+    },
+    "2": {
+      "states_replayed": 55,
+      "collisions": 0,
+      "max_depth": 5,
+      "depth_distribution": {
+        "2": 1,
+        "3": 4,
+        "4": 21,
+        "5": 29
+      },
+      "maximum_candidates_after_0_to_5_questions": [
+        55,
+        28,
+        13,
+        6,
+        3,
+        1
+      ],
+      "trace_AK": [
+        {
+          "selected": "ABCD",
+          "query_mask": 15,
+          "response": 1,
+          "before": 55,
+          "after": 28
+        },
+        {
+          "selected": "AEFG",
+          "query_mask": 113,
+          "response": 1,
+          "before": 28,
+          "after": 13
+        },
+        {
+          "selected": "BCEF",
+          "query_mask": 54,
+          "response": 0,
+          "before": 13,
+          "after": 5
+        },
+        {
+          "selected": "AHI",
+          "query_mask": 385,
+          "response": 1,
+          "before": 5,
+          "after": 2
+        },
+        {
+          "selected": "J",
+          "query_mask": 512,
+          "response": 0,
+          "before": 2,
+          "after": 1
+        }
+      ]
+    }
+  },
+  "single_pair_first_question_lower_bound_by_size_0_to_5": [
+    55,
+    45,
+    36,
+    28,
+    28,
+    30
+  ],
+  "single_pair_four_questions_impossible": true,
+  "mean_response_patterns": 216,
+  "mean_collisions": 0,
+  "mean_minimum_gap_exact": "1/54000",
+  "compositional_guarantee_max_additional_queries": 5,
+  "composition_covers_disjoint_states": 2494800,
+  "policies": {
+    "1": {
+      "query_mask": 31,
+      "query_letters": "ABCDE",
+      "before": 11,
+      "children": {
+        "0": {
+          "query_mask": 224,
+          "query_letters": "FGH",
+          "before": 6,
+          "children": {
+            "0": {
+              "query_mask": 256,
+              "query_letters": "I",
+              "before": 3,
+              "children": {
+                "0": {
+                  "query_mask": 512,
+                  "query_letters": "J",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 1024
+                    },
+                    "1": {
+                      "member_mask": 512
+                    }
+                  }
+                },
+                "1": {
+                  "member_mask": 256
+                }
+              }
+            },
+            "1": {
+              "query_mask": 32,
+              "query_letters": "F",
+              "before": 3,
+              "children": {
+                "0": {
+                  "query_mask": 64,
+                  "query_letters": "G",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 128
+                    },
+                    "1": {
+                      "member_mask": 64
+                    }
+                  }
+                },
+                "1": {
+                  "member_mask": 32
+                }
+              }
+            }
+          }
+        },
+        "1": {
+          "query_mask": 3,
+          "query_letters": "AB",
+          "before": 5,
+          "children": {
+            "0": {
+              "query_mask": 4,
+              "query_letters": "C",
+              "before": 3,
+              "children": {
+                "0": {
+                  "query_mask": 8,
+                  "query_letters": "D",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 16
+                    },
+                    "1": {
+                      "member_mask": 8
+                    }
+                  }
+                },
+                "1": {
+                  "member_mask": 4
+                }
+              }
+            },
+            "1": {
+              "query_mask": 1,
+              "query_letters": "A",
+              "before": 2,
+              "children": {
+                "0": {
+                  "member_mask": 2
+                },
+                "1": {
+                  "member_mask": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "query_mask": 15,
+      "query_letters": "ABCD",
+      "before": 55,
+      "children": {
+        "0": {
+          "query_mask": 48,
+          "query_letters": "EF",
+          "before": 21,
+          "children": {
+            "0": {
+              "query_mask": 192,
+              "query_letters": "GH",
+              "before": 10,
+              "children": {
+                "0": {
+                  "query_mask": 256,
+                  "query_letters": "I",
+                  "before": 3,
+                  "children": {
+                    "0": {
+                      "member_mask": 1536
+                    },
+                    "1": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1280
+                        },
+                        "1": {
+                          "member_mask": 768
+                        }
+                      }
+                    }
+                  }
+                },
+                "1": {
+                  "query_mask": 320,
+                  "query_letters": "GI",
+                  "before": 6,
+                  "children": {
+                    "0": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1152
+                        },
+                        "1": {
+                          "member_mask": 640
+                        }
+                      }
+                    },
+                    "1": {
+                      "query_mask": 576,
+                      "query_letters": "GJ",
+                      "before": 3,
+                      "children": {
+                        "0": {
+                          "member_mask": 384
+                        },
+                        "1": {
+                          "member_mask": 1088
+                        },
+                        "2": {
+                          "member_mask": 576
+                        }
+                      }
+                    },
+                    "2": {
+                      "member_mask": 320
+                    }
+                  }
+                },
+                "2": {
+                  "member_mask": 192
+                }
+              }
+            },
+            "1": {
+              "query_mask": 208,
+              "query_letters": "EGH",
+              "before": 10,
+              "children": {
+                "0": {
+                  "query_mask": 256,
+                  "query_letters": "I",
+                  "before": 3,
+                  "children": {
+                    "0": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1056
+                        },
+                        "1": {
+                          "member_mask": 544
+                        }
+                      }
+                    },
+                    "1": {
+                      "member_mask": 288
+                    }
+                  }
+                },
+                "1": {
+                  "query_mask": 272,
+                  "query_letters": "EI",
+                  "before": 5,
+                  "children": {
+                    "0": {
+                      "query_mask": 64,
+                      "query_letters": "G",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 160
+                        },
+                        "1": {
+                          "member_mask": 96
+                        }
+                      }
+                    },
+                    "1": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1040
+                        },
+                        "1": {
+                          "member_mask": 528
+                        }
+                      }
+                    },
+                    "2": {
+                      "member_mask": 272
+                    }
+                  }
+                },
+                "2": {
+                  "query_mask": 64,
+                  "query_letters": "G",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 144
+                    },
+                    "1": {
+                      "member_mask": 80
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "member_mask": 48
+            }
+          }
+        },
+        "1": {
+          "query_mask": 113,
+          "query_letters": "AEFG",
+          "before": 28,
+          "children": {
+            "0": {
+              "query_mask": 386,
+              "query_letters": "BHI",
+              "before": 12,
+              "children": {
+                "0": {
+                  "query_mask": 516,
+                  "query_letters": "CJ",
+                  "before": 4,
+                  "children": {
+                    "0": {
+                      "member_mask": 1032
+                    },
+                    "1": {
+                      "query_mask": 4,
+                      "query_letters": "C",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 520
+                        },
+                        "1": {
+                          "member_mask": 1028
+                        }
+                      }
+                    },
+                    "2": {
+                      "member_mask": 516
+                    }
+                  }
+                },
+                "1": {
+                  "query_mask": 140,
+                  "query_letters": "CDH",
+                  "before": 6,
+                  "children": {
+                    "0": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1026
+                        },
+                        "1": {
+                          "member_mask": 514
+                        }
+                      }
+                    },
+                    "1": {
+                      "query_mask": 4,
+                      "query_letters": "C",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 264
+                        },
+                        "1": {
+                          "member_mask": 260
+                        }
+                      }
+                    },
+                    "2": {
+                      "query_mask": 4,
+                      "query_letters": "C",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 136
+                        },
+                        "1": {
+                          "member_mask": 132
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "query_mask": 128,
+                  "query_letters": "H",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 258
+                    },
+                    "1": {
+                      "member_mask": 130
+                    }
+                  }
+                }
+              }
+            },
+            "1": {
+              "query_mask": 54,
+              "query_letters": "BCEF",
+              "before": 13,
+              "children": {
+                "0": {
+                  "query_mask": 385,
+                  "query_letters": "AHI",
+                  "before": 5,
+                  "children": {
+                    "0": {
+                      "member_mask": 72
+                    },
+                    "1": {
+                      "query_mask": 512,
+                      "query_letters": "J",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 1025
+                        },
+                        "1": {
+                          "member_mask": 513
+                        }
+                      }
+                    },
+                    "2": {
+                      "query_mask": 128,
+                      "query_letters": "H",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 257
+                        },
+                        "1": {
+                          "member_mask": 129
+                        }
+                      }
+                    }
+                  }
+                },
+                "1": {
+                  "query_mask": 24,
+                  "query_letters": "DE",
+                  "before": 4,
+                  "children": {
+                    "0": {
+                      "query_mask": 2,
+                      "query_letters": "B",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 68
+                        },
+                        "1": {
+                          "member_mask": 66
+                        }
+                      }
+                    },
+                    "1": {
+                      "member_mask": 40
+                    },
+                    "2": {
+                      "member_mask": 24
+                    }
+                  }
+                },
+                "2": {
+                  "query_mask": 18,
+                  "query_letters": "BE",
+                  "before": 4,
+                  "children": {
+                    "0": {
+                      "member_mask": 36
+                    },
+                    "1": {
+                      "query_mask": 2,
+                      "query_letters": "B",
+                      "before": 2,
+                      "children": {
+                        "0": {
+                          "member_mask": 20
+                        },
+                        "1": {
+                          "member_mask": 34
+                        }
+                      }
+                    },
+                    "2": {
+                      "member_mask": 18
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "query_mask": 16,
+              "query_letters": "E",
+              "before": 3,
+              "children": {
+                "0": {
+                  "query_mask": 32,
+                  "query_letters": "F",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 65
+                    },
+                    "1": {
+                      "member_mask": 33
+                    }
+                  }
+                },
+                "1": {
+                  "member_mask": 17
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "query_mask": 1,
+          "query_letters": "A",
+          "before": 6,
+          "children": {
+            "0": {
+              "query_mask": 2,
+              "query_letters": "B",
+              "before": 3,
+              "children": {
+                "0": {
+                  "member_mask": 12
+                },
+                "1": {
+                  "query_mask": 4,
+                  "query_letters": "C",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 10
+                    },
+                    "1": {
+                      "member_mask": 6
+                    }
+                  }
+                }
+              }
+            },
+            "1": {
+              "query_mask": 2,
+              "query_letters": "B",
+              "before": 3,
+              "children": {
+                "0": {
+                  "query_mask": 4,
+                  "query_letters": "C",
+                  "before": 2,
+                  "children": {
+                    "0": {
+                      "member_mask": 9
+                    },
+                    "1": {
+                      "member_mask": 5
+                    }
+                  }
+                },
+                "1": {
+                  "member_mask": 3
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
