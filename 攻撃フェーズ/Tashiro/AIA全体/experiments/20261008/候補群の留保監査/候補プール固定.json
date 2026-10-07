@@ -1,0 +1,491 @@
+{
+  "frozen_at": "2026-10-08T06:29:35.966089+09:00",
+  "policy": {
+    "main_metric": "r_all",
+    "main_reference": "whole phase BG, same target/query/truth, verify saved baseline hit counts",
+    "score_stage": "official raw R before phi; final phi unknown",
+    "secondary_metrics": [
+      "r_rare",
+      "r_max"
+    ],
+    "main_scope_prelim20": "exclude5",
+    "main_scope_processed18": "exclude1,2,5",
+    "score_tolerance": 1e-12,
+    "pool": "anchor plus all newly fixed attack candidates under common fullBG; no baseline duplicate/control/historical comparator",
+    "secondary_oracle_pool": "all saved common-fullBG roles including controls and historical comparators; descriptive only",
+    "tie": "anchor priority, then registry family order, then method lexical order",
+    "tie_tolerance": 1e-12,
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 2026100821,
+    "bootstrap_unit": "paired target",
+    "bootstrap_interpretation": "descriptive 2.5/97.5 percentiles, not p-values or independent generalization CI; do not refit method choice",
+    "reused_public_prelim_truth": true,
+    "candidate_design_independent_of_prior_prelim_results": false,
+    "pool_frozen_after_family_outcomes": true,
+    "freeze_before_unified_global_choice": true,
+    "posthoc_diagnostics_not_in_pool": true,
+    "final_global_summary_written": false,
+    "GitHub_published": false,
+    "B_self_read": false,
+    "individual_predictions_read": false,
+    "main_truth_read": false,
+    "submission_created": false
+  },
+  "primary_pool": [
+    "anchor:P01",
+    "rank:map_sex_full",
+    "rank:map_sex_half",
+    "rank:map_sex_pref_full",
+    "rank:map_sex_pref_half",
+    "rank:rank_global_full5",
+    "rank:rank_global_partial2",
+    "rank:rank_sex_full5",
+    "rank:rank_sex_partial2",
+    "time:C/box_k32_window",
+    "time:C/box_k8_contrast",
+    "time:C/box_k8_contrast_gate75",
+    "time:C/box_k8_window",
+    "time:C/box_k8_window_gate75",
+    "time:C/raw_k8_window",
+    "public_bg:BG_exclude",
+    "public_bg:BG_weight0.5",
+    "person:empirical_upper_rank",
+    "person:standardize",
+    "person:subtract_mean",
+    "person:subtract_median",
+    "person_exact:exact_hypergeometric",
+    "other_C:other_median_lambda025",
+    "other_C:other_median_lambda100",
+    "other_C:other_q75_lambda025",
+    "other_C:other_q75_lambda100",
+    "subsample:frequency_ge075",
+    "subsample:frequency_pairrank_equal_quota75",
+    "subsample:frequency_quota75",
+    "pair:pair_all10_mean",
+    "pair:pair_top1",
+    "pair:pair_top3_mean",
+    "row:row_full5_l025",
+    "row:row_full5_l1",
+    "row:row_partial2_l025",
+    "row:row_partial2_l1",
+    "column:column_all4_mean",
+    "column:column_exact_count_then_all4",
+    "column:column_top2_mean"
+  ],
+  "all_saved_roles_pool": [
+    "anchor:P01",
+    "rank:map_sex_full",
+    "rank:map_sex_half",
+    "rank:map_sex_pref_full",
+    "rank:map_sex_pref_half",
+    "rank:rank_global_full5",
+    "rank:rank_global_partial2",
+    "rank:rank_sex_full5",
+    "rank:rank_sex_partial2",
+    "time:BG/box_k40_window",
+    "time:BG/raw_k40_window",
+    "time:C/box_k32_window",
+    "time:C/box_k8_contrast",
+    "time:C/box_k8_contrast_gate75",
+    "time:C/box_k8_window",
+    "time:C/box_k8_window_gate75",
+    "time:C/raw_k8_window",
+    "time:constant9.5",
+    "public_bg:BG_exclude",
+    "public_bg:BG_weight0.5",
+    "person:empirical_upper_rank",
+    "person:standardize",
+    "person:subtract_mean",
+    "person:subtract_median",
+    "person_exact:exact_hypergeometric",
+    "other_C:other_median_lambda025",
+    "other_C:other_median_lambda100",
+    "other_C:other_q75_lambda025",
+    "other_C:other_q75_lambda100",
+    "subsample:frequency_ge075",
+    "subsample:frequency_pairrank_equal_quota75",
+    "subsample:frequency_quota75",
+    "pair:pair_all10_mean",
+    "pair:pair_top1",
+    "pair:pair_top3_mean",
+    "row:row_full5_l025",
+    "row:row_full5_l1",
+    "row:row_partial2_l025",
+    "row:row_partial2_l1",
+    "column:column_all4_mean",
+    "column:column_exact_count_then_all4",
+    "column:column_top2_mean",
+    "historical:GenLRA/ordinal7h7/NN/gate0.75",
+    "historical:S4_log_iqr_soft/nn_all",
+    "historical:constant_9.5",
+    "historical:density/partial2_sex_k3/long_gate0.75",
+    "historical:log_iqr_both/nn_all",
+    "historical:partial4_log_iqr_both/nn_all",
+    "historical:sex/linear_gaussian/pooled/long0.75",
+    "time_control:gate75_long95"
+  ],
+  "sources": [
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/集計/同点修正_対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/集計/同点修正_対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "9ed0c06cbe6362e4ec87c2af07eac433d3a8cd52aa3099387c8aa873a0504d2f",
+      "bytes": 5156
+    },
+    {
+      "path": "順位尺度と分布補正/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/順位尺度と分布補正/分析.py",
+      "kind": "prediction_code",
+      "sha256": "037a3b88d48b7dce8f47c784a9231c660977b608b8bf31fd3734c5c7e808b25f",
+      "bytes": 9986
+    },
+    {
+      "path": "順位尺度と分布補正/結果/固定比較条件.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/順位尺度と分布補正/結果/固定比較条件.json",
+      "kind": "family_protocol",
+      "sha256": "87ea3273c7040342d6ab2784f4884d851c5761f22a7d9fe5462abd77737d5ce0",
+      "bytes": 979
+    },
+    {
+      "path": "順位尺度と分布補正/結果/対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/順位尺度と分布補正/結果/対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "3c24c73b34d8dad045493ca1f344e84192204671b85f660c9b8099bb9dc8564b",
+      "bytes": 18512
+    },
+    {
+      "path": "条件付き時間推定/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/分析.py",
+      "kind": "prediction_code",
+      "sha256": "82c4b07f38bbc78fb446db75f78071d090badc2d6c05b63deb6aecf1f8747836",
+      "bytes": 16698
+    },
+    {
+      "path": "条件付き時間推定/事前固定候補.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/事前固定候補.json",
+      "kind": "family_protocol",
+      "sha256": "ef81ff4c1900b2ac40af5edef744b88ab6d7c7ce4af54371b013af7ff744cc80",
+      "bytes": 1051
+    },
+    {
+      "path": "条件付き時間推定/集計/予備戦_対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/集計/予備戦_対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "39a239177801242c32d62afabeb0f06854d99678976985922d8c333049a56a25",
+      "bytes": 21554
+    },
+    {
+      "path": "加工特徴と方式選択/公開BG一致行の比較.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/公開BG一致行の比較.py",
+      "kind": "prediction_code",
+      "sha256": "da29d1d28a708ecc80220033d6a9c00057645bf66105d5ffef5eac06a3a249cf",
+      "bytes": 12935
+    },
+    {
+      "path": "加工特徴と方式選択/公開BG比較_事前固定仕様.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/公開BG比較_事前固定仕様.json",
+      "kind": "family_protocol",
+      "sha256": "237c629ebe27a53c95504f3e7f6c53891409e2c4b98ebd62e8d5c862b830c949",
+      "bytes": 1280
+    },
+    {
+      "path": "加工特徴と方式選択/集計/公開BG処理_予備戦対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/集計/公開BG処理_予備戦対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "217edfa38bbf2808771bcda72d17beec5f99801cebe079994173b08cae34c210",
+      "bytes": 6337
+    },
+    {
+      "path": "背景対照での選別較正/人物較正.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/人物較正.py",
+      "kind": "prediction_code",
+      "sha256": "9eaaf8e36ead9de16dbefcffda16e0d202a0ebb51a3c227856c741447748208a",
+      "bytes": 12842
+    },
+    {
+      "path": "背景対照での選別較正/固定条件.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/固定条件.json",
+      "kind": "family_protocol",
+      "sha256": "db7b319667d026198f0f026130833325923d924ff18f41192338d29815eb7162",
+      "bytes": 2836
+    },
+    {
+      "path": "背景対照での選別較正/集計/予備戦_対象別とnull反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/集計/予備戦_対象別とnull反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "d72e844d782a5e1ad72a0fd2e303183ec414bf1d1b865ea446578f81d9002dff",
+      "bytes": 441550
+    },
+    {
+      "path": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/厳密較正.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/厳密較正.py",
+      "kind": "prediction_code",
+      "sha256": "c1902f144d383da42ab702e006c1705adefdc529aa92187350ec553a64b82d41",
+      "bytes": 11601
+    },
+    {
+      "path": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/追加固定条件.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/追加固定条件.json",
+      "kind": "family_protocol",
+      "sha256": "987c5ea48f01b8ebf58ab360f151bd512707daeb985fd8b2eb27c2c5cf9645b5",
+      "bytes": 1754
+    },
+    {
+      "path": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/集計/厳密版_対象別とnull反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/集計/厳密版_対象別とnull反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "ad8d8a645c8a71ce5b6564229fef68989310fb20e9bd63a55d9c22dbb7f86c2d",
+      "bytes": 39283
+    },
+    {
+      "path": "他Cとの差による選別/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/他Cとの差による選別/分析.py",
+      "kind": "prediction_code",
+      "sha256": "59202caa5b975c774415f4f80fab99da2395a2da07dedd2e3994837a9d9affcf",
+      "bytes": 14264
+    },
+    {
+      "path": "他Cとの差による選別/事前固定候補.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/他Cとの差による選別/事前固定候補.json",
+      "kind": "family_protocol",
+      "sha256": "c158379251df30688d18af58c9d3e176cb164e1b657e3a918c1ee9c29e61bb76",
+      "bytes": 1017
+    },
+    {
+      "path": "他Cとの差による選別/集計/予備戦_対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/他Cとの差による選別/集計/予備戦_対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "04642aa67672963b490e6e5bfbd21e2ebb5e3d985bd120b9f7356bc016fce8a8",
+      "bytes": 11441
+    },
+    {
+      "path": "C抽出による選別の安定性/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C抽出による選別の安定性/分析.py",
+      "kind": "prediction_code",
+      "sha256": "2de071bb50611ce25732f7b1cea7c44cb43c1cc6259000b943b6da131e203fc5",
+      "bytes": 13437
+    },
+    {
+      "path": "C抽出による選別の安定性/事前固定候補.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C抽出による選別の安定性/事前固定候補.json",
+      "kind": "family_protocol",
+      "sha256": "a983312a389174c51556f7c04559f5ed833950fb0feaa465b762ad60e8e24576",
+      "bytes": 1062
+    },
+    {
+      "path": "C抽出による選別の安定性/集計/予備戦_対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C抽出による選別の安定性/集計/予備戦_対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "46315a5d4bf53850dec6694d11f7889ff4917785c28c1f3303a25fe085d4ae99",
+      "bytes": 9146
+    },
+    {
+      "path": "属性対ごとの証拠統合/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性対ごとの証拠統合/分析.py",
+      "kind": "prediction_code",
+      "sha256": "2f9e58716a9571f766fec74ea51d457bdb89b8c3515930f7b57521435307d75e",
+      "bytes": 14399
+    },
+    {
+      "path": "属性対ごとの証拠統合/事前固定仕様.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性対ごとの証拠統合/事前固定仕様.json",
+      "kind": "family_protocol",
+      "sha256": "8b90a331dd7b41597fe7f12ccf590a45a34b964c588c2ea0c74365d1e69692f9",
+      "bytes": 1608
+    },
+    {
+      "path": "属性対ごとの証拠統合/集計/予備戦_対象別.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性対ごとの証拠統合/集計/予備戦_対象別.csv",
+      "kind": "aggregate_csv",
+      "sha256": "5b517444e879bbbef0b7dbdcf2ea0e8251635a2a64fad8cffc7a61c376b05b30",
+      "bytes": 8319
+    },
+    {
+      "path": "C行の背景対比/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C行の背景対比/分析.py",
+      "kind": "prediction_code",
+      "sha256": "0781b5b2d179f01d854d723fab194fcfff75512de11463ca498a757e89b60bbe",
+      "bytes": 9953
+    },
+    {
+      "path": "C行の背景対比/結果/固定条件.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C行の背景対比/結果/固定条件.json",
+      "kind": "family_protocol",
+      "sha256": "0f66edd5fa1a66fd3e78efe27ca3b9846ebb4f5960a61bf8c2a9d4c7e35d914e",
+      "bytes": 748
+    },
+    {
+      "path": "C行の背景対比/結果/対象別と背景反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C行の背景対比/結果/対象別と背景反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "15eee2f2cc9122b4637317898da1e313333ef3bd4cb4dca73d0b44b7a39601d2",
+      "bytes": 222315
+    },
+    {
+      "path": "属性値集合による選別/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/分析.py",
+      "kind": "prediction_code",
+      "sha256": "d3213b95020770593a4d1df05421c7dbffbb75b26bb6059209c3df2a3bf79b80",
+      "bytes": 17146
+    },
+    {
+      "path": "属性値集合による選別/固定条件.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/固定条件.json",
+      "kind": "family_protocol",
+      "sha256": "0a7471be022ee544aa202e0e2a7575f8b5db8cbf1500aff7af5ace3bca835942",
+      "bytes": 2472
+    },
+    {
+      "path": "属性値集合による選別/集計/予備戦_対象別と20反復null.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/集計/予備戦_対象別と20反復null.csv",
+      "kind": "aggregate_csv",
+      "sha256": "f8e1dc626f247e5b20fcaf1a3ca0570f2b2072b4eb975cca72a4e4831aa1a171",
+      "bytes": 470172
+    },
+    {
+      "path": "加工特徴と方式選択/集計/固定方式の予備戦得点.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/集計/固定方式の予備戦得点.csv",
+      "kind": "aggregate_csv",
+      "sha256": "f164cdb78a926a1fb750acca95a6cd81803b60e842d711197941d1a408d49ea3",
+      "bytes": 20795
+    },
+    {
+      "path": "加工特徴と方式選択/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/分析.py",
+      "kind": "historical_comparator_code",
+      "sha256": "3ebf26f74ab2dcdd0c28b2da24d63275d4ac1fdb1b553fccae5d8aee87ce21d2",
+      "bytes": 17989
+    },
+    {
+      "path": "加工特徴と方式選択/事前固定仕様.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/事前固定仕様.json",
+      "kind": "historical_comparator_protocol",
+      "sha256": "a84a794e7bd80a61e8cdef9d863bcd1424799a57773a8c6d89022fe0d5b5a327",
+      "bytes": 1268
+    },
+    {
+      "path": "条件付き時間推定/集計/時間関係の寄与_全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/集計/時間関係の寄与_全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "fbb30ca14cc77164b38d2be1e06a2d44a1ef6029fb0f8df11c883a6192ddce38",
+      "bytes": 89508
+    },
+    {
+      "path": "条件付き時間推定/推定時間の寄与.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/推定時間の寄与.py",
+      "kind": "mechanism_control_code",
+      "sha256": "c5e4085dc612384e4e140152b57ad4e4823ddf9e18ffeec333ca6c9fc9c86624",
+      "bytes": 5738
+    },
+    {
+      "path": "条件付き時間推定/寄与検証_固定手順.json",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/条件付き時間推定/寄与検証_固定手順.json",
+      "kind": "mechanism_control_protocol",
+      "sha256": "e1909b4ab00ed0f5cfcd42f0bcac0cf735522f9995a0ad7e28581f41545d295d",
+      "bytes": 296
+    },
+    {
+      "path": "順位尺度と分布補正/結果/独立背景対照_全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/順位尺度と分布補正/結果/独立背景対照_全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "73d193e765180d3df31b0be601fbaccdc58c85c52ac33ea188c8f9551cb6fb4e",
+      "bytes": 382310
+    },
+    {
+      "path": "加工特徴と方式選択/集計/公開BG処理_独立参照の実C.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/集計/公開BG処理_独立参照の実C.csv",
+      "kind": "aggregate_csv",
+      "sha256": "61658a47ca75968192f35d71638be58f440835fa89fc78de6ea671892634ada1",
+      "bytes": 5248
+    },
+    {
+      "path": "加工特徴と方式選択/集計/公開BG処理_背景対照全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/加工特徴と方式選択/集計/公開BG処理_背景対照全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "89c410e0a1c58d66bd02caf9218d3f30ee8daeb624df870e5dda7db271f6f209",
+      "bytes": 92984
+    },
+    {
+      "path": "他Cとの差による選別/集計/独立背景対照_全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/他Cとの差による選別/集計/独立背景対照_全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "76451f6b70b3f2503f1426b463077e0c63a7c401deea5836b42ab42967e905b8",
+      "bytes": 239180
+    },
+    {
+      "path": "C抽出による選別の安定性/集計/独立背景対照_全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/C抽出による選別の安定性/集計/独立背景対照_全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "1d64b433f1d2abd5b1ec35b8adadde18a034e447de3315997ecd8c2a3290b445",
+      "bytes": 190362
+    },
+    {
+      "path": "属性対ごとの証拠統合/集計/独立背景_実Cと全反復.csv",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性対ごとの証拠統合/集計/独立背景_実Cと全反復.csv",
+      "kind": "aggregate_csv",
+      "sha256": "e4e71aeacbb3df0b766a49589df8f8944aedcd6493a8b5cc4b9aee9a63230a37",
+      "bytes": 149232
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/分析.py",
+      "kind": "anchor_reference_code",
+      "sha256": "8c28fdd95bcf3e9cfcfde27a76efb6323c66ab642c0ee2690c77bd79bb37df4f",
+      "bytes": 14441
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の頑健性.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の頑健性.py",
+      "kind": "anchor_reference_code",
+      "sha256": "9292c8a908db524043e7fc15ad7347dd69decaf08a5c57120a2c7bd4dc93c9ab",
+      "bytes": 7422
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/同点に依存しない対応.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/同点に依存しない対応.py",
+      "kind": "anchor_reference_code",
+      "sha256": "4732e5a3ca6786430ec60de99283ae38579d44519368b292f456a42ba8df04fb",
+      "bytes": 6240
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の分析.py",
+      "absolute_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の分析.py",
+      "kind": "anchor_reference_code",
+      "sha256": "7cbab6347fff3c67286ccccdc83cc7c828c989dfdac2c5dc43a2a6802b29182e",
+      "bytes": 6247
+    }
+  ],
+  "analysis_code_sha256": "09c852307ce7229da81e0119fa07fad882298821e61d29566f23c143b31c8b06",
+  "audit_protocol_sha256": "d3d49ab85b4ee7352f7692a73e8df10bcae10ccdeae73cccd68d395ce1316727",
+  "snapshot_sha256": {
+    "候補の役割一覧.csv": "53ba3abed2481591c20ea037ae049007807f626ca7853c3107c0b7620f861ed5",
+    "共通全BG_全候補対象別.csv": "e6dc46c2d934600f3a8eaf8cb62ed10c0a74c9c6f497d5e864767d40248a9899",
+    "別条件_対象別と反復.csv": "614884446f9037252b854a74e335502707bd63ffb673d8950f841542dbeef317",
+    "共通基準_的中数とR一致.csv": "e339e498534a78634b40e9c3a2eabe863506fb42d62709cd1717779ff3ab4976"
+  },
+  "common_teams": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "truth_design_independent": false,
+  "pool_frozen_before_unified_selection": true
+}

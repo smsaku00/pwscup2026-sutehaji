@@ -1,0 +1,33 @@
+{
+  "methods": [
+    "baseline",
+    "frequency_quota75",
+    "frequency_pairrank_equal_quota75",
+    "frequency_ge075"
+  ],
+  "subsamples": 32,
+  "C_sample_fraction": 0.8,
+  "sample_within_sex": true,
+  "sample_count": "floor(0.8*n_sex)",
+  "replacement": false,
+  "sample_seed_base": 20262208,
+  "canonical_C_order": "sorted hash of all public C columns",
+  "canonical_query_order": "QI then challenge_row_id",
+  "base": "partial2 continuousBG sexquota75 Hungarian long9.5",
+  "base_priority": "max calibrated pair with original epsilon",
+  "equal_weight": "0.5*frequency + 0.5*within_sex_rank(base_priority)",
+  "final_ties": "max calibrated pair, then canonical query tuple",
+  "threshold": 0.75,
+  "time_selected": 9.5,
+  "time_other": 0.0,
+  "main_metric": "r_all",
+  "null_repeats": 20,
+  "null_pool_reference_disjoint": true,
+  "frequency_is_membership_probability": false,
+  "truth_used_for_predictions": false,
+  "B_self_read": false,
+  "main_truth_read": false,
+  "official_phi": false,
+  "submission_created": false,
+  "codabench_submitted": false
+}

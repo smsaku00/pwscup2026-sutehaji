@@ -1,0 +1,134 @@
+[
+  {
+    "team": 0,
+    "round3_method": "第2回0年回答の一部を第1回timeに復元",
+    "round3_final": 0.06473858879629824,
+    "delta_best_previous": 0.056325301204819295
+  },
+  {
+    "team": 1,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": 0
+  },
+  {
+    "team": 2,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.08320111050414326,
+    "delta_best_previous": 0.08320111050414326
+  },
+  {
+    "team": 3,
+    "round3_method": "第2回N3＋N2部分対応C time補完",
+    "round3_final": 0.14299982439246173,
+    "delta_best_previous": 0.08931419457735185
+  },
+  {
+    "team": 4,
+    "round3_method": "第2回S3＋N2部分対応C time補完",
+    "round3_final": 0.1305796496601362,
+    "delta_best_previous": 0.08423180592991891
+  },
+  {
+    "team": 5,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": -0.0341408690483874
+  },
+  {
+    "team": 6,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.11695611340175327,
+    "delta_best_previous": 0.11695611340175327
+  },
+  {
+    "team": 7,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.0134356465155418,
+    "delta_best_previous": 0.0134356465155418
+  },
+  {
+    "team": 8,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": 0
+  },
+  {
+    "team": 9,
+    "round3_method": "第2回N9の245回答を維持＋未回答14行追加",
+    "round3_final": 0.7522338155494697,
+    "delta_best_previous": 0.006032547699214463
+  },
+  {
+    "team": 10,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.055080120152619844,
+    "delta_best_previous": 0.055080120152619844
+  },
+  {
+    "team": 11,
+    "round3_method": "第2回S3＋N2部分対応C time補完",
+    "round3_final": 0.11247150218296668,
+    "delta_best_previous": -0.05429864253393664
+  },
+  {
+    "team": 12,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": -0.05285730977287794
+  },
+  {
+    "team": 13,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.14146731892983327,
+    "delta_best_previous": 0.14146731892983327
+  },
+  {
+    "team": 14,
+    "round3_method": "第2回N3＋N2部分対応C time補完",
+    "round3_final": 0.1491209561747061,
+    "delta_best_previous": 0.009423503325942661
+  },
+  {
+    "team": 15,
+    "round3_method": "第2回0年回答の一部を第1回timeに復元",
+    "round3_final": 0.006765862630532596,
+    "delta_best_previous": -0.06706706706706707
+  },
+  {
+    "team": 16,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.031811132377003976,
+    "delta_best_previous": 0.031811132377003976
+  },
+  {
+    "team": 17,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0.013279993588023373,
+    "delta_best_previous": 0.013279993588023373
+  },
+  {
+    "team": 22,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": -0.030705763512741575
+  },
+  {
+    "team": 25,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": 0
+  },
+  {
+    "team": 26,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": 0
+  },
+  {
+    "team": 27,
+    "round3_method": "P01 部分2属性対応＋性別内75%選別＋9.5年/0年回答",
+    "round3_final": 0,
+    "delta_best_previous": 0
+  }
+]

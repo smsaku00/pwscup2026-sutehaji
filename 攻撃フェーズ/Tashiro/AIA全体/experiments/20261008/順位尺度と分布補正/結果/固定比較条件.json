@@ -1,0 +1,65 @@
+{
+  "seed": 20261008,
+  "methods": [
+    [
+      "baseline_partial2",
+      "raw",
+      2,
+      0.0
+    ],
+    [
+      "rank_global_partial2",
+      "rank_global",
+      2,
+      0.0
+    ],
+    [
+      "rank_sex_partial2",
+      "rank_sex",
+      2,
+      0.0
+    ],
+    [
+      "rank_global_full5",
+      "rank_global",
+      5,
+      0.0
+    ],
+    [
+      "rank_sex_full5",
+      "rank_sex",
+      5,
+      0.0
+    ],
+    [
+      "map_sex_half",
+      "map_sex",
+      2,
+      0.5
+    ],
+    [
+      "map_sex_full",
+      "map_sex",
+      2,
+      1.0
+    ],
+    [
+      "map_sex_pref_half",
+      "map_sex_pref",
+      2,
+      0.5
+    ],
+    [
+      "map_sex_pref_full",
+      "map_sex_pref",
+      2,
+      1.0
+    ]
+  ],
+  "selection": "fixed sex75 and long9.5",
+  "frozen_before_truth": true,
+  "gaussian_cdf": "midrank piecewise linear",
+  "min_C_group": 20,
+  "min_BG_group": 40,
+  "code_sha256": "037a3b88d48b7dce8f47c784a9231c660977b608b8bf31fd3734c5c7e808b25f"
+}

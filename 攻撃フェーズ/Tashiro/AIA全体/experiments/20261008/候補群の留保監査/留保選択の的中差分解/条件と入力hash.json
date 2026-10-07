@@ -1,0 +1,15 @@
+{
+  "code_sha256": "2d31d8df8ca93124d0f6fd493ccc5283918384a9a2f8745218d5971010aea2c3",
+  "input_sha256": {
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/候補群の留保監査/共通全BG_全候補対象別.csv": "e6dc46c2d934600f3a8eaf8cb62ed10c0a74c9c6f497d5e864767d40248a9899",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/候補群の留保監査/集計/global_LOTO_対象別.csv": "6b9a4d8c0c7e914c2b7eb6baca131245969e547ed27cfd12f29afef6113d979e",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/候補群の留保監査/既存分岐へのpool差替/凍結39候補_nested選択の対象別.csv": "c5b5f80f42c3f3acb35e72dc03dec17fc810aa5d366a022042ff3adba8d3880b",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/候補群の留保監査/候補プール固定.json": "2615d649e932eb58decbbd3c01ab9163e19a85fc1ed9b1e2aa55bfb9acc4b6c8"
+  },
+  "selected_method_not_changed": true,
+  "candidate_pool_not_changed": true,
+  "posthoc_decomposition_only": true,
+  "individual_predictions_read": false,
+  "main_truth_read": false,
+  "B_self_read": false
+}

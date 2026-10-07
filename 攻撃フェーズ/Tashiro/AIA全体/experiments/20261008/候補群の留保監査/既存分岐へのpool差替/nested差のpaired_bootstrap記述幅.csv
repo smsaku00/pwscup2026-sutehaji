@@ -1,0 +1,9 @@
+group,evaluation,comparison,mean_delta_R,descriptive_q025,descriptive_q975,paired_resamples,method_choice_refitted,independent_generalization_CI,p_value_computed
+prelim20,nested_LTO,anchor,0.03821058644569877,-0.025718455634980732,0.10666230515437976,10000,False,False,False
+prelim20,nested_LTO,global_LOTO,0.10822488518301965,0.051620206793996065,0.17098844414593942,10000,False,False,False
+prelim20,processing_group_out,anchor,-0.005122036901270765,-0.012550403225806436,0.0,10000,False,False,False
+prelim20,processing_group_out,global_LOTO,0.06489226183605012,0.02733342256224719,0.1094286741331119,10000,False,False,False
+processed18,nested_LTO,anchor,-0.056053242629729966,-0.09114637899244604,-0.024784464648779442,10000,False,False,False
+processed18,nested_LTO,global_LOTO,-0.0791777659438046,-0.13921108849551586,-0.027153682038509486,10000,False,False,False
+processed18,processing_group_out,anchor,-0.010948021885521884,-0.029477062289562286,0.0,10000,False,False,False
+processed18,processing_group_out,global_LOTO,-0.03407254519959653,-0.1111406273542159,0.03604037483861449,10000,False,False,False

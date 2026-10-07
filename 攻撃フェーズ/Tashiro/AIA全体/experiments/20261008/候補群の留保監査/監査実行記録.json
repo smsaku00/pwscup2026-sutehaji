@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-08T06:29:39.587370+09:00",
+  "python": "3.12.15",
+  "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "frozen_pool_sha256": "2615d649e932eb58decbbd3c01ab9163e19a85fc1ed9b1e2aa55bfb9acc4b6c8",
+  "code_sha256": "09c852307ce7229da81e0119fa07fad882298821e61d29566f23c143b31c8b06",
+  "output_sha256": {
+    "集計/global_LOTO_対象別.csv": "6b9a4d8c0c7e914c2b7eb6baca131245969e547ed27cfd12f29afef6113d979e",
+    "集計/paired_bootstrap_記述幅.csv": "b9e79d0a839bdb157296dbc0bd08ab99d4de0b46fb64c050376131e4ec54a8db",
+    "集計/別条件_平均_主表へ混ぜない.csv": "b6edbeb9b77472db0943736889cda330027deaf987383b6a827d19a40bf6d064",
+    "集計/global_LOTO_平均.csv": "3015bdd5ed2bdfedfb32f5df4bcf9f1d714c3150e3b7aa96d2b692ecb57a085c",
+    "集計/的中差と0切り上げ_全候補.csv": "25436f443a5eb96bdedd41357738fe960f560a2ad37a7c776b1689bfb5eb2637",
+    "集計/共通全BG_20対象と18対象の全候補平均.csv": "4c0fe5b172e60aa3bb4daa1b261bc077d008316b217fc00ae0fa215effd2e519",
+    "集計/targetwise_oracle_対象別.csv": "e41dd537c02581561b108bc044fa15f4198cc28f920d58a57d19093f5b7bbbc2",
+    "集計/targetwise_oracle_平均.csv": "8eb9e36a40f2d08f12c3696555f80229b8bdd577f83fc6ff96fa35e78093af18",
+    "集計/family内最大値_同じベンチでの選択.csv": "b1352a2ff42bd95e0229902bec7232676ecd1ef25768c42a30b52861a8dae5df",
+    "集計/共通全BG_20対象と18対象の対象別longform.csv": "ee62c778b6b672851a0ff752e1745964657694895499f7daa02fe04ddc0b2b29"
+  },
+  "primary_candidates": 39,
+  "scoring_rows": 1238,
+  "side_rows": 19763,
+  "bootstrap_repeats": 10000,
+  "selection_optimism_diagnosed": true,
+  "independent_validation": false,
+  "B_self_read": false,
+  "individual_predictions_read": false,
+  "main_truth_read": false,
+  "submission_created": false,
+  "GitHub_published": false
+}

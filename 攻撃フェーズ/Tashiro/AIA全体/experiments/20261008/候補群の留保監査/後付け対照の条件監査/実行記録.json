@@ -1,0 +1,12 @@
+{
+  "code_sha256": "5f9686c318c5ceefd089bdbbe48d03978f98181f087fa310048de8410ded920a",
+  "protocol_sha256": "c8f991341aa8ca58d98a8884093f2b6d5a105e88ef253d8ec21daf60d09c8e84",
+  "output_sha256": {
+    "別条件_実Cの的中差と0切り上げ.csv": "31ce6baa1619b2fc6b5adffc787a301d4be3a46558f20ee425d8b462972b9970",
+    "別条件_反復平均.csv": "256975a323de874541785be585a80bf36e7a0ab15a568a7fc17d883f6f05be45",
+    "別条件_当初4候補と後付け3対照_全対象反復.csv": "9e6802fafa5bc2680c584ad1708c1204bfc53f66d3f27fcb3481901f3840711e",
+    "別条件_実C対象別20と18.csv": "a1b64b3cf05d84bca00995a3ff9df6bae6e191e98b6225abaedd6775e46fac45"
+  },
+  "python": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "primary_pool_unchanged": true
+}

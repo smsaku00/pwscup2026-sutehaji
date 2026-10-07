@@ -1,0 +1,26 @@
+{
+  "reason": "三候補の良好な予備結果を閲覧した後、選別算法と同一C行制約を切り分ける反証",
+  "fixed_before_control_truth_scoring": true,
+  "post_result_control": true,
+  "exclude_from_candidate_selection_and_global_LOTO": true,
+  "methods": [
+    "old_pair_independent_sex75",
+    "same_row_all4_independent_sex75",
+    "same_row_top2_independent_sex75"
+  ],
+  "formulas": {
+    "old_pair": "max over eligible same-sex C rows of original partial2 continuous BG-CDF pair-score including original 5D tie penalty; nearest12 inclusive boundary retained",
+    "same_row_all4": "max over same-sex C rows i of mean_j log((nearest_same-sex_BG_j+1e-8)/(|q_j-C_ij|+1e-8))",
+    "same_row_top2": "max over same-sex C rows i of mean of its two largest attribute log ratios"
+  },
+  "columns": [
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "fixed_choices": "reuse parent fixed epsilon1e-8, sex75 ceil quota, challenge_row_id tie,9.5/0, seeds,20 null and same split/full contexts; old_pair retains old distances and threshold",
+  "truth_policy": "44 control predictions and20 nulls saved before control public prelim truth scoring; no main truth",
+  "no_parameter_search": true,
+  "interpretation": "post hoc diagnostic of differences; cannot establish independent validation"
+}

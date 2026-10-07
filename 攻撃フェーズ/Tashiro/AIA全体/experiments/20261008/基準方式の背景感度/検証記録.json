@@ -1,0 +1,40 @@
+{
+  "code_sha256": "72b24b6cd68bdade71bbf7f102fafb3c48ab3c64871a038ad7ba73cea08bd359",
+  "analysis_code_sha256": "24942d1315fb4a69793d0b620b5d21848b3e409036c513ea9bb89f8bd012e36e",
+  "checked_primary_input_hashes": 112,
+  "checked_import_hashes": 4,
+  "verification_input_sha256": {
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/32参照_実C対象別.csv": "d597f849f14504eb9d4623d0f183d5af4f9c0437ba045c32ca8efed4cf307f36",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/32参照_同性別BG_C全反復.csv": "bdc4f5eae35dc1f5c52496ce1988a20b9b6c12e15969dd062e84e5cc1b4c5436",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/32参照_実Cと対照差_対象別.csv": "db03ef1427a61ba7354947c9111befa3419df6d73a45113f6bba52aca11c14f7",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/32参照_20対象と18対象のseed別平均.csv": "2feda2b05e076a8c0d75d12a29f2a843247579fd9c61a3aed43c073fb2eb9cf5",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/同性別BG_Cの候補制限監査.csv": "38b811eac068f024212534c347ec8c05523f747ddc41be246d4f2c2f87475b4d",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/本戦_32参照での選択頻度の対象別性別分布.csv": "90e36f307f93080669c0df6ffc00181e4c69da8a0cf4557906091396b9d1b74e",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/本戦_32参照での選択頻度の対象別性別要約.csv": "8e2a46ce6babf489b60c772dcd80a7ee6e9d137b450e63859b3fd0debb51cb45",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/基準方式の背景感度/集計/32参照の感度分布_独立検証区間ではない.csv": "fdaa2e6ca8cc800ad87dbc5ec01b6611295e27ab86daef485725b0f542c47dca"
+  },
+  "checked_real_cases": 672,
+  "checked_null_cases": 12800,
+  "checked_seed_scopes": 64,
+  "checked_distribution_metrics": 16,
+  "checked_main_histograms": 69,
+  "sharing_frequency_rows": false,
+  "distribution_metadata_normalized": true,
+  "mathematical_results_changed": false,
+  "final_distribution_sha256": "dd03a24f5ae3ae8a322784b45c8ca92d3e9294d82cfa45214620a535c7235a29",
+  "max_null_selected_bad_pairs": 0,
+  "share_csv_files": [
+    "全BG基準_予備戦21対象.csv",
+    "本戦_32参照での選択頻度の対象別性別分布.csv",
+    "32参照_実C対象別.csv",
+    "32参照_実Cと対照差_対象別.csv",
+    "32参照_20対象と18対象のseed別平均.csv",
+    "本戦_32参照での選択頻度の対象別性別要約.csv",
+    "32参照の感度分布_独立検証区間ではない.csv",
+    "同性別BG_Cの候補制限監査.csv",
+    "全BG基準からの選択変化_対象別性別.csv",
+    "32参照_同性別BG_C全反復.csv",
+    "選択変化の32参照要約.csv"
+  ],
+  "forbidden_submission_files": []
+}

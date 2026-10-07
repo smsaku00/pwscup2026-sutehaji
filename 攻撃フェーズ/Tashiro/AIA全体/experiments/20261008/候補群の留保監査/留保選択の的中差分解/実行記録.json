@@ -1,0 +1,10 @@
+{
+  "code_sha256": "2d31d8df8ca93124d0f6fd493ccc5283918384a9a2f8745218d5971010aea2c3",
+  "protocol_sha256": "f603ba65084a3bb0ac2123ed289ecf5ddfaa1e819bd62fcdf5e082fb534fefd0",
+  "output_sha256": {
+    "留保選択の的中差と0切り上げ平均.csv": "f75eb139a5881ee5bc38afa73984ad835bcac11a29cb29d7f492eedaf880f0ec",
+    "選択済み方式の対象別分解.csv": "6cc8c9c5800df15b64413662d270f2219eb773a11861483a0647b50531047013"
+  },
+  "python": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "candidate_pool_unchanged": true
+}

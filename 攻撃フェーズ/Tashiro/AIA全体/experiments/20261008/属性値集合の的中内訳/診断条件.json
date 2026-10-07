@@ -1,0 +1,40 @@
+{
+  "post_result_diagnostic": true,
+  "new_methods": 0,
+  "source_methods": [
+    "column_all4_mean",
+    "column_top2_mean"
+  ],
+  "baseline": "baseline_partial2_matching from same frozen context",
+  "source": "属性値集合による選別/予測実行記録.json and 作業用 cache",
+  "contexts": [
+    "split_independent",
+    "full_reference_overlap"
+  ],
+  "prelim_targets": 21,
+  "true_time_bins": [
+    "early_0_to_half (0<=time<=.5)",
+    "long_9_to_10 (9<=time<=10)",
+    "other (.5<time<9)"
+  ],
+  "switches": [
+    "0_to_9.5",
+    "9.5_to_0",
+    "same"
+  ],
+  "groups": [
+    "member/control",
+    "sex0/sex1",
+    "time_bin",
+    "switch"
+  ],
+  "hit_formula": "selected & time>=9 OR unselected & time<=.5",
+  "selected_member_count": "public prelim truth diagnostic only",
+  "main": "public query sex count and selected count only; no membership/time truth",
+  "no_individual_ID_or_truth_export": true,
+  "not_MIA": "This is AIA326 challenge diagnostic, not MIA1049 candidate ranking or rare11 selection performance",
+  "not_membership_probability": true,
+  "not_time_causal_effect": true,
+  "excluded_from_39_pool": true,
+  "no_pred_or_method_change": true
+}

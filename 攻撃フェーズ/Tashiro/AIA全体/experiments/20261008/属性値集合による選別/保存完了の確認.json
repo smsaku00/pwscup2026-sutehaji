@@ -1,0 +1,14 @@
+{
+  "main_protocol_and_code_unchanged": true,
+  "public_input_files_unchanged": 90,
+  "main_C_predictions": 44,
+  "post_hoc_control_C_predictions": 44,
+  "all4_exact_real_mask_changes": 0,
+  "all4_exact_null_mask_changes": 0,
+  "post_hoc_control_permutation_max": 0,
+  "old_saved_score_max_difference": 8.326672684688674e-17,
+  "main_truth_used": false,
+  "B_self_used": false,
+  "submission_created": false,
+  "control_excluded_from_selection": true
+}

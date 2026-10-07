@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "verifier_sha256": "906dae28a9e0822caf5721e75cd25972f75f672ed275f35253bc3ea5d81f9e92",
+  "transformed_C_predictions_checked": 880,
+  "column_evidence_invariance_checks": 880,
+  "column_selection_invariance_checks": 1760,
+  "same_sex_marginals_preserved": 880,
+  "all_nonclinical_columns_preserved": 880,
+  "original_masks_reproduced": 132,
+  "public_prelim_score_rows": 1323,
+  "all44x20_saved_before_truth": true,
+  "main_truth_read": false,
+  "B_self_read": false,
+  "initial_39_pool_sha256": "2615d649e932eb58decbbd3c01ab9163e19a85fc1ed9b1e2aa55bfb9acc4b6c8",
+  "independent_validation": false,
+  "real_team_shuffle_not_inferred": true
+}

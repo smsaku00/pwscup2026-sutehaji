@@ -1,0 +1,14 @@
+{
+  "input_hashes_verified": 112,
+  "reference_codes_verified": 4,
+  "score_rows": 2205,
+  "same_baseline_as_yesterday": true,
+  "permutation_comparisons": 880,
+  "changed_rows": 0,
+  "mean_summaries_consistent": true,
+  "official_score_comparisons": 63,
+  "no_B_self_or_archive_read": true,
+  "submission_artifacts_found": [],
+  "official_phi_reproduced": false,
+  "verification_code_sha256": "a83e2f7128d955aee264f826c571a26ba269b41e59ac788ecd02f6263d9b465e"
+}

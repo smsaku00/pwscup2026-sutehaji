@@ -1,0 +1,19 @@
+{
+  "input_files_unchanged": 90,
+  "baseline44_prediction_differences": 0,
+  "prelim21_saved_score_max_diff": 8.326672684688674e-17,
+  "original_permutation_cases": 2200,
+  "original_permutation_max_change": 0,
+  "exact_permutation_cases": 220,
+  "exact_permutation_max_change": 0,
+  "direct_distance_and_CDF_rank44_match": true,
+  "small_enum_conditions": 64,
+  "small_enum_max_float_error": 3.3306690738754696e-16,
+  "large_integer_combination_cases": 18,
+  "large_max_error": 1.865618770580113e-12,
+  "original_candidate_count": 5,
+  "additional_exact_candidates": 1,
+  "main_truth_used": false,
+  "submitted": false,
+  "is_official_phi": false
+}

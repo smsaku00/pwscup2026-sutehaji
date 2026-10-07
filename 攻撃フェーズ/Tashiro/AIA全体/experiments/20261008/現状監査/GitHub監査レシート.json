@@ -1,0 +1,46 @@
+{
+  "retrieved_at": "2026-10-08T05:41:21+09:00",
+  "github_repository": "smsaku00/pwscup2026-sutehaji",
+  "github_head": "f2478ef5121e9bda7a44b100c3b67d7826593b78",
+  "github_tree": "c776ae4713a780bc0193db7a6987a93e57ceb28b",
+  "scope": "GitHub現在mainを読み取り専用監査。新分析の現状監査への保存のみ。CodaBenchアクセス・提出なし。F_aia・F_mia・token・ZIP・B_self個票のコピーなし。",
+  "sources": [
+    {
+      "source_path": "攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "local_path": "入力/第1回_detailed_results.html",
+      "git_blob_sha1": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/AIA/%E4%B8%80%E5%9B%9E%E7%9B%AE/detailed_results.html"
+    },
+    {
+      "source_path": "攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "local_path": "入力/第2回_detailed_results.html",
+      "git_blob_sha1": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/AIA/%E7%AC%AC2%E5%9B%9E/detailed_results.html"
+    },
+    {
+      "source_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "local_path": "入力/第3回_detailed_results.html",
+      "git_blob_sha1": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/AIA/%E7%AC%AC3%E5%9B%9E/detailed_results.html"
+    },
+    {
+      "source_path": "攻撃フェーズ/成績一覧.md",
+      "local_path": "入力/GitHub_成績一覧.md",
+      "git_blob_sha1": "478490a6080b4cde7d335ae4e237c79fb4fac9ce",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/%E6%88%90%E7%B8%BE%E4%B8%80%E8%A6%A7.md"
+    },
+    {
+      "source_path": "攻撃フェーズ/AIA/第3回/第3回_AIA_説明書.md",
+      "local_path": "入力/GitHub_第3回_AIA_説明書.md",
+      "git_blob_sha1": "1f20c18ded574e2d4c4dd46f14fe7708b17fd998",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/AIA/%E7%AC%AC3%E5%9B%9E/%E7%AC%AC3%E5%9B%9E_AIA_%E8%AA%AC%E6%98%8E%E6%9B%B8.md"
+    },
+    {
+      "source_path": "攻撃フェーズ/Tashiro/AIA全体/README.md",
+      "local_path": "入力/GitHub_AIA全体_20261007時点README.md",
+      "git_blob_sha1": "5f60d6a30c9e7bcfbcc07b93f3297c0b1e00981f",
+      "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/f2478ef5121e9bda7a44b100c3b67d7826593b78/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/AIA%E5%85%A8%E4%BD%93/README.md"
+    }
+  ],
+  "important_update": "公式第3回が公開済み。Tashiro/AIA全体/READMEの『本戦改善未確認』は2026-10-07時点の履歴で、現状説明にそのまま利用しない。"
+}

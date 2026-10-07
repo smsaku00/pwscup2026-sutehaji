@@ -1,0 +1,33 @@
+{
+  "prediction_receipt_sha256": "e60403a430ef1e3f87e614dc494674b9c1f2759de622253448c083841cca30cd",
+  "public_prelim_truth_sha256": {
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_1.csv": "53ebcaca3c44b34ea299de8551f5c236a48c158f486c2832d8fa3b09afc9f167",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_2.csv": "eb7165e19e8f9a8476314666525dac77cb46b127d460b7ffea83dc7b5cf5af65",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_3.csv": "50b07fb14fdfbf68f591d9f95916ff905f43efb81979c6d4a0d1e5f571f0ce30",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_4.csv": "637cb22bd995a4a8ba96136d2a111ecfb29332e51330bbfee086ed703e61683a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_5.csv": "d2ace48549146e7dacf531ba7c539e5115ae026ecaec3ab4654e7dd911b2c225",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_6.csv": "bdaf981057adcc89a3fdfb972ddaf1ccc5cd37fdb245b569290e51087aa168fc",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_7.csv": "cf5eb8c83591c131de8d0839e76664752910fa8eb07add37cd5af62db5d39f5f",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_8.csv": "b423de12fae6034a2ddab071c28c307cbc8b543cbd79a48a2985e61df674c553",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_9.csv": "f2e835b2d70586efc19ed6918897f8b8fbbc583b7358f897acec921e60867457",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_10.csv": "fa3cbfb7dabe3b06f0b377efd113b29447ffb42a2c85152d23918336131556d1",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_12.csv": "6691bf1ea44bf111d3ec1fbc5de46de9c63a49a5be4a900d75f6fde613d6104a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_13.csv": "4a9a31040ba770c233513ac45be720cbf7f25dfa98baf8ff53aa93db5c13c0fe",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_17.csv": "48cbdb85f37fdfdacf5d907ef5b39ac274fb0697e217ee97c90341c1093bf1c3",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_18.csv": "6a218c1287f9973b633dec8e3c7b27dff185983faadd38975ba7615b26a19f07",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_19.csv": "549e28c1c1f2de6034af57c50b5979b5fc1007e7109f1fc9072dcbec8f66c613",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_20.csv": "f3209696e1921b316f6ef72bac31ff6c9858c618e03334d3c4412d2dfe347fe0",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_22.csv": "ddb40d36af92d874121987a718d78cfbbf6c19e42fe7bda744e468d8d4b8e5c0",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_23.csv": "7d731cfc0a9890c70b91debaefb9b6467899d65638070e591a50cef183a832e7",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_24.csv": "130c7be3a8850760af1ae585b1f840fe0ecc26fa828fd4430b835c19befb5ad1",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_26.csv": "c959b36c1631c852a32c5251602b2941edd88ee541e093415308b25596819428",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/結果/正解データ/aia_truth_29.csv": "c82cc067257555ef446d202e086f3b424c1ab30dfa0fea773fbd708decbd36eb"
+  },
+  "code_sha256": "9eaaf8e36ead9de16dbefcffda16e0d202a0ebb51a3c227856c741447748208a",
+  "config_sha256": "db7b319667d026198f0f026130833325923d924ff18f41192338d29815eb7162",
+  "main_truth_used": false,
+  "is_official_phi": false,
+  "selection_candidates_fixed_before_scoring": true,
+  "candidate_design_independent_of_past_prelim_results": false,
+  "submission_created": false
+}

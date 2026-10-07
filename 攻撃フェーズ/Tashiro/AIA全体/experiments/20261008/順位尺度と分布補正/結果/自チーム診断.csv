@@ -1,0 +1,10 @@
+method,selected_member,selected_control,hit_member,p_m,p_c_unknown
+baseline_partial2,130,115,107,0.656441717791411,True
+rank_global_partial2,130,115,110,0.6748466257668712,True
+rank_sex_partial2,129,116,108,0.6625766871165644,True
+rank_global_full5,123,122,106,0.6503067484662577,True
+rank_sex_full5,120,125,102,0.6257668711656442,True
+map_sex_half,128,117,107,0.656441717791411,True
+map_sex_full,133,112,112,0.6871165644171779,True
+map_sex_pref_half,121,124,104,0.6380368098159509,True
+map_sex_pref_full,124,121,102,0.6257668711656442,True

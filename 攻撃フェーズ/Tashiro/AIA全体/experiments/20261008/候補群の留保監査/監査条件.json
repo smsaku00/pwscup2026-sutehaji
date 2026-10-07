@@ -1,0 +1,244 @@
+{
+  "policy": {
+    "main_metric": "r_all",
+    "main_reference": "whole phase BG, same target/query/truth, verify saved baseline hit counts",
+    "score_stage": "official raw R before phi; final phi unknown",
+    "secondary_metrics": [
+      "r_rare",
+      "r_max"
+    ],
+    "main_scope_prelim20": "exclude5",
+    "main_scope_processed18": "exclude1,2,5",
+    "score_tolerance": 1e-12,
+    "pool": "anchor plus all newly fixed attack candidates under common fullBG; no baseline duplicate/control/historical comparator",
+    "secondary_oracle_pool": "all saved common-fullBG roles including controls and historical comparators; descriptive only",
+    "tie": "anchor priority, then registry family order, then method lexical order",
+    "tie_tolerance": 1e-12,
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 2026100821,
+    "bootstrap_unit": "paired target",
+    "bootstrap_interpretation": "descriptive 2.5/97.5 percentiles, not p-values or independent generalization CI; do not refit method choice",
+    "reused_public_prelim_truth": true,
+    "candidate_design_independent_of_prior_prelim_results": false,
+    "pool_frozen_after_family_outcomes": true,
+    "freeze_before_unified_global_choice": true,
+    "posthoc_diagnostics_not_in_pool": true,
+    "final_global_summary_written": false,
+    "GitHub_published": false,
+    "B_self_read": false,
+    "individual_predictions_read": false,
+    "main_truth_read": false,
+    "submission_created": false
+  },
+  "specs": [
+    {
+      "family": "順位尺度と分布補正",
+      "id": "rank",
+      "csv": "順位尺度と分布補正/結果/対象別.csv",
+      "baseline": "baseline_partial2",
+      "code": "順位尺度と分布補正/分析.py",
+      "protocol": "順位尺度と分布補正/結果/固定比較条件.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "条件付き時間推定",
+      "id": "time",
+      "csv": "条件付き時間推定/集計/予備戦_対象別.csv",
+      "baseline": null,
+      "code": "条件付き時間推定/分析.py",
+      "protocol": "条件付き時間推定/事前固定候補.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "公開BG一致行の処理",
+      "id": "public_bg",
+      "csv": "加工特徴と方式選択/集計/公開BG処理_予備戦対象別.csv",
+      "baseline": "baseline",
+      "code": "加工特徴と方式選択/公開BG一致行の比較.py",
+      "protocol": "加工特徴と方式選択/公開BG比較_事前固定仕様.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "人物別較正",
+      "id": "person",
+      "csv": "背景対照での選別較正/集計/予備戦_対象別とnull反復.csv",
+      "baseline": "baseline",
+      "code": "背景対照での選別較正/人物較正.py",
+      "protocol": "背景対照での選別較正/固定条件.json",
+      "filter": {
+        "context": "full_reference_overlap",
+        "source": "real_C"
+      },
+      "primary_family": false
+    },
+    {
+      "family": "人物別較正_厳密計算",
+      "id": "person_exact",
+      "csv": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/集計/厳密版_対象別とnull反復.csv",
+      "baseline": null,
+      "code": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/厳密較正.py",
+      "protocol": "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/追加固定条件.json",
+      "filter": {
+        "source": "real_C"
+      },
+      "primary_family": false
+    },
+    {
+      "family": "他Cとの差による選別",
+      "id": "other_C",
+      "csv": "他Cとの差による選別/集計/予備戦_対象別.csv",
+      "baseline": "baseline",
+      "code": "他Cとの差による選別/分析.py",
+      "protocol": "他Cとの差による選別/事前固定候補.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "C抽出による選別の安定性",
+      "id": "subsample",
+      "csv": "C抽出による選別の安定性/集計/予備戦_対象別.csv",
+      "baseline": "baseline",
+      "code": "C抽出による選別の安定性/分析.py",
+      "protocol": "C抽出による選別の安定性/事前固定候補.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "属性対ごとの証拠統合",
+      "id": "pair",
+      "csv": "属性対ごとの証拠統合/集計/予備戦_対象別.csv",
+      "baseline": "baseline_partial2",
+      "code": "属性対ごとの証拠統合/分析.py",
+      "protocol": "属性対ごとの証拠統合/事前固定仕様.json",
+      "filter": {},
+      "primary_family": true
+    },
+    {
+      "family": "C行の背景対比",
+      "id": "row",
+      "csv": "C行の背景対比/結果/対象別と背景反復.csv",
+      "baseline": "baseline",
+      "code": "C行の背景対比/分析.py",
+      "protocol": "C行の背景対比/結果/固定条件.json",
+      "filter": {
+        "source": "real_C_full"
+      },
+      "primary_family": true
+    },
+    {
+      "family": "属性値集合による選別",
+      "id": "column",
+      "csv": "属性値集合による選別/集計/予備戦_対象別と20反復null.csv",
+      "baseline": "baseline_partial2_matching",
+      "code": "属性値集合による選別/分析.py",
+      "protocol": "属性値集合による選別/固定条件.json",
+      "filter": {
+        "context": "full_reference_overlap",
+        "source": "real_C"
+      },
+      "primary_family": false
+    }
+  ],
+  "side_conditions": [
+    [
+      "rank",
+      "順位尺度と分布補正/結果/独立背景対照_全反復.csv",
+      {},
+      "rank_independent_split"
+    ],
+    [
+      "public_bg",
+      "加工特徴と方式選択/集計/公開BG処理_独立参照の実C.csv",
+      {},
+      "publicBG_split_actual"
+    ],
+    [
+      "public_bg",
+      "加工特徴と方式選択/集計/公開BG処理_背景対照全反復.csv",
+      {},
+      "publicBG_split_null"
+    ],
+    [
+      "person",
+      "背景対照での選別較正/集計/予備戦_対象別とnull反復.csv",
+      {
+        "context": "split_independent"
+      },
+      "person_independent_split"
+    ],
+    [
+      "person",
+      "背景対照での選別較正/集計/予備戦_対象別とnull反復.csv",
+      {
+        "context": "full_reference_overlap",
+        "source": "BG_null_C"
+      },
+      "person_overlapping_reference_null"
+    ],
+    [
+      "person_exact",
+      "背景対照での選別較正/超幾何による同じ帰無分布の厳密計算/集計/厳密版_対象別とnull反復.csv",
+      {
+        "source": "BG_null_C"
+      },
+      "person_exact_null_same_pool"
+    ],
+    [
+      "other_C",
+      "他Cとの差による選別/集計/独立背景対照_全反復.csv",
+      {},
+      "otherC_independent_split"
+    ],
+    [
+      "subsample",
+      "C抽出による選別の安定性/集計/独立背景対照_全反復.csv",
+      {},
+      "subsample_independent_split"
+    ],
+    [
+      "pair",
+      "属性対ごとの証拠統合/集計/独立背景_実Cと全反復.csv",
+      {},
+      "pair_independent_split"
+    ],
+    [
+      "row",
+      "C行の背景対比/結果/対象別と背景反復.csv",
+      {
+        "source": [
+          "real_C_split",
+          "background_C"
+        ]
+      },
+      "row_independent_split"
+    ],
+    [
+      "column",
+      "属性値集合による選別/集計/予備戦_対象別と20反復null.csv",
+      {
+        "context": "split_independent"
+      },
+      "column_independent_split"
+    ],
+    [
+      "column",
+      "属性値集合による選別/集計/予備戦_対象別と20反復null.csv",
+      {
+        "context": "full_reference_overlap",
+        "source": "BG_null_C"
+      },
+      "column_overlapping_reference_null"
+    ],
+    [
+      "time",
+      "条件付き時間推定/集計/時間関係の寄与_全反復.csv",
+      {
+        "source": "time_shuffle"
+      },
+      "time_shuffle_same_sex"
+    ]
+  ]
+}

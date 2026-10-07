@@ -1,0 +1,119 @@
+{
+  "saved_source_checks": [
+    {
+      "path": "入力/第1回_detailed_results.html",
+      "git_blob_sha1": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "expected": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "matches": true,
+      "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+      "bytes": 3795
+    },
+    {
+      "path": "入力/第2回_detailed_results.html",
+      "git_blob_sha1": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "expected": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "matches": true,
+      "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+      "bytes": 3763
+    },
+    {
+      "path": "入力/第3回_detailed_results.html",
+      "git_blob_sha1": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "expected": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "matches": true,
+      "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "bytes": 3903
+    },
+    {
+      "path": "入力/GitHub_成績一覧.md",
+      "git_blob_sha1": "478490a6080b4cde7d335ae4e237c79fb4fac9ce",
+      "expected": "478490a6080b4cde7d335ae4e237c79fb4fac9ce",
+      "matches": true,
+      "sha256": "db90a05ddb11e18721955f834bf6c28a82f6a52048ec1cd0ca7ebcb32ab01bac",
+      "bytes": 7035
+    },
+    {
+      "path": "入力/GitHub_第3回_AIA_説明書.md",
+      "git_blob_sha1": "1f20c18ded574e2d4c4dd46f14fe7708b17fd998",
+      "expected": "1f20c18ded574e2d4c4dd46f14fe7708b17fd998",
+      "matches": true,
+      "sha256": "080e4ad5d47234323760a94a35ed8be80a1b8b39f8b25aa56bf7197f52fb9b24",
+      "bytes": 13310
+    },
+    {
+      "path": "入力/GitHub_AIA全体_20261007時点README.md",
+      "git_blob_sha1": "5f60d6a30c9e7bcfbcc07b93f3297c0b1e00981f",
+      "expected": "5f60d6a30c9e7bcfbcc07b93f3297c0b1e00981f",
+      "matches": true,
+      "sha256": "5c69ae8b5dde37d6c9733d29239cd500d02f1e3ef18ecb3a649c42146c4d0385",
+      "bytes": 4754
+    }
+  ],
+  "files": [
+    {
+      "path": "C基本特徴とGitHub一致.json",
+      "sha256": "fde68d3fdeae1c13b0a7a51401857771ef8b88e9e208456679fb5177b8d25cc7",
+      "bytes": 13298
+    },
+    {
+      "path": "C類似性を記述比較.py",
+      "sha256": "54e12a46344760b4426e471c770b42fce616bb0b247dfc325dc212b78bf056fd",
+      "bytes": 4095
+    },
+    {
+      "path": "GitHub監査レシート.json",
+      "sha256": "09790364ddb1c3773faee3859df8aba3beb0e1bbe09db200d193b8ac62b90cba",
+      "bytes": 3264
+    },
+    {
+      "path": "予備戦と本戦のC類似性_記述比較.json",
+      "sha256": "96e9fbee54bf7704f7235d6f38f2a9e22b51b4f71d6ca9a2802122e08c6757a2",
+      "bytes": 51174
+    },
+    {
+      "path": "入力/GitHub_AIA全体_20261007時点README.md",
+      "sha256": "5c69ae8b5dde37d6c9733d29239cd500d02f1e3ef18ecb3a649c42146c4d0385",
+      "bytes": 4754
+    },
+    {
+      "path": "入力/GitHub_成績一覧.md",
+      "sha256": "db90a05ddb11e18721955f834bf6c28a82f6a52048ec1cd0ca7ebcb32ab01bac",
+      "bytes": 7035
+    },
+    {
+      "path": "入力/GitHub_第3回_AIA_説明書.md",
+      "sha256": "080e4ad5d47234323760a94a35ed8be80a1b8b39f8b25aa56bf7197f52fb9b24",
+      "bytes": 13310
+    },
+    {
+      "path": "入力/第1回_detailed_results.html",
+      "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+      "bytes": 3795
+    },
+    {
+      "path": "入力/第2回_detailed_results.html",
+      "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+      "bytes": 3763
+    },
+    {
+      "path": "入力/第3回_detailed_results.html",
+      "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "bytes": 3903
+    },
+    {
+      "path": "公式各回と対象別.json",
+      "sha256": "d38e522faf311ace5110ea13faedbb30874051b4639f5da2ba293b5349483557",
+      "bytes": 5634
+    },
+    {
+      "path": "第3回チーム9と他21の条件付き推定.json",
+      "sha256": "4f3cc2040f1c42afc7d903738720ce121baabce37fa0e26d351ff5c7aae12fa9",
+      "bytes": 2306
+    },
+    {
+      "path": "第3回対象別方式.json",
+      "sha256": "7adb4f160e3f9b78fb4cea06abf464d317a70cfa5e3bd908d7bba8a0f9930550",
+      "bytes": 4068
+    }
+  ]
+}

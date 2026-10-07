@@ -1,0 +1,21 @@
+{
+  "review_kind": "independent read-only mathematics and protocol review",
+  "reviewer_role": "github_aia_audit_1008",
+  "reviewed_prediction_code_sha256": "b20c7e39bd2acf983379c80fa4e3fbe590f06c0ef58ef72ae54fb522af453a8e",
+  "reviewed_files": ["分析.py", "固定条件.json", "説明.md"],
+  "survival_product_equivalent_to_combination_ratio": true,
+  "survival_identity": "prod(1-n/(N-j), j=0..K-1)=comb(N-K,n)/comb(N,n)",
+  "log1p_cumulative_and_minus_expm1_correct": true,
+  "boundary_cases_checked": ["K=0 gives p=0", "n=0 gives all p=0", "n=N gives p=1 for K>=1", "K>N-n gives p=1"],
+  "inclusive_absolute_distance_count_side_right_correct": true,
+  "duplicate_rows_included": true,
+  "inverse_interval_rounding_avoided": true,
+  "smoothing_64_fixed_and_e_bounded_0_log65": true,
+  "hypothetical_reference_population_and_actual_pool_null_distinction_stated": true,
+  "membership_probability_claimed": false,
+  "calibrated_joint_four_column_p_claimed": false,
+  "mathematical_error_found": false,
+  "files_changed_by_reviewer": false,
+  "raw_inputs_individual_predictions_truth_read_by_reviewer": false,
+  "independent_generalization_validation": false
+}

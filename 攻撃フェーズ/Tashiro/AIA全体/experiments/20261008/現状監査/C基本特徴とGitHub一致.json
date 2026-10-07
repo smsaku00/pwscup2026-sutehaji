@@ -1,0 +1,651 @@
+{
+  "source_directory": "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力",
+  "all_23_C_git_blobs_match": true,
+  "method": "Git blob SHA-1を全23Cで再計算しGitHub現在mainの公式データpathと一致を確認。基本分布を読み取り再集計。",
+  "profiles": [
+    {
+      "team": 0,
+      "sha": "16974cf078daf6804086e759a2d6d0c67a6e0a48",
+      "bytes": 146142,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1031,
+        "TG": 1031,
+        "HDL": 1031,
+        "ALT": 1031
+      },
+      "onset": 115,
+      "death": 61,
+      "time_ge9": 0.8465204957102002,
+      "male_C": 0.42802669208770255,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0.0009532888465204957,
+        "HDL": 0,
+        "ALT": 0.0009532888465204957
+      }
+    },
+    {
+      "team": 1,
+      "sha": "56845ce1f2a884e761130f6c86034ead71376eda",
+      "bytes": 146550,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 102,
+      "death": 63,
+      "time_ge9": 0.8617731172545281,
+      "male_C": 0.4804575786463298,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 2,
+      "sha": "cd5dd569289b6ba19707c0abb08fe850a1674747",
+      "bytes": 157449,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 108,
+      "death": 72,
+      "time_ge9": 0.8446139180171592,
+      "male_C": 0.5100095328884652,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 3,
+      "sha": "a09fa7133e165233b224658b71e405268fa951b2",
+      "bytes": 156058,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1047,
+        "TG": 1048,
+        "HDL": 1047,
+        "ALT": 1048
+      },
+      "onset": 91,
+      "death": 75,
+      "time_ge9": 0.8560533841754051,
+      "male_C": 0.4909437559580553,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 4,
+      "sha": "e1c65f5c6154cae1aa124d58fcf8b22a5f00f5ac",
+      "bytes": 147052,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1047,
+        "HDL": 1043,
+        "ALT": 1022
+      },
+      "onset": 113,
+      "death": 82,
+      "time_ge9": 0.8274547187797903,
+      "male_C": 0.47092469018112487,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0.02669208770257388
+      }
+    },
+    {
+      "team": 5,
+      "sha": "f4f9e945c9d5331b799d8181d23d85126d0a7281",
+      "bytes": 146805,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1048,
+        "TG": 1041,
+        "HDL": 1049,
+        "ALT": 1028
+      },
+      "onset": 99,
+      "death": 145,
+      "time_ge9": 0.8398474737845567,
+      "male_C": 0.5166825548141086,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 6,
+      "sha": "f379d89655ed7d67cc2eccbc1fcc0c4dac1dfc41",
+      "bytes": 157470,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 115,
+      "death": 80,
+      "time_ge9": 0.8255481410867492,
+      "male_C": 0.47569113441372735,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 7,
+      "sha": "bc57f83c8a1ed71eab7d3c59af5ad9995ec380a3",
+      "bytes": 156570,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 91,
+      "death": 73,
+      "time_ge9": 0.8503336510962822,
+      "male_C": 0.45662535748331745,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 8,
+      "sha": "77e41cddf74f0b7f73fac9deddc45d7d118dcd85",
+      "bytes": 161196,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1043
+      },
+      "onset": 117,
+      "death": 69,
+      "time_ge9": 0.8455672068636797,
+      "male_C": 0.49571020019065776,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0.0009532888465204957,
+        "HDL": 0,
+        "ALT": 0.00667302192564347
+      }
+    },
+    {
+      "team": 9,
+      "sha": "27e12d6ebc7addc9ea872862cfa7e9b0c392c877",
+      "bytes": 158123,
+      "age_unique": 11,
+      "numeric_unique": {
+        "age": 11,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 99,
+      "death": 83,
+      "time_ge9": 0.8436606291706387,
+      "male_C": 0.4966634890371783,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 10,
+      "sha": "8361a104bba7f0c640c03597eedf15b75e8bd382",
+      "bytes": 158281,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 888,
+        "TG": 956,
+        "HDL": 889,
+        "ALT": 960
+      },
+      "onset": 90,
+      "death": 60,
+      "time_ge9": 0.8693994280266921,
+      "male_C": 0.48236415633937085,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 11,
+      "sha": "8bc445c6afd7e106aed41a36ea19e85849561872",
+      "bytes": 157013,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 99,
+      "death": 81,
+      "time_ge9": 0.8493803622497617,
+      "male_C": 0.4880838894184938,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 12,
+      "sha": "719202ae26791d8cba45b60c7da2eeca04aa90af",
+      "bytes": 161236,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 102,
+      "death": 65,
+      "time_ge9": 0.8598665395614872,
+      "male_C": 0.4918970448045758,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 13,
+      "sha": "74f70dcd650cd2c684852b95a21eb0f64555c321",
+      "bytes": 147977,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 111,
+      "death": 82,
+      "time_ge9": 0.8341277407054337,
+      "male_C": 0.49761677788369874,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 14,
+      "sha": "f51438e23b006f28cdfe91cc901ec4fecb100f2f",
+      "bytes": 143428,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 121,
+      "death": 77,
+      "time_ge9": 0.8303145853193518,
+      "male_C": 0.4947569113441373,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 15,
+      "sha": "b1258acb86632156e71485043589fce4eafdaeb6",
+      "bytes": 156962,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 112,
+      "death": 75,
+      "time_ge9": 0.8350810295519543,
+      "male_C": 0.47950428979980936,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 16,
+      "sha": "bcfeb84d8065d6deeb6f44604cd61895c1414909",
+      "bytes": 156299,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 108,
+      "death": 66,
+      "time_ge9": 0.8646329837940896,
+      "male_C": 0.5938989513822688,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 17,
+      "sha": "53ba45c2eef89e88ba768d2bd559d9d934d56b16",
+      "bytes": 109734,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 102,
+      "death": 93,
+      "time_ge9": 0.8427073403241182,
+      "male_C": 0.4918970448045758,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 22,
+      "sha": "750488670da65a96f3ce7bbd4e46dbbfa49af6e4",
+      "bytes": 146984,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 999,
+        "TG": 1041,
+        "HDL": 1040,
+        "ALT": 1047
+      },
+      "onset": 121,
+      "death": 70,
+      "time_ge9": 0.8312678741658722,
+      "male_C": 0.45757864632983797,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 25,
+      "sha": "81f842992986b913baf355c5aa794d3ab89e5109",
+      "bytes": 158685,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 109,
+      "death": 79,
+      "time_ge9": 0.8350810295519543,
+      "male_C": 0.47569113441372735,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0.0009532888465204957
+      }
+    },
+    {
+      "team": 26,
+      "sha": "b4f15a145183e1b5c09880c07d148c0526d8bb2e",
+      "bytes": 144572,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1048,
+        "TG": 1048,
+        "HDL": 1046,
+        "ALT": 1049
+      },
+      "onset": 102,
+      "death": 54,
+      "time_ge9": 0.86558627264061,
+      "male_C": 0.49761677788369874,
+      "sex_vals": [
+        0,
+        1
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 27,
+      "sha": "c2f18c4322debeb20f7c2764c7a0140d9ae6086e",
+      "bytes": 145568,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 98,
+      "death": 63,
+      "time_ge9": 0.8589132507149666,
+      "male_C": 0.5195424213536701,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    },
+    {
+      "team": 28,
+      "sha": "ef18b9297cf46454cf10a7a6f377e873014d7cf6",
+      "bytes": 148191,
+      "age_unique": 35,
+      "numeric_unique": {
+        "age": 35,
+        "SBP": 1049,
+        "TG": 1049,
+        "HDL": 1049,
+        "ALT": 1049
+      },
+      "onset": 102,
+      "death": 78,
+      "time_ge9": 0.8465204957102002,
+      "male_C": 0.4899904671115348,
+      "sex_vals": [
+        1,
+        0
+      ],
+      "num_2decimal_share": {
+        "age": 1,
+        "SBP": 0,
+        "TG": 0,
+        "HDL": 0,
+        "ALT": 0
+      }
+    }
+  ]
+}

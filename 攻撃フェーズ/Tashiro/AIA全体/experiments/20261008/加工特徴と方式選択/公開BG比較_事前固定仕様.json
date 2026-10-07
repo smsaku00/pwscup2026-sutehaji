@@ -1,0 +1,39 @@
+{
+  "seed": 20261008,
+  "methods": [
+    "baseline",
+    "BG_weight0.5",
+    "BG_exclude"
+  ],
+  "tau_numeric_absolute": 1e-08,
+  "exact_categories": [
+    "sex",
+    "prefecture"
+  ],
+  "numerical_columns": [
+    "age",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "known_background": "phase BG union old-kit BG; raw QI approximate row match",
+  "source_feature_is_preprocessing": true,
+  "baseline_partial_attributes": 2,
+  "baseline_sex_quota": 0.75,
+  "baseline_answer_selected": 9.5,
+  "baseline_answer_other": 0,
+  "near_limit": 12,
+  "boundary_ties_included": true,
+  "weight_semantics": "pair score plus log(0.5) for known-BG C row",
+  "exclude_semantics": "remove known-BG C rows before near-neighbor boundary and assignment",
+  "shortage_semantics": "selection count per sex min(ceil(query sex count*.75), retained C sex count); other answers 0",
+  "negative_repeats": 20,
+  "negative_split": "phase BG first floor(n/2) sample pool; rest reference; disjoint permuted indices",
+  "negative_sample_count": 1049,
+  "main_truth_used": false,
+  "scoring_after_prediction_generation": true,
+  "posthoc_design": "motivated by main team3 public-BG overlap; no method parameters selected by main scores",
+  "phi_official_reproduction": false,
+  "submission_created": false
+}

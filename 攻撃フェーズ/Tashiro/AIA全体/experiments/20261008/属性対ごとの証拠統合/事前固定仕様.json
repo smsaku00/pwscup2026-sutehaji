@@ -1,0 +1,72 @@
+{
+  "seed": 20261008,
+  "pairs": [
+    [
+      "age",
+      "SBP"
+    ],
+    [
+      "age",
+      "TG"
+    ],
+    [
+      "age",
+      "HDL"
+    ],
+    [
+      "age",
+      "ALT"
+    ],
+    [
+      "SBP",
+      "TG"
+    ],
+    [
+      "SBP",
+      "HDL"
+    ],
+    [
+      "SBP",
+      "ALT"
+    ],
+    [
+      "TG",
+      "HDL"
+    ],
+    [
+      "TG",
+      "ALT"
+    ],
+    [
+      "HDL",
+      "ALT"
+    ]
+  ],
+  "methods": [
+    "baseline_partial2",
+    "pair_top1",
+    "pair_top3_mean",
+    "pair_all10_mean"
+  ],
+  "numeric_transform": "TG/ALT log1p; reference BG IQR scaling",
+  "distance": "mean squared distance on each fixed pair",
+  "pair_score": "same-query continuous BG distance CDF count; -log((interpolated count+.25)/(BG n+1))",
+  "integration": "same C row: maximum, upper-three mean, all-ten mean",
+  "pair_scores_independent": false,
+  "integrated_score_is_calibrated_p": false,
+  "sex_hard": true,
+  "prefecture_used": false,
+  "selected_fraction_per_sex": 0.75,
+  "baseline_near_limit": "adaptive partial2 distance smallest12 incl boundary ties",
+  "new_near_limit": "integrated score largest12 incl boundary ties; before tiny tie break",
+  "tie_break": "subtract 1e-10 times min(full5 squared distance/5,1000)",
+  "one_to_one": true,
+  "selected_answer": 9.5,
+  "other_answer": 0,
+  "primary_predictions_before_truth_loading": true,
+  "reference_controls": "disjoint BG sample pool2571/ref2572; 20 C samples1049 each; same reference for actual and null C",
+  "main_truth_used": false,
+  "official_phi_reproduction": false,
+  "number_of_new_rules": 3,
+  "submission_created": false
+}

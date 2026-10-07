@@ -1,0 +1,9 @@
+{
+  "score_rows": 1049,
+  "window_optimizer_cases": 200,
+  "unique_input_hashes_verified": 112,
+  "score_and_summary_consistent": true,
+  "phi_reproduced": false,
+  "submission_artifacts_found": [],
+  "verification_code_sha256": "62ddbb73b2989087923b8d251e914c99f7dee401ce1451111589e73a05d1d214"
+}

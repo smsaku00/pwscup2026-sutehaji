@@ -1,0 +1,15 @@
+{
+  "prediction_receipt_sha256": "32fcca6bb2133b2a640571b9931d747ad1a12e51af90395587e6c1e831c4ddab",
+  "verification_code_sha256": "520700ab98f3f4a31379ee933a609e147f8317e15f17aebc900f3e704d1e0a36",
+  "unchanged_public_input_files": 90,
+  "actual_C_count": 44,
+  "independent_distance_ratio_and_python_sort_checks": 264,
+  "independent_selection_changed_max": 0,
+  "independent_clinical_column_permutation_checks": 264,
+  "column_shuffle_selection_changed_max": 0,
+  "same_sex_selection_quota_verified": true,
+  "truth_read": false,
+  "main_truth_used": false,
+  "B_self_used": false,
+  "note": "列独立交換は値集合方式の不変性の照合で、実Cが実際にこの加工だったことの証拠ではない"
+}

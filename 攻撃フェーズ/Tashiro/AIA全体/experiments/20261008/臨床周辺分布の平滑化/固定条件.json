@@ -1,0 +1,56 @@
+{
+  "post_result_design": true,
+  "reason": "属性値集合の最近1点方式の良好結果を見た後、周辺分布を平滑化した信号と比較",
+  "excluded_from_39_frozen_pool": true,
+  "methods": [
+    "baseline_partial2_matching",
+    "column_all4_mean",
+    "column_top2_mean",
+    "kde_all4_mean",
+    "kde_top2_mean"
+  ],
+  "new_methods": 2,
+  "columns": [
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "scaling": "raw values minus same-sex reference BG median, divided by same-sex reference BG IQR; median translation cancels and is numerical centering only",
+  "IQR_floor": 1e-8,
+  "bandwidth": "h=nC_sex^(-1/5), exactly one rule fixed; same h for C/BG within each sex",
+  "log_density": "logsumexp(-.5*((q-reference)/h)^2)-log(N)-log(h*sqrt(2*pi)); sort reference values for exact row-order invariance",
+  "score": "log f_C(q)-log f_BG(q), all4 mean or two largest column ratios mean",
+  "score_is_membership_probability": false,
+  "selection": "same-sex independent ceil75%; challenge_row_id ascending ties;9.5/0",
+  "contexts": [
+    "split_independent",
+    "full_reference_overlap"
+  ],
+  "reference_IQR": "computed separately in each sex from each selected reference",
+  "split_seed": 2026100801,
+  "main_split_offset": 1,
+  "null_seed": 2026100811,
+  "null_team_offset": 1000,
+  "null_main_offset": 100000,
+  "null_repeats": 20,
+  "null_generator": "import initial 属性値集合による選別/分析.py sample_indices, without replacement same C size/sex counts; all21 prelim nulls as in initial experiment",
+  "primary_null": "split pool2571/ref2572 disjoint; fullBG overlap supplementary",
+  "baseline_scale": "initial old baseline uses whole-phase BG IQR, frozen prediction reused",
+  "truth_policy": "new2 predictions for all44 and20null complete; combined5 masks saved before reading public prelim truth; main truth/B_self excluded",
+  "primary_groups": {
+    "prelim20": "exclude self5",
+    "processed18": "exclude1,2,5"
+  },
+  "loto": "fixed5 order; select training17 max mean R_all and evaluate held team, no bandwidth selection",
+  "validation": [
+    "small independent direct Gaussian sum",
+    "positive affine scale/translation invariance when IQR floor inactive",
+    "q/C/ref row permutation"
+  ],
+  "no_bandwidth_or_coefficient_search": true,
+  "deadline_JST": "2026-10-08 09:00",
+  "choose_best_background_seed": false,
+  "no_submission": true,
+  "no_GitHub_publication": true
+}

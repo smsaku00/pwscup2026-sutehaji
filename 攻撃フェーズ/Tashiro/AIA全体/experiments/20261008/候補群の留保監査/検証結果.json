@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_hashes": 47,
+  "baseline_aliases": 9,
+  "primary_candidates": 39,
+  "global_LOTO_rows_checked": 38,
+  "oracle_rows_checked": 76,
+  "bootstrap_rows_recomputed": 82,
+  "bootstrap_repeats": 10000,
+  "old8_rule_replications": 4,
+  "heldout_score_interventions": 4,
+  "selected_count_decompositions": 114,
+  "team_row_order_invariance": true,
+  "verifier_sha256": "78539ad1b9814b91eecc2d4211f6fe7bb530498115800b986a3e49177b3ca7e6",
+  "individual_predictions_read": false,
+  "main_truth_read": false,
+  "B_self_read": false
+}

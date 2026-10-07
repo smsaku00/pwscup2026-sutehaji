@@ -1,0 +1,114 @@
+{
+  "implementation_a": "sorted searchsorted nearest two neighbours",
+  "implementation_b": "all-pair absolute differences and min",
+  "cases": [
+    {
+      "q": [
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "c": [
+        -1.0,
+        -1.0,
+        1.0
+      ],
+      "distances": [
+        2.0,
+        1.0,
+        0.0,
+        1.0,
+        0.5,
+        0.0,
+        1.0,
+        2.0
+      ],
+      "within_1e8": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "q": [
+        0.0,
+        1e-08,
+        1.0000000000000002e-08,
+        -1e-08,
+        -1.0000000000000002e-08
+      ],
+      "c": [
+        0.0
+      ],
+      "distances": [
+        0.0,
+        1e-08,
+        1.0000000000000002e-08,
+        1e-08,
+        1.0000000000000002e-08
+      ],
+      "within_1e8": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "q": [
+        90.0,
+        110.0,
+        130.0
+      ],
+      "c": [
+        100.0,
+        120.0
+      ],
+      "distances": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "within_1e8": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "q": [
+        30.0,
+        40.0,
+        50.0
+      ],
+      "c": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "distances": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "within_1e8": [
+        false,
+        true,
+        false
+      ]
+    }
+  ],
+  "max_difference": 0,
+  "tolerance_inclusive": true
+}

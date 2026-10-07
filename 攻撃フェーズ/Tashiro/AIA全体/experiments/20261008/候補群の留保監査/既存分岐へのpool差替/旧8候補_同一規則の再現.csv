@@ -1,0 +1,5 @@
+group,evaluation,targets,method_match,maximum_score_error,old8_rule_reproduced
+prelim20,nested_LTO,20,True,0.0,True
+prelim20,processing_group_out,20,True,0.0,True
+processed18,nested_LTO,18,True,0.0,True
+processed18,processing_group_out,18,True,0.0,True

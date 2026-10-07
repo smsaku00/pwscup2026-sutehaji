@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-07T21:26:22.338332+00:00",
+  "collected_after_experiments": true,
+  "no_claim_of_initial_hash_recording": true,
+  "remote_head": "f57cbe4d34fdecadceacb4c7a0e2ba3d0e8be428",
+  "files": [
+    {
+      "local": "本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/分析.py",
+      "remote_path": "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/分析.py",
+      "git_blob_sha": "746802747c8e6f656cb73898469719b74bd7364a",
+      "remote_blob_sha": "746802747c8e6f656cb73898469719b74bd7364a",
+      "sha256": "8c28fdd95bcf3e9cfcfde27a76efb6323c66ab642c0ee2690c77bd79bb37df4f",
+      "match": true
+    },
+    {
+      "local": "本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/同点に依存しない対応.py",
+      "remote_path": "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/同点に依存しない対応.py",
+      "git_blob_sha": "516726a0cb225e99ac13b0c919b2ee6677e450a2",
+      "remote_blob_sha": "516726a0cb225e99ac13b0c919b2ee6677e450a2",
+      "sha256": "4732e5a3ca6786430ec60de99283ae38579d44519368b292f456a42ba8df04fb",
+      "match": true
+    },
+    {
+      "local": "本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の分析.py",
+      "remote_path": "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/対応競合の分析.py",
+      "git_blob_sha": "b63490811c1103d05671a1a164cf46757339597a",
+      "remote_blob_sha": "b63490811c1103d05671a1a164cf46757339597a",
+      "sha256": "7cbab6347fff3c67286ccccdc83cc7c828c989dfdac2c5dc43a2a6802b29182e",
+      "match": true
+    },
+    {
+      "local": "本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/対応競合の頑健性.py",
+      "remote_path": "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/対応競合の頑健性.py",
+      "git_blob_sha": "c85d235bfceafda1cd8c14895c3a73e72c33c90a",
+      "remote_blob_sha": "c85d235bfceafda1cd8c14895c3a73e72c33c90a",
+      "sha256": "9292c8a908db524043e7fc15ad7347dd69decaf08a5c57120a2c7bd4dc93c9ab",
+      "match": true
+    }
+  ]
+}

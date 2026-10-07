@@ -1,0 +1,92 @@
+{
+  "public_code_csv_json_and_gitignore": [
+    {
+      "path": ".gitignore",
+      "bytes": 24,
+      "sha256": "ef9c9afbd8dda7a85fe0effded42a2ac8259ce2e7e23ccfd5269eb294792bebe"
+    },
+    {
+      "path": "予測実行記録.json",
+      "bytes": 36687,
+      "sha256": "4a095cf1135c278f27789d1e9ede5a1952fce5c580280bd2b71e79385bff2792"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 13434,
+      "sha256": "923e60ad57c75337e996fc3e2c5a67cf592c4b3f5dfb3c3a18b59ce5d4da7a48"
+    },
+    {
+      "path": "固定条件.json",
+      "bytes": 1215,
+      "sha256": "288253b1592df95b19469c81f9c41760d10412fe395c2cfe0ba217a648e8ba52"
+    },
+    {
+      "path": "採点実行記録.json",
+      "bytes": 5656,
+      "sha256": "b410db0f2385e20f27698cc53c235cb0b1c2a509d0e9ac476c47fd2f6f7ae25c"
+    },
+    {
+      "path": "検証.py",
+      "bytes": 4726,
+      "sha256": "906dae28a9e0822caf5721e75cd25972f75f672ed275f35253bc3ea5d81f9e92"
+    },
+    {
+      "path": "検証記録.json",
+      "bytes": 665,
+      "sha256": "3026bd914c14e64026b51ac533427c3dc3e3340e6c92a35de2275da2091ccf0b"
+    },
+    {
+      "path": "集計/予備戦_20対象と18対象の平均.csv",
+      "bytes": 3138,
+      "sha256": "3a47972f960bf7b89dbcb9cfcc33f72d65ad586bd29c2fba93408446bb7c8ed6"
+    },
+    {
+      "path": "集計/予備戦_反復ごとの全体平均.csv",
+      "bytes": 27060,
+      "sha256": "fd6376e011f34af53879d1ffc9b7a5114383ba5b57b7ef5d343d3eca39cc95cc"
+    },
+    {
+      "path": "集計/値集合の証拠と選別の厳密不変.csv",
+      "bytes": 17709,
+      "sha256": "a4071fc9a83e63027e9d353bc4239bbeeb7f4f55bec877cbffce73060b104a4e"
+    },
+    {
+      "path": "集計/全44C_選別変化とJaccard.csv",
+      "bytes": 441593,
+      "sha256": "c23bf20862b632df0ba513741aed41e5021ca184ae84fd29d23c3937c189dac7"
+    },
+    {
+      "path": "集計/原本Cと臨床列交換_予備対象別と20反復.csv",
+      "bytes": 228464,
+      "sha256": "b73851723421dc1d3efbd481eef4109e083b171b532a81cd55a86f8c0a68735e"
+    },
+    {
+      "path": "集計/性別内周辺値と非臨床列の保存.csv",
+      "bytes": 84651,
+      "sha256": "edb6601dc55ec014594fd3e1009b9d7647fc1a3a12370bec0d427eddfb864e06"
+    },
+    {
+      "path": "集計/既存3方式の全44C再現.csv",
+      "bytes": 844,
+      "sha256": "a16ad6b929554ad5f7fe095cba13c39cbe032d1da19b17074631dda17c995274"
+    },
+    {
+      "path": "集計/本戦_選別変化とJaccardのみ.csv",
+      "bytes": 226758,
+      "sha256": "4bf49f4186508bc32c547d9042b12c5a25ea7dd4d95835de4419f9f6b00b9cc5"
+    },
+    {
+      "path": "集計/臨床列交換の影響_予備対象別.csv",
+      "bytes": 15289,
+      "sha256": "ed7b5dd25d3d2c68e28c131bcb8a367559decf2146fe0c88149ee64c7f309d6b"
+    },
+    {
+      "path": "集計/臨床列交換の影響_平均と対象間ばらつき.csv",
+      "bytes": 1992,
+      "sha256": "c64af4f41769417a3155e1bdab3e102de5c9b12b7456caa99f647509fc39a77d"
+    }
+  ],
+  "private_cache_excluded": true,
+  "markdown_for_Pro_input_only": true,
+  "initial_39_pool_changed": false
+}

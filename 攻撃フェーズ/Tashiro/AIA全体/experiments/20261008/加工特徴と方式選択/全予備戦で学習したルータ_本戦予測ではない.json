@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "all20",
+    "feature": 3,
+    "threshold": 0.16282137922042622,
+    "left_method": 1,
+    "right_method": 0,
+    "penalty": 0.05,
+    "feature_name": "q_C_full_nn_median",
+    "inner_scores": {
+      "0.0": 0.149767725636717,
+      "0.025": 0.149767725636717,
+      "0.05": 0.149767725636717,
+      "0.1": 0.13587883674782814
+    }
+  },
+  {
+    "scope": "processed18",
+    "feature": 4,
+    "threshold": 0.817445185891325,
+    "left_method": 4,
+    "right_method": 0,
+    "penalty": 0.025,
+    "feature_name": "time_long_share",
+    "inner_scores": {
+      "0.0": 0.10868655049155723,
+      "0.025": 0.12679170922171595,
+      "0.05": 0.11261775681246942,
+      "0.1": 0.11173592259730188
+    }
+  }
+]

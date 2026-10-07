@@ -1,0 +1,71 @@
+{
+  "methods": [
+    "C/raw_k8_window",
+    "C/box_k8_window",
+    "C/box_k32_window",
+    "C/box_k8_contrast",
+    "C/box_k8_window_gate75",
+    "C/box_k8_contrast_gate75"
+  ],
+  "controls": [
+    "BG/raw_k40_window",
+    "BG/box_k40_window",
+    "constant9.5"
+  ],
+  "k_C": [
+    8,
+    32
+  ],
+  "k_BG": 40,
+  "rounding_grid_candidates": {
+    "age": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "SBP": [
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      20
+    ],
+    "TG": [
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      20,
+      50
+    ],
+    "HDL": [
+      0.5,
+      1,
+      2,
+      5,
+      10
+    ],
+    "ALT": [
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      20
+    ]
+  },
+  "grid_coverage": 0.98,
+  "time_tolerance": 0.5,
+  "grid_inferred_from_C_only": true,
+  "sex_exact": true,
+  "prefecture_used": false,
+  "gating_fraction": 0.75,
+  "candidate_selection_before_truth": true,
+  "truth_used_for_fitting": false,
+  "official_phi_estimated": false,
+  "submission_created": false,
+  "codabench_submitted": false
+}

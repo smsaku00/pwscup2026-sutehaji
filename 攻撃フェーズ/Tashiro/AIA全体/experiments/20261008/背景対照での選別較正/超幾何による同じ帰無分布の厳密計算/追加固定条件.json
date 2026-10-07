@@ -1,0 +1,38 @@
+{
+  "history": "既存5候補の結果閲覧後に追加。既存固定条件/結果は保存。Monte Carloの抽出誤差を減らす同じ帰無分布の計算置換を1候補のみ試す。",
+  "parent_fixed_conditions_sha256": "db7b319667d026198f0f026130833325923d924ff18f41192338d29815eb7162",
+  "method": "exact_hypergeometric",
+  "formula": {
+    "N": "qと同じsexのpool総数",
+    "n": "対象実Cの同じsexの行数",
+    "K": "qとの部分2距離が実C候補距離d以下(等号を含む)のpool行数",
+    "p": "1 - choose(N-K,n)/choose(N,n)",
+    "finite_smoothing": "(1 + 64*p)/65",
+    "score": "-log((1+64*p)/65)",
+    "tie": "旧基準と同じ1e-10*min(5属性平均二乗距離,1000)を減算"
+  },
+  "unchanged": [
+    "sex_hard",
+    "partial2_same_C_row",
+    "BG全体IQR/logTG/logALT",
+    "sex内75%",
+    "12近傍・境界同点保持",
+    "Hungarian・C行再利用禁止",
+    "9.5年/0年",
+    "同じBGpool/ref分割と同じ16評価null標本",
+    "同じ5回row permutation"
+  ],
+  "additional_hyperparameters": 0,
+  "monte_carlo_repeats_equivalent": 64,
+  "validation": [
+    "小型poolの全非復元組合せをenumerationし距離境界の等号・tieを含め式を照合",
+    "全44Cで直接距離経験順位と既存CDF経由経験順位の選択を確認",
+    "厳密候補は全44Cの予測保存後に公開予備真値のみ採点",
+    "全BGとsplitで厳密候補は同じ値。これはCDF尺度依存消失の特徴で、新独立validationではない"
+  ],
+  "baseline": "既存5候補の結果と同じ入力・選別・回答値。較正のみ変更。",
+  "main_truth_used": false,
+  "official_phi": false,
+  "submission_created": false,
+  "fixed_at_utc": "2026-10-07 21:02:54 UTC"
+}

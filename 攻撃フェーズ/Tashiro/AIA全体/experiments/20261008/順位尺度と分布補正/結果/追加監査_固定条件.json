@@ -1,0 +1,67 @@
+{
+  "methods": [
+    [
+      "baseline_partial2",
+      "raw",
+      2,
+      0.0
+    ],
+    [
+      "rank_global_partial2",
+      "rank_global",
+      2,
+      0.0
+    ],
+    [
+      "rank_sex_partial2",
+      "rank_sex",
+      2,
+      0.0
+    ],
+    [
+      "rank_global_full5",
+      "rank_global",
+      5,
+      0.0
+    ],
+    [
+      "rank_sex_full5",
+      "rank_sex",
+      5,
+      0.0
+    ],
+    [
+      "map_sex_half",
+      "map_sex",
+      2,
+      0.5
+    ],
+    [
+      "map_sex_full",
+      "map_sex",
+      2,
+      1.0
+    ],
+    [
+      "map_sex_pref_half",
+      "map_sex_pref",
+      2,
+      0.5
+    ],
+    [
+      "map_sex_pref_full",
+      "map_sex_pref",
+      2,
+      1.0
+    ]
+  ],
+  "seed": 2026100809,
+  "null_repeats": 20,
+  "row_permutations": 3,
+  "sex_counts_equal_actual_C": true,
+  "split": "2571 sample pool / 2572 independent reference",
+  "is_official_phi": false,
+  "methods_unchanged_after_first_results": true,
+  "code_sha256": "25974ccaa1b576b4b091c9cec1209cb4ec48f77e03c1a542192346dc3a2d7d6c",
+  "method_code_sha256": "037a3b88d48b7dce8f47c784a9231c660977b608b8bf31fd3734c5c7e808b25f"
+}

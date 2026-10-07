@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-08T06:33:08.696370+09:00",
+  "code_sha256": "5f9686c318c5ceefd089bdbbe48d03978f98181f087fa310048de8410ded920a",
+  "input_sha256": {
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/集計/予備戦_対象別と20反復null.csv": "f8e1dc626f247e5b20fcaf1a3ca0570f2b2072b4eb975cca72a4e4831aa1a171",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/後付けの交絡反証/集計/後付け対照_対象別と20反復null.csv": "87a5416515f4e6fbbe125913325566d0bce96ea9ca24adbc94b50c4e1ddc38df",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/後付けの交絡反証/追加固定条件.json": "d5d983d85f8dea1e6149c0e1090e22dfdf597023a34e3f385858e8c78322c4eb",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/属性値集合による選別/後付けの交絡反証/交絡の反証.py": "b9d7dfd48b2b76cdb80273a6aebb3b8c71de32924dfde586d0d37d92154d4437",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/候補群の留保監査/候補プール固定.json": "2615d649e932eb58decbbd3c01ab9163e19a85fc1ed9b1e2aa55bfb9acc4b6c8"
+  },
+  "posthoc_after_outcomes": true,
+  "in_primary_pool": false,
+  "in_global_LOTO": false,
+  "conditions_kept_separate": true,
+  "individual_predictions_read": false,
+  "main_truth_read": false,
+  "B_self_read": false,
+  "submission_created": false
+}

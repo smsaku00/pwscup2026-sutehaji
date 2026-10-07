@@ -1,0 +1,7 @@
+feature,definition
+lab_round2_share,SBP/TG/HDL/ALTの小数2桁格子一致率の平均、絶対許容差1e-8
+lab_unique_share,SBP/TG/HDL/ALTのユニーク値数/C行数の平均
+corr_gap_bg_sex,性別ごとlogQI5相関の非対角差絶対値平均、TG/ALTはlog1p
+q_C_full_nn_median,性別一致5属性/IQR最近傍距離の課題326行中央値
+time_long_share,公開Cのtime>=9.5比率
+BG_QI7_copy_share,同フェーズBGまたは旧キットBGとの公開QI7完全一致率の大きい方

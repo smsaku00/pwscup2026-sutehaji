@@ -1,0 +1,53 @@
+{
+  "task": "AIA全体の人物別偶然近接較正",
+  "fixed_at": "2026-10-08T05:54:07+09:00",
+  "fixed_before_new_candidate_truth_scoring": true,
+  "seed": 20261008,
+  "split_seed": 2026100801,
+  "calibration_repeats": 64,
+  "null_evaluation_repeats": 16,
+  "permutation_repeats": 5,
+  "baseline": "stable_matching/sex_quota/long75",
+  "methods": [
+    "baseline",
+    "subtract_mean",
+    "subtract_median",
+    "standardize",
+    "empirical_upper_rank"
+  ],
+  "fixed_choices": {
+    "part_dimension": 2,
+    "pair_dimension": "同一C行の小さい2属性の平均二乗差",
+    "sex_hard": true,
+    "number_of_neighbors": 12,
+    "boundary_ties_included": true,
+    "assignment": "既存partial_assignmentによるC行1回使用、sex別",
+    "selection_fraction": 0.75,
+    "selected_time": 9.5,
+    "unselected_time": 0,
+    "tie_epsilon": 1e-10,
+    "scale": "各フェーズ公開BG全体のlogTG/logALT・IQR",
+    "null_C_size": "対象Cの人数・sex人数に一致した非復元抽出",
+    "standard_deviation_floor": "各qの仮Cnearest最大スコアSDを、sex内SD中央値の0.25倍で下限化",
+    "calibration_statistic": "sex一致の仮C nearest partial2 最大continuousCDFスコア（C行競合を較正分布に入れない）",
+    "empirical_formula": "-log((1 + number(null_score >= candidate_pair_score))/(64+1))",
+    "main_reference": "BG固定無作為半分pool/残りref、null仮Cはpoolから、CDF参照はrefから（非重複）",
+    "supplementary_reference": "CDF参照全BG、null仮Cは同じpoolから（参照と重なる参考）"
+  },
+  "evaluation": {
+    "primary": "予備戦20対象、加工18対象（1,2,5除外）",
+    "own_prelim5": "診断のみ主平均から除外",
+    "main": "全23Cの公開入力動作・基準再現のみ。B_self・本戦truth不使用",
+    "leave_team_out": "加工18の各対象を外して残17の平均raw Rで5候補から選択し、外した対象を採点。候補設計はこの評価から独立ではない",
+    "null": "同じpoolから別seedの仮C16反復。実C・null C双方に同じ較正と割当。background由来C18/19/29は独立診断として保持",
+    "baseline_reproduction": "全44Cで既存select/matricesに予測一致、予備21対象は保存CSVのスコア一致",
+    "permutation": "各候補、real_CでqとC両方の順序を変更して選択不変を確認。統計配列は同じqの位置へ並べ替える"
+  },
+  "limits": [
+    "仮C背景対照は公式phiではない",
+    "個人対応の証明でも標的確率でもない",
+    "公開予備真値は評価にのみ使用。既存過去データによる候補設計依存は残る",
+    "提出F・ZIP・token作成なし、CodaBenchアクセス/提出なし",
+    "最終まとめ/GitHub掲載は本担当では行わない"
+  ]
+}

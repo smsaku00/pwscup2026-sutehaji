@@ -1,0 +1,35 @@
+{
+  "source": "集計/本戦第3回の方式と公開加工特徴_記述用.csv",
+  "source_sha256": "6214ef0dad6ba5103ade6ab00a8f5bab18f595738e863f26f18ae97e46420e0d",
+  "purpose": "posthoc descriptive only, no threshold fitting",
+  "teams": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    13,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "positive_teams": [
+    2,
+    6,
+    7,
+    10,
+    13,
+    16,
+    17
+  ],
+  "outputs": {
+    "本戦P01_公開特徴と第3回成績.png": "1e25bc682fa8072b757e6b5b08e637975045d957d37f06d73bb4ca4f12ec136b",
+    "本戦P01_公開特徴と第3回成績.svg": "5b774d874114ef02a0de515a9a5d2079a4f871d982c10ee1f83c7184d8628df7"
+  }
+}

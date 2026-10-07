@@ -1,0 +1,51 @@
+{
+  "configurations": [
+    [
+      "baseline",
+      null,
+      0.0
+    ],
+    [
+      "other_median_lambda025",
+      0.5,
+      0.25
+    ],
+    [
+      "other_median_lambda100",
+      0.5,
+      1.0
+    ],
+    [
+      "other_q75_lambda025",
+      0.75,
+      0.25
+    ],
+    [
+      "other_q75_lambda100",
+      0.75,
+      1.0
+    ]
+  ],
+  "main_metric": "r_all",
+  "part_dimension": 2,
+  "log_TG_ALT": true,
+  "same_phase_C_only": true,
+  "reference_exclusion": "same all-column row-set OR >=98% exact QI in phase A_bg",
+  "background_reuse_threshold": 0.98,
+  "C_source_labels_used": false,
+  "truth_used_for_predictions": false,
+  "same_phase_background_cdf": true,
+  "continuous_cdf": true,
+  "near": 12,
+  "boundary_ties_included": true,
+  "tie_epsilon": 1e-10,
+  "sex_quota": 0.75,
+  "time_selected": 9.5,
+  "time_other": 0.0,
+  "null_pool_reference_disjoint": true,
+  "null_repeats": 20,
+  "permutation_repeats": 3,
+  "official_phi": false,
+  "submission_created": false,
+  "codabench_submitted": false
+}

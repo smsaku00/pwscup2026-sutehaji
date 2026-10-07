@@ -1,0 +1,14 @@
+{
+  "repeats": 20,
+  "C_distance": "box_full5_sex",
+  "k": 8,
+  "gate": 0.75,
+  "null": "C.time shuffled within each sex; QI and marginal time unchanged",
+  "methods": [
+    "all_window",
+    "gate75_window",
+    "gate75_long95"
+  ],
+  "is_official_phi": false,
+  "configuration_search": false
+}

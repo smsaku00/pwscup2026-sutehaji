@@ -1,0 +1,77 @@
+{
+  "kind": "公式結果と公開された回答変更数からの条件付き推定",
+  "assumptions": [
+    "第1〜3回は同じ標的・対照と同じtarget別φで採点された。",
+    "標的・対照は各163人。φは非負。",
+    "第1〜2回によるφ9の既存推定が正しい。"
+  ],
+  "evidence": {
+    "round1_2_phi9": 0.03788964124065375,
+    "round3_final9": 0.7522338155494697,
+    "round3_sum_rare_upper": 0.40538516856342,
+    "reason_all_wins9": "第3回9の補正後値が全対象R_rareの和より大きいので、rareチャンネルでは説明できない。",
+    "round2_main_input": {
+      "path": "本戦/攻撃フェーズ/Tashiro/20261006_第2回提出データ統合/入力/AIA/F_aia.csv",
+      "git_blob_sha1": "988ed4498e4ac9c5fb7a95497b66725337ea34f9"
+    },
+    "round3_main_input": {
+      "path": "本戦/攻撃フェーズ/Tashiro/20261008_第3回提出データ統合/入力/AIA/F_aia.csv",
+      "git_blob_sha1": "63f941cfa79979524ab6b53ffe96d4c33788bbda"
+    },
+    "round2_3_changed9_rows": 14,
+    "round2_3_changed9_ids": [
+      10,
+      30,
+      50,
+      58,
+      118,
+      157,
+      166,
+      170,
+      221,
+      224,
+      239,
+      247,
+      289,
+      293
+    ],
+    "round2_3_common_positive245_unchanged": true
+  },
+  "fraction_candidates": [
+    {
+      "member_hits": 129,
+      "control_hits": 1,
+      "excluded": "第2回144的中から15減は14行変更の上限に反する。"
+    },
+    {
+      "member_hits": 146,
+      "control_hits": 82,
+      "excluded": null
+    }
+  ],
+  "deduced": {
+    "round2_9": {
+      "raw_all": 0.7840909090909091,
+      "member_hits": 144,
+      "control_hits": 75
+    },
+    "round3_9": {
+      "raw_all": 0.7901234567901234,
+      "member_hits": 146,
+      "control_hits": 82
+    },
+    "round2_other21": {
+      "member_hits": 2210,
+      "control_hits": 2210,
+      "net_gap": 0,
+      "raw_all_mean": 0.04101036450440167
+    },
+    "round3_other21": {
+      "member_hits": 2281,
+      "control_hits": 2186,
+      "net_gap": 95,
+      "raw_all_mean": 0.09716942439888655
+    }
+  },
+  "limits": "個票の標的/対照ラベルや真のtimeは分からない。C加工方式の推定ではない。他21の特定対象の生R・的中数はこの集計から分離できない。"
+}

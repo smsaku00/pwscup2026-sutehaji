@@ -1,0 +1,62 @@
+{
+  "seed": 20261008,
+  "route_features": [
+    "lab_round2_share",
+    "lab_unique_share",
+    "corr_gap_bg_sex",
+    "q_C_full_nn_median",
+    "time_long_share",
+    "BG_QI7_copy_share"
+  ],
+  "fixed_candidates": [
+    [
+      "partial2_matching",
+      "同点修正_対象別.csv",
+      "stable_matching/sex_quota/long75"
+    ],
+    [
+      "S4_nn",
+      "予備戦_全設定と対象別.csv",
+      "S4_log_iqr_soft/nn_all"
+    ],
+    [
+      "full_sex_pref_nn",
+      "予備戦_全設定と対象別.csv",
+      "log_iqr_both/nn_all"
+    ],
+    [
+      "partial4_nn",
+      "予備戦_全設定と対象別.csv",
+      "partial4_log_iqr_both/nn_all"
+    ],
+    [
+      "partial2_density",
+      "多尺度密度_対象別.csv",
+      "density/partial2_sex_k3/long_gate0.75"
+    ],
+    [
+      "GenLRA_nn",
+      "GenLRA_AIA_対象別.csv",
+      "GenLRA/ordinal7h7/NN/gate0.75"
+    ],
+    [
+      "gaussian_source",
+      "分布識別_対象別.csv",
+      "sex/linear_gaussian/pooled/long0.75"
+    ],
+    [
+      "constant95",
+      "予備戦_全設定と対象別.csv",
+      "constant_9.5"
+    ]
+  ],
+  "penalties": [
+    0.0,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "min_leaf": 4,
+  "main_scores_used": false,
+  "family_parameters_chosen_per_team": false
+}

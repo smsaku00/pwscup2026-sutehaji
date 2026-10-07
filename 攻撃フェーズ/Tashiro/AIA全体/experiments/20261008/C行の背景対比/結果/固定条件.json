@@ -1,0 +1,37 @@
+{
+  "seed": 2026100810,
+  "methods": [
+    [
+      "baseline",
+      0,
+      0.0
+    ],
+    [
+      "row_partial2_l025",
+      2,
+      0.25
+    ],
+    [
+      "row_partial2_l1",
+      2,
+      1.0
+    ],
+    [
+      "row_full5_l025",
+      5,
+      0.25
+    ],
+    [
+      "row_full5_l1",
+      5,
+      1.0
+    ]
+  ],
+  "null_repeats": 20,
+  "selection": "partial2 candidates12 + sex75 + one-to-one + 9.5/0",
+  "reverse_score": "log(N_bg_sex/N_q_sex)+(dimension/2)*log((D_C_bg+1e-10)/(D_C_q+1e-10))",
+  "interpretation": "uncalibrated source contrast; adaptive partial2 is not Euclidean dimension2",
+  "frozen_before_truth": true,
+  "is_official_phi": false,
+  "code_sha256": "0781b5b2d179f01d854d723fab194fcfff75512de11463ca498a757e89b60bbe"
+}

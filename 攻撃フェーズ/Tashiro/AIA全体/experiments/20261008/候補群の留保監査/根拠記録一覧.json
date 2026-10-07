@@ -1,0 +1,232 @@
+{
+  "folder": "候補群の留保監査",
+  "files": [
+    {
+      "path": "候補の役割一覧.csv",
+      "bytes": 11910,
+      "sha256": "53ba3abed2481591c20ea037ae049007807f626ca7853c3107c0b7620f861ed5"
+    },
+    {
+      "path": "候補プール固定.json",
+      "bytes": 25095,
+      "sha256": "2615d649e932eb58decbbd3c01ab9163e19a85fc1ed9b1e2aa55bfb9acc4b6c8"
+    },
+    {
+      "path": "共通全BG_全候補対象別.csv",
+      "bytes": 419302,
+      "sha256": "e6dc46c2d934600f3a8eaf8cb62ed10c0a74c9c6f497d5e864767d40248a9899"
+    },
+    {
+      "path": "共通基準_的中数とR一致.csv",
+      "bytes": 1148,
+      "sha256": "e339e498534a78634b40e9c3a2eabe863506fb42d62709cd1717779ff3ab4976"
+    },
+    {
+      "path": "凍結候補での既存分岐監査.py",
+      "bytes": 11184,
+      "sha256": "d78457d4c106e464fb711831be0e4ff4800f66f2831cff5571e1172fbf08e4a4"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 27368,
+      "sha256": "09c852307ce7229da81e0119fa07fad882298821e61d29566f23c143b31c8b06"
+    },
+    {
+      "path": "別条件_対象別と反復.csv",
+      "bytes": 5533459,
+      "sha256": "614884446f9037252b854a74e335502707bd63ffb673d8950f841542dbeef317"
+    },
+    {
+      "path": "収集準備.json",
+      "bytes": 20173,
+      "sha256": "cbe6516d7393ba22912856ee36e893b82c99a22cdefa000ab1a457f29fbb057d"
+    },
+    {
+      "path": "基準一致_収集準備.csv",
+      "bytes": 1005,
+      "sha256": "72cbf57259d878e20b454902f5319a30b43f25875193190d209cea8e6a108aa0"
+    },
+    {
+      "path": "後付け対照の別条件記録.py",
+      "bytes": 4804,
+      "sha256": "5f9686c318c5ceefd089bdbbe48d03978f98181f087fa310048de8410ded920a"
+    },
+    {
+      "path": "後付け対照の条件監査/別条件_反復平均.csv",
+      "bytes": 16654,
+      "sha256": "256975a323de874541785be585a80bf36e7a0ab15a568a7fc17d883f6f05be45"
+    },
+    {
+      "path": "後付け対照の条件監査/別条件_実Cの的中差と0切り上げ.csv",
+      "bytes": 5897,
+      "sha256": "31ce6baa1619b2fc6b5adffc787a301d4be3a46558f20ee425d8b462972b9970"
+    },
+    {
+      "path": "後付け対照の条件監査/別条件_実C対象別20と18.csv",
+      "bytes": 121013,
+      "sha256": "a1b64b3cf05d84bca00995a3ff9df6bae6e191e98b6225abaedd6775e46fac45"
+    },
+    {
+      "path": "後付け対照の条件監査/別条件_当初4候補と後付け3対照_全対象反復.csv",
+      "bytes": 1330701,
+      "sha256": "9e6802fafa5bc2680c584ad1708c1204bfc53f66d3f27fcb3481901f3840711e"
+    },
+    {
+      "path": "後付け対照の条件監査/実行記録.json",
+      "bytes": 772,
+      "sha256": "42dab20599df469ccaf5bf21a4575cb4134d04962ee64b41f7ae11a973d0386d"
+    },
+    {
+      "path": "後付け対照の条件監査/条件と入力hash.json",
+      "bytes": 1690,
+      "sha256": "c8f991341aa8ca58d98a8884093f2b6d5a105e88ef253d8ec21daf60d09c8e84"
+    },
+    {
+      "path": "既存分岐へのpool差替/nested差のpaired_bootstrap記述幅.csv",
+      "bytes": 1109,
+      "sha256": "3db2e0bdd5f5eb23bce1ade05191e5e923aad56b9683616a4ae0ef3d78953715"
+    },
+    {
+      "path": "既存分岐へのpool差替/凍結39候補_nested選択の対象別.csv",
+      "bytes": 20027,
+      "sha256": "c5b5f80f42c3f3acb35e72dc03dec17fc810aa5d366a022042ff3adba8d3880b"
+    },
+    {
+      "path": "既存分岐へのpool差替/凍結39候補_nested選択の平均.csv",
+      "bytes": 718,
+      "sha256": "8ca2dd36542b9f16bdf928908c04123a81909dade32f48bc1de55544d25be3c7"
+    },
+    {
+      "path": "既存分岐へのpool差替/加工群の対象数.csv",
+      "bytes": 160,
+      "sha256": "61d781e6737da5782ad007b98be9749a469dc592ea15246269c9c120330d61b6"
+    },
+    {
+      "path": "既存分岐へのpool差替/外側正解の遮断確認.csv",
+      "bytes": 241,
+      "sha256": "b7bde23474491a4ad425bad1f88c8fdf1106038ea0e2e5b834d149670eb7c0a5"
+    },
+    {
+      "path": "既存分岐へのpool差替/既存50反復の特徴入れ替え対照.csv",
+      "bytes": 2799,
+      "sha256": "1ea4a389c68ae46dc8a6517ef17a393c62411ff958c53b1687fb9e9da2e78f4d"
+    },
+    {
+      "path": "既存分岐へのpool差替/旧8候補_同一規則の再現.csv",
+      "bytes": 253,
+      "sha256": "812b28be1642b41f54ef9076a0bfec493c3dbe881048fdde248e914779a3e1fc"
+    },
+    {
+      "path": "既存分岐へのpool差替/追加監査実行記録.json",
+      "bytes": 1194,
+      "sha256": "4922f6054f2fd5ccfda14ec96d52a331f9e9211f3997a239610e1eabb2280251"
+    },
+    {
+      "path": "既存分岐へのpool差替/追加監査条件固定.json",
+      "bytes": 4674,
+      "sha256": "b912e4f059d986684400abbd9aa75dc94d768d30c99ab69283df84cd83351e2c"
+    },
+    {
+      "path": "検証.py",
+      "bytes": 7258,
+      "sha256": "78539ad1b9814b91eecc2d4211f6fe7bb530498115800b986a3e49177b3ca7e6"
+    },
+    {
+      "path": "検証結果.json",
+      "bytes": 552,
+      "sha256": "3fedb2e3f37d4f09ee0ebe6e9f5f49b8dc2cf305dc27b99d224e60ada0b9bd19"
+    },
+    {
+      "path": "留保選択の的中差分解/実行記録.json",
+      "bytes": 544,
+      "sha256": "8da7789f395dd32ab63ad499a9b37ed0391a3d8345120f5a8b199d10a9e03015"
+    },
+    {
+      "path": "留保選択の的中差分解/条件と入力hash.json",
+      "bytes": 1295,
+      "sha256": "f603ba65084a3bb0ac2123ed289ecf5ddfaa1e819bd62fcdf5e082fb534fefd0"
+    },
+    {
+      "path": "留保選択の的中差分解/留保選択の的中差と0切り上げ平均.csv",
+      "bytes": 1212,
+      "sha256": "f75eb139a5881ee5bc38afa73984ad835bcac11a29cb29d7f492eedaf880f0ec"
+    },
+    {
+      "path": "留保選択の的中差分解/選択済み方式の対象別分解.csv",
+      "bytes": 26480,
+      "sha256": "6cc8c9c5800df15b64413662d270f2219eb773a11861483a0647b50531047013"
+    },
+    {
+      "path": "留保選択の的中差分解.py",
+      "bytes": 3559,
+      "sha256": "2d31d8df8ca93124d0f6fd493ccc5283918384a9a2f8745218d5971010aea2c3"
+    },
+    {
+      "path": "監査実行記録.json",
+      "bytes": 1878,
+      "sha256": "2a39a4c8b4f4ad3f73b78a287302f63418e181b38d2ddceef20f6e983d0907b2"
+    },
+    {
+      "path": "監査条件.json",
+      "bytes": 8157,
+      "sha256": "d3d49ab85b4ee7352f7692a73e8df10bcae10ccdeae73cccd68d395ce1316727"
+    },
+    {
+      "path": "統一集計の条件と監査結果.md",
+      "bytes": 9844,
+      "sha256": "9eafb6f893f5734f4d860d0345e467e02c42df259880166f221011bb67ecf21a"
+    },
+    {
+      "path": "集計/family内最大値_同じベンチでの選択.csv",
+      "bytes": 3015,
+      "sha256": "b1352a2ff42bd95e0229902bec7232676ecd1ef25768c42a30b52861a8dae5df"
+    },
+    {
+      "path": "集計/global_LOTO_対象別.csv",
+      "bytes": 3744,
+      "sha256": "6b9a4d8c0c7e914c2b7eb6baca131245969e547ed27cfd12f29afef6113d979e"
+    },
+    {
+      "path": "集計/global_LOTO_平均.csv",
+      "bytes": 170,
+      "sha256": "3015bdd5ed2bdfedfb32f5df4bcf9f1d714c3150e3b7aa96d2b692ecb57a085c"
+    },
+    {
+      "path": "集計/paired_bootstrap_記述幅.csv",
+      "bytes": 10248,
+      "sha256": "b9e79d0a839bdb157296dbc0bd08ab99d4de0b46fb64c050376131e4ec54a8db"
+    },
+    {
+      "path": "集計/targetwise_oracle_対象別.csv",
+      "bytes": 9237,
+      "sha256": "e41dd537c02581561b108bc044fa15f4198cc28f920d58a57d19093f5b7bbbc2"
+    },
+    {
+      "path": "集計/targetwise_oracle_平均.csv",
+      "bytes": 386,
+      "sha256": "8eb9e36a40f2d08f12c3696555f80229b8bdd577f83fc6ff96fa35e78093af18"
+    },
+    {
+      "path": "集計/共通全BG_20対象と18対象の全候補平均.csv",
+      "bytes": 37316,
+      "sha256": "4c0fe5b172e60aa3bb4daa1b261bc077d008316b217fc00ae0fa215effd2e519"
+    },
+    {
+      "path": "集計/共通全BG_20対象と18対象の対象別longform.csv",
+      "bytes": 777947,
+      "sha256": "ee62c778b6b672851a0ff752e1745964657694895499f7daa02fe04ddc0b2b29"
+    },
+    {
+      "path": "集計/別条件_平均_主表へ混ぜない.csv",
+      "bytes": 54617,
+      "sha256": "b6edbeb9b77472db0943736889cda330027deaf987383b6a827d19a40bf6d064"
+    },
+    {
+      "path": "集計/的中差と0切り上げ_全候補.csv",
+      "bytes": 22771,
+      "sha256": "25436f443a5eb96bdedd41357738fe960f560a2ad37a7c776b1689bfb5eb2637"
+    }
+  ],
+  "final_global_summary": false,
+  "GitHub_published": false
+}

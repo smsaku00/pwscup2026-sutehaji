@@ -1,0 +1,7 @@
+{
+  "repair_stage": "before any new prediction receipt or new truth score",
+  "change": "affine invariance verification uses np.allclose rtol1e-11+atol1e-10 rather than absolute error<1e-10 only",
+  "reason": "C1 full reference ratio magnitude9865.912, absolute rounding difference1.000444e-10 and scaled difference1.122948e-14; selected masks changed0",
+  "formula_or_bandwidth_or_candidates_changed": false,
+  "truth_read_during_debug": false
+}

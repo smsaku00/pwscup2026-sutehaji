@@ -1,0 +1,10 @@
+family,source,method,targets,hit_counts_match,maximum_score_error
+順位尺度と分布補正,順位尺度と分布補正/結果/対象別.csv,baseline_partial2,21,True,0.0
+公開BG一致行の処理,加工特徴と方式選択/集計/公開BG処理_予備戦対象別.csv,baseline,21,True,0.0
+人物別較正,背景対照での選別較正/集計/予備戦_対象別とnull反復.csv,baseline,21,True,0.0
+他Cとの差による選別,他Cとの差による選別/集計/予備戦_対象別.csv,baseline,21,True,0.0
+C抽出による選別の安定性,C抽出による選別の安定性/集計/予備戦_対象別.csv,baseline,21,True,0.0
+属性対ごとの証拠統合,属性対ごとの証拠統合/集計/予備戦_対象別.csv,baseline_partial2,21,True,0.0
+C行の背景対比,C行の背景対比/結果/対象別と背景反復.csv,baseline,21,True,0.0
+属性値集合による選別,属性値集合による選別/集計/予備戦_対象別と20反復null.csv,baseline_partial2_matching,21,True,0.0
+過去固定方式の比較,加工特徴と方式選択/集計/固定方式の予備戦得点.csv,stable_matching/sex_quota/long75,21,True,0.0

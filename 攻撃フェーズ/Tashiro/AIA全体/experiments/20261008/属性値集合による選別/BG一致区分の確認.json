@@ -1,0 +1,20 @@
+{
+  "analysis": "既存公開集計からの後付け診断・追加方式なし",
+  "code_sha256": "b70f7cb91bb6c798d8b23d6de4a0bbef0e29c238558560ea2869c294e998c8fa",
+  "sources_sha256": {
+    "集計/各臨床列の値再利用と課題一致.csv": "e5f855c827f7112443334d40a5ba9d84a8d725129bea9f70f74a9dfbc185c049",
+    "集計/予備戦_対象別と20反復null.csv": "f8e1dc626f247e5b20fcaf1a3ca0570f2b2072b4eb975cca72a4e4831aa1a171"
+  },
+  "maximum_same_sex_BG_reference_clinical_match_cells": 0,
+  "challenge_rows_per_C": 326,
+  "C_count": 44,
+  "contexts": [
+    "split_independent",
+    "full_reference_overlap"
+  ],
+  "QI7_absence_proof": "QI7一致なら同じ性別のBG行への各臨床列一致が必要。臨床一致セル総数0なのでQI7一致は0。",
+  "individual_rows_saved": false,
+  "main_truth_used": false,
+  "B_self_used": false,
+  "limitation": "1e-8以内の一致が0という診断であり、BG参照への近接や周辺分布の情報が寄与しないとは言えない"
+}

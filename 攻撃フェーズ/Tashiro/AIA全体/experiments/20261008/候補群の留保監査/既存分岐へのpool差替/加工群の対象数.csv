@@ -1,0 +1,7 @@
+group,processing_group,targets
+prelim20,BG_copy,1
+prelim20,coarse,1
+prelim20,continuous,18
+processed18,BG_copy,1
+processed18,coarse,1
+processed18,continuous,16

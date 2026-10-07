@@ -1,0 +1,18 @@
+{
+  "code_sha256": "d78457d4c106e464fb711831be0e4ff4800f66f2831cff5571e1172fbf08e4a4",
+  "protocol_sha256": "b912e4f059d986684400abbd9aa75dc94d768d30c99ab69283df84cd83351e2c",
+  "output_sha256": {
+    "nested差のpaired_bootstrap記述幅.csv": "3db2e0bdd5f5eb23bce1ade05191e5e923aad56b9683616a4ae0ef3d78953715",
+    "旧8候補_同一規則の再現.csv": "812b28be1642b41f54ef9076a0bfec493c3dbe881048fdde248e914779a3e1fc",
+    "凍結39候補_nested選択の対象別.csv": "c5b5f80f42c3f3acb35e72dc03dec17fc810aa5d366a022042ff3adba8d3880b",
+    "加工群の対象数.csv": "61d781e6737da5782ad007b98be9749a469dc592ea15246269c9c120330d61b6",
+    "凍結39候補_nested選択の平均.csv": "8ca2dd36542b9f16bdf928908c04123a81909dade32f48bc1de55544d25be3c7",
+    "外側正解の遮断確認.csv": "b7bde23474491a4ad425bad1f88c8fdf1106038ea0e2e5b834d149670eb7c0a5",
+    "既存50反復の特徴入れ替え対照.csv": "1ea4a389c68ae46dc8a6517ef17a393c62411ff958c53b1687fb9e9da2e78f4d"
+  },
+  "seconds": 6.594268083572388,
+  "python": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "python_version": "3.12.15",
+  "main_predictions_created": false,
+  "independent_validation": false
+}

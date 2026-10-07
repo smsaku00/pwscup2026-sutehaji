@@ -1,0 +1,16 @@
+{
+  "input_hashes_verified": 112,
+  "reference_codes_verified": 4,
+  "score_rows": 1764,
+  "same_baseline_as_yesterday": true,
+  "same_null_baseline_as_other_C_comparison": true,
+  "permutation_comparisons": 176,
+  "changed_rows": 0,
+  "max_frequency_difference": 0.0,
+  "mean_summaries_consistent": true,
+  "official_score_comparisons": 63,
+  "no_B_self_or_archive_read": true,
+  "submission_artifacts_found": [],
+  "official_phi_reproduced": false,
+  "verification_code_sha256": "ae1cef3bb94762ae5f88a6418206760dd272d29c733cc6292fb42456b66316c3"
+}

@@ -1,0 +1,55 @@
+{
+  "experiment": "属性値集合によるAIA選別",
+  "fixed_before_new_truth_scoring": true,
+  "phase": "2026-10-08",
+  "methods": [
+    "baseline_partial2_matching",
+    "column_all4_mean",
+    "column_top2_mean",
+    "column_exact_count_then_all4"
+  ],
+  "clinical_columns": [
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "raw_medical_scales": true,
+  "age_used_for_new_scores": false,
+  "ratio_epsilon": 1e-8,
+  "raw_match_tolerance": 1e-8,
+  "ratio_direction": "log((nearest_BG+epsilon)/(nearest_C+epsilon))",
+  "top2": "two largest attribute log distance ratios",
+  "selection": {
+    "new_methods": "independent within each sex",
+    "quota": "ceil(0.75 * same-sex challenge count)",
+    "selected_time": 9.5,
+    "other_time": 0,
+    "ties": "ascending challenge_row_id; ID is tie resolution only",
+    "baseline": "same-C-row partial2, background continuous CDF, sex_quota, nearest12 inclusive boundary, Hungarian partial matching, full5 distance tie epsilon1e-10"
+  },
+  "contexts": [
+    "split_independent",
+    "full_reference_overlap"
+  ],
+  "full_reference_note": "actual C scores may use all public BG; null C sample is contained in this reference, so null comparison is supplementary only",
+  "split_seed": 2026100801,
+  "null_seed": 2026100811,
+  "null_repeats": 20,
+  "permutation_seed": 2026100831,
+  "permutation_repeats": 5,
+  "primary_groups": {
+    "prelim20": "exclude own team5",
+    "processed18": "exclude1,2,5"
+  },
+  "loto": "processed18 leave one team out using R_all, candidate order resolves equal training mean",
+  "null_design": "without-replacement same-size/same-sex-count fake C sampled from BG pool; pool and BG reference disjoint in primary context",
+  "baseline_IQR": "whole phase BG fixed to reproduce previous method",
+  "truth_policy": "all44 actual C predictions and all prelim null predictions saved before any truth read in this script; public prelim only scored, no main truth/B_self",
+  "scores_are_probabilities": false,
+  "method_change_confound": "column candidates also remove age, remove same-row requirement, use raw 1D ratio and replace Hungarian with independent selection; compare final family, cannot attribute all differences only to column reuse",
+  "independent_validation": false,
+  "development_limitation": "prelim has been repeatedly used to develop prior methods; LOTO and BG null do not establish independent unseen-team generalization",
+  "no_submission": true,
+  "no_GitHub_publication": true
+}
