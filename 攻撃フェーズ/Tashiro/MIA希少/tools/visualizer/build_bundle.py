@@ -15,6 +15,7 @@ FILES = {
     'validation_ui.json': HERE / 'validation_ui.json',
     'validation_five_core.json': HERE / 'validation_five_core.json',
     'validation_five_ui.json': HERE / 'validation_five_ui.json',
+    'validation_lesson_ui.json': HERE / 'validation_lesson_ui.json',
 }
 
 

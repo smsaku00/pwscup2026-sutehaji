@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "environment": "Node VM with simulated DOM; independent saved-source enumeration and generated lesson markup",
+  "html_bytes": 67765,
+  "html_sha256": "ce3284703dd06f457ff556d63f366473992059bf539901c01c4016f1ac746d8a",
+  "one_member_examples": 11,
+  "two_member_examples": 55,
+  "question_rows_checked": 390,
+  "id_cells_checked": 4290,
+  "question_card_checks": 17710,
+  "combined_card_checks": 3542,
+  "finished_placeholder_rows_checked": 54,
+  "formulas_checked": [
+    "11 choose 2 = 11×10÷2 = 55",
+    "first one-member split 6+5=11",
+    "first pair split 21+28+6=55",
+    "later counts enumerate previously surviving cards"
+  ],
+  "controls_checked": [
+    "one-member and two-member lesson precedes Team-specific controls",
+    "all 11 one-member and all 55 pair examples",
+    "lesson example selection leaves six-Team route unchanged",
+    "all zero through five sheet depths",
+    "start/back/next/end controls and depth bounds",
+    "matched/rejected/unused color badges"
+  ],
+  "visual_browser_validation": false
+}

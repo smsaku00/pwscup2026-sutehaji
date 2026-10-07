@@ -13,7 +13,7 @@ const root = path.resolve(__dirname, '../..');
 const htmlPath = path.join(root, 'docs/visualizer/MIA_5query_cards.html');
 const html = fs.readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
-assert.equal(scripts.length, 4);
+assert.equal(scripts.length, 5);
 const data = JSON.parse(scripts[2][2]);
 const report = JSON.parse(fs.readFileSync(path.join(root, 'docs/visualizer/size_report_5query.json'), 'utf8'));
 const source = JSON.parse(fs.readFileSync(path.join(root, 'docs/検証資料/追加5回の全候補確認.json'), 'utf8'));
@@ -85,6 +85,7 @@ function simulatedViewer(initialHash = '') {
   vm.runInContext(scripts[0][2], context, { filename: 'embedded-shared-core.js' });
   vm.runInContext(scripts[1][2], context, { filename: 'embedded-five-core.js' });
   vm.runInContext(scripts[3][2], context, { filename: 'embedded-five-viewer.js' });
+  vm.runInContext(scripts[4][2], context, { filename: 'embedded-five-lesson.js' });
   const execute = source => vm.runInContext(source, context);
   const snapshot = () => JSON.parse(execute(`JSON.stringify({history:history.map(v=>v.slice()),counts:state.map(s=>s.candidates.length),
     complete:state.map(s=>s.complete),queries:state.map(s=>s.query),candidates:state.map(s=>s.candidates.slice()),

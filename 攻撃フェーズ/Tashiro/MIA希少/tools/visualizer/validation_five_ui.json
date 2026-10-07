@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM with simulated DOM; generated page scripts and SVG markup",
-  "html_bytes": 45956,
-  "html_sha256": "1feedc522039fa9215ad6170029f17a161b7d77363ac376c500de041ee6ef881",
+  "html_bytes": 67765,
+  "html_sha256": "ce3284703dd06f457ff556d63f366473992059bf539901c01c4016f1ac746d8a",
   "source_policies_matched": 2,
   "demo_team10_counts": [
     55,

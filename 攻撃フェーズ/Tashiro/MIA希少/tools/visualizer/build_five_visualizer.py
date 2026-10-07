@@ -36,9 +36,10 @@ def main():
     template = (HERE / 'viewer5.template.html').read_text(encoding='utf-8')
     core = (HERE / 'tree_core.js').read_text(encoding='utf-8')
     five = (HERE / 'five_core.js').read_text(encoding='utf-8')
+    lesson = (HERE / 'lesson_ui.js').read_text(encoding='utf-8')
     payload = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-    html = template.replace('/*__SHARED_CORE__*/', core).replace('/*__FIVE_CORE__*/', five).replace('/*__DATA__*/', payload)
-    if any(p in html for p in ['/*__SHARED_CORE__*/', '/*__FIVE_CORE__*/', '/*__DATA__*/']):
+    html = template.replace('/*__SHARED_CORE__*/', core).replace('/*__FIVE_CORE__*/', five).replace('/*__DATA__*/', payload).replace('/*__LESSON_UI__*/', lesson)
+    if any(p in html for p in ['/*__SHARED_CORE__*/', '/*__FIVE_CORE__*/', '/*__DATA__*/', '/*__LESSON_UI__*/']):
         raise ValueError('missing source placeholder')
     DEST.mkdir(exist_ok=True)
     output = DEST / 'MIA_5query_cards.html'
