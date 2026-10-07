@@ -54,7 +54,7 @@ def main():
         ('cards', 'fixed_pair_lines.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_pair_lines.css').read_text(encoding='utf-8'),
          'FIXED_UI': prefix + (HERE / 'fixed_pair_lines_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_pair_lines_overview.js').read_text(encoding='utf-8'),
          'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出'), 'GLASS_CARDS': cards},
-         'size_report_5query.json', 'single offline HTML; 55 pair edges progressively eliminated by five revealed submission results; two-member lesson'),
+         'size_report_5query.json', 'single offline HTML; one-member rows or two-member pair edges eliminated by five revealed results; visible Team/ID selectors and three playback speeds'),
         ('patterns', 'fixed_records.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_records.css').read_text(encoding='utf-8'),
          'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_overview_ui.js').read_text(encoding='utf-8'),
          'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出')},

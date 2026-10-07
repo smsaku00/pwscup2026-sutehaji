@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 78287,
-  "html_sha256": "f598ec28692865a5ab28bfd5457f11f0c18db941b2bc571d3e56e79a8e7947ff",
-  "format": "single offline HTML; 55 pair edges progressively eliminated by five revealed submission results; two-member lesson",
+  "html_bytes": 84583,
+  "html_sha256": "a6e1cba83dbae693f3e145bf4c8e1996a226a6d60fc5c840a1812d99cf1198de",
+  "format": "single offline HTML; one-member rows or two-member pair edges eliminated by five revealed results; visible Team/ID selectors and three playback speeds",
   "single_team_states": [
     11,
     55
