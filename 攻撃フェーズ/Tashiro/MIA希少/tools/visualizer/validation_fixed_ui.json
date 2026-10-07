@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM simulated DOM, independent candidate enumeration, controlled animation timers and numeric layout geometry",
-  "html_bytes": 56072,
-  "html_sha256": "efd8448c6aab5cdbe07190730b9c5600c5245f65b3edb798d8f99be2fd6a75eb",
+  "html_bytes": 70136,
+  "html_sha256": "54d4592d79dd0a437871825a79e11a7f078909feb1b621de8b75142955ecbc90",
   "one_member_examples": 11,
   "two_member_examples": 55,
   "example_prefixes_checked": 396,
@@ -10,6 +10,8 @@
   "question_card_checks": 94380,
   "combined_card_checks": 18876,
   "fixed_questions_after_early_certainty": 276,
+  "overview_states_checked": 597,
+  "overview_cell_checks": 17910,
   "formulas_checked": [
     "11 choose 2 = 55",
     "first pair partition 15+30+10=55",
@@ -20,6 +22,10 @@
     "same fixed investigation sets for every answer",
     "all sheet colors and cumulative merged colors independently enumerated",
     "fixed investigations continue after early certainty",
+    "five horizontal six-Team responses and six vertical five-entry signatures",
+    "all 198 selected answers across all six Teams retain a legal disjoint placement",
+    "table cells, row strings, column strings, mean fractions and decoded IDs independently checked",
+    "Team and row selection connect to the correct transparent cards; reset and narrow-screen view buttons",
     "one/two person tabs remember selected answers and reset stack",
     "individual ID pickers and duplicate-ID rejection",
     "animated sequential movement, replay, pause, and cancellation by tab/answer changes",
@@ -53,6 +59,7 @@
     "contradictory mean cannot replace a valid observation"
   ],
   "visual_browser_validation": false,
+  "overview_answer_cases": 198,
   "geometry_heights_checked": [
     72,
     160,

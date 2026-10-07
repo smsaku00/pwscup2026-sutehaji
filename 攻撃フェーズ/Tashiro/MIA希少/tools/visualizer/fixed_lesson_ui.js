@@ -96,6 +96,7 @@
     el('count-path').textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
     el('current-calculations').innerHTML = `<p>選んだ正解：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の提出まで残った候補を、提出の対象集合に何人入るかで分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
     place();
+    if (globalThis.MIA_FIXED_OVERVIEW) globalThis.MIA_FIXED_OVERVIEW.fromLesson({cap, member: masks[cap], depth});
   }
   function stop() {epoch++; playing = false;}
   function setTab(value) {

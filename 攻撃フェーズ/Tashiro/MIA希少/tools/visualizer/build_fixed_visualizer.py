@@ -52,9 +52,9 @@ def main():
     legacy_style = re.search(r'<style>([\s\S]*?)</style>', (HERE / 'viewer5.template.html').read_text(encoding='utf-8')).group(1)
     configurations = [
         ('cards', 'fixed_compact.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8'),
-         'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出'),
+         'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_overview_ui.js').read_text(encoding='utf-8'),
          'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出'), 'GLASS_CARDS': cards},
-         'size_report_5query.json', 'single offline HTML; five animated transparent cards within viewport'),
+         'size_report_5query.json', 'single offline HTML; six-Team response table linked to five animated transparent cards'),
         ('reference', 'fixed_reference.template.html', {'STYLE': legacy_style,
          'FIXED_UI': prefix + (HERE / 'fixed_reference_ui.js').read_text(encoding='utf-8') + '\n' + operations,
          'CODE_MATRIX': matrix, 'MEAN_INPUTS': inputs},

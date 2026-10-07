@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 56072,
-  "html_sha256": "efd8448c6aab5cdbe07190730b9c5600c5245f65b3edb798d8f99be2fd6a75eb",
-  "format": "single offline HTML; five animated transparent cards within viewport",
+  "html_bytes": 70136,
+  "html_sha256": "54d4592d79dd0a437871825a79e11a7f078909feb1b621de8b75142955ecbc90",
+  "format": "single offline HTML; six-Team response table linked to five animated transparent cards",
   "single_team_states": [
     11,
     55
