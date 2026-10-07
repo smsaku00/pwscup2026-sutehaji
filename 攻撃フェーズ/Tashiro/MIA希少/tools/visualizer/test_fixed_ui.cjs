@@ -123,7 +123,6 @@ function simulatedViewer(reduced = false) {
   const tick=async()=>{assert(timers.length);timers.shift().callback();await Promise.resolve();await Promise.resolve();};
   return {elements,execute,json,select,click,downloads,timers,tick,events,document};
 }
-const cells=markup=>[...markup.matchAll(/<div class="sheet-cell ([^"]*)"([^>]*)>/g)].map(m=>({classes:m[1],attrs:attrs(m[2])}));
 function assertOverview(viewer,result) {
   const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()'), lesson=viewer.json('MIA_FIXED_LESSON.values()');
   let used=0;
@@ -152,89 +151,117 @@ function assertOverview(viewer,result) {
   assert(viewer.elements.get('row-reader').innerHTML.includes(state.meanFractions[r]));
   assert(viewer.elements.get('column-reader').innerHTML.includes(columns[t].join(' ↓ ')));
   assert(viewer.elements.get('selected-team-caption').textContent.includes(`Team ${data.teams[t]}`));
-  for(let i=0;i<5;i++) {assert.equal(viewer.elements.get(`glass-card-${i+1}`).dataset.hit,String(responses[i][t]));assert.equal(viewer.elements.get(`glass-card-${i+1}`).classList.contains('row-focus'),i===r);}
+  const trial=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');assert.deepEqual(trial.target,columns[t]);
+  for(let i=0;i<5;i++) assert.equal(viewer.elements.get(`record-heading-${i+1}`).classList.contains('row-focus'),i===r);
   result.overview_states_checked++;
 }
-function assertColumn(viewer,cap,member,depth,result) {
+
+const recordCards=markup=>[...markup.matchAll(/<button type="button" class="record-card([^\"]*)"([^>]*)>([\s\S]*?)<\/button>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),body:m[3]}));
+function assertRecords(viewer,cap,member,depth,result) {
   const rows=independentTrace(cap,member), api=viewer.json(`MIA_FIXED_LESSON.trace(${cap},${member})`);
-  for(let i=0;i<5;i++) {
-    const row=rows[i], card=viewer.elements.get(`glass-card-${i+1}`), grid=viewer.elements.get(`glass-grid-${i+1}`), actual=cells(grid.innerHTML);
+  rows.forEach((row,i)=>{
     assert.equal(api[i].query,row.query);assert.equal(api[i].hit,row.hit);assert.equal(api[i].complete,false);
     assert.deepEqual(sorted(api[i].before),row.before);assert.deepEqual(sorted(api[i].after),row.after);
     row.groups.forEach((group,h)=>assert.deepEqual(sorted(api[i].groups[h]),group));
-    assert.equal(card.dataset.query,String(QUERIES[i]));assert.equal(card.dataset.hit,String(row.hit));
-    assert.equal(card.classList.contains('merged'),i<depth);assert.equal(card.dataset.merged,i<depth?'1':'0');
-    assert.equal(grid.style['--rows'],cap===1?'1':'5');assert.equal(grid.attributes['data-cap'],String(cap));
-    assert.equal(actual.length,enumerate(cap).length);assert.deepEqual(sorted(actual.map(c=>Number(c.attrs['data-member']))),enumerate(cap));
-    assert.deepEqual(actual.map(c=>Number(c.attrs['data-member'])),cells(viewer.elements.get('merge-grid').innerHTML).map(c=>Number(c.attrs['data-member'])));
-    actual.forEach(c=>{const pass=pc(Number(c.attrs['data-member']) & QUERIES[i])===row.hit;assert.equal(c.attrs['data-pass'],pass?'1':'0');assert(c.classes.includes(pass?'fits':'blocked'));result.question_card_checks++;});
-    const meta=viewer.elements.get(`glass-meta-${i+1}`).innerHTML;
-    assert(meta.includes(`対象ID：${label(QUERIES[i])}`));assert(meta.includes(`<span class="hit">${row.hit}人</span>`));
-    assert(meta.includes(`${row.before.length} → ${row.after.length}`));assert(!meta.includes('質問'));assert(!meta.includes('調査'));assert(meta.includes(`提出${i+1}`));
-    const countCalculation=viewer.elements.get('current-calculations').innerHTML;
-    row.groups.forEach((group,h)=>{assert(countCalculation.includes(`<b>${h}人：${group.length}${cap===1?'候補':'組'}</b>`));});
-    if(row.before.length===1) result.fixed_questions_after_early_certainty++;
-    result.question_rows_checked++;
-  }
+    const calculation=viewer.elements.get('current-calculations').innerHTML;
+    assert(calculation.includes(`対象ID：${label(QUERIES[i])}`));
+    row.groups.forEach((group,h)=>assert(calculation.includes(`<b>${h}人：${group.length}${cap===1?'候補':'組'}</b>`)));
+    if(row.before.length===1) result.fixed_submissions_after_early_certainty++;
+    result.submission_rows_checked++;
+  });
   const kept=enumerate(cap).filter(candidate=>rows.slice(0,depth).every(row=>pc(candidate & row.query)===row.hit));
   assert.deepEqual(sorted(viewer.json(`MIA_FIXED_LESSON.remaining(${cap},${member},${depth})`)),kept);
-  const merged=cells(viewer.elements.get('merge-grid').innerHTML);
-  assert.equal(merged.length,enumerate(cap).length);
-  merged.forEach(c=>{const pass=kept.includes(Number(c.attrs['data-member']));assert.equal(c.attrs['data-pass'],pass?'1':'0');assert(c.classes.includes(pass?'fits':'blocked'));result.combined_card_checks++;});
   assert.equal(viewer.elements.get('count-path').textContent,[enumerate(cap).length,...rows.map(row=>row.after.length)].join(' → '));
-  assert.equal(viewer.elements.get('merge-base-count').textContent,`残る ${kept.length}${cap===1?'候補':'組'}`);
-  if(depth===5) {assert.deepEqual(kept,[member]);assert.equal(viewer.elements.get('summary-result').textContent,`残る1枚：ID ${label(member)}`);}
+  const state=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');
+  assert.deepEqual(state.selectedIDs,IDS.filter((_,i)=>member>>i&1));
+  assert.deepEqual(state.target,signature(member));assert.deepEqual(state.sum,signature(member));
+  assert(state.complete);assert(state.allMatch);assert.equal(state.comparedCount,depth);
+  const cards=recordCards(viewer.elements.get('record-deck').innerHTML);
+  assert.equal(cards.length,11);assert.deepEqual(cards.map(c=>Number(c.attrs['data-record-id'])),IDS);
+  cards.forEach(card=>{
+    const id=Number(card.attrs['data-record-id']), bit=1<<IDS.indexOf(id), expected=signature(bit);
+    assert.equal(card.attrs['data-signature'],expected.join(''));
+    const bits=[...card.body.matchAll(/data-round="(\d+)" data-value="([01])"/g)];
+    assert.equal(bits.length,5);
+    bits.forEach((m,r)=>{assert.equal(Number(m[1]),r);assert.equal(Number(m[2]),expected[r]);result.record_bit_checks++;});
+    assert.equal(card.attrs['aria-pressed'],String(state.selectedIDs.includes(id)));
+    assert.equal(card.classes.includes('solved'),depth===5 && state.selectedIDs.includes(id));
+  });
+  const summed=[...viewer.elements.get('sum-result').innerHTML.matchAll(/data-round="(\d+)" data-value="(\d+)" data-checked="([01])" data-match="([01]?)"/g)];
+  assert.equal(summed.length,5);summed.forEach((m,r)=>{assert.equal(Number(m[2]),signature(member)[r]);assert.equal(m[3],r<depth?'1':'0');assert.equal(m[4],r<depth?'1':'');result.sum_cell_checks++;});
+  if(depth===5) {assert.deepEqual(kept,[member]);assert(viewer.elements.get('trial-status').textContent.includes('5回とも一致'));}
   assertOverview(viewer,result);
 }
 async function main() {
-  const result={status:'passed',environment:'Node VM simulated DOM, independent candidate enumeration, controlled animation timers and numeric layout geometry',
+  const result={status:'passed',environment:'Node VM simulated DOM, independent record/pair enumeration, controlled animation timers and numeric layout geometry',
     html_bytes:Buffer.byteLength(html),html_sha256:crypto.createHash('sha256').update(html).digest('hex'),
-    one_member_examples:0,two_member_examples:0,example_prefixes_checked:0,question_rows_checked:0,question_card_checks:0,combined_card_checks:0,
-    fixed_questions_after_early_certainty:0,overview_states_checked:0,overview_cell_checks:0,formulas_checked:[],controls_checked:[],mean_decodes_checked:[],negative_cases:[],visual_browser_validation:false};
+    one_member_examples:0,two_member_examples:0,example_prefixes_checked:0,submission_rows_checked:0,record_bit_checks:0,sum_cell_checks:0,
+    fixed_submissions_after_early_certainty:0,overview_states_checked:0,overview_cell_checks:0,formulas_checked:[],controls_checked:[],mean_decodes_checked:[],negative_cases:[],visual_browser_validation:false};
   const viewer=simulatedViewer();
   assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:1,depth:0,masks:{'1':128,'2':3},playing:false});
-  assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,true);
-  assert.equal(viewer.elements.get('help-overlay').hidden,true);
-  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,DEMO);
-  assertOverview(viewer,result);
+  assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,true);assert.equal(viewer.elements.get('help-overlay').hidden,true);
+  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,DEMO);assertOverview(viewer,result);
   for(const cap of [1,2]) for(const member of enumerate(cap)) {
     viewer.execute(`MIA_FIXED_LESSON.setAnswer(${cap},${member})`);
-    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[cap],member);
     const selected=IDS.filter((_,i)=>member>>i&1);
     assert.equal(viewer.elements.get('answer-record-1').value,String(selected[0]));
     if(cap===2) assert.equal(viewer.elements.get('answer-record-2').value,String(selected[1]));
-    assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,cap!==2);
-    for(let depth=0;depth<=5;depth++) {
-      viewer.execute(`MIA_FIXED_LESSON.setDepth(${depth})`);assertColumn(viewer,cap,member,depth,result);result.example_prefixes_checked++;
-    }
+    for(let depth=0;depth<=5;depth++) {viewer.execute(`MIA_FIXED_LESSON.setDepth(${depth})`);assertRecords(viewer,cap,member,depth,result);result.example_prefixes_checked++;}
+    viewer.click('find-matching');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,selected);
     result[cap===1?'one_member_examples':'two_member_examples']++;
   }
   assert.equal(result.example_prefixes_checked,396);
-  result.controls_checked.push('all 11 singles and 55 pairs at all six stack depths','same fixed investigation sets for every answer','all sheet colors and cumulative merged colors independently enumerated','fixed investigations continue after early certainty');
+  result.controls_checked.push('all 11 singles and 55 pairs at all six comparison prefixes','eleven visible record cards with five independently checked fixed bits','all selected record sums match the true Team column; complete matches turn selected records green','matching-ID selection searches all full five-entry patterns');
   result.overview_answer_cases=0;
   for(let team=0;team<6;team++) {
     viewer.execute(`MIA_FIXED_OVERVIEW.selectTeam(${team})`);
     for(const member of enumerate(CAPS[team])) {
       viewer.execute(`MIA_FIXED_LESSON.setAnswer(${CAPS[team]},${member});MIA_FIXED_LESSON.setDepth(5)`);
-      assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,team);
-      assertOverview(viewer,result);result.overview_answer_cases++;
+      assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,team);assertOverview(viewer,result);result.overview_answer_cases++;
     }
   }
   assert.equal(result.overview_answer_cases,198);
-  viewer.click('reset-overview');assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,DEMO);
+  viewer.click('reset-overview');
   viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewTeam:'4'}};}}});
   assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,4);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').cap,1);
   viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewCellTeam:'3',overviewCellRound:'4'}};}}});
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,3);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,4);
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').cap,2);assertOverview(viewer,result);
+  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,3);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,4);assertOverview(viewer,result);
   viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewRound:'2'}};}}});
   assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,2);
   viewer.click('show-cards');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'cards');
   viewer.click('show-overview');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'overview');
   viewer.click('reset-overview');assertOverview(viewer,result);
-  result.controls_checked.push('five horizontal six-Team responses and six vertical five-entry signatures','all 198 selected answers across all six Teams retain a legal disjoint placement','table cells, row strings, column strings, mean fractions and decoded IDs independently checked','Team and row selection connect to the correct transparent cards; reset and narrow-screen view buttons');
-  viewer.click('tab-single');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  viewer.select('answer-record-1',383);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[1],128);
+  result.controls_checked.push('five six-Team response rows and six five-entry Team columns','all 198 possible answers across all six Teams retain a legal disjoint joint placement','table row/column/cell selections connect to the selected Team and submission heading','narrow-screen view tabs and full reset');
+  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3)');
+  const unchanged=viewer.json('MIA_FIXED_OVERVIEW.snapshot()');
+  let matched=0;result.trial_pair_cases=0;
+  for(const pair of enumerate(2)) {
+    const chosen=IDS.filter((_,i)=>pair>>i&1);
+    viewer.execute(`MIA_FIXED_LESSON.setTrial(${JSON.stringify(chosen)});MIA_FIXED_LESSON.setDepth(5)`);
+    const trial=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');
+    assert.deepEqual(trial.sum,signature(pair));assert.deepEqual(trial.target,signature(3));assert.equal(trial.allMatch,pair===3);
+    assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,unchanged.memberships);
+    const colored=recordCards(viewer.elements.get('record-deck').innerHTML).filter(c=>c.classes.includes('solved'));
+    assert.equal(colored.length,pair===3?2:0);assert.equal(viewer.elements.get('trial-status').textContent.includes('不一致'),pair!==3);
+    if(trial.allMatch) matched++;result.trial_pair_cases++;
+  }
+  assert.equal(matched,1);
+  viewer.execute('MIA_FIXED_LESSON.setTrial([47,76])');
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').signatures,[[0,1,0,1,1],[1,0,1,1,1]]);
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').sum,[1,1,1,2,2]);
+  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'47'}};}}});
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[76]);assert(viewer.elements.get('animate-all').disabled);assert(viewer.elements.get('merge-one').disabled);
+  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setDepth(1)'),/人数分/);
+  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'90'}};}}});
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[76,90]);
+  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'115'}};}}});
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[90,115]);
+  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([47,47])'),/異なる/);assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([47,76,90])'),/人数分/);
+  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([999])'),/候補/);
+  viewer.click('find-matching');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[47,76]);
+  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,unchanged.memberships);
+  result.controls_checked.push('all 55 trial pairs against a fixed Team truth; exactly one match and 54 explicit mismatches','trial record clicks do not change the observed Team response or joint truth','incomplete selection disables comparison; duplicate and out-of-range records rejected','01011 + 10111 = 11122 and two overlapping ones count as 2');
+  viewer.click('tab-single');viewer.select('answer-record-1',383);
   viewer.click('tab-pair');viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3)');
   viewer.select('answer-record-2',90);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
   viewer.select('answer-record-1',90);assert(!viewer.elements.get('lesson-error').hidden);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
@@ -245,46 +272,41 @@ async function main() {
   for(let i=1;i<=5;i++) {viewer.click('merge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);}
   assert(viewer.elements.get('merge-one').disabled);viewer.click('unmerge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,4);
   viewer.click('spread-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const play=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);
+  const play=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
+  assert.equal(viewer.timers[0].ms,920);await viewer.tick();
   for(let i=1;i<=5;i++) {assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,i-1);await viewer.tick();}
   await play;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  // Replay first spreads all cards, then animates five actual movements.
-  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  await viewer.tick();assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);
-  viewer.click('tab-pair');await viewer.tick();await replay;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').cap,2);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const stopped=viewer.click('animate-all');viewer.click('animate-all');await viewer.tick();await stopped;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  const cancelled=viewer.click('animate-all');viewer.select('answer-record-2',115);await viewer.tick();await cancelled;
+  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(!viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
+  await viewer.tick();assert(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);viewer.click('tab-pair');await viewer.tick();await replay;
   assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  const stopped=viewer.click('animate-all');viewer.click('animate-all');await viewer.tick();await stopped;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  viewer.click('spread-all');const cancelled=viewer.click('animate-all');viewer.execute('MIA_FIXED_LESSON.setTrial([47,90])');await viewer.tick();await cancelled;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(!viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
   viewer.click('open-help');assert.equal(viewer.elements.get('help-overlay').hidden,false);assert.equal(viewer.document.activeElement.id,'close-help');
   viewer.events.keydown({key:'Escape'});assert.equal(viewer.elements.get('help-overlay').hidden,true);assert.equal(viewer.document.activeElement.id,'open-help');
-  result.controls_checked.push('one/two person tabs remember selected answers and reset stack','individual ID pickers and duplicate-ID rejection','animated sequential movement, replay, pause, and cancellation by tab/answer changes','help dialog open, Escape close and focus restoration');
-  assert(viewer.elements.has('help-panel'), 'Focus trapping requires the actual dialog element');
+  result.controls_checked.push('one/two person tabs and selected answer order','one or two floating pattern copies move into the common sum position, followed by five comparisons','replay, pause and cancellation on tab or trial selection change','help dialog open/Escape/focus restoration');
   const reducedViewer=simulatedViewer(true), reducedPlay=reducedViewer.click('animate-all');
-  for(let i=1;i<=5;i++) {assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(reducedViewer.timers[0].ms,90);await reducedViewer.tick();}
+  assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
+  for(let i=1;i<=5;i++) {assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(reducedViewer.timers[0].ms,60);await reducedViewer.tick();}
   await reducedPlay;assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  result.controls_checked.push('reduced-motion animation reaches all five states without long movement waits');
-  result.geometry_heights_checked=[72,160,260,340,420,600,900];
+  result.controls_checked.push('reduced-motion animation reaches all five comparisons');
+  result.geometry_heights_checked=[60,72,78,96,108,160,260,420];
   for(const height of result.geometry_heights_checked) {
     const g=viewer.json(`MIA_FIXED_LESSON.geometry(${height})`);
-    assert(g.cardHeight>0);assert.equal(g.positions.length,6);assert(Math.abs(g.target+g.cardHeight-height)<1e-9);
-    for(let i=0;i<5;i++) {assert(g.positions[i]>=0);assert(g.positions[i]+g.cardHeight<=g.positions[i+1]);}
-    viewer.elements.get('card-stage').clientHeight=height;viewer.execute('MIA_FIXED_LESSON.setDepth(0);MIA_FIXED_LESSON.place(true)');
-    for(let i=1;i<=5;i++) assert.equal(viewer.elements.get(`glass-card-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);
+    assert(g.cardHeight>0);assert.equal(g.positions.length,3);assert(Math.abs(g.target+g.cardHeight-height)<1e-9);
+    for(let i=0;i<2;i++) assert(g.positions[i]+g.cardHeight<=g.positions[i+1]);
+    viewer.elements.get('overlay-stage').clientHeight=height;viewer.execute('MIA_FIXED_LESSON.setDepth(0);MIA_FIXED_LESSON.place(true)');
+    for(let i=1;i<=2;i++) assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);
     viewer.execute('MIA_FIXED_LESSON.setDepth(5)');
-    for(let i=1;i<=5;i++) assert.equal(viewer.elements.get(`glass-card-${i}`).style.transform,`translateY(${g.target}px)`);
+    for(let i=1;i<=2;i++) assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.target}px)`);
   }
   const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];
-  assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));assert(style.includes('.stage{flex:1;min-height:0;'));
-  assert(style.includes('transition:transform 880ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
-  assert(!html.split('<script>')[0].includes('質問'));assert(!html.split('<script>')[0].includes('調査'));assert(!style.includes('--sheet'));
-  assert(style.includes('.glass-card .sheet-cell.fits{background:transparent;'));
-  assert(!/glass-card-[1-5][^>]*--sheet:/.test(html));
-  assert(html.includes('透明：この提出の人数に合う'));
-  result.controls_checked.push('neutral sheets with transparent matching cells, gray rejection and green merged survivors; submission terminology');
+  assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));
+  assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('transition:transform 880ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
+  const staticMarkup=html.split('<script>')[0];assert(!staticMarkup.includes('質問'));assert(!staticMarkup.includes('調査'));assert(!staticMarkup.includes('glass-grid-'));assert(staticMarkup.includes('55は2人の選び方の数'));
   assert.equal(11*10/2,55);assert.equal(6*5/2+5*6+5*4/2,55);
-  result.formulas_checked.push('11 choose 2 = 55','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
+  result.formulas_checked.push('11 choose 2 = 55, with eleven visible per-record cards','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
   const initialOperation = operationSnapshot();
   assert.deepEqual(initialOperation, {observations: Array(5).fill(null), meanInputs: Array(5).fill(null), counts: [11, 55, 11, 55, 11, 55], queries: QUERIES});

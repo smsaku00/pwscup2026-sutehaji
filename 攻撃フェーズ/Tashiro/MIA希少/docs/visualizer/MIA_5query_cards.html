@@ -4,24 +4,31 @@
 .glass-card.row-focus .card-meta strong{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:780px){.lesson-workspace[data-view="overview"]+.summary{display:none}.lesson-workspace[data-view="overview"]~.legend{display:none}}@media(max-width:780px) and (max-height:720px){.overview-how,.overview-note{display:none}}
 .overview-table tbody td[data-overview-cell-team]{cursor:pointer}
+
+/* The eleven cards stay visible; selected copies move to a common sum row. */
+.records-panel{--label-width:64px;gap:5px}.record-instructions{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;flex:none}.record-instructions button{font-size:10px;padding:3px 6px;white-space:nowrap}.record-heading,.record-card,.record-floating,.sum-result,.target-row{display:grid;grid-template-columns:var(--label-width) repeat(5,minmax(0,1fr));align-items:center;gap:3px;min-width:0;font-variant-numeric:tabular-nums}.record-heading{font-size:10px;text-align:center;flex:none;height:18px}.record-heading b{font-weight:500;color:var(--muted)}.record-heading span.row-focus{font-weight:800;text-decoration:underline;text-underline-offset:3px}.record-deck{flex:1;min-height:0;display:grid;grid-template-rows:repeat(11,minmax(0,1fr));gap:3px}.record-card{width:100%;min-height:0;border:1px solid #b7c8cf;background:#ffffff70;border-radius:4px;padding:1px 3px;font-size:12px;line-height:1;overflow:hidden}.record-card b{font-size:10px;font-weight:500;text-align:left;padding-left:4px;white-space:nowrap}.record-card.selected{border:2px solid #334e5f;padding:0 2px;background:#f6fafb}.record-card.selected b{font-weight:800}.record-bit{height:100%;min-height:0;display:flex;align-items:center;justify-content:center;border-radius:2px}.bit-1{background:#4d677a30}.bit-0{background:transparent;color:#647b88}.record-card.solved{border-color:#228151;background:#e1f3e7}.record-card.solved .record-bit{color:#226540}.overlay-stage{position:relative;flex:none;height:108px;isolation:isolate;margin-top:1px}.record-floating,.sum-result{position:absolute;left:0;top:0;width:100%;border:1px solid #8ea7b2;border-radius:5px;padding:2px 3px;transition:transform 880ms cubic-bezier(.23,.8,.25,1);will-change:transform;background:#ffffff60;line-height:1}.record-floating{z-index:var(--z,2)}.record-floating[hidden]{display:none}.record-floating b,.sum-result b{font-size:10px;text-align:left;padding-left:4px}.floating-bit{height:100%;display:flex;align-items:center;justify-content:center;border-radius:2px;font-size:13px}.record-floating.merged{background:transparent;box-shadow:calc(var(--layer)*1px) calc(var(--layer)*1px) 0 #8799a438;pointer-events:none}.record-floating.merged b,.record-floating.merged .floating-bit{color:transparent}.record-floating.merged .floating-bit{background:transparent}.record-floating.reflow,.sum-result.reflow{transition:none}.sum-result{z-index:5;background:#f6fafc;border-color:#849aa7}.sum-bit{height:100%;display:flex;gap:2px;align-items:center;justify-content:center;border-radius:3px;font-size:14px;font-weight:700}.sum-bit small{font-size:9px}.sum-bit.match{background:#d8eedf;color:#22623d}.sum-bit.mismatch{background:#e1e7eb;color:#4b5b65}.sum-bit.waiting{color:#728793}.target-row{flex:none;height:32px;text-align:center;border-top:1px solid #c2d1d8;padding:1px 3px}.target-row b{font-size:9px;line-height:1.15;text-align:left;padding-left:4px;font-weight:600}.target-bit{font-size:16px;font-weight:800;line-height:1}.trial-status{font-size:11px;line-height:1.4;margin:0;flex:none;min-height:30px;overflow-wrap:anywhere}.trial-status.solved{color:#246c45;font-weight:700}.summary{display:none}.legend{font-size:10px;gap:12px}.app{max-width:1120px}.lesson-workspace{grid-template-columns:minmax(0,1.02fr) minmax(0,1fr)}
+@media(max-height:720px){.record-deck{gap:2px}.record-card{font-size:11px}.record-card b{font-size:9px}.records-panel{gap:4px}.overlay-stage{height:96px}.target-row{height:28px}.target-bit{font-size:14px}.trial-status{font-size:10px;min-height:28px}.record-heading{height:16px;font-size:9px}.record-instructions{font-size:9px}}
+@media(max-width:780px){.record-card{font-size:13px}.record-card b{font-size:11px}.record-heading{font-size:11px}.records-panel{--label-width:70px}.legend{font-size:9px}.actions button{font-size:11px;padding:5px 7px}}
+@media(max-height:570px){.record-deck{gap:1px}.record-card{font-size:10px;padding-top:0;padding-bottom:0}.record-card b{font-size:9px}.record-instructions span{display:none}.record-instructions{height:18px}.record-instructions button{font-size:9px;padding:1px 5px}.overlay-stage{height:78px}.record-heading{height:14px;font-size:8px}.trial-status{font-size:9px;min-height:24px}.target-row{height:25px}.records-panel{gap:3px}.legend{display:none}.floating-bit,.sum-bit{font-size:11px}.record-floating b,.sum-result b{font-size:9px}}
+@media(max-width:420px){.record-card{font-size:12px}.records-panel{--label-width:61px}.record-card b{font-size:10px}.record-instructions{font-size:9px}.actions{gap:3px}.actions button{font-size:9px;padding:5px 4px}.progress{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.record-floating,.sum-result{transition:none!important}}
 </style></head><body>
 <main class="app"><header class="app-header"><div><div class="eyebrow">FIVE FIXED SUBMISSIONS</div><h1>5回の提出を、チームごとに縦に読む</h1><p class="subtitle">提出の平均点 → 6チームの人数を横に並べる → 1チームの5回を縦に読む → 所属レコードが分かる</p></div><button id="open-help">詳しく見る</button></header>
-<div class="toolbar"><div class="tabs" role="tablist" aria-label="所属人数"><button id="tab-single" role="tab" aria-selected="true" aria-controls="card-stage">所属1人</button><button id="tab-pair" role="tab" aria-selected="false" aria-controls="card-stage">所属2人</button></div><div class="answer-picker"><span class="picker-label">正解レコード<br>（説明用）</span><label for="answer-record-1" hidden>正解の1人目</label><select id="answer-record-1" aria-label="正解の1人目"></select><div id="answer-record-2-wrap" class="answer-picker" hidden><span>＋</span><label for="answer-record-2" hidden>正解の2人目</label><select id="answer-record-2" aria-label="正解の2人目"></select></div></div></div>
-<div class="actions"><button id="animate-all" class="primary">▶ 5枚を重ねる</button><button id="merge-one">1枚重ねる</button><button id="unmerge-one">1枚戻す</button><button id="spread-all">並べ直す</button><span id="merge-progress" class="progress" role="status" aria-live="polite">0 / 5枚</span></div><div id="lesson-error" class="compact-error" role="alert" hidden></div>
+<div class="toolbar"><div class="tabs" role="tablist" aria-label="所属人数"><button id="tab-single" role="tab" aria-selected="true" aria-controls="record-deck">所属1人</button><button id="tab-pair" role="tab" aria-selected="false" aria-controls="record-deck">所属2人</button></div><div class="answer-picker"><span class="picker-label">正解レコード<br>（説明用）</span><label for="answer-record-1" hidden>正解の1人目</label><select id="answer-record-1" aria-label="正解の1人目"></select><div id="answer-record-2-wrap" class="answer-picker" hidden><span>＋</span><label for="answer-record-2" hidden>正解の2人目</label><select id="answer-record-2" aria-label="正解の2人目"></select></div></div></div>
+<div class="actions"><button id="animate-all" class="primary">選んだ模様を重ねる</button><button id="merge-one">1提出ずつ照合</button><button id="unmerge-one">1提出戻す</button><button id="spread-all">やり直す</button><span id="merge-progress" class="progress" role="status" aria-live="polite">0 / 5提出</span></div><div id="lesson-error" class="compact-error" role="alert" hidden></div>
 <div class="view-toggle" aria-label="表示の切り替え"><button id="show-overview" aria-pressed="true">全体の表</button><button id="show-cards" aria-pressed="false">選んだチームのカード</button></div>
-<div id="lesson-workspace" class="lesson-workspace" data-view="overview"><section class="overview-panel" aria-label="5提出と6チームの人数の対応表"><div class="overview-heading"><h2>① 平均点から横6桁、縦に5回</h2><button id="reset-overview">例を戻す</button></div><p class="overview-how">各提出の平均点から、対象IDに含まれた所属者の人数をチームごとに読み取ります。<b>0・1・2は人数</b>です。</p><div class="overview-table-wrap"><table id="overview-table" class="overview-table" aria-label="各提出の6桁と各チームの5桁"></table></div><div id="row-reader" class="reader row-reader" aria-live="polite"></div><div id="column-reader" class="reader column-reader" aria-live="polite"></div><p class="overview-note">横の6桁は Team 6・10・11・16・17・25 の順。表は説明用の仮定です。列を選ぶと、そのチームのカードに切り替わります。</p></section><section class="cards-panel" aria-label="選んだチームの透明カード"><h2 id="selected-team-caption">② 選んだチームの5枚を重ねる</h2><section id="card-stage" class="stage" aria-label="縦に並ぶ5枚の透明カードと合成結果"><article id="glass-card-1" class="glass-card" style="--layer:1;--z:2"><div id="glass-meta-1" class="card-meta"></div><div id="glass-grid-1" class="sheet-grid"></div></article><article id="glass-card-2" class="glass-card" style="--layer:2;--z:3"><div id="glass-meta-2" class="card-meta"></div><div id="glass-grid-2" class="sheet-grid"></div></article><article id="glass-card-3" class="glass-card" style="--layer:3;--z:4"><div id="glass-meta-3" class="card-meta"></div><div id="glass-grid-3" class="sheet-grid"></div></article><article id="glass-card-4" class="glass-card" style="--layer:4;--z:5"><div id="glass-meta-4" class="card-meta"></div><div id="glass-grid-4" class="sheet-grid"></div></article><article id="glass-card-5" class="glass-card" style="--layer:5;--z:6"><div id="glass-meta-5" class="card-meta"></div><div id="glass-grid-5" class="sheet-grid"></div></article><div id="merge-base" class="merge-base"><div class="card-meta"><strong id="merge-base-title">0枚の合成</strong><span id="merge-base-count" class="hit"></span></div><div id="merge-grid" class="sheet-grid"></div></div></section></section></div>
+<div id="lesson-workspace" class="lesson-workspace" data-view="overview"><section class="overview-panel" aria-label="5提出と6チームの人数の対応表"><div class="overview-heading"><h2>① 平均点から横6桁、縦に5回</h2><button id="reset-overview">例を戻す</button></div><p class="overview-how">各提出の平均点から、対象IDに含まれた所属者の人数をチームごとに読み取ります。<b>0・1・2は人数</b>です。</p><div class="overview-table-wrap"><table id="overview-table" class="overview-table" aria-label="各提出の6桁と各チームの5桁"></table></div><div id="row-reader" class="reader row-reader" aria-live="polite"></div><div id="column-reader" class="reader column-reader" aria-live="polite"></div><p class="overview-note">横の6桁は Team 6・10・11・16・17・25 の順。表は説明用の仮定です。列を選ぶと、そのチームのカードに切り替わります。</p></section><section class="cards-panel records-panel" aria-label="11レコードの5回分の模様"><h2 id="selected-team-caption">② 11人から選んだ模様を足す</h2><div class="record-instructions"><span id="trial-hint">1人を選んで比べます。</span><button id="find-matching">一致するIDを選ぶ</button></div><div class="record-heading"><b>対象内＝1</b><span id="record-heading-1">提出1</span><span id="record-heading-2">提出2</span><span id="record-heading-3">提出3</span><span id="record-heading-4">提出4</span><span id="record-heading-5">提出5</span></div><div id="record-deck" class="record-deck" aria-label="各レコードの提出1〜5の0・1"></div><section id="overlay-stage" class="overlay-stage" aria-label="選んだレコードの模様を重ねる"><div id="floating-record-1" class="record-floating" style="--layer:1;--z:2"></div><div id="floating-record-2" class="record-floating" style="--layer:2;--z:3"></div><div id="sum-result" class="sum-result"></div></section><div id="target-row" class="target-row" aria-label="チームの縦5桁との比較"></div><p id="trial-status" class="trial-status" aria-live="polite"></p></section></div>
 <section class="summary" aria-live="polite"><strong id="summary-result"></strong><span id="count-path" class="count-path"></span><span id="summary-note" class="explain"></span></section>
-<div class="legend"><span><i class="swatch" style="background:transparent;border:1px solid #9aaeb5"></i>透明：この提出の人数に合う</span><span><i class="swatch" style="background:#d8eedf;border:1px solid #79b08c"></i>緑：重ねた条件すべてに合う</span><span><i class="swatch" style="background:#c1ccd1"></i>灰色：人数に合わない</span><span>各マスは1候補。2人のときは2人組1組が1マスです。</span></div></main>
+<div class="legend"><span>1＝その提出の対象内、0＝対象外</span><span>2人なら各桁を足す：0＋0＝0、0＋1＝1、1＋1＝2</span><span><i class="swatch" style="background:#d8eedf;border:1px solid #79b08c"></i>緑＝チームの人数と一致</span></div></main>
 <div id="help-overlay" class="help-overlay" hidden><section id="help-panel" class="help-panel" role="dialog" aria-modal="true" aria-labelledby="help-title"><header class="help-header"><h2 id="help-title">計算の元・提出の仕組み</h2><button id="close-help">閉じる ×</button></header><div class="help-body">
 <p class="math-note">この教材は<b>非適応</b>です。正解のレコードを変えても対象IDは変わりません。1人・2人とも同じ固定5回で区別します。正解は説明用の仮定です。</p>
-<h3>提出ごとの横6桁を、チームごとの縦5桁にする</h3><p>提出1回につき、希少平均点を保存された対応表で6チームの人数に復号します。横の6桁は同じ提出の6チーム分です。この行を5回分並べ、1チームの列を上から読むと、そのチームだけの5回の人数になります。右の5枚は、その縦列の条件を1枚ずつ適用します。</p><p>所属1人のチームでは0・1、所属2人のチームでは0・1・2を使います。横6桁も縦5桁も桁ごとの人数であり、2人のときの2を1に丸めません。正解レコードを変えると、他チームの例も同じ人が重複しないように調整します。提出の対象IDと点数の設定は固定です。</p>
-<h3>透明カードの見方</h3><p>5枚とも同じ配色です。各カードは、対象IDに含まれる所属者の人数が、この例の人数と合う候補の位置を透明にします。不一致の候補は灰色で覆います。同じ位置に重ねるため、灰色が1回でも重なる候補は除外され、すべての条件に合う候補だけが緑で残ります。</p><p>2人の場合は、個人別の色ではなく<b>55通りの2人組</b>をそれぞれ1マスにしています。2人とも対象に含まれるときは2人と数えます。</p>
-<h3>11候補・55組の計算</h3><p>1人は11人から1人を選ぶので11候補。2人は <b>11×10÷2＝55組</b>。同じ組を逆順で2回数えるため2で割ります。最初の提出の対象IDは5人なので、2人のケースは0人なら6×5÷2＝15組、1人なら5×6＝30組、2人なら5×4÷2＝10組です。</p><p>次の数は、前の提出まで残った候補のうち、今回の人数にも合うものを数えます。途中で候補が1つになっても、この画面では決めておいた5枚をすべて使います。</p>
+<h3>提出ごとの横6桁を、チームごとの縦5桁にする</h3><p>提出1回につき、希少平均点を保存された対応表で6チームの人数に復号します。横の6桁は同じ提出の6チーム分です。この行を5回分並べ、1チームの列を上から読むと、そのチームだけの5回の人数になります。右には11人それぞれの5回分の0・1を並べます。所属1人なら1人の模様、所属2人なら選んだ2人の模様を各桁で足して、この縦5桁と比べます。</p><p>所属1人のチームでは0・1、所属2人のチームでは0・1・2を使います。横6桁も縦5桁も桁ごとの人数であり、2人のときの2を1に丸めません。正解レコードを変えると、他チームの例も同じ人が重複しないように調整します。提出の対象IDと点数の設定は固定です。</p>
+<h3>11人の模様を足して見る</h3><p>1レコードにつき、提出1〜5の対象に入るなら1、対象外なら0という5桁の模様があります。2人なら2つの模様を各桁で足します。例えばID 47の01011とID 76の10111を足すと11122です。1＋1は2と数えます。</p><p>各レコードを押すと比較する相手を選べます。この選択はチームの人数列を変えません。「正解レコード（説明用）」を変えたときだけ、説明例の人数列を更新します。「一致するIDを選ぶ」は、5回の人数に合う1人または2人を照合して選びます。</p><p>選んだ1人または2人の模様が、重ねる操作で合計の欄へ移動します。その合計とチームの縦5桁を1提出ずつ比べ、全5桁が合うと選んだレコードが緑になります。55は2人の選び方の数で、55枚のカードを並べる必要はありません。</p><h3>11候補・55組の計算</h3><p>1人は11人から1人を選ぶので11候補。2人は <b>11×10÷2＝55組</b>。同じ組を逆順で2回数えるため2で割ります。最初の提出の対象IDは5人なので、2人のケースは0人なら6×5÷2＝15組、1人なら5×6＝30組、2人なら5×4÷2＝10組です。</p><p>次の数は、前の提出まで残った候補のうち、今回の人数にも合うものを数えます。途中で候補が1つになっても、決めておいた5回分の数字をすべて照合します。</p>
 <div id="current-calculations"></div>
 <details><summary>固定された5回の提出と、11レコードの模様</summary><div class="scroll"><table><thead><tr><th>ID</th><th>提出1</th><th>提出2</th><th>提出3</th><th>提出4</th><th>提出5</th></tr></thead><tbody><tr><td>47</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-one">1</td></tr><tr><td>76</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-one">1</td></tr><tr><td>90</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-zero">0</td></tr><tr><td>115</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td></tr><tr><td>169</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td></tr><tr><td>264</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td></tr><tr><td>304</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td></tr><tr><td>383</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td></tr><tr><td>462</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td></tr><tr><td>495</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-one">1</td></tr><tr><td>675</td><td class="code-one">1</td><td class="code-one">1</td><td class="code-zero">0</td><td class="code-zero">0</td><td class="code-zero">0</td></tr></tbody></table></div><p>各IDには、各提出の対象に含まれるなら1、対象外なら0という5桁の模様があります。1人ならその模様、2人なら2人分を各桁で足した0・1・2の模様が人数になります。11人の模様はすべて異なり、55組を足した模様もすべて異なることを確認しています。</p></details>
 <details><summary>全体の2,494,800配置と、平均点216種類</summary><p>6 Team全体の配置は、11人から重複なく1・2・1・2・1・2人を選ぶので <b>11×45×8×21×5×6＝2,494,800</b>。残る2人は対象6 Team外です。</p><p>1人のTeam3つは0・1の各2通り、2人のTeam3つは0・1・2の各3通りなので、平均点対応表の回答は <b>2³×3³＝216種類</b>。この数は残る候補数とは異なります。</p></details>
 <details><summary>実際の平均点から6 Teamを照合する</summary><p>この教材の固定セットに対する照合です。実際の提出設定との対応は提出資料で確認してください。対象となる5人のIDを高側にし、既知非所属IDで高側合計をTeam順に6・7・7・11・10・12人へ調整します。追加人数は毎回1・2・2・6・5・7人です。</p><div class="scroll"><table><thead><tr><th>Team</th><th>候補の選択数</th><th>追加する既知非所属ID</th><th>高側合計</th></tr></thead><tbody><tr><td>6</td><td>5人</td><td>126（1人）</td><td>6人</td></tr><tr><td>10</td><td>5人</td><td>126・136（2人）</td><td>7人</td></tr><tr><td>11</td><td>5人</td><td>126・136（2人）</td><td>7人</td></tr><tr><td>16</td><td>5人</td><td>126・136・271・273・317・440（6人）</td><td>11人</td></tr><tr><td>17</td><td>5人</td><td>126・136・271・273・317（5人）</td><td>10人</td></tr><tr><td>25</td><td>5人</td><td>126・136・271・273・317・440・480（7人）</td><td>12人</td></tr></tbody></table></div><p>高側confidenceは0.4、その他の希少行は0.1。生のmia.tpr_rareの全桁を入力します。</p><div class="controls"><button id="fixed-demo">説明用の平均点を入れる</button><button id="fixed-clear">入力を消す</button><button id="fixed-export">照合結果を保存</button></div><p id="fixed-status" role="status"></p><div id="fixed-error" class="fixed-error" role="alert" hidden></div><div class="scroll"><table class="fixed-input-grid"><thead><tr><th>提出</th><th>調べる候補ID</th><th>希少平均点</th><th>復号</th></tr></thead><tbody><tr data-fixed-round="1" data-query="1330"><td>1</td><td>76・169・264・462・675</td><td><input id="fixed-mean-1" aria-label="提出1の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-1">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-1" class="small">未入力</td></tr><tr data-fixed-round="2" data-query="1069"><td>2</td><td>47・90・115・264・675</td><td><input id="fixed-mean-2" aria-label="提出2の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-2">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-2" class="small">未入力</td></tr><tr data-fixed-round="3" data-query="678"><td>3</td><td>76・90・264・383・495</td><td><input id="fixed-mean-3" aria-label="提出3の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-3">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-3" class="small">未入力</td></tr><tr data-fixed-round="4" data-query="87"><td>4</td><td>47・76・90・169・304</td><td><input id="fixed-mean-4" aria-label="提出4の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-4">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-4" class="small">未入力</td></tr><tr data-fixed-round="5" data-query="779"><td>5</td><td>47・76・115・462・495</td><td><input id="fixed-mean-5" aria-label="提出5の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-5">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-5" class="small">未入力</td></tr></tbody></table></div><div id="fixed-results"></div></details>
-<details><summary>検証資料・詳しい説明</summary><p>この固定セットは <a href="nonadaptive_code.json">nonadaptive_code.json</a> に記録しています。全11人・55組の回答列と、216平均点を照合した構成です。過去の固定案を復元したものではありません。</p><p><a href="MIA_5query_reference.html">非適応版の詳しい資料</a> ／ <a href="MIA_5query_adaptive.html">従来の適応5回版</a> ／ <a href="MIA_4query_tree.html">適応4回版</a>。本HTMLは単体で動き、追加データの読み込みは不要です。</p><p class="source-note">保証は単独Teamの11候補・55組の一意性と、保存された平均点対応表を合成したものです。全2,494,800配置をこの画面で再生した検証とは区別しています。提出CSVは生成しません。</p></details>
+<details><summary>検証資料・詳しい説明</summary><p>この固定セットは <a href="nonadaptive_code.json">nonadaptive_code.json</a> に記録しています。全11人・55組の回答列と、216平均点を照合した構成です。過去の固定案を復元したものではありません。</p><p><a href="MIA_5query_pairs.html">2人組を55マスで見る旧表示</a> ／ <a href="MIA_5query_reference.html">非適応版の詳しい資料</a> ／ <a href="MIA_5query_adaptive.html">従来の適応5回版</a> ／ <a href="MIA_4query_tree.html">適応4回版</a>。本HTMLは単体で動き、追加データの読み込みは不要です。</p><p class="source-note">保証は単独Teamの11候補・55組の一意性と、保存された平均点対応表を合成したものです。全2,494,800配置をこの画面で再生した検証とは区別しています。提出CSVは生成しません。</p></details>
 </div></section></div>
 <script>/* Pure navigation of the certified tree. No network, DOM, or submission writes. */
 (function (root, factory) {
@@ -330,16 +337,18 @@
 });
 </script><script id="fixed-data" type="application/json">{"ids":[47,76,90,115,169,264,304,383,462,495,675],"query_masks":[1330,1069,678,87,779],"codewords":[26,29,14,18,9,7,8,4,17,20,3],"teams":[6,10,11,16,17,25],"caps":[1,2,1,2,1,2],"high":[6,7,7,11,10,12],"negative_ids":[126,136,271,273,317,440,480,625,637,643,668,814,841],"padding_counts":[1,2,2,6,5,7],"encoding":{"total_high":[6,7,7,11,10,12],"integer_gap":4004,"integer_values":{"0":0,"243":360360,"486":792792,"81":920920,"324":1281280,"567":1713712,"27":396396,"270":756756,"513":1189188,"108":1317316,"351":1677676,"594":2110108,"54":880880,"297":1241240,"540":1673672,"135":1801800,"378":2162160,"621":2594592,"9":1381380,"252":1741740,"495":2174172,"90":2302300,"333":2662660,"576":3095092,"36":1777776,"279":2138136,"522":2570568,"117":2698696,"360":3059056,"603":3491488,"63":2262260,"306":2622620,"549":3055052,"144":3183180,"387":3543540,"630":3975972,"3":660660,"246":1021020,"489":1453452,"84":1581580,"327":1941940,"570":2374372,"30":1057056,"273":1417416,"516":1849848,"111":1977976,"354":2338336,"597":2770768,"57":1541540,"300":1901900,"543":2334332,"138":2462460,"381":2822820,"624":3255252,"12":2042040,"255":2402400,"498":2834832,"93":2962960,"336":3323320,"579":3755752,"39":2438436,"282":2798796,"525":3231228,"120":3359356,"363":3719716,"606":4152148,"66":2922920,"309":3283280,"552":3715712,"147":3843840,"390":4204200,"633":4636632,"6":1585584,"249":1945944,"492":2378376,"87":2506504,"330":2866864,"573":3299296,"33":1981980,"276":2342340,"519":2774772,"114":2902900,"357":3263260,"600":3695692,"60":2466464,"303":2826824,"546":3259256,"141":3387384,"384":3747744,"627":4180176,"15":2966964,"258":3327324,"501":3759756,"96":3887884,"339":4248244,"582":4680676,"42":3363360,"285":3723720,"528":4156152,"123":4284280,"366":4644640,"609":5077072,"69":3847844,"312":4208204,"555":4640636,"150":4768764,"393":5129124,"636":5561556,"1":1657656,"244":2018016,"487":2450448,"82":2578576,"325":2938936,"568":3371368,"28":2054052,"271":2414412,"514":2846844,"109":2974972,"352":3335332,"595":3767764,"55":2538536,"298":2898896,"541":3331328,"136":3459456,"379":3819816,"622":4252248,"10":3039036,"253":3399396,"496":3831828,"91":3959956,"334":4320316,"577":4752748,"37":3435432,"280":3795792,"523":4228224,"118":4356352,"361":4716712,"604":5149144,"64":3919916,"307":4280276,"550":4712708,"145":4840836,"388":5201196,"631":5633628,"4":2318316,"247":2678676,"490":3111108,"85":3239236,"328":3599596,"571":4032028,"31":2714712,"274":3075072,"517":3507504,"112":3635632,"355":3995992,"598":4428424,"58":3199196,"301":3559556,"544":3991988,"139":4120116,"382":4480476,"625":4912908,"13":3699696,"256":4060056,"499":4492488,"94":4620616,"337":4980976,"580":5413408,"40":4096092,"283":4456452,"526":4888884,"121":5017012,"364":5377372,"607":5809804,"67":4580576,"310":4940936,"553":5373368,"148":5501496,"391":5861856,"634":6294288,"7":3243240,"250":3603600,"493":4036032,"88":4164160,"331":4524520,"574":4956952,"34":3639636,"277":3999996,"520":4432428,"115":4560556,"358":4920916,"601":5353348,"61":4124120,"304":4484480,"547":4916912,"142":5045040,"385":5405400,"628":5837832,"16":4624620,"259":4984980,"502":5417412,"97":5545540,"340":5905900,"583":6338332,"43":5021016,"286":5381376,"529":5813808,"124":5941936,"367":6302296,"610":6734728,"70":5505500,"313":5865860,"556":6298292,"151":6426420,"394":6786780,"637":7219212},"mean_denominator":216216000,"minimum_gap_exact":"1/54000","minimum_gap":1.8518518518518518e-05,"responses":216,"rare_total":24,"mean_teams":6,"caps":[1,2,1,2,1,2],"legal_padding_rule":"For normalized nonzero query: total_high[t]-popcount(query[t]); for zero query: min(total_high[t],13).","query_normalization":"Complement any 11-bit query having more than 5 selected candidates; relabel its count h to caps[t]-h."},"lesson_defaults":{"1":128,"2":3},"demo_masks":[128,3,4,24,32,320],"provenance":{"kind":"new_construction","description_ja":"今回新たに列挙して検証した固定5質問の構成です。過去の保存資料から復元した固定質問案ではありません。","construction":"11 distinct 5-bit codewords; all 55 coordinatewise integer sums of two different codewords are distinct. Each question is selected by one bit position, least significant bit first."}}</script><script>'use strict';
 const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MIA_FIXED,shared=MIA_TREE,ids=data.ids,pop=five.popcount;
-/* Compact lesson: the same five investigation sets, with movable transparent sheets. */
+/* Eleven record patterns; add one or two selected records and compare with a Team. */
 (function () {
   'use strict';
   const el = id => document.getElementById(id);
-  const all = cap => five.candidates(cap);
+  const all = capacity => five.candidates(capacity);
   const label = mask => shared.maskIDs(mask, ids).join('・');
-  const unit = cap => cap === 1 ? '候補' : '組';
+  const unit = capacity => capacity === 1 ? '候補' : '組';
+  const pattern = id => data.query_masks.map(query => Number(Boolean(query & (1 << ids.indexOf(id)))));
   const masks = {...data.lesson_defaults};
   let pairOrder = shared.maskIDs(masks[2], ids);
-  let cap = 1, depth = 0, playing = false, epoch = 0;
+  let cap = 1, depth = 0, playing = false, epoch = 0, merged = false;
+  let trialIDs = shared.maskIDs(masks[cap], ids);
   const reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   function trace(capacity, member) {
     if (!all(capacity).includes(member)) throw Error('正解レコードの人数が一致しません。');
@@ -358,36 +367,35 @@ const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MI
     const rows = trace(capacity, member);
     return all(capacity).filter(candidate => rows.slice(0, count).every(row => pop(candidate & row.query) === row.hit));
   }
+  function trialSnapshot() {
+    const signatures = trialIDs.map(pattern);
+    const sum = data.query_masks.map((_, r) => signatures.reduce((n, bits) => n + bits[r], 0));
+    const target = data.query_masks.map(query => pop(query & masks[cap]));
+    const complete = trialIDs.length === cap, matches = sum.map((n, r) => n === target[r]);
+    return {selectedIDs: trialIDs.slice(), signatures, sum, target, complete, matches,
+      allMatch: complete && matches.every(Boolean), merged, comparedCount: depth};
+  }
   function geometry(height) {
-    const h = Math.max(0, Number(height) || 0), gap = Math.min(h / 30, h < 350 ? 4 : 6);
-    const cardHeight = (h - gap * 5) / 6;
-    return {height: h, gap, cardHeight, positions: Array.from({length: 6}, (_, i) => i * (cardHeight + gap)), target: 5 * (cardHeight + gap)};
+    const h = Math.max(0, Number(height) || 0), gap = Math.min(h / 20, 4), cardHeight = (h - 2 * gap) / 3;
+    return {height: h, gap, cardHeight, positions: [0, cardHeight + gap, 2 * (cardHeight + gap)], target: 2 * (cardHeight + gap)};
   }
   function place(reflow = false) {
-    const layout = geometry(el('card-stage').clientHeight || 400);
-    for (let i = 0; i < 5; i++) {
-      const card = el(`glass-card-${i + 1}`);
-      card.classList.toggle('reflow', reflow);
-      card.classList.toggle('merged', i < depth);
+    const layout = geometry(el('overlay-stage').clientHeight || 108);
+    for (let i = 0; i < 2; i++) {
+      const card = el(`floating-record-${i + 1}`);
+      card.hidden = !trialIDs[i];
+      card.classList.toggle('reflow', reflow); card.classList.toggle('merged', merged);
       card.style.height = `${layout.cardHeight}px`;
-      card.style.transform = `translateY(${i < depth ? layout.target : layout.positions[i]}px)`;
-      card.setAttribute('data-merged', i < depth ? '1' : '0');
+      card.style.transform = `translateY(${merged ? layout.target : layout.positions[i]}px)`;
+      card.setAttribute('data-merged', merged ? '1' : '0');
     }
-    const base = el('merge-base');
-    base.classList.toggle('reflow', reflow);
-    base.style.height = `${layout.cardHeight}px`;
-    base.style.transform = `translateY(${layout.target}px)`;
+    const result = el('sum-result');
+    result.classList.toggle('reflow', reflow); result.style.height = `${layout.cardHeight}px`;
+    result.style.transform = `translateY(${layout.target}px)`;
     if (reflow && typeof requestAnimationFrame === 'function') requestAnimationFrame(() => {
-      for (let i = 1; i <= 5; i++) el(`glass-card-${i}`).classList.remove('reflow');
-      base.classList.remove('reflow');
+      for (let i = 1; i <= 2; i++) el(`floating-record-${i}`).classList.remove('reflow');
+      result.classList.remove('reflow');
     });
-  }
-  function cells(rows, sheet) {
-    return all(cap).map(candidate => {
-      const pass = sheet === undefined ? rows.slice(0, depth).every(row => pop(candidate & row.query) === row.hit)
-        : pop(candidate & rows[sheet].query) === rows[sheet].hit;
-      return `<div class="sheet-cell ${pass ? 'fits' : 'blocked'}${candidate === masks[cap] ? ' current' : ''}" data-member="${candidate}" data-pass="${pass ? 1 : 0}" title="ID ${label(candidate)}：${pass ? '人数に一致' : '人数に不一致'}"><span class="cell-label">${shared.maskIDs(candidate, ids).join('＋')}</span></div>`;
-    }).join('');
   }
   function pickers() {
     const selected = cap === 2 ? pairOrder : shared.maskIDs(masks[cap], ids);
@@ -399,61 +407,88 @@ const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MI
     el('answer-record-2-wrap').hidden = cap !== 2;
   }
   function render() {
-    const rows = trace(cap, masks[cap]), kept = remaining(cap, masks[cap], depth);
-    [1, 2].forEach(c => {el(c === 1 ? 'tab-single' : 'tab-pair').setAttribute('aria-selected', String(c === cap));});
+    const rows = trace(cap, masks[cap]), kept = remaining(cap, masks[cap], depth), state = trialSnapshot();
+    const solved = depth === 5 && state.allMatch;
+    [1, 2].forEach(c => el(c === 1 ? 'tab-single' : 'tab-pair').setAttribute('aria-selected', String(c === cap)));
     pickers();
-    rows.forEach((row, i) => {
-      const card = el(`glass-card-${i + 1}`), grid = el(`glass-grid-${i + 1}`);
-      card.setAttribute('data-query', String(row.query));
-      card.setAttribute('data-hit', String(row.hit));
-      card.setAttribute('aria-label', `提出${i + 1}：ID ${label(row.query)}を対象にする。この例は${row.hit}人。`);
-      el(`glass-meta-${i + 1}`).innerHTML = `<strong>提出${i + 1}</strong><span class="investigation-ids">対象ID：${label(row.query)}</span><span class="hit">${row.hit}人</span><span class="investigation-ids">${row.before.length} → ${row.after.length}</span>`;
-      grid.style.setProperty('--rows', cap === 1 ? '1' : '5');
-      grid.setAttribute('data-cap', String(cap));
-      grid.innerHTML = cells(rows, i);
-    });
-    const grid = el('merge-grid');
-    grid.style.setProperty('--rows', cap === 1 ? '1' : '5');
-    grid.setAttribute('data-cap', String(cap));
-    grid.innerHTML = cells(rows);
-    el('merge-base-title').textContent = depth ? `${depth}枚を重ねた色` : 'ここに重ねる';
-    el('merge-base-count').textContent = `残る ${kept.length}${unit(cap)}`;
-    el('merge-progress').textContent = `${depth} / 5枚`;
-    el('animate-all').textContent = playing ? '止める' : depth === 5 ? 'もう一度重ねる' : '順に重ねる';
-    el('merge-one').disabled = depth === 5;
+    el('record-deck').innerHTML = ids.map(id => {
+      const selected = trialIDs.includes(id), bits = pattern(id);
+      return `<button type="button" class="record-card${selected ? ' selected' : ''}${selected && solved ? ' solved' : ''}" data-record-id="${id}" data-signature="${bits.join('')}" aria-pressed="${selected}" aria-label="ID ${id}：提出1〜5の模様 ${bits.join('')}。${selected ? '比較から外す' : '比較に選ぶ'}"><b>ID ${id}</b>${bits.map((n, r) => `<span class="record-bit bit-${n}" data-round="${r}" data-value="${n}" title="提出${r + 1}の対象${n ? '内' : '外'}">${n}</span>`).join('')}</button>`;
+    }).join('');
+    el('trial-hint').textContent = `${cap}人を選ぶ → ${cap === 2 ? '各桁を足す' : 'その模様'} → 下の人数と比べる`;
+    for (let i = 0; i < 2; i++) {
+      const id = trialIDs[i], card = el(`floating-record-${i + 1}`);
+      card.innerHTML = id === undefined ? '' : `<b>ID ${id}</b>${pattern(id).map((n, r) => `<span class="floating-bit bit-${n}" data-round="${r}">${n}</span>`).join('')}`;
+      card.setAttribute('aria-label', id === undefined ? '未選択' : `選んだID ${id}の模様 ${pattern(id).join('')}`);
+    }
+    el('sum-result').innerHTML = '<b>合計</b>' + state.sum.map((n, r) => {
+      const checked = state.complete && r < depth, okay = checked && state.matches[r];
+      return `<span class="sum-bit ${checked ? okay ? 'match' : 'mismatch' : 'waiting'}" data-round="${r}" data-value="${n}" data-checked="${checked ? 1 : 0}" data-match="${checked ? okay ? 1 : 0 : ''}">${merged && state.complete ? n : '·'}<small>${checked ? okay ? '✓' : '×' : ''}</small></span>`;
+    }).join('');
+    el('target-row').innerHTML = '<b>チームの<br>縦5桁</b>' + state.target.map((n, r) => `<span class="target-bit" data-round="${r}" data-value="${n}">${n}</span>`).join('');
+    const equation = state.signatures.map(bits => bits.join('')).join(' ＋ ');
+    if (!state.complete) el('trial-status').textContent = `あと${cap - trialIDs.length}人選んでください。チームの結果は変わりません。`;
+    else if (solved) el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。5回とも一致 → ID ${trialIDs.join('＋')}`;
+    else if (depth === 5) el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。提出${state.matches.map((okay, r) => okay ? null : r + 1).filter(Boolean).join('・')}が不一致です。別の${cap === 2 ? '2人' : '1人'}を選べます。`;
+    else el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。${depth ? `${depth}回分を照合しました。` : '重ねると合計が下の欄へ移動します。'}`;
+    el('trial-status').classList.toggle('solved', solved);
+    el('merge-progress').textContent = `${depth} / 5提出`;
+    el('animate-all').textContent = playing ? '止める' : depth === 5 ? 'もう一度重ねる' : '選んだ模様を重ねる';
+    el('animate-all').disabled = !state.complete;
+    el('merge-one').disabled = !state.complete || depth === 5;
     el('unmerge-one').disabled = depth === 0;
-    el('spread-all').disabled = depth === 0 && !playing;
-    el('summary-result').textContent = kept.length === 1 ? `残る1枚：ID ${label(kept[0])}` : `${kept.length}${unit(cap)}が残っています`;
-    el('summary-note').textContent = depth === 0 ? '各カードはその提出だけの条件。重ねると、すべてに合う位置が残ります。' : depth === 5 ? '5回とも人数が一致する位置が緑です。正解レコードを変えて試せます。' : `提出1〜${depth}の人数にすべて合う位置が緑です。`;
+    el('spread-all').disabled = depth === 0 && !merged && !playing;
+    el('summary-result').textContent = `${kept.length}${unit(cap)}が人数列に一致`;
+    el('summary-note').textContent = `11枚は各人の模様。${cap === 2 ? '55は2人の組み合わせの数です。' : '1人の模様を、そのまま比べます。'}`;
     el('count-path').textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
-    el('current-calculations').innerHTML = `<p>選んだ正解：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の提出まで残った候補を、提出の対象集合に何人入るかで分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
+    el('current-calculations').innerHTML = `<p>説明例の所属：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の提出まで残った候補を、提出の対象集合に何人入るかで分けます。対象ID：${label(row.query)}</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
     place();
     if (globalThis.MIA_FIXED_OVERVIEW) globalThis.MIA_FIXED_OVERVIEW.fromLesson({cap, member: masks[cap], depth});
   }
   function stop() {epoch++; playing = false;}
+  function resetComparison() {depth = 0; merged = false;}
+  function setTrial(selected) {
+    if (!Array.isArray(selected) || selected.length > cap || new Set(selected).size !== selected.length || selected.some(id => !ids.includes(id))) throw Error('人数分まで、異なる候補IDを選んでください。');
+    stop(); trialIDs = selected.slice(); resetComparison(); render(); place(true);
+  }
+  function chooseTrial(id) {
+    const next = trialIDs.slice(), index = next.indexOf(id);
+    if (index >= 0) next.splice(index, 1);
+    else {if (next.length === cap) next.shift(); next.push(id);}
+    setTrial(next);
+  }
+  function findMatching() {
+    const hits = trialSnapshot().target;
+    const matches = all(cap).filter(member => data.query_masks.every((query, r) => pop(member & query) === hits[r]));
+    if (matches.length !== 1) throw Error('人数列に一致する所属が一意に決まりません。');
+    setTrial(shared.maskIDs(matches[0], ids));
+  }
   function setTab(value) {
     if (![1, 2].includes(value)) throw Error('人数は1人か2人です。');
-    stop(); cap = value; depth = 0; el('lesson-error').hidden = true; render(); place(true);
+    stop(); cap = value; resetComparison(); trialIDs = shared.maskIDs(masks[cap], ids);
+    el('lesson-error').hidden = true; render(); place(true);
   }
   function setAnswer(capacity, member, order) {
     if (!all(capacity).includes(member)) throw Error('異なる正解レコードを人数分選んでください。');
     if (capacity === 2) pairOrder = order || shared.maskIDs(member, ids);
-    stop(); masks[capacity] = member; cap = capacity; depth = 0; el('lesson-error').hidden = true; render(); place(true);
+    stop(); masks[capacity] = member; cap = capacity; resetComparison(); trialIDs = shared.maskIDs(member, ids);
+    el('lesson-error').hidden = true; render(); place(true);
   }
   function setDepth(value) {
-    if (!Number.isInteger(value) || value < 0 || value > 5) throw Error('重ねる枚数は0〜5です。');
-    stop(); depth = value; render();
+    if (!Number.isInteger(value) || value < 0 || value > 5) throw Error('照合する提出数は0〜5です。');
+    if (value && !trialSnapshot().complete) throw Error('比較するレコードを人数分選んでください。');
+    stop(); depth = value; merged = value > 0; render();
   }
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   async function animateAll() {
     if (playing) {stop(); render(); return;}
+    if (!trialSnapshot().complete) return;
     stop(); const ticket = epoch; playing = true;
-    if (depth === 5) {depth = 0; render(); await delay(reduced ? 20 : 920);}
+    if (depth === 5 || merged) {resetComparison(); render(); await delay(reduced ? 20 : 920);}
     if (ticket !== epoch) return;
-    render();
-    while (depth < 5 && ticket === epoch) {
-      depth++; render(); await delay(reduced ? 90 : 1020);
-    }
+    merged = true; render(); await delay(reduced ? 20 : 920);
+    if (ticket !== epoch) return;
+    while (depth < 5 && ticket === epoch) {depth++; render(); await delay(reduced ? 60 : 240);}
     if (ticket === epoch) {playing = false; render();}
   }
   function chooseRecords() {
@@ -463,21 +498,17 @@ const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MI
       setAnswer(cap, (1 << one) | (cap === 2 ? 1 << two : 0), cap === 2 ? [ids[one], ids[two]] : undefined);
     } catch (error) {el('lesson-error').textContent = error.message; el('lesson-error').hidden = false; pickers();}
   }
-  el('tab-single').onclick = () => setTab(1);
-  el('tab-pair').onclick = () => setTab(2);
-  el('answer-record-1').onchange = chooseRecords;
-  el('answer-record-2').onchange = chooseRecords;
-  el('animate-all').onclick = animateAll;
-  el('merge-one').onclick = () => setDepth(Math.min(5, depth + 1));
-  el('unmerge-one').onclick = () => setDepth(Math.max(0, depth - 1));
-  el('spread-all').onclick = () => setDepth(0);
+  el('record-deck').onclick = event => {const target = event.target.closest('[data-record-id]'); if (target) chooseTrial(Number(target.dataset.recordId));};
+  el('find-matching').onclick = findMatching;
+  el('tab-single').onclick = () => setTab(1); el('tab-pair').onclick = () => setTab(2);
+  el('answer-record-1').onchange = chooseRecords; el('answer-record-2').onchange = chooseRecords;
+  el('animate-all').onclick = animateAll; el('merge-one').onclick = () => setDepth(Math.min(5, depth + 1));
+  el('unmerge-one').onclick = () => setDepth(Math.max(0, depth - 1)); el('spread-all').onclick = () => setDepth(0);
   function help(open) {
     el('help-overlay').hidden = !open;
-    const button = el(open ? 'close-help' : 'open-help');
-    if (typeof button.focus === 'function') button.focus();
+    const button = el(open ? 'close-help' : 'open-help'); if (typeof button.focus === 'function') button.focus();
   }
-  el('open-help').onclick = () => help(true);
-  el('close-help').onclick = () => help(false);
+  el('open-help').onclick = () => help(true); el('close-help').onclick = () => help(false);
   el('help-overlay').onclick = event => {if (event.target === el('help-overlay')) help(false);};
   document.addEventListener('keydown', event => {
     if (el('help-overlay').hidden) return;
@@ -489,9 +520,9 @@ const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MI
       else if (!event.shiftKey && document.activeElement === last) {event.preventDefault(); first.focus();}
     }
   });
-  if (typeof ResizeObserver === 'function') new ResizeObserver(() => place(true)).observe(el('card-stage'));
+  if (typeof ResizeObserver === 'function') new ResizeObserver(() => place(true)).observe(el('overlay-stage'));
   else if (typeof addEventListener === 'function') addEventListener('resize', () => place(true));
-  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, geometry, setTab, setAnswer, setDepth, animateAll, stop, render, place,
+  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, geometry, setTab, setAnswer, setTrial, trialSnapshot, setDepth, animateAll, stop, render, place,
     values: () => ({cap, depth, masks: {...masks}, playing})});
   render(); place(true);
 })();
@@ -621,12 +652,12 @@ const data=JSON.parse(document.getElementById('fixed-data').textContent),five=MI
     el('overview-table').innerHTML = table;
     const r = selectedRound, t = selectedTeam, sequence = state.columns[t].join('');
     el('row-reader').innerHTML = `<b>横 → 提出${r + 1}：</b><code>${state.rowSequences[r]}</code>（6チーム分）<span class="mean-detail">希少平均点（説明用）${state.meanFractions[r]} → 6チームの人数</span>`;
-    el('column-reader').innerHTML = `<b>縦 ↓ Team ${data.teams[t]}：</b><code>${state.columns[t].join(' ↓ ')}</code><br><span class="vertical-arrow">5回分 <code>${sequence}</code> → ID ${label(state.decodedMembers[t])} → 右の5枚</span>`;
-    el('selected-team-caption').textContent = `② Team ${data.teams[t]}の縦5桁 ${sequence} を重ねる`;
+    el('column-reader').innerHTML = `<b>縦 ↓ Team ${data.teams[t]}：</b><code>${state.columns[t].join(' ↓ ')}</code><br><span class="vertical-arrow">5回分 <code>${sequence}</code> → ID ${label(state.decodedMembers[t])} → 右の11人の模様</span>`;
+    el('selected-team-caption').textContent = `② Team ${data.teams[t]}の縦5桁 ${sequence} と模様を比べる`;
     el('lesson-workspace').setAttribute('data-view', view);
     el('show-overview').setAttribute('aria-pressed', String(view === 'overview'));
     el('show-cards').setAttribute('aria-pressed', String(view === 'cards'));
-    for (let i = 0; i < 5; i++) el(`glass-card-${i + 1}`).classList.toggle('row-focus', i === r);
+    for (let i = 0; i < 5; i++) el(`record-heading-${i + 1}`).classList.toggle('row-focus', i === r);
   }
   function fromLesson({cap, member, depth}) {
     selectedTeam = activeTeams[cap];
