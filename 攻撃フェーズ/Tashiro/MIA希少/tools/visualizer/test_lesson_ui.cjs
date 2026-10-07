@@ -8,7 +8,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '../..');
-const htmlPath = path.join(root, 'docs/visualizer/MIA_5query_cards.html');
+const htmlPath = path.join(root, 'docs/visualizer/MIA_5query_adaptive.html');
 const html = fs.readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length, 5);

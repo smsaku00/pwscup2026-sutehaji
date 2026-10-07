@@ -42,7 +42,7 @@ def main():
     if any(p in html for p in ['/*__SHARED_CORE__*/', '/*__FIVE_CORE__*/', '/*__DATA__*/', '/*__LESSON_UI__*/']):
         raise ValueError('missing source placeholder')
     DEST.mkdir(exist_ok=True)
-    output = DEST / 'MIA_5query_cards.html'
+    output = DEST / 'MIA_5query_adaptive.html'
     output.write_text(html, encoding='utf-8')
     report = {'html_bytes': output.stat().st_size,
               'html_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
@@ -52,7 +52,7 @@ def main():
               'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
                                'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                               for p in [PROOF, encoding_path, padding_path]]}
-    (DEST / 'size_report_5query.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (DEST / 'size_report_5query_adaptive.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({k: v for k, v in report.items() if k != 'source_files'}, ensure_ascii=False))
 
 

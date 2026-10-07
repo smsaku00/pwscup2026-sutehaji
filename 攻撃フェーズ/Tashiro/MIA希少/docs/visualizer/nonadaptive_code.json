@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "strategy": "nonadaptive",
+  "question_count": 5,
+  "provenance": {
+    "kind": "new_construction",
+    "description_ja": "今回新たに列挙して検証した固定5質問の構成です。過去の保存資料から復元した固定質問案ではありません。",
+    "construction": "11 distinct 5-bit codewords; all 55 coordinatewise integer sums of two different codewords are distinct. Each question is selected by one bit position, least significant bit first."
+  },
+  "candidate_ids": [
+    47,
+    76,
+    90,
+    115,
+    169,
+    264,
+    304,
+    383,
+    462,
+    495,
+    675
+  ],
+  "codewords": [
+    26,
+    29,
+    14,
+    18,
+    9,
+    7,
+    8,
+    4,
+    17,
+    20,
+    3
+  ],
+  "query_masks": [
+    1330,
+    1069,
+    678,
+    87,
+    779
+  ],
+  "query_ids": [
+    [
+      76,
+      169,
+      264,
+      462,
+      675
+    ],
+    [
+      47,
+      90,
+      115,
+      264,
+      675
+    ],
+    [
+      76,
+      90,
+      264,
+      383,
+      495
+    ],
+    [
+      47,
+      76,
+      90,
+      169,
+      304
+    ],
+    [
+      47,
+      76,
+      115,
+      462,
+      495
+    ]
+  ],
+  "team_order": [
+    6,
+    10,
+    11,
+    16,
+    17,
+    25
+  ],
+  "caps": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "total_high": [
+    6,
+    7,
+    7,
+    11,
+    10,
+    12
+  ],
+  "padding_counts": [
+    1,
+    2,
+    2,
+    6,
+    5,
+    7
+  ],
+  "signature_rule": "For question k, count members in the fixed selected set. Pair signatures are coordinatewise integer sums, not bitwise OR.",
+  "confidence": {
+    "high": 0.4,
+    "other_rare": 0.1
+  },
+  "demo_membership_masks": {
+    "1": 128,
+    "2": 3
+  },
+  "demo_is_hypothetical": true,
+  "guarantee": {
+    "one_member_states": 11,
+    "two_member_states": 55,
+    "max_fixed_questions": 5,
+    "composition_covers_disjoint_states": 2494800,
+    "basis": "Exhaustive per-capacity signature uniqueness plus the independently verified 216-pattern mean-score encoding; the 2,494,800 joint placements are covered compositionally, not replayed one by one."
+  },
+  "joint_demo_membership_masks": [
+    128,
+    3,
+    4,
+    24,
+    32,
+    320
+  ]
+}

@@ -1,21 +1,27 @@
 {
-  "html_bytes": 67765,
-  "html_sha256": "ce3284703dd06f457ff556d63f366473992059bf539901c01c4016f1ac746d8a",
-  "format": "single offline HTML with both complete per-team policies",
+  "strategy": "nonadaptive",
+  "html_bytes": 60018,
+  "html_sha256": "9658be66f805bf5012f31a516c885e36b5da9641820fc1671c19584a0dfadb19",
+  "format": "single offline HTML with five unchanged questions",
   "single_team_states": [
     11,
     55
   ],
   "single_team_max_depth": [
-    4,
+    5,
     5
   ],
-  "guarantee_method": "単独Team全候補のreplayと216平均点の全列挙。6Team全配置はこの2つを合成して保証する。",
+  "guarantee_method": "Exhaustive per-capacity signature uniqueness plus the independently verified 216-pattern mean-score encoding; the 2,494,800 joint placements are covered compositionally, not replayed one by one.",
+  "provenance": {
+    "kind": "new_construction",
+    "description_ja": "今回新たに列挙して検証した固定5質問の構成です。過去の保存資料から復元した固定質問案ではありません。",
+    "construction": "11 distinct 5-bit codewords; all 55 coordinatewise integer sums of two different codewords are distinct. Each question is selected by one bit position, least significant bit first."
+  },
   "source_files": [
     {
-      "path": "docs/検証資料/追加5回の全候補確認.json",
-      "bytes": 17944,
-      "sha256": "62e258ae05ce1cbe8dc5432d4a6c58f9d96066cded310856296ded07001e2747"
+      "path": "docs/visualizer/nonadaptive_code.json",
+      "bytes": 2168,
+      "sha256": "e715dbb0a955cfc4fc7347b0ec3f935c3e0af6c9badaf9b2c1e462f4c404e451"
     },
     {
       "path": "analysis/full_depth4_20261007/universal_score_encoding.json",
