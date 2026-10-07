@@ -5,7 +5,7 @@ import numpy as np
 import reference
 from model import *
 from solver import *
-from verify import verify, response
+from verify import verify, response, generate_states, state_hash, verify_certificate
 
 class Tests(unittest.TestCase):
     @classmethod
@@ -92,5 +92,50 @@ class Tests(unittest.TestCase):
             dest=np.zeros_like(sample)
             for t in range(6): dest[:,tm[t]]=lut[sample[:,t]]
             self.assertTrue(np.all(codes(dest,Q3)==transform_code(30,tm)))
+
+    def test_failure_core_and_scope(self):
+        e=ParentScreen(self.s);e.evaluate(Q4_30,early=True)
+        self.assertEqual(len(e.learned),1)
+        core=e.learned[0]
+        self.assertEqual(reference.domains(core['states'])[5],0)
+        self.assertIsNotNone(e.failure_cache.rejects(Q4_30,2,self.s))
+        self.assertIsNone(e.failure_cache.rejects(Q4_30,1,self.s))
+        # A core from a different node must never reject a smaller parent.
+        self.assertIsNone(e.failure_cache.rejects(Q4_30,2,core['states'][:1]))
+        before=len(e.failure_cache.entries)
+        e.failure_cache.add(self.s,2,Result(Status.UNKNOWN))
+        e.failure_cache.add(self.s,2,Result(Status.SAT))
+        self.assertEqual(len(e.failure_cache.entries),before)
+
+    def test_independent_state_generation_and_hash(self):
+        independent=generate_states(30)
+        self.assertEqual(set(independent),set(map(tuple,self.s.tolist())))
+        self.assertEqual(state_hash(independent),fingerprint(self.s))
+        b=self.parts[621];engine=Solver();ans=engine.solve(b,2)
+        data={'q3_code':30,'q4_query':list(Q4_30),'q4_outcome':621,
+              'state_hash':fingerprint(b),'depth':2,'tree':ans.tree}
+        self.assertEqual(verify_certificate(data)['verified_states'],len(b))
+        data['state_hash']='bad'
+        with self.assertRaises(ValueError):verify_certificate(data)
+        with self.assertRaises(ValueError):verify(b,{'terminal':True,'query':[0]*6},1)
+
+    def test_sample_generator_unknown_is_not_cached(self):
+        b=self.parts[273][:12]
+        e=Solver(sample_queries=16,query_budget=1)
+        ans=e.solve(b,2,seconds=5)
+        if ans.status==Status.SAT:verify(b,ans.tree,2)
+        if ans.status==Status.UNKNOWN:
+            self.assertNotIn((state_key(b),2),e.cache)
+
+    def test_transport_full_state_sets_and_small_witness(self):
+        from complete_witness import transform_rows,transform_tree,check_partitions
+        for target in (246,270):
+            pm,tm=next((pm,tm) for pm,tm in verified_q3_automorphisms() if transform_code(30,tm)==target)
+            dest=transform_rows(self.s,pm,tm)
+            self.assertEqual(set(map(tuple,dest.tolist())),set(generate_states(target)))
+            b=self.parts[621];ans=Solver().solve(b,2)
+            moved=transform_rows(b,pm,tm);tree=transform_tree(ans.tree,pm,tm)
+            check_partitions(b.tolist(),moved.tolist(),ans.tree,tree,tm)
+            self.assertEqual(verify(moved,tree,2),len(b))
 
 if __name__=='__main__': unittest.main(verbosity=2)

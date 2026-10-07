@@ -1,0 +1,27 @@
+{
+  "valid_cores": 12936,
+  "parent_states": 40428,
+  "parent_state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2",
+  "grid_replays": [
+    {
+      "fixed_query": [
+        432,
+        449,
+        939,
+        721,
+        392,
+        951
+      ],
+      "varying_team_indices": [
+        1,
+        3
+      ],
+      "independently_excluded": 1048524,
+      "total_candidates": 1048576,
+      "restricted_status": "UNKNOWN"
+    }
+  ],
+  "restricted_family_status": "UNKNOWN",
+  "overall_status": "UNKNOWN",
+  "seconds": 4.232861416996457
+}

@@ -114,18 +114,70 @@ def depth2_domains(states) -> list[int]:
     return out
 
 
+class FailureCache:
+    """Monotone, proved UNSAT subsets; UNKNOWN must never enter this cache.
+
+    A depth-d core contained in one query cell excludes that query at depth
+    d+1. Uniform-mask domains turn this into query-generation nogoods.
+    Exact row bytes/sets, rather than fingerprints, decide cache equality.
+    """
+    def __init__(self):
+        self.entries = []
+        self.keys = set()
+        self.hits = 0
+
+    def add(self, states, depth, result):
+        if result.status != Status.UNSAT:
+            return False
+        s = canonical_rows(states)
+        key = (state_key(s), int(depth))
+        if key in self.keys: return False
+        self.keys.add(key)
+        uniform = []
+        for t in range(6):
+            members = np.unique(s[:,t])
+            h = POPC[members[:,None] & MASKS[None,:]]
+            uniform.append(np.all(h == h[:1], axis=0))
+        self.entries.append({'states':s, 'rows':frozenset(map(tuple,s.tolist())),
+                             'depth':int(depth), 'reason':result.reason,
+                             'uniform':uniform})
+        return True
+
+    def contained(self, states, depth):
+        possible = [e for e in self.entries if e['depth'] == depth and len(e['states']) <= len(states)]
+        if not possible: return None
+        rows = frozenset(map(tuple,states.tolist()))
+        for e in possible:
+            if e['rows'] <= rows:
+                self.hits += 1
+                return e
+        return None
+
+    def rejects(self, query, child_depth, states=None):
+        q = [min(int(x), FULL ^ int(x)) for x in query]
+        rows = None if states is None else frozenset(map(tuple,states.tolist()))
+        for e in self.entries:
+            if (e['depth'] == child_depth and (rows is None or e['rows'] <= rows)
+                and all(e['uniform'][t][q[t]] for t in range(6))):
+                self.hits += 1
+                return e
+        return None
+
+
 class ParentScreen:
     """Amortize fixed-other-team fibers across many candidate parent queries.
 
     Result: all children pass a necessary depth-2 condition, NOT a solution.
     Warm reuse is per (team, mask), not only a repeat of the identical query.
     """
-    def __init__(self, states):
+    def __init__(self, states, failure_cache=None):
         self.states = canonical_rows(states)
         self.groups = [fiber_groups(self.states,t) for t in range(6)]
         self.memo = {}
         self.hits = 0
         self.misses = 0
+        self.failure_cache = failure_cache or FailureCache()
+        self.learned = []
 
     def constraints(self, t, q):
         q = min(int(q), FULL ^ int(q))  # same partition after complement
@@ -143,23 +195,52 @@ class ParentScreen:
                 if len(sub) <= 1: continue
                 allowed = fiber_valid(tuple(sorted(map(int,s[sub,t]))))
                 if allowed != ALL_QUERIES:
-                    cons.append((int(sub[0]),allowed))
+                    cons.append((int(sub[0]),allowed,sub))
         self.memo[key] = cons
         return cons
 
     def evaluate(self, query, early=False):
+        self.learned = []
         c = codes(self.states,query)
         counts = np.bincount(c,minlength=729)
         failures = []
         for t in range(6):
             allowed_by_child = {}
-            for row,bits in self.constraints(t,query[t]):
+            contributors = {}
+            for row,bits,ix in self.constraints(t,query[t]):
                 r = int(c[row])
                 if allowed_by_child.get(r,1) == 0: continue
                 value = allowed_by_child.get(r,ALL_QUERIES) & bits
                 allowed_by_child[r] = value
+                contributors.setdefault(r,[]).append((bits,ix))
                 if value == 0:
                     failures.append((r,t,int(counts[r])))
+                    # Remove redundant fibers, keeping an explicit small
+                    # subset whose exact valid-mask intersection is empty.
+                    core = contributors[r].copy()
+                    for j in range(len(core)-1,-1,-1):
+                        intersection = ALL_QUERIES
+                        for k,(b,_) in enumerate(core):
+                            if j != k: intersection &= b
+                        if intersection == 0: core.pop(j)
+                    # Shrinking within fibers strengthens the generation
+                    # nogood: more masks leave a smaller proved core intact.
+                    for j in range(len(core)):
+                        other = ALL_QUERIES
+                        for k,(b,_) in enumerate(core):
+                            if k != j: other &= b
+                        _,ix = core[j]
+                        for row in list(ix):
+                            trial = ix[ix != row]
+                            bits = fiber_valid(tuple(sorted(map(int,self.states[trial,t]))))
+                            if other & bits == 0:
+                                ix = trial;core[j] = (bits,ix)
+                    rows = np.unique(np.concatenate([x for _,x in core]))
+                    subset = self.states[rows]
+                    assert depth2_domains(subset)[t] == 0
+                    ans = Result(Status.UNSAT,reason=f'fixed-other-team depth-2 obstruction Team-index {t}')
+                    if self.failure_cache.add(subset,2,ans):
+                        self.learned.append(self.failure_cache.entries[-1])
                     if early: return failures,counts
         return sorted(failures),counts
 
@@ -198,12 +279,15 @@ def independent_witness_ok(states, query):
 
 class Solver:
     def __init__(self, beam_width=24, query_budget=96, node_limit=100000,
-                 exhaustive_product_limit=5000):
+                 exhaustive_product_limit=5000, sample_queries=0, seed_queries=None):
         self.beam_width = beam_width
         self.query_budget = query_budget
         self.node_limit = node_limit
         self.exhaustive_product_limit = exhaustive_product_limit
+        self.sample_queries = sample_queries
+        self.seed_queries = seed_queries or []
         self.cache = {}
+        self.failure_cache = FailureCache()
         self.cores = []  # negative one-query witnesses (exact state subsets)
         self.stats = {'nodes':0, 'cache_hits':0, 'last_query_calls':0,
                       'fiber_prunes':0, 'query_trials':0, 'core_prunes':0}
@@ -276,15 +360,60 @@ class Solver:
                     assert independent_witness_ok(s,witness)
                     result = Result(Status.SAT, {'query':witness,'terminal':True})
             self.cache[key] = result
+            self.failure_cache.add(s,1,result)
             return result
         except BudgetExceeded:
             return Result(Status.UNKNOWN, reason='time/node budget')
 
-    def candidates(self, states, domains, deadline):
+    def candidates(self, states, domains, deadline, child_depth=1):
+        parent_rows = frozenset(map(tuple,states.tolist()))
+        applicable = [e for e in self.failure_cache.entries
+                      if e['depth'] == child_depth and e['rows'] <= parent_rows]
+        def rejected(q):
+            return any(all(e['uniform'][t][min(int(q[t]),FULL^int(q[t]))]
+                           for t in range(6)) for e in applicable)
+        if self.sample_queries:
+            # A bounded alternative for large nodes: sample only exact fiber
+            # domains, then beam-order by complete-query minimax/sumsq. The
+            # local moves are a limited-discrepancy extension of the best seed.
+            # Inactive bits and response-label complements otherwise create
+            # many copies of the same q5 partition in the top beam.
+            masks = [[q for q,_ in query_options(states,t,domains[t])] for t in range(6)]
+            def score(q):
+                cnt = np.bincount(codes(states,q),minlength=729).astype(np.int64)
+                return int(cnt.max()),int(cnt@cnt)
+            if math.prod(map(len,masks)) <= self.exhaustive_product_limit:
+                return sorted((q for q in product(*masks) if not rejected(q)),key=score), True
+            rng = np.random.default_rng(int(fingerprint(states)[:16],16))
+            trials = set()
+            for q in self.seed_queries:
+                q = tuple(min(int(x),FULL^int(x)) for x in q)
+                if all(domains[t] >> q[t] & 1 for t in range(6)): trials.add(q)
+            for _ in range(self.sample_queries):
+                trials.add(tuple(int(rng.choice(m)) for m in masks))
+            check_deadline(deadline)
+            ranked = sorted((q for q in trials if not rejected(q)),key=score)
+            if ranked:
+                base = ranked[0];alternatives = []
+                for t in range(6):
+                    check_deadline(deadline)
+                    moves = []
+                    for m in masks[t]:
+                        q = list(base);q[t] = m;q = tuple(q)
+                        if not rejected(q): moves.append((score(q),m,q))
+                    moves.sort()
+                    alternatives.append([m for _,m,_ in moves if m != base[t]][:3])
+                    trials.update(q for _,_,q in moves[:4])
+                for t,u in combinations(range(6),2):
+                    for m,n in product(alternatives[t],alternatives[u]):
+                        q = list(base);q[t] = m;q[u] = n;trials.add(tuple(q))
+            ranked = sorted((q for q in trials if not rejected(q)),key=score)
+            return ranked[:self.query_budget], False
         opts = [query_options(states,t,domains[t]) for t in range(6)]
         count = math.prod(len(o) for o in opts)
         if count <= self.exhaustive_product_limit:
-            rows = [tuple(o[0] for o in selected) for selected in product(*opts)]
+            rows = [tuple(o[0] for o in selected) for selected in product(*opts)
+                    if not rejected(tuple(o[0] for o in selected))]
             def score(q):
                 cnt = np.bincount(codes(states,q),minlength=729).astype(np.int64)
                 return (int(cnt.max()),int(cnt@cnt))
@@ -296,6 +425,7 @@ class Solver:
             ranked = []; seen = set()
             for qs,base in current:
                 for q,labels in opts[t]:
+                    if t == 5 and rejected(qs+(q,)): continue
                     c = base*3 + labels.astype(np.int32)
                     # Canonicalize actual joint partition for deduplication.
                     _,first,inv = np.unique(c,return_index=True,return_inverse=True)
@@ -323,6 +453,10 @@ class Solver:
         key = (state_key(s),d)
         if key in self.cache:
             self.stats['cache_hits'] += 1; return self.cache[key]
+        core = self.failure_cache.contained(s,d)
+        if core is not None:
+            self.stats['core_prunes'] += 1
+            return Result(Status.UNSAT,reason='contains proved failure subproblem')
         if len(s) <= 1: return Result(Status.SAT, {'leaf':True})
         if d == 0: return Result(Status.UNSAT, reason='multiple states at depth zero')
         if d == 1: return self.last_query(s,deadline)
@@ -332,11 +466,16 @@ class Solver:
         if any(v == 0 for v in domains):
             self.stats['fiber_prunes'] += 1
             r = Result(Status.UNSAT, reason='fixed-other-team depth-2 obstruction')
-            self.cache[key] = r; return r
-        queries, exhaustive = self.candidates(s,domains,deadline)
+            self.cache[key] = r
+            self.failure_cache.add(s,d,r)
+            return r
+        queries, exhaustive = self.candidates(s,domains,deadline,d-1)
         unknown_seen = False
         for q in queries:
             check_deadline(deadline); self.stats['query_trials'] += 1
+            if self.failure_cache.rejects(q,d-1,s) is not None:
+                self.stats['core_prunes'] += 1
+                continue
             children = partition(s,q)
             if len(children) <= 1: continue
             children = sorted(children.items(),key=lambda kv:-len(kv[1]))
@@ -352,5 +491,7 @@ class Solver:
             unknown_seen |= this_unknown
         if exhaustive and not unknown_seen:
             result = Result(Status.UNSAT, reason='all query partitions exhausted')
-            self.cache[key] = result; return result
+            self.cache[key] = result
+            self.failure_cache.add(s,d,result)
+            return result
         return Result(Status.UNKNOWN, reason='bounded query generator exhausted')

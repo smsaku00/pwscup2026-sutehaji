@@ -81,3 +81,30 @@ CA-DL8.5は厳密DFSが初期に偏る問題を扱い、探索の制限を徐々
 - Karpelevitch, 2026-09-29 preprint, https://arxiv.org/abs/2609.38489
 
 次の改善は、今回高速化したscreenを使った**不可能部分状態の記録と再利用**、およびquery生成への制約フィードバックである。必要条件だけを通過した質問を採用せず、必ず完全なwitnessを独立検証する。
+
+## 続行結果：code30/246/270を完遂（2026-10-07）
+
+前半は初期試作・ベンチマーク時点の記録。続行でfailure subproblem cache、query生成へのUNSAT制約フィードバック、minimax/beam/LDS、q5 partition代表の重複除去、独立状態生成・移植checkerを追加した。
+
+code30の第4回 `[432,962,939,562,392,951]` で全208枝を解決し、246/270へ移植した。各40,428状態を独立replayし、q4最大bucket899、q5最大cell20、q5セル16,321個、衝突0・最大depth3を確認した。詳細と具体的な3枝のmaskは [完遂報告](../../docs/15_q3軌道30_246_270_6回完遂.md)。証拠は `../../analysis/code30_continuation_20261007/`。
+
+追加コード:
+
+- `continuation.py`: 2-Team gridと第3Teamのactive mask代表、失敗coreの禁止直積、minimax beam / rank-sum LDS。固定範囲の完全除外のみUNSAT。有界・未解決の場合はUNKNOWN。
+- `complete_witness.py`: 全q4枝のq5/q6構成、checkpoint再開、30→246/270移植、独立replay。singletonにもq6の具体的なゼロmaskを保存。
+- `verify.py`: solver/modelから独立した状態再生成・fingerprint・全state replay。`--source` で全状態集合と全query partitionの移植一致も確認。
+- `verify_failures.py`: scalar全maskループによるUNSAT core検算、禁止直積の全grid被覆検算。
+- `constrained_search.py`: optional Z3の有界CEGIS試験。SATは質問生成の制約充足だけを意味し、決定木SATとは区別する。今回の有界実行はUNKNOWN。
+
+Python 3.12 / NumPy 2.3.5で続行した。Z3はoptionalで、利用時のみ `requirements_constraints.txt` を追加する。完成witnessの検証にNumPy/Z3は不要。
+
+```bash
+python continuation.py --seconds 120 --beam 16 --output two_team.json.gz
+python continuation.py --skip-baseline --third-team 4 --third-all --load-cores two_team.json.gz --seconds 120 --beam 16 --output three_team17.json.gz
+python complete_witness.py --query 432 962 939 562 392 951 --seconds-per-branch 60 --sample-queries 4096 --query-budget 256
+python verify.py ../../analysis/code30_continuation_20261007/q3_30_certificate.json
+python verify.py ../../analysis/code30_continuation_20261007/q3_246_certificate.json --source ../../analysis/code30_continuation_20261007/q3_30_certificate.json
+python verify.py ../../analysis/code30_continuation_20261007/q3_270_certificate.json --source ../../analysis/code30_continuation_20261007/q3_30_certificate.json
+```
+
+既存のSAT checkpointは最終独立replayを再実行する。再探索したい場合は別の `--output-dir` を指定する。11テストと保存した3枝の全state replayが成功した。

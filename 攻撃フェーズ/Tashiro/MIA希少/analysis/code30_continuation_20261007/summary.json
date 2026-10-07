@@ -1,0 +1,162 @@
+{
+  "model": "ideal six-team count-vector oracle",
+  "overall_status": "SAT",
+  "q3_codes": [
+    30,
+    246,
+    270
+  ],
+  "states_per_code": 40428,
+  "q4_queries": {
+    "30": [
+      432,
+      962,
+      939,
+      562,
+      392,
+      951
+    ],
+    "246": [
+      494,
+      114,
+      388,
+      507,
+      432,
+      1474
+    ],
+    "270": [
+      942,
+      951,
+      432,
+      562,
+      392,
+      1922
+    ]
+  },
+  "full_replays": [
+    {
+      "verified_states": 40428,
+      "collisions": 0,
+      "max_depth": 3,
+      "q4_branches": 208,
+      "q4_max_bucket": 899,
+      "q5_cells": 16321,
+      "q5_max_cell": 20,
+      "q6_queries": 16321,
+      "q3_code": 30,
+      "state_hash": "e2ea2e33df5b8a68ea0807ca6baf7fadae71407a8c06717e44e1501c187a32a2"
+    },
+    {
+      "verified_states": 40428,
+      "collisions": 0,
+      "max_depth": 3,
+      "q4_branches": 208,
+      "q4_max_bucket": 899,
+      "q5_cells": 16321,
+      "q5_max_cell": 20,
+      "q6_queries": 16321,
+      "q3_code": 246,
+      "state_hash": "cb8ce349cbfefa5294f8de0e533a14c6a2827bbc26d15216bb5f4d08486b653a"
+    },
+    {
+      "verified_states": 40428,
+      "collisions": 0,
+      "max_depth": 3,
+      "q4_branches": 208,
+      "q4_max_bucket": 899,
+      "q5_cells": 16321,
+      "q5_max_cell": 20,
+      "q6_queries": 16321,
+      "q3_code": 270,
+      "state_hash": "3157135207749b16d5605a6ff4e066b755ad4a202b55c6160fd6857c0bf51f7d"
+    }
+  ],
+  "largest_q4_branch_q5_examples": {
+    "30": {
+      "q4_outcome": 247,
+      "states": 899,
+      "q5_query": [
+        673,
+        905,
+        5,
+        949,
+        369,
+        989
+      ],
+      "q5_cells": 165,
+      "q5_max_cell": 17
+    },
+    "246": {
+      "q4_outcome": 351,
+      "states": 899,
+      "q5_query": [
+        9,
+        505,
+        1336,
+        1501,
+        232,
+        460
+      ],
+      "q5_cells": 165,
+      "q5_max_cell": 17
+    },
+    "270": {
+      "q4_outcome": 255,
+      "states": 899,
+      "q5_query": [
+        5,
+        1949,
+        676,
+        949,
+        1332,
+        908
+      ],
+      "q5_cells": 165,
+      "q5_max_cell": 17
+    }
+  },
+  "two_team_search": {
+    "varying_teams": [
+      10,
+      16
+    ],
+    "queries_covered": 1048576,
+    "evaluated": 7552,
+    "restricted_status": "UNSAT",
+    "seconds": 46.44071020898991,
+    "independent_cores": 7552
+  },
+  "three_team25_search": {
+    "varying_teams": [
+      10,
+      16,
+      25
+    ],
+    "third_mask_representatives": 32,
+    "queries_covered": 33554432,
+    "evaluated": 52220,
+    "restricted_status": "UNSAT",
+    "seconds_sum_of_grids": 499.52912691404345,
+    "independent_cores": 59772
+  },
+  "three_team17_search": {
+    "varying_teams": [
+      10,
+      16,
+      17
+    ],
+    "team17_mask": 392,
+    "evaluated": 5436,
+    "necessary_condition_survivors": 52,
+    "seconds": 43.730062540998915
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "scope": {
+    "submission_csv_changed": false,
+    "rounds_changed": false,
+    "main_changed": false
+  }
+}

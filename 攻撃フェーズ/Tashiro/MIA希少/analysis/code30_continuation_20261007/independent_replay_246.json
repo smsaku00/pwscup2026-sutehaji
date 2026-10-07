@@ -1,0 +1,23 @@
+{
+  "verified_states": 40428,
+  "collisions": 0,
+  "max_depth": 3,
+  "q4_branches": 208,
+  "q4_max_bucket": 899,
+  "q5_cells": 16321,
+  "q5_max_cell": 20,
+  "q6_queries": 16321,
+  "q3_code": 246,
+  "state_hash": "cb8ce349cbfefa5294f8de0e533a14c6a2827bbc26d15216bb5f4d08486b653a",
+  "transport_replay": {
+    "source_q3_code": 30,
+    "target_q3_code": 246,
+    "state_set_equal": true,
+    "q3_incidence_equal": true,
+    "partition_replayed_states_q4_q5_q6": [
+      40428,
+      40428,
+      40428
+    ]
+  }
+}
