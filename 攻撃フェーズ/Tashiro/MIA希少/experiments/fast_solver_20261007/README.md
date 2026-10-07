@@ -1,5 +1,7 @@
 # MIA希少：高速化版の並行検証（2026-10-07）
 
+現在の完成結果は **追加4回で全2,494,800状態を識別可能**。全53軌道・209 q3枝の具体的witnessを構成し、独立checkerで全状態をreplayした。公式希少平均点も、合法paddingで216回答を衝突なく復号できる。全体q4最大bucket1,338、q5最大cell44、最終衝突0。詳細は [全状態証明](../../docs/16_追加4回完遂の全状態証明.md)、証明書は `../../analysis/full_depth4_20261007/`。以下の初期ベンチマーク記録は当時の範囲を保存している。
+
 ## 結論
 
 主要な検査処理では高速化を実測した。ただし、**全軌道の完全決定木を求める時間の短縮率は未測定**であり、「全体が100倍速い」とは主張しない。既存探索や提出CSVを変更せず、新規実験フォルダ内で実装・試験した。
@@ -108,3 +110,24 @@ python verify.py ../../analysis/code30_continuation_20261007/q3_270_certificate.
 ```
 
 既存のSAT checkpointは最終独立replayを再実行する。再探索したい場合は別の `--output-dir` を指定する。11テストと保存した3枝の全state replayが成功した。
+
+## 全軌道と公式平均点の完遂
+
+追加の構成と検証:
+
+- `solve_all_orbits.py`: 全53代表のq4/q5/q6構成とcheckpoint。提案q5の失敗をq4枝全体のUNSATにしない。
+- `solve_two_cegis.py`: exact depth-2 domain内の質問生成と、最終1回で証明した失敗coreの制約フィードバック。有界終了はUNKNOWN。
+- `score_encoding.py`: 補集合で各queryを5bit以下に正規化したときの、全質問共通の平均点符号化。高側行数 `[6,7,7,11,10,12]`、最小間隔 `1/54,000`。
+- `verify_all_orbits.py`: 標準ライブラリだけの全状態生成・自己同型状態集合・全209枝replay・平均点一意性のchecker。
+- `verify_score_encoding.py`: 独立した有理数ROC補間と、任意で公式採点・平均関数との照合。
+- `inspect_strategy.py`: 正規化済み回答codeまたは生の平均点から、次のqueryとpaddingを参照する読み取り専用ツール。4回答後は識別した所属IDを返す。
+- `test_depth4.py`: 失敗した提案q5の扱い、depth-2 SAT/UNSAT/UNKNOWN、補集合の回答ラベル、216平均点と小数5桁からの復号の回帰検査。
+
+```bash
+python -m unittest -v test_solver test_depth4
+python verify_all_orbits.py ../../analysis/full_depth4_20261007
+python verify_score_encoding.py ../../analysis/full_depth4_20261007/universal_score_encoding.json
+python inspect_strategy.py ../../analysis/full_depth4_20261007 --codes 30 253 246
+```
+
+15テスト成功。全状態auditはSAT、2,494,800状態、衝突0、q4〜q6最大depth3、q3〜q6最大depth4。前節までのideal count-vectorだけの結果を、公式mean-TPRで復号可能な全状態の存在証明へ拡張した。提出用CSV・`rounds/`は変更していない。
