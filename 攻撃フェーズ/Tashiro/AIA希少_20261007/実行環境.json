@@ -1,0 +1,11 @@
+{
+  "python": "3.12.15",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0"
+  },
+  "root_requirements_sha256": "9cf9b999380a1f097a49672fe73dfa14d56fdb03546ae817d2a146366216e137",
+  "dependency_installs_performed": false
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "round": 1,
+    "minimum_positive_targets": 1,
+    "minimum_only_solutions": [
+      [
+        [
+          10,
+          5,
+          0.1493021320854365
+        ]
+      ]
+    ],
+    "target_ids_identified": false,
+    "more_positive_targets_excluded": false
+  },
+  {
+    "round": 2,
+    "minimum_positive_targets": 2,
+    "minimum_only_solutions": [
+      [
+        [
+          3,
+          0,
+          0.03912778130570621
+        ],
+        [
+          10,
+          4,
+          0.25608303647798353
+        ]
+      ]
+    ],
+    "target_ids_identified": false,
+    "more_positive_targets_excluded": false
+  }
+]

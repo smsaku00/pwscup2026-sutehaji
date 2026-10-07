@@ -1,0 +1,17 @@
+{
+  "arrays_equal": true,
+  "array_names": [
+    "prelim_x",
+    "prelim_team",
+    "prelim_pred",
+    "prelim_member",
+    "prelim_time",
+    "prelim_rare",
+    "main_x",
+    "main_team",
+    "main_pred",
+    "names"
+  ],
+  "legacy_sha256": "6520081792a9099e8c04649e056b8a5ec25cc1b9841d4b63b4f0bcefcbfd751e",
+  "new_sha256": "4151c6e45c9186d567c199f21d2f470cbf53d7f9c68fdac0d4a7a27f42524822"
+}

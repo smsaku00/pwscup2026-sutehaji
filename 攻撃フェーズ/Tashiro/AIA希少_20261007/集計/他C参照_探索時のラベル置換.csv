@@ -1,0 +1,3 @@
+family,settings,best_method,observed_rare,targets,repetitions,permutation_mean_of_best,permutation_best_q95,permutation_best_q99,exploratory_family_adjusted_p,best_setting_unadjusted_p,selection_of_other_method_families_adjusted,main_score_significance_test
+publicNN,253,publicNN/partial5_sex/other_median/rare_top52_threshold0,0.023175744270164073,18,20000,0.018418801101998714,0.031165686114787875,0.03839544529749047,0.22123893805309736,0.008649567521623918,False,False
+published8keep,253,published8keep/partial5_sex/other_median/rare_top52_threshold0,0.022826052948950584,18,20000,0.018254151287340183,0.03076524240550584,0.0381843770863314,0.21823908804559772,0.008299585020748963,False,False

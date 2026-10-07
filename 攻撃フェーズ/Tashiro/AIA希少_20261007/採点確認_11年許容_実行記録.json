@@ -1,0 +1,20 @@
+{
+  "python": "3.12.15",
+  "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "seed": 20261007,
+  "input_sha256": {
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/参照/第1回_detailed_results.html": "b9b3dbc35af1aa5e1004e65adf35fae6c9c03ab06a7f04ae7ad13abde576e414",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_AIA全体向上の分析/参照/第2回_detailed_results.html": "c8ff2f02735270e14dc65949700b41156e5069581512b2f986198d520359944d"
+  },
+  "submission_created": false,
+  "codabench_submitted": false,
+  "official_cases_checked": 196,
+  "current_rare": 0.01341867353562226,
+  "target_rare": 0.0216,
+  "gap": 0.00818132646437774,
+  "needed_sum_of_target_improvements": 0.17998918221631027,
+  "time_hat_11_passes_value_validation": true,
+  "true_time_upper": 10,
+  "tau_time": 0.5,
+  "code_sha256": "ff50f2fc9f43337d48a4d6eccc8bc8c3583aacd557f7f4bbf6b4bea3f91f4bef"
+}

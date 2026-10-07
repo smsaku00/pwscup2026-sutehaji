@@ -1,0 +1,1570 @@
+[
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.05666246971039409,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial4_sex/bg16/rare_top26_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.08683981015425327,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_q10/rare_top82_keep0.5",
+    "inner_rare": 0.002188889168257561,
+    "inner_all": 0.06789231821502638,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_q10/rare_top52_keep0.75",
+    "inner_rare": 0.001872459473073843,
+    "inner_all": 0.0964970569219477,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.75",
+    "inner_rare": 0.008249495228863618,
+    "inner_all": 0.06530700216088398,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_q10/rare_top52_keep0.75",
+    "inner_rare": 0.001872459473073843,
+    "inner_all": 0.0964970569219477,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.05666246971039409,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial4_sex/bg16/rare_top26_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.08683981015425327,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.014005842339777719,
+    "inner_all": 0.06054161442257026,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.013586212754321533,
+    "inner_all": 0.09128608419482662,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.00660851875371375,
+    "inner_all": 0.06693291055602123,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.013586212754321533,
+    "inner_all": 0.09128608419482662,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.00660851875371375,
+    "inner_all": 0.06693291055602123,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.008249495228863618,
+    "inner_all": 0.09117717359619067,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.014005842339777719,
+    "inner_all": 0.06054161442257026,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 0,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.013586212754321533,
+    "inner_all": 0.09128608419482662,
+    "test_teams": [
+      7,
+      18,
+      29
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.05121095423103421,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial4_sex/bg16/rare_top26_threshold0",
+    "inner_rare": 0.02397242439116837,
+    "inner_all": 0.08836267520845571,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.06594753943064291,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_q10/rare_top52_keep0.25",
+    "inner_rare": 0.014763989973361962,
+    "inner_all": 0.10665459077653153,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.06594753943064291,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_q10/rare_top52_keep0.25",
+    "inner_rare": 0.014763989973361962,
+    "inner_all": 0.10665459077653153,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.017457929646670027,
+    "inner_all": 0.05121095423103421,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_q10/rare_top52_keep0.25",
+    "inner_rare": 0.014763989973361962,
+    "inner_all": 0.10665459077653153,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.00920843441780641,
+    "inner_all": 0.05064360913721111,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.01139732358606397,
+    "inner_all": 0.09690098590821966,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.00660851875371375,
+    "inner_all": 0.058013550368260614,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0.5",
+    "inner_rare": 0.006188889168257564,
+    "inner_all": 0.10033450837446539,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.00660851875371375,
+    "inner_all": 0.05779300920641198,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0.5",
+    "inner_rare": 0.006188889168257564,
+    "inner_all": 0.10033450837446539,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.00920843441780641,
+    "inner_all": 0.05064360913721111,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 1,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.01139732358606397,
+    "inner_all": 0.09690098590821966,
+    "test_teams": [
+      6,
+      17,
+      26
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_keep0.5",
+    "inner_rare": 0.019643324195268305,
+    "inner_all": 0.06425635129765743,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.06335494412600944,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 2,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.02768248120005368,
+    "inner_all": 0.10055643076524369,
+    "test_teams": [
+      5,
+      13,
+      24
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial4_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.022169657241829257,
+    "inner_all": 0.04568591382619232,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial4_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.01565234937222991,
+    "inner_all": 0.07410372078849913,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.00660851875371375,
+    "inner_all": 0.05557719719049935,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.10392473548947577,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial4_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.022169657241829257,
+    "inner_all": 0.04568591382619232,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.10392473548947577,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial4_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.022169657241829257,
+    "inner_all": 0.04568591382619232,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/bg16/rare_top52_keep0.75",
+    "inner_rare": 0.00889901011442687,
+    "inner_all": 0.08325967774914551,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.009217037507427498,
+    "inner_all": 0.04904629344365812,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.0026085187537137474,
+    "inner_all": 0.07601366413007998,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.009217037507427498,
+    "inner_all": 0.04904629344365812,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.002188889168257561,
+    "inner_all": 0.1007798098440988,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.009217037507427498,
+    "inner_all": 0.04904629344365812,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.002188889168257561,
+    "inner_all": 0.1007798098440988,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0.5",
+    "inner_rare": 0.009217037507427498,
+    "inner_all": 0.04904629344365812,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 3,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.002188889168257561,
+    "inner_all": 0.1007798098440988,
+    "test_teams": [
+      4,
+      12,
+      23
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial4_sex/other_q10/rare_top26_threshold0",
+    "inner_rare": 0.02397242439116837,
+    "inner_all": 0.03139224911930904,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019141768309877082,
+    "inner_all": 0.09836989040440394,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.008000000000000005,
+    "inner_all": 0.05201945913969639,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.004377778336515122,
+    "inner_all": 0.10789441215271982,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019561397895333274,
+    "inner_all": 0.0460142828085801,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.004377778336515122,
+    "inner_all": 0.10789441215271982,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial4_sex/other_q10/rare_top26_threshold0",
+    "inner_rare": 0.02397242439116837,
+    "inner_all": 0.03139224911930904,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019141768309877082,
+    "inner_all": 0.09836989040440394,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019561397895333274,
+    "inner_all": 0.0460142828085801,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019141768309877082,
+    "inner_all": 0.09836989040440394,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.008797407921971312,
+    "inner_all": 0.0501110146263183,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.004377778336515122,
+    "inner_all": 0.10789441215271982,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019561397895333274,
+    "inner_all": 0.0460142828085801,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.004377778336515122,
+    "inner_all": 0.10789441215271982,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019561397895333274,
+    "inner_all": 0.0460142828085801,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 4,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.019141768309877082,
+    "inner_all": 0.09836989040440394,
+    "test_teams": [
+      3,
+      10,
+      22
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02499971631044666,
+    "inner_all": 0.10291075015998036,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_keep0.5",
+    "inner_rare": 0.0029297989732448276,
+    "inner_all": 0.1137972507795034,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.008611617155063006,
+    "inner_all": 0.10925529872829443,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02499971631044666,
+    "inner_all": 0.10291075015998036,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02499971631044666,
+    "inner_all": 0.10291075015998036,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.008611617155063006,
+    "inner_all": 0.10925529872829443,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top26_threshold0",
+    "inner_rare": 0.008611617155063006,
+    "inner_all": 0.10925529872829443,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02256229537535979,
+    "inner_all": 0.06501075977117536,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 5,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.02499971631044666,
+    "inner_all": 0.10291075015998036,
+    "test_teams": [
+      2,
+      9,
+      20
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.01636680904375315,
+    "inner_all": 0.048017405014713715,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare",
+    "selected": "published8keep/partial4_sex/bg16/rare_top52_threshold0",
+    "inner_rare": 0.01636680904375315,
+    "inner_all": 0.09306119892304827,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.007500000000000005,
+    "inner_all": 0.06892589985528799,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.11799489190442765,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_keep0.25",
+    "inner_rare": 0.007500000000000005,
+    "inner_all": 0.06892589985528799,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_keep0.5",
+    "inner_rare": 0.0,
+    "inner_all": 0.11799489190442765,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial4_sex/bg16/rare_top82_threshold0",
+    "inner_rare": 0.01636680904375315,
+    "inner_all": 0.048017405014713715,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "full253",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.09907119601107164,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.06238901926172598,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.09907119601107164,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.06238901926172598,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.010684990861934973,
+    "inner_all": 0.11596662829657675,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "max",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.06238901926172598,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "max",
+    "selected": "published8keep/partial5_sex/other_median/rare_top52_threshold0",
+    "inner_rare": 0.010684990861934973,
+    "inner_all": 0.11596662829657675,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "publicNN",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "publicNN/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.06238901926172598,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  },
+  {
+    "outer": 6,
+    "family": "published8keep",
+    "search": "small7",
+    "objective": "rare_guard_all",
+    "selected": "published8keep/partial5_sex/other_median/rare_top82_threshold0",
+    "inner_rare": 0.013929388108666282,
+    "inner_all": 0.09907119601107164,
+    "test_teams": [
+      1,
+      8,
+      19
+    ]
+  }
+]

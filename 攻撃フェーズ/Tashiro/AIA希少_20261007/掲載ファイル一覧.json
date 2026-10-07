@@ -1,0 +1,440 @@
+{
+  "remote_prefix": "攻撃フェーズ/Tashiro/AIA希少_20261007",
+  "new_submission_files": false,
+  "codabench_submitted": false,
+  "full_exploratory_row_tables_regenerable_from_code": true,
+  "excluded": [
+    "非公開B・utility_ref・token",
+    "作業用の配列・モデル",
+    "過去の試作v1/v2集計",
+    "全設定の対象別大容量明細と反復分割の全対象明細"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 306,
+      "sha256": "c54bec91ac29d44de2c0e05f3ffe56230044bf9e0711276db2fa17f449ddf154",
+      "git_blob_sha": "77d86a4a45442deadba3be40607a627743f8e544"
+    },
+    {
+      "path": "レポートの再集計.py",
+      "bytes": 15619,
+      "sha256": "ec5bfd111f2bc64e7a892332fca3595513d06391d1fdc49f773d41cf1c37c406",
+      "git_blob_sha": "7e957bc92b1e3610c3c0aaa7fa3a8b3bc9f5b5b1"
+    },
+    {
+      "path": "一対一照合_実行記録.json",
+      "bytes": 11776,
+      "sha256": "4b3dc097b0d89dc8d18fb5fd1b4a73b7b36019890d4298aed902a5b0a73593ac",
+      "git_blob_sha": "38d9e99bf4558242385e9cfcb8c70b148384cf4b"
+    },
+    {
+      "path": "一対一照合_設定選択.json",
+      "bytes": 6173,
+      "sha256": "6808300796dddf5070895b1e6017358284d8bcaf30b2b6a148069b949fb6a4be",
+      "git_blob_sha": "b4a46e75dc963d53a7c8cfe1c93eb1e0508ba759"
+    },
+    {
+      "path": "主要な結論.json",
+      "bytes": 606,
+      "sha256": "ef3f3dbd52823a9cd373a551c10c4fc830ea194f98fe6430fc6f683af394bf47",
+      "git_blob_sha": "34349873470c71c040ad3c04aa88b81cdcfa6780"
+    },
+    {
+      "path": "二重のチーム分離検証.py",
+      "bytes": 6638,
+      "sha256": "b17863087a4580be2df575f93c882853a045444916f77a62aafc78c6fa2e8234",
+      "git_blob_sha": "fb7a02b7143888614ed5fe63affa40ddc6eeb347"
+    },
+    {
+      "path": "二重チーム分離_実行記録.json",
+      "bytes": 14479,
+      "sha256": "b4de41aa42f3445ebc7d081715bf38d1caf9cdb683c28bb520264d9c2f4d86f5",
+      "git_blob_sha": "f91ef4e841d5c921648a308e63786a651f4fe203"
+    },
+    {
+      "path": "二重チーム分離_設定選択.json",
+      "bytes": 6568,
+      "sha256": "682c78e84b1bb4e2d3e2b658c368d3bf2293c52d159fd16367ff98fcd69ff3b1",
+      "git_blob_sha": "7fad3a697049ac869b9fac581c6c85d10d6db137"
+    },
+    {
+      "path": "他チームCを参照する照合.py",
+      "bytes": 9091,
+      "sha256": "eb68a998d6106ce3a42b00d4464f02cfcc253d9bf65717295f87b8d6f582bf82",
+      "git_blob_sha": "e0459989d3db049ca103470fa04d74601212baba"
+    },
+    {
+      "path": "他チームC参照_実行記録.json",
+      "bytes": 21414,
+      "sha256": "208da9fbc8f69e6d49e89aa96b8224d43504cb194ed64d7b75f5ba5149861057",
+      "git_blob_sha": "49cc325e9ea689a9a1448f5103fd09675e9b813b"
+    },
+    {
+      "path": "他チームC参照_設定選択.json",
+      "bytes": 6436,
+      "sha256": "39a7b77b76d9839f5a5cc5640c195a3171e3491051cc296089113b06874a2ed4",
+      "git_blob_sha": "e9fe7fcd77aa367f5b1ecd483cb646601685545b"
+    },
+    {
+      "path": "個人単位の希少時間学習.py",
+      "bytes": 10071,
+      "sha256": "3a13e5ca687a0d76321541881f4b307e9b67edcc35dbf534f44aed3828f82c18",
+      "git_blob_sha": "868e280cd7b42706d8fcbc5ebdbed09c7acfeca2"
+    },
+    {
+      "path": "個人単位の希少時間学習_二重CV_実行記録.json",
+      "bytes": 15238,
+      "sha256": "c9e6f94e57679ea0c8164527eaae2d85492002341b309a55c83a2e59aff28a6c",
+      "git_blob_sha": "21988cb72799830fb019514be91421612bc4c8ae"
+    },
+    {
+      "path": "個人単位の希少時間学習_二重CV_選択記録.json",
+      "bytes": 6214,
+      "sha256": "1940b91b7dc9c018b1d9ede648ab46907d44348b0b639c813d21b8fba52ba9e4",
+      "git_blob_sha": "bb0a4babafd600823f8066c84af932d0df21ba57"
+    },
+    {
+      "path": "公式第1回第2回の確認.json",
+      "bytes": 711,
+      "sha256": "e1acf8e4021fbadab020c2bd409580327c15d3cf7a436e2727b5db9aca55449f",
+      "git_blob_sha": "04ea746c64f6469b80d5ee9c921d546557a8e320"
+    },
+    {
+      "path": "分析.py",
+      "bytes": 12177,
+      "sha256": "ff50f2fc9f43337d48a4d6eccc8bc8c3583aacd557f7f4bbf6b4bea3f91f4bef",
+      "git_blob_sha": "27ead7add1500feddb91eaf36b732be9f4ab82c4"
+    },
+    {
+      "path": "参照C_分割安定性と対応置換_実行記録.json",
+      "bytes": 12158,
+      "sha256": "0666ebc551e11dfed3eb39e9b426467909193a0cd975a3d0bbd550541a1e15ad",
+      "git_blob_sha": "62fa1fa018b202f375b6efad34559c75be27b869"
+    },
+    {
+      "path": "参照C_選択基準と偶然性_実行記録.json",
+      "bytes": 12005,
+      "sha256": "74f41e224dad75de9a276d0cee50c5dbbab741358cafc55e73739a9c14460507",
+      "git_blob_sha": "76777d0c3fae5d5bdab457e6c176fd1c1e2c2659"
+    },
+    {
+      "path": "参照C_選択基準比較_設定選択.json",
+      "bytes": 35114,
+      "sha256": "d3f3bc9777f128a4c340adfe7f57a72bb6faea81c1689681d0dadc522ec00f21",
+      "git_blob_sha": "60661a8e7d607134cce63737d0fd1052e6d506d5"
+    },
+    {
+      "path": "参照Cの分割安定性と対応置換.py",
+      "bytes": 10543,
+      "sha256": "05790f2fd7ff58ff72e785d41496780f12b17af0cef581711df3ebc0a687d050",
+      "git_blob_sha": "c40aefd925155c5fd2ccf2a8d520d2f36e41b569"
+    },
+    {
+      "path": "参照Cの選択基準と偶然性.py",
+      "bytes": 8457,
+      "sha256": "cdfa3961e271e8a0ba835b21382630c40275e11cd4ae7028ae50abde5388c301",
+      "git_blob_sha": "f7b9667f6e007e4123b55607683f26bfc13d616c"
+    },
+    {
+      "path": "実行環境.json",
+      "bytes": 283,
+      "sha256": "4173ad45154f1e0d045ae3404e5ec3564215d33df7959029bfa02b58d80e44d9",
+      "git_blob_sha": "789faa139020d629655d6bbbbe8cb405a0f9b44f"
+    },
+    {
+      "path": "希少に絞った時間窓学習.py",
+      "bytes": 7304,
+      "sha256": "30ac02535a688bb7ff8be407fc9b1589dde9f7dd44a796dc1b231c45506aa8f1",
+      "git_blob_sha": "d779f5cad69a28c3a5462eb032dda4c2b96b1d58"
+    },
+    {
+      "path": "希少候補_実行記録.json",
+      "bytes": 23959,
+      "sha256": "cef2d841cbd96256ccce37a0dd996a36279bef44043afb439b2fbb0115c3742a",
+      "git_blob_sha": "a1e1b3133f8140d266b05eb13d63acf679808860"
+    },
+    {
+      "path": "希少候補の一対一照合.py",
+      "bytes": 6897,
+      "sha256": "3ef368bc03361a80951a579682ff13e887384bd7b5bcfd26912f528c86260514",
+      "git_blob_sha": "d5ee76dfa88fda3338bf28a544ee4ee0d08038b3"
+    },
+    {
+      "path": "希少候補の学習.py",
+      "bytes": 5504,
+      "sha256": "186aff24544b6bfa9376ec16af8e763d4be54e25149a086fd253c08a112b5f78",
+      "git_blob_sha": "e0bf1b741ac3156ee5d9fb4667292c16478f6d73"
+    },
+    {
+      "path": "希少時間窓学習_実行記録.json",
+      "bytes": 25236,
+      "sha256": "bb5e5cdb0ae9e100a4bd0dcf9198d31b2ffbd02f04a1c611b0cb72295f796fe8",
+      "git_blob_sha": "371ad03cc21d373c35e15fbf95a918cdfec7420d"
+    },
+    {
+      "path": "平均値の最小寄与分解.json",
+      "bytes": 623,
+      "sha256": "b5be90898793b201a5dad52646eccde399aa931c078086b7ce107f4875d71065",
+      "git_blob_sha": "213d755cf17e282be56867673057348ebf04580c"
+    },
+    {
+      "path": "採点確認_11年許容_実行記録.json",
+      "bytes": 988,
+      "sha256": "e1a16d60679df52415dd97da52a9b883f6ad2b614ac92adc1f43e1e891e8d3d3",
+      "git_blob_sha": "e52633e70175fccc4752a4f7fb6d2b763da2fff1"
+    },
+    {
+      "path": "提案規則の本戦診断.py",
+      "bytes": 2978,
+      "sha256": "415cf3f7fb489fa0aa815b625d2e03b4d562d0660f8894768305fe65c115599c",
+      "git_blob_sha": "a9b158fe52c93704bd426864ad8d3723b6a2545a"
+    },
+    {
+      "path": "提案規則の本戦診断_実行記録.json",
+      "bytes": 21168,
+      "sha256": "1ccd80b32e76b5adda5d0761f3772f24fb616d9ff2325004a68c2c3a0e6ae298",
+      "git_blob_sha": "2ec625ea72f8278489619b16dd01b1cbd6e9778c"
+    },
+    {
+      "path": "時間候補の特徴量.py",
+      "bytes": 5986,
+      "sha256": "360a3878ccf9940a7b06d15034103d8eb68a2b473c6ec1d91e8120aec1121ff2",
+      "git_blob_sha": "63d3de50851f8c1a764f15c12ddf22904a1f348b"
+    },
+    {
+      "path": "比較特徴量キャッシュ.py",
+      "bytes": 3752,
+      "sha256": "c772eb1cf92f83aa28964a60f1fa8b2bf5352463ea674782884307991459e2d3",
+      "git_blob_sha": "1a8e45fc9f1f05975f254a4d012267ce9fe77d87"
+    },
+    {
+      "path": "比較特徴量再現_一致確認.json",
+      "bytes": 395,
+      "sha256": "ffee6bc7070f623d1d4db490e7bb1cdb9b7078ba1db92488dc67d9f3decc9f86",
+      "git_blob_sha": "16a3f940ab9043fac57b617a3361d0351ab0c7db"
+    },
+    {
+      "path": "比較特徴量再現_実行記録.json",
+      "bytes": 21000,
+      "sha256": "17838e6a82cd4f99adabe26fcc805ba815dac331f9d68ab9a572790f42fd9946",
+      "git_blob_sha": "3fab29c85cca366c513a5e0f6b36178361bd7b01"
+    },
+    {
+      "path": "背景除去と希少照合.py",
+      "bytes": 11291,
+      "sha256": "8065591160809455df129e44090ea5f26d7c01b18ca62f71d6c18e11c0ffa293",
+      "git_blob_sha": "9c7e2dbd8e36c6220732c5d9c6f19d200c6b9a58"
+    },
+    {
+      "path": "背景除去と希少照合_v4_実行記録.json",
+      "bytes": 23787,
+      "sha256": "ef319019194d3a4cea9601f4251c5d05b1a12b80f8ca25e2d56bae8aaed325f0",
+      "git_blob_sha": "fa88a52d57f81da8de13c7e93bc98c75155810c1"
+    },
+    {
+      "path": "説明.md",
+      "bytes": 11471,
+      "sha256": "06fc75aaaf5e3d8c8705afc642f2e64451e22148ec29f13667479321b524aded",
+      "git_blob_sha": "34254cbe18ac30276ba605d2c1699ac3a2e68659"
+    },
+    {
+      "path": "集計/0.0216に届く正解数の例.csv",
+      "bytes": 724,
+      "sha256": "73c691f832f301eb388a4d3be3257d609769e37b2dab035f5a107e6e179cca63",
+      "git_blob_sha": "2f50ce1b919b40de3019dd60a41f3a64b69a2bd6"
+    },
+    {
+      "path": "集計/一対一照合_二重CV_対象別.csv",
+      "bytes": 7045,
+      "sha256": "973974d5d78bef5f9bb3281235e5ea1fadc2da00957062af7e36468d13f1dd6a",
+      "git_blob_sha": "a4119a58489a5ca971ebbc1d9b46e8b10609b8ce"
+    },
+    {
+      "path": "集計/一対一照合_二重CV_平均.csv",
+      "bytes": 308,
+      "sha256": "f6d943f5be16fcb754647d9f9f99a592085d4ab2015096e74bebff217dbd0e8d",
+      "git_blob_sha": "ee0bf3e326588f7dff91e3397d00432ec78ddea6"
+    },
+    {
+      "path": "集計/一対一照合_探索平均.csv",
+      "bytes": 14319,
+      "sha256": "f7df2cea365362b4b58118e06c64b7ba86eba2ca9a505d4bb283e11a193de267",
+      "git_blob_sha": "26fc1ca86494eb143dba6059dd0d8a0de4327979"
+    },
+    {
+      "path": "集計/二重チーム分離_対象単位の区間.csv",
+      "bytes": 618,
+      "sha256": "6d428d89010059c1e8d8e48509a84d2ccfe9d3a6c63d6b504b7109722c116ec8",
+      "git_blob_sha": "64eb522c32da06e6d52a6c8a5c23466bfa46a14f"
+    },
+    {
+      "path": "集計/二重チーム分離_平均.csv",
+      "bytes": 291,
+      "sha256": "1d62142e9ff945b93945456d620551ed5c0c75b41ad2abb28db05cb68398c220",
+      "git_blob_sha": "b13964c34fa86e3fa19f83195e72302bbc8b148b"
+    },
+    {
+      "path": "集計/二重チーム分離_評価対象別.csv",
+      "bytes": 7077,
+      "sha256": "21e2a5c1527857357fbe9cc867cfd4e768f77953a4df63f5c4378c3d6e996ba7",
+      "git_blob_sha": "0a403d5b18b7062eae73aca6efd00cfff6ac4089"
+    },
+    {
+      "path": "集計/他C参照_探索時のラベル置換.csv",
+      "bytes": 698,
+      "sha256": "3e7de744648b1bf9f337a07b99f63061c37837fbb24aaca1003ae98f7e392e35",
+      "git_blob_sha": "9febdc2cdada81d6440c683d815195cd172c5444"
+    },
+    {
+      "path": "集計/他チームC参照_二重CV_対象別.csv",
+      "bytes": 7203,
+      "sha256": "152de024d4307d22578e66911c152a31ad6b5f9343d70a02343951925368a070",
+      "git_blob_sha": "3577b65dd4ebc7d6953ca8137556b5ec75f12b26"
+    },
+    {
+      "path": "集計/他チームC参照_二重CV_平均.csv",
+      "bytes": 292,
+      "sha256": "80c12ba116fda2b65ea82e9d1f40d0a26d03ce28d9ebd6e5ee151d46ec1dbbb1",
+      "git_blob_sha": "7c4cf6dc32aefc77b62085a32eaa59b723105da7"
+    },
+    {
+      "path": "集計/他チームC参照_探索平均.csv",
+      "bytes": 72253,
+      "sha256": "df24c9e9dd9202b558e9c0cb3e8642c2d5c385ee0a244d1a60baaf9f9a6de419",
+      "git_blob_sha": "6a6fefbc72511c56cd424f260d86674873cdbf7a"
+    },
+    {
+      "path": "集計/他チームC参照_本戦の距離診断.csv",
+      "bytes": 20507,
+      "sha256": "d6ab5c9768b5d811b5ec6c97628763e95521e661e58caa07b3c1f192c59ba098",
+      "git_blob_sha": "b26615749f883c4c8766664ee422d4aa06047604"
+    },
+    {
+      "path": "集計/個人単位の希少時間学習_二重CV_対象別.csv",
+      "bytes": 6747,
+      "sha256": "c6485b49ebb5513987ca3239352164044840c4cba8ce045f1e2a5305cfecd12a",
+      "git_blob_sha": "759f96e4197565e9069827f33ddcb3c0b4899e80"
+    },
+    {
+      "path": "集計/個人単位の希少時間学習_二重CV_対象単位の区間.csv",
+      "bytes": 514,
+      "sha256": "c9e4d5df88184b0819c6a36b3a6dad84e066230ca58c0d307b493e032c91c3ca",
+      "git_blob_sha": "717ca03413d5343488346f924c7e7261ab9fbf4b"
+    },
+    {
+      "path": "集計/個人単位の希少時間学習_二重CV_平均.csv",
+      "bytes": 274,
+      "sha256": "97cd4e34de9573eda99ba1169926b35b0dcf2dea15be1934b12d595487808cd5",
+      "git_blob_sha": "049fb53a32b60bf6f2b9e3d2aa30c4fea1451ea6"
+    },
+    {
+      "path": "集計/個人単位の希少時間学習_二重CV_探索平均.csv",
+      "bytes": 11935,
+      "sha256": "e7de80a5a530c71fae9ef17111c38d5a726feafd0faeabf88704149680d409b0",
+      "git_blob_sha": "324c85b12df513c15692402262641a1f323c738c"
+    },
+    {
+      "path": "集計/参照C_反復分割_分割別平均.csv",
+      "bytes": 16258,
+      "sha256": "414bc7190d5a051b7998e5cadd5e794a885f23c186d73c5ce38ee438e9dbfcf1",
+      "git_blob_sha": "4f2eaf36c96776f421cb2259391333967709fa6c"
+    },
+    {
+      "path": "集計/参照C_反復分割_対象平均.csv",
+      "bytes": 4628,
+      "sha256": "12fd5a6430baea8cf56723a0a069c242df0f4aa48e3e2d62ca017c016632dee6",
+      "git_blob_sha": "80af728a0c01c925bd3a530c8b1e11c3823119ce"
+    },
+    {
+      "path": "集計/参照C_反復分割_揺れの集計.csv",
+      "bytes": 2358,
+      "sha256": "c74b0c4f5226257e0b92425fa33375c6d2a7cb155e03fe3252f35be2cf819f99",
+      "git_blob_sha": "8a628684052840be26c3faf251df58ca741b8280"
+    },
+    {
+      "path": "集計/参照C_対応層を保った内側再選択置換.csv",
+      "bytes": 635,
+      "sha256": "ec2f11042465a37d4ab24c841fdb64702a6a4a89247377c633fdcf7eeb31daea",
+      "git_blob_sha": "9be4f4b6e4c0b1785925dbca81079d02d6a2725b"
+    },
+    {
+      "path": "集計/参照C_対象単位の区間と最大寄与除外.csv",
+      "bytes": 1617,
+      "sha256": "464c21425bd80373f70f6777f8b711406670c58b211899c3394287261a11a10b",
+      "git_blob_sha": "43df0dd9d13d462b5eb94defbb8ac863b80a7c79"
+    },
+    {
+      "path": "集計/参照C_選択基準比較_対象別.csv",
+      "bytes": 63520,
+      "sha256": "e2e6e340dc91f779c0842700fa670eb3e6d11eec145310926168ed33da107f96",
+      "git_blob_sha": "e983d7441d0629061373cbd1ea9b4df81e6d3f94"
+    },
+    {
+      "path": "集計/参照C_選択基準比較_平均.csv",
+      "bytes": 2338,
+      "sha256": "8a1e54857e2ecae73b9043b6cb3113124fb576a640445850bf750121429da3c2",
+      "git_blob_sha": "2c72828471cacf4bf988cb78af6ab13a18e5eb1b"
+    },
+    {
+      "path": "集計/希少13対13_全196組.csv",
+      "bytes": 4341,
+      "sha256": "6162a27af95c5cfe634196510c48045f0fa0ffccaee2f84c2446a97c546a04b6",
+      "git_blob_sha": "b0da8edd3e3376dc768aa746e89b9a733675f73e"
+    },
+    {
+      "path": "集計/希少候補_QIのみのチーム分離評価.csv",
+      "bytes": 7400,
+      "sha256": "3a94f3f689eaf0939ee76c8b3eae19a3f35285cbd3524093d31e4836fdb75da7",
+      "git_blob_sha": "f7c74e67c21259db90117be06e10b64194a19c71"
+    },
+    {
+      "path": "集計/希少候補_QIのみの平均.csv",
+      "bytes": 550,
+      "sha256": "a4b787de63964e236ee3dec3b4e818d9e8c15d1411fac0ed292d2714510f4ee2",
+      "git_blob_sha": "5f4c08b0f13c40c7bd275eae4910adcb4c38115c"
+    },
+    {
+      "path": "集計/希少候補_本戦の動作診断.csv",
+      "bytes": 1331,
+      "sha256": "76439aa6fe31d8ab1516e32fce4752cc45ddadda603ba230ea866b6b98e9230b",
+      "git_blob_sha": "2468903f309e4e65a06eee86d3ba75eaf60bf255"
+    },
+    {
+      "path": "集計/希少候補_本戦自チームでの項目依存.csv",
+      "bytes": 291,
+      "sha256": "d5ec373082fda49665b4efbbc2351de3cb817a933dcdf0d7195191c3c22068dc",
+      "git_blob_sha": "75d5a2c35aa7c7f489d93d5e315212e8b1562f75"
+    },
+    {
+      "path": "集計/希少時間窓学習_平均.csv",
+      "bytes": 23681,
+      "sha256": "15ae1b2f20643fe8e2873e1809fb3361018b68aadc978977df032efcca9789cb",
+      "git_blob_sha": "d8121e131fe97db3f05c5d05c9afb112593b6494"
+    },
+    {
+      "path": "集計/希少時間窓学習_本戦自チーム標的のみ.csv",
+      "bytes": 1770,
+      "sha256": "248ab9edf616543e322967ac95f2510201885fbd06bf452bdc085c513273cc59",
+      "git_blob_sha": "e3822b168bd7cf847cf5eedd2ddc966338eab9b7"
+    },
+    {
+      "path": "集計/提案規則_本戦の変更件数.csv",
+      "bytes": 1005,
+      "sha256": "189069703e099c0794f044cbce63438b7b995e776fe44325aba1f2e8248e060a",
+      "git_blob_sha": "221d9c386b18fea210778fcf7a9d3884a25d7a39"
+    },
+    {
+      "path": "集計/背景由来候補と希少候補の件数_v4.csv",
+      "bytes": 1902,
+      "sha256": "0b14993801528b44f03bf49fe48b7d862bd2306ce1a3dd79df6880666caeaa90",
+      "git_blob_sha": "351735da1c3ba7b1e8f191e2a579c0b7acf607b7"
+    },
+    {
+      "path": "集計/背景除去と希少照合_v4_平均.csv",
+      "bytes": 247079,
+      "sha256": "f95fc2ee736076c000c4c0d193a2f4f693f26d6f594435b12e8005a627704b8f",
+      "git_blob_sha": "66b6d95e0733b3dd8c06bebc51046ae0a5e2e89b"
+    }
+  ]
+}

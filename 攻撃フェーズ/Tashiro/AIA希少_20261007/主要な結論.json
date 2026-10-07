@@ -1,0 +1,17 @@
+{
+  "generated_at_jst": "2026-10-07T13:31:09+09:00",
+  "main_official_rare": 0.01341867353562226,
+  "user_target_rare": 0.0216,
+  "official_target_score_achieved": false,
+  "main_new_score_evaluated": false,
+  "codabench_submitted": false,
+  "new_submission_files_created": false,
+  "fixed_rule_split_mean_rare": 0.0156821047404816,
+  "fixed_rule_split_mean_all": 0.1047727095194322,
+  "adaptive_split_mean_rare": 0.0115879612963361,
+  "unique_public_evaluation_targets": 18,
+  "split_repeats": 50,
+  "proposed_main_changed_rows": 985,
+  "target9_changed": 0,
+  "outside_estimated_candidates_changed": 0
+}
