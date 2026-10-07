@@ -9,7 +9,7 @@
   const speeds = Object.freeze({slow: {result: 1600, fade: 1700, gap: 1000}, normal: {result: 800, fade: 900, gap: 500}, fast: {result: 360, fade: 680, gap: 200}});
   const unit = () => cap === 2 ? '組' : '人';
   let member = defaultMember, pairOrder = shared.maskIDs(member, ids);
-  let depth = 0, phase = null, playing = false, epoch = 0, focusedPair = null;
+  let depth = 0, phase = null, playing = false, busy = false, epoch = 0, focusedPair = null;
   const reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   function trace(capacity, target) {
     if (!five.candidates(capacity).includes(target)) throw Error('所属人数に合う異なるIDを選んでください。');
@@ -33,7 +33,7 @@
     const removed = removing ? kept.filter(candidate => !rows[depth].after.includes(candidate)) : [];
     const after = removing ? rows[depth].after : kept;
     const revealedCount = depth + (phase ? 1 : 0);
-    return {cap, member, depth, playing, speed, phase: phase ? {...phase} : null, revealedCount,
+    return {cap, member, depth, playing, busy, speed, phase: phase ? {...phase} : null, revealedCount,
       results: rows.map((row, r) => r < revealedCount ? row.hit : null),
       remainingMasks: kept.slice(), displayedMasks: kept.slice(), removedMasks: removed,
       activeIDs: ids.filter((_, i) => kept.some(candidate => candidate >> i & 1)),
@@ -81,7 +81,7 @@
     const rule = cap === 2 ? `${current.hit === 0 ? '0と0を結ぶ線' : current.hit === 1 ? '0と1を結ぶ線' : '1と1を結ぶ線'}を残します。`
       : `提出${r + 1}が${current.hit}の行を残し、${1 - current.hit}の行を候補から外します。`;
     el('filter-rule').textContent = !state.revealedCount ? `次の提出結果を表示すると、合わない${cap === 2 ? '線' : '行'}が${cap === 2 ? '消えます' : '薄くなります'}。`
-      : `提出${r + 1}の結果：${current.hit}人。${rule}${stage === 'result' ? 'まず結果を表示しています。' : stage === 'removing' ? `合わない${cap === 2 ? '線' : '行'}が${cap === 2 ? '消えます' : '薄くなります'}。` : ''}`;
+      : `提出${r + 1}の結果：${current.hit}人。${rule}${stage === 'result' ? (playing ? 'まず結果を表示しています。' : '「この結果で候補を絞る」を押して進みます。') : stage === 'removing' ? `合わない${cap === 2 ? '線' : '行'}が${cap === 2 ? '消えます' : '薄くなります'}。` : ''}`;
     el('record-deck').innerHTML = ids.map((id, i) => {
       const visible = alive.has(id), fading = stage === 'removing' && visible && !nextAlive.has(id);
       const bits = data.query_masks.map(query => Number(Boolean(query >> i & 1)));
@@ -102,15 +102,18 @@
       : unique ? `ID ${label(state.remainingMasks[0])}を結ぶ1本だけが残りました。` : `${state.remainingMasks.length}本の線が、まだあり得る2人の組です。線を押すとその組を確認できます。`;
     el('summary-result').textContent = unique ? `残る1${unit()}：ID ${label(state.remainingMasks[0])}` : `${depth}回分で${state.remainingMasks.length}${unit()}が残っています`;
     el('count-path').textContent = state.counts.join(' → ');
-    el('merge-progress').textContent = `${depth} / 5提出`;
-    el('animate-all').textContent = playing ? '止める' : depth === 5 ? '最初から再生' : depth ? '続きを自動で表示' : '5回の結果を順に表示';
-    el('merge-one').disabled = playing || depth === 5;
-    el('unmerge-one').disabled = depth === 0;
+    el('merge-progress').textContent = phase?.stage === 'result' && !playing ? `提出${depth + 1}：絞り込み待ち` : `${depth} / 5提出`;
+    el('animate-all').textContent = playing ? '止める（手動に戻る）' : depth === 5 ? '最初から再生' : depth ? '続きを自動で表示' : '5回の結果を順に表示';
+    el('animate-all').disabled = busy && !playing;
+    el('merge-one').textContent = busy ? '絞り込み中…' : phase?.stage === 'result' ? 'この結果で候補を絞る' : '次の提出結果を表示';
+    el('merge-one').disabled = playing || busy || depth === 5;
+    el('unmerge-one').disabled = depth === 0 && !phase;
     el('spread-all').disabled = depth === 0 && !phase && !playing;
-    el('current-calculations').innerHTML = (cap === 2 ? '<p>最初の候補：11×10÷2＝55組。</p>' : '<p>最初の候補：11人から1人を選ぶので11人。</p>') + rows.slice(0, state.revealedCount).map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit()} → ${row.after.length}${unit()}（${row.hit}人）</summary><p>対象ID：${label(row.query)}。前まで残った${cap === 2 ? '組' : '行'}を、この提出の人数で分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit()}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
+    el('current-calculations').innerHTML = (cap === 2 ? '<p>最初の候補：11×10÷2＝55組。</p>' : '<p>最初の候補：11人から1人を選ぶので11人。</p>') + rows.slice(0, depth).map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit()} → ${row.after.length}${unit()}（${row.hit}人）</summary><p>対象ID：${label(row.query)}。前まで残った${cap === 2 ? '組' : '行'}を、この提出の人数で分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit()}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
     if (globalThis.MIA_FIXED_OVERVIEW) globalThis.MIA_FIXED_OVERVIEW.fromLesson({cap, member, depth, revealedCount: state.revealedCount});
   }
-  function stop() {epoch++; playing = false; phase = null;}
+  function stop() {epoch++; playing = false; busy = false; phase = null;}
+  function pause() {epoch++; playing = false; busy = false; if (phase) phase = {...phase, stage: 'result'};}
   function setAnswer(capacity, target, order) {
     if (![1, 2].includes(capacity) || !five.candidates(capacity).includes(target)) throw Error('所属人数分の異なるIDを選んでください。');
     const chosen = order || shared.maskIDs(target, ids);
@@ -125,7 +128,7 @@
   }
   function setSpeed(value) {
     if (!Object.hasOwn(speeds, value)) throw Error('再生速度を選んでください。');
-    stop(); speed = value; render();
+    pause(); speed = value; render();
   }
   function setDepth(value) {
     if (!Number.isInteger(value) || value < 0 || value > 5) throw Error('提出数は0〜5です。');
@@ -136,24 +139,33 @@
     focusedPair = focusedPair === mask ? null : mask; render();
   }
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  function showResult() {
+    phase = {round: depth, hit: pop(data.query_masks[depth] & member), stage: 'result'}; render();
+  }
+  async function applyResult(ticket) {
+    if (depth >= 5 || ticket !== epoch) return;
+    phase = {round: depth, hit: pop(data.query_masks[depth] & member), stage: 'removing'};
+    busy = true; render(); await delay(timing().fade);
+    if (ticket !== epoch) return;
+    depth++; phase = null; busy = false; render();
+  }
   async function revealNext(ticket) {
     if (depth >= 5 || ticket !== epoch) return;
-    const round = depth, hit = pop(data.query_masks[round] & member);
-    phase = {round, hit, stage: 'result'}; render(); await delay(timing().result);
+    showResult(); await delay(timing().result);
     if (ticket !== epoch) return;
-    phase = {round, hit, stage: 'removing'}; render(); await delay(timing().fade);
-    if (ticket !== epoch) return;
-    depth++; phase = null; render();
+    await applyResult(ticket);
   }
-  async function animateOne() {
-    if (playing || depth >= 5) return;
-    stop(); const ticket = epoch; playing = true; await revealNext(ticket);
-    if (ticket === epoch) {playing = false; render();}
+  async function advanceOne() {
+    if (playing || busy || depth >= 5) return;
+    const ticket = ++epoch;
+    if (!phase) {showResult(); return;}
+    await applyResult(ticket);
   }
   async function animateAll() {
-    if (playing) {stop(); render(); return;}
-    stop(); const ticket = epoch; playing = true;
-    if (depth === 5) {depth = 0; focusedPair = null; render(); await delay(200);}
+    if (playing) {pause(); render(); return;}
+    if (busy) return;
+    const ticket = ++epoch; playing = true;
+    if (depth === 5) {depth = 0; phase = null; focusedPair = null; render(); await delay(200);}
     while (depth < 5 && ticket === epoch) {
       await revealNext(ticket); if (ticket !== epoch) return;
       await delay(timing().gap);
@@ -169,8 +181,8 @@
   el('tab-single').onclick = () => setTab(1); el('tab-pair').onclick = () => setTab(2);
   el('playback-speed').onchange = () => setSpeed(el('playback-speed').value);
   el('answer-record-1').onchange = chooseRecords; el('answer-record-2').onchange = chooseRecords;
-  el('animate-all').onclick = animateAll; el('merge-one').onclick = animateOne;
-  el('unmerge-one').onclick = () => setDepth(Math.max(0, depth - 1)); el('spread-all').onclick = () => setDepth(0);
+  el('animate-all').onclick = animateAll; el('merge-one').onclick = advanceOne;
+  el('unmerge-one').onclick = () => setDepth(phase ? depth : Math.max(0, depth - 1)); el('spread-all').onclick = () => setDepth(0);
   el('pair-lines').onclick = event => {const target = event.target.closest('[data-pair-mask]'); if (target) focusPair(Number(target.dataset.pairMask));};
   el('pair-lines').onkeydown = event => {if (event.key === 'Enter' || event.key === ' ') {const target = event.target.closest('[data-pair-mask]'); if (target) {event.preventDefault(); focusPair(Number(target.dataset.pairMask));}}};
   function help(open) {
@@ -189,7 +201,7 @@
       else if (!event.shiftKey && document.activeElement === last) {event.preventDefault(); first.focus();}
     }
   });
-  globalThis.MIA_FIXED_LESSON = Object.freeze({defaultMember, trace, remaining, geometry, snapshot, setAnswer, setTab, setSpeed, timing, setDepth, focusPair, animateOne, animateAll, stop, render,
+  globalThis.MIA_FIXED_LESSON = Object.freeze({defaultMember, trace, remaining, geometry, snapshot, setAnswer, setTab, setSpeed, timing, setDepth, focusPair, advanceOne, animateOne: advanceOne, animateAll, stop, pause, render,
     values: () => ({cap, depth, masks: {...masks}, playing})});
   render();
 })();

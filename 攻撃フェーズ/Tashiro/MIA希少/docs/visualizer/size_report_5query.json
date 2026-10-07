@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 87758,
-  "html_sha256": "2358eb17038b7748f53c7e4c39c84e8b2b75e72a597dfea06dc6c43a8c2b576c",
-  "format": "single offline HTML; one-member rows or two-member pair edges eliminated by five revealed results; visible Team/ID selectors and three playback speeds; overview-only/candidates-only/both views and faint excluded rows",
+  "html_bytes": 89593,
+  "html_sha256": "201f5ce1ce69a2cd40c634af64c3eae416b72ee1a510cf30b514a0882110ae44",
+  "format": "single offline HTML; one-member rows or two-member pair edges eliminated by five revealed results; visible Team/ID selectors and three playback speeds; overview-only/candidates-only/both views and faint excluded rows; manual result/filter steps and explicit automatic playback",
   "single_team_states": [
     11,
     55
