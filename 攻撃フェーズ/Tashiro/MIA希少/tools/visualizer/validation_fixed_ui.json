@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM simulated DOM, independent candidate enumeration, controlled animation timers and numeric layout geometry",
-  "html_bytes": 56173,
-  "html_sha256": "9336f97a31cb8cd65b6b2b3fef4d0ddd93b77b50540f0c00c0c9933e0d674b3c",
+  "html_bytes": 56072,
+  "html_sha256": "efd8448c6aab5cdbe07190730b9c5600c5245f65b3edb798d8f99be2fd6a75eb",
   "one_member_examples": 11,
   "two_member_examples": 55,
   "example_prefixes_checked": 396,
@@ -25,6 +25,7 @@
     "animated sequential movement, replay, pause, and cancellation by tab/answer changes",
     "help dialog open, Escape close and focus restoration",
     "reduced-motion animation reaches all five states without long movement waits",
+    "neutral sheets with transparent matching cells, gray rejection and green merged survivors; submission terminology",
     "embedded source code and score encoding match source files",
     "preserved adaptive HTML is byte-identical to the previous 67,765-byte version",
     "six-Team fixed question table and constant padding IDs/counts",

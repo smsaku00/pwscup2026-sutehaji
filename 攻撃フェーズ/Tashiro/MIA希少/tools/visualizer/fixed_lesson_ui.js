@@ -74,8 +74,8 @@
       const card = el(`glass-card-${i + 1}`), grid = el(`glass-grid-${i + 1}`);
       card.setAttribute('data-query', String(row.query));
       card.setAttribute('data-hit', String(row.hit));
-      card.setAttribute('aria-label', `調査${i + 1}：ID ${label(row.query)}を調べる。この例は${row.hit}人。`);
-      el(`glass-meta-${i + 1}`).innerHTML = `<strong>調査${i + 1}</strong><span class="investigation-ids">調べる：${label(row.query)}</span><span class="hit">${row.hit}人</span><span class="investigation-ids">${row.before.length} → ${row.after.length}</span>`;
+      card.setAttribute('aria-label', `提出${i + 1}：ID ${label(row.query)}を対象にする。この例は${row.hit}人。`);
+      el(`glass-meta-${i + 1}`).innerHTML = `<strong>提出${i + 1}</strong><span class="investigation-ids">対象ID：${label(row.query)}</span><span class="hit">${row.hit}人</span><span class="investigation-ids">${row.before.length} → ${row.after.length}</span>`;
       grid.style.setProperty('--rows', cap === 1 ? '1' : '5');
       grid.setAttribute('data-cap', String(cap));
       grid.innerHTML = cells(rows, i);
@@ -92,9 +92,9 @@
     el('unmerge-one').disabled = depth === 0;
     el('spread-all').disabled = depth === 0 && !playing;
     el('summary-result').textContent = kept.length === 1 ? `残る1枚：ID ${label(kept[0])}` : `${kept.length}${unit(cap)}が残っています`;
-    el('summary-note').textContent = depth === 0 ? '各カードはその調査だけの条件。重ねると、すべてに合う位置が残ります。' : depth === 5 ? '5回とも人数が一致する位置が緑です。正解レコードを変えて試せます。' : `調査1〜${depth}の人数にすべて合う位置が緑です。`;
+    el('summary-note').textContent = depth === 0 ? '各カードはその提出だけの条件。重ねると、すべてに合う位置が残ります。' : depth === 5 ? '5回とも人数が一致する位置が緑です。正解レコードを変えて試せます。' : `提出1〜${depth}の人数にすべて合う位置が緑です。`;
     el('count-path').textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
-    el('current-calculations').innerHTML = `<p>選んだ正解：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>調査${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の調査まで残った候補を、調べる集合に何人入るかで分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
+    el('current-calculations').innerHTML = `<p>選んだ正解：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の提出まで残った候補を、提出の対象集合に何人入るかで分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
     place();
   }
   function stop() {epoch++; playing = false;}

@@ -48,13 +48,12 @@ def main():
               'FIXED_CORE': (HERE / 'fixed_core.js').read_text(encoding='utf-8'),
               'DATA': json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),
               'PADDING_TABLE': padding_table}
-    colors = ['#2476b8', '#008576', '#bc6913', '#a4497a', '#6552ad']
-    cards = ''.join(f'<article id="glass-card-{i+1}" class="glass-card" style="--sheet:{color};--layer:{i+1};--z:{i+2}"><div id="glass-meta-{i+1}" class="card-meta"></div><div id="glass-grid-{i+1}" class="sheet-grid"></div></article>' for i, color in enumerate(colors))
+    cards = ''.join(f'<article id="glass-card-{i+1}" class="glass-card" style="--layer:{i+1};--z:{i+2}"><div id="glass-meta-{i+1}" class="card-meta"></div><div id="glass-grid-{i+1}" class="sheet-grid"></div></article>' for i in range(5))
     legacy_style = re.search(r'<style>([\s\S]*?)</style>', (HERE / 'viewer5.template.html').read_text(encoding='utf-8')).group(1)
     configurations = [
         ('cards', 'fixed_compact.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8'),
-         'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('質問', '調査'),
-         'CODE_MATRIX': matrix.replace('質問', '調査'), 'MEAN_INPUTS': inputs.replace('質問', '調査'), 'GLASS_CARDS': cards},
+         'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出'),
+         'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出'), 'GLASS_CARDS': cards},
          'size_report_5query.json', 'single offline HTML; five animated transparent cards within viewport'),
         ('reference', 'fixed_reference.template.html', {'STYLE': legacy_style,
          'FIXED_UI': prefix + (HERE / 'fixed_reference_ui.js').read_text(encoding='utf-8') + '\n' + operations,

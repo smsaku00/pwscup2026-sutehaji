@@ -138,8 +138,8 @@ function assertColumn(viewer,cap,member,depth,result) {
     assert.deepEqual(actual.map(c=>Number(c.attrs['data-member'])),cells(viewer.elements.get('merge-grid').innerHTML).map(c=>Number(c.attrs['data-member'])));
     actual.forEach(c=>{const pass=pc(Number(c.attrs['data-member']) & QUERIES[i])===row.hit;assert.equal(c.attrs['data-pass'],pass?'1':'0');assert(c.classes.includes(pass?'fits':'blocked'));result.question_card_checks++;});
     const meta=viewer.elements.get(`glass-meta-${i+1}`).innerHTML;
-    assert(meta.includes(`調べる：${label(QUERIES[i])}`));assert(meta.includes(`<span class="hit">${row.hit}人</span>`));
-    assert(meta.includes(`${row.before.length} → ${row.after.length}`));assert(!meta.includes('質問'));
+    assert(meta.includes(`対象ID：${label(QUERIES[i])}`));assert(meta.includes(`<span class="hit">${row.hit}人</span>`));
+    assert(meta.includes(`${row.before.length} → ${row.after.length}`));assert(!meta.includes('質問'));assert(!meta.includes('調査'));assert(meta.includes(`提出${i+1}`));
     const countCalculation=viewer.elements.get('current-calculations').innerHTML;
     row.groups.forEach((group,h)=>{assert(countCalculation.includes(`<b>${h}人：${group.length}${cap===1?'候補':'組'}</b>`));});
     if(row.before.length===1) result.fixed_questions_after_early_certainty++;
@@ -222,7 +222,11 @@ async function main() {
   const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];
   assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));assert(style.includes('.stage{flex:1;min-height:0;'));
   assert(style.includes('transition:transform 880ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
-  assert(!html.split('<script>')[0].includes('質問'));
+  assert(!html.split('<script>')[0].includes('質問'));assert(!html.split('<script>')[0].includes('調査'));assert(!style.includes('--sheet'));
+  assert(style.includes('.glass-card .sheet-cell.fits{background:transparent;'));
+  assert(!/glass-card-[1-5][^>]*--sheet:/.test(html));
+  assert(html.includes('透明：この提出の人数に合う'));
+  result.controls_checked.push('neutral sheets with transparent matching cells, gray rejection and green merged survivors; submission terminology');
   assert.equal(11*10/2,55);assert.equal(6*5/2+5*6+5*4/2,55);
   result.formulas_checked.push('11 choose 2 = 55','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
