@@ -1,0 +1,20 @@
+{
+  "base_commit": "203a7cca595ee2eb482f3433713e6649b3c91cd2",
+  "update_date_jst": "2026-10-07",
+  "python_executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "python_version": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "preserved_authoritative_files_checked": 70,
+  "relative_document_links_checked": 63,
+  "five_query_method": "single-team full replay plus universal mean decoding composition",
+  "single_team_states_replayed": 66,
+  "four_query_states_replayed": 2494800,
+  "four_query_collisions": 0,
+  "four_query_max_additional_depth": 4,
+  "mean_responses_verified": 216,
+  "mean_minimum_gap_exact": "1/54000",
+  "source_sha256": {
+    "docs/検証資料/追加5回の全候補確認.py": "708308c912b0e6240f3e3c1cd36b51c94cbaefca25fa350ddfb2114a86d81b4f",
+    "experiments/fast_solver_20261007/verify_all_orbits.py": "27ab03e9e8e102baa0e1a20f6a1787f1892fdf85580b2ceb4acea546954656df",
+    "experiments/fast_solver_20261007/verify_score_encoding.py": "5e4a2b937cf9965a2e6445ff3859fdd67adceecd3abdf9c474dece3d6be12104"
+  }
+}
