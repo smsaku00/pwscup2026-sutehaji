@@ -75,17 +75,17 @@
     el('pair-stage').style.setProperty('--fade-ms', `${timing().fade}ms`);
     el('line-label').textContent = cap === 2 ? '線＝2人の組' : '';
     el('mode-legend').textContent = cap === 2 ? '線の2人分を足す：0＋0＝0、0＋1＝1、1＋1＝2' : '各行の0・1と、提出結果の0・1を比べます。';
-    el('interaction-legend').textContent = cap === 2 ? '線を押すと、その組の合計を確認できます。' : '結果と合わない行が提出ごとに消えます。';
+    el('interaction-legend').textContent = cap === 2 ? '線を押すと、その組の合計を確認できます。' : '結果と合わない行は、薄く残します。';
     el('result-strip').innerHTML = state.results.map((hit, i) => `<div class="result-chip${hit === null ? ' pending' : ''}${i === r && state.revealedCount ? ' current' : ''}" data-round="${i}" data-result="${hit === null ? '' : hit}" aria-label="提出${i + 1}：${hit === null ? '未表示' : hit + '人'}"><span>提出${i + 1}</span><b>${hit === null ? '—' : hit}<small>${hit === null ? '' : '人'}</small></b></div>`).join('');
     el('pair-count').textContent = stage === 'removing' ? `${state.remainingMasks.length} → ${current.after.length}${unit()}` : `残る${state.remainingMasks.length}${unit()}`;
     const rule = cap === 2 ? `${current.hit === 0 ? '0と0を結ぶ線' : current.hit === 1 ? '0と1を結ぶ線' : '1と1を結ぶ線'}を残します。`
-      : `提出${r + 1}が${current.hit}の行を残し、${1 - current.hit}の行を消します。`;
-    el('filter-rule').textContent = !state.revealedCount ? `次の提出結果を表示すると、合わない${cap === 2 ? '線' : '行'}が消えます。`
-      : `提出${r + 1}の結果：${current.hit}人。${rule}${stage === 'result' ? 'まず結果を表示しています。' : stage === 'removing' ? `合わない${cap === 2 ? '線' : '行'}が消えます。` : ''}`;
+      : `提出${r + 1}が${current.hit}の行を残し、${1 - current.hit}の行を候補から外します。`;
+    el('filter-rule').textContent = !state.revealedCount ? `次の提出結果を表示すると、合わない${cap === 2 ? '線' : '行'}が${cap === 2 ? '消えます' : '薄くなります'}。`
+      : `提出${r + 1}の結果：${current.hit}人。${rule}${stage === 'result' ? 'まず結果を表示しています。' : stage === 'removing' ? `合わない${cap === 2 ? '線' : '行'}が${cap === 2 ? '消えます' : '薄くなります'}。` : ''}`;
     el('record-deck').innerHTML = ids.map((id, i) => {
       const visible = alive.has(id), fading = stage === 'removing' && visible && !nextAlive.has(id);
       const bits = data.query_masks.map(query => Number(Boolean(query >> i & 1)));
-      return `<div class="pair-record${!visible ? ' gone' : fading ? ' fading' : ''}${unique && visible ? ' unique' : ''}" data-record-id="${id}" data-active="${visible ? 1 : 0}" data-fading="${fading ? 1 : 0}" aria-hidden="${!visible || fading}"><b>ID ${id}</b>${bits.map((n, j) => `<span class="bit-${n ? 'one' : 'zero'}${state.revealedCount && j === r ? ' current-bit' : ''}" data-round="${j}" data-value="${n}" title="提出${j + 1}の対象${n ? '内' : '外'}">${n}</span>`).join('')}</div>`;
+      return `<div class="pair-record${!visible ? ' excluded' : fading ? ' fading' : ''}${unique && visible ? ' unique' : ''}" data-record-id="${id}" data-active="${visible ? 1 : 0}" data-fading="${fading ? 1 : 0}" role="group" aria-label="ID ${id}：${!visible ? '候補外' : fading ? '候補外になります' : '候補'}"><b>ID ${id}</b>${bits.map((n, j) => `<span class="bit-${n ? 'one' : 'zero'}${state.revealedCount && j === r ? ' current-bit' : ''}" data-round="${j}" data-value="${n}" title="提出${j + 1}の対象${n ? '内' : '外'}">${n}</span>`).join('')}</div>`;
     }).join('');
     const layout = geometry(), edgeMap = new Map(layout.edges.map(edge => [edge.mask, edge]));
     const drawingOrder = (cap === 2 ? state.displayedMasks : []).filter(mask => mask !== focusedPair);

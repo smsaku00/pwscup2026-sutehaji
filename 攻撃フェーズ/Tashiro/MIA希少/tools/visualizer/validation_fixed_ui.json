@@ -1,15 +1,15 @@
 {
   "status": "passed",
   "environment": "Node VM simulated DOM, independently enumerated one/two-member sets, controlled reveal/fade timers and numeric SVG geometry",
-  "html_bytes": 84583,
-  "html_sha256": "a6e1cba83dbae693f3e145bf4c8e1996a226a6d60fc5c840a1812d99cf1198de",
+  "html_bytes": 87758,
+  "html_sha256": "2358eb17038b7748f53c7e4c39c84e8b2b75e72a597dfea06dc6c43a8c2b576c",
   "single_member_examples": 11,
   "two_member_examples": 55,
   "graph_states_checked": 2212,
   "edge_checks": 28132,
   "record_bit_checks": 121660,
-  "overview_states_checked": 2212,
-  "overview_cell_checks": 66360,
+  "overview_states_checked": 2215,
+  "overview_cell_checks": 66450,
   "animated_submission_cases": 330,
   "controls_checked": [
     "both modes restored: eleven stable candidate rows for one member and 55 unordered-pair edges for two members",
@@ -17,7 +17,9 @@
     "future submission results and exact membership remain unrevealed",
     "all 330 reveal-result / fade-inconsistent-rows-or-edges / commit steps checked independently",
     "0-result removes all 40 pairs containing an in-set record; 15 pairs and 6 records remain",
-    "record rows disappear only when no surviving pair uses them",
+    "excluded record rows stay faint in their original positions, with IDs and all five bits retained",
+    "overview-only default, candidates-only and both views at every width, panel visibility and button states synchronized",
+    "switching views preserves submission progress, active animation, selected Team, observed results and candidate sets",
     "visible Team/ID/mode/speed selectors outside help, one/two tabs remember their selected Team",
     "single-mode ID selection and 11 candidates reduced to one row",
     "slow default: 1.6s result reading + 1.7s disappearance + 1s inter-submission gap; three presets",
@@ -45,7 +47,7 @@
     "55 unordered pairs, represented by exactly 55 distinct edges",
     "first fixed submission partitions 55 pairs into 15/30/10 for results 0/1/2",
     "all later edge sets use every previously revealed-and-applied result",
-    "stable record-row centers match SVG endpoints at all tested sizes"
+    "stable record-row centers match SVG endpoints at all tested sizes; excluded row opacity remains 0.28 in both animation and reduced-motion CSS"
   ],
   "mean_decodes_checked": [
     "73/6750",

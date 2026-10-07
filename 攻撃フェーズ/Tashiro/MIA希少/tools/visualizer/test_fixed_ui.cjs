@@ -128,6 +128,10 @@ const pairPaths=markup=>[...markup.matchAll(/<path class="pair-line([^\"]*)"([^>
 const recordRows=markup=>[...markup.matchAll(/<div class="pair-record([^\"]*)"([^>]*)>([\s\S]*?)<\/div>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),body:m[3]}));
 function assertOverview(viewer,result) {
   const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()'), lesson=viewer.json('MIA_FIXED_LESSON.snapshot()');
+  assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],state.view);
+  assert.equal(viewer.elements.get('overview-panel').hidden,state.view==='cards');
+  assert.equal(viewer.elements.get('pairs-panel').hidden,state.view==='overview');
+  for(const [id,view] of [['show-overview','overview'],['show-cards','cards'],['show-both','both']])assert.equal(viewer.elements.get(id).attributes['aria-pressed'],String(state.view===view));
   let used=0;state.memberships.forEach((member,t)=>{assert.equal(pc(member),CAPS[t]);assert.equal(used & member,0);used|=member;});assert.equal(pc(used),9);
   assert.equal(CAPS[state.selectedTeam],lesson.cap);assert.equal(state.memberships[state.selectedTeam],lesson.member);
   assert.equal(state.depth,lesson.depth);assert.equal(state.revealedCount,lesson.revealedCount);
@@ -169,7 +173,7 @@ function assertGraph(viewer,member,depth,stage,result) {
   const records=recordRows(viewer.elements.get('record-deck').innerHTML);assert.equal(records.length,11);
   records.forEach((record,i)=>{
     assert.equal(Number(record.attrs['data-record-id']),IDS[i]);const alive=active.includes(IDS[i]), fading=alive&&!next.includes(IDS[i]);
-    assert.equal(record.classes.includes('gone'),!alive);assert.equal(record.attrs['data-active'],alive?'1':'0');assert.equal(record.attrs['data-fading'],fading?'1':'0');
+    assert.equal(record.classes.includes('excluded'),!alive);assert(!record.classes.includes('gone'));assert.equal(record.attrs['role'],'group');assert.equal(record.attrs['aria-label'],`ID ${IDS[i]}：${!alive?'候補外':fading?'候補外になります':'候補'}`);assert(!('aria-hidden' in record.attrs));assert.equal(record.attrs['data-active'],alive?'1':'0');assert.equal(record.attrs['data-fading'],fading?'1':'0');
     const bits=[...record.body.matchAll(/data-round="(\d+)" data-value="([01])"/g)];assert.equal(bits.length,5);
     bits.forEach((m,r)=>{assert.equal(Number(m[1]),r);assert.equal(Number(m[2]),(QUERIES[r]>>i)&1);result.record_bit_checks++;});
   });
@@ -187,6 +191,7 @@ async function main() {
   const viewer=simulatedViewer();assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:2,depth:0,masks:{'1':128,'2':129},playing:false});
   assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
   assert.equal(pairPaths(viewer.elements.get('pair-lines').innerHTML).length,55);
+  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'overview');assert.equal(viewer.elements.get('overview-panel').hidden,false);assert.equal(viewer.elements.get('pairs-panel').hidden,true);
   assert(viewer.elements.has('tab-single'));assert(viewer.elements.has('tab-pair'));assert(!viewer.elements.has('target-row'));
   assert.equal(viewer.elements.get('playback-speed').value,'slow');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.timing()'),{result:1600,fade:1700,gap:1000});
   assert.equal(viewer.elements.get('pair-stage').style['--fade-ms'],'1700ms');
@@ -212,9 +217,13 @@ async function main() {
   for(const capacity of [1,2]) for(const member of enumerate(capacity)) {
     viewer.execute(`MIA_FIXED_LESSON.setAnswer(${capacity},${member})`);
     for(let r=0;r<5;r++) {
-      const step=viewer.click('merge-one');assert(viewer.elements.get('merge-one').disabled);assertGraph(viewer,member,r,'result',result);
+      const step=viewer.click('merge-one');assert(viewer.elements.get('merge-one').disabled);
+      const duringReveal=viewer.json('MIA_FIXED_LESSON.snapshot()');viewer.click(['show-overview','show-cards','show-both'][r%3]);assert.deepEqual(viewer.json('MIA_FIXED_LESSON.snapshot()'),duringReveal);
+      assertGraph(viewer,member,r,'result',result);
       assert.equal(viewer.timers.length,1);viewer.click('merge-one');assert.equal(viewer.timers.length,1);
-      assert.equal(viewer.timers[0].ms,1600);await viewer.tick();assertGraph(viewer,member,r,'removing',result);
+      assert.equal(viewer.timers[0].ms,1600);await viewer.tick();
+      const duringFade=viewer.json('MIA_FIXED_LESSON.snapshot()');viewer.click(['show-overview','show-cards','show-both'][(r+1)%3]);assert.deepEqual(viewer.json('MIA_FIXED_LESSON.snapshot()'),duringFade);
+      assertGraph(viewer,member,r,'removing',result);
       assert.equal(viewer.timers[0].ms,1700);await viewer.tick();await step;assertGraph(viewer,member,r+1,null,result);
       result.animated_submission_cases++;
     }
@@ -228,7 +237,7 @@ async function main() {
   await viewer.tick();assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').removedMasks.length,40);
   await viewer.tick();await zero;const zeroState=viewer.json('MIA_FIXED_LESSON.snapshot()');assert.equal(zeroState.remainingMasks.length,15);
   zeroState.remainingMasks.forEach(mask=>assert.equal(mask & QUERIES[0],0));assert.equal(zeroState.activeIDs.length,6);
-  result.controls_checked.push('both modes restored: eleven stable candidate rows for one member and 55 unordered-pair edges for two members','all 11 singles and 55 pairs across all six prefix lengths and all six Teams','future submission results and exact membership remain unrevealed','all 330 reveal-result / fade-inconsistent-rows-or-edges / commit steps checked independently','0-result removes all 40 pairs containing an in-set record; 15 pairs and 6 records remain','record rows disappear only when no surviving pair uses them');
+  result.controls_checked.push('both modes restored: eleven stable candidate rows for one member and 55 unordered-pair edges for two members','all 11 singles and 55 pairs across all six prefix lengths and all six Teams','future submission results and exact membership remain unrevealed','all 330 reveal-result / fade-inconsistent-rows-or-edges / commit steps checked independently','0-result removes all 40 pairs containing an in-set record; 15 pairs and 6 records remain','excluded record rows stay faint in their original positions, with IDs and all five bits retained');
   viewer.execute('MIA_FIXED_LESSON.setDepth(0)');
   viewer.elements.get('pair-lines').onclick({target:{closest(){return {dataset:{pairMask:'3'}};}}});
   assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').focusedPair,3);assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').remainingMasks.length,55);
@@ -240,7 +249,14 @@ async function main() {
   viewer.click('reset-overview');assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
   viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewTeam:'3'}};}}});assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,3);
   viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewCellTeam:'5',overviewCellRound:'4'}};}}});assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,5);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,4);
-  viewer.click('show-overview');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'overview');viewer.click('show-cards');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'cards');
+  const beforeViewSwitch=viewer.json('MIA_FIXED_LESSON.snapshot()'), beforeOverview=viewer.json('MIA_FIXED_OVERVIEW.snapshot()');
+  for(const [id,view] of [['show-overview','overview'],['show-cards','cards'],['show-both','both']]) {
+    viewer.click(id);assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],view);
+    assert.deepEqual(viewer.json('MIA_FIXED_LESSON.snapshot()'),beforeViewSwitch);
+    const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()');assert.deepEqual({...state,view:beforeOverview.view},beforeOverview);assertOverview(viewer,result);
+  }
+  assert.throws(()=>viewer.execute('MIA_FIXED_OVERVIEW.setView("invalid")'),/表示/);
+  result.controls_checked.push('overview-only default, candidates-only and both views at every width, panel visibility and button states synchronized','switching views preserves submission progress, active animation, selected Team, observed results and candidate sets');
   viewer.click('reset-overview');
   const resetDuringResult=viewer.click('merge-one');viewer.click('spread-all');await viewer.tick();await resetDuringResult;assertGraph(viewer,129,0,null,result);
   const resetDuringFade=viewer.click('merge-one');await viewer.tick();viewer.execute('MIA_FIXED_OVERVIEW.selectTeam(3)');await viewer.tick();await resetDuringFade;
@@ -293,9 +309,10 @@ async function main() {
       for(let sample=0;sample<=20;sample++){const t=sample/20,u=1-t,x=u**3*edge.start.x+3*u*u*t*edge.control+3*u*t*t*edge.control+t**3*edge.end.x,y=u**3*edge.start.y+3*u*u*t*edge.start.y+3*u*t*t*edge.end.y+t**3*edge.end.y;assert(x>=0 && x<=width);assert(y>=0 && y<=height);}
     });assert.equal(unique.size,55);
   }
-  const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];assert(style.includes('height:100dvh'));assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('.pair-record.gone{visibility:hidden'));assert(style.includes('@keyframes edge-disappear'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
+  const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];assert(style.includes('height:100dvh'));assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('.pair-record.excluded{opacity:.28;'));assert(!style.includes('.pair-record.gone'));assert(style.includes('@keyframes row-disappear{0%{opacity:1}100%{opacity:.28}}'));assert(style.includes('.pair-record.fading{animation:none!important;opacity:.28}'));
+  assert(style.includes('.view-toggle{display:flex;flex-wrap:wrap;'));assert(style.includes('.lesson-workspace .overview-panel[hidden],.lesson-workspace .cards-panel[hidden]{display:none!important}'));assert(style.includes('.lesson-workspace[data-view="both"]{grid-template-columns:'));assert(style.includes('grid-template-rows:minmax(0,1fr) minmax(0,1fr)'));assert(style.includes('@keyframes edge-disappear'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
   assert.equal(11*10/2,55);assert.equal(6*5/2,15);assert.equal(5*6,30);assert.equal(5*4/2,10);
-  result.formulas_checked.push('55 unordered pairs, represented by exactly 55 distinct edges','first fixed submission partitions 55 pairs into 15/30/10 for results 0/1/2','all later edge sets use every previously revealed-and-applied result','stable record-row centers match SVG endpoints at all tested sizes');
+  result.formulas_checked.push('55 unordered pairs, represented by exactly 55 distinct edges','first fixed submission partitions 55 pairs into 15/30/10 for results 0/1/2','all later edge sets use every previously revealed-and-applied result','stable record-row centers match SVG endpoints at all tested sizes; excluded row opacity remains 0.28 in both animation and reduced-motion CSS');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
   const initialOperation = operationSnapshot();
   assert.deepEqual(initialOperation, {observations: Array(5).fill(null), meanInputs: Array(5).fill(null), counts: [11, 55, 11, 55, 11, 55], queries: QUERIES});

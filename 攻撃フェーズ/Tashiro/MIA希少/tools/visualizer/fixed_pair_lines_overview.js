@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const el = id => document.getElementById(id), lesson = globalThis.MIA_FIXED_LESSON;
-  let memberships = data.demo_masks.slice(), selectedTeam = 1, selectedRound = 0, view = 'cards', depth = 0, revealedCount = 0;
+  let memberships = data.demo_masks.slice(), selectedTeam = 1, selectedRound = 0, view = 'overview', depth = 0, revealedCount = 0;
   const activeTeams = {1: 0, 2: 1};
   const label = mask => shared.maskIDs(mask, ids).join('＋');
   function assign(team, member) {
@@ -39,13 +39,16 @@
     const r = selectedRound, t = selectedTeam;
     el('row-reader').innerHTML = state.responses[r] === null ? `<b>提出${r + 1}：</b>結果はまだ表示していません。`
       : `<b>横 → 提出${r + 1}：</b><code>${state.rowSequences[r]}</code>（6チーム分）<span class="mean-detail">説明用の希少平均点 ${state.meanFractions[r]} → 6チームの人数</span>`;
-    el('column-reader').innerHTML = `<b>縦 ↓ Team ${data.teams[t]}：</b><code>${state.columns[t].map(n => n === null ? '·' : n).join(' ↓ ')}</code><br><span class="vertical-arrow">表示された結果で、右の${data.caps[t] === 2 ? '2人組の線' : '1人の候補行'}を絞ります。</span>`;
+    el('column-reader').innerHTML = `<b>縦 ↓ Team ${data.teams[t]}：</b><code>${state.columns[t].map(n => n === null ? '·' : n).join(' ↓ ')}</code><br><span class="vertical-arrow">表示された結果で、②の${data.caps[t] === 2 ? '2人組の線' : '1人の候補行'}を絞ります。</span>`;
     el('lesson-team').innerHTML = data.teams.map((team, i) => `<option value="${team}"${i === t ? ' selected' : ''}>Team ${team}（所属${data.caps[i]}人）</option>`).join('');
     el('lesson-team').value = String(data.teams[t]);
     el('selected-team-caption').textContent = `② Team ${data.teams[t]}：${data.caps[t] === 2 ? '2人組を線で絞る' : '1人の候補行を絞る'}`;
     el('lesson-workspace').setAttribute('data-view', view);
     el('show-overview').setAttribute('aria-pressed', String(view === 'overview'));
     el('show-cards').setAttribute('aria-pressed', String(view === 'cards'));
+    el('show-both').setAttribute('aria-pressed', String(view === 'both'));
+    el('overview-panel').hidden = view === 'cards';
+    el('pairs-panel').hidden = view === 'overview';
     for (let i = 0; i < 5; i++) el(`record-heading-${i + 1}`).classList.toggle('row-focus', i === r);
   }
   function fromLesson(state) {
@@ -68,11 +71,11 @@
     selectedRound = round; render();
   }
   function setView(value) {
-    if (!['overview', 'cards'].includes(value)) throw Error('表示を選んでください。');
+    if (!['overview', 'cards', 'both'].includes(value)) throw Error('表示を選んでください。');
     view = value; render();
   }
   function reset() {
-    memberships = data.demo_masks.slice(); activeTeams[1] = 0; activeTeams[2] = 1; selectedTeam = 1; selectedRound = 0; view = 'cards'; lesson.setAnswer(2, lesson.defaultMember); render();
+    memberships = data.demo_masks.slice(); activeTeams[1] = 0; activeTeams[2] = 1; selectedTeam = 1; selectedRound = 0; view = 'overview'; lesson.setAnswer(2, lesson.defaultMember); render();
   }
   el('overview-table').onclick = event => {
     const target = event.target.closest('[data-overview-team],[data-overview-round],[data-overview-cell-team]'); if (!target) return;
@@ -83,7 +86,7 @@
     } else selectRound(Number(target.dataset.overviewRound));
   };
   el('lesson-team').onchange = () => selectTeam(data.teams.indexOf(Number(el('lesson-team').value)));
-  el('show-overview').onclick = () => setView('overview'); el('show-cards').onclick = () => setView('cards'); el('reset-overview').onclick = reset;
+  el('show-overview').onclick = () => setView('overview'); el('show-cards').onclick = () => setView('cards'); el('show-both').onclick = () => setView('both'); el('reset-overview').onclick = reset;
   globalThis.MIA_FIXED_OVERVIEW = Object.freeze({fromLesson, selectTeam, selectCapacity, selectRound, setView, reset,
     snapshot: () => ({selectedTeam, selectedRound, view, memberships: memberships.slice(), depth, revealedCount, ...model()})});
   const state = lesson.snapshot(); fromLesson({cap: state.cap, member: state.member, depth: state.depth, revealedCount: state.revealedCount});
