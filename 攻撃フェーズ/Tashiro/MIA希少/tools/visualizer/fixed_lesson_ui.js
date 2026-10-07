@@ -1,96 +1,164 @@
-/* Introductory, lessons using one fixed five-question code for every possible membership. */
+/* Compact lesson: the same five investigation sets, with movable transparent sheets. */
 (function () {
   'use strict';
-  const colors = ['#2476b8', '#008576', '#bc6913', '#a4497a', '#6552ad'];
-  const defaults = data.lesson_defaults;
-  let depth = 5;
-  const masks = {...defaults};
   const el = id => document.getElementById(id);
-  const unit = cap => cap === 1 ? '候補' : '組';
-  const label = mask => shared.maskIDs(mask, ids).join('・');
-  const members = mask => shared.maskIDs(mask, ids);
   const all = cap => five.candidates(cap);
-
-  function trace(cap, member) {
-    if (!all(cap).includes(member)) throw Error('所属例の人数が一致しません。');
-    let before = all(cap);
+  const label = mask => shared.maskIDs(mask, ids).join('・');
+  const unit = cap => cap === 1 ? '候補' : '組';
+  const masks = {...data.lesson_defaults};
+  let pairOrder = shared.maskIDs(masks[2], ids);
+  let cap = 1, depth = 0, playing = false, epoch = 0;
+  const reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function trace(capacity, member) {
+    if (!all(capacity).includes(member)) throw Error('正解レコードの人数が一致しません。');
+    let before = all(capacity);
     return data.query_masks.map((query, step) => {
-      const hit = pop(query & member);
-      const grouped = five.groups(before, query);
+      const hit = pop(query & member), grouped = five.groups(before, query);
       const after = before.filter(candidate => pop(candidate & query) === hit);
       const row = {step, query, hit, complete: false, alreadyUnique: before.length === 1,
         before: before.slice(), after: after.slice(),
-        groups: Array.from({length: cap + 1}, (_, h) => grouped.get(h) || [])};
+        groups: Array.from({length: capacity + 1}, (_, h) => grouped.get(h) || [])};
       before = after;
       return row;
     });
   }
-  function remaining(cap, member, count) {
-    const rows = trace(cap, member);
-    return all(cap).filter(candidate => rows.slice(0, count).every(row => pop(candidate & row.query) === row.hit));
+  function remaining(capacity, member, count) {
+    const rows = trace(capacity, member);
+    return all(capacity).filter(candidate => rows.slice(0, count).every(row => pop(candidate & row.query) === row.hit));
   }
-  function badges(candidate, rows, count) {
-    return rows.map((row, i) => {
-      const pass = pop(candidate & row.query) === row.hit;
-      return `<i class="condition ${i < count ? pass ? 'agree' : 'reject' : 'unused'}" style="--sheet:${colors[i]}" title="質問${i + 1}：${row.complete ? '追加質問不要' : pass ? '回答に一致' : '回答に不一致'}">${i + 1}</i>`;
+  function geometry(height) {
+    const h = Math.max(0, Number(height) || 0), gap = Math.min(h / 30, h < 350 ? 4 : 6);
+    const cardHeight = (h - gap * 5) / 6;
+    return {height: h, gap, cardHeight, positions: Array.from({length: 6}, (_, i) => i * (cardHeight + gap)), target: 5 * (cardHeight + gap)};
+  }
+  function place(reflow = false) {
+    const layout = geometry(el('card-stage').clientHeight || 400);
+    for (let i = 0; i < 5; i++) {
+      const card = el(`glass-card-${i + 1}`);
+      card.classList.toggle('reflow', reflow);
+      card.classList.toggle('merged', i < depth);
+      card.style.height = `${layout.cardHeight}px`;
+      card.style.transform = `translateY(${i < depth ? layout.target : layout.positions[i]}px)`;
+      card.setAttribute('data-merged', i < depth ? '1' : '0');
+    }
+    const base = el('merge-base');
+    base.classList.toggle('reflow', reflow);
+    base.style.height = `${layout.cardHeight}px`;
+    base.style.transform = `translateY(${layout.target}px)`;
+    if (reflow && typeof requestAnimationFrame === 'function') requestAnimationFrame(() => {
+      for (let i = 1; i <= 5; i++) el(`glass-card-${i}`).classList.remove('reflow');
+      base.classList.remove('reflow');
+    });
+  }
+  function cells(rows, sheet) {
+    return all(cap).map(candidate => {
+      const pass = sheet === undefined ? rows.slice(0, depth).every(row => pop(candidate & row.query) === row.hit)
+        : pop(candidate & rows[sheet].query) === rows[sheet].hit;
+      return `<div class="sheet-cell ${pass ? 'fits' : 'blocked'}${candidate === masks[cap] ? ' current' : ''}" data-member="${candidate}" data-pass="${pass ? 1 : 0}" title="ID ${label(candidate)}：${pass ? '人数に一致' : '人数に不一致'}"><span class="cell-label">${shared.maskIDs(candidate, ids).join('＋')}</span></div>`;
     }).join('');
   }
-  function card(candidate, cap, rows, count, sheet) {
-    const pass = sheet === undefined
-      ? rows.slice(0, count).every(row => pop(candidate & row.query) === row.hit)
-      : pop(candidate & rows[sheet].query) === rows[sheet].hit;
-    const signature = rows.map(row => pop(candidate & row.query) === row.hit ? '1' : '0').join('');
-    return `<div class="lesson-member ${pass ? 'fits' : 'blocked'}" data-member="${candidate}" data-pass="${pass ? 1 : 0}" data-signature="${signature}" title="所属候補：${label(candidate)}。${pass ? '回答に一致' : '回答に不一致'}"><span>${members(candidate).join('<br>')}</span>${sheet === undefined ? `<div class="conditions">${badges(candidate, rows, count)}</div>` : ''}</div>`;
-  }
-  function question(row, cap, rows) {
-    const i = row.step, color = colors[i];
-    const selected = shared.maskIDs(row.query, ids);
-    const cells = ids.map((id, j) => `<span class="id-position ${row.query >> j & 1 ? 'investigate' : ''}" data-id="${id}" data-selected="${row.query >> j & 1}" style="--sheet:${color}">${id}</span>`).join('');
-    const counts = row.groups.map((group, h) => `<span class="${h === row.hit ? 'chosen-hit' : ''}">${h}人 → ${group.length}${unit(cap)}</span>`).join('');
-    const enumeration = row.groups.map((group, h) => `<p><b>${h}人の回答に合う${group.length}${unit(cap)}：</b>${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('');
-    let calculation = '';
-    if (i === 0 && cap === 1) calculation = '選択した5人 → 1人の回答なら5候補。選ばない6人 → 0人なら6候補。';
-    if (i === 0 && cap === 2) calculation = '0人：6×5÷2＝15組 ／ 1人：5×6＝30組 ／ 2人：5×4÷2＝10組。合計55組。';
-    return `<article class="question-sheet ${i < depth ? 'stacked' : 'not-stacked'} ${row.complete ? 'finished-sheet' : ''}" data-cap="${cap}" data-step="${i + 1}" data-query="${row.query}" data-hit="${row.hit}" data-before="${row.before.length}" data-after="${row.after.length}" style="--sheet:${color}">
-      <div class="question-head"><b class="question-number">質問${i + 1}</b><span>${row.complete ? '確定済み・追加質問不要' : `この例の回答：<b>${row.hit}人</b>`}</span></div>
-      <p class="question-count"><b>${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}</b>${row.complete ? '（変わらない）' : ''}</p>
-      <div class="id-strip" aria-label="質問${i + 1}で調べるID">${cells}</div>
-      <p class="small">${row.complete ? 'すでに1枚に確定。この行では誰も調べません。' : `色の位置を調べる：<b>${selected.join('・')}</b>`}</p>
-      ${row.complete ? '' : `<div class="hit-counts">${counts}</div><p class="small count-reason">${calculation || '前の質問まで残ったカードから、この回答に合うものを数えます。'}</p>`}
-      <div class="candidate-sheet" aria-label="質問${i + 1}の条件だけを示す候補カード">${all(cap).map(candidate => card(candidate, cap, rows, depth, i)).join('')}</div>
-      <p class="small muted">${row.complete ? '透明なままのシートです。' : '色のカードはこの回だけの回答に一致。灰色は不一致。上の候補数には前の回答も適用します。'}</p>
-      ${row.complete ? '' : `<details class="enumeration"><summary>候補数の計算の元を見る</summary><div>${enumeration}</div></details>`}
-    </article>`;
-  }
-  function renderColumn(cap) {
-    const rows = trace(cap, masks[cap]);
-    el(`lesson-counts-${cap}`).textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
-    el(`lesson-questions-${cap}`).innerHTML = rows.map(row => question(row, cap, rows)).join('');
-    const kept = remaining(cap, masks[cap], depth);
-    el(`lesson-result-${cap}`).innerHTML = `<div class="merge-head"><h3>${depth}枚を重ねた候補カード</h3><p><b>${all(cap).length}${unit(cap)} → ${kept.length}${unit(cap)}</b></p></div>
-      <p class="small">${depth ? `質問1〜${depth}の回答にすべて合うカードが緑です。どれか1枚で灰色になるカードは除外します。` : 'まだ条件を重ねていないので、すべての候補が残ります。'}</p>
-      <div class="candidate-sheet combined-sheet" data-cap="${cap}" data-depth="${depth}" data-remaining="${kept.length}" aria-label="回答を重ねた最終候補カード">${all(cap).map(candidate => card(candidate, cap, rows, depth)).join('')}</div>
-      <p class="small">カード下の1〜5の色は、その回の回答に合うかを示します。まだ重ねない回は白、合わない回は灰色です。</p>
-      <div class="merge-answer">${kept.length === 1 ? `<b>残る1枚：ID ${label(kept[0])}</b><p class="small">${cap === 2 ? '2人の位置に印のある1枚のカードです。' : '1人の位置に印のある1枚のカードです。'}</p>` : `<b>${kept.length}${unit(cap)}がまだ残っています</b><p class="small">次のシートを重ねて絞り込みます。</p>`}</div>`;
+  function pickers() {
+    const selected = cap === 2 ? pairOrder : shared.maskIDs(masks[cap], ids);
+    [1, 2].forEach((number, i) => {
+      const select = el(`answer-record-${number}`);
+      select.innerHTML = ids.map(id => `<option value="${id}"${id === selected[i] ? ' selected' : ''}${cap === 2 && id === selected[1 - i] ? ' disabled' : ''}>ID ${id}</option>`).join('');
+      select.value = String(selected[i] === undefined ? ids[1] : selected[i]);
+    });
+    el('answer-record-2-wrap').hidden = cap !== 2;
   }
   function render() {
-    [1, 2].forEach(renderColumn);
-    el('lesson-depth').value = String(depth);
-    el('lesson-step-label').textContent = depth ? `質問1〜${depth}の条件を重ねています` : '開始：まだ質問を重ねていません';
-    el('lesson-back').disabled = depth === 0;
-    el('lesson-next').disabled = depth === 5;
+    const rows = trace(cap, masks[cap]), kept = remaining(cap, masks[cap], depth);
+    [1, 2].forEach(c => {el(c === 1 ? 'tab-single' : 'tab-pair').setAttribute('aria-selected', String(c === cap));});
+    pickers();
+    rows.forEach((row, i) => {
+      const card = el(`glass-card-${i + 1}`), grid = el(`glass-grid-${i + 1}`);
+      card.setAttribute('data-query', String(row.query));
+      card.setAttribute('data-hit', String(row.hit));
+      card.setAttribute('aria-label', `調査${i + 1}：ID ${label(row.query)}を調べる。この例は${row.hit}人。`);
+      el(`glass-meta-${i + 1}`).innerHTML = `<strong>調査${i + 1}</strong><span class="investigation-ids">調べる：${label(row.query)}</span><span class="hit">${row.hit}人</span><span class="investigation-ids">${row.before.length} → ${row.after.length}</span>`;
+      grid.style.setProperty('--rows', cap === 1 ? '1' : '5');
+      grid.setAttribute('data-cap', String(cap));
+      grid.innerHTML = cells(rows, i);
+    });
+    const grid = el('merge-grid');
+    grid.style.setProperty('--rows', cap === 1 ? '1' : '5');
+    grid.setAttribute('data-cap', String(cap));
+    grid.innerHTML = cells(rows);
+    el('merge-base-title').textContent = depth ? `${depth}枚を重ねた色` : 'ここに重ねる';
+    el('merge-base-count').textContent = `残る ${kept.length}${unit(cap)}`;
+    el('merge-progress').textContent = `${depth} / 5枚`;
+    el('animate-all').textContent = playing ? '止める' : depth === 5 ? 'もう一度重ねる' : '順に重ねる';
+    el('merge-one').disabled = depth === 5;
+    el('unmerge-one').disabled = depth === 0;
+    el('spread-all').disabled = depth === 0 && !playing;
+    el('summary-result').textContent = kept.length === 1 ? `残る1枚：ID ${label(kept[0])}` : `${kept.length}${unit(cap)}が残っています`;
+    el('summary-note').textContent = depth === 0 ? '各カードはその調査だけの条件。重ねると、すべてに合う位置が残ります。' : depth === 5 ? '5回とも人数が一致する位置が緑です。正解レコードを変えて試せます。' : `調査1〜${depth}の人数にすべて合う位置が緑です。`;
+    el('count-path').textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
+    el('current-calculations').innerHTML = `<p>選んだ正解：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>調査${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の調査まで残った候補を、調べる集合に何人入るかで分けます。</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
+    place();
   }
-  [1, 2].forEach(cap => {
-    const select = el(`lesson-example-${cap}`);
-    select.innerHTML = all(cap).map(candidate => `<option value="${candidate}"${candidate === masks[cap] ? ' selected' : ''}>ID ${label(candidate)}</option>`).join('');
-    select.value = String(masks[cap]);
-    select.onchange = () => {masks[cap] = Number(select.value); render();};
+  function stop() {epoch++; playing = false;}
+  function setTab(value) {
+    if (![1, 2].includes(value)) throw Error('人数は1人か2人です。');
+    stop(); cap = value; depth = 0; el('lesson-error').hidden = true; render(); place(true);
+  }
+  function setAnswer(capacity, member, order) {
+    if (!all(capacity).includes(member)) throw Error('異なる正解レコードを人数分選んでください。');
+    if (capacity === 2) pairOrder = order || shared.maskIDs(member, ids);
+    stop(); masks[capacity] = member; cap = capacity; depth = 0; el('lesson-error').hidden = true; render(); place(true);
+  }
+  function setDepth(value) {
+    if (!Number.isInteger(value) || value < 0 || value > 5) throw Error('重ねる枚数は0〜5です。');
+    stop(); depth = value; render();
+  }
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  async function animateAll() {
+    if (playing) {stop(); render(); return;}
+    stop(); const ticket = epoch; playing = true;
+    if (depth === 5) {depth = 0; render(); await delay(reduced ? 20 : 920);}
+    if (ticket !== epoch) return;
+    render();
+    while (depth < 5 && ticket === epoch) {
+      depth++; render(); await delay(reduced ? 90 : 1020);
+    }
+    if (ticket === epoch) {playing = false; render();}
+  }
+  function chooseRecords() {
+    try {
+      const one = ids.indexOf(Number(el('answer-record-1').value)), two = ids.indexOf(Number(el('answer-record-2').value));
+      if (one < 0 || cap === 2 && (two < 0 || one === two)) throw Error('2人のときは異なるIDを選んでください。');
+      setAnswer(cap, (1 << one) | (cap === 2 ? 1 << two : 0), cap === 2 ? [ids[one], ids[two]] : undefined);
+    } catch (error) {el('lesson-error').textContent = error.message; el('lesson-error').hidden = false; pickers();}
+  }
+  el('tab-single').onclick = () => setTab(1);
+  el('tab-pair').onclick = () => setTab(2);
+  el('answer-record-1').onchange = chooseRecords;
+  el('answer-record-2').onchange = chooseRecords;
+  el('animate-all').onclick = animateAll;
+  el('merge-one').onclick = () => setDepth(Math.min(5, depth + 1));
+  el('unmerge-one').onclick = () => setDepth(Math.max(0, depth - 1));
+  el('spread-all').onclick = () => setDepth(0);
+  function help(open) {
+    el('help-overlay').hidden = !open;
+    const button = el(open ? 'close-help' : 'open-help');
+    if (typeof button.focus === 'function') button.focus();
+  }
+  el('open-help').onclick = () => help(true);
+  el('close-help').onclick = () => help(false);
+  el('help-overlay').onclick = event => {if (event.target === el('help-overlay')) help(false);};
+  document.addEventListener('keydown', event => {
+    if (el('help-overlay').hidden) return;
+    if (event.key === 'Escape') help(false);
+    if (event.key === 'Tab') {
+      const focusable = [...el('help-panel').querySelectorAll('button,input,select,a[href],summary')].filter(node => !node.disabled && (!node.closest('details:not([open])') || node.tagName === 'SUMMARY'));
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {event.preventDefault(); last.focus();}
+      else if (!event.shiftKey && document.activeElement === last) {event.preventDefault(); first.focus();}
+    }
   });
-  el('lesson-depth').onchange = () => {depth = Number(el('lesson-depth').value); render();};
-  el('lesson-back').onclick = () => {depth = Math.max(0, depth - 1); render();};
-  el('lesson-next').onclick = () => {depth = Math.min(5, depth + 1); render();};
-  el('lesson-start').onclick = () => {depth = 0; render();};
-  el('lesson-end').onclick = () => {depth = 5; render();};
-  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, render, values: () => ({depth, masks: {...masks}})});
-  render();
+  if (typeof ResizeObserver === 'function') new ResizeObserver(() => place(true)).observe(el('card-stage'));
+  else if (typeof addEventListener === 'function') addEventListener('resize', () => place(true));
+  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, geometry, setTab, setAnswer, setDepth, animateAll, stop, render, place,
+    values: () => ({cap, depth, masks: {...masks}, playing})});
+  render(); place(true);
 })();

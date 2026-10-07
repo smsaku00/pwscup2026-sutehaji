@@ -80,177 +80,151 @@ function exactMean(hits) {
   return `${numerator / divisor}/${denominator / divisor}`;
 }
 
-function simulatedViewer() {
-  const elements = new Map(), downloads = [], blobs = new Map();
+
+function simulatedViewer(reduced = false) {
+  const elements = new Map(), downloads = [], blobs = new Map(), timers = [], events = {};
   class Element {
-    constructor(tag = 'div', id = '') {
+    constructor(tag = 'div', id = '', attributes = {}) {
       this.tagName = tag.toUpperCase(); this.id = id; this.value = ''; this.checked = false;
       this.hidden = false; this.disabled = false; this.textContent = ''; this.children = [];
-      this.dataset = {}; this.style = {}; this._html = '';
+      this.dataset = {}; this.attributes = {...attributes}; this._html = ''; this.clientHeight = 420;
+      this.style = {setProperty(key,value) {this[key] = value;}};
+      const classes = new Set((attributes.class || '').split(/\s+/));
+      this.classList = {toggle(key,on) {if(on) classes.add(key); else classes.delete(key);}, remove(key) {classes.delete(key);}, contains(key) {return classes.has(key);}};
     }
+    setAttribute(key,value) {this.attributes[key]=String(value);if(key.startsWith('data-')) this.dataset[key.slice(5)] = String(value);}
     set innerHTML(value) {
-      this._html = String(value); this.children = [];
-      const options = [...this._html.matchAll(/<option\b([^>]*)\bvalue="([^"]+)"([^>]*)>/g)];
-      if (this.tagName === 'SELECT' && options.length) this.value = (options.find(m => (m[1] + m[3]).includes('selected')) || options[0])[2];
-      this.selects = [...this._html.matchAll(/<select\b([^>]*)>([\s\S]*?)<\/select>/g)].map(m => {
-        const el = new Element('select'), a = attrs(m[1]);
-        for (const [key, value] of Object.entries(a)) if (key.startsWith('data-')) el.dataset[key.slice(5)] = value;
-        el.innerHTML = m[2]; return el;
-      });
+      this._html=String(value); this.children=[];
+      const options=[...this._html.matchAll(/<option\b([^>]*)\bvalue="([^"]+)"([^>]*)>/g)];
+      if(this.tagName==='SELECT' && options.length) this.value=(options.find(m => (m[1]+m[3]).includes('selected')) || options[0])[2];
     }
-    get innerHTML() { return this._html; }
-    replaceChildren(...children) { this.children = children; this._html = ''; this.selects = []; }
-    append(...children) { this.children.push(...children); }
-    querySelectorAll(selector) {
-      const match = /^\[data-([\w-]+)\]$/.exec(selector); assert(match, `Unsupported selector ${selector}`);
-      return (this.selects || []).filter(el => Object.hasOwn(el.dataset, match[1]));
-    }
-    click() {
-      if (this.disabled) return;
-      if (this.tagName === 'A') { downloads.push({name: this.download, blob: blobs.get(this.href)}); return; }
-      return this.onclick?.();
-    }
+    get innerHTML() {return this._html;}
+    replaceChildren(...children) {this.children=children;this._html='';}
+    append(...children) {this.children.push(...children);}
+    querySelectorAll() {return [];}
+    focus() {document.activeElement=this;}
+    click() {if(this.disabled) return;if(this.tagName==='A') {downloads.push({name:this.download,blob:blobs.get(this.href)});return;} return this.onclick?.();}
   }
-  for (const m of html.matchAll(/<([a-z][\w-]*)\b[^>]*\bid="([^"]+)"[^>]*>/gi)) elements.set(m[2], new Element(m[1], m[2]));
-  const dataID = attrs(dataScript[1]).id; assert(dataID); elements.get(dataID).textContent = dataScript[2];
-  const location = {hash: '', pathname: '/MIA_5query_cards.html', search: ''};
-  const document = {getElementById(id) {const el = elements.get(id); assert(el, `Unknown DOM id ${id}`); return el;}, createElement(tag) {return new Element(tag);}};
-  const sandbox = {document, location, history: {replaceState(_state, _title, url) {const i = url.indexOf('#'); location.hash = i < 0 ? '' : url.slice(i);}},
-    Blob, URL: {createObjectURL(blob) {const key = `blob:test-${blobs.size}`; blobs.set(key, blob); return key;}, revokeObjectURL() {}},
-    setTimeout(callback) {queueMicrotask(callback); return 0;}, console};
-  sandbox.window = sandbox;
-  const context = vm.createContext(sandbox);
-  scripts.filter(script => script !== dataScript).forEach((script, i) => vm.runInContext(script[2], context, {filename: `fixed-page-script-${i}.js`}));
-  const execute = code => vm.runInContext(code, context);
-  const json = code => JSON.parse(execute(`JSON.stringify(${code})`));
-  const select = (id, value) => {const el = elements.get(id); assert(el); el.value = String(value); assert(el.onchange, `No change handler on ${id}`); el.onchange();};
-  const click = id => {const el = elements.get(id); assert(el); el.click();};
-  return {elements, execute, json, select, click, downloads};
-}
-
-function cards(markup) {
-  const starts = [...markup.matchAll(/<div class="lesson-member([^"]*)"([^>]*)>/g)];
-  return starts.map((m, i) => ({classes: m[1], attrs: attrs(m[2]), body: markup.slice(m.index + m[0].length, i + 1 < starts.length ? starts[i + 1].index : markup.length)}));
-}
-function assertCards(actual, cap, hits, depth, result, question = null) {
-  assert.equal(actual.length, enumerate(cap).length);
-  assert.deepEqual(sorted(actual.map(card => Number(card.attrs['data-member']))), enumerate(cap));
-  for (const card of actual) {
-    const member = Number(card.attrs['data-member']), sig = candidateSignature(member, hits);
-    const pass = question === null ? sig.slice(0, depth).split('').every(value => value === '1') : sig[question] === '1';
-    assert.equal(card.attrs['data-signature'], sig); assert.equal(card.attrs['data-pass'], pass ? '1' : '0');
-    assert(card.classes.includes(pass ? 'fits' : 'blocked'));
-    assert(card.body.startsWith(`<span>${IDS.filter((_, i) => member >> i & 1).join('<br>')}</span>`));
-    if (question === null) {
-      const badges = [...card.body.matchAll(/<i class="condition ([^"]*)"([^>]*)>([1-5])<\/i>/g)];
-      assert.equal(badges.length, 5);
-      badges.forEach((badge, i) => {
-        assert.equal(badge[1], i >= depth ? 'unused' : sig[i] === '1' ? 'agree' : 'reject');
-        assert.equal(attrs(badge[2]).style, `--sheet:${COLORS[i]}`); assert.equal(badge[3], String(i + 1));
-      });
-      result.combined_card_checks++;
-    } else result.question_card_checks++;
+  for(const m of html.matchAll(/<([a-z][\w-]*)\b([^>]*\bid="([^"]+)"[^>]*)>/gi)) {
+    const element=new Element(m[1],m[3],attrs(m[2])); element.hidden=/\bhidden\b/.test(m[2]); elements.set(m[3],element);
   }
+  elements.get(attrs(dataScript[1]).id).textContent=dataScript[2];
+  const document={activeElement:null,getElementById(id) {const el=elements.get(id);assert(el,`Unknown DOM id ${id}`);return el;},createElement(tag) {return new Element(tag);},addEventListener(name,callback) {events[name]=callback;}};
+  const location={hash:'',pathname:'/MIA_5query_cards.html',search:''};
+  const sandbox={document,location,history:{replaceState() {}},Blob,URL:{createObjectURL(blob) {const key=`blob:test-${blobs.size}`;blobs.set(key,blob);return key;},revokeObjectURL() {}},
+    setTimeout(callback,ms) {timers.push({callback,ms});return timers.length;},requestAnimationFrame(callback) {queueMicrotask(callback);},addEventListener(name,callback) {events[name]=callback;},matchMedia() {return {matches:reduced};},console};
+  sandbox.window=sandbox;
+  const context=vm.createContext(sandbox);
+  scripts.filter(script=>script!==dataScript).forEach((script,i)=>vm.runInContext(script[2],context,{filename:`fixed-page-script-${i}.js`}));
+  const execute=code=>vm.runInContext(code,context);
+  const json=code=>JSON.parse(execute(`JSON.stringify(${code})`));
+  const select=(id,value)=>{const el=elements.get(id);el.value=String(value);assert(el.onchange);el.onchange();};
+  const click=id=>elements.get(id).click();
+  const tick=async()=>{assert(timers.length);timers.shift().callback();await Promise.resolve();await Promise.resolve();};
+  return {elements,execute,json,select,click,downloads,timers,tick,events,document};
 }
-
-function assertColumn(viewer, cap, member, depth, result) {
-  const rows = independentTrace(cap, member), hits = signature(member);
-  const apiRows = viewer.json(`MIA_FIXED_LESSON.trace(${cap},${member})`);
-  assert.equal(apiRows.length, 5);
-  const questionMarkup = viewer.elements.get(`lesson-questions-${cap}`).innerHTML;
-  const questions = [...questionMarkup.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g)];
-  assert.equal(questions.length, 5);
-  questions.forEach((question, index) => {
-    const row = rows[index], api = apiRows[index], a = attrs(question[1]), body = question[2];
-    assert.equal(api.step, index); assert.equal(api.query, row.query); assert.equal(api.hit, row.hit);
-    assert.equal(api.complete, false); assert.equal(api.alreadyUnique, row.before.length === 1);
-    assert.deepEqual(sorted(api.before), row.before); assert.deepEqual(sorted(api.after), row.after);
-    for (let hit = 0; hit <= cap; hit++) assert.deepEqual(sorted(api.groups[hit]), row.groups[hit]);
-    assert.equal(a['data-cap'], String(cap)); assert.equal(a['data-step'], String(index + 1));
-    assert.equal(a['data-query'], String(row.query)); assert.equal(a['data-hit'], String(row.hit));
-    assert.equal(a['data-before'], String(row.before.length)); assert.equal(a['data-after'], String(row.after.length));
-    assert.equal(a.class.includes('finished-sheet'), false);
-    assert(a.class.split(/\s+/).includes(index < depth ? 'stacked' : 'not-stacked'));
-    assert.equal(a.style, `--sheet:${COLORS[index]}`);
-    assert(body.includes(`<b class="question-number">質問${index + 1}</b>`));
-    assert(!body.includes('追加質問不要')); assert(!body.includes('誰も調べません'));
-    const cells = [...body.matchAll(/<span class="id-position([^"]*)"([^>]*)>(\d+)<\/span>/g)];
-    assert.equal(cells.length, 11);
-    cells.forEach((cell, idIndex) => {
-      const ca = attrs(cell[2]), selected = row.query >> idIndex & 1;
-      assert.equal(cell[3], String(IDS[idIndex])); assert.equal(ca['data-id'], String(IDS[idIndex]));
-      assert.equal(ca['data-selected'], String(selected)); assert.equal(cell[1].includes('investigate'), Boolean(selected));
-      assert.equal(ca.style, `--sheet:${COLORS[index]}`); result.id_cells_checked++;
-    });
-    assert.equal(cells.filter(cell => cell[1].includes('investigate')).length, 5);
-    const groupMarkup = body.match(/<div class="hit-counts">([\s\S]*?)<\/div>/)?.[1]; assert(groupMarkup);
-    for (let hit = 0; hit <= cap; hit++) assert(groupMarkup.includes(`<span class="${hit === row.hit ? 'chosen-hit' : ''}">${hit}人 → ${row.groups[hit].length}${cap === 1 ? '候補' : '組'}</span>`));
-    assert.equal(row.groups.reduce((sum, group) => sum + group.length, 0), row.before.length);
-    assert(body.includes('候補数の計算の元を見る'));
-    // A single transparent sheet ignores the earlier sheets; its color is
-    // checked over all original cards, while displayed numbers use survivors.
-    assertCards(cards(body), cap, hits, depth, result, index);
+const cells=markup=>[...markup.matchAll(/<div class="sheet-cell ([^"]*)"([^>]*)>/g)].map(m=>({classes:m[1],attrs:attrs(m[2])}));
+function assertColumn(viewer,cap,member,depth,result) {
+  const rows=independentTrace(cap,member), api=viewer.json(`MIA_FIXED_LESSON.trace(${cap},${member})`);
+  for(let i=0;i<5;i++) {
+    const row=rows[i], card=viewer.elements.get(`glass-card-${i+1}`), grid=viewer.elements.get(`glass-grid-${i+1}`), actual=cells(grid.innerHTML);
+    assert.equal(api[i].query,row.query);assert.equal(api[i].hit,row.hit);assert.equal(api[i].complete,false);
+    assert.deepEqual(sorted(api[i].before),row.before);assert.deepEqual(sorted(api[i].after),row.after);
+    row.groups.forEach((group,h)=>assert.deepEqual(sorted(api[i].groups[h]),group));
+    assert.equal(card.dataset.query,String(QUERIES[i]));assert.equal(card.dataset.hit,String(row.hit));
+    assert.equal(card.classList.contains('merged'),i<depth);assert.equal(card.dataset.merged,i<depth?'1':'0');
+    assert.equal(grid.style['--rows'],cap===1?'1':'5');assert.equal(grid.attributes['data-cap'],String(cap));
+    assert.equal(actual.length,enumerate(cap).length);assert.deepEqual(sorted(actual.map(c=>Number(c.attrs['data-member']))),enumerate(cap));
+    assert.deepEqual(actual.map(c=>Number(c.attrs['data-member'])),cells(viewer.elements.get('merge-grid').innerHTML).map(c=>Number(c.attrs['data-member'])));
+    actual.forEach(c=>{const pass=pc(Number(c.attrs['data-member']) & QUERIES[i])===row.hit;assert.equal(c.attrs['data-pass'],pass?'1':'0');assert(c.classes.includes(pass?'fits':'blocked'));result.question_card_checks++;});
+    const meta=viewer.elements.get(`glass-meta-${i+1}`).innerHTML;
+    assert(meta.includes(`調べる：${label(QUERIES[i])}`));assert(meta.includes(`<span class="hit">${row.hit}人</span>`));
+    assert(meta.includes(`${row.before.length} → ${row.after.length}`));assert(!meta.includes('質問'));
+    const countCalculation=viewer.elements.get('current-calculations').innerHTML;
+    row.groups.forEach((group,h)=>{assert(countCalculation.includes(`<b>${h}人：${group.length}${cap===1?'候補':'組'}</b>`));});
+    if(row.before.length===1) result.fixed_questions_after_early_certainty++;
     result.question_rows_checked++;
-    if (row.before.length === 1) result.fixed_questions_after_early_certainty++;
-  });
-  const kept = enumerate(cap).filter(candidate => candidateSignature(candidate, hits).slice(0, depth).split('').every(value => value === '1'));
-  assert.deepEqual(sorted(viewer.json(`MIA_FIXED_LESSON.remaining(${cap},${member},${depth})`)), kept);
-  const merged = viewer.elements.get(`lesson-result-${cap}`).innerHTML;
-  const combined = merged.match(/<div class="candidate-sheet combined-sheet"([^>]*)>/); assert(combined);
-  assert.equal(attrs(combined[1])['data-remaining'], String(kept.length)); assert.equal(attrs(combined[1])['data-depth'], String(depth));
-  assertCards(cards(merged), cap, hits, depth, result);
-  assert.equal(viewer.elements.get(`lesson-counts-${cap}`).textContent, [enumerate(cap).length, ...rows.map(row => row.after.length)].join(' → '));
-  if (depth === 5) {assert.deepEqual(kept, [member]); assert(merged.includes(`<b>残る1枚：ID ${label(member)}</b>`));}
-}
-
-async function main() {
-  const result = {status: 'passed', environment: 'Node VM with simulated DOM; independent enumeration of fixed questions and rendered card markup',
-    html_bytes: Buffer.byteLength(html), html_sha256: crypto.createHash('sha256').update(html).digest('hex'),
-    one_member_examples: 0, two_member_examples: 0, example_prefixes_checked: 0, question_rows_checked: 0,
-    id_cells_checked: 0, question_card_checks: 0, combined_card_checks: 0, fixed_questions_after_early_certainty: 0,
-    formulas_checked: [], controls_checked: [], mean_decodes_checked: [], negative_cases: [], visual_browser_validation: false};
-  const viewer = simulatedViewer();
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'), {depth: 5, masks: {'1': 128, '2': 3}});
-  for (const cap of [1, 2]) {
-    const options = [...viewer.elements.get(`lesson-example-${cap}`).innerHTML.matchAll(/<option\b[^>]*\bvalue="(\d+)"[^>]*>/g)].map(m => Number(m[1]));
-    assert.deepEqual(sorted(options), enumerate(cap));
-    for (const member of enumerate(cap)) {
-      viewer.select(`lesson-example-${cap}`, member);
-      assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[cap], member);
-      for (let depth = 0; depth <= 5; depth++) {
-        viewer.select('lesson-depth', depth);
-        assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, depth);
-        assertColumn(viewer, cap, member, depth, result); result.example_prefixes_checked++;
-      }
-      result[cap === 1 ? 'one_member_examples' : 'two_member_examples']++;
-    }
   }
-  assert.equal(result.one_member_examples, 11); assert.equal(result.two_member_examples, 55);
-  assert.equal(result.example_prefixes_checked, 396);
-  assert(result.fixed_questions_after_early_certainty > 0);
-  result.controls_checked.push('all 11 single and 55 pair examples at every prefix zero through five',
-    'same five nonzero query masks and same five selected IDs for every example and prefix',
-    'all original cards keep fixed positions across sheets',
-    'question card colors use only that sheet; counts use earlier surviving cards',
-    'combined candidate cards and all matched/rejected/unused badges',
-    'fixed questions retained after early certainty');
-  for (const [cap, member] of [[1, 128], [2, 3]]) viewer.select(`lesson-example-${cap}`, member);
-  viewer.click('lesson-start'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, 0);
-  assert(viewer.elements.get('lesson-back').disabled); assert(!viewer.elements.get('lesson-next').disabled);
-  viewer.click('lesson-back'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, 0);
-  for (let index = 0; index < 5; index++) {viewer.click('lesson-next'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, index + 1);}
-  assert(viewer.elements.get('lesson-next').disabled);
-  viewer.click('lesson-next'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, 5);
-  viewer.click('lesson-back'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, 4);
-  viewer.click('lesson-end'); assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth, 5);
-  assert.equal(viewer.elements.get('lesson-depth').value, '5');
-  result.controls_checked.push('start/back/next/end controls and depth bounds');
-  const singleMarkup = viewer.elements.get('lesson-questions-1').innerHTML, pairMarkup = viewer.elements.get('lesson-questions-2').innerHTML;
-  assert(singleMarkup.includes('選択した5人 → 1人の回答なら5候補。選ばない6人 → 0人なら6候補。'));
-  assert(pairMarkup.includes('0人：6×5÷2＝15組 ／ 1人：5×6＝30組 ／ 2人：5×4÷2＝10組。合計55組。'));
-  assert.equal(11 * 10 / 2, enumerate(2).length); assert.equal(6 * 5 / 2 + 5 * 6 + 5 * 4 / 2, enumerate(2).length);
-  result.formulas_checked.push('11 choose 2 = 11×10÷2 = 55', 'fixed first-question one-member split 6+5=11',
-    'fixed first-question pair split 15+30+10=55', 'every later count enumerates earlier surviving masks');
+  const kept=enumerate(cap).filter(candidate=>rows.slice(0,depth).every(row=>pc(candidate & row.query)===row.hit));
+  assert.deepEqual(sorted(viewer.json(`MIA_FIXED_LESSON.remaining(${cap},${member},${depth})`)),kept);
+  const merged=cells(viewer.elements.get('merge-grid').innerHTML);
+  assert.equal(merged.length,enumerate(cap).length);
+  merged.forEach(c=>{const pass=kept.includes(Number(c.attrs['data-member']));assert.equal(c.attrs['data-pass'],pass?'1':'0');assert(c.classes.includes(pass?'fits':'blocked'));result.combined_card_checks++;});
+  assert.equal(viewer.elements.get('count-path').textContent,[enumerate(cap).length,...rows.map(row=>row.after.length)].join(' → '));
+  assert.equal(viewer.elements.get('merge-base-count').textContent,`残る ${kept.length}${cap===1?'候補':'組'}`);
+  if(depth===5) {assert.deepEqual(kept,[member]);assert.equal(viewer.elements.get('summary-result').textContent,`残る1枚：ID ${label(member)}`);}
+}
+async function main() {
+  const result={status:'passed',environment:'Node VM simulated DOM, independent candidate enumeration, controlled animation timers and numeric layout geometry',
+    html_bytes:Buffer.byteLength(html),html_sha256:crypto.createHash('sha256').update(html).digest('hex'),
+    one_member_examples:0,two_member_examples:0,example_prefixes_checked:0,question_rows_checked:0,question_card_checks:0,combined_card_checks:0,
+    fixed_questions_after_early_certainty:0,formulas_checked:[],controls_checked:[],mean_decodes_checked:[],negative_cases:[],visual_browser_validation:false};
+  const viewer=simulatedViewer();
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:1,depth:0,masks:{'1':128,'2':3},playing:false});
+  assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,true);
+  assert.equal(viewer.elements.get('help-overlay').hidden,true);
+  for(const cap of [1,2]) for(const member of enumerate(cap)) {
+    viewer.execute(`MIA_FIXED_LESSON.setAnswer(${cap},${member})`);
+    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[cap],member);
+    const selected=IDS.filter((_,i)=>member>>i&1);
+    assert.equal(viewer.elements.get('answer-record-1').value,String(selected[0]));
+    if(cap===2) assert.equal(viewer.elements.get('answer-record-2').value,String(selected[1]));
+    assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,cap!==2);
+    for(let depth=0;depth<=5;depth++) {
+      viewer.execute(`MIA_FIXED_LESSON.setDepth(${depth})`);assertColumn(viewer,cap,member,depth,result);result.example_prefixes_checked++;
+    }
+    result[cap===1?'one_member_examples':'two_member_examples']++;
+  }
+  assert.equal(result.example_prefixes_checked,396);
+  result.controls_checked.push('all 11 singles and 55 pairs at all six stack depths','same fixed investigation sets for every answer','all sheet colors and cumulative merged colors independently enumerated','fixed investigations continue after early certainty');
+  viewer.click('tab-single');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  viewer.select('answer-record-1',383);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[1],128);
+  viewer.click('tab-pair');viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3)');
+  viewer.select('answer-record-2',90);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
+  viewer.select('answer-record-1',90);assert(!viewer.elements.get('lesson-error').hidden);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
+  viewer.select('answer-record-1',675);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],1028);
+  assert.equal(viewer.elements.get('answer-record-1').value,'675');assert.equal(viewer.elements.get('answer-record-2').value,'90');
+  viewer.click('tab-single');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[1],128);
+  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setAnswer(2,1)'),/異なる正解/);
+  for(let i=1;i<=5;i++) {viewer.click('merge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);}
+  assert(viewer.elements.get('merge-one').disabled);viewer.click('unmerge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,4);
+  viewer.click('spread-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  const play=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);
+  for(let i=1;i<=5;i++) {assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);await viewer.tick();}
+  await play;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
+  // Replay first spreads all cards, then animates five actual movements.
+  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  await viewer.tick();assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);
+  viewer.click('tab-pair');await viewer.tick();await replay;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').cap,2);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  const stopped=viewer.click('animate-all');viewer.click('animate-all');await viewer.tick();await stopped;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,1);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
+  const cancelled=viewer.click('animate-all');viewer.select('answer-record-2',115);await viewer.tick();await cancelled;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  viewer.click('open-help');assert.equal(viewer.elements.get('help-overlay').hidden,false);assert.equal(viewer.document.activeElement.id,'close-help');
+  viewer.events.keydown({key:'Escape'});assert.equal(viewer.elements.get('help-overlay').hidden,true);assert.equal(viewer.document.activeElement.id,'open-help');
+  result.controls_checked.push('one/two person tabs remember selected answers and reset stack','individual ID pickers and duplicate-ID rejection','animated sequential movement, replay, pause, and cancellation by tab/answer changes','help dialog open, Escape close and focus restoration');
+  assert(viewer.elements.has('help-panel'), 'Focus trapping requires the actual dialog element');
+  const reducedViewer=simulatedViewer(true), reducedPlay=reducedViewer.click('animate-all');
+  for(let i=1;i<=5;i++) {assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(reducedViewer.timers[0].ms,90);await reducedViewer.tick();}
+  await reducedPlay;assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').playing,false);
+  result.controls_checked.push('reduced-motion animation reaches all five states without long movement waits');
+  result.geometry_heights_checked=[72,160,260,340,420,600,900];
+  for(const height of result.geometry_heights_checked) {
+    const g=viewer.json(`MIA_FIXED_LESSON.geometry(${height})`);
+    assert(g.cardHeight>0);assert.equal(g.positions.length,6);assert(Math.abs(g.target+g.cardHeight-height)<1e-9);
+    for(let i=0;i<5;i++) {assert(g.positions[i]>=0);assert(g.positions[i]+g.cardHeight<=g.positions[i+1]);}
+    viewer.elements.get('card-stage').clientHeight=height;viewer.execute('MIA_FIXED_LESSON.setDepth(0);MIA_FIXED_LESSON.place(true)');
+    for(let i=1;i<=5;i++) assert.equal(viewer.elements.get(`glass-card-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);
+    viewer.execute('MIA_FIXED_LESSON.setDepth(5)');
+    for(let i=1;i<=5;i++) assert.equal(viewer.elements.get(`glass-card-${i}`).style.transform,`translateY(${g.target}px)`);
+  }
+  const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];
+  assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));assert(style.includes('.stage{flex:1;min-height:0;'));
+  assert(style.includes('transition:transform 880ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
+  assert(!html.split('<script>')[0].includes('質問'));
+  assert.equal(11*10/2,55);assert.equal(6*5/2+5*6+5*4/2,55);
+  result.formulas_checked.push('11 choose 2 = 55','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
   const initialOperation = operationSnapshot();
   assert.deepEqual(initialOperation, {observations: Array(5).fill(null), meanInputs: Array(5).fill(null), counts: [11, 55, 11, 55, 11, 55], queries: QUERIES});
@@ -285,7 +259,7 @@ async function main() {
   assert(viewer.elements.get('fixed-results').innerHTML.includes('全6 Teamの所属が1候補ずつ'));
   assert(viewer.elements.get('fixed-results').innerHTML.includes('対象6 Team外：495・675'));
   const beforeLessonChange = operationSnapshot();
-  viewer.select('lesson-example-1', 1); viewer.select('lesson-example-2', 1025); viewer.click('lesson-start');
+  viewer.execute('MIA_FIXED_LESSON.setAnswer(1,1);MIA_FIXED_LESSON.setAnswer(2,1025);MIA_FIXED_LESSON.setDepth(0)');
   assert.deepEqual(operationSnapshot(), beforeLessonChange);
   result.controls_checked.push('all five exact fictional demo means', 'lesson selection leaves operational observations unchanged');
 

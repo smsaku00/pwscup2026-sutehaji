@@ -1,4 +1,4 @@
-"""Build the newly verified, nonadaptive five-question teaching page."""
+"""Build compact and detailed offline lessons for the fixed five-investigation code."""
 import hashlib
 import json
 import re
@@ -18,13 +18,12 @@ def main():
     padding = json.loads(padding_path.read_text(encoding='utf-8'))
     if code['candidate_ids'] != padding['candidate_ids'] or code['total_high'] != encoding['total_high']:
         raise ValueError('fixed code disagrees with shared score settings')
-    ids = code['candidate_ids']
-    queries = code['query_masks']
+    ids, queries = code['candidate_ids'], code['query_masks']
     if len(queries) != 5 or any(bin(query).count('1') != 5 for query in queries):
         raise ValueError('expected five fixed sets of five candidates')
     expected = [sum(1 << i for i, word in enumerate(code['codewords']) if word >> r & 1) for r in range(5)]
     if expected != queries:
-        raise ValueError('codeword bits disagree with fixed questions')
+        raise ValueError('codeword bits disagree with fixed investigations')
     data = {'ids': ids, 'query_masks': queries, 'codewords': code['codewords'],
             'teams': code['team_order'], 'caps': code['caps'], 'high': code['total_high'],
             'negative_ids': padding['known_negative_ids'], 'padding_counts': code['padding_counts'],
@@ -43,31 +42,42 @@ def main():
         selected = '・'.join(str(person) for i, person in enumerate(ids) if query >> i & 1)
         inputs += f'<tr data-fixed-round="{r+1}" data-query="{query}"><td>{r+1}</td><td>{selected}</td><td><input id="fixed-mean-{r+1}" aria-label="質問{r+1}の平均点" placeholder="mia.tpr_rareの全桁"></td><td><button id="fixed-decode-{r+1}">この行を復号</button></td></tr><tr><td colspan="4" id="fixed-answer-{r+1}" class="small">未入力</td></tr>'
     inputs += '</tbody></table>'
-    style = re.search(r'<style>([\s\S]*?)</style>', (HERE / 'viewer5.template.html').read_text(encoding='utf-8')).group(1)
-    ui = "'use strict';\nconst data=JSON.parse(document.getElementById('fixed-data').textContent),five=MIA_FIXED,shared=MIA_TREE,ids=data.ids,pop=five.popcount;\n"
-    ui += (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8')
-    ui += '\n' + (HERE / 'fixed_operations_ui.js').read_text(encoding='utf-8')
-    replacements = {'STYLE': style, 'SHARED_CORE': (HERE / 'tree_core.js').read_text(encoding='utf-8'),
-                    'FIXED_CORE': (HERE / 'fixed_core.js').read_text(encoding='utf-8'),
-                    'DATA': json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),
-                    'FIXED_UI': ui, 'CODE_MATRIX': matrix, 'PADDING_TABLE': padding_table, 'MEAN_INPUTS': inputs}
-    html = (HERE / 'fixed5.template.html').read_text(encoding='utf-8')
-    for key, value in replacements.items():
-        html = html.replace(f'/*__{key}__*/', value)
-    if re.search(r'/\*__[A-Z_]+__\*/', html):
-        raise ValueError('unreplaced fixed-page placeholder')
-    output = DEST / 'MIA_5query_cards.html'
-    output.write_text(html, encoding='utf-8')
-    report = {'strategy': 'nonadaptive', 'html_bytes': output.stat().st_size,
-              'html_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
-              'format': 'single offline HTML with five unchanged questions',
-              'single_team_states': [11, 55], 'single_team_max_depth': [5, 5],
-              'guarantee_method': code['guarantee']['basis'], 'provenance': code['provenance'],
-              'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
-                               'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
-                              for p in (code_path, encoding_path, padding_path)]}
-    (DEST / 'size_report_5query.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(json.dumps({key: value for key, value in report.items() if key != 'source_files'}, ensure_ascii=False))
+    prefix = "'use strict';\nconst data=JSON.parse(document.getElementById('fixed-data').textContent),five=MIA_FIXED,shared=MIA_TREE,ids=data.ids,pop=five.popcount;\n"
+    operations = (HERE / 'fixed_operations_ui.js').read_text(encoding='utf-8')
+    shared = {'SHARED_CORE': (HERE / 'tree_core.js').read_text(encoding='utf-8'),
+              'FIXED_CORE': (HERE / 'fixed_core.js').read_text(encoding='utf-8'),
+              'DATA': json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),
+              'PADDING_TABLE': padding_table}
+    colors = ['#2476b8', '#008576', '#bc6913', '#a4497a', '#6552ad']
+    cards = ''.join(f'<article id="glass-card-{i+1}" class="glass-card" style="--sheet:{color};--layer:{i+1};--z:{i+2}"><div id="glass-meta-{i+1}" class="card-meta"></div><div id="glass-grid-{i+1}" class="sheet-grid"></div></article>' for i, color in enumerate(colors))
+    legacy_style = re.search(r'<style>([\s\S]*?)</style>', (HERE / 'viewer5.template.html').read_text(encoding='utf-8')).group(1)
+    configurations = [
+        ('cards', 'fixed_compact.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8'),
+         'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('質問', '調査'),
+         'CODE_MATRIX': matrix.replace('質問', '調査'), 'MEAN_INPUTS': inputs.replace('質問', '調査'), 'GLASS_CARDS': cards},
+         'size_report_5query.json', 'single offline HTML; five animated transparent cards within viewport'),
+        ('reference', 'fixed_reference.template.html', {'STYLE': legacy_style,
+         'FIXED_UI': prefix + (HERE / 'fixed_reference_ui.js').read_text(encoding='utf-8') + '\n' + operations,
+         'CODE_MATRIX': matrix, 'MEAN_INPUTS': inputs},
+         'size_report_5query_reference.json', 'single offline HTML with five unchanged questions'),
+    ]
+    for name, template, changes, report_name, format_name in configurations:
+        html = (HERE / template).read_text(encoding='utf-8')
+        for key, value in {**shared, **changes}.items():
+            html = html.replace(f'/*__{key}__*/', value)
+        if re.search(r'/\*__[A-Z_]+__\*/', html):
+            raise ValueError('unreplaced fixed-page placeholder')
+        output = DEST / f'MIA_5query_{name}.html'
+        output.write_text(html, encoding='utf-8')
+        report = {'strategy': 'nonadaptive', 'html_bytes': output.stat().st_size,
+                  'html_sha256': hashlib.sha256(output.read_bytes()).hexdigest(), 'format': format_name,
+                  'single_team_states': [11, 55], 'single_team_max_depth': [5, 5],
+                  'guarantee_method': code['guarantee']['basis'], 'provenance': code['provenance'],
+                  'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
+                                   'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
+                                  for p in (code_path, encoding_path, padding_path)]}
+        (DEST / report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps({'file': output.name, 'bytes': report['html_bytes'], 'sha256': report['html_sha256']}, ensure_ascii=False))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "environment": "Node VM with simulated DOM; independent enumeration of fixed questions and rendered card markup",
+  "html_bytes": 60018,
+  "html_sha256": "9658be66f805bf5012f31a516c885e36b5da9641820fc1671c19584a0dfadb19",
+  "one_member_examples": 11,
+  "two_member_examples": 55,
+  "example_prefixes_checked": 396,
+  "question_rows_checked": 1980,
+  "id_cells_checked": 21780,
+  "question_card_checks": 94380,
+  "combined_card_checks": 18876,
+  "fixed_questions_after_early_certainty": 276,
+  "formulas_checked": [
+    "11 choose 2 = 11×10÷2 = 55",
+    "fixed first-question one-member split 6+5=11",
+    "fixed first-question pair split 15+30+10=55",
+    "every later count enumerates earlier surviving masks"
+  ],
+  "controls_checked": [
+    "all 11 single and 55 pair examples at every prefix zero through five",
+    "same five nonzero query masks and same five selected IDs for every example and prefix",
+    "all original cards keep fixed positions across sheets",
+    "question card colors use only that sheet; counts use earlier surviving cards",
+    "combined candidate cards and all matched/rejected/unused badges",
+    "fixed questions retained after early certainty",
+    "start/back/next/end controls and depth bounds",
+    "embedded source code and score encoding match source files",
+    "preserved adaptive HTML is byte-identical to the previous 67,765-byte version",
+    "six-Team fixed question table and constant padding IDs/counts",
+    "all five exact fictional demo means",
+    "lesson selection leaves operational observations unchanged",
+    "JSON export of unchanged questions, observations, and actual ID results",
+    "clear control",
+    "reverse-order mean entry with empty intervening rows",
+    "all-five demo shortcut",
+    "all 216 exact alphabet means at each of five fixed rows",
+    "joint feasibility rejection leaves observations and fixed questions unchanged"
+  ],
+  "mean_decodes_checked": [
+    "73/6750",
+    "839/54000",
+    "577/27000",
+    "31/1800",
+    "13/1200"
+  ],
+  "negative_cases": [
+    "exact midpoint score",
+    "above score range",
+    "below score range",
+    "invalid numeric input",
+    "contradictory mean cannot replace a valid observation"
+  ],
+  "visual_browser_validation": false,
+  "exact_mean_round_cases": 1080,
+  "feasible_mean_round_cases": 655,
+  "infeasible_mean_round_cases": 425
+}
