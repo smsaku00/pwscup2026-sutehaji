@@ -8,7 +8,7 @@
   const pattern = id => data.query_masks.map(query => Number(Boolean(query & (1 << ids.indexOf(id)))));
   const masks = {...data.lesson_defaults};
   let pairOrder = shared.maskIDs(masks[2], ids);
-  let cap = 1, depth = 0, playing = false, epoch = 0, merged = false;
+  let cap = 1, depth = 0, playing = false, epoch = 0, merged = false, addingRound = -1;
   let trialIDs = shared.maskIDs(masks[cap], ids);
   const reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
   function trace(capacity, member) {
@@ -34,7 +34,7 @@
     const target = data.query_masks.map(query => pop(query & masks[cap]));
     const complete = trialIDs.length === cap, matches = sum.map((n, r) => n === target[r]);
     return {selectedIDs: trialIDs.slice(), signatures, sum, target, complete, matches,
-      allMatch: complete && matches.every(Boolean), merged, comparedCount: depth};
+      allMatch: complete && matches.every(Boolean), merged, comparedCount: depth, addingRound};
   }
   function geometry(height) {
     const h = Math.max(0, Number(height) || 0), gap = Math.min(h / 20, 4), cardHeight = (h - 2 * gap) / 3;
@@ -45,10 +45,12 @@
     for (let i = 0; i < 2; i++) {
       const card = el(`floating-record-${i + 1}`);
       card.hidden = !trialIDs[i];
-      card.classList.toggle('reflow', reflow); card.classList.toggle('merged', merged);
+      card.classList.toggle('reflow', reflow); card.classList.toggle('adding', addingRound >= 0);
+      card.style.setProperty('--addition-distance', `${layout.target - layout.positions[i]}px`);
+      card.style.setProperty('--addition-offset', `${i === 0 ? -9 : 9}px`);
       card.style.height = `${layout.cardHeight}px`;
-      card.style.transform = `translateY(${merged ? layout.target : layout.positions[i]}px)`;
-      card.setAttribute('data-merged', merged ? '1' : '0');
+      card.style.transform = `translateY(${layout.positions[i]}px)`;
+      card.setAttribute('data-adding-round', String(addingRound));
     }
     const result = el('sum-result');
     result.classList.toggle('reflow', reflow); result.style.height = `${layout.cardHeight}px`;
@@ -76,27 +78,29 @@
       const selected = trialIDs.includes(id), bits = pattern(id);
       return `<button type="button" class="record-card${selected ? ' selected' : ''}${selected && solved ? ' solved' : ''}" data-record-id="${id}" data-signature="${bits.join('')}" aria-pressed="${selected}" aria-label="ID ${id}：提出1〜5の模様 ${bits.join('')}。${selected ? '比較から外す' : '比較に選ぶ'}"><b>ID ${id}</b>${bits.map((n, r) => `<span class="record-bit bit-${n}" data-round="${r}" data-value="${n}" title="提出${r + 1}の対象${n ? '内' : '外'}">${n}</span>`).join('')}</button>`;
     }).join('');
-    el('trial-hint').textContent = `${cap}人を選ぶ → ${cap === 2 ? '各桁を足す' : 'その模様'} → 下の人数と比べる`;
+    el('trial-hint').textContent = `${cap}人を選ぶ → ${cap === 2 ? '各桁を足す' : 'その模様'} → 上の答えと比べる`;
     for (let i = 0; i < 2; i++) {
       const id = trialIDs[i], card = el(`floating-record-${i + 1}`);
-      card.innerHTML = id === undefined ? '' : `<b>ID ${id}</b>${pattern(id).map((n, r) => `<span class="floating-bit bit-${n}" data-round="${r}">${n}</span>`).join('')}`;
+      card.innerHTML = id === undefined ? '' : `<b>ID ${id}</b>${pattern(id).map((n, r) => `<span class="floating-bit bit-${n}${r === addingRound ? ' adding-digit' : ''}" data-round="${r}">${n}</span>`).join('')}`;
       card.setAttribute('aria-label', id === undefined ? '未選択' : `選んだID ${id}の模様 ${pattern(id).join('')}`);
     }
     el('sum-result').innerHTML = '<b>合計</b>' + state.sum.map((n, r) => {
       const checked = state.complete && r < depth, okay = checked && state.matches[r];
-      return `<span class="sum-bit ${checked ? okay ? 'match' : 'mismatch' : 'waiting'}" data-round="${r}" data-value="${n}" data-checked="${checked ? 1 : 0}" data-match="${checked ? okay ? 1 : 0 : ''}">${merged && state.complete ? n : '·'}<small>${checked ? okay ? '✓' : '×' : ''}</small></span>`;
+      return `<span class="sum-bit ${checked ? okay ? 'match' : 'mismatch' : r === addingRound ? 'calculating' : 'waiting'}" data-round="${r}" data-value="${n}" data-checked="${checked ? 1 : 0}" data-match="${checked ? okay ? 1 : 0 : ''}">${checked ? n : '·'}<small>${checked ? okay ? '✓' : '×' : ''}</small></span>`;
     }).join('');
-    el('target-row').innerHTML = '<b>チームの<br>縦5桁</b>' + state.target.map((n, r) => `<span class="target-bit" data-round="${r}" data-value="${n}">${n}</span>`).join('');
+    el('target-row').innerHTML = '<b>答え<br>縦5桁</b>' + state.target.map((n, r) => `<span class="target-bit${r === addingRound ? ' active' : ''}" data-round="${r}" data-value="${n}">${n}</span>`).join('');
     const equation = state.signatures.map(bits => bits.join('')).join(' ＋ ');
     if (!state.complete) el('trial-status').textContent = `あと${cap - trialIDs.length}人選んでください。チームの結果は変わりません。`;
     else if (solved) el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。5回とも一致 → ID ${trialIDs.join('＋')}`;
     else if (depth === 5) el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。提出${state.matches.map((okay, r) => okay ? null : r + 1).filter(Boolean).join('・')}が不一致です。別の${cap === 2 ? '2人' : '1人'}を選べます。`;
-    else el('trial-status').textContent = `${equation} ＝ ${state.sum.join('')}。${depth ? `${depth}回分を照合しました。` : '重ねると合計が下の欄へ移動します。'}`;
+    else if (addingRound >= 0) el('trial-status').textContent = `提出${addingRound + 1}：${state.signatures.map(bits => bits[addingRound]).join(' ＋ ')} → 合計を計算中`;
+    else if (depth) el('trial-status').textContent = `提出${depth}：${state.signatures.map(bits => bits[depth - 1]).join(' ＋ ')} ＝ ${state.sum[depth - 1]}。答え${state.target[depth - 1]}と${state.matches[depth - 1] ? '一致' : '不一致'}。`;
+    else el('trial-status').textContent = '1提出ずつ照合すると、その提出の数字が合計欄へ移動します。';
     el('trial-status').classList.toggle('solved', solved);
     el('merge-progress').textContent = `${depth} / 5提出`;
     el('animate-all').textContent = playing ? '止める' : depth === 5 ? 'もう一度重ねる' : '選んだ模様を重ねる';
     el('animate-all').disabled = !state.complete;
-    el('merge-one').disabled = !state.complete || depth === 5;
+    el('merge-one').disabled = !state.complete || depth === 5 || playing;
     el('unmerge-one').disabled = depth === 0;
     el('spread-all').disabled = depth === 0 && !merged && !playing;
     el('summary-result').textContent = `${kept.length}${unit(cap)}が人数列に一致`;
@@ -104,9 +108,10 @@
     el('count-path').textContent = [all(cap).length, ...rows.map(row => row.after.length)].join(' → ');
     el('current-calculations').innerHTML = `<p>説明例の所属：<b>ID ${label(masks[cap])}</b>。最初は${all(cap).length}${unit(cap)}です。</p>` + rows.map(row => `<details><summary>提出${row.step + 1}：${row.before.length}${unit(cap)} → ${row.after.length}${unit(cap)}（${row.hit}人）</summary><p>前の提出まで残った候補を、提出の対象集合に何人入るかで分けます。対象ID：${label(row.query)}</p>${row.groups.map((group, hit) => `<p class="data-candidates"><b>${hit}人：${group.length}${unit(cap)}</b> — ${group.length ? group.map(label).join(' ／ ') : 'なし'}</p>`).join('')}</details>`).join('');
     place();
-    if (globalThis.MIA_FIXED_OVERVIEW) globalThis.MIA_FIXED_OVERVIEW.fromLesson({cap, member: masks[cap], depth});
+    if (globalThis.MIA_FIXED_OVERVIEW) {globalThis.MIA_FIXED_OVERVIEW.fromLesson({cap, member: masks[cap], depth});
+      if (addingRound >= 0) globalThis.MIA_FIXED_OVERVIEW.selectRound(addingRound);}
   }
-  function stop() {epoch++; playing = false;}
+  function stop() {epoch++; playing = false; addingRound = -1;}
   function resetComparison() {depth = 0; merged = false;}
   function setTrial(selected) {
     if (!Array.isArray(selected) || selected.length > cap || new Set(selected).size !== selected.length || selected.some(id => !ids.includes(id))) throw Error('人数分まで、異なる候補IDを選んでください。');
@@ -141,15 +146,30 @@
     stop(); depth = value; merged = value > 0; render();
   }
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  async function addNext(ticket) {
+    if (depth >= 5 || ticket !== epoch) return;
+    addingRound = depth; render();
+    await delay(reduced ? 20 : 680);
+    if (ticket !== epoch) return;
+    depth++; merged = true; addingRound = -1; render();
+  }
+  async function animateOne() {
+    if (playing || depth >= 5 || !trialSnapshot().complete) return;
+    stop(); const ticket = epoch; playing = true;
+    await addNext(ticket);
+    if (ticket === epoch) {playing = false; render();}
+  }
   async function animateAll() {
     if (playing) {stop(); render(); return;}
     if (!trialSnapshot().complete) return;
     stop(); const ticket = epoch; playing = true;
-    if (depth === 5 || merged) {resetComparison(); render(); await delay(reduced ? 20 : 920);}
+    if (depth === 5) {resetComparison(); render(); await delay(reduced ? 20 : 200);}
     if (ticket !== epoch) return;
-    merged = true; render(); await delay(reduced ? 20 : 920);
-    if (ticket !== epoch) return;
-    while (depth < 5 && ticket === epoch) {depth++; render(); await delay(reduced ? 60 : 240);}
+    while (depth < 5 && ticket === epoch) {
+      await addNext(ticket);
+      if (ticket !== epoch) return;
+      await delay(reduced ? 20 : 180);
+    }
     if (ticket === epoch) {playing = false; render();}
   }
   function chooseRecords() {
@@ -163,7 +183,7 @@
   el('find-matching').onclick = findMatching;
   el('tab-single').onclick = () => setTab(1); el('tab-pair').onclick = () => setTab(2);
   el('answer-record-1').onchange = chooseRecords; el('answer-record-2').onchange = chooseRecords;
-  el('animate-all').onclick = animateAll; el('merge-one').onclick = () => setDepth(Math.min(5, depth + 1));
+  el('animate-all').onclick = animateAll; el('merge-one').onclick = animateOne;
   el('unmerge-one').onclick = () => setDepth(Math.max(0, depth - 1)); el('spread-all').onclick = () => setDepth(0);
   function help(open) {
     el('help-overlay').hidden = !open;
@@ -183,7 +203,7 @@
   });
   if (typeof ResizeObserver === 'function') new ResizeObserver(() => place(true)).observe(el('overlay-stage'));
   else if (typeof addEventListener === 'function') addEventListener('resize', () => place(true));
-  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, geometry, setTab, setAnswer, setTrial, trialSnapshot, setDepth, animateAll, stop, render, place,
+  globalThis.MIA_FIXED_LESSON = Object.freeze({trace, remaining, geometry, setTab, setAnswer, setTrial, trialSnapshot, setDepth, animateOne, animateAll, stop, render, place,
     values: () => ({cap, depth, masks: {...masks}, playing})});
   render(); place(true);
 })();

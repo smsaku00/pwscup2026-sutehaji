@@ -46,7 +46,7 @@
     const r = selectedRound, t = selectedTeam, sequence = state.columns[t].join('');
     el('row-reader').innerHTML = `<b>横 → 提出${r + 1}：</b><code>${state.rowSequences[r]}</code>（6チーム分）<span class="mean-detail">希少平均点（説明用）${state.meanFractions[r]} → 6チームの人数</span>`;
     el('column-reader').innerHTML = `<b>縦 ↓ Team ${data.teams[t]}：</b><code>${state.columns[t].join(' ↓ ')}</code><br><span class="vertical-arrow">5回分 <code>${sequence}</code> → ID ${label(state.decodedMembers[t])} → 右の11人の模様</span>`;
-    el('selected-team-caption').textContent = `② Team ${data.teams[t]}の縦5桁 ${sequence} と模様を比べる`;
+    el('selected-team-caption').textContent = `② Team ${data.teams[t]}：模様を足して答えと比べる`;
     el('lesson-workspace').setAttribute('data-view', view);
     el('show-overview').setAttribute('aria-pressed', String(view === 'overview'));
     el('show-cards').setAttribute('aria-pressed', String(view === 'cards'));

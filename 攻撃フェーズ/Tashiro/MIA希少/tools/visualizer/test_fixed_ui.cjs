@@ -152,6 +152,9 @@ function assertOverview(viewer,result) {
   assert(viewer.elements.get('column-reader').innerHTML.includes(columns[t].join(' ↓ ')));
   assert(viewer.elements.get('selected-team-caption').textContent.includes(`Team ${data.teams[t]}`));
   const trial=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');assert.deepEqual(trial.target,columns[t]);
+  const headerAnswer=viewer.elements.get('target-row').innerHTML;assert(headerAnswer.includes('答え'));
+  const headerDigits=[...headerAnswer.matchAll(/data-round="(\d+)" data-value="([012])">([012])<\/span>/g)];
+  assert.equal(headerDigits.length,5);headerDigits.forEach((m,i)=>{assert.equal(Number(m[1]),i);assert.equal(Number(m[2]),columns[t][i]);assert.equal(Number(m[3]),columns[t][i]);});
   for(let i=0;i<5;i++) assert.equal(viewer.elements.get(`record-heading-${i+1}`).classList.contains('row-focus'),i===r);
   result.overview_states_checked++;
 }
@@ -269,26 +272,75 @@ async function main() {
   assert.equal(viewer.elements.get('answer-record-1').value,'675');assert.equal(viewer.elements.get('answer-record-2').value,'90');
   viewer.click('tab-single');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[1],128);
   assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setAnswer(2,1)'),/異なる正解/);
-  for(let i=1;i<=5;i++) {viewer.click('merge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);}
+  const sumCells=v=>[...v.elements.get('sum-result').innerHTML.matchAll(/<span class="sum-bit ([^"]+)"([^>]*)>([^<]+)<small>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),display:m[3]}));
+  const assertDisplayedSums=(v,depth,member)=>{
+    const expected=signature(member), cells=sumCells(v);assert.equal(cells.length,5);
+    cells.forEach((cell,r)=>assert.equal(cell.display,r<depth?String(expected[r]):'·'));
+  };
+  // Complete all five manual animations for each possible one/two-person answer.
+  // During movement the newly calculated sum must stay hidden; after movement
+  // exactly one more submission is revealed, including 1+1=2 cases.
+  result.animated_step_cases=0;
+  for(const capacity of [1,2]) for(const member of enumerate(capacity)) {
+    viewer.execute(`MIA_FIXED_LESSON.setAnswer(${capacity},${member})`);
+    const truth=viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships;
+    for(let r=0;r<5;r++) {
+      const step=viewer.click('merge-one');
+      assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r);
+      assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,r);
+      assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,r);
+      assertDisplayedSums(viewer,r,member);
+      assert(viewer.elements.get('merge-one').disabled);assert.equal(viewer.timers.length,1);
+      viewer.click('merge-one');assert.equal(viewer.timers.length,1);
+      for(let i=1;i<=capacity;i++) {
+        const moving=[...viewer.elements.get(`floating-record-${i}`).innerHTML.matchAll(/class="floating-bit[^\"]* adding-digit" data-round="(\d+)"/g)];
+        assert.equal(moving.length,1);assert.equal(Number(moving[0][1]),r);
+      }
+      assert.equal(viewer.timers[0].ms,680);await viewer.tick();await step;
+      assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r+1);
+      assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);
+      assertDisplayedSums(viewer,r+1,member);
+      assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,truth);
+      result.animated_step_cases++;
+    }
+  }
+  assert.equal(result.animated_step_cases,330);
   assert(viewer.elements.get('merge-one').disabled);viewer.click('unmerge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,4);
+  assertDisplayedSums(viewer,4,1536);
   viewer.click('spread-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const play=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
-  assert.equal(viewer.timers[0].ms,920);await viewer.tick();
-  for(let i=1;i<=5;i++) {assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,i-1);await viewer.tick();}
+  const play=viewer.click('animate-all');
+  for(let r=0;r<5;r++) {
+    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r);
+    assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,r);
+    assert.equal(viewer.timers[0].ms,680);await viewer.tick();
+    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r+1);
+    assert.equal(viewer.timers[0].ms,180);await viewer.tick();
+  }
   await play;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(!viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
-  await viewer.tick();assert(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);viewer.click('tab-pair');await viewer.tick();await replay;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
+  assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);await viewer.tick();
+  assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,0);
+  viewer.click('tab-pair');await viewer.tick();await replay;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
   const stopped=viewer.click('animate-all');viewer.click('animate-all');await viewer.tick();await stopped;
   assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  viewer.click('spread-all');const cancelled=viewer.click('animate-all');viewer.execute('MIA_FIXED_LESSON.setTrial([47,90])');await viewer.tick();await cancelled;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert(!viewer.json('MIA_FIXED_LESSON.trialSnapshot()').merged);
+  const cancelled=viewer.click('merge-one');viewer.execute('MIA_FIXED_LESSON.setTrial([47,90])');await viewer.tick();await cancelled;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);
+  assertDisplayedSums(viewer,0,5);
+  const interrupted=viewer.click('merge-one');viewer.click('spread-all');await viewer.tick();await interrupted;
+  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assertDisplayedSums(viewer,0,5);
+  // A wrong trial still calculates the same sum; it does not replace the answer.
+  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3);MIA_FIXED_LESSON.setTrial([90,115])');
+  const mismatch=viewer.click('merge-one');await viewer.tick();await mismatch;
+  assert.equal(sumCells(viewer)[0].display,'0');assert(sumCells(viewer)[0].classes.includes('mismatch'));
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').target,[1,1,1,2,2]);
   viewer.click('open-help');assert.equal(viewer.elements.get('help-overlay').hidden,false);assert.equal(viewer.document.activeElement.id,'close-help');
   viewer.events.keydown({key:'Escape'});assert.equal(viewer.elements.get('help-overlay').hidden,true);assert.equal(viewer.document.activeElement.id,'open-help');
-  result.controls_checked.push('one/two person tabs and selected answer order','one or two floating pattern copies move into the common sum position, followed by five comparisons','replay, pause and cancellation on tab or trial selection change','help dialog open/Escape/focus restoration');
+  result.controls_checked.push('one/two person tabs and selected answer order','manual per-submission addition for all 330 steps, revealing each sum only after motion','future sums stay blank; answers remain fixed in the header','automatic mode uses the same per-submission addition as the manual button','busy manual button prevents duplicate runs; replay, pause and cancellation on tab/trial/reset','wrong selected pair animates its own sum and reports mismatch against unchanged answer','help dialog open/Escape/focus restoration');
   const reducedViewer=simulatedViewer(true), reducedPlay=reducedViewer.click('animate-all');
-  assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
-  for(let i=1;i<=5;i++) {assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,i);assert.equal(reducedViewer.timers[0].ms,60);await reducedViewer.tick();}
+  for(let r=0;r<5;r++) {
+    assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,r);assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
+    assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,r+1);assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
+  }
   await reducedPlay;assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').playing,false);
   result.controls_checked.push('reduced-motion animation reaches all five comparisons');
   result.geometry_heights_checked=[60,72,78,96,108,160,260,420];
@@ -299,12 +351,14 @@ async function main() {
     viewer.elements.get('overlay-stage').clientHeight=height;viewer.execute('MIA_FIXED_LESSON.setDepth(0);MIA_FIXED_LESSON.place(true)');
     for(let i=1;i<=2;i++) assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);
     viewer.execute('MIA_FIXED_LESSON.setDepth(5)');
-    for(let i=1;i<=2;i++) assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.target}px)`);
+    for(let i=1;i<=2;i++) {assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);assert.equal(viewer.elements.get(`floating-record-${i}`).style['--addition-distance'],`${g.target-g.positions[i-1]}px`);}
   }
   const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];
   assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));
-  assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('transition:transform 880ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
+  assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('@keyframes add-digit'));assert(style.includes('animation:add-digit 620ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
   const staticMarkup=html.split('<script>')[0];assert(!staticMarkup.includes('質問'));assert(!staticMarkup.includes('調査'));assert(!staticMarkup.includes('glass-grid-'));assert(staticMarkup.includes('55は2人の選び方の数'));
+  assert(staticMarkup.indexOf('id="target-row"')<staticMarkup.indexOf('id="record-deck"'));
+  assert.equal((staticMarkup.match(/id="target-row"/g)||[]).length,1);
   assert.equal(11*10/2,55);assert.equal(6*5/2+5*6+5*4/2,55);
   result.formulas_checked.push('11 choose 2 = 55, with eleven visible per-record cards','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
