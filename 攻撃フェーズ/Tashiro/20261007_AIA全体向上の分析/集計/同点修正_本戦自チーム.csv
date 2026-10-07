@@ -1,0 +1,3 @@
+method,selected_member,selected_control,hit_member,p_m,hit_rare_member,control_time_known
+stable_matching/global/long75,130,115,107,0.656441717791411,6,False
+stable_matching/sex_quota/long75,130,115,107,0.656441717791411,5,False

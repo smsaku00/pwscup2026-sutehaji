@@ -1,0 +1,12 @@
+family,settings,best_method,best_R,selection_uses_same_public_benchmark,targets
+one_to_one_robust,12,robust/discrete/sex_quota/gate0.75,0.11403933333967732,True,18
+one_to_one,48,matching/partial2_sex/one_to_one/long95/gate0.75,0.10175156474192615,True,18
+adaptive_partial_density,96,density/partial2_sex_k1/long_gate0.75,0.08518950876269617,True,18
+density_time_window,72,joint_partial2_sex_k5_lambda0.5,0.07088620963378621,True,18
+no_C,42,noC/QI_only/HGB/all/gate0.5,0.06954695452196671,True,18
+reverse_time,24,reverse/sex/HGB/lambda0.5,0.06067287159825799,True,18
+membership_learning,16,learned_membership/constant_9.5/gate0.75,0.059740783138514546,True,18
+source_classifier,80,sex/linear_gaussian/sex/long0.5,0.05083027702887499,True,18
+nearest_family,148,log_iqr_sex/long_gate0.75_0,0.048636311570982804,True,18
+GenLRA,46,GenLRA/mixed7/long95/gate0.9,0.04538556460892787,True,18
+public_truth_learning,6,public_truth_cv_lambda0.75,0.038585749212769554,True,18

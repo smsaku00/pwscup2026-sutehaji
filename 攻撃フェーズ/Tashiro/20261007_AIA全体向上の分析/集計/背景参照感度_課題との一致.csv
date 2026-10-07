@@ -1,0 +1,13 @@
+phase,fields,background,exact_matched_queries,queries
+prelim,QI7,prelim_5143,0,6846
+prelim,QI7,kit_5143,0,6846
+prelim,QI7,main_5143,0,6846
+prelim,clinical4,prelim_5143,0,6846
+prelim,clinical4,kit_5143,0,6846
+prelim,clinical4,main_5143,0,6846
+main,QI7,prelim_5143,0,7498
+main,QI7,kit_5143,0,7498
+main,QI7,main_5143,0,7498
+main,clinical4,prelim_5143,0,7498
+main,clinical4,kit_5143,0,7498
+main,clinical4,main_5143,0,7498

@@ -1,0 +1,5 @@
+method,changed_mean,changed_max,mean_R
+robust/continuous/independent/gate0.75,0.8111111111111111,14,0.09024200068422251
+robust/continuous/one_to_one/gate0.75,0.2222222222222222,8,0.10330367023917016
+robust/discrete/independent/gate0.75,4.088888888888889,14,0.08153822357806903
+robust/discrete/one_to_one/gate0.75,2.3555555555555556,12,0.09977677233948642

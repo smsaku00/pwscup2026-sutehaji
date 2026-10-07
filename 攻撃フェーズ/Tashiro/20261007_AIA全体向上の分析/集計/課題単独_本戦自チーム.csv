@@ -1,0 +1,8 @@
+method,selection_auc,control_time_known
+QI_only/ET,0.5191388460235613,False
+QI_only/HGB,0.536527532086266,False
+QI_only/logistic,0.5564003161579284,False
+QI_format_position/ET,0.5156008882532275,False
+QI_format_position/HGB,0.5369039105724717,False
+QI_format_position/logistic,0.5873386277240393,False
+QI_poly/logistic,0.5040460687267115,False

@@ -1,0 +1,5 @@
+phase,method,mean,max
+main,stable_matching/global/long75,0.0,0
+main,stable_matching/sex_quota/long75,0.0,0
+prelim,stable_matching/global/long75,0.0,0
+prelim,stable_matching/sex_quota/long75,0.0,0

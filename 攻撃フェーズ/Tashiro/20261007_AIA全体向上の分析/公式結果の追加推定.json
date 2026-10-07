@@ -1,0 +1,25 @@
+{
+  "N_member_control": 163,
+  "targets": 22,
+  "same_truth_and_phi_assumed": true,
+  "rational_values_checked": 8155,
+  "tolerance": 1e-12,
+  "target9_candidates": 1,
+  "target9_raw_R_round1": 0.7701149425287356,
+  "target9_raw_R_round2": 0.7840909090909091,
+  "target9_phi": 0.03788964124065375,
+  "rare_upper_bound_rounds": [
+    0.1493021320854365,
+    0.29521081778368974
+  ],
+  "channel9_is_all_in_both_rounds": true,
+  "published_highest_raw_AIA": 0.1432,
+  "required_other21_mean_R": 0.11268138528138527,
+  "raw_AIA_mean_gain_max_by_target9_alone": 0.009814049586776862,
+  "final_AIA_mean_gain_max_by_target9_alone": 0.009814049586776862,
+  "hypothetical_prior_mean_transferred_to_other21": 0.1117359225973019,
+  "hypothetical_full_mean_if_transfer_holds": 0.14229751289246587,
+  "hypothetical_transfer_is_not_main_score_estimate": true,
+  "code_sha256": "5583fee9193a6fe31040f4f83f516d3d68d22f578edda98e28030b0358a3fe62",
+  "submission_created": false
+}

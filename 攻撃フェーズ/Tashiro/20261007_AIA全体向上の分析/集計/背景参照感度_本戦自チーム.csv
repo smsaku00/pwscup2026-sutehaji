@@ -1,0 +1,16 @@
+background,method,selection_auc_binary,selected_member,selected_control,hit_member,p_m,rare_member,hit_rare_member,control_time_known
+main_5143,fixed/discrete/one_to_one/gate0.75,0.5521472392638037,131,114,108,0.6625766871165644,13,6,False
+main_5143,fixed/continuous/one_to_one/gate0.75,0.5460122699386503,130,115,107,0.656441717791411,13,6,False
+main_5143,fixed/continuous/sex_quota/gate0.75,0.5460122699386503,130,115,107,0.656441717791411,13,5,False
+main_5143,fixed/continuous/one_to_one/gate0.5,0.47852760736196315,78,85,60,0.36809815950920244,13,4,False
+main_5143,fixed/discrete/independent/gate0.75,0.49079754601226994,121,124,98,0.6012269938650306,13,6,False
+prior_and_kit_10286,fixed/discrete/one_to_one/gate0.75,0.5030674846625767,123,122,101,0.6196319018404908,13,6,False
+prior_and_kit_10286,fixed/continuous/one_to_one/gate0.75,0.5030674846625767,123,122,101,0.6196319018404908,13,6,False
+prior_and_kit_10286,fixed/continuous/sex_quota/gate0.75,0.50920245398773,124,121,102,0.6257668711656442,13,6,False
+prior_and_kit_10286,fixed/continuous/one_to_one/gate0.5,0.49693251533742333,81,82,60,0.36809815950920244,13,3,False
+prior_and_kit_10286,fixed/discrete/independent/gate0.75,0.49079754601226994,121,124,98,0.6012269938650306,13,6,False
+all_public_15429,fixed/discrete/one_to_one/gate0.75,0.5030674846625767,123,122,101,0.6196319018404908,13,6,False
+all_public_15429,fixed/continuous/one_to_one/gate0.75,0.5030674846625767,123,122,101,0.6196319018404908,13,6,False
+all_public_15429,fixed/continuous/sex_quota/gate0.75,0.5030674846625767,123,122,101,0.6196319018404908,13,6,False
+all_public_15429,fixed/continuous/one_to_one/gate0.5,0.48466257668711654,79,84,60,0.36809815950920244,13,4,False
+all_public_15429,fixed/discrete/independent/gate0.75,0.49693251533742333,122,123,98,0.6012269938650306,13,6,False

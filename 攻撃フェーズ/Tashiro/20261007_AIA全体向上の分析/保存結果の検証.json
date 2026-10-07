@@ -1,0 +1,17 @@
+{
+  "code_records_checked": 16,
+  "input_hash_checks": 1278,
+  "unique_input_paths": 130,
+  "official_score_cases": 63,
+  "published_result_pairs": 100,
+  "published_result_max_abs_diff": 0.0,
+  "learned_cache_hash_matches": true,
+  "frozen_genlra_hash_matches": true,
+  "permutation_cases": 880,
+  "permutation_selection_changes": 0,
+  "stable_sex_quota_matches_original_21_targets": true,
+  "target9_reconstruction_verified": true,
+  "submission_files_created": false,
+  "codabench_submitted": false,
+  "verifier_sha256": "8e3e2d9647e853c7c708f47ee4759323357e71c2aee7419cb523e0f5d057647c"
+}

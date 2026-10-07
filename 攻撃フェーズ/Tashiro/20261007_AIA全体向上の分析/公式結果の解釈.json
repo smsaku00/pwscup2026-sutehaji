@@ -1,0 +1,7 @@
+{
+  "round2_team9_fraction_of_AIA_power": 0.6473494870520432,
+  "team9_alone_max_remaining_AIA_power_gain": 0.011536306006806581,
+  "published_highest_raw_gap": 0.06841324710530254,
+  "aia_per_target_is_floored_max": true,
+  "raw_mean_is_mean_of_ratios": true
+}
