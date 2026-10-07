@@ -7,6 +7,7 @@ DEST = HERE.parents[1] / 'docs' / 'visualizer'
 FILES = {
     'MIA_4query_tree.html': DEST / 'MIA_4query_tree.html',
     'MIA_5query_cards.html': DEST / 'MIA_5query_cards.html',
+    'MIA_5query_patterns.html': DEST / 'MIA_5query_patterns.html',
     'MIA_5query_pairs.html': DEST / 'MIA_5query_pairs.html',
     'MIA_5query_reference.html': DEST / 'MIA_5query_reference.html',
     'MIA_5query_adaptive.html': DEST / 'MIA_5query_adaptive.html',
@@ -15,6 +16,7 @@ FILES = {
     'README.md': DEST / 'README.md',
     'size_report.json': DEST / 'size_report.json',
     'size_report_5query.json': DEST / 'size_report_5query.json',
+    'size_report_5query_patterns.json': DEST / 'size_report_5query_patterns.json',
     'size_report_5query_pairs.json': DEST / 'size_report_5query_pairs.json',
     'size_report_5query_reference.json': DEST / 'size_report_5query_reference.json',
     'size_report_5query_adaptive.json': DEST / 'size_report_5query_adaptive.json',
@@ -25,6 +27,7 @@ FILES = {
     'validation_lesson_ui.json': HERE / 'validation_lesson_ui.json',
     'validation_fixed_core.json': HERE / 'validation_fixed_core.json',
     'validation_fixed_ui.json': HERE / 'validation_fixed_ui.json',
+    'validation_fixed_patterns_ui.json': HERE / 'validation_fixed_patterns_ui.json',
     'validation_fixed_pairs_ui.json': HERE / 'validation_fixed_pairs_ui.json',
     'validation_fixed_reference_ui.json': HERE / 'validation_fixed_reference_ui.json',
 }

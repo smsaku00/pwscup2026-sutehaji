@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 80630,
-  "html_sha256": "393f21626465099138e3780d2dff546fab0536e6321cc8bba08533864e80cb2c",
-  "format": "single offline HTML; eleven record patterns with one/two selected overlays, integer sums and a six-Team response table",
+  "html_bytes": 78287,
+  "html_sha256": "f598ec28692865a5ab28bfd5457f11f0c18db941b2bc571d3e56e79a8e7947ff",
+  "format": "single offline HTML; 55 pair edges progressively eliminated by five revealed submission results; two-member lesson",
   "single_team_states": [
     11,
     55

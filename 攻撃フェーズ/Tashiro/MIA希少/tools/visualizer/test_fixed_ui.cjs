@@ -120,247 +120,148 @@ function simulatedViewer(reduced = false) {
   const json=code=>JSON.parse(execute(`JSON.stringify(${code})`));
   const select=(id,value)=>{const el=elements.get(id);el.value=String(value);assert(el.onchange);el.onchange();};
   const click=id=>elements.get(id).click();
-  const tick=async()=>{assert(timers.length);timers.shift().callback();await Promise.resolve();await Promise.resolve();};
+  const tick=async()=>{assert(timers.length);timers.shift().callback();await Promise.resolve();await Promise.resolve();await Promise.resolve();await Promise.resolve();};
   return {elements,execute,json,select,click,downloads,timers,tick,events,document};
 }
+
+const pairPaths=markup=>[...markup.matchAll(/<path class="pair-line([^\"]*)"([^>]*)>/g)].map(m=>({classes:m[1],attrs:attrs(m[2])}));
+const recordRows=markup=>[...markup.matchAll(/<div class="pair-record([^\"]*)"([^>]*)>([\s\S]*?)<\/div>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),body:m[3]}));
 function assertOverview(viewer,result) {
-  const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()'), lesson=viewer.json('MIA_FIXED_LESSON.values()');
-  let used=0;
-  state.memberships.forEach((member,t)=>{assert.equal(pc(member),CAPS[t]);assert.equal(used & member,0);used|=member;});
-  assert.equal(pc(used),9);
-  const responses=QUERIES.map(query=>state.memberships.map(member=>pc(member & query)));
-  assert.deepEqual(state.responses,responses);
-  const columns=CAPS.map((_,t)=>responses.map(row=>row[t]));
-  assert.deepEqual(state.columns,columns);assert.deepEqual(state.rowSequences,responses.map(row=>row.join('')));
-  assert.deepEqual(state.meanFractions,responses.map(exactMean));
-  const members=columns.map((column,t)=>enumerate(CAPS[t]).filter(candidate=>QUERIES.every((query,r)=>pc(candidate & query)===column[r])));
-  members.forEach((set,t)=>assert.deepEqual(set,[state.memberships[t]]));
-  assert.deepEqual(state.decodedMembers,state.memberships);
-  const t=state.selectedTeam,r=state.selectedRound;
-  assert.equal(CAPS[t],lesson.cap);assert.equal(state.memberships[t],lesson.masks[lesson.cap]);
-  assert.equal(state.depth,lesson.depth);
+  const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()'), lesson=viewer.json('MIA_FIXED_LESSON.snapshot()');
+  let used=0;state.memberships.forEach((member,t)=>{assert.equal(pc(member),CAPS[t]);assert.equal(used & member,0);used|=member;});assert.equal(pc(used),9);
+  assert.equal(CAPS[state.selectedTeam],2);assert.equal(state.memberships[state.selectedTeam],lesson.member);
+  assert.equal(state.depth,lesson.depth);assert.equal(state.revealedCount,lesson.revealedCount);
+  const observed=QUERIES.map((query,r)=>r<lesson.revealedCount?state.memberships.map(member=>pc(member & query)):null);
+  const columns=CAPS.map((_,t)=>observed.map(row=>row===null?null:row[t]));
+  assert.deepEqual(state.responses,observed);assert.deepEqual(state.columns,columns);
+  assert.deepEqual(state.rowSequences,observed.map(row=>row===null?'······':row.join('')));
+  assert.deepEqual(state.meanFractions,observed.map(row=>row===null?null:exactMean(row)));
+  const known=observed.map((row,r)=>r<lesson.depth?row:null), expectedSets=independentSets(known);
+  state.candidateSets.forEach((set,t)=>assert.deepEqual(sorted(set),expectedSets[t]));assert.deepEqual(state.counts,expectedSets.map(set=>set.length));
   const markup=viewer.elements.get('overview-table').innerHTML;
-  const values=[...markup.matchAll(/<td data-overview-cell-team="(\d+)" data-overview-cell-round="(\d+)" data-hit="(\d+)"[^>]*>(\d+)<\/td>/g)];
+  const values=[...markup.matchAll(/<td data-overview-cell-team="(\d+)" data-overview-cell-round="(\d+)" data-pair-selectable="([01])" data-hit="([012]?)"[^>]*>([012·])<\/td>/g)];
   assert.equal(values.length,30);
-  values.forEach(value=>{const team=Number(value[1]),round=Number(value[2]);assert.equal(Number(value[3]),responses[round][team]);assert.equal(Number(value[4]),responses[round][team]);result.overview_cell_checks++;});
-  const columnMarkup=[...markup.matchAll(/<td data-overview-column="(\d+)"[^>]*>([012]{5})<\/td>/g)];
-  assert.equal(columnMarkup.length,6);columnMarkup.forEach(value=>assert.equal(value[2],columns[Number(value[1])].join('')));
-  const decoded=[...markup.matchAll(/<td data-overview-member="(\d+)"[^>]*>([^<]+)<\/td>/g)];
-  assert.equal(decoded.length,6);decoded.forEach(value=>assert.equal(value[2],label(state.memberships[Number(value[1])]).replaceAll('・','＋')));
-  assert(viewer.elements.get('row-reader').innerHTML.includes(state.rowSequences[r]));
-  assert(viewer.elements.get('row-reader').innerHTML.includes(state.meanFractions[r]));
-  assert(viewer.elements.get('column-reader').innerHTML.includes(columns[t].join(' ↓ ')));
-  assert(viewer.elements.get('selected-team-caption').textContent.includes(`Team ${data.teams[t]}`));
-  const trial=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');assert.deepEqual(trial.target,columns[t]);
-  const headerAnswer=viewer.elements.get('target-row').innerHTML;assert(headerAnswer.includes('答え'));
-  const headerDigits=[...headerAnswer.matchAll(/data-round="(\d+)" data-value="([012])">([012])<\/span>/g)];
-  assert.equal(headerDigits.length,5);headerDigits.forEach((m,i)=>{assert.equal(Number(m[1]),i);assert.equal(Number(m[2]),columns[t][i]);assert.equal(Number(m[3]),columns[t][i]);});
-  for(let i=0;i<5;i++) assert.equal(viewer.elements.get(`record-heading-${i+1}`).classList.contains('row-focus'),i===r);
+  values.forEach(m=>{const t=Number(m[1]),r=Number(m[2]);assert.equal(m[3],CAPS[t]===2?'1':'0');assert.equal(m[4],observed[r]===null?'':String(observed[r][t]));assert.equal(m[5],observed[r]===null?'·':String(observed[r][t]));result.overview_cell_checks++;});
+  const columnMarkup=[...markup.matchAll(/<td data-overview-column="(\d+)"[^>]*>([012·]{5})<\/td>/g)];assert.equal(columnMarkup.length,6);
+  columnMarkup.forEach(m=>assert.equal(m[2],columns[Number(m[1])].map(n=>n===null?'·':n).join('')));
+  assert(!markup.includes('data-overview-member='));
+  const buttons=[...markup.matchAll(/data-overview-team="(\d+)"/g)].map(m=>Number(m[1]));assert.deepEqual(buttons,[1,3,5]);
+  for(let i=0;i<5;i++) assert.equal(viewer.elements.get(`record-heading-${i+1}`).classList.contains('row-focus'),i===state.selectedRound);
   result.overview_states_checked++;
 }
-
-const recordCards=markup=>[...markup.matchAll(/<button type="button" class="record-card([^\"]*)"([^>]*)>([\s\S]*?)<\/button>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),body:m[3]}));
-function assertRecords(viewer,cap,member,depth,result) {
-  const rows=independentTrace(cap,member), api=viewer.json(`MIA_FIXED_LESSON.trace(${cap},${member})`);
-  rows.forEach((row,i)=>{
-    assert.equal(api[i].query,row.query);assert.equal(api[i].hit,row.hit);assert.equal(api[i].complete,false);
-    assert.deepEqual(sorted(api[i].before),row.before);assert.deepEqual(sorted(api[i].after),row.after);
-    row.groups.forEach((group,h)=>assert.deepEqual(sorted(api[i].groups[h]),group));
-    const calculation=viewer.elements.get('current-calculations').innerHTML;
-    assert(calculation.includes(`対象ID：${label(QUERIES[i])}`));
-    row.groups.forEach((group,h)=>assert(calculation.includes(`<b>${h}人：${group.length}${cap===1?'候補':'組'}</b>`)));
-    if(row.before.length===1) result.fixed_submissions_after_early_certainty++;
-    result.submission_rows_checked++;
+function assertGraph(viewer,member,depth,stage,result) {
+  const rows=independentTrace(2,member), before=depth?rows[depth-1].after:enumerate(2), after=stage==='removing'?rows[depth].after:before;
+  const expectedRemoved=stage==='removing'?before.filter(mask=>!after.includes(mask)):[];
+  const state=viewer.json('MIA_FIXED_LESSON.snapshot()');assert.equal(state.cap,2);assert.equal(state.member,member);assert.equal(state.depth,depth);
+  assert.equal(state.phase?.stage||null,stage);assert.deepEqual(sorted(state.remainingMasks),before);assert.deepEqual(sorted(state.removedMasks),expectedRemoved);
+  const revealed=depth+(stage?1:0);assert.equal(state.revealedCount,revealed);assert.deepEqual(state.results,signature(member).map((n,r)=>r<revealed?n:null));
+  const paths=pairPaths(viewer.elements.get('pair-lines').innerHTML);assert.deepEqual(sorted(paths.map(p=>Number(p.attrs['data-pair-mask']))),before);
+  paths.forEach(p=>{
+    const mask=Number(p.attrs['data-pair-mask']), fading=expectedRemoved.includes(mask);
+    assert.equal(p.attrs['data-fading'],fading?'1':'0');assert.equal(p.classes.includes('fading'),fading);
+    assert.equal(p.attrs['tabindex'],fading?'-1':'0');
+    assert.equal(p.attrs['data-current-sum'],revealed?String(pc(mask & QUERIES[revealed-1])):'');
+    assert.equal(p.classes.includes('unique'),before.length===1 && !stage);result.edge_checks++;
   });
-  const kept=enumerate(cap).filter(candidate=>rows.slice(0,depth).every(row=>pc(candidate & row.query)===row.hit));
-  assert.deepEqual(sorted(viewer.json(`MIA_FIXED_LESSON.remaining(${cap},${member},${depth})`)),kept);
-  assert.equal(viewer.elements.get('count-path').textContent,[enumerate(cap).length,...rows.map(row=>row.after.length)].join(' → '));
-  const state=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');
-  assert.deepEqual(state.selectedIDs,IDS.filter((_,i)=>member>>i&1));
-  assert.deepEqual(state.target,signature(member));assert.deepEqual(state.sum,signature(member));
-  assert(state.complete);assert(state.allMatch);assert.equal(state.comparedCount,depth);
-  const cards=recordCards(viewer.elements.get('record-deck').innerHTML);
-  assert.equal(cards.length,11);assert.deepEqual(cards.map(c=>Number(c.attrs['data-record-id'])),IDS);
-  cards.forEach(card=>{
-    const id=Number(card.attrs['data-record-id']), bit=1<<IDS.indexOf(id), expected=signature(bit);
-    assert.equal(card.attrs['data-signature'],expected.join(''));
-    const bits=[...card.body.matchAll(/data-round="(\d+)" data-value="([01])"/g)];
-    assert.equal(bits.length,5);
-    bits.forEach((m,r)=>{assert.equal(Number(m[1]),r);assert.equal(Number(m[2]),expected[r]);result.record_bit_checks++;});
-    assert.equal(card.attrs['aria-pressed'],String(state.selectedIDs.includes(id)));
-    assert.equal(card.classes.includes('solved'),depth===5 && state.selectedIDs.includes(id));
+  const active=IDS.filter((_,i)=>before.some(mask=>mask>>i&1)), next=IDS.filter((_,i)=>after.some(mask=>mask>>i&1));
+  assert.deepEqual(state.activeIDs,active);assert.deepEqual(state.nextActiveIDs,next);
+  const records=recordRows(viewer.elements.get('record-deck').innerHTML);assert.equal(records.length,11);
+  records.forEach((record,i)=>{
+    assert.equal(Number(record.attrs['data-record-id']),IDS[i]);const alive=active.includes(IDS[i]), fading=alive&&!next.includes(IDS[i]);
+    assert.equal(record.classes.includes('gone'),!alive);assert.equal(record.attrs['data-active'],alive?'1':'0');assert.equal(record.attrs['data-fading'],fading?'1':'0');
+    const bits=[...record.body.matchAll(/data-round="(\d+)" data-value="([01])"/g)];assert.equal(bits.length,5);
+    bits.forEach((m,r)=>{assert.equal(Number(m[1]),r);assert.equal(Number(m[2]),(QUERIES[r]>>i)&1);result.record_bit_checks++;});
   });
-  const summed=[...viewer.elements.get('sum-result').innerHTML.matchAll(/data-round="(\d+)" data-value="(\d+)" data-checked="([01])" data-match="([01]?)"/g)];
-  assert.equal(summed.length,5);summed.forEach((m,r)=>{assert.equal(Number(m[2]),signature(member)[r]);assert.equal(m[3],r<depth?'1':'0');assert.equal(m[4],r<depth?'1':'');result.sum_cell_checks++;});
-  if(depth===5) {assert.deepEqual(kept,[member]);assert(viewer.elements.get('trial-status').textContent.includes('5回とも一致'));}
-  assertOverview(viewer,result);
+  const chips=[...viewer.elements.get('result-strip').innerHTML.matchAll(/data-round="(\d+)" data-result="([012]?)"[^>]*><span>提出\d<\/span><b>([012—])<small>/g)];assert.equal(chips.length,5);
+  chips.forEach((m,r)=>{assert.equal(Number(m[1]),r);assert.equal(m[2],r<revealed?String(signature(member)[r]):'');assert.equal(m[3],r<revealed?String(signature(member)[r]):'—');});
+  const counts=[55,...rows.slice(0,depth).map(row=>row.after.length)];assert.equal(viewer.elements.get('count-path').textContent,counts.join(' → '));
+  assert(!viewer.elements.get('filter-rule').textContent.includes('答え'));
+  if(depth===5){assert.deepEqual(before,[member]);assert.equal(active.length,2);assert(viewer.elements.get('summary-result').textContent.includes(`ID ${label(member).replaceAll('・','＋')}`));}
+  assertOverview(viewer,result);result.graph_states_checked++;
 }
 async function main() {
-  const result={status:'passed',environment:'Node VM simulated DOM, independent record/pair enumeration, controlled animation timers and numeric layout geometry',
-    html_bytes:Buffer.byteLength(html),html_sha256:crypto.createHash('sha256').update(html).digest('hex'),
-    one_member_examples:0,two_member_examples:0,example_prefixes_checked:0,submission_rows_checked:0,record_bit_checks:0,sum_cell_checks:0,
-    fixed_submissions_after_early_certainty:0,overview_states_checked:0,overview_cell_checks:0,formulas_checked:[],controls_checked:[],mean_decodes_checked:[],negative_cases:[],visual_browser_validation:false};
-  const viewer=simulatedViewer();
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:1,depth:0,masks:{'1':128,'2':3},playing:false});
-  assert.equal(viewer.elements.get('answer-record-2-wrap').hidden,true);assert.equal(viewer.elements.get('help-overlay').hidden,true);
-  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,DEMO);assertOverview(viewer,result);
-  for(const cap of [1,2]) for(const member of enumerate(cap)) {
-    viewer.execute(`MIA_FIXED_LESSON.setAnswer(${cap},${member})`);
-    const selected=IDS.filter((_,i)=>member>>i&1);
-    assert.equal(viewer.elements.get('answer-record-1').value,String(selected[0]));
-    if(cap===2) assert.equal(viewer.elements.get('answer-record-2').value,String(selected[1]));
-    for(let depth=0;depth<=5;depth++) {viewer.execute(`MIA_FIXED_LESSON.setDepth(${depth})`);assertRecords(viewer,cap,member,depth,result);result.example_prefixes_checked++;}
-    viewer.click('find-matching');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,selected);
-    result[cap===1?'one_member_examples':'two_member_examples']++;
-  }
-  assert.equal(result.example_prefixes_checked,396);
-  result.controls_checked.push('all 11 singles and 55 pairs at all six comparison prefixes','eleven visible record cards with five independently checked fixed bits','all selected record sums match the true Team column; complete matches turn selected records green','matching-ID selection searches all full five-entry patterns');
-  result.overview_answer_cases=0;
-  for(let team=0;team<6;team++) {
+  const result={status:'passed',environment:'Node VM simulated DOM, independently enumerated pair sets, controlled reveal/fade timers and numeric SVG geometry',
+    html_bytes:Buffer.byteLength(html),html_sha256:crypto.createHash('sha256').update(html).digest('hex'),two_member_examples:0,graph_states_checked:0,edge_checks:0,record_bit_checks:0,overview_states_checked:0,overview_cell_checks:0,animated_submission_cases:0,
+    controls_checked:[],formulas_checked:[],mean_decodes_checked:[],negative_cases:[],visual_browser_validation:false};
+  const viewer=simulatedViewer();assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:2,depth:0,masks:{'1':128,'2':129},playing:false});
+  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
+  assert.equal(pairPaths(viewer.elements.get('pair-lines').innerHTML).length,55);
+  assert(!viewer.elements.has('tab-single'));assert(!viewer.elements.has('target-row'));
+  const staticMarkup=html.split('<script>')[0];assert(!staticMarkup.includes('答え'));assert(!staticMarkup.includes('質問'));assert(!staticMarkup.includes('調査'));
+  const oldPatterns=fs.readFileSync(path.join(root,'docs/visualizer/MIA_5query_patterns.html'));assert.equal(oldPatterns.length,80630);
+  assert.equal(crypto.createHash('sha256').update(oldPatterns).digest('hex'),'393f21626465099138e3780d2dff546fab0536e6321cc8bba08533864e80cb2c');
+  result.team_answer_cases=0;
+  for(const team of [1,3,5]) {
     viewer.execute(`MIA_FIXED_OVERVIEW.selectTeam(${team})`);
-    for(const member of enumerate(CAPS[team])) {
-      viewer.execute(`MIA_FIXED_LESSON.setAnswer(${CAPS[team]},${member});MIA_FIXED_LESSON.setDepth(5)`);
-      assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,team);assertOverview(viewer,result);result.overview_answer_cases++;
+    for(const member of enumerate(2)) {
+      viewer.execute(`MIA_FIXED_LESSON.setAnswer(2,${member})`);
+      for(let depth=0;depth<=5;depth++){viewer.execute(`MIA_FIXED_LESSON.setDepth(${depth})`);assertGraph(viewer,member,depth,null,result);}
+      result.team_answer_cases++;
     }
   }
-  assert.equal(result.overview_answer_cases,198);
-  viewer.click('reset-overview');
-  viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewTeam:'4'}};}}});
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,4);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').cap,1);
-  viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewCellTeam:'3',overviewCellRound:'4'}};}}});
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,3);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,4);assertOverview(viewer,result);
-  viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewRound:'2'}};}}});
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,2);
-  viewer.click('show-cards');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'cards');
-  viewer.click('show-overview');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'overview');
-  viewer.click('reset-overview');assertOverview(viewer,result);
-  result.controls_checked.push('five six-Team response rows and six five-entry Team columns','all 198 possible answers across all six Teams retain a legal disjoint joint placement','table row/column/cell selections connect to the selected Team and submission heading','narrow-screen view tabs and full reset');
-  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3)');
-  const unchanged=viewer.json('MIA_FIXED_OVERVIEW.snapshot()');
-  let matched=0;result.trial_pair_cases=0;
-  for(const pair of enumerate(2)) {
-    const chosen=IDS.filter((_,i)=>pair>>i&1);
-    viewer.execute(`MIA_FIXED_LESSON.setTrial(${JSON.stringify(chosen)});MIA_FIXED_LESSON.setDepth(5)`);
-    const trial=viewer.json('MIA_FIXED_LESSON.trialSnapshot()');
-    assert.deepEqual(trial.sum,signature(pair));assert.deepEqual(trial.target,signature(3));assert.equal(trial.allMatch,pair===3);
-    assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,unchanged.memberships);
-    const colored=recordCards(viewer.elements.get('record-deck').innerHTML).filter(c=>c.classes.includes('solved'));
-    assert.equal(colored.length,pair===3?2:0);assert.equal(viewer.elements.get('trial-status').textContent.includes('不一致'),pair!==3);
-    if(trial.allMatch) matched++;result.trial_pair_cases++;
-  }
-  assert.equal(matched,1);
-  viewer.execute('MIA_FIXED_LESSON.setTrial([47,76])');
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').signatures,[[0,1,0,1,1],[1,0,1,1,1]]);
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').sum,[1,1,1,2,2]);
-  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'47'}};}}});
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[76]);assert(viewer.elements.get('animate-all').disabled);assert(viewer.elements.get('merge-one').disabled);
-  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setDepth(1)'),/人数分/);
-  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'90'}};}}});
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[76,90]);
-  viewer.elements.get('record-deck').onclick({target:{closest(){return {dataset:{recordId:'115'}};}}});
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[90,115]);
-  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([47,47])'),/異なる/);assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([47,76,90])'),/人数分/);
-  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setTrial([999])'),/候補/);
-  viewer.click('find-matching');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').selectedIDs,[47,76]);
-  assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,unchanged.memberships);
-  result.controls_checked.push('all 55 trial pairs against a fixed Team truth; exactly one match and 54 explicit mismatches','trial record clicks do not change the observed Team response or joint truth','incomplete selection disables comparison; duplicate and out-of-range records rejected','01011 + 10111 = 11122 and two overlapping ones count as 2');
-  viewer.click('tab-single');viewer.select('answer-record-1',383);
-  viewer.click('tab-pair');viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3)');
-  viewer.select('answer-record-2',90);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
-  viewer.select('answer-record-1',90);assert(!viewer.elements.get('lesson-error').hidden);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],5);
-  viewer.select('answer-record-1',675);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],1028);
-  assert.equal(viewer.elements.get('answer-record-1').value,'675');assert.equal(viewer.elements.get('answer-record-2').value,'90');
-  viewer.click('tab-single');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[1],128);
-  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setAnswer(2,1)'),/異なる正解/);
-  const sumCells=v=>[...v.elements.get('sum-result').innerHTML.matchAll(/<span class="sum-bit ([^"]+)"([^>]*)>([^<]+)<small>/g)].map(m=>({classes:m[1],attrs:attrs(m[2]),display:m[3]}));
-  const assertDisplayedSums=(v,depth,member)=>{
-    const expected=signature(member), cells=sumCells(v);assert.equal(cells.length,5);
-    cells.forEach((cell,r)=>assert.equal(cell.display,r<depth?String(expected[r]):'·'));
-  };
-  // Complete all five manual animations for each possible one/two-person answer.
-  // During movement the newly calculated sum must stay hidden; after movement
-  // exactly one more submission is revealed, including 1+1=2 cases.
-  result.animated_step_cases=0;
-  for(const capacity of [1,2]) for(const member of enumerate(capacity)) {
-    viewer.execute(`MIA_FIXED_LESSON.setAnswer(${capacity},${member})`);
-    const truth=viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships;
+  assert.equal(result.team_answer_cases,165);
+  // For every pair, reveal the result first, then mark the exact inconsistent
+  // edges as disappearing, and only then commit the next candidate set.
+  for(const member of enumerate(2)) {
+    viewer.execute(`MIA_FIXED_LESSON.setAnswer(2,${member})`);
     for(let r=0;r<5;r++) {
-      const step=viewer.click('merge-one');
-      assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r);
-      assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,r);
-      assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,r);
-      assertDisplayedSums(viewer,r,member);
-      assert(viewer.elements.get('merge-one').disabled);assert.equal(viewer.timers.length,1);
-      viewer.click('merge-one');assert.equal(viewer.timers.length,1);
-      for(let i=1;i<=capacity;i++) {
-        const moving=[...viewer.elements.get(`floating-record-${i}`).innerHTML.matchAll(/class="floating-bit[^\"]* adding-digit" data-round="(\d+)"/g)];
-        assert.equal(moving.length,1);assert.equal(Number(moving[0][1]),r);
-      }
-      assert.equal(viewer.timers[0].ms,680);await viewer.tick();await step;
-      assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r+1);
-      assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);
-      assertDisplayedSums(viewer,r+1,member);
-      assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,truth);
-      result.animated_step_cases++;
+      const step=viewer.click('merge-one');assert(viewer.elements.get('merge-one').disabled);assertGraph(viewer,member,r,'result',result);
+      assert.equal(viewer.timers.length,1);viewer.click('merge-one');assert.equal(viewer.timers.length,1);
+      assert.equal(viewer.timers[0].ms,360);await viewer.tick();assertGraph(viewer,member,r,'removing',result);
+      assert.equal(viewer.timers[0].ms,680);await viewer.tick();await step;assertGraph(viewer,member,r+1,null,result);
+      result.animated_submission_cases++;
     }
+    result.two_member_examples++;
   }
-  assert.equal(result.animated_step_cases,330);
-  assert(viewer.elements.get('merge-one').disabled);viewer.click('unmerge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,4);
-  assertDisplayedSums(viewer,4,1536);
-  viewer.click('spread-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const play=viewer.click('animate-all');
-  for(let r=0;r<5;r++) {
-    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r);
-    assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,r);
-    assert.equal(viewer.timers[0].ms,680);await viewer.tick();
-    assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,r+1);
-    assert.equal(viewer.timers[0].ms,180);await viewer.tick();
+  assert.equal(result.animated_submission_cases,275);
+  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,5)');
+  const zero=viewer.click('merge-one');assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').results[0],0);
+  assert.equal(pairPaths(viewer.elements.get('pair-lines').innerHTML).length,55);
+  await viewer.tick();assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').removedMasks.length,40);
+  await viewer.tick();await zero;const zeroState=viewer.json('MIA_FIXED_LESSON.snapshot()');assert.equal(zeroState.remainingMasks.length,15);
+  zeroState.remainingMasks.forEach(mask=>assert.equal(mask & QUERIES[0],0));assert.equal(zeroState.activeIDs.length,6);
+  result.controls_checked.push('two-member lesson only; eleven stable record rows and exactly 55 unordered-pair edges initially','all 55 pairs across all six prefix lengths and all three two-member Teams','future submission results and exact membership remain unrevealed','all 275 reveal-result / fade-inconsistent-edges / commit steps checked independently','0-result removes all 40 pairs containing an in-set record; 15 pairs and 6 records remain','record rows disappear only when no surviving pair uses them');
+  viewer.execute('MIA_FIXED_LESSON.setDepth(0)');
+  viewer.elements.get('pair-lines').onclick({target:{closest(){return {dataset:{pairMask:'3'}};}}});
+  assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').focusedPair,3);assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').remainingMasks.length,55);
+  let prevented=false;viewer.elements.get('pair-lines').onkeydown({key:'Enter',preventDefault(){prevented=true;},target:{closest(){return {dataset:{pairMask:'3'}};}}});assert(prevented);assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').focusedPair,null);
+  viewer.execute('MIA_FIXED_LESSON.setDepth(1)');assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.focusPair(3)'),/現在残る/);
+  viewer.select('answer-record-1',675);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],1028);
+  viewer.select('answer-record-2',675);assert(!viewer.elements.get('lesson-error').hidden);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').masks[2],1028);
+  assert.throws(()=>viewer.execute('MIA_FIXED_LESSON.setAnswer(1,1)'),/所属2人/);assert.throws(()=>viewer.execute('MIA_FIXED_OVERVIEW.selectTeam(0)'),/所属2人/);
+  viewer.click('reset-overview');assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
+  viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewTeam:'3'}};}}});assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,3);
+  viewer.elements.get('overview-table').onclick({target:{closest(){return {dataset:{overviewCellTeam:'5',overviewCellRound:'4'}};}}});assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedTeam,5);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').selectedRound,4);
+  viewer.click('show-overview');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'overview');viewer.click('show-cards');assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],'cards');
+  viewer.click('reset-overview');
+  const resetDuringResult=viewer.click('merge-one');viewer.click('spread-all');await viewer.tick();await resetDuringResult;assertGraph(viewer,129,0,null,result);
+  const resetDuringFade=viewer.click('merge-one');await viewer.tick();viewer.execute('MIA_FIXED_OVERVIEW.selectTeam(3)');await viewer.tick();await resetDuringFade;
+  assertGraph(viewer,24,0,null,result);viewer.click('reset-overview');
+  const auto=viewer.click('animate-all');
+  for(let r=0;r<5;r++){assertGraph(viewer,129,r,'result',result);await viewer.tick();assertGraph(viewer,129,r,'removing',result);await viewer.tick();assertGraph(viewer,129,r+1,null,result);await viewer.tick();}
+  await auto;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
+  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').depth,0);await viewer.tick();assert.equal(viewer.json('MIA_FIXED_LESSON.snapshot()').phase.stage,'result');
+  viewer.click('animate-all');await viewer.tick();await replay;assertGraph(viewer,129,0,null,result);
+  viewer.execute('MIA_FIXED_LESSON.setDepth(5)');viewer.click('unmerge-one');assertGraph(viewer,129,4,null,result);viewer.click('spread-all');assertGraph(viewer,129,0,null,result);
+  const reducedViewer=simulatedViewer(true), reduced=reducedViewer.click('animate-all');
+  for(let r=0;r<5;r++){for(let stage=0;stage<3;stage++){assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();}}
+  await reduced;assert.equal(reducedViewer.json('MIA_FIXED_LESSON.snapshot()').remainingMasks.length,1);
+  viewer.click('open-help');assert.equal(viewer.elements.get('help-overlay').hidden,false);viewer.events.keydown({key:'Escape'});assert.equal(viewer.elements.get('help-overlay').hidden,true);
+  result.controls_checked.push('edge click and keyboard focus inspect a pair without changing candidates','example pickers and duplicate rejection','three two-member Team selectors, global row view and narrow-screen tabs','reset and Team changes cancel both reveal and fade stages without stale candidate updates','automatic animation, replay, stop, previous submission and reset','reduced-motion animation; help dialog open/Escape/focus');
+  result.geometry_sizes_checked=[[320,180],[520,330],[780,500]];
+  for(const [width,height] of result.geometry_sizes_checked) {
+    const g=viewer.json(`MIA_FIXED_LESSON.geometry(${width},${height})`);assert.equal(g.nodes.length,11);assert.equal(g.edges.length,55);
+    const unique=new Set();
+    g.edges.forEach(edge=>{
+      assert.equal(pc(edge.mask),2);assert(edge.a<edge.b);assert.equal(edge.mask,(1<<edge.a)|(1<<edge.b));unique.add(edge.mask);
+      assert.equal(edge.start.id,IDS[edge.a]);assert.equal(edge.end.id,IDS[edge.b]);
+      assert(Math.abs(edge.start.y-height*(edge.a+.5)/11)<1e-9);assert(Math.abs(edge.end.y-height*(edge.b+.5)/11)<1e-9);
+      for(let sample=0;sample<=20;sample++){const t=sample/20,u=1-t,x=u**3*edge.start.x+3*u*u*t*edge.control+3*u*t*t*edge.control+t**3*edge.end.x,y=u**3*edge.start.y+3*u*u*t*edge.start.y+3*u*t*t*edge.end.y+t**3*edge.end.y;assert(x>=0 && x<=width);assert(y>=0 && y<=height);}
+    });assert.equal(unique.size,55);
   }
-  await play;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  const replay=viewer.click('animate-all');assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);await viewer.tick();
-  assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,0);
-  viewer.click('tab-pair');await viewer.tick();await replay;assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const stopped=viewer.click('animate-all');viewer.click('animate-all');await viewer.tick();await stopped;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').playing,false);assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);
-  const cancelled=viewer.click('merge-one');viewer.execute('MIA_FIXED_LESSON.setTrial([47,90])');await viewer.tick();await cancelled;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assert.equal(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').addingRound,-1);
-  assertDisplayedSums(viewer,0,5);
-  const interrupted=viewer.click('merge-one');viewer.click('spread-all');await viewer.tick();await interrupted;
-  assert.equal(viewer.json('MIA_FIXED_LESSON.values()').depth,0);assertDisplayedSums(viewer,0,5);
-  // A wrong trial still calculates the same sum; it does not replace the answer.
-  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,3);MIA_FIXED_LESSON.setTrial([90,115])');
-  const mismatch=viewer.click('merge-one');await viewer.tick();await mismatch;
-  assert.equal(sumCells(viewer)[0].display,'0');assert(sumCells(viewer)[0].classes.includes('mismatch'));
-  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.trialSnapshot()').target,[1,1,1,2,2]);
-  viewer.click('open-help');assert.equal(viewer.elements.get('help-overlay').hidden,false);assert.equal(viewer.document.activeElement.id,'close-help');
-  viewer.events.keydown({key:'Escape'});assert.equal(viewer.elements.get('help-overlay').hidden,true);assert.equal(viewer.document.activeElement.id,'open-help');
-  result.controls_checked.push('one/two person tabs and selected answer order','manual per-submission addition for all 330 steps, revealing each sum only after motion','future sums stay blank; answers remain fixed in the header','automatic mode uses the same per-submission addition as the manual button','busy manual button prevents duplicate runs; replay, pause and cancellation on tab/trial/reset','wrong selected pair animates its own sum and reports mismatch against unchanged answer','help dialog open/Escape/focus restoration');
-  const reducedViewer=simulatedViewer(true), reducedPlay=reducedViewer.click('animate-all');
-  for(let r=0;r<5;r++) {
-    assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,r);assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
-    assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').depth,r+1);assert.equal(reducedViewer.timers[0].ms,20);await reducedViewer.tick();
-  }
-  await reducedPlay;assert.equal(reducedViewer.json('MIA_FIXED_LESSON.values()').playing,false);
-  result.controls_checked.push('reduced-motion animation reaches all five comparisons');
-  result.geometry_heights_checked=[60,72,78,96,108,160,260,420];
-  for(const height of result.geometry_heights_checked) {
-    const g=viewer.json(`MIA_FIXED_LESSON.geometry(${height})`);
-    assert(g.cardHeight>0);assert.equal(g.positions.length,3);assert(Math.abs(g.target+g.cardHeight-height)<1e-9);
-    for(let i=0;i<2;i++) assert(g.positions[i]+g.cardHeight<=g.positions[i+1]);
-    viewer.elements.get('overlay-stage').clientHeight=height;viewer.execute('MIA_FIXED_LESSON.setDepth(0);MIA_FIXED_LESSON.place(true)');
-    for(let i=1;i<=2;i++) assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);
-    viewer.execute('MIA_FIXED_LESSON.setDepth(5)');
-    for(let i=1;i<=2;i++) {assert.equal(viewer.elements.get(`floating-record-${i}`).style.transform,`translateY(${g.positions[i-1]}px)`);assert.equal(viewer.elements.get(`floating-record-${i}`).style['--addition-distance'],`${g.target-g.positions[i-1]}px`);}
-  }
-  const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];
-  assert(style.includes('html,body{height:100%;margin:0;overflow:hidden}'));assert(style.includes('height:100dvh'));
-  assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('@keyframes add-digit'));assert(style.includes('animation:add-digit 620ms'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
-  const staticMarkup=html.split('<script>')[0];assert(!staticMarkup.includes('質問'));assert(!staticMarkup.includes('調査'));assert(!staticMarkup.includes('glass-grid-'));assert(staticMarkup.includes('55は2人の選び方の数'));
-  assert(staticMarkup.indexOf('id="target-row"')<staticMarkup.indexOf('id="record-deck"'));
-  assert.equal((staticMarkup.match(/id="target-row"/g)||[]).length,1);
-  assert.equal(11*10/2,55);assert.equal(6*5/2+5*6+5*4/2,55);
-  result.formulas_checked.push('11 choose 2 = 55, with eleven visible per-record cards','first pair partition 15+30+10=55','all later counts use previously surviving candidates');
+  const style=html.match(/<style>([\s\S]*?)<\/style>/)[1];assert(style.includes('height:100dvh'));assert(style.includes('grid-template-rows:repeat(11,minmax(0,1fr))'));assert(style.includes('.pair-record.gone{visibility:hidden'));assert(style.includes('@keyframes edge-disappear'));assert(style.includes('@media(prefers-reduced-motion:reduce)'));
+  assert.equal(11*10/2,55);assert.equal(6*5/2,15);assert.equal(5*6,30);assert.equal(5*4/2,10);
+  result.formulas_checked.push('55 unordered pairs, represented by exactly 55 distinct edges','first fixed submission partitions 55 pairs into 15/30/10 for results 0/1/2','all later edge sets use every previously revealed-and-applied result','stable record-row centers match SVG endpoints at all tested sizes');
   const operationSnapshot = () => viewer.json('MIA_FIXED_VIEWER.snapshot()');
   const initialOperation = operationSnapshot();
   assert.deepEqual(initialOperation, {observations: Array(5).fill(null), meanInputs: Array(5).fill(null), counts: [11, 55, 11, 55, 11, 55], queries: QUERIES});
@@ -395,7 +296,7 @@ async function main() {
   assert(viewer.elements.get('fixed-results').innerHTML.includes('全6 Teamの所属が1候補ずつ'));
   assert(viewer.elements.get('fixed-results').innerHTML.includes('対象6 Team外：495・675'));
   const beforeLessonChange = operationSnapshot();
-  viewer.execute('MIA_FIXED_LESSON.setAnswer(1,1);MIA_FIXED_LESSON.setAnswer(2,1025);MIA_FIXED_LESSON.setDepth(0)');
+  viewer.execute('MIA_FIXED_LESSON.setAnswer(2,1025);MIA_FIXED_LESSON.setDepth(0)');
   assert.deepEqual(operationSnapshot(), beforeLessonChange);
   result.controls_checked.push('all five exact fictional demo means', 'lesson selection leaves operational observations unchanged');
 
