@@ -1,0 +1,56 @@
+{
+  "protocol": "fixed-before-current-label-evaluation-v1",
+  "phase": "prelim",
+  "self_id": 5,
+  "N": 30,
+  "shared_total": 736,
+  "pair_lower": 25,
+  "pair_upper": 27,
+  "primary_inference": "all20",
+  "primary_baseline": "P01",
+  "primary_soft": "soft_box_0.05",
+  "max_penalties": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "soft_temperatures": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "dummy_score": 0.5,
+  "cross_median": 0.1,
+  "shrink": 500,
+  "backgrounds": [
+    "full",
+    "sub80_seed20261009",
+    "sub80_seed20261010",
+    "sub80_seed20261011"
+  ],
+  "inference_sets": [
+    "all20",
+    "without1_2",
+    "without1_2_12"
+  ],
+  "evaluation_sets": [
+    "all",
+    "without12",
+    "without1_2",
+    "without1_2_12"
+  ],
+  "alpha": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "top_k": [
+    10,
+    12,
+    25
+  ],
+  "non_normal_output": "private=0; non-private rare=0.4; normal=(0.6,0.9]",
+  "latent_assignment": "all 886 unknown rows, including 11 rare; only normal outputs change",
+  "labels": "no individual labels, rare-member counts or exact observed totals used by prediction",
+  "scope_limit": "one previously explored preliminary cohort; not independent validation"
+}

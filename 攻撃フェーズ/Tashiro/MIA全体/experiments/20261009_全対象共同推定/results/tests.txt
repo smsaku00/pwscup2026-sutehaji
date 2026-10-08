@@ -1,0 +1,15 @@
+test_band_boundaries_are_open_on_lower_end (test_experiment.JointInferenceTests.test_band_boundaries_are_open_on_lower_end) ... ok
+test_capacity_intersection_prelim_and_main (test_experiment.JointInferenceTests.test_capacity_intersection_prelim_and_main) ... ok
+test_confidence_preserves_non_normal_and_ties (test_experiment.JointInferenceTests.test_confidence_preserves_non_normal_and_ties) ... ok
+test_extended_ranks_preserve_normal_ties (test_experiment.JointInferenceTests.test_extended_ranks_preserve_normal_ties) ... ok
+test_hard_flow_matches_exhaustive_search (test_experiment.JointInferenceTests.test_hard_flow_matches_exhaustive_search) ... ok
+test_own_column_is_excluded_from_competitors (test_experiment.JointInferenceTests.test_own_column_is_excluded_from_competitors) ... ok
+test_roc_all_ties_and_perfect_and_boundary_ties (test_experiment.JointInferenceTests.test_roc_all_ties_and_perfect_and_boundary_ties) ... ok
+test_score_free_problem_does_not_invent_row_information (test_experiment.JointInferenceTests.test_score_free_problem_does_not_invent_row_information) ... ok
+test_soft_dual_matches_independent_primal_solver (test_experiment.JointInferenceTests.test_soft_dual_matches_independent_primal_solver) ... ok
+test_soft_solution_is_row_and_column_equivariant (test_experiment.JointInferenceTests.test_soft_solution_is_row_and_column_equivariant) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.026s
+
+OK

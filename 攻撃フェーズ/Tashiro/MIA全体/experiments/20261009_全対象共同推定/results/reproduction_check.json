@@ -1,0 +1,25 @@
+{
+  "local_expected_sha256": {
+    "by_target.csv": "099ba3228ec3f4ccdb401dd584a45df3c28ba156701dfc114a84822d425fc42c",
+    "summary.csv": "c4572c04a60a9847288db4998719f12f6ad6c1d63d6f6a1aeeff3d17b3e3a87d"
+  },
+  "github_observed_sha256": {
+    "by_target.csv": "099ba3228ec3f4ccdb401dd584a45df3c28ba156701dfc114a84822d425fc42c",
+    "summary.csv": "c4572c04a60a9847288db4998719f12f6ad6c1d63d6f6a1aeeff3d17b3e3a87d"
+  },
+  "csv_byte_identical": true,
+  "source_commit": "c56b2c7e446de31df4cda902d2e20374a85bff43",
+  "actions_run_id": "37838302938",
+  "copied_files": [
+    "by_target.csv",
+    "summary.csv",
+    "constraint_audit.json",
+    "protocol.json",
+    "input_sha256.json",
+    "truth_input_sha256.json",
+    "prediction_hashes.json",
+    "optimizer_diagnostics.json",
+    "run_record.json"
+  ],
+  "individual_scores_published": false
+}

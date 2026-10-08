@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-08T20:17:49.709910+00:00",
+  "predictions_frozen_utc": "2026-10-08T20:18:47.654291+00:00",
+  "completed_utc": "2026-10-08T20:18:49.273675+00:00",
+  "seconds": 59.56378404099999,
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "code_sha256": "28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3",
+  "baseline_regression_max_error": {
+    "P01": 9.71445146547012e-17,
+    "GenLRA7": 6.245004513516506e-17
+  },
+  "full_only": false,
+  "prediction_conditions": 72,
+  "target_method_rows": 1380,
+  "no_main_data": true,
+  "no_competition_submission": true
+}
