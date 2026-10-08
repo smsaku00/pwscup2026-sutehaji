@@ -1,40 +1,54 @@
-name: Tashiro AIA pair audit input snapshot
+name: Tashiro AIA pair fixed audit
 on:
   push:
     branches: ['tashiro/aia-pair-audit-20261009']
     paths: ['.github/workflows/tashiro-aia-pair-audit.yml']
 permissions:
-  contents: read
+  contents: write
 jobs:
-  snapshot:
+  experiment:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    env:
+      EXP: 攻撃フェーズ/Tashiro/AIA希少/experiments/20261009_高信頼ペア限定
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
-      - name: Archive only experiment inputs and reference code
+          ref: tashiro/aia-pair-audit-20261009
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - name: Install fixed dependencies
+        run: python -m pip install -r "$EXP/requirements.txt"
+      - name: Run fixed experiment and independent checks
+        run: |
+          python "$EXP/analyze.py" --repo "$GITHUB_WORKSPACE"
+          python "$EXP/verify.py" --repo "$GITHUB_WORKSPACE"
+      - name: Commit only the new experiment outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$EXP/results"
+          if ! git diff --cached --quiet; then
+            git commit -m '高信頼AIAペア限定実験の全結果と独立検算を保存'
+            git push origin HEAD:tashiro/aia-pair-audit-20261009
+          fi
+      - name: Package reproducible outputs
         run: |
           python - <<'PY'
-          import hashlib, json, os, zipfile
+          import os,zipfile
           from pathlib import Path
-          roots = [Path('公式データ/予備戦'), Path('攻撃フェーズ/Tashiro/AIA希少'), Path('攻撃フェーズ/Tashiro/AIA全体')]
-          manifest = {'commit': os.environ['GITHUB_SHA'], 'files': {}}
-          with zipfile.ZipFile('/tmp/aia-pair-inputs.zip', 'w', zipfile.ZIP_DEFLATED) as z:
-              for root in roots:
-                  for p in sorted(root.rglob('*')):
-                      if not p.is_file() or p.name == 'token.txt':
-                          continue
-                      if p.suffix.lower() not in {'.csv', '.json', '.py', '.md', '.txt', '.yaml', '.yml'}:
-                          continue
-                      data = p.read_bytes()
-                      manifest['files'][str(p)] = hashlib.sha256(data).hexdigest()
-                      z.writestr(str(p), data)
-              z.writestr('snapshot_manifest.json', json.dumps(manifest, ensure_ascii=False, indent=2))
-          print('Saved', len(manifest['files']), 'files; commit', manifest['commit'])
+          root=Path(os.environ['EXP'])
+          with zipfile.ZipFile('/tmp/aia-pair-results.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.rglob('*')):
+                  if p.is_file() and '__pycache__' not in p.parts:
+                      z.write(p,p.relative_to(root))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: aia-pair-input-snapshot
-          path: /tmp/aia-pair-inputs.zip
-          retention-days: 3
+          name: aia-pair-fixed-results
+          path: /tmp/aia-pair-results.zip
+          retention-days: 7
