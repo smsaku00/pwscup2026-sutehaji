@@ -1,0 +1,40 @@
+name: Tashiro AIA pair audit input snapshot
+on:
+  push:
+    branches: ['tashiro/aia-pair-audit-20261009']
+    paths: ['.github/workflows/tashiro-aia-pair-audit.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Archive only experiment inputs and reference code
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, zipfile
+          from pathlib import Path
+          roots = [Path('公式データ/予備戦'), Path('攻撃フェーズ/Tashiro/AIA希少'), Path('攻撃フェーズ/Tashiro/AIA全体')]
+          manifest = {'commit': os.environ['GITHUB_SHA'], 'files': {}}
+          with zipfile.ZipFile('/tmp/aia-pair-inputs.zip', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root in roots:
+                  for p in sorted(root.rglob('*')):
+                      if not p.is_file() or p.name == 'token.txt':
+                          continue
+                      if p.suffix.lower() not in {'.csv', '.json', '.py', '.md', '.txt', '.yaml', '.yml'}:
+                          continue
+                      data = p.read_bytes()
+                      manifest['files'][str(p)] = hashlib.sha256(data).hexdigest()
+                      z.writestr(str(p), data)
+              z.writestr('snapshot_manifest.json', json.dumps(manifest, ensure_ascii=False, indent=2))
+          print('Saved', len(manifest['files']), 'files; commit', manifest['commit'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aia-pair-input-snapshot
+          path: /tmp/aia-pair-inputs.zip
+          retention-days: 3
