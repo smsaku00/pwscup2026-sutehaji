@@ -1,0 +1,44 @@
+name: Tashiro MIA joint preliminary input snapshot
+on:
+  push:
+    branches: ['tashiro/mia-joint-prelim-20261009']
+    paths: ['.github/workflows/tashiro-mia-joint-inputs.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect preliminary inputs and unchanged baseline code
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, shutil, subprocess
+          base=Path('公式データ/予備戦')
+          paths=list(base.glob('PWSCup2026_prelim_team05_*/B_self.csv'))
+          if len(paths)!=1: raise RuntimeError('Expected exactly one own preliminary B_self')
+          paths += list((base/'PWSCup2026_prelim_attack').glob('*.csv'))
+          paths += [base/'PWSCup2026_prelim_attack/mia_columns.json',base/'PWSCup2026_prelim_common/A_bg.csv']
+          paths += list((base/'結果/正解データ').glob('pool_ids_*.csv'))
+          src=Path('攻撃フェーズ/Tashiro/MIA全体/experiments/20261007')
+          paths += list(src.glob('*.py'))
+          paths += list((src/'非会員較正結果').glob('*.csv'))
+          if len(list((base/'結果/正解データ').glob('pool_ids_*.csv')))<21:
+              raise RuntimeError('Missing official preliminary pool IDs')
+          out=Path('mia-joint-input-snapshot')
+          manifest={}
+          for p in sorted(set(paths)):
+              if not p.is_file(): raise FileNotFoundError(p)
+              q=out/p; q.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(p,q)
+              manifest[p.as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
+          (out/'input_manifest.json').write_text(json.dumps({'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'files':manifest},ensure_ascii=False,indent=2)+'\n')
+          print('Input files:',len(manifest))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mia-joint-prelim-inputs-20261009
+          path: mia-joint-input-snapshot/
+          retention-days: 1
+          if-no-files-found: error
