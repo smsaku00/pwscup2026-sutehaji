@@ -1,0 +1,55 @@
+name: Finalize Tashiro MIA joint experiment links
+on:
+  push:
+    branches: ['tashiro/mia-joint-prelim-20261009']
+    paths: ['.github/workflows/tashiro-mia-joint-links.yml']
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Repair only new report link and append experiment index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          base=Path('攻撃フェーズ/Tashiro/MIA全体/experiments')
+          exp=base/'20261009_全対象共同推定'
+          p=exp/'README.md'
+          text=p.read_text()
+          old='../../../../../../公式データ/予備戦/README.md'
+          new='../../../../../公式データ/予備戦/README.md'
+          if text.count(old)!=1: raise RuntimeError('Unexpected source link count')
+          p.write_text(text.replace(old,new),encoding='utf-8')
+          ignore=exp/'.gitignore'
+          if ignore.exists(): raise RuntimeError('Do not overwrite existing ignore file')
+          ignore.write_text('__pycache__/\n_scores_*.npz\n**/_scores_*.npz\n',encoding='utf-8')
+          index=base/'README.md'; text=index.read_text()
+          row='| [2026-10-09](20261009_全対象共同推定/README.md) | 全20対象の排他性・人数制約によるMIA共同推定。12方式条件・4背景、公開正解の制約監査と再現コード。今回の構成はP01の安定改善にならず見送り |\n'
+          if '20261009_全対象共同推定' in text or text.count('|---|---|\n')!=1:
+              raise RuntimeError('Index changed; manual reconciliation required')
+          index.write_text(text.replace('|---|---|\n','|---|---|\n'+row),encoding='utf-8')
+          # All relative Markdown links in the new report must resolve.
+          import re
+          for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
+              if '://' not in link and not link.startswith('#'):
+                  if not (p.parent/link.split('#')[0]).exists(): raise FileNotFoundError(link)
+          print('Relative report links verified')
+          PY
+      - name: Commit only the three documentation paths
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '攻撃フェーズ/Tashiro/MIA全体/experiments/README.md' '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/README.md' '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/.gitignore'
+          git commit -m 'MIA共同推定の実験索引・参照リンク・個人スコア除外設定を整備'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
