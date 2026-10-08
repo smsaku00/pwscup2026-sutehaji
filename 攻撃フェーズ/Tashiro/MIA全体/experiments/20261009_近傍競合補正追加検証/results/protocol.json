@@ -1,0 +1,36 @@
+{
+  "task": "Published preliminary MIA cross-target proximity exploratory follow-up",
+  "source_previous_sha256": "28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3",
+  "methods": [
+    "P01",
+    "P01_plus_max0.1",
+    "nearest5_selfonly0.05",
+    "nearest5_max0.05",
+    "nearest5_mean0.1",
+    "neighbor2_median0.1",
+    "cat025_gated0.1"
+  ],
+  "views": [
+    "full",
+    "sub80_seed20261009",
+    "sub80_seed20261010",
+    "sub80_seed20261011"
+  ],
+  "reduced_inference_sets": {
+    "all20": [],
+    "without1_2": [
+      1,
+      2
+    ],
+    "without1_2_12": [
+      1,
+      2,
+      12
+    ]
+  },
+  "scores": "Normal875 only; private163=0, non-private rare11=0.4 for ALL methods",
+  "proximity": "age SBP TG HDL ALT, TG/ALT log1p; background IQR scales; squared Euclidean nearest or nearest-two mean",
+  "comparison": "nearest feature column percentile ranks compared with foreign team max/mean/median; category mismatch is logical OR with 0.25 cost",
+  "selection_warning": "Methods chosen after testing hundreds on exposed preliminary labels; backgrounds share individuals, not independent validation",
+  "label_access": "No pool_ids before all predictions are fixed; labels used for evaluation only"
+}

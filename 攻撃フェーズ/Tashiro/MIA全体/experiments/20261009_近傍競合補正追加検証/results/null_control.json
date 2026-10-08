@@ -1,0 +1,10 @@
+{
+  "seed": 20261009,
+  "repetitions": 200,
+  "observed_delta": 0.014301994301994298,
+  "null_mean": -0.018275299145299153,
+  "null_p05": -0.031323219373219385,
+  "null_p95": -0.005391595441595465,
+  "fraction_ge_observed": 0.0,
+  "meaning": "Shuffle 20 C-feature columns within each record. Descriptive negative control, NOT p-value due prior model selection."
+}
