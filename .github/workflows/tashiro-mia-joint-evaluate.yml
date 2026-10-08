@@ -1,0 +1,81 @@
+name: Tashiro MIA joint preliminary evaluation and result publication
+on:
+  push:
+    branches: ['tashiro/mia-joint-prelim-20261009']
+    paths: ['.github/workflows/tashiro-mia-joint-evaluate.yml']
+permissions:
+  contents: write
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      EXPERIMENT: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - name: Verify reviewed code and install reference dependencies
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, os
+          p=Path(os.environ['EXPERIMENT'])
+          expected={'run_experiment.py':'28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3','test_experiment.py':'70ceef471990d4921742f0e05a1141ea304b9b85285fde4d51fd2f5d52e4bda3'}
+          for name, h in expected.items():
+              if hashlib.sha256((p/name).read_bytes()).hexdigest()!=h: raise RuntimeError('Reviewed code changed: '+name)
+          if (p/'results').exists(): raise RuntimeError('Never overwrite existing results')
+          PY
+          python -m pip install -r "$EXPERIMENT/requirements.txt"
+      - name: Independent tests and full fixed preliminary experiment
+        run: |
+          set -o pipefail
+          git rev-parse HEAD > "$RUNNER_TEMP/mia-source-commit.txt"
+          python -m unittest discover -s "$EXPERIMENT" -p test_experiment.py -v 2>&1 | tee "$RUNNER_TEMP/mia-tests.txt"
+          python -u "$EXPERIMENT/run_experiment.py" --root . --output-dir "$RUNNER_TEMP/mia-joint-output"
+      - name: Copy aggregate outputs only and verify local result reproduction
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os, hashlib, json, shutil
+          source=Path(os.environ['RUNNER_TEMP'])/'mia-joint-output'
+          target=Path(os.environ['EXPERIMENT'])/'results'
+          target.mkdir(exist_ok=False)
+          allowed=['by_target.csv','summary.csv','constraint_audit.json','protocol.json','input_sha256.json','truth_input_sha256.json','prediction_hashes.json','optimizer_diagnostics.json','run_record.json']
+          expected={'by_target.csv':'099ba3228ec3f4ccdb401dd584a45df3c28ba156701dfc114a84822d425fc42c','summary.csv':'c4572c04a60a9847288db4998719f12f6ad6c1d63d6f6a1aeeff3d17b3e3a87d'}
+          observed={name:hashlib.sha256((source/name).read_bytes()).hexdigest() for name in expected}
+          comparison={'local_expected_sha256':expected,'github_observed_sha256':observed,'csv_byte_identical':expected==observed,'source_commit':(Path(os.environ['RUNNER_TEMP'])/'mia-source-commit.txt').read_text().strip(),'actions_run_id':os.environ['GITHUB_RUN_ID'],'copied_files':allowed,'individual_scores_published':False}
+          # Stop instead of silently publishing results that differ from reviewed local results.
+          if expected!=observed: raise RuntimeError(json.dumps(comparison))
+          for name in allowed: shutil.copyfile(source/name,target/name)
+          shutil.copyfile(Path(os.environ['RUNNER_TEMP'])/'mia-tests.txt',target/'tests.txt')
+          (target/'reproduction_check.json').write_text(json.dumps(comparison,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(target.iterdir())}
+          (target/'SHA256SUMS.txt').write_text(''.join(h+'  '+name+'\n' for name,h in hashes.items()),encoding='utf-8')
+          print('Published aggregate files:',len(hashes)+1)
+          PY
+      - name: Commit only new experiment results to main without force push
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$EXPERIMENT/results"
+          git diff --cached --name-only
+          git commit -m '予備戦MIA共同推定の全結果・制約監査・ローカル完全一致の再現記録を追加'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mia-joint-prelim-aggregate-results-20261009
+          path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/results/'
+          retention-days: 7
+          if-no-files-found: error
