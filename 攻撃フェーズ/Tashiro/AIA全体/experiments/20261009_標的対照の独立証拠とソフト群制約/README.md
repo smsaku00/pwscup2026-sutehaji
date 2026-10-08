@@ -87,3 +87,9 @@ bash run_all.sh /path/to/pwscup2026-sutehaji /path/to/new_output
 主要ファイル：`experiment.py`（特徴とコホート除外学習・主要回答比較）、`extension.py`（soft half quotaと指標同意）、`negative_controls.py`（反証C）、`pairwise_training.py`（ペアワイズ学習）、`diagnostics.py`（希少AUC・較正）。`output/`には対象別・集計・変更行・診断のCSV/JSONを保存。
 
 **GitHubへの研究資料登録は本戦への攻撃提出とは別の行為です。** 担当者の既存回答を置換せず、採用は保留する。
+## GitHub掲載の集計入口
+
+- [全体20対象の方式比較](results/summary_20.csv)／[加工18対象の感度比較](results/summary_18.csv)
+- [モデルAUC](results/model_summary.csv)／[希少層別AUC](results/rare_AUC_diagnostics.csv)／[偽Cの反証](results/negative_controls.csv)
+- [ソフト制約の比較](results/extension_summary_20.csv)／[ペアワイズ学習の対象別](results/pairwise_target.csv)／[統計的な差分と区間](results/statistical_checks.json)
+- [実行スクリプト](experiment.py)と[一括再計算](run_all.sh)。人数予測・事後結果を含む詳細CSVは同じスクリプトで再生成可能。

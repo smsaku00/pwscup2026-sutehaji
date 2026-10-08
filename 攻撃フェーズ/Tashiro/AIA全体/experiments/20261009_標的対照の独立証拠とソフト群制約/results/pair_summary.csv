@@ -1,0 +1,10 @@
+score,pairs,orientation_accuracy
+near4,20,0.6
+col4,20,0.6
+col2,20,0.7
+q_only,20,0.4
+bg_only,20,0.6
+c_only,20,0.65
+c_bg,20,0.6
+c_bg_other,20,0.6
+c_bg_hgb,20,0.6
