@@ -23,17 +23,28 @@ jobs:
           python-version: '3.13.5'
       - name: Install fixed dependencies
         run: python -m pip install -r "$EXP/requirements.txt"
+      - name: Correct only the default repository directory
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          for name in ['analyze.py','verify.py']:
+              p=Path(os.environ['EXP'])/name
+              s=p.read_text()
+              assert s.count('default=HERE.parents[5]')==1
+              p.write_text(s.replace('default=HERE.parents[5]','default=HERE.parents[4]'))
+          PY
       - name: Run fixed experiment and independent checks
         run: |
-          python "$EXP/analyze.py" --repo "$GITHUB_WORKSPACE"
-          python "$EXP/verify.py" --repo "$GITHUB_WORKSPACE"
-      - name: Commit only the new experiment outputs
+          python "$EXP/analyze.py"
+          python "$EXP/verify.py"
+      - name: Commit only new experiment code and outputs
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- "$EXP/results"
+          git add -- "$EXP/analyze.py" "$EXP/verify.py" "$EXP/results"
           if ! git diff --cached --quiet; then
-            git commit -m '高信頼AIAペア限定実験の全結果と独立検算を保存'
+            git commit -m '高信頼AIAペア限定実験の既定ルート修正と最終検算結果を保存'
             git push origin HEAD:tashiro/aia-pair-audit-20261009
           fi
       - name: Package reproducible outputs
