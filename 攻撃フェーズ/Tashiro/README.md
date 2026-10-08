@@ -22,18 +22,20 @@
 | 補助分析 | [AIA全体](AIA全体/README.md) | [10/8の短い結論](AIA全体/experiments/20261008/README.md)・[詳細](AIA全体/experiments/20261008/詳細.md)。P01と値集合案を比較 |
 | 補助分析 | [AIA希少](AIA希少/README.md) | [10/8の加工特徴・過学習監査](AIA希少/experiments/20261008_加工特徴と過学習監査/調査まとめ.md)。新方式の安定優位は未確立 |
 
-## フォルダの読み方
+## 全4テーマで共通のフォルダ構造
 
-| 場所 | 役割 |
-|---|---|
-| 各テーマの `README.md` | 最新の結論、方式の採否、下位資料へのナビゲーション |
-| `MIA希少/rounds/` | 実際の提出回の説明。**原本はチーム共通MIA**（第3回を含む） |
-| 各テーマの `proposal/` | 比較・提案の候補。**提出済み・採用確定を意味しない** |
-| `experiments/日付/` | 評価条件、実験結果、保存コード・集計・監査記録。新旧の数値は評価母集団を確認 |
-| `MIA希少/docs/` | 仕組みと保証、探索の経緯。[索引](MIA希少/docs/README.md)で「現行」「比較」「歴史」を区別 |
-| `MIA希少/analysis/` | 完成した適応4回案の証明書など。現行固定5bitの提出原本と取り違えない |
-| `MIA希少/scripts/` | 実験・検証用スクリプト |
-| `MIA希少/reference/`・`notes/`・`archive/` | 参照資料、作成時点のメモ、棄却・旧計画。[notes索引](notes/README.md)／[archive索引](archive/README.md) |
+**どのテーマも`README.md`→`rounds/`→`proposal/`→`docs/`→`experiments/`→`analysis/`の役割が共通です。** まず各テーマのREADMEで結論を読み、目的に合うリンクへ進んでください。
+
+| 名前（各テーマ直下） | 役割 | 原本の境界 |
+|---|---|---|
+| [MIA希少](MIA希少/README.md)／[MIA全体](MIA全体/README.md)／[AIA全体](AIA全体/README.md)／[AIA希少](AIA希少/README.md) | **README.md**：最新の結論と採否 | 第1〜3回の状態を基準に更新 |
+| `rounds/README.md` | **実提出・採点** | 正本は[共通MIA](../MIA/README.md)／[共通AIA](../AIA/)／[成績一覧](../成績一覧.md) |
+| `proposal/README.md` | **方式・採否** | 提案と採用は別。過去のP01も最新の扱いを明示 |
+| `docs/README.md` | **解説** | 仕組み・前提と読む順番。[MIA希少の探索履歴](MIA希少/docs/history/README.md)も保持 |
+| `experiments/README.md` | **日付別の原本** | コード、CSV、集計、報告書。研究結果は公式採点と区別 |
+| `analysis/README.md` | **根拠・検証** | MIA希少は証明書、他3テーマは根拠ファイルの案内。証明書を捏造しない |
+
+**共通化のためにコード・データ・証明書を移動・複製していません。** MIA希少の`archive/`・`reference/`・`scripts/`・`tools/`は、実際の中身があるテーマ固有フォルダとして維持し、他テーマに空のフォルダは作りません。
 
 ### 判定用語
 
