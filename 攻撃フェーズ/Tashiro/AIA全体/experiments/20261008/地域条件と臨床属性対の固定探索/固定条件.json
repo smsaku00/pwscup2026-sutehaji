@@ -1,0 +1,64 @@
+{
+  "methods": [
+    "P01",
+    "column_all4",
+    "column_top2",
+    "pref_column_all4",
+    "pref_column_top2",
+    "clinical_pair_top1",
+    "clinical_pair_top3"
+  ],
+  "new_rules": 4,
+  "clinical_pairs": [
+    [
+      "SBP",
+      "TG"
+    ],
+    [
+      "SBP",
+      "HDL"
+    ],
+    [
+      "SBP",
+      "ALT"
+    ],
+    [
+      "TG",
+      "HDL"
+    ],
+    [
+      "TG",
+      "ALT"
+    ],
+    [
+      "HDL",
+      "ALT"
+    ]
+  ],
+  "pref_empty_stratum": "both C and BG fallback to sex-only",
+  "pair_tie_break": "original full5 tiny1e-10; age excluded from primary6-pair score",
+  "select_fraction": 0.75,
+  "selected_answer": 9.5,
+  "other_answer": 0,
+  "seeds": [
+    20261040,
+    20261041,
+    20261042,
+    20261043
+  ],
+  "null_repeats": 5,
+  "reference": "phase BG only; same scale and reference for actual and null",
+  "null_pool": "phase pool half plus all old-kit public BG, phase reference source rows excluded",
+  "null_models": [
+    "sex",
+    "sex_prefecture"
+  ],
+  "both_nulls_use_replacement": true,
+  "nulls_are_diagnostics_not_official_phi": true,
+  "regional_group": "maximum prefecture share in public C >=.25; diagnostic only, no method switching",
+  "existing_groups": "frozen previous5 groups; other13 not assumed homogeneous",
+  "candidate_or_group_tuning": false,
+  "design_after_old_results": true,
+  "independent_new_teams": 0,
+  "predictions_before_truth": true
+}

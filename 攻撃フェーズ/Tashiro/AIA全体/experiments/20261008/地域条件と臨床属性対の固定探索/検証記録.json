@@ -1,0 +1,27 @@
+{
+  "all_saved_inputs_and_imports_hash_match": true,
+  "input_count": 115,
+  "saved_prediction_hash_match": true,
+  "full_control_scores_matched": 63,
+  "score_rows": 6335,
+  "C_and_query_order_permutation_sample_team1_all7_match": true,
+  "regional_nearest_vs_bruteforce_all326_main6_split_match": true,
+  "fallback_rows_sample": 218,
+  "diagnostic_rows": 1020,
+  "invalid_assignments": 0,
+  "primary_prediction_changes": 0,
+  "main_B_or_truth_used": false,
+  "old_age10_comparison_is_full_BG_only": true,
+  "old_age10_vs_new6_split_and_null_comparison_available": false,
+  "bootstrap_does_not_preserve_processed_C_quantization_or_joint_clinical_dependence": true,
+  "null_unique_rows_range": {
+    "sex": {
+      "min": 961,
+      "max": 1001
+    },
+    "sex_prefecture": {
+      "min": 745,
+      "max": 994
+    }
+  }
+}
