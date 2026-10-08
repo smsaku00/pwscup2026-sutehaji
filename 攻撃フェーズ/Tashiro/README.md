@@ -29,7 +29,7 @@
 | `MIA希少/docs/` | 仕組みと保証、探索の経緯。[索引](MIA希少/docs/README.md)で「現行」「比較」「歴史」を区別 |
 | `MIA希少/analysis/` | 完成した適応4回案の証明書など。現行固定5bitの提出原本と取り違えない |
 | `MIA希少/scripts/` | 実験・検証用スクリプト |
-| `reference/`・`notes/`・`archive/` | 参照資料、作成時点のメモ、棄却・旧計画。[notes索引](notes/README.md)／[archive索引](archive/README.md) |
+| `MIA希少/reference/`・`notes/`・`archive/` | 参照資料、作成時点のメモ、棄却・旧計画。[notes索引](notes/README.md)／[archive索引](archive/README.md) |
 
 ### 判定用語
 
