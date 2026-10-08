@@ -1,0 +1,56 @@
+{
+  "version": "20261009-pair-audit-v1",
+  "mode": "mock",
+  "methods": [
+    "near4",
+    "col4_simple",
+    "col2_simple"
+  ],
+  "policies": [
+    "baseline",
+    "force_half",
+    "visible_pair",
+    "stable_rare_pair",
+    "combined_pair"
+  ],
+  "widths": [
+    5,
+    10
+  ],
+  "primary_width": 10,
+  "rank_gap": 0.25,
+  "baseline_positive_fraction": 0.75,
+  "hit_time": 9.5,
+  "miss_values": [
+    0.0,
+    11.0
+  ],
+  "rare_cutoffs": [
+    26,
+    52
+  ],
+  "model": {
+    "categorical_features": "from_dtype",
+    "class_weight": null,
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 5,
+    "learning_rate": 0.1,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 140,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 35,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "random_state": 20261007,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "note": "All candidates fixed for this run. Historical benchmark was already inspected; not a pristine holdout."
+}

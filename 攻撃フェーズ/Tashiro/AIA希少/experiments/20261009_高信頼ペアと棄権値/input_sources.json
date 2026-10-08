@@ -1,0 +1,206 @@
+{
+  "archive_name": "pwscup2026-sutehaji-main.zip",
+  "archive_sha256": "068d0c1d04d4a21928f15fa7fd06d2f095c106bb2ef8209a1ecf64a7c7c51529",
+  "files": {
+    "mock/README.md": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/README.md",
+      "sha256": "f51bbd36b5169f8645558d1601089df2887da1548e68b693aea45f2230220bd9"
+    },
+    "mock/protocol.json": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/protocol.json",
+      "sha256": "8617743ba8a5961254970e31f37b76621c7eb2e732eb6e7f7749a60ceed55bc3"
+    },
+    "mock/phi_results.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/phi_results.csv",
+      "sha256": "d930ea190cd91e12fee80ad08173318e41e7583379c4db6512086f79a35d5edc"
+    },
+    "mock/code/generate_and_score.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/code/generate_and_score.py",
+      "sha256": "391f49766abd7d1a4c34d96a7caf891bf673011f613863c6475ee38511b6eada"
+    },
+    "mock/public/prelim/panel_01/aia_challenge_9501.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/public/prelim/panel_01/aia_challenge_9501.csv",
+      "sha256": "d70fc03c37bede379d09aa7880ab040e3bea0b6bffe5c1da4085253834e2b5a4"
+    },
+    "mock/private/prelim/panel_01/truth.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_01/truth.csv",
+      "sha256": "0610b3315f74f9119002d3e6d7e551516133a938f29d95809b24deb4381d5366"
+    },
+    "mock/private/prelim/panel_01/row_mapping.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_01/row_mapping.csv",
+      "sha256": "bbe013aa7f0fedd7760d4f98ef5e128763710a0ecbdf122ba99c6d02b278f555"
+    },
+    "mock/public/prelim/panel_02/aia_challenge_9502.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/public/prelim/panel_02/aia_challenge_9502.csv",
+      "sha256": "b28b7b872077e5f4995691cefb903055c4ff2f40df84ae7ed251c9ac0b587999"
+    },
+    "mock/private/prelim/panel_02/truth.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_02/truth.csv",
+      "sha256": "8b2a4a0464edfe92feddd2e7b44cbe3d44fe9403a3fe22e4cd070c2603e9c59b"
+    },
+    "mock/private/prelim/panel_02/row_mapping.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_02/row_mapping.csv",
+      "sha256": "2b550da493a6b1216309b2fbaa429cafaa20690b9fbc3c2dd514e6260637a014"
+    },
+    "mock/public/prelim/panel_03/aia_challenge_9503.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/public/prelim/panel_03/aia_challenge_9503.csv",
+      "sha256": "bf8f29b6799c0b4893797aa965028cac73637199e45dc5c1d0193467c8f988d9"
+    },
+    "mock/private/prelim/panel_03/truth.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_03/truth.csv",
+      "sha256": "4dbbfe6cf20a5b0d20a7e54d4abe68c506551af30dd223c7a018280563bcb0e9"
+    },
+    "mock/private/prelim/panel_03/row_mapping.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_03/row_mapping.csv",
+      "sha256": "e86ef16e4761d1a90d53b30ac62d579fb5de141f852053b5ae266f05f4864677"
+    },
+    "mock/public/prelim/panel_04/aia_challenge_9504.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/public/prelim/panel_04/aia_challenge_9504.csv",
+      "sha256": "a50b770632e4581d9087d62bd76e669cc0ad810739672f8a36b3f248ec196433"
+    },
+    "mock/private/prelim/panel_04/truth.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_04/truth.csv",
+      "sha256": "55b7fab201a5dc47d91ac13802ef01eedd38c8603a9556c37bbe5b89152c5fc8"
+    },
+    "mock/private/prelim/panel_04/row_mapping.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_04/row_mapping.csv",
+      "sha256": "d3ed47d1ad8425c03ef3158118465b0d1fc2da84a0df0dfabe371c7640366550"
+    },
+    "mock/public/prelim/panel_05/aia_challenge_9505.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/public/prelim/panel_05/aia_challenge_9505.csv",
+      "sha256": "47c9efed58fb6d429c947f5960fe0b3502810ffd7e825e4091e0f39b1a266331"
+    },
+    "mock/private/prelim/panel_05/truth.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_05/truth.csv",
+      "sha256": "d532f1c8a8850cff54db17c5b54057d38fe0fc5aca10cb85ba84908c80aefbb2"
+    },
+    "mock/private/prelim/panel_05/row_mapping.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/aia_mock_single_pref_20_with_phi/aia_mock_single_pref_20/private/prelim/panel_05/row_mapping.csv",
+      "sha256": "3c60b7ad73c276d9c8ec8f2e36f86bbe195a5bc0214b3d171005b13a4a088a63"
+    },
+    "A_bg.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv",
+      "sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23"
+    },
+    "B_self.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1"
+    },
+    "schema.json": {
+      "archive_path": "pwscup2026-sutehaji-main/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/schema.json",
+      "sha256": "dcc02dc251dd8a41a3460aa4d84bed04dff76c7127202ac9533d667862dcac18"
+    },
+    "Cs/zhang_04_copula_bgtime.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/submissions/zhang_04_copula_bgtime.zip!C.csv",
+      "sha256": "85d568f4d764b985f32770037abbd9aeeeba298b54550e4170ac2722bf553e42"
+    },
+    "Cs/zhang_05_conditional_bgtime.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/submissions/zhang_05_conditional_bgtime.zip!C.csv",
+      "sha256": "57beea457d29d9189427cf1657a9e2bd870a118b2ab24f6ceab27ee693e1caac"
+    },
+    "Cs/zhang_06_mixture_btime.csv": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/submissions/zhang_06_mixture_btime.zip!C.csv",
+      "sha256": "165b3e5f84f1864178e4920214fb0a875597a77a7c660816ebc9c99e057845a9"
+    },
+    "official_scoring/scoring_config.yaml": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/scoring_config.yaml",
+      "sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22"
+    },
+    "official_scoring/src/pwscup2026/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/__init__.py",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    "official_scoring/src/pwscup2026/attack/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/attack/__init__.py",
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc"
+    },
+    "official_scoring/src/pwscup2026/attack/aia.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/attack/aia.py",
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a"
+    },
+    "official_scoring/src/pwscup2026/attack/mia.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/attack/mia.py",
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf"
+    },
+    "official_scoring/src/pwscup2026/common/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/common/__init__.py",
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787"
+    },
+    "official_scoring/src/pwscup2026/common/config.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/common/config.py",
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f"
+    },
+    "official_scoring/src/pwscup2026/common/schema.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/common/schema.py",
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e"
+    },
+    "official_scoring/src/pwscup2026/common/submission_schema.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/common/submission_schema.py",
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9"
+    },
+    "official_scoring/src/pwscup2026/defense/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/defense/__init__.py",
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff"
+    },
+    "official_scoring/src/pwscup2026/defense/perturb.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/defense/perturb.py",
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b"
+    },
+    "official_scoring/src/pwscup2026/defense/synth.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/defense/synth.py",
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f"
+    },
+    "official_scoring/src/pwscup2026/kit/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/__init__.py",
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5"
+    },
+    "official_scoring/src/pwscup2026/kit/codabench/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f"
+    },
+    "official_scoring/src/pwscup2026/kit/codabench/run.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec"
+    },
+    "official_scoring/src/pwscup2026/kit/codabench/scoring_io.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+    },
+    "official_scoring/src/pwscup2026/kit/kit_config.yaml": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/kit_config.yaml",
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+    },
+    "official_scoring/src/pwscup2026/kit/selfscore.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/selfscore.py",
+      "sha256": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d"
+    },
+    "official_scoring/src/pwscup2026/kit/validate.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/kit/validate.py",
+      "sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e"
+    },
+    "official_scoring/src/pwscup2026/rare/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/rare/__init__.py",
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e"
+    },
+    "official_scoring/src/pwscup2026/rare/outlier.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/rare/outlier.py",
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+    },
+    "official_scoring/src/pwscup2026/scoring/__init__.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/__init__.py",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    "official_scoring/src/pwscup2026/scoring/attack_score.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    "official_scoring/src/pwscup2026/scoring/result.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/result.py",
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd"
+    },
+    "official_scoring/src/pwscup2026/scoring/utility.py": {
+      "archive_path": "pwscup2026-sutehaji-main/加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/utility.py",
+      "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
+    }
+  }
+}

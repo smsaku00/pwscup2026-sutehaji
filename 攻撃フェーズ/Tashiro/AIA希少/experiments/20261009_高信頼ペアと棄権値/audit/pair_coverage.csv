@@ -1,0 +1,7 @@
+width,method,candidates,passes,one_member_one_control,true_pairs,pass_with_mixed_roles
+5,near4,6,1,0,0,0
+5,col4_simple,6,3,0,0,0
+5,col2_simple,6,0,0,0,0
+10,near4,0,0,0,0,0
+10,col4_simple,0,0,0,0,0
+10,col2_simple,0,0,0,0,0

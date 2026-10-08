@@ -1,0 +1,21 @@
+{
+  "created_jst_date": "2026-10-09",
+  "official_data_missing": false,
+  "official_data_runtime_import_complete": false,
+  "official_followup_experiment_executed": false,
+  "official_input_loader_test": "synthetic fixtures only",
+  "mock_experiment_executed": true,
+  "github_written": false,
+  "github_commit_sha": null,
+  "github_write_blocker": "Connected GitHub exposes read-only actions in this conversation",
+  "contest_submitted": false,
+  "existing_answers_changed": false,
+  "mock_rare_control_truth_known": false,
+  "mock_official_Rrare_or_Rmax_reported": false,
+  "unit_tests_passed": 11,
+  "archived_official_scorer_comparison_cases": 296,
+  "reproduced_output_files_byte_identical": 6,
+  "main_comparison_cases": 15,
+  "control_cases": 10,
+  "final_position": "Do not adopt this fixed pair filter yet. Official follow-up and original-baseline ablation remain unexecuted."
+}

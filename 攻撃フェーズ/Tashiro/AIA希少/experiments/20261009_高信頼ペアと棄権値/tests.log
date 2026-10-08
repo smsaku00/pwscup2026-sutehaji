@@ -1,0 +1,16 @@
+test_against_archived_official_function (test_experiment.TestExperiment.test_against_archived_official_function) ... ok
+test_gap_can_accept_pair_without_knowing_roles (test_experiment.TestExperiment.test_gap_can_accept_pair_without_knowing_roles) ... ok
+test_inference_rejects_hidden_columns (test_experiment.TestExperiment.test_inference_rejects_hidden_columns) ... ok
+test_official_loader_with_synthetic_fixtures_only (test_experiment.TestExperiment.test_official_loader_with_synthetic_fixtures_only) ... ok
+test_original_model_parameters (test_experiment.TestExperiment.test_original_model_parameters) ... ok
+test_permutation_and_tie_invariance (test_experiment.TestExperiment.test_permutation_and_tie_invariance) ... ok
+test_reject_invalid_predictions_and_truth (test_experiment.TestExperiment.test_reject_invalid_predictions_and_truth) ... ok
+test_rejected_pair_preserves_baseline (test_experiment.TestExperiment.test_rejected_pair_preserves_baseline) ... ok
+test_score_all_196_rare_counts (test_experiment.TestExperiment.test_score_all_196_rare_counts) ... ok
+test_unknown_control_rare_is_not_imputed (test_experiment.TestExperiment.test_unknown_control_rare_is_not_imputed) ... ok
+test_zero_vs_eleven_boundary (test_experiment.TestExperiment.test_zero_vs_eleven_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.035s
+
+OK

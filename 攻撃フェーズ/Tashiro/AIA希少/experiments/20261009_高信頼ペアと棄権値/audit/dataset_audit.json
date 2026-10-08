@@ -1,0 +1,14 @@
+{
+  "mock_panels": 5,
+  "members_per_panel": 163,
+  "controls_per_panel": 163,
+  "total_member_appearances": 815,
+  "unique_member_source_rows": 301,
+  "total_control_appearances": 815,
+  "unique_control_source_rows": 302,
+  "mock_pairs_checked": 815,
+  "known_key": "prefecture, sex, floor(age/10), onset",
+  "control_true_is_rare_known": false,
+  "all_primary_candidate_pairs": 0,
+  "note": "Source-row uniqueness counts separately within main B and preliminary BG, not across data worlds."
+}

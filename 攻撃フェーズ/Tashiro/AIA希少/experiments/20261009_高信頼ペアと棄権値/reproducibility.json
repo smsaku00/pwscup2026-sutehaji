@@ -1,0 +1,31 @@
+{
+  "fresh_extraction_verified": true,
+  "fresh_run_verified": true,
+  "identical_outputs": {
+    "frozen_plan.json": {
+      "sha256": "595ed4f39e993733a9f601f8d44e6574fe432dea2f6f7805cf131f9d61e130a5",
+      "bitwise_identical": true
+    },
+    "case_metrics.csv": {
+      "sha256": "c1d04dcb67c257832188cb531abe718c803d2b3e42c83ade794a07877ed048ab",
+      "bitwise_identical": true
+    },
+    "pair_audit.csv": {
+      "sha256": "efd983cb9a7ca1c8526d7206aa2d8d045a1522d9884aa6fe00d279170e5a4997",
+      "bitwise_identical": true
+    },
+    "changed_rows_diagnostics.csv": {
+      "sha256": "ee11dc72987cc8aed7681d1c03d1c86c5d261339cd7f9120cd7a4f61c1606a1d",
+      "bitwise_identical": true
+    },
+    "summary.csv": {
+      "sha256": "9481284d887ab1cbafd31b7711c4449d1c5ff61c5e992199eb4d8d9c8c7418c8",
+      "bitwise_identical": true
+    },
+    "miss_value_contrast.csv": {
+      "sha256": "05cbbf8542c76592050503d3ceac067a487b2ea12718ee6794585c1c5c2feb91",
+      "bitwise_identical": true
+    }
+  },
+  "excluded_from_bitwise_check": "run_manifest elapsed time and local input paths differ"
+}

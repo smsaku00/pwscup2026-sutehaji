@@ -1,0 +1,4 @@
+method,cases,mean_delta_r_all,lost_member_hits,lost_control_hits,improved_cases,worsened_cases
+near4,15,-0.0045055945875618003,11,0,0,4
+col4_simple,15,-0.0042564466293280069,4,0,0,3
+col2_simple,15,-0.0045526384535005404,5,0,0,4

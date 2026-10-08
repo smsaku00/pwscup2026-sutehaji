@@ -1,0 +1,15 @@
+{
+  "kind": "Post-hoc mechanism diagnostic",
+  "actual_pair_id_used": true,
+  "membership_used_to_orient": false,
+  "gap": 0.25,
+  "modes": [
+    "true_pair_all",
+    "true_pair_gated"
+  ],
+  "miss_values": [
+    0.0,
+    11.0
+  ],
+  "assumptions": "Only archived mock pairing is known. No official pair IDs are available."
+}
