@@ -305,7 +305,7 @@ def summarize(frame,pairs,protocol,out):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--repo',type=Path,default=HERE.parents[5]);ap.add_argument('--out',type=Path,default=HERE/'results')
+    ap.add_argument('--repo',type=Path,default=HERE.parents[4]);ap.add_argument('--out',type=Path,default=HERE/'results')
     ap.add_argument('--official-src',type=Path)
     args=ap.parse_args();root=args.repo.resolve();out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
     cfg=json.loads((HERE/'protocol.json').read_text());start=time.time()

@@ -1,7 +1,7 @@
 {
   "input_commit": "5c14d1632e78b4a6978763907e92a26b1dd9be05",
   "protocol_sha256": "c0849578b6146e797f49d227d006444f02b473cb269ab890dce27ecd250b4886",
-  "script_sha256": "d888e1614bda34b811d26796883fc9dc6958dd8899a51a5e4bdf3768ae292abb",
+  "script_sha256": "a2ae16b8946108536a16521eac13e217ed181d11044f51f28c2feea319747bec",
   "input_sha256": {
     "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/分析.py": "8c28fdd95bcf3e9cfcfde27a76efb6323c66ab642c0ee2690c77bd79bb37df4f",
     "攻撃フェーズ/Tashiro/AIA全体/experiments/20261007/同点に依存しない対応.py": "4732e5a3ca6786430ec60de99283ae38579d44519368b292f456a42ba8df04fb",
@@ -81,7 +81,7 @@
   "pandas": "2.2.3",
   "scipy": "1.17.0",
   "sklearn": "1.8.0",
-  "seconds": 18.766650676727295,
+  "seconds": 15.683722496032715,
   "cohorts_total": 21,
   "evaluation_targets": 20,
   "primary_fold": 0,

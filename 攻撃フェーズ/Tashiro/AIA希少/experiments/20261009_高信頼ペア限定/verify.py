@@ -78,5 +78,5 @@ def run(root:Path,out:Path):
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--repo',type=Path,default=HERE.parents[5]);p.add_argument('--out',type=Path,default=HERE/'results')
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--repo',type=Path,default=HERE.parents[4]);p.add_argument('--out',type=Path,default=HERE/'results')
     a=p.parse_args();run(a.repo.resolve(),a.out.resolve())
