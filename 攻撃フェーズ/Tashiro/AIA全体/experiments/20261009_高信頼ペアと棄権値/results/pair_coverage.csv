@@ -1,0 +1,13 @@
+evaluation_set,width,method,candidates,one_member_one_control,passed,passed_valid,correct_direction
+official20,5,col2_simple,20,20,9,9,6
+official20,5,col4_simple,20,20,9,9,6
+official20,5,near4,20,20,9,9,7
+official20,10,col2_simple,3,3,1,1,1
+official20,10,col4_simple,3,3,1,1,1
+official20,10,near4,3,3,1,1,1
+official18,5,col2_simple,17,17,6,6,3
+official18,5,col4_simple,17,17,6,6,3
+official18,5,near4,17,17,6,6,4
+official18,10,col2_simple,2,2,0,0,0
+official18,10,col4_simple,2,2,0,0,0
+official18,10,near4,2,2,0,0,0

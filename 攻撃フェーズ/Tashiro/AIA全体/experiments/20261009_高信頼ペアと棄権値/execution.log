@@ -1,0 +1,31 @@
+     method          policy  miss_value    r_all  delta_r_all  changed_rows  improved  worsened
+col2_simple        baseline           0 0.160199     0.000000             0         0         0
+col2_simple        baseline          11 0.158994     0.000000             0         0         0
+col2_simple      force_half           0 0.126967    -0.033231          1648         5        10
+col2_simple      force_half          11 0.129826    -0.029168          1648         6        10
+col2_simple        sex_half           0 0.151038    -0.009161          1640         7         9
+col2_simple        sex_half          11 0.152808    -0.006186          1640         7         9
+col2_simple    visible_pair           0 0.159975    -0.000224             3         1         1
+col2_simple    visible_pair          11 0.158781    -0.000213             3         1         1
+col2_simple visible_ungated           0 0.159285    -0.000914            11         1         2
+col2_simple visible_ungated          11 0.158091    -0.000903            11         1         2
+col4_simple        baseline           0 0.158452     0.000000             0         0         0
+col4_simple        baseline          11 0.162027     0.000000             0         0         0
+col4_simple      force_half           0 0.150666    -0.007786          1654        10         7
+col4_simple      force_half          11 0.153410    -0.008618          1654         9         8
+col4_simple        sex_half           0 0.144354    -0.014098          1640         7        10
+col4_simple        sex_half          11 0.146693    -0.015334          1640         7        10
+col4_simple    visible_pair           0 0.158869     0.000417             3         1         0
+col4_simple    visible_pair          11 0.162444     0.000417             3         1         0
+col4_simple visible_ungated           0 0.159332     0.000880            12         3         1
+col4_simple visible_ungated          11 0.162908     0.000880            12         3         1
+      near4        baseline           0 0.130833     0.000000             0         0         0
+      near4        baseline          11 0.131830     0.000000             0         0         0
+      near4      force_half           0 0.094586    -0.036247          1650         5        11
+      near4      force_half          11 0.095187    -0.036643          1650         5        10
+      near4        sex_half           0 0.096163    -0.034670          1640         5        10
+      near4        sex_half          11 0.096989    -0.034841          1640         5         9
+      near4    visible_pair           0 0.130833     0.000000             4         0         0
+      near4    visible_pair          11 0.131830     0.000000             4         0         0
+      near4 visible_ungated           0 0.129986    -0.000847            12         0         1
+      near4 visible_ungated          11 0.130983    -0.000847            12         0         1

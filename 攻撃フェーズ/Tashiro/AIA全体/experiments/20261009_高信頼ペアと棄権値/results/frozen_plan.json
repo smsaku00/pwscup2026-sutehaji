@@ -1,0 +1,46 @@
+{
+  "version": "20261009-overall-v1",
+  "primary_metric": "r_all",
+  "primary_width": 5,
+  "widths": [
+    5,
+    10
+  ],
+  "policies": [
+    "baseline",
+    "visible_pair",
+    "force_half",
+    "sex_half",
+    "visible_ungated"
+  ],
+  "methods": [
+    "near4",
+    "col4_simple",
+    "col2_simple"
+  ],
+  "miss_values": [
+    0,
+    11
+  ],
+  "positive_time": 9.5,
+  "baseline_sex_fraction": 0.75,
+  "confidence_rank_gap": 0.25,
+  "agreement": [
+    "near4",
+    "col4_simple",
+    "current_method"
+  ],
+  "rare_model_used": false,
+  "rare_or_onset_filter": false,
+  "primary_excluded_teams": [
+    5
+  ],
+  "sensitivity_excluded_teams": [
+    1,
+    2,
+    5
+  ],
+  "bootstrap_seed": 20261009,
+  "bootstrap_repetitions": 10000,
+  "caveat": "Visible-pair/baseline/force are exact fixed extensions of prior study. sex_half and ungated are explanatory ablations frozen before this run. Previously explored benchmark; not independent confirmatory evidence."
+}

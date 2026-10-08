@@ -1,0 +1,8 @@
+{
+  "local_vs_github_actions_metrics_equal_to_10_decimal_places": true,
+  "metric_rows": 1260,
+  "local_semantic_sha256": "423aef890b807825e532d131c585194c2519afb1d59a309554033aaa584983cd",
+  "input_files_verified": 64,
+  "contest_submitted": false,
+  "verification_note": "Separate local run also reproduced all seven result CSVs byte-for-byte; shared scorer verified in local archive."
+}
