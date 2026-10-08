@@ -1,0 +1,84 @@
+name: Tashiro MIA public-C proximity follow-up (one-off 20261009)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-proximity-20261009.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reproduce_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_近傍競合補正追加検証'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_近傍競合補正追加検証/requirements.txt'
+      - name: Install fixed dependencies
+        shell: bash
+        run: python -m pip install -r "$EXP/requirements.txt"
+      - name: Run six unit tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s "$EXP" -p test_followup.py -v
+      - name: Compute official preliminary predictions, then evaluate frozen outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/mia-analysis"
+          OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+            python "$EXP/run_followup.py" \
+            --root . --output-dir "$RUNNER_TEMP/mia-analysis/results"
+      - name: Validate reference regression and summary shape
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os
+          import pandas as pd
+          from pathlib import Path
+          path=Path(os.environ['RUNNER_TEMP'])/'mia-analysis/results'
+          s=pd.read_csv(path/'summary.csv')
+          assert len(s)==42 and len(pd.read_csv(path/'per_target_full.csv'))==140
+          assert len(pd.read_csv(path/'fpr_metrics.csv'))==28
+          ref={
+           'P01':0.08079772079772081,
+           'P01_plus_max0.1':0.08087464387464388,
+           'nearest5_selfonly0.05':0.08887464387464388,
+           'nearest5_max0.05':0.08887464387464388,
+           'nearest5_mean0.1':0.095099715099715,
+           'neighbor2_median0.1':0.0909458689458689,
+           'cat025_gated0.1':0.08687464387464388,
+          }
+          base=s[(s.background=='full')&(s.inference=='all20')].set_index('method').mean_tpr
+          for name,expected in ref.items():
+           assert abs(base[name]-expected)<1e-12,(name,base[name],expected)
+          print('PASS: 7 reference means / 42 summary rows / 140 target rows / 28 FPR rows')
+          PY
+      - name: Publish aggregates only, no individual scores or data
+        shell: bash
+        run: |
+          set -euo pipefail
+          source="$RUNNER_TEMP/mia-analysis/results"
+          mkdir -p "$EXP/results"
+          for file in summary.csv per_target_full.csv fpr_metrics.csv null_control.json constraint_audit.json protocol.json prediction_hashes.json truth_input_sha256.json run_record.json; do
+            test -s "$source/$file"
+            cp "$source/$file" "$EXP/results/$file"
+          done
+          (cd "$EXP/results" && sha256sum summary.csv per_target_full.csv fpr_metrics.csv null_control.json constraint_audit.json protocol.json prediction_hashes.json truth_input_sha256.json run_record.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：公開予備戦の近傍競合補正を再実行し集計結果を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
