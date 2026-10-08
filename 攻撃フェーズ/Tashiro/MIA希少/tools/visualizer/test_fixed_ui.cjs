@@ -129,9 +129,12 @@ const recordRows=markup=>[...markup.matchAll(/<div class="pair-record([^\"]*)"([
 function assertOverview(viewer,result) {
   const state=viewer.json('MIA_FIXED_OVERVIEW.snapshot()'), lesson=viewer.json('MIA_FIXED_LESSON.snapshot()');
   assert.equal(viewer.elements.get('lesson-workspace').attributes['data-view'],state.view);
-  assert.equal(viewer.elements.get('overview-panel').hidden,state.view==='cards');
-  assert.equal(viewer.elements.get('pairs-panel').hidden,state.view==='overview');
-  for(const [id,view] of [['show-overview','overview'],['show-cards','cards'],['show-both','both']])assert.equal(viewer.elements.get(id).attributes['aria-pressed'],String(state.view===view));
+  assert.equal(viewer.elements.get('overview-panel').hidden,!['overview','both'].includes(state.view));
+  assert.equal(viewer.elements.get('pairs-panel').hidden,!['cards','both'].includes(state.view));
+  assert.equal(viewer.elements.get('assignment-panel').hidden,state.view!=='assignment');
+  assert.equal(viewer.elements.get('lesson-controls').hidden,state.view==='assignment');
+  assert.equal(viewer.elements.get('lesson-actions').hidden,state.view==='assignment');
+  for(const [id,view] of [['show-assignment','assignment'],['show-overview','overview'],['show-cards','cards'],['show-both','both']])assert.equal(viewer.elements.get(id).attributes['aria-pressed'],String(state.view===view));
   let used=0;state.memberships.forEach((member,t)=>{assert.equal(pc(member),CAPS[t]);assert.equal(used & member,0);used|=member;});assert.equal(pc(used),9);
   assert.equal(CAPS[state.selectedTeam],lesson.cap);assert.equal(state.memberships[state.selectedTeam],lesson.member);
   assert.equal(state.depth,lesson.depth);assert.equal(state.revealedCount,lesson.revealedCount);
@@ -191,7 +194,66 @@ async function main() {
   const viewer=simulatedViewer();assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:2,depth:0,masks:{'1':128,'2':129},playing:false});
   assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
   assert.equal(pairPaths(viewer.elements.get('pair-lines').innerHTML).length,55);
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'overview');assert.equal(viewer.elements.get('overview-panel').hidden,false);assert.equal(viewer.elements.get('pairs-panel').hidden,true);
+  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'assignment');assert.equal(viewer.elements.get('overview-panel').hidden,true);assert.equal(viewer.elements.get('pairs-panel').hidden,true);
+  result.assignment_checks={records:0,cells:0,manual_steps:0,automatic_steps:0};
+  function checkAssignment(v) {
+    const state=v.json('MIA_FIXED_ASSIGNMENT.snapshot()'), a=result.assignment_checks;
+    assert.equal(state.selectedID,IDS[state.selected]);assert.deepEqual(state.pattern,QUERIES.map(query=>query>>state.selected&1));
+    assert.equal(new Set(state.placed).size,state.placed.length);
+    const expected=QUERIES.map(query=>IDS.filter((_,i)=>state.placed.includes(i)&&(query>>i&1)));
+    assert.deepEqual(state.destinations,expected);
+    const grid=v.elements.get('assignment-grid').innerHTML;
+    assert.equal([...grid.matchAll(/data-assignment-row="/g)].length,11);
+    const cells=[...grid.matchAll(/data-assignment-cell="(\d+):(\d+)" data-bit="([01])"/g)];assert.equal(cells.length,55);
+    cells.forEach(m=>{assert.equal(Number(m[3]),QUERIES[Number(m[2])]>>Number(m[1])&1);a.cells++;});
+    const decisions=[...v.elements.get('assignment-focus').innerHTML.matchAll(/data-assignment-decision="(\d+)" data-bit="([01])"/g)];assert.equal(decisions.length,5);
+    decisions.forEach(m=>assert.equal(Number(m[2]),state.pattern[Number(m[1])]));
+    const dest=v.elements.get('assignment-destinations').innerHTML;
+    const columns=[...dest.matchAll(/data-assignment-destination="(\d+)"([\s\S]*?)(?=<div class="assignment-destination[ "]|$)/g)];assert.equal(columns.length,5);
+    columns.forEach(m=>assert.deepEqual([...m[2].matchAll(/data-destination-id="(\d+)"/g)].map(n=>Number(n[1])),expected[Number(m[1])]));
+    assert.equal(v.elements.get('assignment-step').disabled,state.playing||state.placed.length===11);
+    assert.equal(v.elements.get('assignment-all').disabled,state.playing||state.placed.length===11);
+    assert.equal(v.elements.get('assignment-record').value,String(state.selectedID));
+    return state;
+  }
+  checkAssignment(viewer);
+  const unchangedLesson=viewer.json('MIA_FIXED_LESSON.snapshot()');
+  for(let i=0;i<11;i++) {
+    viewer.select('assignment-record',IDS[i]);checkAssignment(viewer);result.assignment_checks.records++;
+    viewer.click('assignment-step');assert.equal(viewer.timers.length,0);const placed=checkAssignment(viewer);
+    assert.deepEqual(placed.placed,Array.from({length:i+1},(_,j)=>j));result.assignment_checks.manual_steps++;
+    if(i<10) {viewer.click('assignment-step');assert.equal(checkAssignment(viewer).selected,i+1);assert.equal(viewer.timers.length,0);}
+    assert.deepEqual(viewer.json('MIA_FIXED_LESSON.snapshot()'),unchangedLesson);
+  }
+  assert.deepEqual(checkAssignment(viewer).destinations,[[76,169,264,462,675],[47,90,115,264,675],[76,90,264,383,495],[47,76,90,169,304],[47,76,115,462,495]]);
+  viewer.click('assignment-reset');assert.equal(checkAssignment(viewer).placed.length,0);
+  viewer.elements.get('assignment-grid').onclick({target:{closest(){return {dataset:{assignmentRecord:'7'}};}}});assert.equal(checkAssignment(viewer).selectedID,383);
+  viewer.click('assignment-all');assert.equal(checkAssignment(viewer).placed.length,11);assert.equal(viewer.timers.length,0);
+  viewer.click('assignment-reset');const assignmentAuto=viewer.click('assignment-play');
+  for(let i=0;i<11;i++) {
+    assert.equal(checkAssignment(viewer).selected,i);assert.equal(viewer.timers[0].ms,1600);
+    await viewer.tick();const state=checkAssignment(viewer);assert.equal(state.placed.length,i+1);assert.equal(state.moving,i);assert.equal(viewer.timers[0].ms,1800);
+    await viewer.tick();result.assignment_checks.automatic_steps++;
+  }
+  await assignmentAuto;assert.equal(checkAssignment(viewer).playing,false);assert.equal(viewer.timers.length,0);
+  viewer.click('assignment-reset');const pausedAssignment=viewer.click('assignment-play');viewer.click('assignment-play');const paused=checkAssignment(viewer);
+  await viewer.tick();await pausedAssignment;assert.deepEqual(checkAssignment(viewer),paused);assert.equal(paused.placed.length,0);
+  viewer.click('assignment-step');assert.equal(checkAssignment(viewer).placed.length,1);assert.equal(viewer.timers.length,0);
+  const leavingAssignment=viewer.click('assignment-play');await viewer.tick();viewer.click('assignment-next');const afterLeaving=checkAssignment(viewer);
+  assert.equal(afterLeaving.playing,false);assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'overview');
+  await viewer.tick();await leavingAssignment;assert.deepEqual(checkAssignment(viewer),afterLeaving);
+  assert.deepEqual(viewer.json('MIA_FIXED_LESSON.snapshot()'),unchangedLesson);
+  viewer.click('show-assignment');assertOverview(viewer,result);viewer.click('show-overview');
+  assert.throws(()=>viewer.execute('MIA_FIXED_ASSIGNMENT.select(11)'),/レコード/);
+  const resetAssignment=viewer.click('assignment-play');viewer.click('assignment-reset');await viewer.tick();await resetAssignment;assert.equal(checkAssignment(viewer).placed.length,0);
+  const reducedAssignment=simulatedViewer(true), reducedAssignmentRun=reducedAssignment.click('assignment-play');await reducedAssignment.tick();assert.equal(reducedAssignment.timers[0].ms,1600);reducedAssignment.click('assignment-play');await reducedAssignment.tick();await reducedAssignmentRun;
+  const switchViewer=simulatedViewer();switchViewer.click('show-overview');const hiddenAuto=switchViewer.click('animate-all');
+  switchViewer.click('show-assignment');const pausedResult=switchViewer.json('MIA_FIXED_LESSON.snapshot()');
+  assert.equal(pausedResult.playing,false);assert.equal(pausedResult.phase.stage,'result');assert.equal(pausedResult.depth,0);assert.equal(pausedResult.revealedCount,1);
+  await switchViewer.tick();await hiddenAuto;assert.deepEqual(switchViewer.json('MIA_FIXED_LESSON.snapshot()'),pausedResult);
+  switchViewer.click('show-cards');const applyAfterPrep=switchViewer.click('merge-one');await switchViewer.tick();await applyAfterPrep;assert.equal(switchViewer.json('MIA_FIXED_LESSON.snapshot()').depth,1);assert.equal(switchViewer.timers.length,0);
+  const selectionViewer=simulatedViewer(), changingAssignment=selectionViewer.click('assignment-play');await selectionViewer.tick();selectionViewer.select('assignment-record',495);const selectedWhileMoving=checkAssignment(selectionViewer);await selectionViewer.tick();await changingAssignment;assert.deepEqual(checkAssignment(selectionViewer),selectedWhileMoving);
+  result.controls_checked.push('11 horizontal five-bit patterns independently match all 55 cells and the five vertical submission sets', 'manual assignment and next-record clicks have no timer; only explicit record playback is automatic', 'assignment pause/reset/selection/view changes invalidate old timers without changing results or memberships', 'returning to assignment pauses result playback and preserves its pending result for manual filtering');
   assert(viewer.elements.has('tab-single'));assert(viewer.elements.has('tab-pair'));assert(!viewer.elements.has('target-row'));
   assert.equal(viewer.elements.get('playback-speed').value,'slow');assert.deepEqual(viewer.json('MIA_FIXED_LESSON.timing()'),{result:1600,fade:1700,gap:1000});
   assert.equal(viewer.elements.get('pair-stage').style['--fade-ms'],'1700ms');

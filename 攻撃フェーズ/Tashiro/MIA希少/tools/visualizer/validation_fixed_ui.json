@@ -1,18 +1,22 @@
 {
   "status": "passed",
   "environment": "Node VM simulated DOM, independently enumerated one/two-member sets, controlled reveal/fade timers and numeric SVG geometry",
-  "html_bytes": 89627,
-  "html_sha256": "ae7688f239e971d20ee0f2100ea2a1881285e0d4796edd32d3e237613d5dcce9",
+  "html_bytes": 105859,
+  "html_sha256": "1847d30b0163f10509c4f03cf7a2316a525c5a9f118c44d3e81ebefdbee838b0",
   "single_member_examples": 11,
   "two_member_examples": 55,
   "graph_states_checked": 3216,
   "edge_checks": 40957,
   "record_bit_checks": 176880,
-  "overview_states_checked": 3219,
-  "overview_cell_checks": 96570,
+  "overview_states_checked": 3220,
+  "overview_cell_checks": 96600,
   "animated_submission_cases": 330,
   "manual_submission_cases": 330,
   "controls_checked": [
+    "11 horizontal five-bit patterns independently match all 55 cells and the five vertical submission sets",
+    "manual assignment and next-record clicks have no timer; only explicit record playback is automatic",
+    "assignment pause/reset/selection/view changes invalidate old timers without changing results or memberships",
+    "returning to assignment pauses result playback and preserves its pending result for manual filtering",
     "all 11 singles and 55 pairs across six prefix lengths and all six Teams",
     "330 manual results create no timer and wait for a second click before filtering",
     "all 330 manual filters stop after exactly one fade, with no next result scheduled",
@@ -61,6 +65,12 @@
     "contradictory mean cannot replace a valid observation"
   ],
   "visual_browser_validation": false,
+  "assignment_checks": {
+    "records": 11,
+    "cells": 3740,
+    "manual_steps": 11,
+    "automatic_steps": 11
+  },
   "team_answer_cases": 198,
   "geometry_sizes_checked": [
     [
