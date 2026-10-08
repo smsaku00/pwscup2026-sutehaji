@@ -1,0 +1,24 @@
+{
+  "two_local_runs_byte_identical": {
+    "miss_value_contrast.csv": true,
+    "changed_rows.csv": true,
+    "summary.csv": true,
+    "case_metrics.csv": true,
+    "pair_audit.csv": true,
+    "bootstrap.csv": true,
+    "pair_coverage.csv": true,
+    "tests.json": true,
+    "frozen_plan.json": true
+  },
+  "shared_unit_tests": 11,
+  "official_scorer_cases": 296,
+  "official_scorer_source": "archived zhang_04_05_06 official_scoring/src",
+  "core_sha256": "0f490e82715fc192d545d62c7dcc42d63021a434b351db045cdeec6d035e2958",
+  "metrics_semantic_sha256_10dp": "423aef890b807825e532d131c585194c2519afb1d59a309554033aaa584983cd",
+  "scope": "Official preliminary 21 cohorts; 20 main evaluation; no contest submission",
+  "rare_classifier_removed_comparison": {
+    "case_settings_compared": 756,
+    "max_abs_metric_difference": 0.0,
+    "result": "identical"
+  }
+}
