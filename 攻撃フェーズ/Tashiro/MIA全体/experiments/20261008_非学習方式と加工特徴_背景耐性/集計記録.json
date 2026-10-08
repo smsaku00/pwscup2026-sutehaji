@@ -1,0 +1,103 @@
+{
+  "input_sha256": {
+    "geometry_results.csv": "15e4685f9e8e3c90e2536e5b7117d5778bae21ec38efe0dc9a93689a763ea504",
+    "hist_local_results.csv": "4f5d8dc5ab13f210bcb5d24c5389b5bdf01d9963ac60fbfe94a3900fd77091c1",
+    "gen_results.csv": "d73387480e5117e70e8521c9b82de1eae05e14d13b7fc6f52f0faebb7ed1386f",
+    "legacy_results.csv": "e6ba456937e676f9d7a839d60ad671001313b947e004465bde618d6e71f2cef2"
+  },
+  "methods": 22,
+  "conditions_per_method": 7,
+  "report_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "fprs": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "target_rows": 8778,
+  "focus_pairs": 26,
+  "focal_all7_positive": [
+    {
+      "team": 1,
+      "method": "Q_prefecture_sex_shrink500_cross01",
+      "min_tpr": 0.48
+    },
+    {
+      "team": 1,
+      "method": "global_nn_k1",
+      "min_tpr": 0.8
+    },
+    {
+      "team": 2,
+      "method": "Q_prefecture_sex_shrink500_cross01",
+      "min_tpr": 0.36
+    },
+    {
+      "team": 2,
+      "method": "global_nn_k1",
+      "min_tpr": 0.92
+    },
+    {
+      "team": 4,
+      "method": "legacy_redteam_event_time_exact",
+      "min_tpr": 0.1651388235294117
+    },
+    {
+      "team": 4,
+      "method": "legacy_redteam_event_time_near",
+      "min_tpr": 0.16
+    },
+    {
+      "team": 13,
+      "method": "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1",
+      "min_tpr": 0.12
+    },
+    {
+      "team": 13,
+      "method": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "min_tpr": 0.12
+    },
+    {
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__age100__cross0.1",
+      "min_tpr": 0.12
+    },
+    {
+      "team": 19,
+      "method": "legacy_saved_work_20260901以前__prelim_attack__r2__F_mia",
+      "min_tpr": 0.12
+    },
+    {
+      "team": 20,
+      "method": "q7_robust_adaptivek15_h1__age100__cross0.1",
+      "min_tpr": 0.1111111111111111
+    },
+    {
+      "team": 24,
+      "method": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "min_tpr": 0.1111111111111111
+    }
+  ],
+  "success_rule": "official unrounded TPR > 0.10 at FPR .01",
+  "replicate_limit": "同じAからの依存した6標本。event exactはA非依存。旧r2はA2固定。独立評価ではない。",
+  "script_sha256": "a9afaccdf2000dce2dd4908d2b7e9fb5676c57d2149ab17e3cdb36582019aa5b"
+}

@@ -1,0 +1,326 @@
+{
+  "completed_jst": "2026-10-08T19:50:53.399470+09:00",
+  "seconds": 153.58774220899795,
+  "python": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "python_version": "3.12.15",
+  "methods": [
+    "global_nn_k1",
+    "q13_mean_sd_sex0_kde_witness_h2__raw__cross0",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1",
+    "q13_quantile_sex1_kde_ratio_h0.5__raw__cross0",
+    "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+    "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+    "q7_rank_kde_witness_h0.5__age100__cross0",
+    "q7_robust_kde_ratio_h1__raw__cross0.1"
+  ],
+  "conditions": [
+    [
+      "full",
+      1.0,
+      0
+    ],
+    [
+      "fraction0.9_seed20261007",
+      0.9,
+      20261007
+    ],
+    [
+      "fraction0.9_seed20261008",
+      0.9,
+      20261008
+    ],
+    [
+      "fraction0.8_seed20261007",
+      0.8,
+      20261007
+    ],
+    [
+      "fraction0.8_seed20261008",
+      0.8,
+      20261008
+    ],
+    [
+      "fraction0.5_seed20261007",
+      0.5,
+      20261007
+    ],
+    [
+      "fraction0.5_seed20261008",
+      0.5,
+      20261008
+    ]
+  ],
+  "members_used_only_after_all_predictions": true,
+  "training": false,
+  "evaluation_teams": [
+    1,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    2,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "report_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "fpr_success": 0.01,
+  "stability_fprs": [
+    0.005,
+    0.02
+  ],
+  "full20_max_error_by_method": {
+    "global_nn_k1": 6.938893903907228e-17,
+    "q13_mean_sd_sex0_kde_witness_h2__raw__cross0": 9.71445146547012e-17,
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": 7.632783294297951e-17,
+    "q13_quantile_sex1_kde_ratio_h0.5__raw__cross0": 6.245004513516506e-17,
+    "q7_median_iqr_sex1_dcr_k1__raw__cross0": 6.245004513516506e-17,
+    "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1": 6.245004513516506e-17,
+    "q7_rank_kde_witness_h0.5__age100__cross0": 6.245004513516506e-17,
+    "q7_robust_kde_ratio_h1__raw__cross0.1": 6.245004513516506e-17
+  },
+  "specs": [
+    {
+      "method": "global_nn_k1",
+      "attributes": "q7",
+      "statistic": "nearest_distance_ratio",
+      "coordinate": "original_20261007_iqr_without_centering",
+      "alignment": null,
+      "calibration": "raw",
+      "cross": 0.0,
+      "k": 1,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py"
+    },
+    {
+      "method": "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1",
+      "attributes": "q13",
+      "statistic": "kde_ratio",
+      "coordinate": "robust",
+      "alignment": "median_iqr",
+      "alignment_by_sex": false,
+      "multiplier": 2.0,
+      "calibration": "raw",
+      "cross": 0.1,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py"
+    },
+    {
+      "method": "q13_mean_sd_sex0_kde_witness_h2__raw__cross0",
+      "attributes": "q13",
+      "statistic": "kde_witness",
+      "coordinate": "robust",
+      "alignment": "mean_sd",
+      "alignment_by_sex": false,
+      "multiplier": 2.0,
+      "calibration": "raw",
+      "cross": 0.0,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py"
+    },
+    {
+      "method": "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+      "attributes": "q7",
+      "statistic": "kde_ratio",
+      "coordinate": "robust",
+      "alignment": "quantile",
+      "alignment_by_sex": true,
+      "multiplier": 0.5,
+      "calibration": "county500",
+      "cross": 0.1,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py"
+    },
+    {
+      "method": "q13_quantile_sex1_kde_ratio_h0.5__raw__cross0",
+      "attributes": "q13",
+      "statistic": "kde_ratio",
+      "coordinate": "robust",
+      "alignment": "quantile",
+      "alignment_by_sex": true,
+      "multiplier": 0.5,
+      "calibration": "raw",
+      "cross": 0.0,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py"
+    },
+    {
+      "method": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "attributes": "q7",
+      "statistic": "distance_to_closest_release",
+      "coordinate": "robust",
+      "alignment": "median_iqr",
+      "alignment_by_sex": true,
+      "k": 1,
+      "calibration": "raw",
+      "cross": 0.0,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py"
+    },
+    {
+      "method": "q7_rank_kde_witness_h0.5__age100__cross0",
+      "attributes": "q7",
+      "statistic": "kde_witness",
+      "coordinate": "rank",
+      "alignment": null,
+      "multiplier": 0.5,
+      "calibration": "age100",
+      "cross": 0.0,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py"
+    },
+    {
+      "method": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "attributes": "q7",
+      "statistic": "kde_ratio",
+      "coordinate": "robust",
+      "alignment": null,
+      "multiplier": 1.0,
+      "calibration": "raw",
+      "cross": 0.1,
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py"
+    }
+  ],
+  "input_sha256": {
+    "/Users/taisei1105/pws2026-local/攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/geometry_robustness.py": "bed8e2e475676a5d0c45ec4b2d852e1436f49cfa01a70be2bea3b38d1d003fe3",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv": "676d8afb1e8c2cfd8f236988d7138fcf88455998347f50e2560d202d29991be2",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_common/A_bg.csv": "f4817fba6c1434d6b74221c2b5abe90e4a53e80d8fa17e12602d43adae0a3126",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_5.csv": "2e381e5c4b52ed76d50eaec71eebc41ffccbd7dc761254f8e8d6c7d9571b4116",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_1.csv": "7f29d9ea5e58a129fa725d150217e186add65b14963867eb77c633c052afd4e0",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_10.csv": "aee25c4d17d0938bdbe9d71e3319ceb93a2c4e175c1038094f4b9c7d394970f7",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_12.csv": "968522f76529ba9f6cbdaff99f21c2543b094d5f6bd3c1bc4eb613893c200997",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_13.csv": "ede2dcfa9cae9ba1bdcbf59fd52b6caa62f82da2bcb57f7a3b230818bbd02e53",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_17.csv": "00bf2ecf3edf74e88f48b26a1c24132ce2124f85bf197dbbcd3ea5d2cd41df8d",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_18.csv": "c1cf3dbb5aae8cc0c8910c0a98fb021f60f7d05086ecca5bc1245c526f9a0c3f",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_19.csv": "c9fb8351c3f84c14ef4f7293bbc135681302c52e69eba554066ef8c83787996d",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_2.csv": "1671ef24e42b5125fea8407a4350403832dff1e1fc7acf7d49b85ae814dff807",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_20.csv": "b5468e08bf2740d44fe9992d0b9a6f985e60d95a88db32da022b773c0f6f972a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_22.csv": "5851d8b4a627d64e7cc247655934272a1de75bdf54a0e069b60d8064daa73f01",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_23.csv": "61efac3efbba3b09e72a50434a1c57b83061fab421f4b489c5b2b4c77d1300a4",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_24.csv": "efd38bf8ab973767caad34ce2b0ef9991b1e461bd7c1f9e17da06b9a847aaa14",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_26.csv": "29996bd6cadf1eef6b3068c3fee83f77d3da47c8320e251ce9c2601ee51fe293",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_29.csv": "fe52f71301f50f8924357230bf1f357f6f16521a127010e0c76df946188b3478",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_3.csv": "3cda48ae590fe74487481a88850b976a7ed726305f8f66a39bd2d3e5ce87b33d",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_4.csv": "77e1d3d986c459e8deca76bd5fdac5f12e48e3a265fe029a991d1cd89b09bf66",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_5.csv": "77717f02e68e6cf159c55950c2c148c469371e4044eb257fac096fa8625d6294",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_6.csv": "de066048501d638cf9f6c7d4b1d36fd4214307a62a6102289f19cccdd45c7654",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_7.csv": "ca0c4055eb75b0b9460535fea133dd7bfdf043b9dfef0f9b4aecabf59cec2f5f",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_8.csv": "435489a182ea3e4c31fbfb9a664d2db930532655dca3eaff51cceab9b0a8f466",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/C_9.csv": "ed416408440fd38d2d89bcc6323380abde69102439f3f576525b60b72aedf9db",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_1.csv": "9e25c1eb15ff77cec7a7fa565871cca5c36b5e925ed7b2adfc462126b43f550b",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_2.csv": "eb80409ffeadf4f8745397d066afff2d87786ff739eb24b1dd87f8bb16c8ee4f",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_3.csv": "e4854d0d94163e1d056605a7d661113b042a230ae52b30b20b7103cff540bfb4",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_4.csv": "17d45e9bf5b825e515a1120112f2ddc7887a4c3e90b2c8c95a809ce55674dd15",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_6.csv": "ffd2414957bcb655e0e826769b7e3b8220b35ad4cebd771eef85746179c688f1",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_7.csv": "743b6f73ecca1abc463a0ae06319d1de1257285fbb0feed0a08e986c7f30565b",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_8.csv": "d8f5eed197bb18d14409adea3ff8d7a8ce9fe019f2dd67212546af03a35a32ea",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_9.csv": "0e7210d8bd743ad143a6d1c179f7a66bddc9ddab246844f853ff3814dfe15cae",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_10.csv": "24f149cfc4e2cabdfbfb5b1585aa4ef55af3a05e153a9443f59475a36cada292",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_12.csv": "b88893336f49da748758247bed55868ed6e9a75b484703bd107079cee8f9885a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_13.csv": "9f2b836598e4a714db809c7e5b2ab0f1517c6a2571cfccf8bde72edd916ba9db",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_17.csv": "97eb6c713d88f0f8bbdfd9d3188c28199536bd8591c79a8b9d3c2bf25febf29b",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_18.csv": "fcc5a1876e582a14296ec9307c3b627e524eca2f4cf4ab0f62207faee12fa909",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_19.csv": "dd8a27d424049fe10905314c5f647ec8b1899f91ce52792583126c460b57a07a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_20.csv": "54bb82e0557af49cdc1a39945cb6fdf4d71618118f982dcd2d607cabebc00d20",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_22.csv": "f15269d797058d177268b1927b4fdebc6c4656a04966782553fd1eeacbdd157a",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_23.csv": "bd9a41bc3d5fd689208d44c5e8f5e721162dad730be41eefd06af3de60957f72",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_24.csv": "5dd6da4e0700b72d453b052eda03d01c7680b6875c9edbdc58e66fa278c58476",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_26.csv": "22811a37a8e8f94a4dead43b8fbcd72f428ca435c0e91727195886fb8b97d6cb",
+    "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/aia_challenge_29.csv": "9502542e6d08874cb8afa9633ec0c109a029a1b536772788c0df2f7dcea424c8"
+  },
+  "source_code_sha256": {
+    "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+    "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+    "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/background_common.py": "08e050b400617eb2bd5e3ac7f4e3341f84c32cfd846fecd2e11e0e4c47c5c467"
+  },
+  "output_sha256": {
+    "geometry_results.csv": "15e4685f9e8e3c90e2536e5b7117d5778bae21ec38efe0dc9a93689a763ea504"
+  },
+  "score_kind": "normal_rank",
+  "extra": {
+    "source_code_sha256": {
+      "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/geometry_robustness.py": "bed8e2e475676a5d0c45ec4b2d852e1436f49cfa01a70be2bea3b38d1d003fe3",
+      "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e"
+    },
+    "full_normal_rank_max_errors": {
+      "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": 0.0,
+      "q13_mean_sd_sex0_kde_witness_h2__raw__cross0": 0.0,
+      "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1": 0.0,
+      "q13_quantile_sex1_kde_ratio_h0.5__raw__cross0": 0.0,
+      "q7_median_iqr_sex1_dcr_k1__raw__cross0": 0.0,
+      "q7_rank_kde_witness_h0.5__age100__cross0": 0.0,
+      "q7_robust_kde_ratio_h1__raw__cross0.1": 0.0
+    },
+    "source_cache_sha256": {
+      "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離結果/内部順位キャッシュ.npz": "a6f7f8e8b706a4732a6eafcf45f31c853ce91586fabeee3def83b495b0018fd5",
+      "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布結果/内部順位キャッシュ.npz": "d69d3d1101edb6f3111a8d437505cb2d98692c1ebd1aedd79d6dd0645669b45f"
+    },
+    "parameter_search": false,
+    "all_predictions_fixed_before_truth": true,
+    "cross_reference_teams": [
+      1,
+      10,
+      12,
+      13,
+      17,
+      18,
+      19,
+      2,
+      20,
+      22,
+      23,
+      24,
+      26,
+      29,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cross_self_excluded": true,
+    "public_query_and_age_boundaries_fixed": true,
+    "source_function_calls": [
+      "transform",
+      "mixed_logs",
+      "align",
+      "numbers",
+      "scales",
+      "variants",
+      "stratified_subset"
+    ],
+    "equivalent_selected_formula": "原geometry/point_scoresから指定式だけを取り出し、k=1のpartition/sortは同じ最小値計算で置換。"
+  },
+  "disclosure": "予備戦の既存結果を見た方式固定の後、A抽出だけ変更する感度検証。方式選択の外部検証ではない。個人配列は保存しない。"
+}
