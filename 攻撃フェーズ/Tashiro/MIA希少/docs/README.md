@@ -24,7 +24,7 @@
 ## 図で理解する（教材と提出原本を区別）
 
 - [図解・ビューア一覧](visualizer/README.md)
-- [固定5回のカード教材](visualizer/MIA_5query_cards.html) — 仕組みを理解するための資料。**実提出の第3〜7回の固定候補と一致するかは、必ず共通MIAの仕様で照合**。
+- [固定5回のカード教材](visualizer/MIA_5query_cards.html) — 仕組みを理解するための資料。**実提出の第3〜7回とは異なる5bit符号を使っていることを確認済み**。教材のID・復号表を実スコアに適用しない。
 - [適応4回の決定木ビューア](visualizer/MIA_4query_tree.html) — 比較研究用。
 - [配布用ZIP](visualizer/downloads/MIA_visualizer_bundle.zip) — 教材保存用。大会の提出原本ではない。
 
