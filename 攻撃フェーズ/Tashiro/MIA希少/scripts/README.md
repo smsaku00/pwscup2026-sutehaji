@@ -1,6 +1,8 @@
 # MIA希少 scripts — コードの対応時期と実行条件
 
-## 1 現在の個人探索と独立checker
+> **【2026-10-08追記】** 下記の`fast_solver_20261007`は適応4回案の研究用で、実提出の固定5bitとは別です。実採用方式の生成・監査・読取器は[第3回MIAの共通原本](../../../MIA/20261008_第3回MIA_固定5bitと非会員較正/README.md)にあります。
+
+## 1 適応4回案の探索コードと独立checker
 
 - 2026年10月7日の探索実装：[fast_solver_20261007のREADME](../experiments/fast_solver_20261007/README.md)
 - 保存場所：`experiments/fast_solver_20261007/`
