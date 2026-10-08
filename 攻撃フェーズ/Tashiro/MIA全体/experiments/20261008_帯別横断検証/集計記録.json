@@ -1,0 +1,359 @@
+{
+  "created_jst": "2026-10-08T17:40:22.695891+09:00",
+  "python": "3.12.15",
+  "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "raw_target_rows": 300709,
+  "after_team12_exclusion_before_dedup": 285674,
+  "target_rows": 282368,
+  "deduplicated_rows": 3306,
+  "parameterized_methods": 8123,
+  "method_conditions": 14864,
+  "source_files": 336,
+  "report_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "band2_teams": [
+    1,
+    2
+  ],
+  "new_band2_teams": [],
+  "band2_rows": 3621,
+  "evaluation_class_counts": {
+    "A": 57,
+    "B": 136287,
+    "C": 146024
+  },
+  "excluded_report_teams": [
+    5,
+    12
+  ],
+  "fpr": 0.01,
+  "conflicts": [],
+  "notes": [
+    {
+      "excluded": "参照結果/・追加結果/は拡張版/最終版に同設定を含む重複。学習結果/はfold尺度未較正版の撤回結果、順位校正版を使用"
+    },
+    {
+      "excluded": "補助結果/対照一致はAIA非共有者と対照のproxy、MIA全体ではない"
+    },
+    {
+      "selection": "全設定の再利用評価。学習2/5特徴はB、非学習はCだが方式選択自体は公開正解を繰り返し使用"
+    },
+    "10/8探索の元対象別CSV 204ファイル、FPR=.01の元レコード 279,500行。技術引継ぎ複製と再集計平均表を重複採用しない。",
+    "個別TPR欠落を保存順位から公式再採点: 公開背景の分割較正結果/prelim/通常875行の内部順位だけ.npz (6方式)",
+    "個別TPR欠落を保存順位から公式再採点: 公開背景行の除外診断結果/prelim/通常875行の内部順位だけ.npz (9方式)",
+    "個別TPR欠落を保存順位から公式再採点: 公開課題の除外に対する順位感度結果/prelim/内部順位だけ.npz (69方式)",
+    "個別TPR欠落を保存順位から公式再採点: 公開非会員の較正結果/prelim/内部順位だけ.npz (2方式)",
+    "個別TPR欠落を保存順位から公式再採点: 共有GaussianのA分割seed感度結果/prelim_内部875順位_外部添付禁止.npz (3方式)",
+    "個別TPR欠落を保存順位から公式再採点: 共有中順位座標の密度比結果/prelim/通常875行の内部順位だけ.npz (3方式)",
+    "個別TPR欠落を保存順位から公式再採点: 局所支持区間の密度比結果/prelim/通常875行の内部順位だけ.npz (3方式)",
+    "個別TPR欠落を保存順位から公式再採点: 広い集団への非会員較正結果/prelim/内部順位だけ.npz (7方式)",
+    "離散依存木3方式を元コードから予測だけメモリ再現。元code SHA一致、保存上位12変化60行の人数・入替数一致、Spearman最大誤差 0。個別CSV/npz未保存を補完。",
+    "学習方式は人物5分割×対象4分割または対象LOOのB。all20_reproductionも対象正解を除いたBであり、all20は学習候補集合の意味。",
+    "滑らかな補正source5/source6はBの学習済みOOF予測を受け継ぐ。source0..4はC。",
+    "47背景の分率・seed、full/same_background訓練、背景47view/中心10view訓練、median20/median18を方式または条件として区別。",
+    "共有背景二分割、Aだけ/Qだけ/Q+A、局所区間・Gaussian・離散依存木は会員ラベル非依存C。公開Cと候補属性を使うトランスダクティブ処理を含む。",
+    "フェーズ識別器npzは予備戦/本戦データ源の判別でありMIA方式ではないためTPRに変換しない。本戦22対象順位と公式帯は予備戦の個別TPRとして使用しない。",
+    "非会員課題丸ごと保留は較正診断のみで新しいMIA予測を定義しない。強度300/500の候補予測は別途保存較正方式に含む。",
+    "代表特徴キャッシュは元方式の再現対照であり新しい方式として重複算入しない。",
+    "Team12は学習・他対象中央値には残す。報告行の除外は統合時に行う。Team1/2を学習から除く方式も採点は20対象を保存している。",
+    "10/7と10/8の近傍比は共通IQR尺度・カテゴリ罰則1・同式だが、10/8の共通median中心化の数値実装差で通常順位が変わる。旧public計算対保存875順位の最大差: global k1=.056571428571428606、k3=.0011428571428571122、sex k1=.16285714285714292、k3=.0011428571428571122。全20対象TPR@.01は一致するが別実装として保持。",
+    "完全一致alias検算: global/sex近傍比k10、global点KDE h0.5/1/2は、旧public計算と10/8保存通常順位を20対象で照合し最大差0。Gen7由来Q500のfixed500/flat500/full::flat500は同じforeignQ集合（自Team5を含むQ所有者21集合から対象所有者除外）とcross他19対象中央値0.1、保存スコア配列最大差0。Gaussianの同名較正は統合しない。",
+    "Gen7 age100 cross0.1は固定fullA年齢20/40/60/80分位、Q性別×年齢CDFを100で全体CDFへ縮約、同じraw tie .001・他19対象中央値0.1のflat_sex_age_s100と同式。20対象保存TPR最大差0。",
+    {
+      "scope": "未採用MIA希少/AIA変更",
+      "status": "全体不変・集約",
+      "reason": "保存集計44条件のうちMIA全体生順位/差替6以外は全体不変。24希少モデル等を独立したMIA全体方式数へ加えない。",
+      "source": "予備戦/結果分析/集計/未採用手法_対象別.csv"
+    },
+    {
+      "scope": "Cross-C capacity26",
+      "status": "診断割当・除外",
+      "reason": "各対象26人を強制充填する集合で連続confidenceが未定義。新方式へ変換しない。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py"
+    },
+    {
+      "scope": "旧proxy実験/本戦バトル",
+      "status": "大会20対象TPRとして除外",
+      "reason": "densratio/mia_results・panelA2/B2、aia2mia/bench、atk*/mia、matrix2、仮想大会、バトルは自己C・代替対照・仮想加工/別評価対象。保存TPRをTeam5対大会20対象のTPRと混ぜない。再利用可能な方式は上の純関数で再評価。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前;本戦/バトル"
+    },
+    {
+      "scope": "aia2mia d1_pref",
+      "status": "条件の大会Bへの外挿未定義・未確認",
+      "reason": "旧実験は各challengeの地元県に固定。全B候補へ県条件を変更する新定義は作らない。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py"
+    },
+    {
+      "scope": "旧Python/旧相対参照",
+      "status": "main不実行",
+      "reason": "残存コードの旧Python固定パス・work/data_prelim_team05等は書換えず、正規配布入力を読んで純関数のみ使用。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ"
+    },
+    {
+      "scope": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/F_mia.csv",
+      "status": "対象不一致・除外",
+      "reason": "練習課題の30列/29対象。予備戦20対象への同じIDに見えるための誤転用を排除。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/F_mia.csv"
+    },
+    {
+      "scope": "旧atkの固定公開入力条件",
+      "status": "補充再評価",
+      "reason": "historical_atk.pyが除染背景・sex/県block・距離比を補充。元seed1半分割は元rng消費順が定義された24/26/29の3対象だけ。",
+      "source": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_atk.py"
+    },
+    {
+      "scope": "virtual classic_generalist",
+      "status": "同一方式の明示的別名",
+      "reason": "旧attacks.mia_ensembleと成分5種類・重み・exact gateが同じ。別方式へ加えない。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py"
+    },
+    {
+      "scope": "whitebox targeted LOO",
+      "status": "oracle入力不足・実行しない",
+      "reason": "対象チームBの全個票と同クラスreplacementを用いた加工再生成が必要。公開Cだけから実行できない。公開source回復2成分は上で別途再評価。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py"
+    },
+    {
+      "scope": "atk raw_nn7 / clean domias alias",
+      "status": "明示的同一定義の別名",
+      "reason": "raw7はlegacy_cross_nn1_raw_closeness、clean_originalscale domiasはlegacy_atk_clean_rescaled_domiasと同じ純関数/入力。別方式へ数えない。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前"
+    },
+    {
+      "scope": "atk242629b半分割の未定義対象",
+      "status": "元3対象だけ再現",
+      "reason": "元rng種1は24→26→29の順にpermutationと整合対照抽出で進む。残対象の新rng順を設けず、3対象のみ再評価。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py"
+    },
+    {
+      "scope": "atk量子化grid診断",
+      "status": "個別confidence未保存・未再現",
+      "reason": "binmatch_B/ctlの集合一致件数だけが元診断出力。個別membership confidenceを定義する新攻撃へ作り替えない。",
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py"
+    }
+  ],
+  "best": [
+    {
+      "team": 1,
+      "tpr": 0.84,
+      "method": "legacy_redteam_shadow_c2st",
+      "condition": "予備戦公開正解・20対象",
+      "p01_tpr": 0.56,
+      "band": 4,
+      "proximity": "帯2以上",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 2,
+      "tpr": 1.0,
+      "method": "legacy_atk_clean_originalscale_nnblock_neg",
+      "condition": "既存score定義を予備戦B全1049へ適用",
+      "p01_tpr": 0.52,
+      "band": 4,
+      "proximity": "帯2以上",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 3,
+      "tpr": 0.16,
+      "method": "学習の密度比乱数結果:without_kde_fourfold_center20261016_person20261012",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "B"
+    },
+    {
+      "team": 4,
+      "tpr": 0.16513882352941175,
+      "method": "legacy_redteam_event_time_exact",
+      "condition": "予備戦公開正解・20対象",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 6,
+      "tpr": 0.12,
+      "method": "q7_robust_lofC_k100__age100__cross0",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 7,
+      "tpr": 0.16,
+      "method": "q7_sex_bins40_s10_logratio__county500__cross0",
+      "condition": "full",
+      "p01_tpr": 0.04,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 8,
+      "tpr": 0.12,
+      "method": "q13_pref_sex_bins10_s10_logratio__raw__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 9,
+      "tpr": 0.12,
+      "method": "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.04,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 10,
+      "tpr": 0.15384615384615385,
+      "method": "Q_prefecture_sex_shrink100",
+      "condition": "fraction0.8_seed20261007",
+      "p01_tpr": 0.11538461538461539,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 13,
+      "tpr": 0.16,
+      "method": "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 17,
+      "tpr": 0.16,
+      "method": "q7_rank_lof_ratio_k100__age100__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.04,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 18,
+      "tpr": 0.11538461538461539,
+      "method": "q13_mean_sd_sex0_kde_witness_h2__raw__cross0",
+      "condition": "full",
+      "p01_tpr": 0.038461538461538464,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 19,
+      "tpr": 0.16,
+      "method": "背景変更の学習結果:full_C1_seed20261009",
+      "condition": "fraction0.8_seed20261013",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "B"
+    },
+    {
+      "team": 20,
+      "tpr": 0.14814814814814814,
+      "method": "flat_pref_sex_s0",
+      "condition": "fraction0.5_seed20261008",
+      "p01_tpr": 0.037037037037037035,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 22,
+      "tpr": 0.1111111111111111,
+      "method": "numeric8_sexpref_seed20261010__raw__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 23,
+      "tpr": 0.12,
+      "method": "q7_all_bins20_s1000_logratio__county500__cross0.1",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 24,
+      "tpr": 0.14814814814814814,
+      "method": "A_loo_prefecture_sex_shrink500_cross01",
+      "condition": "full",
+      "p01_tpr": 0.14814814814814814,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 26,
+      "tpr": 0.16,
+      "method": "q13_quantile_sex1_kde_ratio_h0.5__raw__cross0",
+      "condition": "full",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "C"
+    },
+    {
+      "team": 29,
+      "tpr": 0.16,
+      "method": "特徴除去の背景結果:without_kde_fourfold_C0.01_seed20261012",
+      "condition": "fraction0.5_seed20261007",
+      "p01_tpr": 0.0,
+      "band": 1,
+      "proximity": "0.10〜0.20",
+      "evaluation_class": "B"
+    }
+  ],
+  "writes_submission_files": false,
+  "uploads_or_submits": false,
+  "code_sha256": {
+    "historical_atk.py": "f3e19b4e3f935492cb634b24c16c2eb5ae7502d2815f31bec53fb945d74ac8c9",
+    "oct08_results.py": "fe56b71899896302b23931e609d153ccc02abeef2897faeefdbb1136524c9a99",
+    "historical_virtual.py": "22f7d6b524ed56fd80c1852dbdc6460c4af782c1568e32502d522b8ecd81bc09",
+    "oct07_results.py": "9e85ee19d3566ad6e4f2156175927ce2f236fb245fe91a5fc216fd072d4e2839",
+    "historical_results.py": "bce8d0775c95257fd26cc06df838cafc3a4d2b00697a68aa33bdac4021cf331a",
+    "集計.py": "7b7480bed66ab9e94c97345e9cac684a1bd04784171049d0409f869defc81088",
+    "official_audit.py": "8d19bf92c69d134011eefd1b52ecfe7d05e8032fc04467f30ab529f897ac2885",
+    "報告作成.py": "8aa623ae7d028761e839e6aad8383e1baef9ad133ecd8e6508205c0eaea7099b",
+    "代表再現.py": "e647ebc75584d01bac732200f620958c2964260bfad844978c914ca9aa8c4f86"
+  }
+}

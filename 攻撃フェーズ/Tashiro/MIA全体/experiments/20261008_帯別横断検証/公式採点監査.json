@@ -1,0 +1,1581 @@
+{
+  "official_sources": {
+    "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py": "44d0a4d5327eed0cad116d02824f46f25164cd41a24dd83efca45741d8a1c376"
+  },
+  "main_band_source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+  "main_band_source_sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+  "prelim_main_score_sources_identical": true,
+  "report_tpr_channel": "tpr_at_low_fpr（MIA全体）。max(全体,希少)のscoreでは帯を判定しない。",
+  "fpr": 0.01,
+  "evaluation_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "final_report_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "candidate_count": 1049,
+  "normal_candidates": 875,
+  "rare_candidates": 24,
+  "known_private_candidates": 163,
+  "member_count_by_team": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 25,
+    "10": 26,
+    "12": 26,
+    "13": 25,
+    "17": 25,
+    "18": 26,
+    "19": 25,
+    "20": 27,
+    "22": 27,
+    "23": 25,
+    "24": 27,
+    "26": 25,
+    "29": 25
+  },
+  "nonmember_count_by_team": {
+    "1": 1024,
+    "2": 1024,
+    "3": 1024,
+    "4": 1024,
+    "6": 1024,
+    "7": 1024,
+    "8": 1024,
+    "9": 1024,
+    "10": 1023,
+    "12": 1023,
+    "13": 1024,
+    "17": 1024,
+    "18": 1023,
+    "19": 1024,
+    "20": 1022,
+    "22": 1022,
+    "23": 1024,
+    "24": 1022,
+    "26": 1024,
+    "29": 1024
+  },
+  "fpr_01_false_positive_equivalent_range": [
+    10.22,
+    10.24
+  ],
+  "band2_detected_equivalent": "会員25人なら6.25人超、26人なら6.5人超、27人なら6.75人超。ROC補間値なので整数人数と同一視しない。",
+  "corrected_threshold": "TPR生値>0.25のみ帯2以上。保存小数の丸め値による境界判定はしない。",
+  "synthetic": {
+    "boundary_checks": [
+      {
+        "tpr": 0.0,
+        "band": 1
+      },
+      {
+        "tpr": 0.25,
+        "band": 1
+      },
+      {
+        "tpr": 0.25000000000000006,
+        "band": 2
+      },
+      {
+        "tpr": 0.5,
+        "band": 2
+      },
+      {
+        "tpr": 0.5000000000000001,
+        "band": 3
+      },
+      {
+        "tpr": 0.75,
+        "band": 3
+      },
+      {
+        "tpr": 0.7500000000000001,
+        "band": 4
+      },
+      {
+        "tpr": 1.0,
+        "band": 4
+      }
+    ],
+    "constant_confidence_tpr": 0.01,
+    "constant_confidence_auc": 0.5,
+    "synthetic_cases": 247,
+    "sklearn_max_error": 0.0,
+    "oct07_roc_max_error": 0.0,
+    "oct07_roc_source_sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+    "fractional_tpr": 0.2096,
+    "fractional_detected_equivalent": 5.24,
+    "initial_kit_source_sha256": "7217ceffd52ee345a5241f35cbff5127b87aa644bcc4e27110aa7cd2976dcf8c",
+    "initial_kit_discrepancy": "初版は同値を束ねず行順に依存するため採点参照に使用しない。",
+    "roc_semantics": "確信度降順。完全に同じ浮動小数値を一つの動作点に束ねる。原点を追加しnp.interpでFPR=0.01に線形補間。陽性または陰性が0ならTPR=0,AUC=0.5。"
+  },
+  "cache_recalculation": {
+    "cache_files": 157,
+    "compared_records": 244720,
+    "missing_saved_records": 0,
+    "max_abs_error": 0.0,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "files": [
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/採点/内部順位キャッシュ.npz",
+        "source_sha256": "f5694b9745bd5fb4729702e0d9a4f8f4df00650bf5acc783a9755148410cb6cd",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/採点/対象別TPR.csv",
+        "saved_sha256": "1084642475c589d36caa47769929d3160c6540cdccafbbf9a6f519182b363624",
+        "method_conditions": 361,
+        "compared_records": 7220,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器結果/内部順位キャッシュ.npz",
+        "source_sha256": "636d1e83e8f1ed7f9aab8b8af739c93f4177c95ddeb5d97f1054290002d154a6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器結果/対象別TPR.csv",
+        "saved_sha256": "4dc0a1485530f5e95d2c9962b82e94565e9061c6efca12a833f60a50aa7e74f4",
+        "method_conditions": 272,
+        "compared_records": 5440,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離結果/内部順位キャッシュ.npz",
+        "source_sha256": "a6f7f8e8b706a4732a6eafcf45f31c853ce91586fabeee3def83b495b0018fd5",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離結果/対象別TPR.csv",
+        "saved_sha256": "85c861f65a71f0e7a09c837db4214ad1f99121abaacdc02373ab9398a9bc5894",
+        "method_conditions": 750,
+        "compared_records": 15000,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習結果/内部順位キャッシュ.npz",
+        "source_sha256": "84884b7d71d4bdbcbe5bb130a359f69fa0edf9565f6a1ff53084124e68cef109",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習結果/対象別TPR.csv",
+        "saved_sha256": "fa2ec0f8e03f88ad8ab9bf82e5cbcc3cf895c57e27cabb56533c21e7d71dbd99",
+        "method_conditions": 23,
+        "compared_records": 460,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度結果/内部順位キャッシュ.npz",
+        "source_sha256": "12dff1a104b6bf9d4f801ba9fd6046eac359a05452b38290bdf044721bb12018",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度結果/対象別TPR.csv",
+        "saved_sha256": "de1706104fb961261c4f1d0646b4d900c77c1119d104baba80ad2527a48b83a1",
+        "method_conditions": 84,
+        "compared_records": 1680,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の密度比乱数結果/内部順位キャッシュ.npz",
+        "source_sha256": "57dfcd74b797509178efd8a2b47dc07b0533ff2f9ce1daf8cc183d545c05b4e0",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の密度比乱数結果/対象別TPR.csv",
+        "saved_sha256": "d4a25120891f3ea5f2c8c78d4905378f1cd25c935dbd807c89ef76d023b5fe6e",
+        "method_conditions": 249,
+        "compared_records": 4980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比_中心配置結果/内部順位キャッシュ.npz",
+        "source_sha256": "774da44db28cc05436b6fff54bc1fbc08546d89c4877eef63995cdeace70e8b6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比_中心配置結果/対象別TPR.csv",
+        "saved_sha256": "9773ed9af89f6e05d2b0b9f1eed7be28ea50a24e89da1f11a8caa581deb1b134",
+        "method_conditions": 240,
+        "compared_records": 4800,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比_属性乱数結果/内部順位キャッシュ.npz",
+        "source_sha256": "8c7b6163a2587ac39de0ae5d8c6599d698eca8e22526b3e3eac2b55ceedc7adc",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比_属性乱数結果/対象別TPR.csv",
+        "saved_sha256": "d4738e5437bb5161b48e21a03c3ae86cbe079d9058cca2c752c96365dcc99cb9",
+        "method_conditions": 320,
+        "compared_records": 6400,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所密度結果/内部順位キャッシュ.npz",
+        "source_sha256": "7f3ecc167c702455dae74d58ef0b3bbfdaf05c5078279a9e5efc38af308085bb",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所密度結果/対象別TPR.csv",
+        "saved_sha256": "3943079f4144fe9fbb3271bfe35849903895d10b9f0e1697f8360e6d5a88dfb2",
+        "method_conditions": 300,
+        "compared_records": 6000,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習_18対象結果/内部順位キャッシュ.npz",
+        "source_sha256": "6d92ee4763d03aef6500fea13daf7fd454e0f98caff1ed90470fd900a1f17277",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習_18対象結果/対象別TPR.csv",
+        "saved_sha256": "2739bf414d5a2eb0b4133b44e106da7615d5e433a749f3f9155422952e1f474a",
+        "method_conditions": 14,
+        "compared_records": 280,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布結果/内部順位キャッシュ.npz",
+        "source_sha256": "995c504e8afb879a1fd614a020a754c300a74117216105d83a4900b4d0464e3e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布結果/対象別TPR.csv",
+        "saved_sha256": "e26ea41ff60935092a60498578f167c39f9ace22867a2ef944fc4b2ca7f3cdac",
+        "method_conditions": 960,
+        "compared_records": 19200,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/滑らかな対象間補正結果/内部順位キャッシュ.npz",
+        "source_sha256": "f8383d9d37c7070da8c0127f0db95ec33fb6db1c64ff2d4b0128b77e2a41347d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/滑らかな対象間補正結果/対象別TPR.csv",
+        "saved_sha256": "3f57d661e8c60e69e8ef3ff5eace8de32d96164ac9930f3e403ab83c75195f94",
+        "method_conditions": 259,
+        "compared_records": 5180,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の学習結果/内部順位キャッシュ.npz",
+        "source_sha256": "6ef3cd6f09e79cf51dbac42a3fc8854cbb9034ce167287c43142e66a3b488624",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の学習結果/対象別TPR.csv",
+        "saved_sha256": "5da90d737d4930ee58ec16cfaf954910de869e8f1e405806440a3c8485a1ca5d",
+        "method_conditions": 157,
+        "compared_records": 3140,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "0b0b38fb5ac824da0bd8e9e409102abc9640cac0a0f9e7c9000c2c1b3746cb28",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261007/対象別TPR.csv",
+        "saved_sha256": "631ae91648cac92a38712f12248d4b12e14a9b0b7fe80e18ba4a1553d3a93de2",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "977505a073a55029f30d98378274a85529c79a4048bb00fd6dde590547cead7c",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261008/対象別TPR.csv",
+        "saved_sha256": "a2828aa4e42e3e8e5f486d77930927171bdd05cc114daf5ee8ffffc7faac0f9f",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "75c2fbed9bcd77d5466c471927db54321fe7c735662e341d278de1a47d947e68",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261009/対象別TPR.csv",
+        "saved_sha256": "87d29853486ffd8a1a4a61b6dafcd32d0e4fc3461bfca23a8a61e5bbd0bd4d2b",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "18936dcea2ac1a18761e138284c127e91bca24ed59d7bc7b032e8ecf2db5b688",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261010/対象別TPR.csv",
+        "saved_sha256": "af32fe186c4b6d270ddeac6155b046b598d6a786b7f054eea7221be02f3fd7b8",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "b3b07136f6d8aaa8fb4cfa732c1b8b5938d78a65d9225552d19830204154fd6e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261011/対象別TPR.csv",
+        "saved_sha256": "5b48c4bccaf81c9c849443f61a5028d8d4395bc30e5cd0ebde7dafa744e9ead4",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "3c7b75913269989ae0c41a69600cd6b60e92f983910584a189b9dea7d349023b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261012/対象別TPR.csv",
+        "saved_sha256": "48204edde701aac17a4361c4c78d7ede638c5d2e9028db72d04d5b2af1ee9bef",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "bd547bb3a2ea5f375f017f02e8ab246f62496e815c40faa7ad1e5048609f3e85",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261013/対象別TPR.csv",
+        "saved_sha256": "8800de38453b4afba42d9b94d98fc95c0c8558579591ca47b005cb0b0bdcf87c",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "35190c3c312f89f1e159e75f0bff9ed878059771db7ec1414aacf5f8a87f7e8d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261014/対象別TPR.csv",
+        "saved_sha256": "f7e5b20fe819f2cbaf7520621ee30ea4b94673157e65415293c2f683a0bbccd5",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "ff58b16c6f9c9d65c24e5a528e703ced73370508dfc9893929e8ecd35969413e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261015/対象別TPR.csv",
+        "saved_sha256": "e94f10a6807f79bf7ccba5570ca917297bde839a575ec8a069cc879c2819feed",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "b9c3231b60289fde7a974d1d0f22008ed1b0389aa3a3af2d13f0a166e4c0a0b6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.5_seed20261016/対象別TPR.csv",
+        "saved_sha256": "41027ac2ac8ba5482a25e1371dbace7e4f50130f44a33e3729f1198f6c714f74",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "c51b03e20078c054655dbb2586a8248644627c0efdce4e41a2495246df0dc8a8",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261009/対象別TPR.csv",
+        "saved_sha256": "4f5e99c4786982109e45fa7ca0c702d14177477ee34440e533f54ca83f223405",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "c88005a955959b2c3d723f1c6746abc123dc46f81285728f6a719bc8ef25c810",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261010/対象別TPR.csv",
+        "saved_sha256": "636d5a7b4489291317237be32513f0640b519cd754f2d5fc439cec39206f63fd",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "f0f1528c5b7b12943a06ef984cd343d7b0383d4bfaec40453160191c904914e2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261011/対象別TPR.csv",
+        "saved_sha256": "fc7999669fd13776d9cb0c559bf00133e2dad8740d4b2b8cffb39e8f39e16a57",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "0e909d3ebad641bce98a862cc9bf6aa952c023b7708efe9c45a91df6fafa3d9d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261012/対象別TPR.csv",
+        "saved_sha256": "d674a08d8e7b7a6ccb64ea8145e1d437ed90a80a7826e4d88122ec4ea786fac2",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "6ba210cb1417b6a0bc54a386d47f28de923c795d5b2322b53605cd06bf6630f6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261013/対象別TPR.csv",
+        "saved_sha256": "a2bba5db431407840103cbfc32646b5e60d596fb0b78cd79142f1600362ad568",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "b4939d6017ddf11387d605c1af82990ce2f84a49041ba67cfc450e0b3dd95f5e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261014/対象別TPR.csv",
+        "saved_sha256": "d7e23e351200125325d7d965622249cb8698f821039875bbbea4a58d4131d8bc",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "42c260aae5ef18ba48a3bad13439bd80b8a3fb04260e96de9ffd428018fb58b2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261015/対象別TPR.csv",
+        "saved_sha256": "6dd36746c92d0142b2417f5a4feccacf7f906f056f099802f028a5a9bb4db5b7",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "595fc351b9cb5884447479baf58126c81cdc0e700e426ba435b0b3307151c918",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.7_seed20261016/対象別TPR.csv",
+        "saved_sha256": "0e4019af58f462c7635d2851477f4653529158566b611b9ecc520369cfcf9cb1",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "f23acf0e2c486987b92dc02ec77f7304ac4da33f58946444c74c0b9e9ca4dd9b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261007/対象別TPR.csv",
+        "saved_sha256": "604c344497cc2814767166c2f85fac6cc5678cbe3eb00b897928295cf113b72f",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "ea108f97b58a6005bcf97b9da078fa4dc344387a3ae5f3dbfdcd05d6d1d0df5e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261008/対象別TPR.csv",
+        "saved_sha256": "723afaf7f590be24e5cfbdebe3c7711a3b259dbfeb646e1ef4bc56ff2b24e6eb",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "a957a1f80ebbbdc0cdaff5db1f1aac29191133385f4448dbbbf245ffa91222ca",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261009/対象別TPR.csv",
+        "saved_sha256": "0b44b04669249753e820c37f3aee661d064dbd8ecd8d1d51b36efdc2e74f9a72",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "04bb69bac138240a12e8e51fe9378b295579a25444e5a7c3538f68a872dfe351",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261010/対象別TPR.csv",
+        "saved_sha256": "a0a62d3ee1866f41adabf49734ea61411190bd3fd857822f6f68c0108944b271",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "ee11bfcc1f89bf513cb1417ebc3caa9ac28d6257aaaf03c0095bebaac54e8164",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261011/対象別TPR.csv",
+        "saved_sha256": "8d8fdb8851f13c75fc2a5352510e42de2f83c03f8d865f16d755b916ab22af55",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "1272461a090883683017129e9ed6df6f904f63b3a489a30c3969353c96106ab1",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261012/対象別TPR.csv",
+        "saved_sha256": "bb30e2197292226a5afa60ab2a83b47c805258e3e94005a59443b474814bd116",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "42e57f0db32deda2c1eefa69f8a277e504f08db2b190f5b9ad1096f6b722637f",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261013/対象別TPR.csv",
+        "saved_sha256": "2ff134bf531ffad741e9a7295b25c88dda3976ecb2ee6d9a323d0f0b66580bdb",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "ee97bc4fe089cb19684c924a810d3e16c3ce9ce6709052532047146d143a07ad",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261014/対象別TPR.csv",
+        "saved_sha256": "c4547736cea2cfab641e68c58e25146a20bcf502015458a41459d75a952a430c",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "5071521eec23be1108c04f68f7e2a3950054f7c2e4f3e8e4fc0a0df8b4c6e164",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261015/対象別TPR.csv",
+        "saved_sha256": "b1dbcf04cbb219770df34adbdde449b4070ff447be6ef963cc5c03a071277bc4",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "6c3ddbf51ce212f4290de7d2f28856ef54d3e347f7c4254ed0802ba02629ac75",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.8_seed20261016/対象別TPR.csv",
+        "saved_sha256": "a587b3f49d44152c957f4411343fb2825e151d41a74100054e06715ec00453e6",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "527b639d53cb1e2169d76c045d24f2659e60d445fbedeaa21c4d205772bcd5af",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261009/対象別TPR.csv",
+        "saved_sha256": "1da8aef1452ee509d5c12137bc946c5ac7d0379cbd5bfe97d550a016ffa99e13",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "b21d143bd458faad9652dfb86a062cf281786b89a4390c58d89ba74d1ca171be",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261010/対象別TPR.csv",
+        "saved_sha256": "3b8ffdc743ad783093caf4df881727a88fd646fc8ada4d4320c7e23cea0b499a",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "ec1875b0433332e003b95c1fa50e28ebfca1bd4fe4b9daf7a8b70f8619e8cc37",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261011/対象別TPR.csv",
+        "saved_sha256": "2c300ee489395b5ee49bf1b301c388b96fc75ea14cf6705d73841c00bd16e85e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "9380e5d02dfacbef77ca5246d6b995895a5177327442cad689a0c03e691367cd",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261012/対象別TPR.csv",
+        "saved_sha256": "30fd707e570fe65e15a4caabc0eb195fb0c8724486596589ac86ed8ee87a8c4e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "72a5e9ff7918e8a05eee0a69ae6cfa92d38d18eec60a0a0c5928c978b51e3e18",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261013/対象別TPR.csv",
+        "saved_sha256": "b7e0e79cf62a56aac5b942611e6f8304c3727205075989a513034e4aea68e118",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "59a16bf4c072662b99daa054a38c45b0d4d8b9519af1db70e237d0ed208d3c6b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261014/対象別TPR.csv",
+        "saved_sha256": "139479585d3373615e9c54f0a43a70220bcf32ae91e64b6facf428cafdf15dc1",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "8463ffa5ec115856593849f71bba7c2f51c3972c9cf39373ad8b3ddebac1cffc",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261015/対象別TPR.csv",
+        "saved_sha256": "43b6ff9b191bf555481fd6654cd4616e7ea7bb0d1eb2fa33d4c50d1efae6dd3e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "c95cc3651047a5d1dadd0b41fc67ccf21921879f90d786712085f8a30160cdd3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.95_seed20261016/対象別TPR.csv",
+        "saved_sha256": "cc24a553789633caefab6007aadc7c241d214a783038c04fbf908b80937b0802",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "7330a4957edfd834f101e6163d0fad9f77e95c1a2b938de3077b3ef7145356d3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261007/対象別TPR.csv",
+        "saved_sha256": "f77d4fd81b6829f8b707dcdaa26012062c9acaf1af90e9e8d8c4dfcdd773114b",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "9f1187432264e1602382cde87bc94a781a5afa4995c9172c442604c545d50388",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261008/対象別TPR.csv",
+        "saved_sha256": "1eae4f048869a5b6afc494cd6508e856449ba69bbd8a3b2795e7595eeb43f2f2",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "34bb55486eab65b6963899fe983f71cb4fe387a3cde5d530d593a7bea3fd80a5",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261009/対象別TPR.csv",
+        "saved_sha256": "5f803500b80dc4791afcc189a1f5a8d764e50e27f4fde716741644d5dd3bfe5e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "08c4a56ba6fa9063e517b9135045d28e997660aa7ef1bda0729a49082cf7f19d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261010/対象別TPR.csv",
+        "saved_sha256": "cf4c5b5c15e56a15989b9e83ac5575dae5ada6e47a7c0a0623cdfb0805fa9330",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "24c23a86093fb9d15edd563f961db70a8a661faa5ddb59a337327dbbcba1741c",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261011/対象別TPR.csv",
+        "saved_sha256": "d73ee81fc298ef1d7218e0022d60b057096fa9c27a4c7baf4d9b41b22aa25edb",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "32665ba2075fe8ec6b5362c6a5491a48c92793df7966e5ded3007e1f906ff32e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261012/対象別TPR.csv",
+        "saved_sha256": "144c4dc89f6f80a4387d43fb2059f2103a6f51ae6a6365acb4426a2294971370",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "6612a7d0f08a57cec54d3d90f1f74bfecc728b662c203525a41a0c7ea960d57e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261013/対象別TPR.csv",
+        "saved_sha256": "c18f81611cb3e73a25cc36b76f3aa891a76f2071e32123f3063047f05f5edcf1",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "58868e614b326c360e080d83c6c2c9a7debe8dc9a7db901d293f2762cc0ce6b2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261014/対象別TPR.csv",
+        "saved_sha256": "7a360f65a17132ffec649cde7e2d6a42f44da29edc1f207dab5c1b87cce0cd43",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "c1f60f0d89e5934fa07e3a768e2390c1727ff9f941b9eba193949707445afa15",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261015/対象別TPR.csv",
+        "saved_sha256": "b97b40a32901fb4dd8ad735f35c2e49235e7c00824a5216949029f5cd2f6a53e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "0f72c60fa0299ec31a7ee24a66e61cfc059591ecefaa6f31a467f061dcabdf37",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/fraction0.9_seed20261016/対象別TPR.csv",
+        "saved_sha256": "c8f8479f8f42e17aaea7d85dff17a51f52b5a8766794f5447c50cb89b04c13b5",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/full/内部順位キャッシュ.npz",
+        "source_sha256": "528350051712b6b44d8545485cf862ff8f650844e2def3b39f26fc3647eb2bbb",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴除去の背景結果/full/対象別TPR.csv",
+        "saved_sha256": "1dab97441beacb29bb048e8e7865e476e7a1542819b03c20845bede27cfb25ab",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比結果/内部順位キャッシュ.npz",
+        "source_sha256": "bb6913b62ccff55cc2e291995c6cea46049248be7fc573c1453aed582b510ab6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比結果/対象別TPR.csv",
+        "saved_sha256": "1e6e2704db218d8f9d11bdddc933b1372848fc31096afa91cb6c6d8015d591b8",
+        "method_conditions": 1008,
+        "compared_records": 20160,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "36d3ca7f8bbf1c5b9272f0e2ad663819f215f6a89e455b16f71c0782c63df66e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261007/対象別TPR.csv",
+        "saved_sha256": "9bdbc947e414495ecaa97d11c4e3c6dd322c1206f104b9000d5572a7aac674a5",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "eb63be03eeeb8fdf750c6c922ecdaf596ccaf772ec3de72cc1c0c0acbfcab044",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261008/対象別TPR.csv",
+        "saved_sha256": "b1f81b664a22ad48f600b375685c94b73fe7bf5797ea90f08c152b147280a3ec",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "c88f4d50c0d13adf6fa652f6e11cd6cff7785c4d7a87783574bbbb0cbff4ea2d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261009/対象別TPR.csv",
+        "saved_sha256": "a9b05634dc9c41b5fd8a799b600fb1b049decab3ba7a2c43efe8979222890d56",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "7a2a74daa462980b16373f0da6594e981c2cee617798de54046e46e60797ea47",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261010/対象別TPR.csv",
+        "saved_sha256": "be4cd007abee0e9f04f0867b084e3bb56a366b0ab48b7c0ed47bdce8817dced1",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "6152e5a60ecb73fb751d2a75ee98c9444fbee03edcbb8bee4cb028b60e97e016",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261011/対象別TPR.csv",
+        "saved_sha256": "dc5e08ca3af4bd6116158009ddbf6fb27521823bee3e93c88821935097131b20",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "a78b06b4563c626d93a5f6660cc5728ab580e97e4b39e30a4f0baabe35b50860",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261012/対象別TPR.csv",
+        "saved_sha256": "2492876ad35283a593e923c812bdceff073b6742f3ae7eecbc5bd34130abe58f",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "ee58e42d878d8a9d3e43c22d6a440b2bc883e1463f6f89972c2954cf6cf9e8c6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261013/対象別TPR.csv",
+        "saved_sha256": "5a58d12547a3ca75aeae57dfb4d2357576350ababe6be656c75a8ba30d46ecee",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "346cfca5aca728296d138cc98f1341d57eb337797b88aa651ef0921c8422e431",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261014/対象別TPR.csv",
+        "saved_sha256": "3be1f6366970f3b62eefc4f03c55a9f0941ec9d900b5de01dda1579c36d47112",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "e1104b4e67b2d6f2450f6aabf869f83486158846e29962293663b3aa0d60ed4e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261015/対象別TPR.csv",
+        "saved_sha256": "650cbbba0a5c5b86e01ea730ecee9e57c317724c6e6797b0813107e51ec2c357",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "f0fb53cfe239de67d55985fe8023cfe33f74464326c1cd965b40ad7510b6d995",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.5_seed20261016/対象別TPR.csv",
+        "saved_sha256": "ef96cabe18bffc024dd6ebe9d759b59308ca290a5708cf4128837d897ce75e94",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "2323d4367de1f99db77c94b4ca802c8ab0cc59832d7b968466f6b36112968c07",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261009/対象別TPR.csv",
+        "saved_sha256": "9dcc6715fbec8e476a970bf9019314782223730e139073fd699996ca23d88af3",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "2a0d268f08019f28a1d4652f38f65787d76edeb7480384ae2fa931466d8679d6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261010/対象別TPR.csv",
+        "saved_sha256": "83329ff26786ed2715e2b37ac842f54beac0d56d9629e90f84abaacb60b4361c",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "0c9d9c05e3f735133817c4a7a144c7512017c1bdc14187170d3e26a66721b461",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261011/対象別TPR.csv",
+        "saved_sha256": "60d4394330acde78e864a9b12e2947cdcbb6b4fc806de2d3a98c559320fbd9cc",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "3d48f3405b9caa3006bc202dcd6a0fdd30ce6d6f8614b716d207c19be2d1ffe5",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261012/対象別TPR.csv",
+        "saved_sha256": "6372c1d2cdae8bb37880da335a75b2f74c646fe3ab3ae2771a81d57322780769",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "ca92cd1e43ee226861476e9ddf390f3e6659c15f420441a3057b8f75b76d2381",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261013/対象別TPR.csv",
+        "saved_sha256": "eb05a8f17efb48fb63882e03c12785e262801064c76d2f07c8ef142ceca46451",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "b8d984d4dc6c4d48d78a45cd0d9af2977a2a5b427a2a7d0c2aa40a3faa7e74b6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261014/対象別TPR.csv",
+        "saved_sha256": "d1e0afc885c1200771e8a5383bc9687e38190b26fc8e56c63501f439c6382b7e",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "0461b27ac2ca28e6ad660764f5d4b616ce4ed33b815e472bd568f1fc0fbaadfd",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261015/対象別TPR.csv",
+        "saved_sha256": "e58e40b82d87308f15fd6660b00913f313a116313cdd12a39a6b82789fd59c1b",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "a073df3f75d04ea2ae68ec9920efad817f9834eb69f368bc26f0ae32185872cf",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.7_seed20261016/対象別TPR.csv",
+        "saved_sha256": "82f0bdc8f74f55c2e3f0fb5dfd135037db871d6cf2aeddf1f87818347d292884",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "7018bd81e2d41107815db27e9a140f0d1cdc8b1b9904a470fc8be4c62afa3212",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261007/対象別TPR.csv",
+        "saved_sha256": "bbc656a107d4e8d69edd4070b145d46afc125348496878ed80b243884a128690",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "f99002334c635d48fdb2f0048169474c5f204dbdcc7b93f8af535d1c95b05d94",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261008/対象別TPR.csv",
+        "saved_sha256": "4f1657d617c7f20f6197143810f9007f3760dcaf4d9f8d04d73ca7723989c024",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "ff10c4fa4b9d97ca1837351e498ae0d5f100328a626ea7a41b8bf0f94f9db8f3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261009/対象別TPR.csv",
+        "saved_sha256": "71d6d17ce4a80228558e3bfe2d416fcb67663b84235396cf9f9e650377d02e23",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "d81a64021b6af562090d454656a57e5d1e32174dbb1de26d2cee04714c2ad273",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261010/対象別TPR.csv",
+        "saved_sha256": "ddd9a1ac3c9785483e19d20024fbf35ed2c1b80fd16ba39c9ab5dc0b66987c16",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "b371139dab4b68bde827c1c9d56f288840e82f4b3b4502fa38022dd7c5bad56d",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261011/対象別TPR.csv",
+        "saved_sha256": "b12bfc8f39d046baadd21c6b0239716f2a61c04f354730985e8d87fc88305f78",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "0254752ad0fc747d798585260768ec467751f1da23bd81c999c50f804de87615",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261012/対象別TPR.csv",
+        "saved_sha256": "7a527136f7ebb50e54f0a12a4f2848e21f528d2a8fe23c556e9a500ec232a86f",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "272c0aa303a7e1e349f1d537069f1b3b38df85a34d5ad85c25cebf6a5516797e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261013/対象別TPR.csv",
+        "saved_sha256": "daa8176e2eda43d449af2fa9afbd6e428475f304a139db5686975b0acd736ed5",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "e4c8268fd2e4a3a064fd339af8e26998cd42c895787f59923c8547a34d17a2d2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261014/対象別TPR.csv",
+        "saved_sha256": "56f0c4931c299d333abe46d00a99af87a8a447790125be6472db73cdc4f9ac7e",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "4712b6bf5bb6326b73eb2d443086fa8edc06cdcafe48a530c541cb71be607fd2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261015/対象別TPR.csv",
+        "saved_sha256": "5ac66e0a13bbd7c3fc0713b1e288af476ec62f4aaf7d188bc1b9f84081d9fdd5",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "67430a836e3af6f0d6ad8fc5829746b109d43f337638149b4eece3430a2daf52",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.8_seed20261016/対象別TPR.csv",
+        "saved_sha256": "d1b3a3f8e90a3d11675ab36fba746f48cb7a5bb8ff331ac37caba7805ae88b5c",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "23b6eb4bdc728e325f0046e36cbf85e5bde1c671033b648ebaa35771df828744",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261009/対象別TPR.csv",
+        "saved_sha256": "da3ba1853a769162b3cf0ffd5646031a857041b833c0533c7361527a5aa60cd4",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "4a5acb2f71807f15bf0291e5b4de450ad772d3e15c0a2c774d310c675f574c78",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261010/対象別TPR.csv",
+        "saved_sha256": "54407d79b8cd3d4d27bd76468d2f49d84c13df539756548641c3ce35106964a6",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "c81fd0b80c3fd79267f2244b61f8822a4074cc3050e689dfcec13b493bf250f8",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261011/対象別TPR.csv",
+        "saved_sha256": "0359baadb5eb7bb94d7b32dce81a302f9b1bd6226975e66899d46e37988fb3b3",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "e598be480320d06c1b112297940b2a80075254d6f55c4366bb5f19af8015235a",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261012/対象別TPR.csv",
+        "saved_sha256": "746c6728712f62350fafa420b6dd9d19894a04899c6b4723a5f5b622fe17335f",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "ce60c375842bc602755343e1eac9e90089a2d505d476817611797d537c0a2d8f",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261013/対象別TPR.csv",
+        "saved_sha256": "32c4b5e6a527f09af90fafe2e6ef7ce9b4ce198d292550bfbaca66e20587b76c",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "5642e653362b967fad72324fb32bedc5e6ed7f3042e6c7ce0d1b817ae6ff8de3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261014/対象別TPR.csv",
+        "saved_sha256": "fcac1979f358808383746a18898fa6c30458371dfe57ece0ab26b93dbc677204",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "8b54b87e64e0e299706ab477cec1a1b78fc11cf815f81ed2a4a3ce2c719ee7e7",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261015/対象別TPR.csv",
+        "saved_sha256": "76e842618d5fdbba8a797f3663cb3f4850e4fbef371533b8d84eac4a410b954e",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "e75ea293b470efeb0c239cd921414e229dc095c88771ffcae09c9ec2438569b9",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.95_seed20261016/対象別TPR.csv",
+        "saved_sha256": "0270fc9432e797b55c4b1e9b18b3caabe65079675c6945c768e3757c1431b77a",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "8aa4712acda6af1f3b2caeffe33d975a6bfeb6f921b6b5d101703d28fd50ba2b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261007/対象別TPR.csv",
+        "saved_sha256": "0601e9f857e150710c3d4cf7920eef35a8b37c923e2b826bdc721d7c95ef43e2",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "e1f0f67331f36c0cce9d75225f5ba260de10cac5cdc8cb276e96c61d5db00981",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261008/対象別TPR.csv",
+        "saved_sha256": "970cfcff6ab3341c036fb11be125c630649bfb2b5611c2a0aacd5ca3045faeaf",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "c6dc7987f75a2ec76715d975c915d31003f1dfef9ff250fbadebc2081bc5ab05",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261009/対象別TPR.csv",
+        "saved_sha256": "12f9d0c0d08f9c4cd0fcad5d363c67bdf8d79447d2fc4e06218d554a3b05c8a0",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "2cabcab05697d60986ead2e2b894aee8bbfc8a4114b862099fdc27fdffdce7c8",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261010/対象別TPR.csv",
+        "saved_sha256": "049750dcac5c6bb022a00ce6481de9f2ee94e8591217888f01811ba4961e6103",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "e5c5c042c54cba0501c62ffded02fcd48b86df1ce0dd2ed9c8422bca33127469",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261011/対象別TPR.csv",
+        "saved_sha256": "28629cc56f899a20dbb8f71f0fe115703a72a69141980388ce5b8034ae43f7c3",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "aaaf8142bc27a4d3f5fb026ea5ad3eae0f41c73d7db5622bc4ce73086a9e9bd0",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261012/対象別TPR.csv",
+        "saved_sha256": "46b16618251b409e28726cc3fdb15a207fcd4ddfeeefa2d5df094a7e0fa02875",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "3b24afafc71e27ee3d3b975b150f40f84fa784c4e14bb8eab733e10c3e4bcb5b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261013/対象別TPR.csv",
+        "saved_sha256": "1420288e0258f1ff02e2172dc5d4a2c37216bb5e4d41f08a95e490db9b607146",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "0955993829d5e1dac25b0db22ac8017dfe2d9badcfbbba86848c33a7ee22d582",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261014/対象別TPR.csv",
+        "saved_sha256": "9bee85d16e8d46800637be3beabe48b68b0d8a03e52f128445dbd23404db2a06",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "b52ba2a38d9924343c28f2f90796f2e39d5e2ef4f8440d6e59aab1749f8e1d21",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261015/対象別TPR.csv",
+        "saved_sha256": "d197c2160ae45d9274fa7aaf450b63fd40441d5bb4cab18ce2a0fd5ae2970bd2",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "52fa2fbece7f433f5e0872f7d23d00739038a9509bef5d657f8968608df5c0e4",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/fraction0.9_seed20261016/対象別TPR.csv",
+        "saved_sha256": "930bf92ba60e1817639a976fc0e9fd375b43aa8db551217e3fb19eac3bea0adf",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/full/内部順位キャッシュ.npz",
+        "source_sha256": "a2c144503b7087397bfca14c067a2008cfa75487a0e2593b33cecd0712293f0f",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/full/対象別TPR.csv",
+        "saved_sha256": "e9e8de6a9e3b1f1260990a6edaddeae9cd49c4c686c8ec7f79b13414dcf9cdb2",
+        "method_conditions": 49,
+        "compared_records": 980,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "bd321891ca2a111e24f7b08e35dcfd63fba32c8b4d438ec983530bf531adf934",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261007/対象別TPR.csv",
+        "saved_sha256": "af06f03181c4f2edc49e20c1596552231e35223b859fbbbb6a538c82144937dd",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "5a62bb490e293130f6e19601d538b534236835093c099039dc519f0b3ffee5b6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261008/対象別TPR.csv",
+        "saved_sha256": "c9690e2df4f75feb0b8d7f254f8d76880b7bb2ff61aeaa6783840e4223b4f6bd",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "7c1f9df23c9a0a4b711b898af1d6f49e53d55e68b7a40c1d4eb5a99111bf10c7",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261009/対象別TPR.csv",
+        "saved_sha256": "72e22a64168249823ff6917ba209b37722101c847f807f8c603d6db2adeaa612",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "67bd9f4f1a883a61b46244fd73136a2815b2942b53e71eb183e198ecb8e7ec51",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261010/対象別TPR.csv",
+        "saved_sha256": "e52eb7fd60f99b484c28cc73802bc1049e941ed4345e5b9c480642f25ee0b19f",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "7f7490b2615a9ef162b89a57f0928ff50860bb9c0f52cbf8a8eb2e827bbde79c",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261011/対象別TPR.csv",
+        "saved_sha256": "5c723bd285414e83d559f299e139b0f912fed5461425c0c72b6dfb5684badffb",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "f1016dbd891def9480a2bf8363458c99428e3a696731209e5b7d840132e73c15",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261012/対象別TPR.csv",
+        "saved_sha256": "2bba52d70fbd85e78dee87dd8e5a4e72d089800aadb75a65dc352dafcb2b548e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "671a8733b964d7521cf1ce8474c5c75be9d468bb03ce8f356627f700aa09c738",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261013/対象別TPR.csv",
+        "saved_sha256": "91d184b0a9b929badefcda421513dcacc5e554984f77e061768ab432b45c73b6",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "8ec7a325de64fcdfe66336cdb519067b8f132a93f85c84e3c1aae7fe30a81871",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261014/対象別TPR.csv",
+        "saved_sha256": "892c43d4d09de93d75a26958100a2f42a3970f2f57be8fb15d4c1a4e5f285979",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "6c3697bd41ef5c6cffed9e151f5190a7bed4eba51dbeb61f283676231acda0c5",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261015/対象別TPR.csv",
+        "saved_sha256": "011d05b423fd1f9a80e52730d24e6b1ce353d67bb8d6511e9e70331fc8fd5eb7",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "dbfbe6ec13f35b380d61d030337656be44015bbcb62a39ab850fab384542508a",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.5_seed20261016/対象別TPR.csv",
+        "saved_sha256": "7397aeb494ac023b9f77078b3f33a265037d7bab6541086066eb3b5cdf588577",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "0da7e2b3acf386105e3f46c53e7d99e18cd2a046ee1f9e01738a9a4bc5560049",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261009/対象別TPR.csv",
+        "saved_sha256": "0c0c32ace6cfa907ad8fc831772003ddf7d985be63b43e2177759e4d53e3a79f",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "1d28af3ef6dc32a44875d1cce9288ba4edde113bcb3bc4707cde73b6446837b3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261010/対象別TPR.csv",
+        "saved_sha256": "525f663458b20b72af3e0f5d48facf44b1c99e318b00e0be041e6a3c5c6eb999",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "06865fc6ebe7de17b58d0dbb739871e2607c3fcaabe46c3fbaf8a0bf5299183e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261011/対象別TPR.csv",
+        "saved_sha256": "858e0b649b1765ef3c9a33982c7c0241a3ab1b546accbc3d92ef0b90a9314e55",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "5f53453dc19d82241f2c7103abea8b5cedbc45fdd6bd8f349ba8b96e523f7891",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261012/対象別TPR.csv",
+        "saved_sha256": "2b3aee272144e63284cb420061bd5ffb715fe43a64422ea326de90ce33097dad",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "cb1a29db4fd2b50d88c7d7a41779298ef3787f22369c60d1eaa1c8ccd8edffc7",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261013/対象別TPR.csv",
+        "saved_sha256": "e42f7cf91b58a433b939ec64b7242a421348eb42221e153528b7bac8558d4176",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "88136d8738aeed02442a49170e54d2ea41743c764e0fb438e3ea94bf8ebe6b6f",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261014/対象別TPR.csv",
+        "saved_sha256": "1e56171a61ccc88be555ce6b50784dfe0f04bd1fcb4970e39583287953dfee8d",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "901476b2dedf96c832d84ee28df9a2d50552e8848007c9086d15d8d854590dcd",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261015/対象別TPR.csv",
+        "saved_sha256": "3a8730a5fbcf24f100d7637f256e961179015a84c87c7b5ea8161ebf97bbf751",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "3b0d5f55ea6b28f4d29507b6f8ee242094e36554e177730ddd80ecc77dd4744c",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.7_seed20261016/対象別TPR.csv",
+        "saved_sha256": "4844a22118f94bc2dcfedd78f5d6adedebc3fa02509431bb1471a9e1bfd14498",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "5b95382d37d2ebd35adea4b41fdc4219d816c695b8aa0f267a6ffffc9fa426ed",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261007/対象別TPR.csv",
+        "saved_sha256": "6356970e89ba9b862f133e95ce28b0e071f8802adaa86fa52f5cf07be33fb9a4",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "f7040c3e396ec319625051f9516d9154ed2d4d0ae3fd89e2fb7babeffdbfb8fa",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261008/対象別TPR.csv",
+        "saved_sha256": "9846395d8da2306ea6f03371108b832b2617153d8277df061d4d02283408eb5a",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "d3a69ffd1aef4c4c8e0964a8c98e37c05d4d912735f227247156fc1ebb7aeff3",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261009/対象別TPR.csv",
+        "saved_sha256": "0a6cf8e6319bba1f12ad3e55eff7cdb9d37a059c2a9597eb92e31724dca740bb",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "7c619c7486598116cfaaa039ef2f2c91fd33ff5fd41e3de9c27d704c04bd3d60",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261010/対象別TPR.csv",
+        "saved_sha256": "04bbe9dde95056b94bf550f38c9c10762835f67c1e81d9c0e7518b024075cc5d",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "f7a7995b5d5c7e87d2d0e0e3c5e770a3a41cf1f3cab17e42bcae328d653258a0",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261011/対象別TPR.csv",
+        "saved_sha256": "92b7af8ad56d58cc5fe8f2fabe4b4712e88613b55ba65c7dd9699ac63fc4ab72",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "f916feb8009ebffb72db726ed4acf3280e1671faf70d46665b81d083519b7706",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261012/対象別TPR.csv",
+        "saved_sha256": "d1942ee5d030af98d35229b8037772c367f4d47b3221cbfde4d445bdf471d46e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "465c9dc3a97cd6bb6b3b7430b68421bb6db03efb8987ab6dbaaf017b7ac301e7",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261013/対象別TPR.csv",
+        "saved_sha256": "37392a008b429f9e0c73ed808483840d35bf99bddc5a454336e63c87f13b2091",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "fddf41927c9080b3cf862d3ee0f031fb9623da26fe7ffcb3b6a1d0693949984e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261014/対象別TPR.csv",
+        "saved_sha256": "390f13fc81b21a37c7786aaace7630bb05ed5860f41a472c5d662275c81235f0",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "dd5db931a8db524ec8984aec616d6e2c12f52e87aa0fbd1163b743b05a336e33",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261015/対象別TPR.csv",
+        "saved_sha256": "c1044675774e16f65185a75a642c521e23cc18f0d8141b54676123d983514d0a",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "976d280c30b95cf07eccc89a220fa13954d6d1e8faa527dfe28bddf76f35ba39",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.8_seed20261016/対象別TPR.csv",
+        "saved_sha256": "394fd6dde3afc4f0410f5ef700368adcd35921080794d934d10fdb2d10df2de4",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "80c9357b8626b8e0b2263d5d0587c93a3c6d9f5bb7ab50d692310559fefb19c2",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261009/対象別TPR.csv",
+        "saved_sha256": "0c793240422c73d12857768a32b798f644403cf379d776c4bbdfdea8eaeac226",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "cb0fa45b5b67526a666af9646347d39320d9c08760db5ab63fb27755c897dfef",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261010/対象別TPR.csv",
+        "saved_sha256": "db20f71b63bd614e31a8f082b9699c6c899a50fb0b11fb3af4d0d0c118daf85d",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "5cf8faedcc7ba6c553baad34a1e551fa8a32492d13899034a4228ef4bd465f5b",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261011/対象別TPR.csv",
+        "saved_sha256": "2fac427b5082ebe11a61ec81823a329cca5913d8a09c41aa7bfd555d6b21b6e4",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "e699992b7dbbaf2b4a722afd96dbd5286b3d2abcf64a11ff59167d7f78db9b3e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261012/対象別TPR.csv",
+        "saved_sha256": "cc9a9b1e7ee5cbb5fe231509e4d2dadd4337ddc69295d77f0e2d8732513fe48e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "a5ed4005a467aa211b337910a1f68a0626b68c7f7c2ead68e9ab513fc74de210",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261013/対象別TPR.csv",
+        "saved_sha256": "c1cd95a09d52358022a2249c19c0b6aec80a6376256d94002e3212d9feb98b42",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "edbd9c49a6721f754f178f74fc65cf75fcfbb298ed8fe6d056cd162e2a5a972e",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261014/対象別TPR.csv",
+        "saved_sha256": "a4df9281f5a911d7fc88270c063c2b45c6553b1b41750e5f70f11fd391b58d98",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "4681d2bbbe7e1067a25bc2b33dd2df81f9d4f1635c59d9077e66e7191983c049",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261015/対象別TPR.csv",
+        "saved_sha256": "cc62a411730ff852e3881435e608cffcfbc65caadf869457dea66c7e8d70bd36",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "a98fbdb74d52c595c593969c280fb321293efbb792fc3e024f89fc1ec4bde9e7",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.95_seed20261016/対象別TPR.csv",
+        "saved_sha256": "1be61358576ea1ead1aa9b5f68b5511b93c14ca1a817f56e6c422639554824a1",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261007/内部順位キャッシュ.npz",
+        "source_sha256": "8849ec7ec53a192f4ecf5c510a459c394eedd334e5dfd415a16fef618e69c887",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261007/対象別TPR.csv",
+        "saved_sha256": "7fcc89ea1cc4c9f494a9a592abd3c41506c2d221fcc15ef0b8c5c3b4a209d2c9",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261008/内部順位キャッシュ.npz",
+        "source_sha256": "c5cdbdb6b2387efe7b172dd50db8c195ad037e5d7ac2eed07dc1d1f3520f9dbc",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261008/対象別TPR.csv",
+        "saved_sha256": "68a20d4ad7264197004624f78e214603d36b8c9491979759caf12faebb7ce04c",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261009/内部順位キャッシュ.npz",
+        "source_sha256": "290782eb8433ecdeba3fa0bac40684efac9ca75f29a2ac01ed716151c21a17d9",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261009/対象別TPR.csv",
+        "saved_sha256": "090e7c308c158c60da8d15cf31c38daa9b5f272f036fc2dacd3f471ad10655e0",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261010/内部順位キャッシュ.npz",
+        "source_sha256": "e119aa9bc856e3585139e66e1d38107a4a92f7510baa23dcf5d05d3be5f78364",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261010/対象別TPR.csv",
+        "saved_sha256": "d0155840b418920beef326b9d8b03bfa5b316654fcede79be2f0feaa73db409d",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261011/内部順位キャッシュ.npz",
+        "source_sha256": "54fccea1de043f493229c5b4c44e575441045f6c7873e7e13e6c4046734878f6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261011/対象別TPR.csv",
+        "saved_sha256": "00e1069255793586b334d18df13581de6c3c2e8684de704b9864284b71bc2906",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261012/内部順位キャッシュ.npz",
+        "source_sha256": "ddfaf1e41710d439ef770c27c2ff146137e5601c9fb7794bcd7e0912f7067212",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261012/対象別TPR.csv",
+        "saved_sha256": "61f307f3a9022c7af14a58abcc9d097b2781af48441d3b5a2faf4102dd56055e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261013/内部順位キャッシュ.npz",
+        "source_sha256": "4fed1acde4d1d133730a4d5310a338d84365b58fdacb6cd7488b8af8453df7b9",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261013/対象別TPR.csv",
+        "saved_sha256": "dfba5dc023e63fc51bcc85a41509c7c38dbabbd0c07e075e43a5214c2f565fd0",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261014/内部順位キャッシュ.npz",
+        "source_sha256": "0cdfb8bfd0bd37cc7de9afe0866504982eae3cb0882cd5655af3c6e413a96ddb",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261014/対象別TPR.csv",
+        "saved_sha256": "825d4104e9a2d4504c715fb08fe8b05951c996871dd4f7f47c612fc65ad83a98",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261015/内部順位キャッシュ.npz",
+        "source_sha256": "b29ab8ddf982f46fce11e7a916af5128e37cbfd79ea9a4be0b910e81f2c13c27",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261015/対象別TPR.csv",
+        "saved_sha256": "6bd3ebe486cf9019ae1d1c4fd82a50b4daeda163e948efc81d4bdb639dd8827e",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261016/内部順位キャッシュ.npz",
+        "source_sha256": "de3576c0bafdf82c57932d70175981842b7b59c95741cc84407a354fe3b8a45a",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/fraction0.9_seed20261016/対象別TPR.csv",
+        "saved_sha256": "15b41657c2ae2ce30231d7acf380abd2c278c1823a917b679af67bd3862d0df3",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/full/内部順位キャッシュ.npz",
+        "source_sha256": "ca821180ef3269347658db8e0aea2210b1091167dae531d8b9ec5698b92aeee6",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/full/対象別TPR.csv",
+        "saved_sha256": "418ace6fb0ab0196c3d70e274a894790cfa4895bc51770ae651ee6f040e4e887",
+        "method_conditions": 25,
+        "compared_records": 500,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布結果/内部順位キャッシュ.npz",
+        "source_sha256": "d69d3d1101edb6f3111a8d437505cb2d98692c1ebd1aedd79d6dd0645669b45f",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布結果/対象別TPR.csv",
+        "saved_sha256": "be456ae5121e79a01e06a1aa061408be1b6dea866faaf3228b6ccdef4a100cbe",
+        "method_conditions": 666,
+        "compared_records": 13320,
+        "max_abs_error": 0.0
+      },
+      {
+        "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラム結果/内部順位キャッシュ.npz",
+        "source_sha256": "654fe01201f022e7e36a7c895edaf143f7ecd87cdeba8e9b0797db1dbe47ff56",
+        "saved_source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラム結果/対象別TPR.csv",
+        "saved_sha256": "d2837423f2d8fb9c54ef5d488850f090ea9268375b22e6d83658fb0cd295a511",
+        "method_conditions": 1920,
+        "compared_records": 38400,
+        "max_abs_error": 0.0
+      }
+    ],
+    "interpretation": "個別TPR CSVが保存されたキャッシュを独立再採点。CSV未保存の後半方式はoct08_results.pyが補充する。"
+  },
+  "passed": true
+}
