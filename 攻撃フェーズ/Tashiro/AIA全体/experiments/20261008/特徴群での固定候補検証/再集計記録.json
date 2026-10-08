@@ -1,0 +1,48 @@
+{
+  "source_sha256": {
+    "候補群の留保監査/共通全BG_全候補対象別.csv": "e6dc46c2d934600f3a8eaf8cb62ed10c0a74c9c6f497d5e864767d40248a9899",
+    "加工特徴と方式選択/集計/固定方式の予備戦得点.csv": "f164cdb78a926a1fb750acca95a6cd81803b60e842d711197941d1a408d49ea3",
+    "臨床値集合の複数近傍/集計/予備戦_対象別と20反復null.csv": "5bd68794c5acb820bbcaea9b896395d901fdc97b349963b6465a7e3b4df27023",
+    "臨床周辺分布の平滑化/集計/予備戦_固定5候補と20null対象別.csv": "866527d25177851acf7d70977a7e9f13d91b9507b339059ea667d3c577810f65",
+    "臨床近傍の背景質量較正/集計/予備戦_固定5候補と20null対象別.csv": "8669a01d322d7eef4ee1095aacb0b611659d8244aa6ac3add8ee6d67a1de3b9c"
+  },
+  "nominal_candidates": 54,
+  "source_context": "same full phase BG",
+  "source_baselines_match": true,
+  "scored_target_count": 20,
+  "groups": {
+    "prior_strong_record_1_2": [
+      1,
+      2
+    ],
+    "column_and_row_BG_preserved": [
+      18,
+      29
+    ],
+    "column_BG_preserved_row_partial": [
+      19,
+      24
+    ],
+    "prior_low_unique": [
+      23
+    ],
+    "other_processed": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      17,
+      20,
+      22,
+      26
+    ]
+  },
+  "group_review_is_posthoc": true,
+  "candidates_not_selected_for_submission": true,
+  "independent_new_targets": 0
+}

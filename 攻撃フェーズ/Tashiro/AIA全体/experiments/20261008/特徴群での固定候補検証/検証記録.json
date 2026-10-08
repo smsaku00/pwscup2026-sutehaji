@@ -1,0 +1,8 @@
+{
+  "baseline_null_scores_matched": 1280,
+  "baseline_real_scores_matched": 64,
+  "scored_rows": 2692,
+  "all_sex_quotas_match": true,
+  "unique_score_keys": true,
+  "code_and_prediction_hashes_match": true
+}
