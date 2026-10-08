@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "per_target_cases_checked": 2340,
+  "changed_rows_checked": 1588,
+  "score_maximum_error": 0.0,
+  "original_baseline_maximum_error": 6.938893903907228e-17,
+  "crossfit_train_test_disjoint": true,
+  "heldout_teams_per_repeat": 21,
+  "global_QI7_duplicate_rows": 0,
+  "original_input_hashes_verified": 71,
+  "attempt_not_equal_changed": true,
+  "no_live_submission": true
+}

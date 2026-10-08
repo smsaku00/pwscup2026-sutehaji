@@ -1,0 +1,105 @@
+{
+  "experiment": "高信頼候補ペアだけの対照側回答変更",
+  "input_commit": "5c14d1632e78b4a6978763907e92a26b1dd9be05",
+  "snapshot_commit": "3fa0b39f1620e39edb33d6c95921bcdf09b18dca",
+  "fixed_before_this_run_outcomes": true,
+  "earlier_prelim_outcomes_have_been_seen": true,
+  "evaluation": "20 targets excluding self5; processed18 excludes1,2,5; no main truth or submission",
+  "baseline": [
+    "P01",
+    "all4",
+    "top2"
+  ],
+  "baseline_source": "original saved functions; full BG; sex-specific ceil(0.75*n); selected9.5, other0",
+  "rare_detector": "original HistGradientBoostingClassifier make_model and features(age,SBP,log1pTG,HDL,log1pALT,sex)",
+  "rare_crossfit": {
+    "n_splits": 7,
+    "primary": "GroupKFold all21 cohorts",
+    "secondary_shuffle_seeds": [
+      20261009,
+      20261010
+    ]
+  },
+  "pair_definition": "within (prefecture,sex,age//5), exactly2 rows in candidate pool; not proven original pairs",
+  "ranking": "within-sex average-tie percentile of membership evidence; equal evidence abstains",
+  "candidate_pools": {
+    "rare52": "top52 OOF rare score",
+    "visible": "all326",
+    "oracle": "true is_rare, privileged diagnostic only"
+  },
+  "gates": {
+    "loose": {
+      "min_rare_score": 0.0,
+      "min_gap": 0.0,
+      "min_high_rank": 0.0
+    },
+    "moderate": {
+      "min_rare_score": 0.5,
+      "min_gap": 0.25,
+      "min_high_rank": 0.75
+    },
+    "strict": {
+      "min_rare_score": 0.8,
+      "min_gap": 0.5,
+      "min_high_rank": 0.9
+    }
+  },
+  "primary_policy": "rare52_moderate, lower row only; higher and outside untouched",
+  "policies": [
+    "rare52_loose",
+    "rare52_moderate",
+    "rare52_strict",
+    "visible_moderate",
+    "oracle_moderate",
+    "budget_moderate"
+  ],
+  "budget_control": "same number of attempted interventions as rare52_moderate, lowest membership score in top52, no pair requirement",
+  "low_row_values": [
+    0.0,
+    11.0
+  ],
+  "score": "max(Rall,Rrare_deadzone_z1.64); phi is unknown and not imputed",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 202610091,
+    "unit": "cohort",
+    "paired_delta": true,
+    "exploratory_only": true
+  },
+  "cohort_groups": {
+    "strong_row": [
+      1,
+      2
+    ],
+    "bg_column": [
+      19,
+      24
+    ],
+    "bg_row": [
+      18,
+      29
+    ],
+    "few_values": [
+      23
+    ],
+    "other": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      17,
+      20,
+      22,
+      26
+    ]
+  },
+  "no_changes_to_prior_source_or_answers": true,
+  "no_CodaBench_submission": true,
+  "new_rule_selection_on_heldout_target": false,
+  "created_utc": "2026-10-08T18:58:38.602060+00:00"
+}

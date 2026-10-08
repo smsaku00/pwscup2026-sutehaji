@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "input_commit": "5c14d1632e78b4a6978763907e92a26b1dd9be05",
+  "actions_run_id": 37830594279,
+  "actions_run_url": "https://github.com/smsaku00/pwscup2026-sutehaji/actions/runs/37830594279",
+  "actions_result_commit": "4d8ea11fa63e0e469ec5714f5f9fba212d399c0e",
+  "analyze_sha256": "a2ae16b8946108536a16521eac13e217ed181d11044f51f28c2feea319747bec",
+  "verify_sha256": "a785ba6b75dbd14c205216219e6236f20d70e3e5aa607d5488d0302ee72a8b87",
+  "byte_identical_files": [
+    "analyze.py", "protocol.json", "requirements.txt", "verify.py",
+    "results/age_group_audit.csv", "results/baseline_reproduction.csv",
+    "results/candidate_pairs.csv", "results/changed_rows.csv", "results/folds.json",
+    "results/pair_quality.csv", "results/per_target.csv", "results/primary_summary.csv",
+    "results/rare_detection.csv", "results/scorer_checks.json", "results/summary.csv",
+    "results/verification.json"
+  ],
+  "run_json_different_fields": ["seconds"],
+  "local_seconds": 12.375586032867432,
+  "actions_seconds": 15.683722496032715,
+  "output_manifest_differs_because": "run.json includes elapsed seconds",
+  "computational_reproduction_only_not_independent_data": true,
+  "live_CodaBench_submitted": false
+}

@@ -1,0 +1,9 @@
+{
+  "all_count_cases": 26896,
+  "rare_count_cases": 196,
+  "maximum_error": 1.1102230246251565e-16,
+  "local_validator_11_fixture_ok": true,
+  "live_CodaBench_test": false,
+  "scorer_sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+  "validator_sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e"
+}
