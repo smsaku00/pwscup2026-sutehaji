@@ -1,0 +1,67 @@
+name: Tashiro MIA P05 policy target-holdout and public-threshold stress test
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p05-looto-stability-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P05_損失防止と公開特徴ゲート'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Install numeric analysis and official workbook reader
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3 openpyxl==3.1.5
+      - name: Run preliminary holdout rule selection and 60 public-threshold perturbations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/audit_p05.py" --root . --out "$RUNNER_TEMP/p05-stress"
+      - name: Audit holdout folds, preserved attribution and 7-background comparability
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p05-stress'
+          by=pd.read_csv(p/'policy_LOOTO.csv')
+          s=json.loads((p/'policy_LOOTO_summary.json').read_text())
+          g=pd.read_csv(p/'public_threshold_60_sensitivity.csv')
+          b=pd.read_csv(p/'copy_7bg_delta.csv')
+          d=json.loads((p/'audit.json').read_text())
+          assert len(by)==17 and by.heldout_team.nunique()==17
+          assert len(g)==60 and len(b)==7
+          assert d['rule_invention_used_prelim_target_TPR_before_this_audit']
+          assert d['P03_7BG_comparison_unavailable']
+          assert abs(s['P04_hypothetical_attack']-.34919703643719757)<1e-12
+          assert s['heldout_count']==17
+          print('PASS: P05 outer-label-independent policy selection; 17 teams, 60 threshold cases, 7 copy baseline backgrounds')
+          print(json.dumps(s,ensure_ascii=False,indent=2))
+          print(b.to_string(index=False))
+          PY
+      - name: Publish aggregate heldout and threshold sensitivity only
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p05-stress"
+          mkdir -p "$EXP/validation"
+          for f in policy_LOOTO.csv policy_LOOTO_summary.json public_threshold_60_sensitivity.csv copy_7bg_delta.csv audit.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/validation/$f"
+          done
+          (cd "$EXP/validation" && sha256sum policy_LOOTO.csv policy_LOOTO_summary.json public_threshold_60_sensitivity.csv copy_7bg_delta.csv audit.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/validation"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P05のLOOTO・7背景・公開特徴60閾値の耐性監査を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
