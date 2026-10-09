@@ -1,0 +1,63 @@
+name: Tashiro MIA P06 risk-min selector ablation on published aggregates
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p06-aggressive-null-selector-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P06_公開非会員の分離評価'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Install libraries for aggregate analysis
+        run: python -m pip install pandas==2.2.3 numpy==2.3.5 openpyxl==3.1.5
+      - name: Compare naive minimum-risk selector to P04 with official prelim score
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/audit_aggressive_null_selector.py" --root . --out "$RUNNER_TEMP/p06-min-risk"
+      - name: Assert true method identities, source audit, and P04 score
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import pandas as pd,json,os
+          p=Path(os.environ['RUNNER_TEMP'])/'p06-min-risk'
+          a=pd.read_csv(p/'unconstrained_null_selection.csv')
+          b=pd.read_csv(p/'unconstrained_null_targets.csv')
+          c=json.loads((p/'protocol.json').read_text())
+          assert len(a)==4 and len(b)==5*4
+          assert abs(a[a.policy=='P04'].hypothetical_attack.item()-.34919703643719757)<1e-12
+          assert b.team.nunique()==5
+          assert c['policy_method_definitions_seen_past_preliminary_truth']
+          assert c['no_main_submission']
+          print('PASS: Original P04 unchanged; aggressive risk minimization is a posthoc aggregate-only stress test')
+          print(a.to_string(index=False))
+          PY
+      - name: Publish aggregate-only results
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p06-min-risk"
+          mkdir -p "$EXP/aggressive_null_audit"
+          for f in unconstrained_null_selection.csv unconstrained_null_targets.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/aggressive_null_audit/$f"
+          done
+          (cd "$EXP/aggressive_null_audit" && sha256sum unconstrained_null_selection.csv unconstrained_null_targets.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/aggressive_null_audit"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P06誤検出率最小の単純切替を集計で否定検証'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
