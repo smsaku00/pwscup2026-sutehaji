@@ -1,0 +1,7 @@
+{
+  "source_method": "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1",
+  "result": "reproduced all 17 target TPR@FPR=.01 values within tolerance",
+  "targets": 17,
+  "max_abs_error": 7.632783294297951e-17,
+  "scope": "20-target joint crossmedian then exclude Teams1/2/12 only for historical 17-team reporting"
+}
