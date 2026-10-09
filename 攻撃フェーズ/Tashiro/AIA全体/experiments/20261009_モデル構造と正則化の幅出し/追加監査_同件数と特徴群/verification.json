@@ -1,0 +1,18 @@
+{
+  "input_tables": [
+    "limited_model_per_team.csv",
+    "limited_model_edited_rows.csv",
+    "per_team.csv"
+  ],
+  "analysis": "fixed-protocol diagnostics; not fresh held-out validation",
+  "group_source": "2026-10-08 publicly observable C feature groupings, defined after earlier outcome inspections",
+  "actions": "HGB first K chosen edits where K is reference edits for same team, ranked by frozen expected_gain",
+  "hidden_truth_in_prediction": false,
+  "group_inference_warning": "1-2 cohorts/groups insufficient for new routing",
+  "tests": "reconstructed baseline, full HGB R, and per-edit hit counts agree exactly with saved results",
+  "HGB_avg_actions_per_nonself": 10.0,
+  "Logistic_avg_actions_per_nonself": 1.5,
+  "zero_reference_action_teams_nonself": 14,
+  "important_feature_confound": "reference decision model=c_bg_local LR; HGB_shallow decision model=c_bg HGB",
+  "same_feature_diagnostic": "global top75 selection separately reproduced by saved per_team.csv; compare c_bg and c_bg_local separately"
+}
