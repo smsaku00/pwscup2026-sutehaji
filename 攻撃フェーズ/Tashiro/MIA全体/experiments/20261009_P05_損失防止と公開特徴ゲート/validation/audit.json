@@ -1,0 +1,18 @@
+{
+  "status": "posthoc preliminary gate stress test only",
+  "criteria_LOOTO": "maximize remaining16 full >=.10 hits, new hits, avoid losses, mean TPR gain, then fewest complexity",
+  "candidate_policies": [
+    "P04",
+    "P05_copy_only",
+    "P05_close_only",
+    "P05_copy_and_close"
+  ],
+  "policy_LOOTO_learned_from_other16_only": true,
+  "rule_invention_used_prelim_target_TPR_before_this_audit": true,
+  "copy7BG_reuses_same_preliminary_A_bg": true,
+  "P03_7BG_comparison_unavailable": true,
+  "grid_conditions": 60,
+  "pass_third_among_60": 24,
+  "P05_team_7_close_gate_stability_count": 24,
+  "no_submission_generated": true
+}

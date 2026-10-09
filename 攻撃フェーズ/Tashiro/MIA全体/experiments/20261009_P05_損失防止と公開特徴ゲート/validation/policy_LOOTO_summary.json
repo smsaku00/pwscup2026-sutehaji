@@ -1,0 +1,17 @@
+{
+  "heldout_count": 17,
+  "mean_increment_target_tpr": 0.0,
+  "P04_hypothetical_attack": 0.3491970364371976,
+  "LOOTO_hypothetical_attack": 0.3491970364371976,
+  "baseline_3rd_official_attack": 0.352845805596271,
+  "third_place_gap": 0.0036487691590733617,
+  "LOOTO_improved_targets": [],
+  "LOOTO_worsened_targets": [],
+  "LOOTO_selected_policy_counts": {
+    "P05_copy_and_close": 15,
+    "P05_copy_only": 1,
+    "P05_close_only": 1
+  },
+  "rule_selection_target_truth_heldout": true,
+  "historical_policy_definitions_not_independent": true
+}
