@@ -1,0 +1,86 @@
+name: Tashiro MIA P07 cohort-heldout AIA null calibration and score audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p07-qcohort-holdout-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P07_公開AIAコホート保留と方式選択'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install exact original P01 KDE A deps and official workbook parser
+        run: |
+          python -m pip install -r "$BASE/requirements.txt"
+          python -m pip install openpyxl==3.1.5
+      - name: Run public QI7 cohort holdout numerical and label isolation tests
+        run: python -m unittest discover -s "$EXP" -p 'test_qcohort_holdout.py' -v
+      - name: Generate exact all20 P01 KDE A and Q-heldout P01 P03 calibrated scores
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_qcohort_holdout.py" --root . --out "$RUNNER_TEMP/p07-qcohort-null"
+      - name: Check original P04 historical regression and frozen choices
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,pandas as pd
+          d=Path(os.environ['RUNNER_TEMP'])/'p07-qcohort-null'
+          r=pd.read_csv(d/'cohort_heldout_null_risk.csv')
+          p=pd.read_csv(d/'frozen_cohort_decisions.csv')
+          s=pd.read_csv(d/'counterfactual_summary.csv')
+          t=pd.read_csv(d/'target_results.csv')
+          diag=pd.read_csv(d/'Q_cross_cohort_duplicate_audit.csv')
+          x=json.loads((d/'protocol.json').read_text())
+          assert len(s)==5 and len(t)==5*17 and len(p)==5*17
+          assert r.method.nunique()==2 and len(x['Q_heldout_selected'])==6
+          assert (r.holdout_nonmember_proxy_n==326).all()
+          assert (r.groupby(['target','heldout_Q_cohort']).method.nunique()==2).all()
+          assert len(diag)>0 and diag.cross_cohort_duplicate_QI7_removed.ge(0).all()
+          assert x['released_pool_ids_read_after_freeze']
+          assert x['KDEA_Q_risk_not_evaluable_missing_columns']
+          assert x['KDEB_not_score_recomputed']
+          assert x['no_main_inputs'] and x['no_submissions']
+          assert x['max_official_P01_KDEA_regression_abs']<1e-12
+          assert abs(s[s.policy=='P04'].hypothetical_prelim_attack.item()-.34919703643719757)<1e-12
+          assert (s.TPR010_hits20<=20).all()
+          print('PASS: cohort-leftout QI7 calibration, KDE-A historical P01 regression, no label use in choice')
+          print(s.to_string(index=False))
+          print(p[p.P04_family=='P01'].to_string(index=False))
+          PY
+      - name: Publish aggregate-only proxy risk and official-prelim counterfactual metrics
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p07-qcohort-null"
+          mkdir -p "$EXP/results"
+          for f in cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/results/$f"
+          done
+          (cd "$EXP/results" && sha256sum cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P07公開AIAコホート保留の非会員リスクと仮想予備戦結果を集計'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
