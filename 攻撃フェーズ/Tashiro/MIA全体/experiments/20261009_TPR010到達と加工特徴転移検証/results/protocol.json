@@ -1,0 +1,120 @@
+{
+  "scope": "official preliminary, nontraining fixed22 x 7 backgrounds x 17 eligible target cohorts",
+  "excluded_target_ids": [
+    1,
+    2,
+    12
+  ],
+  "threshold_tpr_at_fpr001": 0.1,
+  "strict_holdout": "method choice for team t uses official truth of other k teams only, never target t",
+  "group_provenance": "public C observed characteristics, never target t truth",
+  "model_selection_bias": "fixed22 candidate pool historically selected and reported using these same preliminary labels; LOOTO alone cannot remove upstream post-selection bias",
+  "target_metric_truth_used_only_after_target_method_choice": true,
+  "features": {
+    "feature_names": [
+      "numeric7_mean_abs_spearman",
+      "QI5_mean_abs_spearman",
+      "Q_sexmatched_QI5_RMS_median",
+      "A1_sexmatched_QI5_RMS_median",
+      "Q_sexmatched_QI5_RMS_lt005",
+      "Q_sexmatched_QI5_RMS_lt001",
+      "public_A_clinical6_joint_rows",
+      "public_A_full13_rows",
+      "A2_full13_rows",
+      "A2_except_prefecture_rows",
+      "full13_duplicates",
+      "BMI_unique",
+      "TG_unique",
+      "ALT_unique",
+      "time_unique",
+      "BMI_public_value_fraction",
+      "FPG_public_value_fraction"
+    ],
+    "log1p_features": [
+      "A2_except_prefecture_rows",
+      "A2_full13_rows",
+      "ALT_unique",
+      "BMI_unique",
+      "Q_sexmatched_QI5_RMS_lt001",
+      "Q_sexmatched_QI5_RMS_lt005",
+      "TG_unique",
+      "full13_duplicates",
+      "public_A_clinical6_joint_rows",
+      "public_A_full13_rows",
+      "time_unique"
+    ],
+    "distance": "Euclidean squared z-score mean over 17 features; clip z to ±3",
+    "public_feature_standardization": "all 17 unlabeled target metadata; no truth",
+    "identical_zero_variance_feature": "set scale 1"
+  },
+  "fixed_rules": [
+    {
+      "name": "nearest3_fullsuccess",
+      "neighbors": 3,
+      "criterion": "full_hit"
+    },
+    {
+      "name": "nearest5_fullsuccess",
+      "neighbors": 5,
+      "criterion": "full_hit"
+    },
+    {
+      "name": "nearest7_fullsuccess",
+      "neighbors": 7,
+      "criterion": "full_hit"
+    },
+    {
+      "name": "nearest3_stable",
+      "neighbors": 3,
+      "criterion": "stable_hit"
+    },
+    {
+      "name": "nearest5_stable",
+      "neighbors": 5,
+      "criterion": "stable_hit"
+    },
+    {
+      "name": "nearest7_stable",
+      "neighbors": 7,
+      "criterion": "stable_hit"
+    },
+    {
+      "name": "nearest3_mean_gain",
+      "neighbors": 3,
+      "criterion": "gain"
+    },
+    {
+      "name": "nearest5_mean_gain",
+      "neighbors": 5,
+      "criterion": "gain"
+    },
+    {
+      "name": "nearest7_mean_gain",
+      "neighbors": 7,
+      "criterion": "gain"
+    },
+    {
+      "name": "random5_fullsuccess",
+      "neighbors": 5,
+      "criterion": "full_hit",
+      "shuffle_neighbors": true
+    }
+  ],
+  "baseline": "Q_prefecture_sex_shrink500_cross01",
+  "views": [
+    "fraction0.5_seed20261007",
+    "fraction0.5_seed20261008",
+    "fraction0.8_seed20261007",
+    "fraction0.8_seed20261008",
+    "fraction0.9_seed20261007",
+    "fraction0.9_seed20261008",
+    "full"
+  ],
+  "source_hashes": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/公開加工特徴.csv": "42c7331d095936bedf7427faeadd6d2ddb9ef68e7bc98349199de2d60fc75de5",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c"
+  },
+  "synthetic_round": false,
+  "main_submission_generated": false,
+  "main_TPR_computed": false
+}
