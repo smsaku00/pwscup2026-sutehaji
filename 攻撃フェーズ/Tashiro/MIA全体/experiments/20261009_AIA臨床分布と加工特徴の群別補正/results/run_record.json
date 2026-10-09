@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-09T04:09:35.452771+00:00",
+  "frozen_utc": "2026-10-09T04:11:08.329015+00:00",
+  "completed_utc": "2026-10-09T04:11:10.952059+00:00",
+  "elapsed_sec": 95.49930677399999,
+  "prediction_conditions": 60,
+  "evaluation_rows": 1104,
+  "primary_target_count": 18,
+  "primary_inference_excludes_1_2": true,
+  "truth_read_after_prediction_freeze": true,
+  "python": "3.13.16",
+  "no_main_data": true,
+  "no_competition_submission": true
+}

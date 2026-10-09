@@ -1,0 +1,9 @@
+{
+  "threshold_source": "18 public C/AIA groups excluding Team1/2; no MIA labels",
+  "imprint_median": -0.02648079229425993,
+  "c_home_median": 0.3265014299332698,
+  "quantized_c_threshold": 0.9,
+  "background_sample_seed": 20261009,
+  "public_reference_A_bg_rows": 1049,
+  "unobserved_AIA_labels": "not accessed or inferred"
+}

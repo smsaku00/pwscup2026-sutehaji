@@ -1,0 +1,32 @@
+{
+  "study": "AIA clinical Q distribution vs target C; unlabeled deconfounding",
+  "primary": "18-target inference excluding teams 1 and 2, mean target TPR@FPR=0.01",
+  "secondary": "20-target inference, report all20 and evaluation-only without teams 1 and 2",
+  "fpr_metrics": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "source_baseline_sha": "28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3",
+  "public_features": [
+    "age",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT"
+  ],
+  "ratio_private_removed": 0.29837940896091514,
+  "remove_count": 313,
+  "q_to_c_reference": "Q target to 1049 C rows vs Q target to fixed 1049 subsampled A_bg rows",
+  "q_to_c_seed": 20261009,
+  "model_groups": [
+    "aia_imprint_high",
+    "quantized_c",
+    "c_home_above_median"
+  ],
+  "retained_score": "P01, known private163=0, other rare11=0.4, normal875 only modified",
+  "no_truth_used_for_prediction_or_group_selection": true,
+  "truth_read_only_after_hashes": true,
+  "evaluation_warning": "Labels are published for this very round and repeatedly explored; group observations are descriptive, not independently validated",
+  "full_round_submission": "unchanged"
+}

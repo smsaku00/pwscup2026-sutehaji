@@ -1,0 +1,602 @@
+[
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "P01",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "eecf67c4783f544193d47648576e30809d988fd8e305857bdb7876a54c20a6ba"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "Cnn_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f2cb7de8655f988901da770296e1bc8fdcbe7d1a2e17cabb687010550cdd5222"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "Qpenalty_005",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "31df6c4264ad0e60dbe729e87420b3040a48bba1b6bcb1f8bd95c3d06e31f582"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "Qpenalty_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "caebffc9eaba7edd554d497e18b31250cfd30e9f6b1aba6bbe741c4b37b6f1f7"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_contrast_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "3a32994c1ab11419b708161bc00ea7e7a33698cb11a0e7d39c8266dddbf0e81d"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_contrast_020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "37e9d342320b95ef2317e47459f866252cfdc3dd9314a37395e89c3ab3f84453"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_residual_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "817b171e6763dea5ff3e9605e08c02fe0ffa74b903a332e9924c26ae0fd66e7b"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "71273f265ee45ab034cc935030e8a566873809321fbe7fc6e2f8f64d27fd7f9f"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "a069441bf2ff5f358bf5d5144e4e7845d38415e40a37ec4f3b010e2d05ff8efa"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_contrast_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f39e5a744309aa62759f5eb07f360cb27e09c8ff05ff0d716e78a2a1843b4446"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_residual_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "ca8cde18009c3272f3ca5602e28da6cad9580467574762bbee1cd630a0c70b9d"
+  },
+  {
+    "background": "full",
+    "inference": "without1_2",
+    "method": "AIA_residual_quantized_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "71273f265ee45ab034cc935030e8a566873809321fbe7fc6e2f8f64d27fd7f9f"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "bb0c36166a7e67f34f3a8f9a35803c4cd0127a8c23838da62f834281d10999e9"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "Cnn_add010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "37723748ed786cfe85633ea96e053a4a9f5cd9d213332985e6b6e3cfa3a14455"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "Qpenalty_005",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "dd24f43f0e3c07eeacfe0c2165814d6f4620c3751ed70d047b4f229a3d67c1a0"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "Qpenalty_010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "608d30a37bec39228c342dccfc4a55c2c29019464b8b57dd949d2bb6f6dfa1d5"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_contrast_010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "e59c6820e95a7b67049908abf251ad33aae85fa3fa24aba33b1ecbc732864f79"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_contrast_020",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "7e4ccc856f2f7dc1196525e9fcceb1632998e0014c7affb6210ccfe8fa041ea0"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_residual_add010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "af709a9d1dd752257b363b19c71a042df7dbe29a1fdf8523772f85c10d169f0a"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_residual_delta010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "4850296a97e80b5bfc47fd118594ff3dbc074166058e41795cf670bb99ecd2c2"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_residual_delta020",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "77294972f0b3d9ad069556b53ad636b800249eefbee5cf72204460f2f43cb82b"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_contrast_high_imprint_010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "0e7204c69ccdd35486049898c8d81c0d55b783ed8e6f8855f7eec45351022e6f"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_residual_high_imprint_010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "ee71367579b1d5d86e8b8d56c56c303cc2fde07c7430e4789cb26cf42de30584"
+  },
+  {
+    "background": "full",
+    "inference": "all20",
+    "method": "AIA_residual_quantized_010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "4850296a97e80b5bfc47fd118594ff3dbc074166058e41795cf670bb99ecd2c2"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "P01",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "8566678d15e5ac64eb4b6b281728cb5ce901fc4161ad61c5bf1e37752917964d"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "Cnn_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "726d883b57b9e5799458a26d4f76081be9313e711f7d5d4c8135f21083088672"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "Qpenalty_005",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "aabecbf961d43125fdb9647ea4354673951cc7de0f5a729aa50b02c30bde8c85"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "Qpenalty_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "4fbfc4cad54069afaf238d3bbf113720ad6da5dba5b08bd8ba2efc5f5902e9dc"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_contrast_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "479f3897bd1aba2b9e8139ffae9441fe142682f786ade4ac7d1b5fd1f2286df0"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_contrast_020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "c82dda4513ba0f8efe6a4bbe5d070e7afbe967b10c1af9e06752710ac65401c0"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_residual_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "c4bfd67e4587d78c624369441555e308991ef4002aefc0173ca00d0b78fb6638"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "c859bc50c6444f0f908a0721a4122c2b8b31c63ead89a9f819fd58b563d819f5"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "a1a08aa618f289d606269113e02c8c751f9cce22d1e0cec120db055437c1559b"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_contrast_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "fe773e7fb5634cf623d7068cb15092e27d77a5a6c15cfc1bd1ac13d06e1b77bd"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_residual_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "cdf51709f9477b6a3fc1dfe2f8d1ebfc0be33376a084a7d6fe6a209cdf2dea59"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "inference": "without1_2",
+    "method": "AIA_residual_quantized_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "c859bc50c6444f0f908a0721a4122c2b8b31c63ead89a9f819fd58b563d819f5"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "P01",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "e6e5218b77d3cc268c5e73be61b950662935b6769449967a6ce53f0e2cdab371"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "Cnn_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "e38663dfac130eb67d7008d094926e199767aecc9c42f59149acf87c764d8750"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "Qpenalty_005",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "d5b0d6294310ca8b169f956aec9316ff503bbea9e925d25034ce5b492f25b526"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "Qpenalty_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "7a80fd68c3a1a7c44655338b2449114ab1991b1ff17f7ae0825e6b691c70ff1f"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_contrast_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "e75445997c5a917c0e48846bac52829430c1adbd67c84acbd77b3252caab99c5"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_contrast_020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "b49df9b075a4bd8bfc8ac89598a22d9b024660f50d3c06e42a70ae5f4d48bf60"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_residual_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "1d074f78f4e685aaa272782238387f9ece7c454f232911cbc0002f3005ae3d06"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "4a747ce0a42611c4fefc1869f9609694c2f5740a3f4b0dd440848eee723ed232"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "8330fa5ee72251da66921992a2bb8ca2245ba4f85b1c246ae87b842aefff8208"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_contrast_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "39969dd8ae1199f373269894f755c93983805f3a461fd4288c4402c235c805e0"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_residual_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f04c205dc3631c239bf654ded4cc827134de6650b66ab03f7bf8dee35839fe81"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "inference": "without1_2",
+    "method": "AIA_residual_quantized_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "4a747ce0a42611c4fefc1869f9609694c2f5740a3f4b0dd440848eee723ed232"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "P01",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "6ec07ed2155d87ac5ad03f867d525d62f4ce230db086a8716bb373f1bfd2d925"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "Cnn_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "89bf5d8c0b322a2da287a282d2d12cd237e7a82f90fc8e05b91e1dec865cec37"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "Qpenalty_005",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "91aaf85be60b599ae620e01a4ba6d711a42c3f03ce7f266c875eea6db452e46b"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "Qpenalty_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f604097db2b6f91bb3ede7d3f0838ada8ff00600743ac4599bbb3c9b607b83be"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_contrast_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "8b7f4884be3414a3c80501ad1f0282fd56eb3daf9906e544c426faba7b521204"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_contrast_020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f2c986450f24b47669cc7660598db27e4f15690fbe1231b801105dc1e5f8424e"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_residual_add010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "bc791bd1066edcd2b45e718ef4387607494381aa14401a69f0ce59bdbfb99ba4"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f6868d28eb4038dc5d25d007f50f1ae719b77983f75070dc19933107245b8688"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_residual_delta020",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "1d5be9e6b6308337079023af062e40b79da6730c79d57027ad69521a918e19f8"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_contrast_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "3c1f828267b7e3f0fa0417499b35b297796902f4bdfdf66eb7d68e898515f195"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_residual_high_imprint_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "1cbe8ecb34dc022705459d4459a4801e557ddac8d807d540b66b5e1ae7dff336"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "inference": "without1_2",
+    "method": "AIA_residual_quantized_010",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "f6868d28eb4038dc5d25d007f50f1ae719b77983f75070dc19933107245b8688"
+  }
+]
