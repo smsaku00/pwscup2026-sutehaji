@@ -228,12 +228,14 @@ def run(root,out):
     fullB["KDEA"]=kderanks-.1*base.rivals(kderanks,np.median)
     risks=[]
     choices_by_hold={}
+    scores_by_hold={}
     for h in probes:
         bcal=np.column_stack([leaveCal[t,h][0] for t in teams])
         hcal=np.column_stack([leaveCal[t,h][1] for t in teams])
         bsignal={"P01":bcal,"P03_Cnn":nnB}
         hsignal={"P01":hcal,"P03_Cnn":nnProbe[h]}
         rv,rn=two_matrices(base,bsignal,hsignal,normal)
+        scores_by_hold[h]=rv  # in-memory only; still no pool_ids
         risks.extend(evaluate_q_risk(rv,rn,normal,teams,h))
         choices_by_hold[h]=len(rn["P01"])
     risks_df=pd.DataFrame(risks)
@@ -308,6 +310,48 @@ def run(root,out):
     s.to_csv(out/"counterfactual_summary.csv",index=False,float_format="%.17g")
     bys.to_csv(out/"target_results.csv",index=False,float_format="%.17g")
 
+    # Control-cohort omission as a METHOD, separately from selecting a
+    # P01-vs-P03 family by negative risk. Cohort h was picked by fixed seed;
+    # scores were computed and frozen before opening published pool_ids.
+    omission=[];omission_score=[]
+    for h in probes:
+        folded={}
+        for method,score in scores_by_hold[h].items():
+            confidence=base.confidence(score,normal,private,rare)
+            for j,t in enumerate(teams):
+                v=float(base.metrics(confidence[:,j],y[:,j])["tpr_0.01"])
+                folded[t,method]=v
+                omission.append({
+                  "excluded_public_Q_cohort":h,"target":t,"method":method,
+                  "tpr_001":v,
+                  "P01_baseline_full_tpr":normalScores["P01"][t],
+                  "delta_from_P01_baseline":v-normalScores["P01"][t]
+                })
+        scores20=[]
+        for t in m:
+            if t in (1,2): val=m[t][0]
+            elif t==12: val=folded[t,"P01"]
+            elif assignments[t]=="KDEB":val=archiveB[t]
+            elif assignments[t]=="KDEA":val=normalScores["KDEA"][t]
+            else:val=folded[t,"P01"]
+            scores20.append((t,val))
+        scoreP=sum(max(v,m[t][1])+aia[t] for t,v in scores20)/20
+        omission_score.append({
+          "excluded_public_Q_cohort":h,
+          "P04_Q_omission_hypothetical_attack":scoreP,
+          "delta_vs_P04_full":scoreP-REF_SCORE,
+          "gap_to_prelim_third":.352845805596271-scoreP,
+          "TPR010_count":sum(v>=.1-1e-12 for t,v in scores20),
+          "P01_all20_mean":float(np.mean([folded[t,"P01"] for t in teams])),
+          "P01_non_1_2_mean":float(np.mean([folded[t,"P01"] for t in teams if t not in (1,2)])),
+          "P03_all20_mean":float(np.mean([folded[t,"P03_Cnn"] for t in teams])),
+          "P01_higher_teams":int(sum(folded[t,"P01"]>normalScores["P01"][t]+1e-12 for t in teams)),
+          "P01_lower_teams":int(sum(folded[t,"P01"]<normalScores["P01"][t]-1e-12 for t in teams))
+        })
+    pd.DataFrame(omission).to_csv(out/"Q_cohort_omission_TPR.csv",index=False,float_format="%.17g")
+    pd.DataFrame(omission_score).to_csv(out/"Q_cohort_omission_counterfactual.csv",
+                                        index=False,float_format="%.17g")
+
     source_sha={str(p.relative_to(root)):sha(p) for p in paths+[root/BASE,root/KDEA_SRC,
        root/HIST,root/GROUP,root/THRESH,root/OFFICIAL,Path(__file__).resolve()]}
     savej(out/"protocol.json",{
@@ -321,6 +365,8 @@ def run(root,out):
         "score_models_Q_public":METHODS,"KDEA_Q_risk_not_evaluable_missing_columns":True,
         "P04_P01_only_policy":True,
         "KDEB_not_score_recomputed":True,
+        "Q_omission_method_comparison_scored_only_after_freeze":True,
+        "Q_omission_all_six_heldouts_reported_no_oracle_best_only":True,
         "prediction_and_choices_frozen_utc":frozen,
         "released_pool_ids_read_after_freeze":True,
         "max_official_P01_KDEA_regression_abs":diff,
@@ -333,6 +379,8 @@ def run(root,out):
         "published_truth_sha256_after_freeze":{str(p.relative_to(root)):sha(p) for p in truthpaths}
     })
     print(s.to_string(index=False))
+    print("Q COHORT OMISSION AS A METHOD:")
+    print(pd.DataFrame(omission_score).to_string(index=False))
     print(pd.DataFrame(discarded).groupby("heldout").cross_cohort_duplicate_QI7_removed.agg(["sum","max"]).to_string())
     print(pd.DataFrame([{"policy":name,"P01_changes":{t:sel[t] for t in TEAM17 if assignments[t]=="P01"}} for name,sel in choices]).to_string(index=False))
     print("seconds",time.perf_counter()-ts)
