@@ -1,0 +1,16 @@
+{
+  "status": "explanatory exploratory risk-selection ablation, NOT independent label-free generalization",
+  "candidate_method_scope": "P01 vs archived KDE-A on five existing P04 KDE-A teams; other cohorts fixed",
+  "policy_method_definitions_seen_past_preliminary_truth": true,
+  "negative_rate_SOURCE": "heldout public background A, 1028 rows x 3 seeds, not official FPR",
+  "Team1_2_official_and_Team12_P01_frozen": true,
+  "official_AIA_rare_MIA_frozen": true,
+  "no_main_submission": true,
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/results/by_target.csv": "099ba3228ec3f4ccdb401dd584a45df3c28ba156701dfc114a84822d425fc42c",
+    "公式データ/予備戦/結果/公開用結果表_20260909.xlsx": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P06_公開非会員の分離評価/results/nonmember_risk_panel.csv": "61b9399b545f50c34488fa9f4dae71776ba6679b760460d9cd0bc3775ac835e6",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P06_公開非会員の分離評価/results/selection_frozen_before_truth.csv": "34dbf591261227e277c9e229e48b011ba944460dffb779ebb45d9defbd04e305"
+  }
+}
