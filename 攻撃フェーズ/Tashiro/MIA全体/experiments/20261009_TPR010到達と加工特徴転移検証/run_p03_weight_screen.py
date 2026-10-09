@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 from scipy.spatial.distance import cdist
 
-JOINT_SHA="28b6a7c6106d89c9bcca6ca138c0b7c03e8dc299c34efd98c9bd4cb3"
+JOINT_SHA="28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3"
 JOINT="攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/run_experiment.py"
 AIA_DIR="攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正"
 VIEW_NAMES=["full","sub80_seed20261009","sub80_seed20261010","sub80_seed20261011"]
