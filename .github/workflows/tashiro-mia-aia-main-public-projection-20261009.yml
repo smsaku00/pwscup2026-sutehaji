@@ -1,0 +1,65 @@
+name: Tashiro MIA AIA clinical public main-group projection (one-off)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-aia-main-public-projection-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  project_main_public:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install analysis dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Project frozen public preliminary group definition onto main public data
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/project_main_public_group.py" --root . --output-dir "$RUNNER_TEMP/mia-aia-main-public"
+      - name: Validate absence of main labels and check group lists
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-aia-main-public'
+          x=pd.read_csv(p/'main_public_group_projection.csv')
+          d=json.loads((p/'main_public_diagnostics.json').read_text())
+          assert len(x)==22 and x.team.nunique()==22 and 28 not in set(x.team)
+          assert len(d["imprint_high_main_teams"])+len(d["imprint_low_main_teams"])==22
+          assert not d["self_B_not_read"] is False
+          assert d["main_TPR_not_computed"] and d["main_predictions_not_generated"]
+          assert d["token_not_read"]
+          print('PASS: 22 public targets only; no B_self, no membership truth, no main score claims')
+          print(x[['team','main_imprint_score','imprint_high_prelim_threshold','margin_from_prelim_cutoff']].to_string(index=False))
+          PY
+      - name: Publish public target aggregates only
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$EXP/main_public"
+          cp "$RUNNER_TEMP/mia-aia-main-public/main_public_group_projection.csv" "$EXP/main_public/"
+          cp "$RUNNER_TEMP/mia-aia-main-public/main_public_diagnostics.json" "$EXP/main_public/"
+          (cd "$EXP/main_public" && sha256sum main_public_group_projection.csv main_public_diagnostics.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/main_public"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：AIA imprintによる本戦22対象の公開特徴群診断を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
