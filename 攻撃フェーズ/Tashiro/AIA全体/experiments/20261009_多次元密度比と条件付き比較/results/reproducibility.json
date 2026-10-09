@@ -1,0 +1,28 @@
+{
+  "verified_after_separate_regeneration": true,
+  "tested_files": 15,
+  "all_files_sha256_identical": true,
+  "files": {
+    "prior_public_scores.csv": true,
+    "density_public_scores.csv": true,
+    "per_team_auc.csv": true,
+    "auc_summary.csv": true,
+    "per_team_metrics.csv": true,
+    "summary.csv": true,
+    "paired_statistics.json": true,
+    "pair_orientation.csv": true,
+    "calibration_counts.csv": true,
+    "placebo_summary.csv": true,
+    "placebo_team.csv": true,
+    "augment_target_metrics.csv": true,
+    "augment_summary.csv": true,
+    "augment_public_predictions.csv": true,
+    "augment_paired_tests.csv": true
+  },
+  "excluded_nondeterministic_metadata": [
+    "augment_design.json:seconds",
+    "manifest.json:seconds"
+  ],
+  "tests_7_passed": true,
+  "source_prior_6846_rows_byte_identical": true
+}

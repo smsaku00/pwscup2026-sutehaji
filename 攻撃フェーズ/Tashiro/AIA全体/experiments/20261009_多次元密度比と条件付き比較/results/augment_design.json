@@ -1,0 +1,69 @@
+{
+  "prior_baseline_recomputed_exact": true,
+  "heldout_cohorts": 21,
+  "base_features": [
+    "member_near4",
+    "member_knn4",
+    "member_near5",
+    "member_partial2",
+    "rank_member_near4",
+    "rank_member_near5",
+    "rank_member_partial2",
+    "c_sbp",
+    "c_tg",
+    "c_hdl",
+    "c_alt",
+    "bg_near4",
+    "bg_knn4",
+    "bg_near5",
+    "rank_bg_near4",
+    "rank_bg_knn4",
+    "bg_sbp",
+    "bg_tg",
+    "bg_hdl",
+    "bg_alt",
+    "contrast_near4",
+    "contrast_knn4",
+    "contrast_near5",
+    "col4",
+    "col2",
+    "col1",
+    "col4_min",
+    "rank_contrast_near4",
+    "rank_col4",
+    "rank_col2",
+    "rank_col1",
+    "ratio_sbp",
+    "ratio_tg",
+    "ratio_hdl",
+    "ratio_alt"
+  ],
+  "density_feature_sets": {
+    "base": [],
+    "plus_local": [
+      "knn2_k1",
+      "kde4_half"
+    ],
+    "plus_smooth": [
+      "kde2_mean6",
+      "kde4_joint",
+      "kde4_cond5"
+    ],
+    "plus_direct": [
+      "direct_lr",
+      "direct_hgb"
+    ],
+    "plus_all": [
+      "knn2_k1",
+      "kde4_half",
+      "kde2_mean6",
+      "kde4_joint",
+      "kde4_cond5",
+      "direct_lr",
+      "direct_hgb"
+    ]
+  },
+  "target_predictions_from_heldout_cohort_labels": false,
+  "logistic_C": 0.04,
+  "seconds": 5.082127736000018
+}

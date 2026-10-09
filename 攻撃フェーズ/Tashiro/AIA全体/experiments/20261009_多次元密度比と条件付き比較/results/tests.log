@@ -1,0 +1,12 @@
+test_kde_direct_sum (test_experiment.Tests.test_kde_direct_sum) ... ok
+test_kde_equal (test_experiment.Tests.test_kde_equal) ... ok
+test_kde_weight_permutations (test_experiment.Tests.test_kde_weight_permutations) ... ok
+test_knn_ratio_known (test_experiment.Tests.test_knn_ratio_known) ... ok
+test_score_formula (test_experiment.Tests.test_score_formula) ... ok
+test_soft_rank_row_stability (test_experiment.Tests.test_soft_rank_row_stability) ... ok
+test_top75 (test_experiment.Tests.test_top75) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
