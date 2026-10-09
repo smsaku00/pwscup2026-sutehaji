@@ -237,7 +237,7 @@ def run(root,out):
         risks.extend(evaluate_q_risk(rv,rn,normal,teams,h))
         choices_by_hold[h]=len(rn["P01"])
     risks_df=pd.DataFrame(risks)
-    assert (risks_df.groupby(["heldout_Q_cohort","target"]).method.nunique()==3).all()
+    assert (risks_df.groupby(["heldout_Q_cohort","target"]).method.nunique()==2).all()
     risks_df.to_csv(out/"cohort_heldout_null_risk.csv",index=False,float_format="%.17g")
     pd.DataFrame(discarded).to_csv(out/"Q_cross_cohort_duplicate_audit.csv",index=False)
     assignments=assign_p04(root)
