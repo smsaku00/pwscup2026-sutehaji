@@ -1,0 +1,21 @@
+{
+  "verified_date_jst": "2026-10-10",
+  "submission_id": 969661,
+  "submission_status_from_user_screenshot": "Finished",
+  "submission_filename_from_user_screenshot": "PWSCup2026_team28_round4.zip",
+  "csv_source": "ユーザー提供のPWSCup2026_team28_round4内F_mia.csv。バイト列を変更せず保存。",
+  "server_input_hash_checked": false,
+  "submission_timestamp": "未確認",
+  "F_mia_sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+  "F_mia_bytes": 394665,
+  "round3_csv_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+  "round3_score_source": "../../AIA/第3回/detailed_results.html",
+  "round4_score_source": "../../AIA/第4回/detailed_results.html",
+  "round4_score_archive_sha256": "30f9f7bed48d6ddc07f6e962f0d6ac7aebfeaebe6adfc1ced5f780cf7337b2fd",
+  "raw_mia_tpr_rare": {
+    "3": "0.017203703703703704",
+    "4": "0.010814814814814814"
+  },
+  "AIA_input_identity": "本照合の対象外・実提出同一性未確認",
+  "excluded": "token.txt、認証情報、元の個票データ、画面画像は掲載していない"
+}
