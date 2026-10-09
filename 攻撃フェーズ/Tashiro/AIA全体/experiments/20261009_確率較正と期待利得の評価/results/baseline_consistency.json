@@ -1,0 +1,11 @@
+{
+  "matched_target_model_pairs": 42,
+  "max_score_errors": {
+    "r_all": 0.0,
+    "r_rare": 0.0,
+    "r_max": 0.0,
+    "hit_m": 0.0,
+    "hit_c": 0.0
+  },
+  "published_density_added_baseline_exact": true
+}

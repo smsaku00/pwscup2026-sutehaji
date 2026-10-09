@@ -1,0 +1,13 @@
+test_action_optimizer_extremes (test_calibrated_policy.CalibrationDecisionTests.test_action_optimizer_extremes) ... ok
+test_inner_oof_target_truth_not_used (test_calibrated_policy.CalibrationDecisionTests.test_inner_oof_target_truth_not_used) ... ok
+test_isotonic_tie_break_preserves_original_score_order (test_calibrated_policy.CalibrationDecisionTests.test_isotonic_tie_break_preserves_original_score_order) ... ok
+test_platt_is_monotonic (test_calibrated_policy.CalibrationDecisionTests.test_platt_is_monotonic) ... ok
+test_projection_half_prior_reached_with_alpha1 (test_calibrated_policy.CalibrationDecisionTests.test_projection_half_prior_reached_with_alpha1) ... ok
+test_projection_row_permutation (test_calibrated_policy.CalibrationDecisionTests.test_projection_row_permutation) ... ok
+test_real_score_consistency_with_older_module (test_calibrated_policy.CalibrationDecisionTests.test_real_score_consistency_with_older_module) ... ok
+test_safe_optimizer_maintains_unselected_zero (test_calibrated_policy.CalibrationDecisionTests.test_safe_optimizer_maintains_unselected_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.159s
+
+OK

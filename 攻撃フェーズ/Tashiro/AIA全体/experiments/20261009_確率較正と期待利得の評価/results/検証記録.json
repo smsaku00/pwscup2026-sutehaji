@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "data": "official preliminary",
+  "official_input_sha256_matched": 65,
+  "input_mismatch": 0,
+  "parent_experiment": "20261009_多次元密度比と条件付き比較",
+  "prior_source": "20261009_標的対照の独立証拠とソフト群制約",
+  "all_outer_cohorts": 21,
+  "nonself_main": 20,
+  "processed": 18,
+  "nested_calibration_folds": [
+    3,
+    4,
+    5
+  ],
+  "source_scoring_comparisons_exact": 42,
+  "reproducible_outputs_byte_identical": 9,
+  "unittest_passed": 8,
+  "target_truth_used_for_prediction": false,
+  "rare_z": 1.64,
+  "phi_applied": false,
+  "competition_submission_created": false,
+  "training_cohort_group_exclusion_posthoc": true,
+  "method_selection_using_same_public_preliminary_truth": true,
+  "interpretation": "Exploratory only. No defensible generalization or adoption recommendation."
+}
