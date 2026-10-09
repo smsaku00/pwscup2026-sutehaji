@@ -1,0 +1,5 @@
+policy,targets,TPR010_hits,new_TPR010_hits,lost_TPR010_hits,mean_full_TPR,mean_delta_P01,improved_targets,worsened_targets,targets_with_changed_method,methods_selected
+P01,18,2,0,0,0.025495409939854372,0,0,0,0,P01:18
+strict_TPR010,18,2,0,0,0.025495409939854372,0,0,0,0,P01:18
+four_bg_guard,18,2,0,0,0.025495409939854372,0,0,0,1,P01:17;sparse_top20_margin0.005_penalty0.02:1
+best_full_mean,18,1,0,1,0.025580880025324462,8.5470085470089251e-05,1,1,18,sparse_top20_margin0.005_penalty0.02:16;sparse_top20_margin0.001_penalty0.02:1;sparse_top10_margin0.005_penalty0.02:1

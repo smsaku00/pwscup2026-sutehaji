@@ -1,0 +1,20 @@
+{
+  "scope": "official preliminary P01/P08D small-gap frozen method panel; 18 target cohorts excluding 1,2",
+  "policy_candidates": [
+    "P01",
+    "strict_TPR010",
+    "four_bg_guard",
+    "best_full_mean"
+  ],
+  "input_method_count": 19,
+  "inner_selection": "For heldout target t, inspect other17 released preliminary full and 4 background score rows only",
+  "inner_holdout_target_label_access": false,
+  "P08D_family_still_devised_after_repeated_preliminary_label_exposure": true,
+  "backgrounds_not_independent": true,
+  "no_new_predictions": true,
+  "not_independent_external_validation": true,
+  "no_main_submission": true,
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08D_上位競合だけの疎な排他補正/small_gap/by_target.csv": "4d9057229f520de923c4e2f7a4d032acd7308d6c7b40cb13ac860311c880b0ce"
+  }
+}
