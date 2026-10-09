@@ -44,7 +44,9 @@
   "KDEA_Q_risk_not_evaluable_missing_columns": true,
   "P04_P01_only_policy": true,
   "KDEB_not_score_recomputed": true,
-  "prediction_and_choices_frozen_utc": "2026-10-09T13:28:08.935295+00:00",
+  "Q_omission_method_comparison_scored_only_after_freeze": true,
+  "Q_omission_all_six_heldouts_reported_no_oracle_best_only": true,
+  "prediction_and_choices_frozen_utc": "2026-10-09T13:32:09.388984+00:00",
   "released_pool_ids_read_after_freeze": true,
   "max_official_P01_KDEA_regression_abs": 1.942890293094024e-16,
   "official_team1_team2_TPR_retained": true,
@@ -107,7 +109,7 @@
     "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/public_target_groups.csv": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2",
     "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/group_thresholds.json": "ddc4c3fe9bdd1ef5ab0535a34e9b96b8bfb20a2a47d976d653aea0a34c0408af",
     "公式データ/予備戦/結果/公開用結果表_20260909.xlsx": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508",
-    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P07_公開AIAコホート保留と方式選択/run_qcohort_holdout.py": "baf51e8ae406a1744e2ddabd105c7dbdc8679bd0e225a37c2fac5f210bbb4e53"
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P07_公開AIAコホート保留と方式選択/run_qcohort_holdout.py": "d445443172c45adb924d40f62303c9ebe7765497865ad63bd416fbe0c0e27f98"
   },
   "published_truth_sha256_after_freeze": {
     "公式データ/予備戦/結果/正解データ/pool_ids_1.csv": "8b1eb7de2bb17f1e3dd9c9c42918257a09152f65a9fe936d76865837ae959586",
