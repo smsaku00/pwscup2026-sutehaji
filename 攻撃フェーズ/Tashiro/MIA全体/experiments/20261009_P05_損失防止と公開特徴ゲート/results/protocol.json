@@ -1,0 +1,108 @@
+{
+  "status": "P05 exploratory post-hoc, no heldout test, not an official submission",
+  "public_feature_gates_outcome_informed": true,
+  "source_MIA_from_archived_22_methods_and_P03_full": true,
+  "P03_background_scope_limit": "P03 was evaluated on other A_bg draws: only SAME full background comparable, no seven-background claim",
+  "source_candidates_selected_after_exposed_preliminary_truth": true,
+  "baseline_official_attack_reconstructed": 0.3297953270354882,
+  "P04_counterfactual_20_target_attack": 0.34919703643719757,
+  "official_rank_converted_to_hypothetical_rank": true,
+  "fixed_official_AIA_and_rare_MIA": true,
+  "Team1_2": "Retain actual official preliminary MIA full target TPR 0.80,1.00; actual response records not regenerated",
+  "Team12": "Use simulated P01 0.076923, not original 0",
+  "public_Q_RMS_median": 0.1985944340963505,
+  "methods_and_candidate_rules": {
+    "P04": {
+      "copy": false,
+      "close": false,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_copy_only": {
+      "copy": true,
+      "close": false,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_close_only": {
+      "copy": false,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_copy_and_close": {
+      "copy": true,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_copy_loose80": {
+      "copy": true,
+      "close": false,
+      "copy_frac": 0.8,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_copy_strict100": {
+      "copy": true,
+      "close": false,
+      "copy_frac": 1.0,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_close_rms08": {
+      "copy": false,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 0.8,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_close_rms12": {
+      "copy": false,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.2,
+      "uniq": 0.9,
+      "nclose": 2
+    },
+    "P05_close_require3": {
+      "copy": false,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 3
+    },
+    "P05_close_relaxed1": {
+      "copy": false,
+      "close": true,
+      "copy_frac": 0.9,
+      "rms_ratio": 1.0,
+      "uniq": 0.9,
+      "nclose": 1
+    }
+  },
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/公開加工特徴.csv": "42c7331d095936bedf7427faeadd6d2ddb9ef68e7bc98349199de2d60fc75de5",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/public_target_groups.csv": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証/p04_family_split/five_public_rules_by_team.csv": "387a249b766211b82f3aa9242ac112f6fe7c001faf5961d9cbd755dbf2e1a4f2",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/posthoc/gated_by_target.csv": "4962b6978df91af02b34db22b1fffab04d151e0a47b6b8d0acf3aa2570cb43f7",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/results/by_target.csv": "099ba3228ec3f4ccdb401dd584a45df3c28ba156701dfc114a84822d425fc42c",
+    "公式データ/予備戦/結果/公開用結果表_20260909.xlsx": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508"
+  },
+  "no_person_level_truth_or_scores_written": true,
+  "main_B_data_not_read": true,
+  "no_main_submission": true
+}
