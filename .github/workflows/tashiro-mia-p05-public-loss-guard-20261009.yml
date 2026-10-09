@@ -1,0 +1,73 @@
+name: Tashiro MIA P05 public-feature loss guard preliminary simulation
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p05-public-loss-guard-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P05_損失防止と公開特徴ゲート'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install numeric analysis and Excel reader
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3 openpyxl==3.1.5
+      - name: Test public-only gate and scoring semantics
+        run: python -m unittest discover -s "$EXP" -p test_p05.py -v
+      - name: Reconstruct official prelim attack power with P05 public gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p05.py" --root . --out "$RUNNER_TEMP/p05-loss-guard"
+      - name: Audit losses, score round and background comparability
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p05-loss-guard'
+          s=pd.read_csv(p/'summary.csv')
+          t=pd.read_csv(p/'by_target.csv')
+          bg=pd.read_csv(p/'backgrounds.csv')
+          proto=json.loads((p/'protocol.json').read_text())
+          assert len(s)==10 and len(t)==170
+          assert abs(proto['baseline_official_attack_reconstructed']-.3297953270354882)<1e-12
+          assert abs(s[s.rule=='P04'].simulated_attack_power.item()-.34919703643719757)<1e-12
+          assert s[s.rule=='P05_copy_only'].background_comparable_N.item()==7
+          assert s[s.rule=='P05_copy_and_close'].background_comparable_N.item()==1
+          assert proto['public_feature_gates_outcome_informed']
+          assert not proto['no_main_submission']
+          assert (s.prelim_attack_010_hits_20<=20).all()
+          assert (s.pseudo_rank_if_added>=1).all()
+          print('PASS: P05 tests, official attack exact regression, 10 rules, 170 target rows, 7 background boundary')
+          print(s[['rule','simulated_attack_power','delta_old_official','gap_to_third','pseudo_rank_if_added','background_comparable_N','stable_7bg_targets']].to_string(index=False))
+          print(t[(t.rule.isin(['P05_copy_only','P05_close_only','P05_copy_and_close'])) &
+                  (t.full_delta.abs()>1e-12)][['rule','team','reason','assigned_method','full_tpr','full_delta']].to_string(index=False))
+          PY
+      - name: Publish aggregate-only comparisons and public features
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p05-loss-guard"
+          mkdir -p "$EXP/results"
+          for f in summary.csv by_target.csv backgrounds.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/results/$f"
+          done
+          (cd "$EXP/results" && sha256sum summary.csv by_target.csv backgrounds.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P05公開特徴ゲートの予備戦仮想得点・7背景耐性を保存'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
