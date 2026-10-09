@@ -44,7 +44,7 @@ jobs:
           assert s[s.rule=='P05_copy_only'].background_comparable_N.item()==7
           assert s[s.rule=='P05_copy_and_close'].background_comparable_N.item()==1
           assert proto['public_feature_gates_outcome_informed']
-          assert not proto['no_main_submission']
+          assert proto['no_main_submission']
           assert (s.prelim_attack_010_hits_20<=20).all()
           assert (s.pseudo_rank_if_added>=1).all()
           print('PASS: P05 tests, official attack exact regression, 10 rules, 170 target rows, 7 background boundary')
