@@ -1,0 +1,76 @@
+name: Tashiro MIA 13-attribute KDE rank-fusion TPR010 preliminary screen
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-kde-rank-fusion-010-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 27
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install fixed dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Check KDE numerical conditions
+        shell: bash
+        run: python -m unittest discover -s "$EXP" -p 'test_kde_rank_fusion.py' -v
+      - name: Compute fixed public KDE ratios, then P01 ensemble before truth
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_kde_rank_fusion.py" --root . --output-dir "$RUNNER_TEMP/kde-rank-fusion"
+      - name: Verify baseline, 18-target evaluation and threshold counts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'kde-rank-fusion'
+          s=pd.read_csv(p/'summary.csv')
+          b=pd.read_csv(p/'by_target.csv')
+          st=pd.read_csv(p/'threshold_stability.csv')
+          prot=json.loads((p/'protocol.json').read_text())
+          assert len(s)==4*13 and len(b)==4*13*18
+          assert b.team.nunique()==18 and 1 not in set(b.team) and 2 not in set(b.team)
+          assert len(st)==18*13 and (st.full_or_any_hits<=4).all()
+          assert s.method.nunique()==13
+          assert (s.reached_010>=s.new_reached_010).all()
+          assert (s[s.method=='P01'].mean_delta_p01.abs()<1e-12).all()
+          assert prot['not_exact_archived_KDE'] and not prot['main_submission_modified']
+          print('PASS: numeric KDE, fixed-source P01, 936 scored cohort-method cases')
+          print(s[s.background=='full'][['method','mean_tpr','reached_010','new_reached_010','lost_reached_010','improved','worsened']].to_string(index=False))
+          PY
+      - name: Publish only aggregated target metrics
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/kde-rank-fusion"
+          mkdir -p "$EXP/new_kde_fusion"
+          for x in by_target.csv summary.csv threshold_stability.csv prediction_hashes.json protocol.json; do
+            test -s "$src/$x"
+            cp "$src/$x" "$EXP/new_kde_fusion/$x"
+          done
+          (cd "$EXP/new_kde_fusion" && sha256sum by_target.csv summary.csv threshold_stability.csv prediction_hashes.json protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/new_kde_fusion"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：13属性KDE密度比とP01混合のTPR0.10結果を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
