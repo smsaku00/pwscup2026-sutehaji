@@ -1,0 +1,55 @@
+{
+  "status": "Post-hoc exploratory method selection from inspected preliminary labels",
+  "method_switching": "Public AIA/C target features; whole target column from already frozen prediction",
+  "no_new_person_predictions": true,
+  "selection_bias": true,
+  "rules": {
+    "P01": [
+      "P01",
+      "always"
+    ],
+    "Cnn_all": [
+      "Cnn_add010",
+      "always"
+    ],
+    "Cnn_imprint_high": [
+      "Cnn_add010",
+      "imprint_high"
+    ],
+    "Cnn_imprint_low_control": [
+      "Cnn_add010",
+      "imprint_low"
+    ],
+    "Cnn_imprint_high_LOO_public": [
+      "Cnn_add010",
+      "imprint_high_loo"
+    ],
+    "Cnn_C_home_high_control": [
+      "Cnn_add010",
+      "home_high"
+    ],
+    "Cnn_quantized_C_control": [
+      "Cnn_add010",
+      "quantized"
+    ],
+    "AIA_residual_imprint_high": [
+      "AIA_residual_add010",
+      "imprint_high"
+    ]
+  },
+  "group_threshold_excludes_teams_1_2": true,
+  "imprint_high_targets": [
+    3,
+    7,
+    8,
+    9,
+    13,
+    18,
+    20,
+    23,
+    26
+  ],
+  "source_scored_rows_sha256": "da2d32a592a74aa63dd2b64794b59171872269a34ac973f47cf3342cd41a8f44",
+  "source_public_features_sha256": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2",
+  "independent_validation": false
+}
