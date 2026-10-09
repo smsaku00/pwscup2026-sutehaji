@@ -1,4 +1,4 @@
-target,positives,self_home_positives,nn_tpr_at_fpr001,nonhome_plus_005,nonhome_plus_010,nonhome_plus_020,nonhome_plus_010_gate080
+target,positives,self_home_positives,nn,nonhome_plus_005,nonhome_plus_010,nonhome_plus_020,nonhome_plus_010_gate080
 1,25,2,0.8000000000,0.7200000000,0.7200000000,0.7200000000,0.7200000000
 2,25,1,0.6400000000,0.8400000000,0.8400000000,0.8400000000,0.8400000000
 3,25,3,0.0000000000,0.0000000000,0.0000000000,0.0000000000,0.0000000000
