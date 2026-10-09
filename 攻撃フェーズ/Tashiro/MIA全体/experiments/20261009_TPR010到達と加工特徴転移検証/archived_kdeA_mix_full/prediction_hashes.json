@@ -1,0 +1,102 @@
+[
+  {
+    "background": "full",
+    "scope": "infer18",
+    "method": "P01",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "eecf67c4783f544193d47648576e30809d988fd8e305857bdb7876a54c20a6ba"
+  },
+  {
+    "background": "full",
+    "scope": "infer18",
+    "method": "originalKDEA_mix0.25",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "689cb2e30a8bf728d968138a6ea52200dd0681983200dd512d166887d92ec3de"
+  },
+  {
+    "background": "full",
+    "scope": "infer18",
+    "method": "originalKDEA_mix0.5",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "286d49187af49dc46f05ffcbdc302cc8cb17cbd2dfb6124b74ea65dff5b219c3"
+  },
+  {
+    "background": "full",
+    "scope": "infer18",
+    "method": "originalKDEA_mix0.75",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "279c33025a123f8c2cb0f6e2a5e109d4def2c11261098090de7724e32b11fd2c"
+  },
+  {
+    "background": "full",
+    "scope": "infer18",
+    "method": "originalKDEA_mix1",
+    "shape": [
+      875,
+      18
+    ],
+    "sha256": "af474e3b85280c8a50ec94c65c83f6513eebb8067a380501c647561985052b62"
+  },
+  {
+    "background": "full",
+    "scope": "infer20",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "bb0c36166a7e67f34f3a8f9a35803c4cd0127a8c23838da62f834281d10999e9"
+  },
+  {
+    "background": "full",
+    "scope": "infer20",
+    "method": "originalKDEA_mix0.25",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "e1823c9fc91165b688786c678c207f4db5549f53c3a600c204a3bf96946dae10"
+  },
+  {
+    "background": "full",
+    "scope": "infer20",
+    "method": "originalKDEA_mix0.5",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "0db4c9c478e6a5809d39414d6f5b6fddf8f0900c5b30ed62c459830cece6e2fb"
+  },
+  {
+    "background": "full",
+    "scope": "infer20",
+    "method": "originalKDEA_mix0.75",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "a225c80c961c0a4f7252009cc04fbc3fa2e06adc876a3b78860db3624ea94471"
+  },
+  {
+    "background": "full",
+    "scope": "infer20",
+    "method": "originalKDEA_mix1",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "bad159829c1acaba475bc3bee4e1643287b0e44d9371fa82ef6a0476c0fd49b6"
+  }
+]
