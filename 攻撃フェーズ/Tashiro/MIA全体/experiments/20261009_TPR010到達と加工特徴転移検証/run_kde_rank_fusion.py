@@ -87,7 +87,15 @@ def log_density(distance,bandwidth,reference_n):
 
 def public_kde(common,b,a,cs,targets):
     """Return log(C density/A density) with public-only references, no pool_ids."""
-    scale=common.scales(a,NUM)
+    background_numeric=common.numbers(a,NUM)
+    q25=np.quantile(background_numeric,.25,axis=0)
+    q75=np.quantile(background_numeric,.75,axis=0)
+    iqr_scale=(q75-q25)/1.349
+    std_scale=np.std(background_numeric,axis=0)
+    # time and other event variables can have zero IQR in the official A_bg.
+    # Use a fixed public-only fallback; do not use hidden membership outcomes.
+    scale=np.where(iqr_scale>1e-9,iqr_scale,np.maximum(std_scale,1.0))
+    assert np.isfinite(scale).all() and np.all(scale>0)
     x=transform(common,b,scale)
     ax=transform(common,a,scale)
     rng=np.random.default_rng(SEED)
