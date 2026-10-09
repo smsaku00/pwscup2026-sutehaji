@@ -1,0 +1,31 @@
+{
+  "source": "official preliminary 21 cohorts",
+  "seed": 20261009,
+  "all21_outer_folds": 7,
+  "processed18_outer_folds": 6,
+  "inner_folds": 3,
+  "candidate_count": 14,
+  "candidates": [
+    "c_bg:lr_c001",
+    "c_bg:lr_c004",
+    "c_bg:lr_c02",
+    "c_bg:hgb_shallow",
+    "c_bg:hgb_original",
+    "c_bg:hgb_fine",
+    "c_bg:lgb_conservative",
+    "c_bg_local:lr_c001",
+    "c_bg_local:lr_c004",
+    "c_bg_local:lr_c02",
+    "c_bg_local:hgb_shallow",
+    "c_bg_local:hgb_original",
+    "c_bg_local:hgb_fine",
+    "c_bg_local:lgb_conservative"
+  ],
+  "selection_objectives": [
+    "per-cohort mean r_all",
+    "mean AUC"
+  ],
+  "test_truth_used_for_selection": false,
+  "nested_is_true_separation": true,
+  "policy": "unchanged 75% 9.5/0, alternative 9.5/11 diagnostics only"
+}

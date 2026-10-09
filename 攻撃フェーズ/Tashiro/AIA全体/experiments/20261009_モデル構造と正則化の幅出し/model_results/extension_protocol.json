@@ -1,0 +1,49 @@
+{
+  "stage": "post-initial grid extension",
+  "nested_selector_eligible": false,
+  "models": [
+    [
+      "lr_c10",
+      "lr",
+      {
+        "C": 10.0
+      }
+    ],
+    [
+      "lr_c100",
+      "lr",
+      {
+        "C": 100.0
+      }
+    ],
+    [
+      "xgb_conservative",
+      "xgb",
+      {
+        "n_estimators": 90,
+        "max_depth": 2,
+        "min_child_weight": 85,
+        "reg_lambda": 30,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    ],
+    [
+      "xgb_flexible",
+      "xgb",
+      {
+        "n_estimators": 120,
+        "max_depth": 4,
+        "min_child_weight": 35,
+        "reg_lambda": 10,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.85
+      }
+    ]
+  ],
+  "reason": "check whether larger logistic C or a different histogram booster changes initial trend",
+  "target_label_leakage": false,
+  "selection_not_tested": true
+}

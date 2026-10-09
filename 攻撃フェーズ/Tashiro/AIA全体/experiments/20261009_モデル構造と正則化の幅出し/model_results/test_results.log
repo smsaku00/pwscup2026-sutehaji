@@ -1,0 +1,15 @@
+test_density_reference_inputs (__main__.ModelBreadthTests.test_density_reference_inputs) ... ok
+test_inputs_and_rows (__main__.ModelBreadthTests.test_inputs_and_rows) ... ok
+test_limited_baseline_reproduction (__main__.ModelBreadthTests.test_limited_baseline_reproduction) ... ok
+test_limited_policy_cap_and_shared_incumbent (__main__.ModelBreadthTests.test_limited_policy_cap_and_shared_incumbent) ... ok
+test_nested_folds_disjoint (__main__.ModelBreadthTests.test_nested_folds_disjoint) ... ok
+test_nested_selection_training_test_disjoint (__main__.ModelBreadthTests.test_nested_selection_training_test_disjoint) ... ok
+test_no_secret_columns_in_features (__main__.ModelBreadthTests.test_no_secret_columns_in_features) ... ok
+test_r_score_constraints (__main__.ModelBreadthTests.test_r_score_constraints) ... ok
+test_source_baseline_reproduces (__main__.ModelBreadthTests.test_source_baseline_reproduces) ... ok
+test_summary_vs_raw (__main__.ModelBreadthTests.test_summary_vs_raw) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.025s
+
+OK

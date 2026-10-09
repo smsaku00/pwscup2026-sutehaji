@@ -1,0 +1,41 @@
+{
+  "fixed_incumbent": "c_bg_local logistic C=.04 LOTO sex top75 9.5/0",
+  "action": "at most 10 incumbent selected rows to 11 years with leave-one-target-out Platt probability and other-cohort rates/gain threshold .02",
+  "inner_training_teams_excludes_target": true,
+  "inner_folds": 4,
+  "target_truth_only_for_posthoc_scoring": true,
+  "baseline_training_r_lambda_fixed_to_reference": true,
+  "decision_models": [
+    [
+      "reference",
+      "c_bg_local",
+      "lr_c004"
+    ],
+    [
+      "LR_C2",
+      "c_bg",
+      "lr_c2"
+    ],
+    [
+      "LR_C10",
+      "c_bg",
+      "lr_c10"
+    ],
+    [
+      "LR_local_C02",
+      "c_bg_local",
+      "lr_c02"
+    ],
+    [
+      "HGB_shallow",
+      "c_bg",
+      "hgb_shallow"
+    ],
+    [
+      "XGB_flexible_local",
+      "c_bg_local",
+      "xgb_flexible"
+    ]
+  ],
+  "not_prior_registered_candidates": true
+}

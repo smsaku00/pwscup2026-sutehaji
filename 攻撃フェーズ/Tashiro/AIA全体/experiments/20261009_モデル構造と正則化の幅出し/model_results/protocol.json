@@ -1,0 +1,223 @@
+{
+  "seed": 20261009,
+  "source": "PWS CUP 2026 official prelim",
+  "evaluation": "21 leave-one-target-cohort-out models; 20 nonself and 18 processed",
+  "source_before_results": true,
+  "model_specifications": [
+    {
+      "model": "lr_c0002",
+      "family": "lr",
+      "params": {
+        "C": 0.002
+      }
+    },
+    {
+      "model": "lr_c001",
+      "family": "lr",
+      "params": {
+        "C": 0.01
+      }
+    },
+    {
+      "model": "lr_c004",
+      "family": "lr",
+      "params": {
+        "C": 0.04
+      }
+    },
+    {
+      "model": "lr_c02",
+      "family": "lr",
+      "params": {
+        "C": 0.2
+      }
+    },
+    {
+      "model": "lr_c2",
+      "family": "lr",
+      "params": {
+        "C": 2.0
+      }
+    },
+    {
+      "model": "hgb_shallow",
+      "family": "hgb",
+      "params": {
+        "max_iter": 75,
+        "max_leaf_nodes": 6,
+        "min_samples_leaf": 150,
+        "l2_regularization": 30,
+        "learning_rate": 0.04
+      }
+    },
+    {
+      "model": "hgb_original",
+      "family": "hgb",
+      "params": {
+        "max_iter": 100,
+        "max_leaf_nodes": 10,
+        "min_samples_leaf": 85,
+        "l2_regularization": 20,
+        "learning_rate": 0.045
+      }
+    },
+    {
+      "model": "hgb_medium",
+      "family": "hgb",
+      "params": {
+        "max_iter": 125,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 65,
+        "l2_regularization": 12,
+        "learning_rate": 0.045
+      }
+    },
+    {
+      "model": "hgb_fine",
+      "family": "hgb",
+      "params": {
+        "max_iter": 145,
+        "max_leaf_nodes": 28,
+        "min_samples_leaf": 35,
+        "l2_regularization": 5,
+        "learning_rate": 0.045
+      }
+    },
+    {
+      "model": "rf_conservative",
+      "family": "rf",
+      "params": {
+        "n_estimators": 40,
+        "min_samples_leaf": 45,
+        "max_depth": 8,
+        "max_features": 0.7
+      }
+    },
+    {
+      "model": "extra_trees",
+      "family": "extra",
+      "params": {
+        "n_estimators": 50,
+        "min_samples_leaf": 25,
+        "max_depth": 12,
+        "max_features": 0.7
+      }
+    },
+    {
+      "model": "lgb_conservative",
+      "family": "lgb",
+      "params": {
+        "n_estimators": 100,
+        "num_leaves": 7,
+        "max_depth": 5,
+        "min_child_samples": 140,
+        "reg_lambda": 40,
+        "learning_rate": 0.045
+      }
+    },
+    {
+      "model": "lgb_flexible",
+      "family": "lgb",
+      "params": {
+        "n_estimators": 140,
+        "num_leaves": 18,
+        "max_depth": 7,
+        "min_child_samples": 55,
+        "reg_lambda": 12,
+        "learning_rate": 0.04
+      }
+    },
+    {
+      "model": "catboost_regular",
+      "family": "cat",
+      "params": {
+        "iterations": 120,
+        "depth": 4,
+        "l2_leaf_reg": 20,
+        "learning_rate": 0.055
+      }
+    }
+  ],
+  "feature_specifications": {
+    "c_bg": [
+      "member_near4",
+      "member_knn4",
+      "member_near5",
+      "member_partial2",
+      "rank_member_near4",
+      "rank_member_near5",
+      "rank_member_partial2",
+      "c_sbp",
+      "c_tg",
+      "c_hdl",
+      "c_alt",
+      "bg_near4",
+      "bg_knn4",
+      "bg_near5",
+      "rank_bg_near4",
+      "rank_bg_knn4",
+      "bg_sbp",
+      "bg_tg",
+      "bg_hdl",
+      "bg_alt",
+      "contrast_near4",
+      "contrast_knn4",
+      "contrast_near5",
+      "col4",
+      "col2",
+      "col1",
+      "col4_min",
+      "rank_contrast_near4",
+      "rank_col4",
+      "rank_col2",
+      "rank_col1",
+      "ratio_sbp",
+      "ratio_tg",
+      "ratio_hdl",
+      "ratio_alt"
+    ],
+    "c_bg_local": [
+      "member_near4",
+      "member_knn4",
+      "member_near5",
+      "member_partial2",
+      "rank_member_near4",
+      "rank_member_near5",
+      "rank_member_partial2",
+      "c_sbp",
+      "c_tg",
+      "c_hdl",
+      "c_alt",
+      "bg_near4",
+      "bg_knn4",
+      "bg_near5",
+      "rank_bg_near4",
+      "rank_bg_knn4",
+      "bg_sbp",
+      "bg_tg",
+      "bg_hdl",
+      "bg_alt",
+      "contrast_near4",
+      "contrast_knn4",
+      "contrast_near5",
+      "col4",
+      "col2",
+      "col1",
+      "col4_min",
+      "rank_contrast_near4",
+      "rank_col4",
+      "rank_col2",
+      "rank_col1",
+      "ratio_sbp",
+      "ratio_tg",
+      "ratio_hdl",
+      "ratio_alt",
+      "knn2_k1",
+      "kde4_half"
+    ]
+  },
+  "policy": "sex top ceil75% gets 9.5y, others 0y; alternate 11y fixed",
+  "selection": "No within-cohort oracle choices; across-model winner is descriptive, requires nested selection",
+  "rows": 191688,
+  "time_seconds": 219.0
+}
