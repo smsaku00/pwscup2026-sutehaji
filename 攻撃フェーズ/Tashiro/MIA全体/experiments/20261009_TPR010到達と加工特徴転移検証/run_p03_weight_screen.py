@@ -47,8 +47,9 @@ def load_group(root,teams):
     assert x.team.is_unique and len(x)==20
     selected=set(x.loc[x.aia_imprint_high==1,"team"])
     active=np.array([team in selected for team in teams],dtype=bool)
-    assert sum(active)==9
-    return active,group_file,sorted(selected)
+    count18=sum(team in selected for team in TARGET_18)
+    assert count18==9, (count18,sorted(selected))
+    return active,group_file,sorted(selected.intersection(TARGET_18))
 
 
 def nearest_features(common,b,a,cs,teams):
