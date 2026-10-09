@@ -68,8 +68,15 @@ jobs:
           git add "$EXP/archived_kdeA_mix_4bg"
           git diff --cached --quiet && exit 0
           git commit -m 'MIA全体：旧KDE Aの数値再現とP01混合を予備戦で検証'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 3))
+          done
+          echo 'Unable to push the aggregate results after six attempts' >&2
+          exit 1
 
 # Four backgrounds; preserve the previous full-only outputs under a separate directory.
+
+# Retry-safe archival run: keep earlier full-only and other aggregate commits intact.
