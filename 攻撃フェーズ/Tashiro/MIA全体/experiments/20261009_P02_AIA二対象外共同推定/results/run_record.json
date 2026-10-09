@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-09T03:50:08.154143+00:00",
+  "frozen_utc": "2026-10-09T03:51:48.500392+00:00",
+  "completed_utc": "2026-10-09T03:51:50.637122+00:00",
+  "elapsed_sec": 102.770521993,
+  "python": "3.13.16",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "input_hashes_before_truth": true,
+  "prediction_conditions": 40,
+  "evaluation_rows": 800,
+  "P01_regression_full_all20": 0.08079772079772081,
+  "no_main_data": true,
+  "no_competition_submission": true
+}

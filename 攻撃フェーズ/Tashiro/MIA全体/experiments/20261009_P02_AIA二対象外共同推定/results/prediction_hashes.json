@@ -1,0 +1,362 @@
+[
+  {
+    "background": "full",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "bb0c36166a7e67f34f3a8f9a35803c4cd0127a8c23838da62f834281d10999e9"
+  },
+  {
+    "background": "full",
+    "method": "direct_nonhome_0.05",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "fdd5a2f15ebe0cb0b60705e1228f4bcfab8ef0d679fe06d6e311a1cc2b5ab02f"
+  },
+  {
+    "background": "full",
+    "method": "direct_nonhome_0.10",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "28de9c86334f7bcd2b168e12a0f6d3cf751f9b5db1100d78d400a83418332323"
+  },
+  {
+    "background": "full",
+    "method": "one_dummy_p01_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "2b5c534a369547d433ce0b72d5ef9a6a90f5865ccd1d0b8a3cc7a1e7bbcd1bd3"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.0_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "2b5c534a369547d433ce0b72d5ef9a6a90f5865ccd1d0b8a3cc7a1e7bbcd1bd3"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.2_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "eebab8eff8d8355ee089883725c20f56b7dcf4ce48bf116f1891b51098085860"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.2_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "5822cd4424f38e5ae9b811f2c884f0626e86ed14c31d09cd99da36986883ccd7"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.5_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "a0f2b8ec5464e6b3bc356699a6de1c163315e27960449cfc154af10d3049a45a"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.5_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "b5319fc66f1b352622ed6959db87e9da00fb2bbf0613fb50bc2ba30f178f7e57"
+  },
+  {
+    "background": "full",
+    "method": "two_dummy_g0.5_gate_top10_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "1637a769cb2da42e3bf7acecda562896da113899cf7931fd13723a021cc9db33"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "729ff5d008f9f8ff502e666afeb965292bbbff0851c9a45e05aa294fd276fae9"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "direct_nonhome_0.05",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "d31bc1776d1bf804e2bfa3f0a340bfb59e5b5ad5940e5c2c2f245fbcc03e63a7"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "direct_nonhome_0.10",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "168ece8042363ee7dcc6eac845b1cd15b67978760484ceebd1f784f873333a06"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "one_dummy_p01_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "7cdd75a7edbcba71c95c732b297738feff34c5a6ddeec9d0029ae177a4ad4fac"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.0_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "7cdd75a7edbcba71c95c732b297738feff34c5a6ddeec9d0029ae177a4ad4fac"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.2_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "45c7c6fe89d8767e2ee762963630d72bec67d3d3c5fe702c28bdaeffac9241eb"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.2_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "b4898abadf0b39eb7000381126ce4a4c0b1e9be3bc727407659d2cbf3fceab7f"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.5_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "371f412562518e3ea2a9f3bce52a8193aad0992ca2288ebc3ab496223d29d7b3"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.5_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "b1d89cb7eceef64e197f03389029ce86d36aac046ff15112819f344e549be7df"
+  },
+  {
+    "background": "sub80_seed20261009",
+    "method": "two_dummy_g0.5_gate_top10_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "98b6115701df20a7cf99b0d6f1c7f9116fdf6e9f8461606359e4d001eafef973"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "f0f37beef3c6b05bb3d50da82299716dd459a9f87dec5c467bbf965aa75e2139"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "direct_nonhome_0.05",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "a9b6a2bf3898f39832d7310c1dfc605cd4e67d27805c5b09279768b794d7267f"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "direct_nonhome_0.10",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "939ab11925871ba9223ae961d40fed1d1ba5e2ebebac018efb969ac4f11eace3"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "one_dummy_p01_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "49a6ed1fecad6ba0dee3c89e599917419392acd1b69912c3a7b4eef2968205d3"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.0_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "49a6ed1fecad6ba0dee3c89e599917419392acd1b69912c3a7b4eef2968205d3"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.2_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "a21fc1f313b9c2836ba5a2eb7b2ee9c7c255e3535ff1d5ea2ad3778d481a0eee"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.2_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "7a35807034c1672e8254a8f8a810b8ba9eb241df3e7780eaad0b86c014f7adfe"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.5_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "d9abd070fdcddd931ee26041df337b9a790d52f896473ab528a362c560a218e8"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.5_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "1d6ccc90eb866399ff0d41f0ead0630b85ca4b3be7e00fadc836ad4997575f40"
+  },
+  {
+    "background": "sub80_seed20261010",
+    "method": "two_dummy_g0.5_gate_top10_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "cc62c131d72a7e6039bbe4cd18eff2be8354b320897d690b78552505a180098d"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "P01",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "aef377afaa9201741790ac3a32d50752fa94e54c36e99fd001a610d4251e9172"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "direct_nonhome_0.05",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "43e8f62829829940edcc129bb1fcd91b97446c7c4a44d234f451d742e0cd373d"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "direct_nonhome_0.10",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "019e75a624fcf8270bbf62b6c2ff8e905cc49e08904a34826237772c1fb744c8"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "one_dummy_p01_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "1bf500fbd5929756fe9192c0e95bc0a4cbc5cf9b93b1a857c2fa220f47f1d3b4"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.0_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "1bf500fbd5929756fe9192c0e95bc0a4cbc5cf9b93b1a857c2fa220f47f1d3b4"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.2_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "f62809866c7c3faedee4cf56436a1991254de95ec3af1577a716f5a243840511"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.2_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "0038cfdb7e1cc0ba83cdf5a1681d17df44e0d2ff7d962bd2e8407b2be3221714"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.5_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "d059ed93efe486fe9d8102659a71c52ecfcd549ad5fe7d67fb8cd89eda197857"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.5_mix025",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "a238deb9e32d5e9cd1f9c9aab70be08321fe336786c70fd1f00a28dbc5c90f2c"
+  },
+  {
+    "background": "sub80_seed20261011",
+    "method": "two_dummy_g0.5_gate_top10_mix010",
+    "shape": [
+      875,
+      20
+    ],
+    "sha256": "bac3b89429435fb0b296775f44e87c900e6b30299e67e4d38af93581fce34faa"
+  }
+]

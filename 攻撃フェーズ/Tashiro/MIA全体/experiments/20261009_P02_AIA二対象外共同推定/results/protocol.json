@@ -1,0 +1,49 @@
+{
+  "name": "P02 AIA home prior and two out-of-scope categories",
+  "phase": "preliminary",
+  "self_team": 5,
+  "baseline": "P01 with original calibrator 500 and median 0.1",
+  "k_targets": 20,
+  "home_features": [
+    "prefecture"
+  ],
+  "private_total": 313,
+  "known_private": 163,
+  "private_unknown_capacity": 150,
+  "all_shared_total": 736,
+  "pair_bounds": [
+    25,
+    27
+  ],
+  "joint_temperature": 0.05,
+  "private_home_prior_gammas": [
+    0.0,
+    0.2,
+    0.5
+  ],
+  "joint_mixing": [
+    0.1,
+    0.25
+  ],
+  "direct_nonhome_offsets": [
+    0.05,
+    0.1
+  ],
+  "gate_top_fraction": 0.1,
+  "backgrounds": [
+    "full",
+    "sub80_seed20261009",
+    "sub80_seed20261010",
+    "sub80_seed20261011"
+  ],
+  "fpr": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "low_fpr_primary": 0.01,
+  "keep_rare": "known private=0, other rare=0.4, normal rank in (0.6,0.9]",
+  "truth_boundary": "read official pool_ids only after prediction hashes were saved",
+  "independence": "same explored preliminary round, not an independent validation",
+  "main_submission": "not generated or changed"
+}
