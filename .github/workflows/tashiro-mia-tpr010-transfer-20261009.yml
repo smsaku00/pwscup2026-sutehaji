@@ -1,0 +1,69 @@
+name: Tashiro MIA TPR010 and public-feature LOOTO transfer (one-off)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-tpr010-transfer-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  evaluate_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install analysis dependencies
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3
+      - name: Assert heldout-label separation
+        run: python -m unittest discover -s "$EXP" -p 'test_transfer.py' -v
+      - name: Evaluate 22 fixed methods and public-feature LOOTO transfer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_transfer.py" --root . --out "$RUNNER_TEMP/mia-tpr010-transfer"
+      - name: Validate 0.10-coverage targets, methods and provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, json, pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-tpr010-transfer'
+          audit=pd.read_csv(p/'historical_fixed22_targets.csv')
+          pred=pd.read_csv(p/'transfer_looto_by_target.csv')
+          group=pd.read_csv(p/'transfer_looto_summary.csv')
+          conf=json.loads((p/'protocol.json').read_text())
+          assert len(audit)==17 and len(pred)==17*11 and len(group)==11
+          assert pred.team.nunique()==17 and pred.policy.nunique()==11
+          assert int(group[group.policy=='P01_fixed'].full_ge010.item())==2
+          assert (pred.full_hit010==(pred.full_tpr>=0.1-1e-12)).all()
+          assert (pred.all7_hit010<=(pred.full_hit010)).all()
+          assert len(conf['views'])==7 and conf['threshold_tpr_at_fpr001']==0.10
+          assert all(int(x) not in (1,2,12) for x in audit.team)
+          print('PASS: 22*7*17 source panel, 187 heldout choices, full/worst7 threshold audit')
+          print(group.to_string(index=False))
+          PY
+      - name: Publish aggregate metrics and public descriptors only
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$EXP/results"
+          SRC="$RUNNER_TEMP/mia-tpr010-transfer"
+          for file in historical_fixed22_targets.csv transfer_looto_by_target.csv transfer_looto_summary.csv public_feature_distances.csv protocol.json; do
+            test -s "$SRC/$file"
+            cp "$SRC/$file" "$EXP/results/$file"
+          done
+          (cd "$EXP/results" && sha256sum historical_fixed22_targets.csv transfer_looto_by_target.csv transfer_looto_summary.csv public_feature_distances.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：TPR0.10固定方式比較と公開加工特徴のLOOTO転移結果を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
