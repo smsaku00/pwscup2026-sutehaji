@@ -1,0 +1,89 @@
+name: Tashiro MIA AIA clinical deconfounding group experiment (one-off 20261009)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-aia-clinical-group-20261009.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reproduce_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install pinned dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Verify finite, label-independent tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s "$EXP" -p test_experiment.py -v
+      - name: Compute public group features and freeze P01 versus AIA scores before truth
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/clinical-aia"
+          python "$EXP/run_experiment.py" --root . --output-dir "$RUNNER_TEMP/clinical-aia/results"
+      - name: Audit output shape and reference regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, pandas as pd, json
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'clinical-aia/results'
+          s=pd.read_csv(p/'summary.csv')
+          b=pd.read_csv(p/'by_target.csv')
+          g=pd.read_csv(p/'public_target_groups.csv')
+          z=pd.read_csv(p/'group_summary.csv')
+          assert len(b)==(4*18+20)*12,(len(b),'by_target')
+          assert len(s)==(4+2)*12,(len(s),'summary')
+          assert len(g)==20 and len(z)>0
+          assert s.method.nunique()==12
+          assert s.inference.nunique()==2
+          assert s[s.inference=='without1_2'].targets.eq(18).all()
+          assert not b[(b.inference=='without1_2') & (b.team.isin([1,2]))].shape[0]
+          p01=s[(s.background=='full') & (s.method=='P01')]
+          expected={('without1_2','without1_2'):0.025495409939854385,
+                    ('all20','all20'):0.08079772079772081,
+                    ('all20','without1_2'):0.029775245330800885}
+          for (inference,evaluation),v in expected.items():
+             got=p01[(p01.inference==inference)&(p01.evaluation==evaluation)].mean_tpr.item()
+             assert abs(got-v)<1e-12,(inference,evaluation,got,v)
+          print('PASS: 12 methods; 1104 target evaluations; 72 summaries; 20 public groups; 3 baseline regressions')
+          print(s[(s.background=='full')&(s.evaluation=='without1_2')][
+              ['inference','method','mean_tpr','mean_delta_P01','wins','ties','losses']].to_string(index=False))
+          PY
+      - name: Publish aggregates only, no person rows
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/clinical-aia/results"
+          mkdir -p "$EXP/results"
+          for item in by_target.csv summary.csv group_summary.csv public_target_groups.csv group_thresholds.json protocol.json prediction_input_hashes.json prediction_hashes.json truth_audit.json truth_sha256.json run_record.json; do
+            test -s "$src/$item"
+            cp "$src/$item" "$EXP/results/$item"
+          done
+          (cd "$EXP/results" && sha256sum by_target.csv summary.csv group_summary.csv public_target_groups.csv group_thresholds.json protocol.json prediction_input_hashes.json prediction_hashes.json truth_audit.json truth_sha256.json run_record.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：AIA臨床分布と公開Cの18対象群別実験結果を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
