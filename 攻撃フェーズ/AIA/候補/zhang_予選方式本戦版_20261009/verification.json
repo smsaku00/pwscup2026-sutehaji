@@ -1,0 +1,60 @@
+{
+  "official_kit_repository": "pwscup/pwscup2026-kit",
+  "official_kit_commit": "a490490e11a0ec460a5df9fdefb17c72ad459c1e",
+  "verification": [
+    {
+      "method": "differential_top50",
+      "rows": 7172,
+      "answered": 1100,
+      "intentional_misses_11": 6072,
+      "aia_csv_sha256": "dd14202e45a298f2227a70ddbbf127b6620ed09298e325a660d0cc0693bddfe8",
+      "official_package_validation": true,
+      "official_aia_validation": true,
+      "official_mia_validation": true,
+      "original_MIA_and_token_preserved": true,
+      "aia_values_finite": true,
+      "regenerated_aia_csv_identical": true,
+      "regenerated_submission_zip_identical": true,
+      "input_row_permutation_invariance": true,
+      "official_score": null
+    },
+    {
+      "method": "pu_rmax",
+      "rows": 7172,
+      "answered": 7115,
+      "intentional_misses_11": 57,
+      "aia_csv_sha256": "6114744c227a7ce132ce61213ff8d53632d1b0caa96d97c6f3cb1c19357aeb40",
+      "official_package_validation": true,
+      "official_aia_validation": true,
+      "official_mia_validation": true,
+      "original_MIA_and_token_preserved": true,
+      "aia_values_finite": true,
+      "regenerated_aia_csv_identical": true,
+      "regenerated_submission_zip_identical": true,
+      "input_row_permutation_invariance": true,
+      "official_score": null
+    }
+  ],
+  "fractional_optimizer_exhaustive_comparison": {
+    "cases": 50,
+    "combinations_per_case": 81,
+    "passed": true,
+    "max_absolute_R_difference": 0.0
+  },
+  "official_time_window_boundary_check": true,
+  "all_11_year_answers_accepted_by_official_aia_validator": true,
+  "permutation_reproduction": {
+    "public_input_tables_shuffled": 47,
+    "methods": 2,
+    "prediction_rows_compared": 14344,
+    "diagnostic_CSVs_identical": true,
+    "summary_CSVs_identical": true,
+    "reference_group_CSV_identical": true
+  },
+  "repository_packaging": {
+    "saved_AIA_files_unchanged": true,
+    "local_packaging_recreates_original_submission_ZIPs_byte_for_byte": true,
+    "public_input_files_match_repository": 48,
+    "repository_copy_contains_token": false
+  }
+}

@@ -1,0 +1,7 @@
+*.zip
+token.txt
+private_submissions/
+recomputed/
+__pycache__/
+*.py[cod]
+.venv/
