@@ -1,0 +1,73 @@
+name: Tashiro MIA AIA clinical group-gated diagnostic (post-selection)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-aia-clinical-gate-posthoc-20261009.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  posthoc_group_diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install pinned analytic dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Read frozen scores and run post-selection group gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/posthoc_group_gates.py" --experiment-dir "$EXP" --output-dir "$RUNNER_TEMP/mia-aia-posthoc"
+      - name: Audit aggregation and provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, json, pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-aia-posthoc'
+          by=pd.read_csv(p/'gated_by_target.csv')
+          s=pd.read_csv(p/'gated_summary.csv')
+          st=pd.read_csv(p/'gated_target_stability.csv')
+          v=json.loads((p/'gated_protocol.json').read_text())
+          assert len(by)==(4*18+18)*8 and len(s)==5*8
+          assert len(st)==18*8
+          assert by.method.nunique()==8 and by.team.nunique()==18
+          assert v['independent_validation'] is False and v['selection_bias'] is True
+          assert (s.targets==18).all()
+          assert (s[s.method=='P01'].mean_delta_P01.abs()<1e-12).all()
+          assert (by[by.method=='P01'].source_method=='P01').all()
+          print('PASS: frozen-score target-column gating, full provenance and 18-target grouping')
+          print(s[(s.background=='full')&(s.inference=='without1_2')][
+              ['method','mean_tpr','mean_delta_P01','wins','ties','losses','min_target_LOO_mean_delta']].to_string(index=False))
+          PY
+      - name: Publish posthoc aggregates only
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/mia-aia-posthoc"
+          mkdir -p "$EXP/posthoc"
+          for f in gated_by_target.csv gated_summary.csv gated_target_stability.csv gated_protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/posthoc/$f"
+          done
+          (cd "$EXP/posthoc" && sha256sum gated_by_target.csv gated_summary.csv gated_target_stability.csv gated_protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/posthoc"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：AIA imprint群限定C最近傍の事後選択・背景耐性結果を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
