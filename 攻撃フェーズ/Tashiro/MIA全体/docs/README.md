@@ -1,6 +1,6 @@
 # MIA全体 docs — 方式の仕組みと読み方
 
-**更新：2026-10-08。** 初見の読者向けの入口です。公式採点・提出は[rounds](../rounds/README.md)、方法の候補は[proposal](../proposal/README.md)、実験は[experiments](../experiments/README.md)、根拠の扱いは[analysis](../analysis/README.md)へ分けています。
+**更新：2026-10-10。** 初見の読者向けの入口です。公式採点・提出は[rounds](../rounds/README.md)、方法の候補は[proposal](../proposal/README.md)、実験は[experiments](../experiments/README.md)、根拠の扱いは[analysis](../analysis/README.md)へ分けています。
 
 ## キーアイデア
 
@@ -10,7 +10,7 @@
 
 | 知りたいこと | 参照先 |
 |---|---|
-| 第1〜3回の公式結果と第3回の実方式 | [提出履歴](../rounds/README.md) |
+| 第1〜4回の公式結果、第3回の確認済み方式、第4回の提供原本（全体方式名は未特定） | [提出履歴](../rounds/README.md) |
 | P01の処理と未採用の方式 | [方式の説明](../proposal/P01_既知非会員による順位較正.md) |
 | 10月7日の比較と10月8日の総合再評価 | [日付別実験](../experiments/README.md) |
 | 数値がなぜ違うか、どこまで再現できるか | [根拠・監査の案内](../analysis/README.md) |

@@ -1,6 +1,6 @@
 # AIA全体 docs — 方式の仕組みと読み方
 
-**更新：2026-10-08。** 目的は公開QIを手掛かりに、標的と対照のtime回答の当たり方を変えることです。手法の**説明**はここ、候補の**採否**は[proposal](../proposal/README.md)、生の実験は[experiments](../experiments/README.md)、根拠は[analysis](../analysis/README.md)、実提出は[rounds](../rounds/README.md)で確認します。
+**更新：2026-10-10。** 目的は公開QIを手掛かりに、標的と対照のtime回答の当たり方を変えることです。手法の**説明**はここ、候補の**採否**は[proposal](../proposal/README.md)、生の実験は[experiments](../experiments/README.md)、根拠は[analysis](../analysis/README.md)、実提出は[rounds](../rounds/README.md)で確認します。
 
 ## キーアイデアの違い
 
@@ -14,9 +14,11 @@ P01は**同じC行の近さ**を使い、新案は**列ごとに別々の行へ�
 
 ## 読む順序
 
-- [本戦第1〜3回の実提出と公式値](../rounds/README.md)
+- [本戦第1〜4回の実提出と公式値](../rounds/README.md)
 - [P01と候補方式の採否](../proposal/README.md)
 - [10月8日の短い結論](../experiments/20261008/README.md)／[19フォルダ横断の手法一覧](../experiments/20261008/手法一覧.md)
 - [予備戦加工18・20対象と背景参照の違い](../analysis/README.md)／[完全な研究報告](../experiments/20261008/詳細.md)
 
 **注意：** 第3回のAIA全体のraw R平均0.128667と対象別φ控除後の評価平均0.082461は指標が違います。第3回はP01・N2time・restore・N9plusの混合であり、P01単独の効果を確定できません。
+
+第4回は対象別の混合方式で、公式AIA全体raw R平均は0.088485、φ補正後AIA力平均は0.054608です。[第4回の回答方式](../../../AIA/第4回/第4回_AIA_説明書.md)／[採点結果](../../../AIA/第4回/採点結果.md)／[提供原本との照合](../../../AIA/第4回/出典と照合.json)を参照してください。上表のall4・top2が採用・採点されたという意味ではありません。
