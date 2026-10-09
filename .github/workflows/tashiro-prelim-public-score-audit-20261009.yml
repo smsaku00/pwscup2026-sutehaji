@@ -1,0 +1,68 @@
+name: Tashiro PWS prelim official public score workbook audit
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tashiro-prelim-public-score-audit-20261009.yml']
+permissions:
+  contents: read
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read public preliminary official workbook with Python stdlib
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile,xml.etree.ElementTree as ET,json,re
+          file=Path('公式データ/予備戦/結果/公開用結果表_20260909.xlsx')
+          assert file.exists(), file
+          NS='{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
+          RR='{http://schemas.openxmlformats.org/officeDocument/2006/relationships}'
+          RP='{http://schemas.openxmlformats.org/package/2006/relationships}'
+          with zipfile.ZipFile(file) as z:
+            files=set(z.namelist())
+            w=ET.fromstring(z.read('xl/workbook.xml'))
+            rel=ET.fromstring(z.read('xl/_rels/workbook.xml.rels'))
+            mapping={x.get('Id'):x.get('Target') for x in rel.findall(RP+'Relationship')}
+            strings=[]
+            if 'xl/sharedStrings.xml' in files:
+              ss=ET.fromstring(z.read('xl/sharedStrings.xml'))
+              strings=[''.join(s.itertext()) for s in ss.findall(NS+'si')]
+            def vcell(c):
+              typ=c.get('t')
+              if typ=='inlineStr':
+                el=c.find(NS+'is')
+                return ''.join(el.itertext()) if el is not None else ''
+              val=c.find(NS+'v')
+              if val is None:return ''
+              s=val.text or ''
+              if typ=='s':return strings[int(s)]
+              if typ in ('str','e','b'):return s
+              try:return float(s)
+              except:return s
+            for node in w.findall('.//'+NS+'sheet'):
+              name=node.get('name')
+              target=mapping[node.get(RR+'id')]
+              sheet_path=target.lstrip('/') if target.startswith('/') else 'xl/'+target
+              if not sheet_path.startswith('xl/'):sheet_path='xl/'+sheet_path
+              sheet_path=re.sub(r'^xl/xl/', 'xl/',sheet_path)
+              root=ET.fromstring(z.read(sheet_path))
+              allrows=[]
+              for row in root.findall('.//'+NS+'sheetData/'+NS+'row'):
+                populated=[]
+                for c in row.findall(NS+'c'):
+                  val=vcell(c)
+                  if val!='':
+                    populated.append([c.get('r'),val])
+                if populated: allrows.append(populated)
+              print('SHEET_SUMMARY_JSON='+json.dumps({
+                'sheet':name,'total_populated_rows':len(allrows),
+                'preview':[[[coord,(str(val)[:110] if isinstance(val,str) else val)]
+                            for coord,val in cells[:28]]
+                            for cells in allrows[:24]]
+              },ensure_ascii=False))
+          PY
