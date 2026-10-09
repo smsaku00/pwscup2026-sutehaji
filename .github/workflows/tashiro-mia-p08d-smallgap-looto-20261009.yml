@@ -1,0 +1,67 @@
+name: Tashiro MIA P08D small-gap LOOTO model-choice robustness audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p08d-smallgap-looto-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  publish_heldout_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08D_上位競合だけの疎な排他補正'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install data-only comparison dependencies
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3
+      - name: Choose sparse method using other 17 targets and evaluate heldout target
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/audit_smallgap_LOOTO.py" --root . --out "$RUNNER_TEMP/p08d-looto"
+      - name: Check heldout isolation, 4 policies, candidate panel and P01 regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p08d-looto'
+          by=pd.read_csv(p/'LOOTO_by_target.csv')
+          summary=pd.read_csv(p/'LOOTO_summary.csv')
+          pro=json.loads((p/'protocol.json').read_text())
+          assert len(by)==4*18 and len(summary)==4
+          assert set(by.policy)==set(pro['policy_candidates'])
+          assert by.target.nunique()==18 and not ({1,2} & set(by.target))
+          assert abs(summary[summary.policy=='P01'].mean_full_TPR.item()-.025495409939854385)<1e-12
+          assert pro['inner_holdout_target_label_access'] is False
+          assert pro['P08D_family_still_devised_after_repeated_preliminary_label_exposure'] is True
+          assert pro['no_main_submission'] is True
+          assert (summary.new_TPR010_hits>=0).all()
+          print('PASS: 18 outer target folds x 4 policies; heldout target not used for method choice')
+          print(summary.to_string(index=False))
+          PY
+      - name: Publish cohort-level heldout statistics only
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p08d-looto"
+          mkdir -p "$EXP/looto"
+          for n in LOOTO_by_target.csv LOOTO_summary.csv protocol.json; do
+            test -s "$src/$n"
+            cp "$src/$n" "$EXP/looto/$n"
+          done
+          (cd "$EXP/looto" && sha256sum LOOTO_by_target.csv LOOTO_summary.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/looto"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P08-D小ギャップ方式の対象保留LOOTO・0.10達成を監査'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
