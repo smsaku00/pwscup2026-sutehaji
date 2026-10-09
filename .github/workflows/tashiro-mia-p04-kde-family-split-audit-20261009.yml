@@ -1,0 +1,69 @@
+name: Tashiro MIA P04 KDE A/B family split sensitivity and heldout audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p04-kde-family-split-audit-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  evaluate_p04_public_rule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Install analysis libraries
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3
+      - name: Check full P04 A/B rule, reverse control, public-threshold perturbations and target LOO
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p04_family_split_audit.py" --root . --out "$RUNNER_TEMP/p04-family"
+      - name: Check 5 policies, 35 sensitivity cells and public LOO integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p04-family'
+          x=pd.read_csv(p/'five_public_rules.csv')
+          r=pd.read_csv(p/'five_public_rules_by_team.csv')
+          g=pd.read_csv(p/'threshold_grid_sensitivity.csv')
+          loo=pd.read_csv(p/'public_threshold_LOO.csv')
+          folds=pd.read_csv(p/'policy_choice_leave_one_team_out.csv')
+          audit=json.loads((p/'audit.json').read_text())
+          assert len(x)==5 and len(r)==17*5
+          assert len(g)==35 and len(loo)==17 and len(folds)==17
+          assert x[x.policy=='P01'].hit_full_ge010.item()==2
+          assert x[x.policy=='split_AhomeHigh_BhomeLow'].hit_full_ge010.item()==4
+          assert audit['rule_selected_after_observing_prelim_labels'] is True
+          assert audit['independent_test'] is False
+          print('PASS: exact TPR threshold 17-target comparison, public LOO and posthoc orientation disclosure')
+          print(x.to_string(index=False))
+          print('SENSITIVITY',g[['hit_full','hit_all7']].describe().to_string())
+          print('AUDIT',json.dumps(audit,ensure_ascii=False,indent=2)[:1200])
+          PY
+      - name: Publish source-based aggregate reports only
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/p04-family"
+          mkdir -p "$EXP/p04_family_split"
+          for n in five_public_rules.csv five_public_rules_by_team.csv threshold_grid_sensitivity.csv public_threshold_LOO.csv policy_choice_leave_one_team_out.csv audit.json; do
+            test -s "$SRC/$n"
+            cp "$SRC/$n" "$EXP/p04_family_split/$n"
+          done
+          (cd "$EXP/p04_family_split" && sha256sum five_public_rules.csv five_public_rules_by_team.csv threshold_grid_sensitivity.csv public_threshold_LOO.csv policy_choice_leave_one_team_out.csv audit.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/p04_family_split"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：AIA×地元県割合KDE A/Bの4対象達成と閾値LOO監査を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
