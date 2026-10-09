@@ -1,0 +1,92 @@
+name: Tashiro MIA P08D sparse topK exclusivity preliminary audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p08d-sparse-topk-exclusivity-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  evaluate_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08D_上位競合だけの疎な排他補正'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install exact pinned P01 dependencies and official score workbook reader
+        shell: bash
+        run: |
+          python -m pip install -r "$BASE/requirements.txt"
+          python -m pip install openpyxl==3.1.5
+      - name: Test sparse correction, topK ties and no-op invariants
+        run: python -m unittest discover -s "$EXP" -p 'test_p08d.py' -v
+      - name: Evaluate 18 sparse topK methods and frozen P01 on 4 backgrounds
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p08d.py" --root . --out "$RUNNER_TEMP/mia-p08d-audit"
+      - name: Validate matching baselines and frozen sparse-collision bookkeeping
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-p08d-audit'
+          x=pd.read_csv(p/'summary.csv')
+          y=pd.read_csv(p/'by_target.csv')
+          c=pd.read_csv(p/'collision_opportunity.csv')
+          st=pd.read_csv(p/'threshold_stability.csv')
+          v=pd.read_csv(p/'virtual_attack_P01_only.csv')
+          j=json.loads((p/'protocol.json').read_text())
+          assert len(x)==4*2*19 and len(y)==4*19*(20+18)
+          assert len(c)==4*2*18 and len(st)==18*19 and len(v)==19
+          assert x.method.nunique()==19
+          assert abs(x[(x.background=='full')&(x.inference=='all20')&(x.method=='P01')].mean_tpr.item()-.08079772079772081)<1e-12
+          assert abs(x[(x.background=='full')&(x.inference=='without1_2')&(x.method=='P01')].mean_tpr.item()-.025495409939854385)<1e-12
+          assert c.candidates_with_penalty.le(c.collision_candidates_ge2).all()
+          assert c.penalized_cells.le(c.collision_loser_cells).all()
+          assert c.fraction_score_cells_unchanged.between(0,1).all()
+          assert (c.targets.isin([18,20])).all()
+          assert j['official_prelim_truth_only_after_freeze']
+          assert j['public_truth_audit_max_other_memberships']==1
+          assert not j['no_main_submission'] is False
+          assert not j['no_individual_predictions_saved'] is False
+          print('PASS: 19 fixed P01/sparse competitors, 4 background views, 2 inference scopes, 2888 target-method evaluations')
+          print('Full primary scope:')
+          print(x[(x.background=='full')&(x.inference=='without1_2')][
+               ['method','mean_tpr','TPR_ge010','new_ge010','lost_ge010','wins','losses']].to_string(index=False))
+          print('Collision summary:')
+          print(c[(c.background=='full')&(c.inference=='without1_2')&
+                  (c.method.str.contains('margin0.02_penalty0.05'))].to_string(index=False))
+          PY
+      - name: Commit aggregate-only collision diagnostics and official preliminary outcomes
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/mia-p08d-audit"
+          mkdir -p "$EXP/results"
+          for f in collision_opportunity.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_P01_only.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/results/$f"
+          done
+          (cd "$EXP/results" && sha256sum collision_opportunity.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_P01_only.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P08-D上位競合だけの疎な排他補正の実測と重複診断を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
