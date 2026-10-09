@@ -1,0 +1,67 @@
+name: Tashiro MIA P04 public main AIA KDE family projection
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p04-main-public-families-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  project_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Public-only P04 projection and 49 threshold perturbations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/project_p04_main_public.py" --root . --out "$RUNNER_TEMP/p04-main-public"
+      - name: Verify no main TPR, private data or submission created
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,csv
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p04-main-public'
+          summary=json.loads((p/'main_P04_public_group_audit.json').read_text())
+          with (p/'main_P04_public_target_families.csv').open() as f:
+            rows=list(csv.DictReader(f))
+          with (p/'main_P04_public_threshold_sensitivity.csv').open() as f:
+            sensitivity=list(csv.DictReader(f))
+          assert len(rows)==22 and len(sensitivity)==49
+          assert sum(summary['target_counts'].values())==22
+          assert not summary['main_B_self_read'] and not summary['main_labels_read']
+          assert summary['predicted_0.10_success_count'] is None
+          assert not summary['competition_submission_changed']
+          assert summary['threshold_perturbations']==49
+          print('PASS: main public C/AIA projection only; no hidden labels, 22 targets and 49 perturbations')
+          print(summary['families'])
+          PY
+      - name: Commit public aggregate projections only with push retry
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/p04-main-public"
+          mkdir -p "$EXP/p04_main_public"
+          for x in main_P04_public_target_families.csv main_P04_public_threshold_sensitivity.csv main_P04_public_group_audit.json; do
+            cp "$SRC/$x" "$EXP/p04_main_public/$x"
+          done
+          (cd "$EXP/p04_main_public" && sha256sum main_P04_public_target_families.csv main_P04_public_threshold_sensitivity.csv main_P04_public_group_audit.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/p04_main_public"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P04の本戦公開群11対象とKDE A/B割当・閾値感度を追加'
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 3))
+          done
+          exit 1
