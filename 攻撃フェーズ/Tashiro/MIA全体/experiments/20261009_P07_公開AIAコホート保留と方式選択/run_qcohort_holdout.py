@@ -193,7 +193,9 @@ def run(root,out):
         nulls=np.concatenate([rawQ[t][k] for k in ctrlids])
         fullCal.append(calib.calibrate(rawB[:,j],b,nulls,controls,["prefecture","sex"],500))
         for h in probes:
-            if h==t:continue
+            # Even when h == t, calibrate the Q_h column for use in the
+            # OTHER-target median correction. h==t is never evaluated as a
+            # negative; leaving it raw would corrupt other targets' median.
             leaveids=[k for k in ctrlids if k!=h]
             frame=pd.concat([qs[k][qi] for k in leaveids],ignore_index=True)
             values=np.concatenate([rawQ[t][k] for k in leaveids])
@@ -227,10 +229,8 @@ def run(root,out):
     risks=[]
     choices_by_hold={}
     for h in probes:
-        bcal=np.column_stack([leaveCal[t,h][0] if (t,h) in leaveCal else fullCal[:,j]
-                   for j,t in enumerate(teams)])
-        hcal=np.column_stack([leaveCal[t,h][1] if (t,h) in leaveCal else rawQ[t][h]
-                   for j,t in enumerate(teams)])
+        bcal=np.column_stack([leaveCal[t,h][0] for t in teams])
+        hcal=np.column_stack([leaveCal[t,h][1] for t in teams])
         bsignal={"P01":bcal,"P03_Cnn":nnB}
         hsignal={"P01":hcal,"P03_Cnn":nnProbe[h]}
         rv,rn=two_matrices(base,bsignal,hsignal,normal)
