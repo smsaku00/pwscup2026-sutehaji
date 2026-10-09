@@ -1,0 +1,35 @@
+{
+  "status": "post-hoc conservative nested target holdout within previously explored preliminary panel",
+  "train_set": "outer target excluded entirely for model/policy/hyperparameter selection",
+  "candidate_policies": 72,
+  "risk_budgets": [
+    0,
+    1
+  ],
+  "inner_safety": "require >baseline inner full0.10 hits and new hits > budget, losses <= budget",
+  "score_panel_already_tuned_on_preliminary_labels": true,
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/公開加工特徴.csv": "42c7331d095936bedf7427faeadd6d2ddb9ef68e7bc98349199de2d60fc75de5",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c"
+  },
+  "target_ids": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "main_submission": false
+}
