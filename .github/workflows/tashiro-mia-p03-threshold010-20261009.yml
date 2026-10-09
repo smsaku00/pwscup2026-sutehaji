@@ -72,3 +72,4 @@ jobs:
           git rebase origin/main
           git push origin HEAD:main
 # Reproduce with corrected immutable baseline source SHA256.
+# Rerun: 9 high-imprint targets among 18 scoped targets; Teams1/2 omitted.
