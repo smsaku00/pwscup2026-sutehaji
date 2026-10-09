@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python "$EXP/run_archived_kdeA_mix.py" --root . --output-dir "$RUNNER_TEMP/mia-exact-kde" --full-only
+          python "$EXP/run_archived_kdeA_mix.py" --root . --output-dir "$RUNNER_TEMP/mia-exact-kde"
       - name: Assert exact archived regression and frozen score provenance
         shell: bash
         run: |
@@ -45,7 +45,7 @@ jobs:
           s=pd.read_csv(p/'summary.csv')
           b=pd.read_csv(p/'by_target.csv')
           assert x['targets']==17 and x['max_abs_error']<1e-10
-          assert len(b)==190 and s.inference.nunique()==2
+          assert len(b)==760 and s.inference.nunique()==2 and s.background.nunique()==4
           assert s.method.nunique()==5 and set(prot['mix_weights'])=={0,0.25,0.5,0.75,1.}
           assert not prot['main_submission'] and prot['rare_5bit_unmodified']
           print('PASS: archived KDE A full score regression, both target scopes, 5 fixed weights')
@@ -57,17 +57,19 @@ jobs:
         run: |
           set -euo pipefail
           src="$RUNNER_TEMP/mia-exact-kde"
-          mkdir -p "$EXP/archived_kdeA_mix_full"
+          mkdir -p "$EXP/archived_kdeA_mix_4bg"
           for n in by_target.csv summary.csv threshold_stability.csv prediction_hashes.json archived_KDEA_regression.json protocol.json; do
             test -s "$src/$n"
-            cp "$src/$n" "$EXP/archived_kdeA_mix_full/$n"
+            cp "$src/$n" "$EXP/archived_kdeA_mix_4bg/$n"
           done
-          (cd "$EXP/archived_kdeA_mix_full" && sha256sum by_target.csv summary.csv threshold_stability.csv prediction_hashes.json archived_KDEA_regression.json protocol.json > SHA256SUMS.txt)
+          (cd "$EXP/archived_kdeA_mix_4bg" && sha256sum by_target.csv summary.csv threshold_stability.csv prediction_hashes.json archived_KDEA_regression.json protocol.json > SHA256SUMS.txt)
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "$EXP/archived_kdeA_mix_full"
+          git add "$EXP/archived_kdeA_mix_4bg"
           git diff --cached --quiet && exit 0
           git commit -m 'MIA全体：旧KDE Aの数値再現とP01混合を予備戦で検証'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+
+# Four backgrounds; preserve the previous full-only outputs under a separate directory.
