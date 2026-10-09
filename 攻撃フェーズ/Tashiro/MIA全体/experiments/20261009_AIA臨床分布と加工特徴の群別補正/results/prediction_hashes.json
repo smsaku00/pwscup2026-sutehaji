@@ -117,7 +117,7 @@
       875,
       18
     ],
-    "sha256": "71273f265ee45ab034cc935030e8a566873809321fbe7fc6e2f8f64d27fd7f9f"
+    "sha256": "b54f585047c40065f70c686b5ce43629c5c6f0ce628a161a88a972118fc99b96"
   },
   {
     "background": "full",
@@ -237,7 +237,7 @@
       875,
       20
     ],
-    "sha256": "4850296a97e80b5bfc47fd118594ff3dbc074166058e41795cf670bb99ecd2c2"
+    "sha256": "c71e839e4baeb5946654b3c8188f61d973830f0f674b4acda244b8c68deec356"
   },
   {
     "background": "sub80_seed20261009",
@@ -357,7 +357,7 @@
       875,
       18
     ],
-    "sha256": "c859bc50c6444f0f908a0721a4122c2b8b31c63ead89a9f819fd58b563d819f5"
+    "sha256": "c40f4bd3f1e1952a01f0c33d64a033564a4e62d93a93e7248daa366458375b46"
   },
   {
     "background": "sub80_seed20261010",
@@ -477,7 +477,7 @@
       875,
       18
     ],
-    "sha256": "4a747ce0a42611c4fefc1869f9609694c2f5740a3f4b0dd440848eee723ed232"
+    "sha256": "4d95dd11f3b0b8195556ce8684af616129e857cb62b04bbddef65e9a1aa551dc"
   },
   {
     "background": "sub80_seed20261011",
@@ -597,6 +597,6 @@
       875,
       18
     ],
-    "sha256": "f6868d28eb4038dc5d25d007f50f1ae719b77983f75070dc19933107245b8688"
+    "sha256": "8103c71c1e66d01535dcd92439ec638eaf477540571c44a2bee75996921d7080"
   }
 ]
