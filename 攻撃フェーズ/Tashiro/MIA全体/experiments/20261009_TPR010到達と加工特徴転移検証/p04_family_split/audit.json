@@ -1,0 +1,28 @@
+{
+  "scope": "17 preliminary targets, 22 fixed archived methods subset: P01, KDE A, KDE B",
+  "criterion": "TPR@FPR=0.01>=0.10; all7 robustness",
+  "rule_selected_after_observing_prelim_labels": true,
+  "independent_test": false,
+  "thresholds_selected_from_public_features_only": {
+    "imprint": -0.02648079229425993,
+    "C_home_fraction": 0.3265014299332698
+  },
+  "method_orientation_selected_posthoc": "KDE A if imprint-high and C_home-high; KDE B if imprint-high and C_home-low",
+  "public_LOO_changed_teams": [],
+  "public_LOO_full_hits": 4,
+  "public_LOO_all7_hits": 2,
+  "policy_LOOTO_full_hits": 3,
+  "policy_LOOTO_all7_hits": 1,
+  "threshold_sensitivity_grid_n": 35,
+  "prelim_C_home_team13_margin": 0.002383222116301209,
+  "precisely_same_preliminary_truth_reused_in_panel_and_design": true,
+  "data_source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/公開加工特徴.csv": "42c7331d095936bedf7427faeadd6d2ddb9ef68e7bc98349199de2d60fc75de5",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/public_target_groups.csv": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/group_thresholds.json": "ddc4c3fe9bdd1ef5ab0535a34e9b96b8bfb20a2a47d976d653aea0a34c0408af"
+  },
+  "no_person_scores_or_truth_written": true,
+  "main_round_not_used": true,
+  "submission_unchanged": true
+}

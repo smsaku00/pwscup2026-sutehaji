@@ -1,0 +1,6 @@
+policy,hit_full_ge010,hit_all7_ge010,mean_full_tpr,full_success_teams,all7_success_teams,applied_A,applied_B,applied_P01
+P01,2,0,0.027001843472431692,10;24,,0,0,17
+KDEA_high,3,1,0.03650410591587061,10;13;24,13,9,0,8
+KDEB_high,3,1,0.033628288922406553,10;20;24,20,0,9,8
+split_AhomeHigh_BhomeLow,4,2,0.040687112451818323,10;13;20;24,13;20,5,4,8
+reverse_BhomeHigh_AhomeLow,2,0,0.02944528238645884,10;24,,4,5,8
