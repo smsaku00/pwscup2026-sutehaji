@@ -1,0 +1,89 @@
+name: Tashiro MIA P08 public residual C and conditional event-time
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p08-copy-residual-time-event-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08_公開残差と時刻条件付'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install frozen P01 numerical dependencies and official workbook reader
+        shell: bash
+        run: |
+          python -m pip install -r "$BASE/requirements.txt"
+          python -m pip install openpyxl==3.1.5
+      - name: Check public-copy exact matching and temporal conditional signal
+        run: python -m unittest discover -s "$EXP" -p 'test_p08_ab.py' -v
+      - name: Run fixed P08 A and B signals on official preliminary cohorts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p08_ab.py" --root . --out "$RUNNER_TEMP/mia-p08-ab"
+      - name: Validate primary and secondary scopes and existing P01 regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,pandas as pd
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-p08-ab'
+          a=pd.read_csv(p/'summary.csv')
+          b=pd.read_csv(p/'by_target.csv')
+          c=pd.read_csv(p/'public_copy_cohorts.csv')
+          v=pd.read_csv(p/'virtual_attack_vs_P01.csv')
+          st=pd.read_csv(p/'threshold_stability.csv')
+          prot=json.loads((p/'protocol.json').read_text())
+          assert len(a)==4*2*10
+          assert len(b)==4*10*(20+18)
+          assert len(c)==20 and len(v)==10 and len(st)==18*10
+          assert b[b.inference=='without1_2'].team.nunique()==18
+          assert 1 not in set(b[b.inference=='without1_2'].team)
+          assert 2 not in set(b[b.inference=='without1_2'].team)
+          assert abs(a[(a.background=='full')&(a.inference=='without1_2')&
+                       (a.method=='P01')].mean_tpr_001.item()-.025495409939854385)<1e-12
+          assert abs(a[(a.background=='full')&(a.inference=='all20')&
+                       (a.method=='P01')].mean_tpr_001.item()-.08079772079772081)<1e-12
+          assert prot['no_competition_submission'] and prot['no_main_data_read']
+          assert len(prot['background_views'])==4
+          assert prot['prior_repeated_preliminary_truth_reuse']
+          assert (a.TPR_ge010<=20).all()
+          print('PASS: 10 methods, 4 matched background views, 18/20 target inference, 1520 target metrics')
+          print(a[(a.background=='full')&(a.inference=='without1_2')].to_string(index=False))
+          print(v.sort_values('prelim_hypothetical_attack',ascending=False).to_string(index=False))
+          PY
+      - name: Commit aggregate outputs and input/protocol hashes only
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/mia-p08-ab"
+          mkdir -p "$EXP/results"
+          for f in public_copy_cohorts.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_vs_P01.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/results/$f"
+          done
+          (cd "$EXP/results" && sha256sum public_copy_cohorts.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_vs_P01.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P08公開コピー除去・条件付time/onsetのTPRと背景耐性を追加'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
