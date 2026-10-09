@@ -83,7 +83,7 @@ def run(root,out):
                   "delta_vs_P04":strength-.34919703643719757,
                   "TPR010_count":sum(v>=.1-1e-12 for v in selected.values()),
                   "changed_KDEA_targets":sum(prior[t]!=assignment[t] for t in prior),
-                  "changed_team_ids":";".join(map(str,t for t in prior if prior[t]!=assignment[t]))})
+                  "changed_team_ids":";".join(str(t) for t in prior if prior[t]!=assignment[t])})
         for t in prior:
             if prior[t]!="KDEA":continue
             bysubject.append({"team":t,"policy":policy,"original":"KDEA","selected":assignment[t],
