@@ -1,0 +1,80 @@
+name: Tashiro MIA P02 AIA two-dummy official prelim (one-off 20261009)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p02-20261009.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  verify_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P02_AIA二対象外共同推定'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install fixed dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Run numerical and constraint unit tests
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s "$BASE" -p test_experiment.py -v
+          python -m unittest discover -s "$EXP" -p test_p02.py -v
+      - name: Recompute P01 scores then P02, freeze scores before reading truth
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/mia-p02"
+          python "$EXP/run_p02.py" --root . --output-dir "$RUNNER_TEMP/mia-p02/results"
+      - name: Verify reference score, cohort totals, output shape
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, pandas as pd
+          from pathlib import Path
+          r=Path(os.environ['RUNNER_TEMP'])/'mia-p02/results'
+          d=pd.read_csv(r/'by_target.csv')
+          s=pd.read_csv(r/'summary.csv')
+          p=json.loads((r/'public_group_constraints.json').read_text())
+          assert len(d)==4*10*20,(len(d),'by_target')
+          assert len(s)==4*10*3,(len(s),'summary')
+          assert len(p['split_lower'])==22 and p['split_lower'][-2:]==[150.0,225.0]
+          assert p['split_upper'][-2:]==[150.0,236.0]
+          z=s[(s.background=='full')&(s.evaluation=='all20')].set_index('method')
+          assert abs(z.loc['P01','mean_tpr']-0.08079772079772081)<1e-12
+          assert d.method.nunique()==10 and s.background.nunique()==4
+          print('PASS: 800 target evaluations; 120 summaries; P01 reference')
+          print(z[['mean_tpr','mean_delta_p01','wins','ties','losses']].to_string())
+          PY
+      - name: Publish aggregates only
+        shell: bash
+        run: |
+          set -euo pipefail
+          source="$RUNNER_TEMP/mia-p02/results"
+          mkdir -p "$EXP/results"
+          for file in by_target.csv summary.csv protocol.json input_sha256.json truth_input_sha256.json public_group_constraints.json prediction_hashes.json optimizer_diagnostics.json constraint_audit.json run_record.json; do
+            test -s "$source/$file"
+            cp "$source/$file" "$EXP/results/$file"
+          done
+          (cd "$EXP/results" && sha256sum by_target.csv summary.csv protocol.json input_sha256.json truth_input_sha256.json public_group_constraints.json prediction_hashes.json optimizer_diagnostics.json constraint_audit.json run_record.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P02を予備戦の公式データで再計算し集計結果を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
