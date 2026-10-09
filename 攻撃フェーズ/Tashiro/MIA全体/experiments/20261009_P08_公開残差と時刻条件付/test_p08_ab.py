@@ -17,13 +17,13 @@ def synthetic(n,shift=0.):
 
 class P08Checks(unittest.TestCase):
     def test_all_copy_falls_back_without_fake_residual(self):
-        a=synthetic(20)
+        a=synthetic(100)
         c=a.sample(frac=1,random_state=5).reset_index(drop=True)
         o,stats=clean_public_C({18:c},a,[18])
-        self.assertEqual(stats.iloc[0].full_public_A_copy_rows,20)
+        self.assertEqual(stats.iloc[0].full_public_A_copy_rows,100)
         self.assertEqual(stats.iloc[0].strict_fallback,1)
         self.assertIs(o["A_full_public_remove"][18],c)
-        self.assertTrue(len(o["A_public_keep20"][18])<20)
+        self.assertTrue(len(o["A_public_keep20"][18])<100)
     def test_exact_copy_and_noncopy(self):
         a=synthetic(20);c=pd.concat([a.iloc[:10],synthetic(20,shift=1.1).iloc[10:]],ignore_index=True)
         copy=match_public(c,a)
