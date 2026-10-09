@@ -24,3 +24,7 @@ MIA希少のような「全2,494,800配置の質問木に対する証明書」�
 ## P06：公開非会員の分離評価とTPRが一致しない問題
 
 [公開A_bgの1,028人×3分割・P01/KDE A/P03の誤検出率](../experiments/20261009_P06_公開非会員の分離評価/results/nonmember_risk_panel.csv)／[P06総合研究報告](../experiments/20261009_P06_公開非会員の分離評価/README.md)／[負の対照](../experiments/20261009_P06_公開非会員の分離評価/aggressive_null_audit/unconstrained_null_selection.csv)。**低誤検出率の方式を選んでも会員TPRは上がらない**ことを確認。予備戦の真値を使わない選択で本戦汎化を証明したわけではない。元KDE Bは内部個人順位未再現、実提出変更なし。
+
+## P07：公開AIAのコホート保留による較正リーク監査
+
+[P07予備戦20対象・全計算と採否](../experiments/20261009_P07_公開AIAコホート保留と方式選択/README.md)／[Qを較正から除く6条件のTPR全件](../experiments/20261009_P07_公開AIAコホート保留と方式選択/results/Q_cohort_omission_TPR.csv)／[方式切替の公式予備戦仮想得点](../experiments/20261009_P07_公開AIAコホート保留と方式選択/results/counterfactual_summary.csv)。公開Qをファイル単位で除外、他Qの同一7属性行数を監査。元P01の公式予備戦20対象TPRは全6条件で不変。単純リスク最小化は−0.002。**公開Qにない属性を補完せず、13属性KDE Aの直接リスク評価は行っていない**。
