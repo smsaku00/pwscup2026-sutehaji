@@ -1,0 +1,83 @@
+name: Tashiro MIA P08D lower-margin topK exclusivity sensitivity
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p08d-smallgap-exclusivity-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08D_上位競合だけの疎な排他補正'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install exact pinned baseline and openpyxl
+        shell: bash
+        run: |
+          python -m pip install -r "$BASE/requirements.txt"
+          python -m pip install openpyxl==3.1.5
+      - name: Recheck sparse local score monotonicity and target permutation invariants
+        run: python -m unittest discover -s "$EXP" -p 'test_p08d.py' -v
+      - name: Recompute 18 smaller-margin conditions on four matched preliminary backgrounds
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p08d_small_gap.py" --root . --out "$RUNNER_TEMP/p08d-smallgap"
+      - name: Audit smaller-margin panel baselines, impact counts and post-hoc status
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p08d-smallgap'
+          a=pd.read_csv(p/'summary.csv')
+          b=pd.read_csv(p/'by_target.csv')
+          c=pd.read_csv(p/'collision_opportunity.csv')
+          pr=json.loads((p/'protocol.json').read_text())
+          assert len(a)==4*2*19 and len(b)==4*(20+18)*19
+          assert len(c)==4*2*18 and a.method.nunique()==19
+          assert tuple(pr['modified_constants']['margin'])==(.001,.005,.01)
+          assert pr['post_first_score_exploration'] and pr['no_independent_generalization']
+          assert pr['official_prelim_truth_only_after_freeze']
+          assert c.penalized_cells.le(c.collision_loser_cells).all()
+          assert abs(a[(a.background=='full')&(a.inference=='all20')&
+                       (a.method=='P01')].mean_tpr.item()-.08079772079772081)<1e-12
+          assert abs(a[(a.background=='full')&(a.inference=='without1_2')&
+                       (a.method=='P01')].mean_tpr.item()-.025495409939854385)<1e-12
+          print('PASS: public-gap-derived 18 parameter combinations, two scopes/four views, frozen predictions')
+          print(a[(a.background=='full')&(a.inference=='without1_2')][
+                ['method','mean_tpr','TPR_ge010','new_ge010','lost_ge010','wins','losses']].to_string(index=False))
+          PY
+      - name: Publish only aggregated preliminary cohort metrics and provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p08d-smallgap"
+          mkdir -p "$EXP/small_gap"
+          for f in collision_opportunity.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_P01_only.csv protocol.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/small_gap/$f"
+          done
+          (cd "$EXP/small_gap" && sha256sum collision_opportunity.csv prediction_hashes.json by_target.csv summary.csv threshold_stability.csv virtual_attack_P01_only.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/small_gap"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P08-Dの公開スコア差に基づく小閾値18方式の感度結果を掲載'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
