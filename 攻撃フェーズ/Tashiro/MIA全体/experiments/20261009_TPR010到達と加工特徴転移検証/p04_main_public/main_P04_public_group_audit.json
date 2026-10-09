@@ -1,0 +1,91 @@
+{
+  "status": "PUBLIC GROUP PROJECTION ONLY; NO MAIN ATTACK OR TPR MEASURED",
+  "round": "PWS CUP 2026 main 22 targets",
+  "target_counts": {
+    "P01": 11,
+    "KDE_A": 5,
+    "KDE_B": 6
+  },
+  "group_preliminary_cutoff": {
+    "AIA_imprint": -0.02648079229425993,
+    "C_home_fraction": 0.3265014299332698
+  },
+  "families": {
+    "P01": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      10,
+      14,
+      15,
+      16,
+      22,
+      25
+    ],
+    "KDE_A": [
+      9,
+      11,
+      13,
+      17,
+      26
+    ],
+    "KDE_B": [
+      3,
+      6,
+      7,
+      8,
+      12,
+      27
+    ]
+  },
+  "near_preliminary_imprint_cutoff_005": [
+    7,
+    12,
+    27
+  ],
+  "near_preliminary_imprint_cutoff_0050": [
+    1,
+    2,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    15,
+    27
+  ],
+  "near_home_cutoff_005": [],
+  "near_home_cutoff_0050": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    13,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "threshold_perturbations": 49,
+  "preliminary_selection_bias": "KDE A/B orientation was chosen post-hoc after seeing published preliminary truth",
+  "same_team_number_not_same_processing_proof": true,
+  "predicted_0.10_success_count": null,
+  "main_B_self_read": false,
+  "main_labels_read": false,
+  "main_candidate_scores_generated": false,
+  "competition_submission_changed": false,
+  "rare_5bit_changed": false,
+  "sources_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/main_public/main_public_group_projection.csv": "d2f2e7ea217c0720edb96d7b72f6db0905ecdbad18cbcd41c6eb7a92a2d5bf09",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/group_thresholds.json": "ddc4c3fe9bdd1ef5ab0535a34e9b96b8bfb20a2a47d976d653aea0a34c0408af"
+  }
+}
