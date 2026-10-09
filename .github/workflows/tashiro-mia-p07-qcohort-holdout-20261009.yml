@@ -48,8 +48,14 @@ jobs:
           s=pd.read_csv(d/'counterfactual_summary.csv')
           t=pd.read_csv(d/'target_results.csv')
           diag=pd.read_csv(d/'Q_cross_cohort_duplicate_audit.csv')
+          omit=pd.read_csv(d/'Q_cohort_omission_TPR.csv')
+          oscore=pd.read_csv(d/'Q_cohort_omission_counterfactual.csv')
           x=json.loads((d/'protocol.json').read_text())
           assert len(s)==5 and len(t)==5*17 and len(p)==5*17
+          assert len(omit)==6*20*2 and len(oscore)==6
+          assert set(oscore.excluded_public_Q_cohort)==set(x['Q_heldout_selected'])
+          assert x['Q_omission_method_comparison_scored_only_after_freeze']
+          assert oscore.TPR010_count.le(20).all()
           assert r.method.nunique()==2 and len(x['Q_heldout_selected'])==6
           assert (r.holdout_nonmember_proxy_n==326).all()
           assert (r.groupby(['target','heldout_Q_cohort']).method.nunique()==2).all()
@@ -71,11 +77,11 @@ jobs:
           set -euo pipefail
           src="$RUNNER_TEMP/p07-qcohort-null"
           mkdir -p "$EXP/results"
-          for f in cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv protocol.json; do
+          for f in cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv Q_cohort_omission_TPR.csv Q_cohort_omission_counterfactual.csv protocol.json; do
             test -s "$src/$f"
             cp "$src/$f" "$EXP/results/$f"
           done
-          (cd "$EXP/results" && sha256sum cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv protocol.json > SHA256SUMS.txt)
+          (cd "$EXP/results" && sha256sum cohort_heldout_null_risk.csv Q_cross_cohort_duplicate_audit.csv frozen_cohort_decisions.csv counterfactual_summary.csv target_results.csv Q_cohort_omission_TPR.csv Q_cohort_omission_counterfactual.csv protocol.json > SHA256SUMS.txt)
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add "$EXP/results"
