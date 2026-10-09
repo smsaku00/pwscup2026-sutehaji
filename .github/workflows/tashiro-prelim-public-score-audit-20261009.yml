@@ -65,4 +65,48 @@ jobs:
                             for coord,val in cells[:28]]
                             for cells in allrows[:24]]
               },ensure_ascii=False))
+              # Explicit aggregate-only extraction, retaining the workbook's cached numeric values.
+              def rowdict(row):
+                return {re.match(r'([A-Z]+)',k).group(1):v for k,v in row}
+              if name=='総括':
+                scoreboards=[]
+                for line in allrows[1:]:
+                  obj=rowdict(line)
+                  if 'P' not in obj:continue
+                  scoreboards.append({
+                    'cohort':int(obj['A']),'team':obj.get('B'),
+                    'attack':obj.get('P'),'rank':obj.get('Q'),
+                    'overall_standing':obj.get('O'),
+                    'U':obj.get('C')})
+                print('OFFICIAL_PRELIM_ATTACK_RANKING_JSON='+json.dumps(
+                  sorted(scoreboards,key=lambda v:v['attack'],reverse=True),ensure_ascii=False))
+              if name=='攻撃_標的別_MIA':
+                dataset=[rowdict(r) for r in allrows[1:]]
+                mine=[]
+                agg={}
+                for r in dataset:
+                  attacker=int(r['A']);target=int(r['B'])
+                  g=float(r['G']);tpr=float(r['E'])
+                  item={'target':target,'tpr_all':tpr,
+                        'tpr_rare':r.get('F'),'t_j_max':g,
+                        'member_count':r.get('C'),'rare_count':r.get('D')}
+                  agg.setdefault(attacker,[]).append(item)
+                  if attacker==5:mine.append(item)
+                byattacker=[{
+                  'cohort':attacker,'target_count':len(vals),
+                  'mia_all_mean':sum(x['tpr_all'] for x in vals)/len(vals),
+                  'mia_max_mean':sum(x['t_j_max'] for x in vals)/len(vals),
+                  'tpr_ge_010':sum(x['tpr_all']>=.1-1e-12 for x in vals)
+                } for attacker,vals in agg.items()]
+                print('OFFICIAL_PRELIM_OUR_MIA_PER_TARGET_JSON='+json.dumps(
+                  sorted(mine,key=lambda x:x['target']),ensure_ascii=False))
+                print('OFFICIAL_PRELIM_ALL_ATTACKERS_MIA_JSON='+json.dumps(
+                  sorted(byattacker,key=lambda x:x['mia_all_mean'],reverse=True),ensure_ascii=False))
+              if name=='攻撃_標的別_AIA':
+                dataset=[rowdict(r) for r in allrows[1:]]
+                mine=[{'target':int(r['B']),'AIA_all':r.get('C'),
+                       'AIA_rare':r.get('D'),'AIA_max':r.get('J')}
+                      for r in dataset if int(r['A'])==5]
+                print('OFFICIAL_PRELIM_OUR_AIA_PER_TARGET_JSON='+json.dumps(
+                  sorted(mine,key=lambda x:x['target']),ensure_ascii=False))
           PY
