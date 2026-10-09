@@ -1,0 +1,35 @@
+{
+  "scope": "20 target official preliminary; fixed old Team1/2, AIA and rare; Team12=P01",
+  "status": "POST-HOC published prelim, NOT independent prospective performance",
+  "P08_A_majority_cutoffs": [
+    0.5,
+    0.8,
+    0.9
+  ],
+  "reference_public_only": "official A_bg full13 exact row matching",
+  "source_TPR_score_scope": "P08 infer20 full / P04 archived full; no per-record hybrid output",
+  "new_method_construction_does_not_select_specific_team_ids": true,
+  "historical_success_target_selection_bias": true,
+  "full_new_TPR010_target_count": 6,
+  "outer_LOOTO_selection": "choose cutoff among P04,.5,.8,.9 based on other16 TPR, prefer largest cutoff on ties",
+  "LOOTO_counterfactual_attack": 0.35112011336027454,
+  "LOOTO_improvement_over_P04": 0.0019230769230769718,
+  "LOOTO_gap_third": 0.0017256922359964455,
+  "LOOTO_heldout_improved_teams": [
+    18
+  ],
+  "LOOTO_rule_counts": {
+    "P08_A_majority80": 16,
+    "P08_A_high90": 1
+  },
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08_公開残差と時刻条件付/results/by_target.csv": "98b60d2be259e4fd4d522b25775be1905ac702e306b01cda5d0885236b7eeca8",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P08_公開残差と時刻条件付/results/public_copy_cohorts.csv": "f958fbb5a08d2cb08129e1498a9d8b6e9eaacce2c5809a7d42e03d4d7375a17b",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証/p04_family_split/five_public_rules_by_team.csv": "387a249b766211b82f3aa9242ac112f6fe7c001faf5961d9cbd755dbf2e1a4f2",
+    "公式データ/予備戦/結果/公開用結果表_20260909.xlsx": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508"
+  },
+  "actual_main_TPR_unobserved": true,
+  "no_main_submission": true,
+  "rare_5bit_unchanged": true,
+  "not_same_background_P04_and_P08_4views": true
+}
