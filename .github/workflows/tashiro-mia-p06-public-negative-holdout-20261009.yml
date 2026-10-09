@@ -1,0 +1,85 @@
+name: Tashiro MIA P06 public-A 80-20 separated negative audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p06-public-negative-holdout-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  evaluate_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P06_公開非会員の分離評価'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install original exact scoring dependencies plus official xlsx parser
+        shell: bash
+        run: |
+          python -m pip install -r "$BASE/requirements.txt"
+          python -m pip install openpyxl==3.1.5
+      - name: Test public-control ranking and no-truth selection
+        run: python -m unittest discover -s "$EXP" -p test_nonmember_holdout.py -v
+      - name: Compute P01 KDE-A and P03 risk on three public-A 80/20 splits
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_nonmember_holdout.py" --root . --out "$RUNNER_TEMP/mia-p06-public-null"
+      - name: Verify P01 KDE-A exact full regression, official attack and label separation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-p06-public-null'
+          score=pd.read_csv(p/'counterfactual_summary.csv')
+          risk=pd.read_csv(p/'nonmember_risk_panel.csv')
+          chosen=pd.read_csv(p/'selection_frozen_before_truth.csv')
+          bg=pd.read_csv(p/'matched_background_refits.csv')
+          ag=pd.read_csv(p/'matched_background_summary.csv')
+          proto=json.loads((p/'protocol.json').read_text())
+          assert len(score)==4 and len(risk)==4*20*3
+          assert len(chosen)==4*17 and len(bg)==3*4*5 and len(ag)==12
+          assert risk[risk.source=='A_bg_20pct_heldout'].null_count.eq(1028).all()
+          assert chosen[chosen.base_P04_family=='KDEA'].team.nunique()==5
+          assert set(chosen.chosen_family)<=set(['P01','KDEA','KDEB','P03_Cnn'])
+          assert abs(proto['P01_and_KDEA_archived_regression_max_abs_TPR'])<1e-12
+          assert abs(score[score.policy=='P04'].hypothetical_attack_power.item()-.34919703643719757)<1e-12
+          assert proto['official_pool_ids_read_only_after_freeze']
+          assert proto['self_AIA_P01_calibration_in_sample']
+          assert proto['KDE_B_risk_not_measured']
+          assert proto['main_inputs_used'] is False and proto['main_submission_changed'] is False
+          print('PASS: 3 public-A splits, 240 risk rows, 4 fixed selection policies; P01+KDE A full regressed')
+          print(score.to_string(index=False))
+          print(ag.to_string(index=False))
+          PY
+      - name: Publish only aggregate risk/target metrics, never individual predictions
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/mia-p06-public-null"
+          mkdir -p "$EXP/results"
+          for n in nonmember_risk_panel.csv selection_frozen_before_truth.csv prediction_hashes.json counterfactual_summary.csv by_target.csv matched_background_refits.csv matched_background_summary.csv protocol.json; do
+            test -s "$SRC/$n"
+            cp "$SRC/$n" "$EXP/results/$n"
+          done
+          (cd "$EXP/results" && sha256sum nonmember_risk_panel.csv selection_frozen_before_truth.csv prediction_hashes.json counterfactual_summary.csv by_target.csv matched_background_refits.csv matched_background_summary.csv protocol.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/results"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P06の公開A分離誤検出率と事後方式選択の集計を保存'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
