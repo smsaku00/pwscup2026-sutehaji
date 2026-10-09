@@ -74,3 +74,4 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+# Rerun with public std deviation fallback when official background time IQR is zero.
