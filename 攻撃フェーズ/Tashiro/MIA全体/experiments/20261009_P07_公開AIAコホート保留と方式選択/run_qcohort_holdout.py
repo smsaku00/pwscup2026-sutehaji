@@ -1,12 +1,13 @@
-"""P07: public AIA Q *cohort-level* leave-out negative calibration test.
+"""P07: 7-attribute P01/P03 only, public AIA Q cohort-level holdout test.
 
 For target t != holdout h: all 326 Q_h queries are provisionally nonmembers
 of B_t under the official AIA nonshared/member-control construction.
 Q_h and any identical QI7 rows in other Q cohorts are excluded from P01
-calibration. P01/KDE A/P03 numeric scores are evaluated for same h and
-same full A_bg. Candidates are B_self's 875 ordinary non-private rows.
-The selector is frozen before pool_ids truth is opened, and applies only to
-preliminary P04's KDE-A group. KDE B remains archived full-target aggregate.
+calibration. P01 and P03 can both score the seven public AIA columns; KDE A cannot
+because Q_h lacks six of its thirteen features. Therefore KDE A/B remain
+FIXED. Only P04-P01 targets are eligible for a P03 switch. Candidates
+are B_self's 875 ordinary non-private rows. Decisions are frozen before
+pool_ids truth. All target scopes use same full20 score construction.
 
 All data used BEFORE truth: own B_self, A_bg, public C, public Q, P04 public
 imprint/home thresholds, official workbook's *fixed* old MIA-rare/AIA score
@@ -36,7 +37,7 @@ KDEA="q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1"
 KDEB="q7_robust_adaptivek15_h1__age100__cross0.1"
 TEAM17=(3,4,6,7,8,9,10,13,17,18,19,20,22,23,24,26,29)
 NUM5=("age","SBP","TG","HDL","ALT")
-METHODS=("P01","KDEA","P03_Cnn")
+METHODS=("P01","P03_Cnn")
 POLICIES=("P04","Q99_delta005","Q95_delta010","Q99_all_positive","Q99_naive_min")
 SEED=20261009
 N_Q_OTHER=5
@@ -59,7 +60,7 @@ def percentile(normal_b,other,normal):
     return rank,query
 
 def two_matrices(base,b_signals,q_signals,normal):
-    """Each method across all20; ranks derived only from 875 candidate normals."""
+    """Same 7-column P01 and P03 scores for held-out public Q and own B."""
     n=len(normal)
     r={},{}
     for kind in METHODS:
@@ -71,7 +72,7 @@ def two_matrices(base,b_signals,q_signals,normal):
             a,z=percentile(vb[:,j],vq[:,j],normal)
             rankb.append(a);rankq.append(z)
         br=np.column_stack(rankb);qr=np.column_stack(rankq)
-        if kind=="P01" or kind=="KDEA":
+        if kind=="P01":
             br=br-.1*base.rivals(br,np.median)
             qr=qr-.1*base.rivals(qr,np.median)
         # P03 distance scores will be combined with P01 separately.
@@ -118,30 +119,23 @@ def evaluate_q_risk(b,q,normal,targets,hold):
     return out
 
 def choose(risk,team,policy):
-    if policy=="P04":return "KDEA"
+    if policy=="P04":return "P01"
     dd=risk[risk.target.eq(team)].copy()
-    a=dd[dd.method=="KDEA"].set_index("heldout_Q_cohort")
-    assert len(a)>=4
-    alternatives=[]
-    for m in ("P01","P03_Cnn"):
-        z=dd[dd.method==m].set_index("heldout_Q_cohort").reindex(a.index)
-        d99=a.risk99-z.risk99
-        d95=a.risk95-z.risk95
-        if policy=="Q99_delta005":
-            allowed=float(d99.mean())>=.005 and float(d95.mean())>=-.005
-            priority=(float(d99.mean()),float(d95.mean()))
-        elif policy=="Q95_delta010":
-            allowed=float(d95.mean())>=.010 and float(d99.mean())>=-.003
-            priority=(float(d95.mean()),float(d99.mean()))
-        elif policy=="Q99_all_positive":
-            allowed=bool((d99>=.001).all() and (d95>=-.015).all())
-            priority=(float(d99.mean()),float(d95.mean()))
-        elif policy=="Q99_naive_min":
-            allowed=float(d99.mean())>1e-12
-            priority=(float(d99.mean()),float(d95.mean()))
-        else:raise ValueError(policy)
-        if allowed:alternatives.append((priority,m))
-    return max(alternatives,key=lambda x:x[0])[1] if alternatives else "KDEA"
+    a=dd[dd.method=="P01"].set_index("heldout_Q_cohort")
+    z=dd[dd.method=="P03_Cnn"].set_index("heldout_Q_cohort").reindex(a.index)
+    assert len(a)>=4 and len(z)==len(a)
+    d99=a.risk99-z.risk99
+    d95=a.risk95-z.risk95
+    if policy=="Q99_delta005":
+        allowed=float(d99.mean())>=.005 and float(d95.mean())>=-.005
+    elif policy=="Q95_delta010":
+        allowed=float(d95.mean())>=.010 and float(d99.mean())>=-.003
+    elif policy=="Q99_all_positive":
+        allowed=bool((d99>=.001).all() and (d95>=-.015).all())
+    elif policy=="Q99_naive_min":
+        allowed=float(d99.mean())>1e-12
+    else:raise ValueError(policy)
+    return "P03_Cnn" if allowed else "P01"
 
 def run(root,out):
     if out.exists():raise FileExistsError(str(out))
@@ -176,15 +170,14 @@ def run(root,out):
     rawB=np.column_stack(rawB)
     del raw
     selectframe=pd.concat([b[qi]]+[qs[k][qi] for k in probes],ignore_index=True)
-    kde,h=archive.scores_KDEA(common,selectframe,a,cs,teams)
+    # KDE A needs BMI/FPG/time/etc missing from public Q: compute on B only.
+    kdeB,h=archive.scores_KDEA(common,b,a,cs,teams)
     nn=nearest_both(common,selectframe,a,cs,teams)
-    kdeB=kde[:len(b)]
     nnB=nn[:len(b)]
-    kdeProbe={};nnProbe={}
+    nnProbe={}
     offset=len(b)
     for h in probes:
         n=len(qs[h])
-        kdeProbe[h]=kde[offset:offset+n]
         nnProbe[h]=nn[offset:offset+n]
         offset+=n
     assert offset==len(selectframe)
@@ -221,16 +214,16 @@ def run(root,out):
     core_methods={}
     baseb={
       "P01":fullCal,
-      "KDEA":kdeB,
       "P03_Cnn":nnB
     }
     # private probes for in-sample diagnostic not used in policies.
     privateq={
       "P01":fullCal[private],
-      "KDEA":kdeB[private],
       "P03_Cnn":nnB[private]
     }
     fullB,priv=two_matrices(base,baseb,privateq,normal)
+    kderanks=base.ranks(kdeB[normal])
+    fullB["KDEA"]=kderanks-.1*base.rivals(kderanks,np.median)
     risks=[]
     choices_by_hold={}
     for h in probes:
@@ -238,8 +231,8 @@ def run(root,out):
                    for j,t in enumerate(teams)])
         hcal=np.column_stack([leaveCal[t,h][1] if (t,h) in leaveCal else rawQ[t][h]
                    for j,t in enumerate(teams)])
-        bsignal={"P01":bcal,"KDEA":kdeB,"P03_Cnn":nnB}
-        hsignal={"P01":hcal,"KDEA":kdeProbe[h],"P03_Cnn":nnProbe[h]}
+        bsignal={"P01":bcal,"P03_Cnn":nnB}
+        hsignal={"P01":hcal,"P03_Cnn":nnProbe[h]}
         rv,rn=two_matrices(base,bsignal,hsignal,normal)
         risks.extend(evaluate_q_risk(rv,rn,normal,teams,h))
         choices_by_hold[h]=len(rn["P01"])
@@ -252,7 +245,7 @@ def run(root,out):
     for policy in POLICIES:
         current=dict(assignments)
         for t in TEAM17:
-            if assignments[t]=="KDEA":current[t]=choose(risks_df,t,policy)
+            if assignments[t]=="P01":current[t]=choose(risks_df,t,policy)
         choices.append((policy,current))
     pd.DataFrame([{"policy":name,"team":t,
         "P04_family":assignments[t],"selected":sel[t],
@@ -325,7 +318,8 @@ def run(root,out):
         "heldout_QI7_duplicate_removal":True,
         "risk_metric":"heldout-Q exceed top1pct/top5pct among 875 normal self candidates, NOT official FPR",
         "Q_target_h_excluded_from_test":True,
-        "score_models":METHODS,"P04_KDEA_only_policy":True,
+        "score_models_Q_public":METHODS,"KDEA_Q_risk_not_evaluable_missing_columns":True,
+        "P04_P01_only_policy":True,
         "KDEB_not_score_recomputed":True,
         "prediction_and_choices_frozen_utc":frozen,
         "released_pool_ids_read_after_freeze":True,
@@ -340,7 +334,7 @@ def run(root,out):
     })
     print(s.to_string(index=False))
     print(pd.DataFrame(discarded).groupby("heldout").cross_cohort_duplicate_QI7_removed.agg(["sum","max"]).to_string())
-    print(pd.DataFrame([{"policy":name,"KDEA_changes":{t:sel[t] for t in TEAM17 if assignments[t]=="KDEA"}} for name,sel in choices]).to_string(index=False))
+    print(pd.DataFrame([{"policy":name,"P01_changes":{t:sel[t] for t in TEAM17 if assignments[t]=="P01"}} for name,sel in choices]).to_string(index=False))
     print("seconds",time.perf_counter()-ts)
 
 if __name__=="__main__":
