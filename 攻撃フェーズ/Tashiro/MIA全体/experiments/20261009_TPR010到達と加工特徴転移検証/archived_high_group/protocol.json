@@ -1,0 +1,40 @@
+{
+  "status": "POSTHOC high-group method comparison; NOT a held-out independent test",
+  "candidate_methods": 22,
+  "backgrounds": [
+    "fraction0.5_seed20261007",
+    "fraction0.5_seed20261008",
+    "fraction0.8_seed20261007",
+    "fraction0.8_seed20261008",
+    "fraction0.9_seed20261007",
+    "fraction0.9_seed20261008",
+    "full"
+  ],
+  "target_count": 17,
+  "excluded_teams": [
+    1,
+    2,
+    12
+  ],
+  "source_p03_group_high": [
+    3,
+    7,
+    8,
+    9,
+    13,
+    18,
+    20,
+    23,
+    26
+  ],
+  "low_group_score_source": "Q_prefecture_sex_shrink500_cross01",
+  "decision_rule": "For each fixed method use it for all 9 AIA-imprint-high target columns, P01 for 8 low; evaluate complete panel",
+  "target_membership_labels_in_method_assignment": false,
+  "method_selection_after_results": true,
+  "main_membership_not_used": true,
+  "main_submission_not_changed": true,
+  "source_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/public_target_groups.csv": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2"
+  }
+}
