@@ -1,0 +1,60 @@
+{
+  "dataset": "Published preliminary 17 target x 22 fixed methods x 7 backgrounds",
+  "method_panel_preselected_using_exposed_preliminary_truth": true,
+  "outer_target_label_used_for_training_or_hyperparameter_selection": false,
+  "public_features_transductive_across_targets": true,
+  "inner_CV_training_target_count": 16,
+  "inner_choice_heldout_fold_count": 16,
+  "inner_selection_criterion": "max stable_hits, full_hits, -lost_hits, mean, -method_changes",
+  "policy_candidates": 72,
+  "FPR": 0.01,
+  "TPR_success_threshold": 0.1,
+  "background_views": [
+    "fraction0.5_seed20261007",
+    "fraction0.5_seed20261008",
+    "fraction0.8_seed20261007",
+    "fraction0.8_seed20261008",
+    "fraction0.9_seed20261007",
+    "fraction0.9_seed20261008",
+    "full"
+  ],
+  "team1_2_12_excluded": true,
+  "target_ids": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "high_public_group": [
+    3,
+    7,
+    8,
+    9,
+    13,
+    18,
+    20,
+    23,
+    26
+  ],
+  "input_sha256": {
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/公開加工特徴.csv": "42c7331d095936bedf7427faeadd6d2ddb9ef68e7bc98349199de2d60fc75de5",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_非学習方式と加工特徴_背景耐性/固定方式_全背景評価.csv": "45d69a921d05cae12ce2a61305f3acc6ca4c54e4786749c3a2ccd72fc1c4163c",
+    "攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_AIA臨床分布と加工特徴の群別補正/results/public_target_groups.csv": "1cd887a8835173334e86a1be4eaf8a7fc8fb09104be16497d5efbd112207d4e2"
+  },
+  "no_main_data": true,
+  "no_submission": true,
+  "caveat": "Outer LOOTO does not repair historical reuse of same preliminary labels for method-family selection"
+}

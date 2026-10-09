@@ -1,0 +1,42 @@
+{
+  "baseline": {
+    "full_ge010": 2,
+    "stable_all7": 0,
+    "full_mean_tpr": 0.027001843472431692
+  },
+  "nested": {
+    "full_ge010": 0,
+    "stable_all7_ge010": 0,
+    "new_hits": 0,
+    "lost_hits": 2,
+    "mean_full_tpr": 0.006085709698104583,
+    "improved_teams": 5,
+    "worsened_teams": 7,
+    "unchanged_teams": 5,
+    "selected_method_counts": {
+      "legacy_redteam_event_time_exact": 12,
+      "Q_prefecture_sex_shrink500_cross01": 4,
+      "q7_sex_bins40_s10_logratio__county500__cross0": 1
+    },
+    "selected_policy_counts": [
+      {
+        "scope": "all",
+        "k": 16,
+        "kind": "gain",
+        "count": 12
+      },
+      {
+        "scope": "high_only",
+        "k": 3,
+        "kind": "hit",
+        "count": 4
+      },
+      {
+        "scope": "high_only",
+        "k": 7,
+        "kind": "gain",
+        "count": 1
+      }
+    ]
+  }
+}
