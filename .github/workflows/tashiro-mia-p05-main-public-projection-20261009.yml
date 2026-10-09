@@ -1,0 +1,66 @@
+name: Tashiro MIA P05 main public C AIA feature projection
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p05-main-public-projection-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  project:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_P05_損失防止と公開特徴ゲート'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Install scientific numerical packages
+        run: python -m pip install numpy==2.3.5 pandas==2.2.3 scipy==1.16.3
+      - name: Compute unlabeled public main target features only
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/project_main_public.py" --root . --out "$RUNNER_TEMP/p05-main-public"
+      - name: Audit no self B no labels no TPR interpretation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os,json,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'p05-main-public'
+          a=pd.read_csv(p/'main_public_P05_proxy.csv')
+          x=json.loads((p/'main_public_diagnostics.json').read_text())
+          assert len(a)==22 and a.team.nunique()==22 and 28 not in set(a.team)
+          assert x['unknown_main_TPR'] and x['no_main_B_self'] and x['no_membership_truth']
+          assert x['no_hidden_AIA_labels'] and x['no_F_mia_created'] and x['no_submission_changed']
+          assert all(v in ('KDE_A','KDE_B','P01','P03_Cnn') for v in a.P05_combined_PUBLIC_only_family)
+          assert len(x['changed_public_families'])<=22
+          print('PASS: P05 public-feature projection on 22 main targets; NO personal scores/truth/submission')
+          print(a[['team','base_P04_family','main_public_A_bg_only_full13_copy_rows',
+            'main_sexmatched_QC_close_005','main_sexmatched_QC_RMS_median',
+            'P05_combined_PUBLIC_only_family']].to_string(index=False))
+          PY
+      - name: Publish unlabeled public metadata only
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/p05-main-public"
+          mkdir -p "$EXP/main_public"
+          for f in main_public_P05_proxy.csv main_public_diagnostics.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/main_public/$f"
+          done
+          (cd "$EXP/main_public" && sha256sum main_public_P05_proxy.csv main_public_diagnostics.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/main_public"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P05の本戦22対象公開特徴を真値なしで診断'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
