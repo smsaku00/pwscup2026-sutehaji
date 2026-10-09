@@ -1,0 +1,25 @@
+verification: PASS, 21 cohort reconstruction, edits and hit counts
+MATCHED ACTION SUMMARY:
+      scope            method  r_all_mean  delta_vs_reference_mean  ci95_diff_vs_reference_lo  ci95_diff_vs_reference_hi  wins  losses  ties changes
+  nonself20          baseline    0.191399                -0.003822                  -0.010727                   0.001266     1       3    16       -
+  nonself20         reference    0.195221                 0.000000                   0.000000                   0.000000     0       0    20    30.0
+  nonself20          HGB_full    0.196549                 0.001328                  -0.015279                   0.016556    10       8     2   200.0
+  nonself20 HGB_equal_actions    0.193402                -0.001819                  -0.007941                   0.004790     1       4    15    30.0
+processed18          baseline    0.149846                -0.004247                  -0.011712                   0.001406     1       3    14       -
+processed18         reference    0.154093                 0.000000                   0.000000                   0.000000     0       0    18    30.0
+processed18          HGB_full    0.154925                 0.000832                  -0.017586                   0.017786     9       7     2   180.0
+processed18 HGB_equal_actions    0.152072                -0.002021                  -0.008782                   0.005176     1       4    13    30.0
+PUBLIC GROUP SUMMARY:
+                               group  group_definition_prior  n_teams                            teams  logistic_r_all  hgb_r_all  delta_hgb_minus_logistic  wins  losses  ties  logistic_changes  hgb_changes  hgb_member_lost  hgb_control_removed  hgb_equal_actions_r_all
+         strong_row_preservation_1_2                    True        2                              1;2        0.565376   0.571170                  0.005794     1       1     0                 0           20                4                   12                 0.565376
+column_preserved_row_disrupted_19_24                    True        2                            19;24        0.239476   0.219554                 -0.019921     0       2     0                10           20                9                    9                 0.232229
+     column_and_row_bg_matched_18_29                    True        2                            18;29        0.080882   0.101351                  0.020469     1       0     1                 0           20                5                   11                 0.080882
+             heavy_discretization_23                    True        1                               23        0.119403   0.092308                 -0.027095     0       1     0                10           10                3                    5                 0.092308
+     other13_not_assumed_homogeneous                    True       13 3;4;6;7;8;9;10;12;13;17;20;22;26        0.154889   0.158040                  0.003151     8       4     1                10          130               47                   66                 0.155290
+SAME FEATURES, GLOBAL RANKING:
+      scope   features  n_teams  logistic_r    hgb_r  hgb_minus_logistic  r_diff_ci_lo  r_diff_ci_hi  wins  losses  ties  logistic_auc  hgb_auc  auc_diff  auc_diff_ci_lo  auc_diff_ci_hi
+  nonself20       c_bg       20    0.188867 0.192556            0.003689     -0.028664      0.034965    10       8     2      0.592743 0.607994  0.015251        0.002736        0.027549
+processed18       c_bg       18    0.146953 0.149637            0.002684     -0.033342      0.037005     9       7     2      0.565910 0.579441  0.013531        0.000187        0.026655
+  nonself20 c_bg_local       20    0.191399 0.191499            0.000100     -0.034582      0.036108     8       9     3      0.591151 0.607873  0.016722        0.003346        0.029773
+processed18 c_bg_local       18    0.149846 0.148715           -0.001132     -0.039198      0.038547     7       8     3      0.563263 0.579490  0.016227        0.001614        0.030492
+ZERO REFERENCE ACTION TEAMS: 14
