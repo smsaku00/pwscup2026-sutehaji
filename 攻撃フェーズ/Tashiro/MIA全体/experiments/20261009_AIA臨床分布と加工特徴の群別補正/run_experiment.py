@@ -146,7 +146,7 @@ def build_public_features(common, b, a, qs, cs, teams):
         descriptors["AIA_imprint_log_BG_to_C_median_Q_NN"] >= cut_imprint
     ).astype(int)
     descriptors["quantized_c"] = (
-        descriptors["C_min_numeric_unique_fraction"] < .90
+        descriptors["C_median_numeric_unique_fraction"] < .90
     ).astype(int)
     descriptors["c_home_above_median"] = (
         descriptors["C_home_fraction"] >= cut_home
