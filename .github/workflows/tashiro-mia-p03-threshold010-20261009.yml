@@ -1,0 +1,73 @@
+name: Tashiro MIA P03 gated-neighbor 0.10 screening (one-off)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tashiro-mia-p03-threshold010-20261009.yml'
+permissions:
+  contents: write
+jobs:
+  run_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      EXP: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_TPR010到達と加工特徴転移検証'
+      BASE: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: '攻撃フェーズ/Tashiro/MIA全体/experiments/20261009_全対象共同推定/requirements.txt'
+      - name: Install fixed dependencies
+        run: python -m pip install -r "$BASE/requirements.txt"
+      - name: Run fixed P03 weight screen with official preliminary data
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$EXP/run_p03_weight_screen.py" --root . --output-dir "$RUNNER_TEMP/mia-p03-threshold010"
+      - name: Assert exact P01 regression and stable 0.10 hit tracking
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os,pandas as pd
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'mia-p03-threshold010'
+          a=pd.read_csv(p/'by_target.csv')
+          s=pd.read_csv(p/'summary.csv')
+          h=pd.read_csv(p/'threshold_stability.csv')
+          j=json.loads((p/'protocol.json').read_text())
+          assert len(a)==4*12*18 and len(s)==4*12 and len(h)==18*12
+          assert a.team.nunique()==18 and 1 not in set(a.team) and 2 not in set(a.team)
+          assert a.method.nunique()==12
+          ref=s[(s.method=='P01')&(s.background=='full')]
+          assert abs(ref.mean_tpr.item()-0.025495409939854385)<1e-12
+          assert (h.stable_all4_ge010==(h.hit_backgrounds==4)).all()
+          assert j['main_submission'] is False and j['target_TPR']==0.1
+          print('PASS: 864 target metrics; 48 means; 216 target-method threshold-stability records')
+          print(s[s.background=='full'][['method','mean_tpr','hit_ge010','new_hits_over_P01','lost_hits_vs_P01','wins','losses']].to_string(index=False))
+          PY
+      - name: Publish aggregate results without person rows
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/mia-p03-threshold010"
+          mkdir -p "$EXP/p03_threshold010"
+          for f in summary.csv by_target.csv threshold_stability.csv protocol.json prediction_hashes.json; do
+            test -s "$src/$f"
+            cp "$src/$f" "$EXP/p03_threshold010/$f"
+          done
+          (cd "$EXP/p03_threshold010" && sha256sum summary.csv by_target.csv threshold_stability.csv protocol.json prediction_hashes.json > SHA256SUMS.txt)
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXP/p03_threshold010"
+          git diff --cached --quiet && exit 0
+          git commit -m 'MIA全体：P03近傍係数12条件のTPR0.10到達数と背景耐性を保存'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
