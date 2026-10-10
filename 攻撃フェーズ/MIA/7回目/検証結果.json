@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "created_jst": "2026-10-11T01:29:39.039386+09:00",
+  "round": 7,
+  "fixed_5bit_question_number": 5,
+  "candidate_sha256": "20159ce25b547e6644a938e1cac9bcac03fb5be6c7cad8508f102a4663e26a8c",
+  "candidate_bytes": 391806,
+  "rows": 1049,
+  "target_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "audit_scope": "MIA only; independent of reproduce.py, original QI7 partition, original CSV fields, pinned official validator/scorer.",
+  "population": {
+    "nonrare_rows": 1025,
+    "unknown_normal_rows": 875,
+    "known_nonmember_normal_rows": 150,
+    "rare_rows": 24
+  },
+  "normal_source_field_and_numeric_equality": {
+    "Team9_round6_cells": 1025,
+    "other21_round1_cells": 21525,
+    "all_22550_cells_exact": true
+  },
+  "Team9_full_numeric_column_equals_round6": true,
+  "known_nonmember_zero_cells": 3300,
+  "unknown_normal_range": [
+    0.5504571428571429,
+    0.95
+  ],
+  "all_normal_unknown_above_rare": true,
+  "fixed_question": {
+    "candidate_ids": [
+      47,
+      76,
+      90,
+      115,
+      169
+    ],
+    "high_value": 0.4,
+    "low_value": 0.1,
+    "other_target_rare_value": 0,
+    "high_ids_by_target": {
+      "6": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        169
+      ],
+      "10": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        136,
+        169
+      ],
+      "11": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        136,
+        169
+      ],
+      "16": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        136,
+        169,
+        271,
+        273,
+        317,
+        440
+      ],
+      "17": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        136,
+        169,
+        271,
+        273,
+        317
+      ],
+      "25": [
+        47,
+        76,
+        90,
+        115,
+        126,
+        136,
+        169,
+        271,
+        273,
+        317,
+        440,
+        480
+      ]
+    },
+    "member_counts": {
+      "6": 1,
+      "10": 2,
+      "11": 1,
+      "16": 2,
+      "17": 1,
+      "25": 2
+    },
+    "high_counts": {
+      "6": 6,
+      "10": 7,
+      "11": 7,
+      "16": 11,
+      "17": 10,
+      "25": 12
+    },
+    "rare_value_counts": {
+      "0.4": 53,
+      "0.1": 91,
+      "0": 384
+    }
+  },
+  "rare_changed_cells_vs_round6": 36,
+  "official_mia_format": {
+    "ok": true,
+    "errors": []
+  },
+  "conditional_saved_forecast_checks": {
+    "placements_checked": 16,
+    "official_scorer_calls": 352,
+    "all_official_floats_exact": true,
+    "all_exact_formulas_match": true
+  },
+  "conditional_round6_observation": {
+    "observed_rare_float": "0.010833333333333334",
+    "observed_exact": "13/1200",
+    "remaining_placements": 4,
+    "predictions": [
+      {
+        "placement_id": "772",
+        "round7_exact": "68/3375",
+        "round7_official_float": "0.020148148148148148"
+      },
+      {
+        "placement_id": "775",
+        "round7_exact": "1079/54000",
+        "round7_official_float": "0.019981481481481482"
+      },
+      {
+        "placement_id": "1240",
+        "round7_exact": "337/27000",
+        "round7_official_float": "0.012481481481481482"
+      },
+      {
+        "placement_id": "1245",
+        "round7_exact": "133/10800",
+        "round7_official_float": "0.012314814814814813"
+      }
+    ],
+    "round7_distinguishes_all_four": true
+  },
+  "qualification": "Rare placements are conditional on frozen candidate/count/exclusivity assumptions and the user-specified round6 result correspondence. Hypothetical scoring is not true-membership performance evaluation.",
+  "source_sha256": {
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回MIA_Team9第6回と他第1回_固定5bit第5問/入力/F_mia_round1.csv": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回MIA_Team9第6回と他第1回_固定5bit第5問/入力/F_mia_round6.csv": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回MIA_Team9第6回と他第1回_固定5bit第5問/GitHub保存/F_mia.csv": "20159ce25b547e6644a938e1cac9bcac03fb5be6c7cad8508f102a4663e26a8c",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回MIA_Team9第6回と他第1回_固定5bit第5問/入力/第5回復号と第6回設定.json": "15b4aad8f0226a9e9a3d3373012ed9ce5a6aafa52d452ffa00a563f3471c2c19",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回MIA_Team9第6回と他第1回_固定5bit第5問/入力/第5回後16配置と予測.csv": "b59d9dfadd5787d20fee713b4e1353988cdb515e420b31549c1c918bdafb85b7",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+  },
+  "auditor_sha256": "dc34bc7e3e97a8f47c4db71c3a7d81c9e2182a2a23850db3f90f169998aeeed8",
+  "tournament_submitted": false,
+  "round7_official_score_available": false
+}

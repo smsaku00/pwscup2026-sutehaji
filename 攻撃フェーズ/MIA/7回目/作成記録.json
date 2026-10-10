@@ -1,0 +1,68 @@
+{
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "source_commit": "91e4c1bb01a631876cc2a09072073c57c2d63179",
+  "sources": [
+    {
+      "name": "F_mia_round1.csv",
+      "path": "攻撃フェーズ/MIA/20261005_MIA希少_第1回同点データ/結果/F_mia.csv",
+      "git_blob_sha": "da76f6a111f1ea3a3476a2d213f640c31272cde5"
+    },
+    {
+      "name": "F_mia_round6.csv",
+      "path": "攻撃フェーズ/MIA/6回目/F_mia.csv",
+      "git_blob_sha": "2c83d64b95ad13a7aeea45f78327152b3ef1d50d"
+    }
+  ],
+  "created_jst": "2026-10-11T01:31:07.197244+09:00",
+  "authorization": "MIAの7回をそれで作ってください。MIA希少は固定5bitの5回目です。MIA/7回目にアップロードしてね。",
+  "normal_source_round_by_target": {
+    "0": 1,
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 6,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "17": 1,
+    "22": 1,
+    "25": 1,
+    "26": 1,
+    "27": 1
+  },
+  "nonrare_rows": 1025,
+  "unknown_normal_rows": 875,
+  "known_nonmember_normal_rows": 150,
+  "rare_rows": 24,
+  "nonrare_source_field_and_numeric_equality": {
+    "Team9_round6_cells": 1025,
+    "other21_round1_cells": 21525,
+    "all_22550_cells_exact": true
+  },
+  "fixed_5bit_question_number": 5,
+  "candidate_sha256": "20159ce25b547e6644a938e1cac9bcac03fb5be6c7cad8508f102a4663e26a8c",
+  "candidate_bytes": 391806,
+  "numeric_changes_vs_round1": {
+    "nonrare": 875,
+    "rare": 455
+  },
+  "numeric_changes_vs_round6": {
+    "nonrare": 18375,
+    "rare": 36
+  },
+  "input_sha256": {
+    "F_mia_round1.csv": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "F_mia_round6.csv": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918"
+  },
+  "tournament_submitted": false,
+  "round7_official_score_available": false
+}

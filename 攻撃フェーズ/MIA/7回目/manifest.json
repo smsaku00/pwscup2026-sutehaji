@@ -1,0 +1,51 @@
+{
+  "created_jst": "2026-10-11T01:31:07.197244+09:00",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "destination": "攻撃フェーズ/MIA/7回目",
+  "source_commit": "91e4c1bb01a631876cc2a09072073c57c2d63179",
+  "status": "generated_and_validated_not_submitted",
+  "files": [
+    {
+      "file": "F_mia.csv",
+      "bytes": 391806,
+      "sha256": "20159ce25b547e6644a938e1cac9bcac03fb5be6c7cad8508f102a4663e26a8c",
+      "git_blob_sha": "583ddd7b6fe47e679883cd837a37a08896dd4d24"
+    },
+    {
+      "file": "README.md",
+      "bytes": 7863,
+      "sha256": "65c9387e63e59515736091197aae3da3cfa4fcb20514705a71bebac1e9a0d209",
+      "git_blob_sha": "91549bc4db727fef1e077c8a9657f28069d6db98"
+    },
+    {
+      "file": "reproduce.py",
+      "bytes": 3223,
+      "sha256": "51e22975e74d5d550e500dc5aae53452ad24a108289eff488534b17e8cd7f9fc",
+      "git_blob_sha": "a5ecd4fc3e691e8b3c415384e20040e2aec7e78e"
+    },
+    {
+      "file": "作成記録.json",
+      "bytes": 1895,
+      "sha256": "d9efdc952847d2ede61ce61b8c06fd078d1fd47c04f0db0ab2a4c19777d94d55",
+      "git_blob_sha": "9c643739beeb4af58cebe720acb65d3a2398ea3c"
+    },
+    {
+      "file": "差分一覧.csv",
+      "bytes": 1227,
+      "sha256": "4e295e31e0785f421f8316db510d085711b1cbd741b227be971bd3ed8e3f3d85",
+      "git_blob_sha": "60fc807b4f9393e0073d5d9519674b31db7eb590"
+    },
+    {
+      "file": "希少設定.json",
+      "bytes": 1292,
+      "sha256": "985828c1f427a1cf71c49610ba31cbb430fa31944347fbca5a22ea1ed7713558",
+      "git_blob_sha": "9787dd983c096c45dfcbd6651d27a73ede21c284"
+    },
+    {
+      "file": "検証結果.json",
+      "bytes": 6171,
+      "sha256": "290821c05e72cc9bdb3f798e03f6501aaee3aac37a3346ddfda1665850c791ea",
+      "git_blob_sha": "1bf869fd4e552b23940133bca014e300421c0706"
+    }
+  ]
+}
