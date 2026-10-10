@@ -1,0 +1,24 @@
+{
+  "all_input_hashes_verified": true,
+  "input_file_count": 66,
+  "background_hashes_verified": true,
+  "all16_prediction_files_and_arrays_hash_verified": true,
+  "all80_caches_have_1000_repeats": true,
+  "total_center_fits": 80000,
+  "additional_original_checkpoint_fits": 240,
+  "first10_original_check_fits": 800,
+  "actual_original_private_mask_count": 163,
+  "private_and_rare_overlap_count": 13,
+  "rare_nonprivate_count": 11,
+  "source_files_final_sha256": {
+    "source/audit_and_report.py": "a560fe1bbe0de1000413ee2534dbcd45551f02ad9ebf63d8718e67ed50429a37",
+    "source/run_experiment.py": "41e54054bc20ee1be024dfe4950eec4a578486fde0ae1f02319966718f2183fc",
+    "source/originals/mia_recovered_calibration__runtime.py": "b99210a74d87f5b44a3423cf3d9851ad988f131527be6b65b9a03f695b65efd5",
+    "source/originals/20261008_MIA全体_較正の広範比較__分析.py": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+    "source/originals/20261008_MIA全体_朝9時までの方式探索__直接密度比の探索.py": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c",
+    "source/originals/20261008_MIA全体_朝9時までの方式探索__共通.py": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+    "source/originals/20261008_MIA全体_朝9時までの方式探索__距離と分布の探索.py": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+    "source/originals/20261007_MIA全体改善の検討__分析.py": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+    "source/originals/20261008_MIA全体_朝9時までの方式探索__密度比の属性と乱数を確認.py": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8"
+  }
+}

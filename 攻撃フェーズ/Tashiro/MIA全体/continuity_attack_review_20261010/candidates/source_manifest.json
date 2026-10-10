@@ -1,0 +1,375 @@
+{
+  "ranking_source": "/workspace/shared/mia_all_background_inventory/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/team_rankings_0310UTC/primary_all20_all1049_strictly_gt_010.csv",
+  "fpr": 0.01,
+  "inference": "all20",
+  "population": "all_fixed",
+  "n": 1049,
+  "sources": [
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/starter/by_target.csv",
+      "sha256": "7fa7a20323b7d3fd507374e11e2d532ac5c4aa677f6bab36d772117f62e6fa0a",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/prelim/by_target.csv",
+      "sha256": "c429e262bbcd6c9d3f24ae4624eb43b7fd84df69ad97af296089cac3d561526c",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/main/by_target.csv",
+      "sha256": "7bcf60aacfe43a6e53a7c4fc8d9bd41af96d5e030c6cd577b97859ec08254074",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/starter+prelim/by_target.csv",
+      "sha256": "660e0f48f79eb3e906ab6d43ea27bba77262b3afebdcaaf3ad443a226eeedea5",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/starter+main/by_target.csv",
+      "sha256": "153079f142959763b2a10f6b523f72a1e7ee743937848938f53e1896ec686fab",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/prelim+main/by_target.csv",
+      "sha256": "8ebe1b7e9564b176f92dd62510c6e139563d3c9d58f62e31b1caad7a76aeb843",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "bc1d46b3b2e05d3894030e958c9817567fa7a0ff7e5a88664920d0d986fa6c3b",
+      "rows": 39960
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/legacy/aggregate/by_target_primary_canonical.csv",
+      "sha256": "a0eca80219ff99b011d80e58d7aee07865a0818a6a2925e3e57f2b8ba37d5fec",
+      "rows": 28840
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/starter/by_target.csv",
+      "sha256": "473217cfb3b3fdf9bb2e087398ab39ebbc0ce9b98d9cbf6df16cd66d79ecf34c",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/prelim/by_target.csv",
+      "sha256": "24f2e2c88ea354641794523856a3005c7af0773f35e99e17006ea09fa6beded2",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/main/by_target.csv",
+      "sha256": "2bdf4670836ed1ed331c2102618f4a7fda1a8b18f713bef168136c2969e301ea",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/starter+prelim/by_target.csv",
+      "sha256": "f69040ae16058cef2ec8977048e83088f936bed43820a6cc30a82c3a4ce2d750",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/starter+main/by_target.csv",
+      "sha256": "75a879d6464e148fb190a61651858639a296bf53631157af83134163a3407088",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/prelim+main/by_target.csv",
+      "sha256": "4e2df51ef64bc6327c9f54d6b2f8579020cc1fe2c01617cadbcae215cf44b94b",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/alignment/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "f850ffdc2ae896e5cf4710849bebb5763800c01fbc00938b63ebb190f44a2cff",
+      "rows": 45000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/starter/対象別TPR.csv",
+      "sha256": "f7e86ad7166c148a96bc61db7c6adad1db0f0bc2a6c9dd1b7aca2356c8b88916",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/prelim/対象別TPR.csv",
+      "sha256": "b8781960e938c9648073f751685b0add661e04ab4d8d679f4bee7f250736eb9e",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/main/対象別TPR.csv",
+      "sha256": "8233af987878c5c904bc045264c478a238cf42b53508431eb44ef5f80cc65587",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/starter+prelim/対象別TPR.csv",
+      "sha256": "5bc34361f2b68fcb779ef118dae3b6f09ff3939dc5e34912ce31ea51c206b659",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/starter+main/対象別TPR.csv",
+      "sha256": "8c3c60301fc8fb53c2693824f00b65c2b3fbfbba26c8c8b79e1b5914ed1b4f20",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/prelim+main/対象別TPR.csv",
+      "sha256": "deaf77024b2b7ed2defa55c549bc2cca5c96b5228c513632fc4644c00abb0728",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/direct/starter+prelim+main/対象別TPR.csv",
+      "sha256": "b3133ed50b9a5e822e1484566911bf11e9a65353dfee9de1d82031d8ba02841b",
+      "rows": 80640
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/starter/対象別TPR.csv",
+      "sha256": "fdff6c8499f24708d52418a067b4d5f9bedf75f33a71bc69038012370966ad19",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/prelim/対象別TPR.csv",
+      "sha256": "647c7b873797a19e6caaa66ac69c55b39783c8ae09eaa4297f55d57b8c4e6292",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/main/対象別TPR.csv",
+      "sha256": "0fdce8eb5b857c7bf449d0ed81eac91d7e476ca2cc8919efd6da43ecc3cfd50c",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/starter+prelim/対象別TPR.csv",
+      "sha256": "29bff8fa14b314981230b2921799ca6e48aa345265de49a6bd759a8fdcaeca1c",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/starter+main/対象別TPR.csv",
+      "sha256": "cacaa942d0f83bdf52a9fa00988038258a4500505a506e2fffebc9c219d9305c",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/prelim+main/対象別TPR.csv",
+      "sha256": "b9197708a1d4ad16580b00bb8d17a412069d83c3e74a196f1fd83a08ff4d951d",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/stable_centers/starter+prelim+main/対象別TPR.csv",
+      "sha256": "025f2b88883b4eeb7ce9e95e233ae641c25d345acc8c4778c4d066f86971a51a",
+      "rows": 19200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/starter/by_target.csv",
+      "sha256": "774da13c67fea2373f2d33a8e5a25880d1c344f83f4742a3a4766f4b77faa795",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/prelim/by_target.csv",
+      "sha256": "4b7d8d975779fd6906bf0abc92c2196b38b0f140ec6ae20f8f472ac6721b728a",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/main/by_target.csv",
+      "sha256": "14d6d2218a71cb69278feb179a4f46ef855c25240f641149f644658e9084e632",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/starter+prelim/by_target.csv",
+      "sha256": "4362b99408f330818059209ae00503181b8a75876035604b96aee134a463f9f2",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/starter+main/by_target.csv",
+      "sha256": "76cc54b36ebaf1de0b91f7e2f1a0c44675a328b2a72767d021deaaf4d3b8e15b",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/prelim+main/by_target.csv",
+      "sha256": "0a3501b3507a96629ec05f70b4a9c9b5f853dbc627d34dbc4aa67b45d3a0397b",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/local/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "b5176f9dba821ab21b8fd5866fa03eac75216aba7b2d78138798a3b1e87a04a9",
+      "rows": 18000
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/starter/by_target.csv",
+      "sha256": "fefaebbf48429e15f027d01d1f8d460da7a7f41135834924cb4f48b7c97174c7",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/prelim/by_target.csv",
+      "sha256": "e1f318ffdbe1e3c6f035905e806fa57db0fbe5a707162389127490bc2a23e346",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/main/by_target.csv",
+      "sha256": "a711e46fa41fcb818e6e8ad3788d9340bc04cd3b99b7ed39a17c32a8290b4037",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/starter+prelim/by_target.csv",
+      "sha256": "08534734aa15876ab3d781d9daf3938f29df4c9b867898f12a79d0f7f2feae85",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/starter+main/by_target.csv",
+      "sha256": "29577ca81ff7d3dfee241d034f2dcf3541f9a158e75f6e41834f00ecf294c29f",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/prelim+main/by_target.csv",
+      "sha256": "79de210c0a872ff2bc3e47fbb21f3900890d6fad78d3eb80b4c8e64eb9a8b214",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/mixture/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "cd89e175b91b234cc67049cbdd7352fcaebfceacdb6814172e9365230f7c2ac0",
+      "rows": 57600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/starter/by_target.csv",
+      "sha256": "32d3563406e03e34a333ce4b7a46a26363fbabffc1b045910617e2b4440d46ed",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/prelim/by_target.csv",
+      "sha256": "a35742d3db85e9744293cd81568fe428eb1d496cb862bb2ce994cb933ce2fb1e",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/main/by_target.csv",
+      "sha256": "801746c7ceb574bc50106b0a20f789dcac7979ef5a91848289251e49a68cb234",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/starter+prelim/by_target.csv",
+      "sha256": "df7d63030b137e7b1a423ca7fc2a935ee87fe7cb55065c267de709d6f33d2450",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/starter+main/by_target.csv",
+      "sha256": "1c7c46716090fff5da121bd2a94bb01918b1235fec5841cfe5ec35706a112113",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/prelim+main/by_target.csv",
+      "sha256": "6a089ee740a8e090a6517e9efaecfd0a42c06045d9a5db8e25d3855c07471928",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/histogram/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "69eb0c37e6254c898c084b7b7de1fcd4974cb45cc853ca40ba4839b19adb17dc",
+      "rows": 115200
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/available/results_prelim_primary/by_target.csv",
+      "sha256": "7ab82afaa632745345938cbad7b32b21e0e4c6b6214f4f8736c61b574735c0de",
+      "rows": 3192
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/starter/by_target.csv",
+      "sha256": "899283bf6fd644641e4277f4c1dbae4f8356acf2dd9c308aac89ee13d196bf42",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/prelim/by_target.csv",
+      "sha256": "e1b8dcb51cab6f8d60f40dfb3becd68740ab17d185acbca52e085ac9722d7a6f",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/main/by_target.csv",
+      "sha256": "8cace15d44d74efd0caa598f9afdf9f8638424716e6a03d31038fdb107e430fc",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/starter+prelim/by_target.csv",
+      "sha256": "c025497b560cd41083dfeb896cc2075b18cbf6b80ca4370431ab0f89216a4fa7",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/starter+main/by_target.csv",
+      "sha256": "e4bb67b31d231787ac33465db6539c3ecc3c08868338412e906ab6346d18f6ea",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/prelim+main/by_target.csv",
+      "sha256": "a6bad90fc9a21a23842d201cd7b8fa41bf11b7486e519f2c0984723140ec5e33",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/policy/cache/fixed22/starter+prelim+main/by_target.csv",
+      "sha256": "0a6667e28f0796dbfb86f79a8ab13816d9adf3d6e0afad7b0189817d27f8ff41",
+      "rows": 9240
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/joint/prelim/by_target.csv",
+      "sha256": "2aaf22f3fdf02bbfb90bf4050b15a5350086dc8b2171793b4695191409d01069",
+      "rows": 53382
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/broad/prelim/by_target.csv",
+      "sha256": "4427513eabc9f214c5ff4e9391f1ea014296d92111ba0322fe52835743896c02",
+      "rows": 13440
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/fusion/prelim_by_target.csv",
+      "sha256": "5ccb31816d25af11655f5fc07006ed47f5afdd8622d0812a9e168c7478f992b6",
+      "rows": 23940
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/starter/対象別TPR.csv",
+      "sha256": "b4294f6e18d45d6219086fd8df3a493b0d036b889494ea4402ef5db9e591a854",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/prelim/対象別TPR.csv",
+      "sha256": "581f242041c589515f8cf1a65ad26a0179b1df77c45d6b3f46bfed2f61e253b6",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/main/対象別TPR.csv",
+      "sha256": "5707655598b6e51c2674eb53eed286d62d548e6beece24db007f09c47c04ae94",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/starter+prelim/対象別TPR.csv",
+      "sha256": "551b87a3db8a262b57c7c190bf038b249199b330b85cc0d6e2db4cda86ce0219",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/starter+main/対象別TPR.csv",
+      "sha256": "f781e7229b1953b1f2709a6a3e338b377ff45b99e5a1a1b35f7e7fdcbd6642d1",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/prelim+main/対象別TPR.csv",
+      "sha256": "f0c96e1903b50fc487d6119c883667b914b75a00eceabea0a018d5247e2d0d2c",
+      "rows": 25600
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_bg_delivery/20261010T025623Z/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_calibration/attribute_seeds/starter+prelim+main/対象別TPR.csv",
+      "sha256": "e69371ebce28eea0eead94fd9ae3f937d7aaf4d402b0dd490cfa0fc6481a7433",
+      "rows": 25600
+    }
+  ],
+  "additional_summary_sources": [
+    {
+      "source_path": "/workspace/shared/mia_all_background_inventory/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/primary_delta_report/01_所属ラベル不使用_対象別差分.csv",
+      "sha256": "6c6f29e8faed0983b4bb22f41e82af7753454b8168765f13e846caca519beca5"
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_background_inventory/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/primary_delta_report/02_OOF学習_対象別差分.csv",
+      "sha256": "b956dacffe2d5f74480f0688229c9cafa1c4fea3fa3a4646837aa32fb7334b14"
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_background_inventory/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/primary_delta_report/10_追加パネル_対象別上位10方式.csv",
+      "sha256": "3828b36b63753c81cd19ad159e8c3f8925edee6aa95d1be7cb06a988853f2edb"
+    },
+    {
+      "source_path": "/workspace/shared/mia_all_background_inventory/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/promising_methods_0310UTC/有望方式の考察と公開BG一致の影響.md",
+      "sha256": "792a1b58eb4f2778fae8725bf7f0a775b52ae5ffe1855e347ba254591940af42"
+    }
+  ],
+  "validation": {
+    "selected_rows": 21,
+    "selected_BG_rows": 147,
+    "distinct_recipe_per_team": 3,
+    "regenerated_experiments": false,
+    "protocol": "no_membership_labels|all20|all_fixed1049|FPR.01",
+    "unverified_official_submission": true
+  }
+}

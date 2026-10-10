@@ -1,0 +1,17 @@
+background,N,method,team,fpr,mia_all,members
+starter+prelim+main,10,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.1538461538461538,26
+starter+prelim+main,10,without_outcomes_rank_median__raw__cross0,3,0.01,0.12,25
+prelim,10,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.1538461538461538,26
+prelim,10,without_outcomes_rank_median__raw__cross0,3,0.01,0.12,25
+starter+prelim+main,30,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.038461538461538401,26
+starter+prelim+main,30,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25
+prelim,30,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.0769230769230769,26
+prelim,30,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25
+starter+prelim+main,100,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.0769230769230769,26
+starter+prelim+main,100,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25
+prelim,100,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.0769230769230769,26
+prelim,100,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25
+starter+prelim+main,1000,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.0769230769230769,26
+starter+prelim+main,1000,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25
+prelim,1000,numeric8_sexpref_rank_mean__raw__cross0.1,12,0.01,0.0769230769230769,26
+prelim,1000,without_outcomes_rank_median__raw__cross0,3,0.01,0.080000000000000002,25

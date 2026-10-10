@@ -1,0 +1,12 @@
+{
+  "row_count": 23,
+  "unique_cohorts": 23,
+  "unique_submission_ids": 23,
+  "matched_official_selected_submission_ids": 23,
+  "stored_U_equals_min_four_components": true,
+  "score_6_excluded_from_csv": true,
+  "U_range": [
+    0.8199,
+    0.9953
+  ]
+}

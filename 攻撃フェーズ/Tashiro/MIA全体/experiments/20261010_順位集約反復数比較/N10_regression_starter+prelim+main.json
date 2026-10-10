@@ -1,0 +1,36 @@
+{
+  "previous_cache": "/workspace/shared/mia_recovered_calibration/work/starter+prelim+main/密度比_属性乱数結果/内部順位キャッシュ.npz",
+  "cache_sha256": "acfeb182d7f91bf43e05261dbd643bb2821d4a8c4a25eaeba945ed2445672252",
+  "checks": [
+    {
+      "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+      "all20_predictions_bitwise_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "method": "without_outcomes_rank_median__raw__cross0",
+      "all20_predictions_bitwise_equal": true,
+      "max_error": 0.0
+    }
+  ],
+  "focus": [
+    {
+      "background": "starter+prelim+main",
+      "N": 10,
+      "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+      "team": 12,
+      "fpr": 0.01,
+      "mia_all": 0.15384615384615385,
+      "members": 26
+    },
+    {
+      "background": "starter+prelim+main",
+      "N": 10,
+      "method": "without_outcomes_rank_median__raw__cross0",
+      "team": 3,
+      "fpr": 0.01,
+      "mia_all": 0.12,
+      "members": 25
+    }
+  ]
+}
