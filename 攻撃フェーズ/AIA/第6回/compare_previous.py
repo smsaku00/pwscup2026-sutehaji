@@ -1,10 +1,10 @@
 """Reverse round-5_2 small groups on a frozen round-6 answer and compare prior answers.
-Usage: python round6_compare.py --inputs INPUT_DIR --round6 ROUND6_ZIP --out OUTPUT_DIR
+Usage: python compare_previous.py --inputs INPUT_DIR --attack-dir ATTACK_DIR --round6 ROUND6_CSV --out OUTPUT_DIR
 INPUT_DIR: r3.csv, r4.csv, r5_2.csv, group_assignments.csv, r3.py, r4.py,
-           public_attack/aia_challenge_<k>.csv (to verify public grouping).
-Never logs or models the submission token; MIA/token are copied unchanged.
+ATTACK_DIR: public aia_challenge_<k>.csv (to verify grouping).
+Reads only AIA answers; writes AIA CSV and comparison audits.
 """
-import argparse, ast, hashlib, io, json, shutil, zipfile
+import argparse, ast, hashlib, io, json, zipfile
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -33,8 +33,9 @@ def main():
     p.add_argument('--round6', type=Path, required=True)
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args(); a.out.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(a.round6) as z:
-        base_raw=z.read('F_aia.csv'); mia=z.read('F_mia.csv'); token=z.read('token.txt')
+    if zipfile.is_zipfile(a.round6):
+        with zipfile.ZipFile(a.round6) as z:base_raw=z.read('F_aia.csv')
+    else:base_raw=a.round6.read_bytes()
     base=load_frame(io.BytesIO(base_raw))
     old={r:load_frame(a.inputs/f'r{r}.csv') for r in [3,4]}
     r5=load_frame(a.inputs/'r5_2.csv')
@@ -94,15 +95,6 @@ def main():
             'zero_to_11_only':int(s[f'r{r}_zero_to_11_only'].sum())}
     raw=new.to_csv(index=False,lineterminator='\n',float_format='%.17g').encode()
     (a.out/'F_aia.csv').write_bytes(raw)
-    for no_token in [False,True]:
-        suffix='_no_token' if no_token else ''
-        path=a.out/f'zhang_T28_test06_2_column_top2_group_reverse{suffix}.zip'
-        with zipfile.ZipFile(path,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-            z.writestr('F_mia.csv',mia);z.writestr('F_aia.csv',raw)
-            if not no_token:z.writestr('token.txt',token)
-        with zipfile.ZipFile(path) as z:
-            assert z.read('F_mia.csv')==mia and z.read('F_aia.csv')==raw
-            if not no_token:assert z.read('token.txt')==token
     audit={'aia_rows':7172,'opponents':22,'group_rows':181,'groups':57,
         'group_reverse_relative_to':'5_2, not a new rank by round6 scores',
         'three_person_rule':'1 answers 9.5, 2 answer 11 (exact reversal of 5_2)',
@@ -111,7 +103,7 @@ def main():
         'answer_counts':{str(k):int(v) for k,v in new.time_hat.value_counts().items()},
         'aggregates':aggregates,'F_aia_sha256':hashlib.sha256(raw).hexdigest(),
         'base_round6_sha256':hashlib.sha256(base_raw).hexdigest(),
-        'MIA_token_copied_byte_for_byte':True,'official_score_obtained':False,
+        'output_scope':'AIA only','official_score_obtained':False,
         'note':'0 is not guaranteed to miss; 11 is outside true 0..10 range. 95-selection metrics apply as binary comparison only for P01/P05.'}
     (a.out/'comparison_audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
     print(json.dumps(audit,ensure_ascii=False,indent=2));print(summary.to_string(index=False))

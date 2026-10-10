@@ -77,7 +77,7 @@
   },
   "F_aia_sha256": "47900c8b65e29fd3f9c790d8cb52e9b204269d57b5e5a275267fdea23fb629be",
   "base_round6_sha256": "9964ccdef6eab7f8b90a5422a52c833b10a68149f3f9b090a7496ac031e0bc3b",
-  "MIA_token_copied_byte_for_byte": true,
+  "output_scope": "AIA only",
   "official_score_obtained": false,
   "note": "0 is not guaranteed to miss; 11 is outside true 0..10 range. 95-selection metrics apply as binary comparison only for P01/P05."
 }

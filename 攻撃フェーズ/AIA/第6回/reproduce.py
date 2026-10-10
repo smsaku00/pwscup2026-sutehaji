@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild Team28 round6 column-top2, then exactly reverse 5_2 small groups.
 Only public A_bg/C/challenge and fixed 5_2 assignment IDs are prediction inputs.
-MIA and token are copied from a local submission ZIP; token is never printed.
+Writes F_aia.csv and an audit JSON; validates only the AIA answer.
 """
-import argparse, hashlib, io, json, math, sys, zipfile
+import argparse, hashlib, json, math, sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -48,41 +48,22 @@ def base_prediction(q,c,bg,b,iqr):
 def csv_bytes(d):
     return d.to_csv(index=False,lineterminator='\n',float_format='%.17g').encode()
 
-def make_zip(path,mia,aia,token=None):
-    entries=[('F_mia.csv',mia),('F_aia.csv',aia)]
-    if token is not None:entries.append(('token.txt',token))
-    with zipfile.ZipFile(path,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-        for name,raw in entries:
-            info=zipfile.ZipInfo(name,date_time=(2026,10,11,0,0,0))
-            info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o600<<16
-            z.writestr(info,raw)
-    with zipfile.ZipFile(path) as z:
-        assert z.testzip() is None and z.read('F_aia.csv')==aia and z.read('F_mia.csv')==mia
-        if token is not None:assert z.read('token.txt')==token
-
-def validate(full,attack_dir):
+def validate(aia_path,attack_dir):
     sys.path.insert(0,str(HERE/'official_validator_snapshot'))
     from pwscup2026.common.config import load_config
-    from pwscup2026.kit.validate import check_package,load_dist,validate_aia_submission,validate_mia_submission
+    from pwscup2026.kit.validate import load_dist,validate_aia_submission
     cfg=load_config(HERE/'official_validator_snapshot/pwscup2026/kit/kit_config.yaml')
-    dist=load_dist(attack_dir,team_id=28);dist['attacker_record_ids']=set(range(1049))
-    package=check_package(full,cfg)
-    if not package.ok:raise ValueError(package.errors)
-    for name,fn in [('F_aia.csv',validate_aia_submission),('F_mia.csv',validate_mia_submission)]:
-        result=fn(package.frames[name],cfg,dist)
-        if not result.ok:raise ValueError(result.errors)
+    dist=load_dist(attack_dir,team_id=28)
+    result=validate_aia_submission(pd.read_csv(aia_path),cfg,dist)
+    if not result.ok:raise ValueError(result.errors)
     return 'PASS'
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--attack-dir',type=Path,required=True)
     p.add_argument('--a-bg',type=Path,required=True)
-    p.add_argument('--base-submission',type=Path,help='Local ZIP supplying MIA/token only')
-    p.add_argument('--mia-file',type=Path,help='Local MIA CSV to combine with --token-file')
-    p.add_argument('--token-file',type=Path,help='Local token; requires --mia-file unless --base-submission is used')
     p.add_argument('--out',type=Path,default=Path('round6_reproduced'))
     a=p.parse_args()
-    if a.token_file and not (a.mia_file or a.base_submission):p.error('--token-file requires --mia-file or --base-submission')
     bg=pd.read_csv(a.a_bg);b=transform(bg)
     iqr=np.maximum(np.quantile(b,.75,axis=0)-np.quantile(b,.25,axis=0),1e-5)
     mc=json.loads((a.attack_dir/'mia_columns.json').read_text(encoding='utf-8-sig'))
@@ -119,17 +100,9 @@ def main():
     assert hashlib.sha256(old_raw).hexdigest()==EXPECTED_BASE,'Original round6 did not reproduce'
     assert hashlib.sha256(raw).hexdigest()==EXPECTED_NEW,'Round6_2 did not reproduce'
     assert set(new.time_hat.unique())=={0.,9.5,11.} and len(new)==7172
-    mia=a.mia_file.read_bytes() if a.mia_file else None;token=None
-    if a.base_submission:
-        with zipfile.ZipFile(a.base_submission) as z:mia=z.read('F_mia.csv');token=z.read('token.txt')
-    elif a.token_file:token=a.token_file.read_bytes()
     a.out.mkdir(parents=True,exist_ok=True);(a.out/'F_aia.csv').write_bytes(raw)
-    if mia is not None:make_zip(a.out/'zhang_T28_test06_2_column_top2_group_reverse_no_token.zip',mia,raw)
-    status='not run: provide --base-submission or --mia-file with --token-file for full package validation'
-    if token is not None:
-        full=a.out/'zhang_T28_test06_2_column_top2_group_reverse.zip';make_zip(full,mia,raw,token)
-        status=validate(full,a.attack_dir)
-    audit={'format_validation':status,'base_aia_sha256':EXPECTED_BASE,'new_aia_sha256':EXPECTED_NEW,
+    status=validate(a.out/'F_aia.csv',a.attack_dir)
+    audit={'format_validation':status,'validation_scope':'AIA only','base_aia_sha256':EXPECTED_BASE,'new_aia_sha256':EXPECTED_NEW,
            'rows':len(new),'targets':len(targets),'groups':57,'group_rows':181,
            'changed_from_original_round6':int(new.time_hat.ne(base.time_hat).sum()),
            'source_hashes':source_hashes,'main_B_used':False,'main_truth_used':False,'official_score_obtained':False}

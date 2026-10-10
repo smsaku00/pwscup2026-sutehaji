@@ -1,6 +1,6 @@
 # 第6回AIA：上位2属性＋5_2の少人数グループ反転（6_2）
 
-Team28 / zhang / 2026-10-10
+Team28 / zhang / 2026-10-11
 
 以前作成した第6回の上位2属性方式を基準に、**5_2と同じ2〜4人グループの9.5年／11年を逆にした回答**。ユーザーが第6回の提出案として選択した。GitHubへの追加時点では、競技サイトへの提出・本戦採点は未実施。
 
@@ -12,7 +12,7 @@ Team28 / zhang / 2026-10-10
 | 過去のP01/P05との比較 | [比較説明.md](比較説明.md) / [チーム別CSV](結果/per_target_comparison.csv) |
 | 公開入力のハッシュ・生成検証 | [generation_audit.json](結果/generation_audit.json) |
 
-このフォルダに収録したAIAは、会話で提供済みの提出ZIPのAIAと同じ。MIAとトークンは手元の元第6回ZIPから読み込み、提出用ZIPをローカルで生成する。GitHubにはMIA回答CSV・共有ZIPを追加していない。
+担当範囲に合わせて、成果物はAIA回答CSV・説明書・再現コード・比較資料に限定する。再現コードもAIA回答だけを生成・検証する。
 
 ## 方式
 
@@ -51,7 +51,7 @@ SBP・TG・HDL・ALTの4属性を使う。TGとALTは `log1p(max(0,value))` に�
 
 回答の違いは得点向上の証拠ではない。方式とグループ割当を同時に変更しているため、第5回からの得点差をグループ反転だけの効果に分解できない。
 
-## 再生成と提出用ZIP
+## AIA回答の再生成
 
 Python 3.12。`pip install -r 攻撃フェーズ/AIA/第6回/requirements.txt` で依存ライブラリを入れる。リポジトリのルートから次を実行する。
 
@@ -59,27 +59,24 @@ Python 3.12。`pip install -r 攻撃フェーズ/AIA/第6回/requirements.txt` �
 python 攻撃フェーズ/AIA/第6回/reproduce.py \
   --attack-dir 公式データ/PWSCup2026_final_attack \
   --a-bg 公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv \
-  --base-submission /path/to/zhang_T28_test06_column_top2.zip \
   --out /path/to/round6_output
 ```
 
-`--base-submission` で指定した手元のZIPのMIAとトークンをバイト単位でコピーする。別のMIAを使う場合は、この引数の代わりに `--mia-file /path/to/F_mia.csv --token-file /path/to/token.txt` を指定する。MIA選択はAIAの再生成に影響しない。
-
-`zhang_T28_test06_2_column_top2_group_reverse.zip` が提出用ZIP。`_no_token.zip` は共有用。コピー元ZIP・MIA・トークンを指定しない場合はAIA回答CSVと生成監査JSONだけを作る。
+出力は `F_aia.csv` と `generation_audit.json`。AIA担当の共有ファイルは `F_aia.csv` を使う。
 
 本戦B・B_self・所属正解・time正解は予測に使用しない。入力には公開背景、C、チャレンジ、mia_columns.jsonと、既に作成済み5_2の固定割当行IDだけを使う。第5回のLRを学習し直す必要はない。
 
-元第6回と6_2の両CSVのSHA256が保存値と一致しなければ処理を停止する。公開データから別ディレクトリで再生成し、両方の一致を確認した。MIAとトークンもコピー元ZIPと一致。トークン入りZIPは同梱の公式本戦バリデータで形式PASSを確認する。サーバー側のトークン登録や本戦得点は検証していない。
+元第6回と6_2の両CSVのSHA256が保存値と一致しなければ処理を停止する。公開データから別ディレクトリで再生成し、両方の一致を確認した。同梱の公式本戦バリデータでAIAの対象22チーム・公開行キー・値の範囲・重複を検証し、PASSを確認する。本戦得点は未取得。
 
 ## 比較の再現
 
-固定した過去回答と5_2の割当は `比較入力/` に収録。会話で使用した元第6回ZIPを指定すると、上書き・全22チームの比較を再現できる。
+固定した過去回答と5_2の割当は `比較入力/` に収録。元第6回のAIA CSV（または元ZIPのF_aia.csvだけ）を読み込むと、上書き・全22チームの比較を再現できる。
 
 ```bash
 python 攻撃フェーズ/AIA/第6回/compare_previous.py \
   --inputs 攻撃フェーズ/AIA/第6回/比較入力 \
   --attack-dir 公式データ/PWSCup2026_final_attack \
-  --round6 /path/to/zhang_T28_test06_column_top2.zip \
+  --round6 /path/to/F_aia_original_round6.csv \
   --out /path/to/comparison_output
 ```
 
@@ -87,6 +84,6 @@ python 攻撃フェーズ/AIA/第6回/compare_previous.py \
 
 ## 保存条件
 
-- GitHubにトークン・本戦B・本戦正解・個人単位のモデル確率は収録しない。
+- AIA回答と再現・比較資料だけを共有する。
 - 公式バリデータは既存5_2と同じスナップショット。LICENSEを保持。
 - 正式な第6回の採点結果を受領するまでは、本戦得点を記載しない。

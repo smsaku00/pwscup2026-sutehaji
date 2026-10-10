@@ -1,5 +1,6 @@
 {
   "format_validation": "PASS",
+  "validation_scope": "AIA only",
   "base_aia_sha256": "9964ccdef6eab7f8b90a5422a52c833b10a68149f3f9b090a7496ac031e0bc3b",
   "new_aia_sha256": "47900c8b65e29fd3f9c790d8cb52e9b204269d57b5e5a275267fdea23fb629be",
   "rows": 7172,

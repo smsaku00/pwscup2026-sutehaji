@@ -1,8 +1,7 @@
 {
   "format_validation": "PASS",
+  "validation_scope": "AIA only",
   "rows": 7172,
-  "opponents": 22,
-  "answers_0_to_10": 7080,
-  "answers_11": 92,
-  "base_MIA_token_match": true
+  "targets": 22,
+  "official_score_obtained": false
 }
