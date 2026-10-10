@@ -1,0 +1,11 @@
+{
+  "team_id": 28,
+  "method": "round5_LR10_rare_soft_with_small_group_half_split",
+  "source_repository_commit": "0c74d92485a4be264b64e61f49bd521a0ea427b8",
+  "original_F_aia_sha256": "d8d616eb64c9ae9e45bda7889dafa90bf36c16d1bc6882f3f7271a402ca89758",
+  "group_sizes": [2, 3, 4],
+  "age_band_width": 5,
+  "membership_model": "LR10",
+  "n_9_5": "ceil(group_size / 2)",
+  "tie_break": "challenge_row_id ascending"
+}

@@ -1,0 +1,37 @@
+{
+  "method": "round5_LR10_rare_soft_with_small_group_half_split",
+  "source_repository_commit": "0c74d92485a4be264b64e61f49bd521a0ea427b8",
+  "original_F_aia_sha256": "d8d616eb64c9ae9e45bda7889dafa90bf36c16d1bc6882f3f7271a402ca89758",
+  "F_aia_sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+  "F_mia_sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+  "validation": {
+    "format": "PASS",
+    "aia_rows": 7172,
+    "targets": 22,
+    "mia_rows": 1049
+  },
+  "grouping": "within each full challenge: prefecture, sex, floor(age/5); size 2..4",
+  "ordering": "membership_LR10 descending, challenge_row_id ascending",
+  "three_person_split": "2 answer 9.5, 1 answers 11",
+  "group_counts": {
+    "2": 22,
+    "3": 3,
+    "4": 32
+  },
+  "affected_rows": 181,
+  "changed_rows": 50,
+  "from_9_5_to_11": 45,
+  "from_11_to_9_5": 5,
+  "MIA_copied_byte_for_byte": true,
+  "token_copied_byte_for_byte_local_only": true,
+  "main_B_used_for_prediction": false,
+  "main_truth_used": false,
+  "official_score_obtained": false,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  }
+}
