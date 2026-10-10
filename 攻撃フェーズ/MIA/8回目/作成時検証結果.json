@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "round": 8,
+  "created_jst": "2026-10-11T02:03:04.327973+09:00",
+  "rare_members": {
+    "6": [
+      90
+    ],
+    "10": [
+      304,
+      383
+    ],
+    "11": [
+      169
+    ],
+    "16": [
+      76,
+      462
+    ],
+    "17": [
+      115
+    ],
+    "25": [
+      264,
+      675
+    ]
+  },
+  "outside_22_target_ids": [
+    47,
+    495
+  ],
+  "conditional_decode": true,
+  "fixed_question_count_vectors": {
+    "3": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "4": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "5": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "6": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      1
+    ],
+    "7": [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  "216_signatures_unique": true,
+  "single_and_pair_signatures_unique": true,
+  "historical_rare_results": {
+    "1": {
+      "reported": 0.014934210526315791,
+      "reproduced": 0.014934210526315791,
+      "exact_float_equal": true
+    },
+    "2": {
+      "reported": 0.014445669283130584,
+      "reproduced": 0.014445669283130584,
+      "exact_float_equal": true
+    },
+    "3": {
+      "reported": 0.017203703703703704,
+      "reproduced": 0.017203703703703704,
+      "exact_float_equal": true
+    },
+    "4": {
+      "reported": 0.010814814814814814,
+      "reproduced": 0.010814814814814814,
+      "exact_float_equal": true
+    },
+    "5": {
+      "reported": 0.011166666666666667,
+      "reproduced": 0.011166666666666667,
+      "exact_float_equal": true
+    },
+    "6": {
+      "reported": 0.010833333333333334,
+      "reproduced": 0.010833333333333334,
+      "exact_float_equal": true
+    },
+    "7": {
+      "reported": 0.020148148148148148,
+      "reproduced": 0.020148148148148148,
+      "exact_float_equal": true
+    }
+  },
+  "normal_source": {
+    "Team9": 6,
+    "other21": 1
+  },
+  "all_22550_normal_fields_preserved": true,
+  "changed_rare_cells_vs_round7": 144,
+  "rare_positive_cells": 9,
+  "rare_zero_cells": 519,
+  "normal_max_confidence": 0.95,
+  "positive_confidence": 1,
+  "official_mia_format": {
+    "ok": true,
+    "errors": []
+  },
+  "F_mia_sha256": "5b28253a5d64543257cbb411a6fa42352080c260509129a8e4f05c9b6ff3f184",
+  "F_mia_bytes": 391518,
+  "prediction": {
+    "normal_members_per_target_assumption": 25,
+    "whole_TPR_sum_exact": "21683/17550",
+    "whole_TPR_sum_float": 1.2354985754985754,
+    "round6_and7_unique_solution": [
+      [
+        1,
+        1,
+        29,
+        0,
+        0
+      ]
+    ],
+    "six_rare_positive_targets_whole_TPR_sum_exact": "53/702",
+    "other16_whole_TPR_sum_exact": "29/25",
+    "other16_whole_TPR_mean": 0.0725,
+    "rare_per_target_mean_after_integration": 1.0,
+    "MIA_power_after_integration_exact": "179/550",
+    "MIA_power_after_integration": 0.32545454545454544,
+    "AIA_power_best_r1to7": 0.1974545628388099,
+    "attack_power_reference": 0.5229091082933554,
+    "round6_mixed_tie_cutoff_possible_targets": [
+      17,
+      3,
+      7,
+      12,
+      13,
+      27
+    ],
+    "round6_fractional_contributions_excluded_by_aggregate": true,
+    "same_fixed_truth_and_scoring_required": true,
+    "actual_new_submission_score_received": false
+  },
+  "input_sha256": {
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/結果/解析結果.json": "daef03535cce1d7b90de94b69890e62be20438a42c91406f06007d52a4ef8476",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第1回.html": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第2回.html": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第3回.html": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第4回.html": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第5回.html": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第6回.html": "12f77b65dacc2a2340b80ce404ca457c4effac9e621e0976266aa916d0b55da2",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第7回採点結果/入力/第7回.html": "da7dfd9f41d59438977a97ce5460cc895bed06b94f1ab32f80dce2bb9a421806",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第1回_F_mia.csv": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第2回_F_mia.csv": "92c780eee9762989a8140feee6fac3258b2bd3e27eee3146fccaa07a811412ae",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第3回_F_mia.csv": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第4回_F_mia.csv": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第5回_F_mia.csv": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第6回_F_mia.csv": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回MIA_希少復号772と第7回通常維持/入力/第7回_F_mia.csv": "20159ce25b547e6644a938e1cac9bcac03fb5be6c7cad8508f102a4663e26a8c",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/入力/第5回復号と第6回設定.json": "15b4aad8f0226a9e9a3d3373012ed9ce5a6aafa52d452ffa00a563f3471c2c19",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/入力/第5回後16配置と予測.csv": "b59d9dfadd5787d20fee713b4e1353988cdb515e420b31549c1c918bdafb85b7",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+    "本戦/攻撃フェーズ/Tashiro/20261011_第8回AIA_第1から7回の対象別最大/結果/manifest.json": "23cf33f1076a38389e37d1bce47d55659696e2f77d19149653c585a5624add98"
+  },
+  "round6_top35_tie_blocks": {
+    "0": [
+      [
+        8,
+        9,
+        2
+      ]
+    ],
+    "1": [],
+    "2": [
+      [
+        6,
+        7,
+        2
+      ]
+    ],
+    "3": [
+      [
+        15,
+        16,
+        2
+      ]
+    ],
+    "4": [],
+    "5": [
+      [
+        25,
+        26,
+        2
+      ],
+      [
+        29,
+        30,
+        2
+      ]
+    ],
+    "6": [
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        18,
+        19,
+        2
+      ]
+    ],
+    "7": [
+      [
+        17,
+        18,
+        2
+      ],
+      [
+        21,
+        22,
+        2
+      ]
+    ],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [
+      [
+        8,
+        9,
+        2
+      ]
+    ],
+    "12": [
+      [
+        17,
+        18,
+        2
+      ]
+    ],
+    "13": [
+      [
+        10,
+        11,
+        2
+      ],
+      [
+        17,
+        18,
+        2
+      ],
+      [
+        33,
+        34,
+        2
+      ]
+    ],
+    "14": [],
+    "15": [],
+    "16": [
+      [
+        7,
+        8,
+        2
+      ]
+    ],
+    "17": [
+      [
+        11,
+        12,
+        2
+      ]
+    ],
+    "22": [],
+    "25": [
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        20,
+        21,
+        2
+      ]
+    ],
+    "26": [
+      [
+        18,
+        19,
+        2
+      ]
+    ],
+    "27": [
+      [
+        15,
+        16,
+        2
+      ],
+      [
+        35,
+        36,
+        2
+      ]
+    ]
+  },
+  "inputs_unchanged": true,
+  "server_input_zip_hash_verified": false,
+  "competition_submitted": false
+}

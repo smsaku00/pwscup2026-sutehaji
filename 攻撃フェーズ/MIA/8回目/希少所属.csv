@@ -1,0 +1,10 @@
+target_k,record_id,confidence,derivation
+6,90,1,unique_fixed5bit_decode_772
+10,304,1,unique_fixed5bit_decode_772
+10,383,1,unique_fixed5bit_decode_772
+11,169,1,unique_fixed5bit_decode_772
+16,76,1,unique_fixed5bit_decode_772
+16,462,1,unique_fixed5bit_decode_772
+17,115,1,unique_fixed5bit_decode_772
+25,264,1,unique_fixed5bit_decode_772
+25,675,1,unique_fixed5bit_decode_772

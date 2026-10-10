@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "round": 8,
+  "team_id": 28,
+  "created_jst": "2026-10-11T02:27:23.069160+09:00",
+  "source": "CodaBench submission 975222 scoring output ZIP downloaded through its visible submission detail",
+  "submission_id": 975222,
+  "submitted_at_jst": "2026-10-11 02:17",
+  "submission_filename": "PWSCup2026_team28_round8.zip",
+  "submission_status": "Finished",
+  "source_html_sha256": "13b51bd4ab2bb5c71c4f0aeb5f967a59f8be06920f519c50e0b6411f2b40ad4a",
+  "source_html_bytes": 4005,
+  "source_scores_sha256": "5ab0180dbe8d84b797f1d9613e5ecc5a1bdc7a9c35c573b196e4f1fa60d8468d",
+  "official_scores": {
+    "score_1": 0.5229091082933554,
+    "score_2": 0.0715047915047915,
+    "score_3": 1.0,
+    "score_4": 0.2559219460710898,
+    "score_5": 0.025851397577132288
+  },
+  "leaderboard_display": {
+    "score_1": "0.5229",
+    "score_2": "0.0715",
+    "score_3": "1.0000",
+    "score_4": "0.2559",
+    "score_5": "0.0259",
+    "score_6": "―"
+  },
+  "official_breakdown": {
+    "mia": {
+      "tpr_at_low_fpr": 0.0715047915047915,
+      "tpr_rare": 1.0,
+      "auc": 0.5960916214434256
+    },
+    "mia_per_target": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 3,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "22": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1
+    },
+    "aia": {
+      "r_time_all": 0.2559219460710898,
+      "r_time_rare": 0.025851397577132288,
+      "p_m": 0.685164528722811,
+      "p_c": 0.5716675962074735,
+      "p_m_rare": 0.5279720279720279,
+      "p_c_rare": 0.43006993006993
+    },
+    "aia_per_target": {
+      "0": 0.06473858879629824,
+      "1": 0.1637143657376881,
+      "2": 0.3745253114173855,
+      "3": 0.2069833125245568,
+      "4": 0.20915107823156465,
+      "5": 0.0341408690483874,
+      "6": 0.11695611340175327,
+      "7": 0.03451292988790697,
+      "8": 0.05732317488141874,
+      "9": 0.7522338155494697,
+      "10": 0.055080120152619844,
+      "11": 0.4610009139476726,
+      "12": 0.05285730977287794,
+      "13": 0.14146731892983327,
+      "14": 0.4630940201477701,
+      "15": 0.19039066390239273,
+      "16": 0.23718638592669977,
+      "17": 0.013279993588023373,
+      "22": 0.13819971999944577,
+      "25": 0.1347411133708944,
+      "26": 0.22510896738250644,
+      "27": 0.2173142958566527
+    },
+    "constants": {
+      "low_fpr": 0.01,
+      "tau_time": 0.5,
+      "aia_rare_se_z": 1.64,
+      "mia_band_edges": [
+        0.25,
+        0.5,
+        0.75
+      ]
+    }
+  },
+  "aia_power_np_mean": 0.1974545628388099,
+  "aia_power_independent_fsum_mean": 0.1974545628388099,
+  "mia_power_from_exact_total_minus_aia": 0.32545454545454544,
+  "mia_power_prediction_exact_fraction": "179/550",
+  "aia_all_22_targets_exact_match_past_maximum": true,
+  "past_html_sha256": {
+    "1": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+    "2": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+    "3": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+    "4": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+    "5": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+    "6": "12f77b65dacc2a2340b80ce404ca457c4effac9e621e0976266aa916d0b55da2",
+    "7": "da7dfd9f41d59438977a97ce5460cc895bed06b94f1ab32f80dce2bb9a421806"
+  },
+  "server_input_zip_hash_verified": true,
+  "server_submission_zip_sha256": "6a1cbd903eb47a59d7b652fa01e15241a6cda8e9cab511d7e203e408a2530cb0",
+  "server_submission_zip_bytes": 78352,
+  "server_submission_zip_exact_prepared_bytes": true,
+  "server_csv_exact_prepared_bytes": true,
+  "answer_sha256": {
+    "F_mia.csv": "5b28253a5d64543257cbb411a6fa42352080c260509129a8e4f05c9b6ff3f184",
+    "F_aia.csv": "94551043ad4f9401d6158fd0f1fbbcb09ef4daf374c677bea74f30938ddba7bd"
+  },
+  "MIA_rare_perfect_observed": true,
+  "MIA_whole_prediction_exact_match": true,
+  "MIA_power_prediction_exact_match": true,
+  "total_prediction_exact_match": true,
+  "vs_round7": {
+    "total_display_delta": 0.3515,
+    "mia_all_delta": 0.015345765345765344,
+    "mia_rare_delta": 0.9798518518518519,
+    "aia_power_delta": 0.08602735184155874
+  },
+  "new_submission_performed_by_this_update": false,
+  "private_ground_truth_received": false,
+  "rare_scope_note": "希少平均1.0は希少会員のいる6対象のTPR平均。所属表は固定5bit復号の回答で、秘匿正解原本の直接開示ではない。"
+}
