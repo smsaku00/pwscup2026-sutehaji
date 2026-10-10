@@ -1,0 +1,166 @@
+{
+  "source_commit": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "main_B_used_for_prediction": false,
+  "main_truth_used": false,
+  "training": "all 21 released preliminary cohorts",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "outputs": [
+    {
+      "format": "PASS",
+      "aia_rows": 7172,
+      "targets": 22,
+      "mia_rows": 1049,
+      "file": "zhang_T28_test05_LR10_rare_soft.zip",
+      "method": "lr10_75_rare_soft",
+      "F_aia_sha256": "d8d616eb64c9ae9e45bda7889dafa90bf36c16d1bc6882f3f7271a402ca89758",
+      "MIA_copied_byte_for_byte": true,
+      "token_copied_byte_for_byte": true
+    }
+  ],
+  "rare_changes": [
+    {
+      "team": 0,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 4
+    },
+    {
+      "team": 1,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 4
+    },
+    {
+      "team": 2,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 5
+    },
+    {
+      "team": 3,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 2
+    },
+    {
+      "team": 4,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 4
+    },
+    {
+      "team": 5,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 6
+    },
+    {
+      "team": 6,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 2
+    },
+    {
+      "team": 7,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 1
+    },
+    {
+      "team": 8,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 3
+    },
+    {
+      "team": 9,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 3
+    },
+    {
+      "team": 10,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 2
+    },
+    {
+      "team": 11,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 3
+    },
+    {
+      "team": 12,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 5
+    },
+    {
+      "team": 13,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 3
+    },
+    {
+      "team": 14,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 1
+    },
+    {
+      "team": 15,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 1
+    },
+    {
+      "team": 16,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 6
+    },
+    {
+      "team": 17,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 0
+    },
+    {
+      "team": 22,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 3
+    },
+    {
+      "team": 25,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 2
+    },
+    {
+      "team": 26,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 0
+    },
+    {
+      "team": 27,
+      "method": "lr10_75_rare_soft",
+      "rare_candidates": 26,
+      "changed": 2
+    }
+  ],
+  "main_official_score": null,
+  "competition_submission_performed_by_this_workflow": false,
+  "github_archive": "zhang_T28_test05_LR10_rare_soft_no_token.zip",
+  "github_archive_contains_token": false,
+  "github_archive_is_ready_to_submit": false,
+  "full_submission_zip_regenerated_locally": true
+}
