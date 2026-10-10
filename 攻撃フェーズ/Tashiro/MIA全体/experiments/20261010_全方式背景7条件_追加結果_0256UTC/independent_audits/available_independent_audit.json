@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "scope": "six source-complete recent methods only; not exhaustive historical MIA",
+  "checks": [
+    {
+      "folder": "results_prelim_primary",
+      "prediction_rows_checked": 3192,
+      "roc_values_recomputed": 9576,
+      "max_abs_TPR_error": 0.0,
+      "score_implementation": "independent tie-group ROC and full1049 confidence embedding; no experiment function imported"
+    },
+    {
+      "folder": "results_prelim",
+      "prediction_rows_checked": 3192,
+      "roc_values_recomputed": 9576,
+      "max_abs_TPR_error": 0.0,
+      "score_implementation": "independent tie-group ROC and full1049 confidence embedding; no experiment function imported"
+    }
+  ],
+  "primary_bin_edges_checked": 70,
+  "primary_prediction_hashes_checked": 126,
+  "prelim_inference_targets": {
+    "all20": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      29
+    ],
+    "legacy18": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      29
+    ]
+  },
+  "normal_mask_counts": {
+    "private": 163,
+    "rare": 24,
+    "normal": 875
+  },
+  "full_pipeline_vs_control": {
+    "primary": "bin edges recomputed from each selected BG; verified all numeric edges",
+    "control": "phase-fixed original bins explicitly labeled separately"
+  },
+  "main_TPR": "not_computed_no_truth",
+  "oracle_selection": "no method or background selected by this audit",
+  "truth_source_hashes": {
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_6.csv": "53d1a14abf4af4957b56e857d3f55240c8c309ba70cb4539cf62f5e66085356b",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_13.csv": "56d4f989d781d63ba1e54a090100c11c5a627242b5b134b482c753a0b2131479",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_19.csv": "4477df26af7b9ff5bb38e444b0fcb6aa453d9ff36f18d662903c4861347f96a2",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_22.csv": "af1f71acc9676400f176aa86463af4c6eddf27e85d957b2a1b0fc4aff8e7eebf",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_18.csv": "7c993785500f657dbfb84e8406145f00f1cb1c5f6efe4a15fa451587bf0e51ba",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_9.csv": "62f0b55b96c0db68724eeca2aa9bb157923e55d210c5b8c4592e7c3eb603c3de",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_5.csv": "98ac8311393eef03ebd0d7c4277e39c26204a4148f2325c17dc14680ec24cf55",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_12.csv": "320fd5a0202796b5a016cea51e8ca20eef9464ceeb330902af0331f7590a6172",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_2.csv": "8030a089afc726488d2c608eda2e7c4620af2c808f977bd3ac5c4df3687f21f7",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_4.csv": "96aff67b955b1c49cf426e9281a43c0704614b5a493009d6db4f42dde31d0737",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_20.csv": "abc017b4b1792b212d13a8b3c7429d010020a4b165e681d16d98505ef2b3ea43",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_3.csv": "caf9b12f00e065c41767277ffcae14a4ab0add91735d28b610537ca16e7dd4da",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_21.csv": "fd4b6bb20c6291ef0c081811b86368303ed15a5696360594320c4d863c501f1a",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_1.csv": "8b1eb7de2bb17f1e3dd9c9c42918257a09152f65a9fe936d76865837ae959586",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_17.csv": "fa598ea9d925d609444bad9b12c2ce1e3b411af73c56434fec6b1db20037761f",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_7.csv": "54ffb1ef3560b680ecba82bc9d1d937ad19ce5fb58b75593872583f819a7fb75",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_29.csv": "e722304eb9d757df81d42bfdca75ce05c6e830547a7a8a3902cdc0e0032007c9",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_23.csv": "ce5f4b9b3c2ccf3c66fcdefe41d209a21814b1244a3409b433ab28e1ad7495a7",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_8.csv": "b31784241ca15a1afd6e6a2ae33a40006054deba354fa7af3722a3a7f7bec06b",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_10.csv": "2966e467e8d206aa1c82915a2f9bf7ba4fc36ad6df9e047311b3ec43bdcfa38d",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_24.csv": "42b0754d77c5c2e2776e93988dd99f1d50d314d8d6debf7625505ff0709e40b0",
+    "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/結果/正解データ/pool_ids_26.csv": "be353fa569254d646f8a2d5cd34a5831a0b5d393f7dafeadbc32820dd8334232"
+  }
+}

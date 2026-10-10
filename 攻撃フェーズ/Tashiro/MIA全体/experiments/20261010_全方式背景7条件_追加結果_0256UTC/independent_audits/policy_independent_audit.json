@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "audit_time_utc": "2026-10-10T02:26:48.171537+00:00",
+  "registrations": 139,
+  "BG_conditions": 7,
+  "registry_conditions": 973,
+  "all_report_target_population_rows": 47295,
+  "all_summary_rows_recomputed": 2919,
+  "frozen_primitive_matrix_hashes_checked": 483,
+  "policy_target_population_TPR_values_recomputed": 45075,
+  "r2_full_target_TPR_values_recomputed": 140,
+  "all_numeric_values_checked": 48134,
+  "max_absolute_error": 1.942890293094024e-16,
+  "families_with_independent_frozen_score_checks": [
+    "nested",
+    "nested_fixed72",
+    "nested_safety",
+    "p05",
+    "p06",
+    "p07",
+    "p07_Q_omission",
+    "p08d_looto",
+    "transfer"
+  ],
+  "explicitly_not_reconstructed_in_this_audit": {
+    "P03_requires_new_distance_reconstruction": 26,
+    "p07_Q_omission_composite": 714
+  },
+  "selection_audit_heldout_target_exclusions_checked": true,
+  "method": "Independent tie-group ROC and direct frozen-array selection; no experiment/scorer imports. P03 distance recomputation and Q-omission composite assignment are outside this sample; their full original-source tests are separately supplied."
+}

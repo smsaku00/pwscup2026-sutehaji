@@ -1,0 +1,503 @@
+{
+  "status": "passed_current_completed_files",
+  "primary_complete": true,
+  "method": "Independent tie-group ROC and trapezoid AUC; first/last target for every frozen configuration; all matrix hashes.",
+  "prediction_hashes_checked": 1882,
+  "target_rows_recomputed": 3764,
+  "max_abs_TPR_error": 0.0,
+  "max_abs_AUC_error": 0.0,
+  "population": "all_fixed1049: known-private confidence0; rare unknown confidence0.4; normal unknown875 ranked0.6..0.9",
+  "scope": [
+    {
+      "background": "main",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "7d5c746ce428471bf369fee561e8dab008061041a13cdd0dcf0eb45b687dd521"
+    },
+    {
+      "background": "main",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "a142f2d08c64e421f6db1d0347de4e0f0bbc25a3f23502da27f506676e90930e"
+    },
+    {
+      "background": "main",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "cbde5192a56d864cc4bc54eaecf4d0858ab325e55fb1aae6219e9a786940d07b"
+    },
+    {
+      "background": "main",
+      "family": "fixed_sensitivity",
+      "configurations": 6,
+      "target_rows": 120,
+      "manifest_sha256": "5169166a26a56c2951eb4df81edeac5c5f5785e405639449d2ce9ea7fa1a8698"
+    },
+    {
+      "background": "main",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "172354d0af6370e0b5123e61be106ba5debd256aa06391385f93d751ab3fedf7"
+    },
+    {
+      "background": "main",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "23d666a95e4493998cc12e5178cc0a997bc721a8aa70f5511dcbb22d801cad2f"
+    },
+    {
+      "background": "main",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "62250941ece17952c77549fe013632a02b725ee871c8cbe4a8cd7f48cfee1a47"
+    },
+    {
+      "background": "main",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "41ea7f66bf564f2a01f189fda00d637860008463b693bbef5b4ccc6917bad4de"
+    },
+    {
+      "background": "main",
+      "family": "qcal_sensitivity",
+      "configurations": 7,
+      "target_rows": 140,
+      "manifest_sha256": "8988ef917d20ab7801e5813f312b18ec7c9e0a175dd4abf614ddbfac911e3441"
+    },
+    {
+      "background": "main",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "f43f8970681f516c1f089a10f0fc3dc1ca26a142023eec82d548698a52598e27"
+    },
+    {
+      "background": "prelim",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "114147c60392d22e9178a9001303eb4789ddd395da9dc0c2755688f62b2b276d"
+    },
+    {
+      "background": "prelim",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "62881bc53b8cae33af11142b93793c0e1fb2200b6781107b4beec1ce8c8e6640"
+    },
+    {
+      "background": "prelim",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "e25fda0ccde3abc93e31f36860c3694415e8e61d6b41d361041fbe6e640531cc"
+    },
+    {
+      "background": "prelim",
+      "family": "fixed_sensitivity",
+      "configurations": 36,
+      "target_rows": 720,
+      "manifest_sha256": "ba48e05cfa3b8149a0f029b641ffb79bc890772e852d4b50381297038743c2c5"
+    },
+    {
+      "background": "prelim",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "f32975913ef725017639539c28f254ea47c745f3ecd2d6577fde73bc046efd44"
+    },
+    {
+      "background": "prelim",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "70bd8ef73a9cecb72eb68a55ea168ec221ae5b4380cbb064ee8272a2bc21c69f"
+    },
+    {
+      "background": "prelim",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "f9cf3e68ee567d6de48692897dfa5cfcc2b883328aaba9c6a571d0eac047e322"
+    },
+    {
+      "background": "prelim",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "1fe148921ca7f552ce1a422617954ac230e76cc5a177ea26b17748fd89665836"
+    },
+    {
+      "background": "prelim",
+      "family": "qcal_sensitivity",
+      "configurations": 43,
+      "target_rows": 860,
+      "manifest_sha256": "ff8330ee62869ab57a791dafd47900ecbdf542f266f71b0e998bd4961f4b92e1"
+    },
+    {
+      "background": "prelim",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "549c05b397497e546935c6c3637abf3960f65e72b22853bececfe8b67dc7494b"
+    },
+    {
+      "background": "prelim+main",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "36d804d8e046faee3a0fdee96cbd38c4f0d3939e37f25a9aab5da20c5e56bb81"
+    },
+    {
+      "background": "prelim+main",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "fd8923c0cdf7100cba043208051b16bf10f876bb77ff9b0083549a62bb3ab27b"
+    },
+    {
+      "background": "prelim+main",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "eadbcf2eb1a6aa929746ff5afde30b80cea05ad071bc7ad8c7cc8f9fcc236810"
+    },
+    {
+      "background": "prelim+main",
+      "family": "fixed_sensitivity",
+      "configurations": 6,
+      "target_rows": 120,
+      "manifest_sha256": "e025ee2deff7bf1ba4e87ae7e646ae112359cf1bcf8931003da8d7825ee9523d"
+    },
+    {
+      "background": "prelim+main",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "0525ee9d65fbca3f3fc759422a1a7c51d577393b91a35ad9360f9e70b876f87d"
+    },
+    {
+      "background": "prelim+main",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "f97ea6b8725657cb778d67fc95f58c990e7c3b547577dc91a5ea2813677cf254"
+    },
+    {
+      "background": "prelim+main",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "e111a481347028c8e371838ee8abdb76a8dbab36d4a2c1a8ba7cb596113bd236"
+    },
+    {
+      "background": "prelim+main",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "138ea7dfd317209f8e17a7fb47fad0531eede847f48ddc0ef3bda13183c7ed32"
+    },
+    {
+      "background": "prelim+main",
+      "family": "qcal_sensitivity",
+      "configurations": 7,
+      "target_rows": 140,
+      "manifest_sha256": "e07057e1e2711e00fa7dafd723835fc8ae7418b8107eee0bebcdf4db47fae09a"
+    },
+    {
+      "background": "prelim+main",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "1bef0f8022bab38582cc155182dd93171539e2dda7935c51be4bbfb4c3153b94"
+    },
+    {
+      "background": "starter",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "6affeb41b1efdfc3b4466335581e50e131377b6b23be20e77a80148b3b8ecd16"
+    },
+    {
+      "background": "starter",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "634feab107bfd9de758d64d2f84d6dadcabfcaa66a2513ce30cac38798748806"
+    },
+    {
+      "background": "starter",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "93f5740dc38b5e5f01e739a5319ff84ccdd6891435ac06ca80a55ca898f2b517"
+    },
+    {
+      "background": "starter",
+      "family": "fixed_sensitivity",
+      "configurations": 36,
+      "target_rows": 720,
+      "manifest_sha256": "fb9c2de264162e95723fdf5b5138bce5b38c552b29d0fb67f7a6b3ea6b030acd"
+    },
+    {
+      "background": "starter",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "a06d64eade23f8314f89a56e03ae5f39ebbde134e62713765f4178b34dd2349f"
+    },
+    {
+      "background": "starter",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "64b442735be2c3c409e7bb31d6ba0258d2bcbcff3be92af50f9ccc7afc9313e9"
+    },
+    {
+      "background": "starter",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "aac78d13681c28fe4ffdda1a5459a9b96057af3379bd71ce644bc73b05df4f65"
+    },
+    {
+      "background": "starter",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "6979e6972a90963a8a0a49525562e344bf17221e56d7ad4287f7cf4fdacf6538"
+    },
+    {
+      "background": "starter",
+      "family": "qcal_sensitivity",
+      "configurations": 43,
+      "target_rows": 860,
+      "manifest_sha256": "f5ed51a4f60591bee526445dc1289d129f9e2a4d2241e135adac66ff75a93f57"
+    },
+    {
+      "background": "starter",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "a74d319bfdd8a9fc36dbd7afb0eb67317056dc1b3bf8d6cd40d336ae6e18c1df"
+    },
+    {
+      "background": "starter+main",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "e4d3bcb9a2dd5555ecf0df6d0c3f3abe63fc01888819f3cffc9098d00e273e29"
+    },
+    {
+      "background": "starter+main",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "3f6e72c1b563019a8f81a7fdf5a35e6f341a4ac630a3538dbc448f24f4f615fe"
+    },
+    {
+      "background": "starter+main",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "723c9a321ff2be40ae4821eeb24b53ee5252269602c5ee06edb3622a662d5408"
+    },
+    {
+      "background": "starter+main",
+      "family": "fixed_sensitivity",
+      "configurations": 6,
+      "target_rows": 120,
+      "manifest_sha256": "8367b3c4452c72a1d970ed3652beb6bf545d8ef2e4176a8b335fe940f9e52c36"
+    },
+    {
+      "background": "starter+main",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "4b0eaf2d8927764afd7b4d4f296d9b8f6726af16e85262083522e3f886e9e6c1"
+    },
+    {
+      "background": "starter+main",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "518e49777ba7215409fc290a8310858012569e42f8d288fa26ce69b90c206b46"
+    },
+    {
+      "background": "starter+main",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "5b0bf9bb8a42e5ecde01e7d449e1898adb3cd0fd2b2909878abf347b18c4d82d"
+    },
+    {
+      "background": "starter+main",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "fd3bdcb9e3ec4f81d1ef429711467c6b0896742b26bf5f938868c5da9c2bcc28"
+    },
+    {
+      "background": "starter+main",
+      "family": "qcal_sensitivity",
+      "configurations": 7,
+      "target_rows": 140,
+      "manifest_sha256": "6f1b4af9b4207abee151bd6cf8f14cdd126f3d056a197430a6e06f4bd60d3c1e"
+    },
+    {
+      "background": "starter+main",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "6a8ae24a7d333d7f2948d20ceec4e0747f8e7345932820fe0fcda3b4426cdcc7"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "4d9778ba8ba88ef8be1acd5cb733476139fa15354a68cef7ddf8bba24068d602"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "d7a97263402f7935807f5db1c763e64c9846e68d21502674067e96720f2dec96"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "83bb451363fe0018cef2d15db49c83b142b676f82ee1036baee9240313effad0"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "fixed_sensitivity",
+      "configurations": 6,
+      "target_rows": 120,
+      "manifest_sha256": "1fbf171af711a389e07f3768e16ceb7074e55ddd5ba379b4774067fb74d6bf4b"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "a39aae81badfd800c9312fc55acf8d7c1ace4f509d39007793f5e320fdbc573f"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "95491eac1546547faf1ebee6b609c98c91960cd60045c758f3941605ac0577ca"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "0da48e11a3bda57a7fef858978e5b9594a1b3f56516db0ad049cd5d08b400650"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "35e7c63ec5349884c72e425ffe04068181aea8aaed4999aded31eb8b08d29b1e"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "qcal_sensitivity",
+      "configurations": 7,
+      "target_rows": 140,
+      "manifest_sha256": "ba57fe6f7481584d53e628116fe3516ebb8d52fb4488075d561b4d627e5c6089"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "3dc52f272d083e4606e77363cade488b3ee93ae5729b0a5920da29c66d9f4778"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "additional",
+      "configurations": 55,
+      "target_rows": 1100,
+      "manifest_sha256": "1cf06c81bb029256cbd8872fdf736dd689d0b4a5df85d42f0a54248237c68611"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "attributes",
+      "configurations": 26,
+      "target_rows": 520,
+      "manifest_sha256": "8c7e9876251d5da965a2b5452d540f0796cf9e6b383635c5a682414e4b074f3e"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "bootstrap",
+      "configurations": 34,
+      "target_rows": 680,
+      "manifest_sha256": "5b9b22f11836be72ac20ed1dda8add03e4075707c36233a897f5631bdac3fb05"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "fixed_sensitivity",
+      "configurations": 6,
+      "target_rows": 120,
+      "manifest_sha256": "61083b0a56094d9d59cc48ebb23b34a35389acd450e522d19733bf6d19055aa6"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "geometry",
+      "configurations": 18,
+      "target_rows": 360,
+      "manifest_sha256": "31684f9c7d6c57474b61b309722ce9080fd328ca8bdba9b8a31b976501787ef0"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "logistic",
+      "configurations": 25,
+      "target_rows": 500,
+      "manifest_sha256": "a8e35d31f6f8a15499c0ff07e7fba7cfd9ae3b898dfd5ffdcf2d14a4c1bf469a"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "low_fpr",
+      "configurations": 5,
+      "target_rows": 100,
+      "manifest_sha256": "7d396ef191658024bf3da8c7a552ac4299916ecfb00f49a79154037a3a683148"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "qcal",
+      "configurations": 20,
+      "target_rows": 400,
+      "manifest_sha256": "1feac5287715a832854b5b03919ff46101f348bccc1de8f0818c6332b174f500"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "qcal_sensitivity",
+      "configurations": 7,
+      "target_rows": 140,
+      "manifest_sha256": "cf3468801ff9588720e0cadc3866e008b4d98c0a914951cddbc821fcfc46bf39"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "reference",
+      "configurations": 54,
+      "target_rows": 1080,
+      "manifest_sha256": "e3e6f5e386eac9c1e8d2609f12f1cea0b7f081d19b33686dbbc504e0159d8407"
+    }
+  ],
+  "label_policy": "OOF training reads preliminary labels before prediction freeze; evaluation reads labels after freeze. No main truth."
+}

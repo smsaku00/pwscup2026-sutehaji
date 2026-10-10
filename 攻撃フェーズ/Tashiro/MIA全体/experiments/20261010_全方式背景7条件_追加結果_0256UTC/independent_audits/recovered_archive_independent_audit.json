@@ -1,0 +1,579 @@
+{
+  "status": "passed_for_all_completed_family_jobs",
+  "audit_time_utc": "2026-10-10T02:18:15.021227+00:00",
+  "family_background_jobs_checked": 77,
+  "matrix_files_sha256_checked": 77,
+  "method_background_conditions_checked": 707,
+  "all_completed_target_rows_recomputed": 13783,
+  "TPR_and_AUC_values_recomputed": 27566,
+  "maximum_absolute_error": 0.0,
+  "BG_independent_controls_verified_invariant": {
+    "legacy_library_exact": true,
+    "legacy_redteam_event_time_exact": true
+  },
+  "method": "Independent tie-group ROC and trapezoidal AUC on native full1049 frozen confidence, no prediction/scorer modules imported",
+  "scope": "Exactly completed source-native rosters; three atk split-seed original methods have only teams24/26/29. Completion status is not historical numerical equivalence.",
+  "coverage_at_audit": {
+    "completed_family_background_jobs": 77,
+    "methods_current": 101,
+    "target_rows": 13783,
+    "baseline_checked": 101,
+    "baseline_matches": 88,
+    "baseline_max_abs_error": 0.006315789473684205,
+    "backgrounds": [
+      "main",
+      "prelim",
+      "prelim+main",
+      "starter",
+      "starter+main",
+      "starter+prelim",
+      "starter+prelim+main"
+    ],
+    "expected_primary_bg_dependent_methods": 99,
+    "expected_controls": 2,
+    "completed_method_background_conditions": 707,
+    "completed_bg_dependent_conditions": 693,
+    "expected_bg_dependent_conditions": 693
+  },
+  "jobs": [
+    {
+      "background": "main",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "d73a5b9d89f78e9e336c8a80dbd664ae7b4aeab2a52f1a005fd307a0ebceb378"
+    },
+    {
+      "background": "main",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "162e5c5f7bc4d210ded33e852c7c0a1a27a0482422acf4e4927a981115c4b490"
+    },
+    {
+      "background": "main",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "f6d4b0a4cd6b793eecdea0c9ae3e5967fbbe96010d019671f22770b72c2ddb8e"
+    },
+    {
+      "background": "main",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "5522703ef9c4606625793db9bd5cdce50c49e13b340d9f272e976083b77beb12"
+    },
+    {
+      "background": "main",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "22c574a6fc1d778f949e718c798215bc1cb608a8084a604c5a03ec4cecb47c2b"
+    },
+    {
+      "background": "main",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "39988cc438933edd0687f2e89ad3e6b36bb4bca7fedf482621676b971576b49d"
+    },
+    {
+      "background": "main",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "409acdd2a294c2238bb42f49c476324e99665744f87c964dc75061c60e82c46b"
+    },
+    {
+      "background": "main",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "27515e6de761a5ed6395a33d060f2f38480772109779bd55f742dec3341897a1"
+    },
+    {
+      "background": "main",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "6e8fce8ac808f08dc28596cfbc6b383dec38293f879a393afa7f9c1fb6529935"
+    },
+    {
+      "background": "main",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "621091cc0ccdae6fe3638789fc20c7181dbdaed8496d92eacc8ce24f41880bf5"
+    },
+    {
+      "background": "main",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "35f929acf822dd232ef38a8a5b1b18ad646a8a506031b64a7213575ce55d3c75"
+    },
+    {
+      "background": "prelim",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "6d3b185d971851f3d17855086fe06addceba687950ba1e55bad11ac0d7165771"
+    },
+    {
+      "background": "prelim",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "89041fc10db59c840cc8552f4be0d15c9ac0cce902c224974e8ff989990d9087"
+    },
+    {
+      "background": "prelim",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "a4452e09ef73d3984199ceff0e87a025bae87e952223fb3683d5550b38212906"
+    },
+    {
+      "background": "prelim",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "ac2961a48979c1ba3e82203e6edfd90a2c505c19f88df52fdc1e2c031b178d83"
+    },
+    {
+      "background": "prelim",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "1b5b79fdef11d5fb8f09dc5885ac67a18964ead58e72d266659d8ed343191e46"
+    },
+    {
+      "background": "prelim",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "097b1df4431426b7f9861949a6a5ad38a36607cfc830c9a86b224d184d9a43b5"
+    },
+    {
+      "background": "prelim",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "3b1789a2df620fcd64ccbdbe819396b94a0197f2abf908414465e104563bbd8b"
+    },
+    {
+      "background": "prelim",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "1f9a019fad08913afac9f2f22051a6ef371342be9b8ee1d77405901e5cc7adb3"
+    },
+    {
+      "background": "prelim",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "d080eef479f379a8f0969b625fdf27c324b535d1bcdab6cd792790a25c9511e6"
+    },
+    {
+      "background": "prelim",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "985d649d7a88beb692d789e61615214fc4a155cb097773ac3cd0717dc73e6552"
+    },
+    {
+      "background": "prelim",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "3c250160e9fd89c2c96ff84b29275829b15d950d159755685181ff948ed4f531"
+    },
+    {
+      "background": "prelim+main",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "3ce97ff08c270ccf61b1649d585e9da95d98b4b984c66527c1128ecbd05dd01b"
+    },
+    {
+      "background": "prelim+main",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "da5d77c175338198dda63baee61dce0b300c2e3091859666f2ad17e6bca8e395"
+    },
+    {
+      "background": "prelim+main",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "248498c44d766ce18105ae6fd170a85ff6db782b459f029c67c6ff54656d178c"
+    },
+    {
+      "background": "prelim+main",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "b5bbe92d4cf4a0c49b28ab8b830827e2058ccaf2c686a9ff5bc47217fb84c0ff"
+    },
+    {
+      "background": "prelim+main",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "7b8d0d95471ffb52ce8f1e834ca52d919e820b55379c48341221a39032abd9f5"
+    },
+    {
+      "background": "prelim+main",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "9422846821972dc4049f23d5fec12812b783c91f3eb2bf2a6abfe20a227b7397"
+    },
+    {
+      "background": "prelim+main",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "9eb7cfa917e31169d50ec2dc0652c123143dab60c5d14fc812c0a65a0c7329d2"
+    },
+    {
+      "background": "prelim+main",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "85fe5c43b1751289f09f5b810ceeb7f4ac496f43c0c763041b265b307687fd68"
+    },
+    {
+      "background": "prelim+main",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "b21858bace7ecf913a5f4de7747c74434ae6782558dffd7ac0637694403b5e95"
+    },
+    {
+      "background": "prelim+main",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "dd71e92cefdf7a70dd3eb74c294e629e76fd2c8cbe6f4439e7d834e0b7e533c5"
+    },
+    {
+      "background": "prelim+main",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "02d6ee18660e129ab300b904cdfdd9950727ccca7424f6f2f2c9521e225d1682"
+    },
+    {
+      "background": "starter",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "bf989d26147c2b73b734b13aa9566db9bf84d052f37d49b4efa3e0ceb6b54ce8"
+    },
+    {
+      "background": "starter",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "6ed029ad21417c6114e205abdb1c65dd9072cc867d755ea43493cb207cf7bc7b"
+    },
+    {
+      "background": "starter",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "58a050138d8a187f63129909d1bca640ecd7f8e87ede1b143ec370c54ed4b733"
+    },
+    {
+      "background": "starter",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "9480db63767a31a4ceb730cd113d780f17491719a67b68a4e8ed3f1a313fc74e"
+    },
+    {
+      "background": "starter",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "d6cc5690a0e24c6b23b4eb47a1522b361f37ee540c220742ad66d3cdcf21d089"
+    },
+    {
+      "background": "starter",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "e0f432244a19790b9b513825578edd26664c9e73d49fd66c3ba64eccb7b8f516"
+    },
+    {
+      "background": "starter",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "71543290cdc7823e7652becae4e48476c732178f77ef637e4fd1ea14343eedff"
+    },
+    {
+      "background": "starter",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "e192557c2d3f126d962f115b53059f667dfa269a27fa43f8e824dcf33b30ae2e"
+    },
+    {
+      "background": "starter",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "7068157e484f0c109912965bfb87367f168187d8906e2650ba04c758e664dbd1"
+    },
+    {
+      "background": "starter",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "0eed12d8fc634bd58c5fb76e85cf62cefb9a40bed75d39c22942be8db88d282e"
+    },
+    {
+      "background": "starter",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "ade1f4e520aa65936fc1e0975834c0f4c1ca2c339a5008038e510a05bee8bcf1"
+    },
+    {
+      "background": "starter+main",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "f99274255af9302f0417bc01d1c71855ec1e9924224e5d1dfbe1d19ecd82a44a"
+    },
+    {
+      "background": "starter+main",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "01d165cc3c2740247958c732ba65595c872e1f31696066d92af269c1dd4f3723"
+    },
+    {
+      "background": "starter+main",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "947722be6847a8c8dd0ea40494f3f16d6cf43f283732a09b0af6d615e4ed59ce"
+    },
+    {
+      "background": "starter+main",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "d022c52beb5dc71e70a72083670c729bdf90f913f9cbd4d6d38af3b8618b9ea8"
+    },
+    {
+      "background": "starter+main",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "1cd8f1c81cc524b515ebdc16221ba348318e3dc97940f4ebb59e12394b991d5a"
+    },
+    {
+      "background": "starter+main",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "d4a3542b7eb3626c17ed890bece388f711154b5c0c2f2738a3da13f7f344c452"
+    },
+    {
+      "background": "starter+main",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "eb1b9932a3aecbed3242f833792cd0b79ff05041f7eb0966c20d14a8972db112"
+    },
+    {
+      "background": "starter+main",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "5ce3042bbe29586cb229f0ec71786df056a2520075c9f20dd6d77a326b1dd458"
+    },
+    {
+      "background": "starter+main",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "7cc5c29f62d277bc7ffe1d06ad8e8dde8ad5890bcf1d451f62e49ddcd7442af3"
+    },
+    {
+      "background": "starter+main",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "1bf65dd04327fbecf7d9d4f13bf948640e09ec02acbbe7280d3ec38b67d49248"
+    },
+    {
+      "background": "starter+main",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "bc4ac9f47dd3111ef1d23273315b293902822641d6f5ffa8c5a999f8cf280e03"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "881d1ff45b8a5e6ae7032e94f190faa2d524166f869cfb207b5058e7a5564241"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "bc5bf04f3b506bfb343ded5df7e452bef9186817fcf36dd969cb012bdede4361"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "cd0decf0eda55bceef66f56bd70c8fd2fec09769dee765ab2e8febfbb899b8e8"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "83c6a13f6fbe4ec646a456efacbb436ebb81ac7a7b5a647ef18c018b8b52d90c"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "c7cfa59b0ed35e8d844a8f587725a38795be3e42ddb14d79fd106af7a73fe995"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "76c486bd1472750f57d7b8f2e1577a2c279c0b9fa5891c4f42be5d983a5507f2"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "e4eafd1d2590230164eb5dab6e05df4b788a10ac81b4dcde6c05de603354bfe1"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "f14966e4888610441f960c00ab562ffd0ba098856a1f57d843bb034292767e18"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "eb5d84ae7745d17075453ba03fead11b7dc253d2efff32d0a35272b75ce40b99"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "284493633a6ad603864bde7cd41766428dc55ce285ccd5cc4cc53ca456a7cedd"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "536cd9991e3dbb1da23721b8b455984bf5baa2bb8eec2d3bb0bb8f7f18dd18af"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "aia2mia",
+      "methods": 4,
+      "targets": 20,
+      "freeze_sha256": "314461cafc56b28ee11b5529fda8ee8cfd2d49de2bb7d84cbada4804184be6c3"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "atk",
+      "methods": 15,
+      "targets": 20,
+      "freeze_sha256": "b0a9ee597b8a9888f09be329fc49dab85fa7e91646b11e22d969d58c2c63bcd8"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "cross",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "e61de06fc99b237248005c79a8153c8af811fdfe6f3950a0d3945f81845e9c12"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "density",
+      "methods": 13,
+      "targets": 20,
+      "freeze_sha256": "62ff8eaf623792c2928a4043c8da213a91fe58a6b0ea5630944b5d18867352f5"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "domias",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "2052a0698139fa9ddf47676865168d8b4b3b2834627ad39cc0e88becac1defe4"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "initial_gen",
+      "methods": 8,
+      "targets": 20,
+      "freeze_sha256": "304fbededd3e3e7631c98076c4561a55a6dd6f12e7e69649f5da1c4476997133"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "library",
+      "methods": 6,
+      "targets": 20,
+      "freeze_sha256": "c21c166cf0de8396f25b26c6fa5c08ba6555598a2e32de5a0357ba27bca3a7df"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "outcome",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "40ba9331e617114917af19365dfee3a2dd442f4c4d43a0574887c7a8dc86d0ae"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "raw_gen",
+      "methods": 9,
+      "targets": 20,
+      "freeze_sha256": "8baee6d4a66f0aa91c7a3d17a9962aff61f71a26a662a2d7859c61c353a171a2"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "redteam",
+      "methods": 26,
+      "targets": 20,
+      "freeze_sha256": "e094afc464983dc2f86b75c53d62149cc667928ba58f552a38a67845963fd32a"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "virtual",
+      "methods": 10,
+      "targets": 20,
+      "freeze_sha256": "e40e598cf9aa9618c32255f21590b0839c7d0040ad1eb1e21a40287e56437438"
+    }
+  ]
+}

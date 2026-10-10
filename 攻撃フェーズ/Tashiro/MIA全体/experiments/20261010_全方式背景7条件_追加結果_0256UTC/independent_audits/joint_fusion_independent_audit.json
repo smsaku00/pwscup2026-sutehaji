@@ -1,0 +1,1937 @@
+{
+  "joint": {
+    "status": "passed",
+    "coverage": {
+      "prelim": {
+        "backgrounds": 7,
+        "configurations_per_background": 203,
+        "configurations_total": 1421,
+        "same_exact_config_set_across_backgrounds": true
+      },
+      "main": {
+        "backgrounds": 7,
+        "configurations_per_background": 82,
+        "configurations_total": 574,
+        "same_exact_config_set_across_backgrounds": true
+      }
+    },
+    "stored_target_rows": 53382,
+    "sample_rows_recomputed": 5684,
+    "TPR_values_recomputed": 17052,
+    "max_abs_TPR_error": 0.0,
+    "prediction_hashes_checked": 1995,
+    "population_policy": "full1049 official-style plus explicitly labeled normal875; fusion also nonrare1025",
+    "method": "independent tie-group ROC; experiment methods not imported",
+    "config_sets": {
+      "prelim": [
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_contrast_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_contrast_020"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_contrast_high_imprint_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_residual_add010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_residual_delta010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_residual_delta020"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_residual_high_imprint_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "AIA_residual_quantized_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "Cnn_add010"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "Qpenalty_005"
+        },
+        {
+          "family": "clinical",
+          "inference": "all20",
+          "method": "Qpenalty_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_contrast_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_contrast_020"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_contrast_high_imprint_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_residual_add010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_residual_delta010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_residual_delta020"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_residual_high_imprint_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "AIA_residual_quantized_010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "Cnn_add010"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "Qpenalty_005"
+        },
+        {
+          "family": "clinical",
+          "inference": "without1_2",
+          "method": "Qpenalty_010"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "GenLRA7"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "P01_plus_max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "Q500"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "hard_binary_diagnostic"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "hard_rerank"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "max_0.25"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "max_0.5"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "soft_box_0.02"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "soft_box_0.05"
+        },
+        {
+          "family": "joint",
+          "inference": "all20",
+          "method": "soft_box_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "GenLRA7"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "P01_plus_max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "Q500"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "hard_binary_diagnostic"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "hard_rerank"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "max_0.25"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "max_0.5"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "soft_box_0.02"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "soft_box_0.05"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2",
+          "method": "soft_box_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "GenLRA7"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "P01"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "P01_plus_max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "Q500"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "hard_binary_diagnostic"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "hard_rerank"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "max_0.1"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "max_0.25"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "max_0.5"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "soft_box_0.02"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "soft_box_0.05"
+        },
+        {
+          "family": "joint",
+          "inference": "without1_2_12",
+          "method": "soft_box_0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "P01_plus_max0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "cat025_gated0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "nearest5_max0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "nearest5_mean0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "nearest5_selfonly0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all20",
+          "method": "neighbor2_median0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "P01_plus_max0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "cat025_gated0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "nearest5_max0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "nearest5_mean0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "nearest5_selfonly0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2",
+          "method": "neighbor2_median0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "P01"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "P01_plus_max0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "cat025_gated0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "nearest5_max0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "nearest5_mean0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "nearest5_selfonly0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "without1_2_12",
+          "method": "neighbor2_median0.1"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "direct_nonhome_0.05"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "direct_nonhome_0.10"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "one_dummy_p01_mix010"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.0_mix010"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.2_mix010"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.2_mix025"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.5_gate_top10_mix010"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.5_mix010"
+        },
+        {
+          "family": "p02",
+          "inference": "all20",
+          "method": "two_dummy_g0.5_mix025"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "A_full_public_remove"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "A_public_keep20"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_cond_sex_age10_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_cond_sex_age10_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_cond_sex_pref_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_cond_sex_pref_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_exact_age10_standalone"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_exact_age10_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "B_time_exact_age10_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "A_full_public_remove"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "A_public_keep20"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_cond_sex_age10_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_cond_sex_age10_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_cond_sex_pref_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_cond_sex_pref_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_exact_age10_standalone"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_exact_age10_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "B_time_exact_age10_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "AIA_residual_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_C_home_high_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_all"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_imprint_high_LOO_public"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_imprint_low_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "Cnn_quantized_C_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "AIA_residual_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_C_home_high_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_all"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_imprint_high_LOO_public"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_imprint_low_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "Cnn_quantized_C_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.01_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top10_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top20_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all20",
+          "method": "sparse_top40_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "P01"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top10_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top20_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "without1_2",
+          "method": "sparse_top40_margin0.1_penalty0.15"
+        }
+      ],
+      "main": [
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_contrast_010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_contrast_020"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_contrast_high_imprint_010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_residual_add010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_residual_delta010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_residual_delta020"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_residual_high_imprint_010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "AIA_residual_quantized_010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "Cnn_add010"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "Qpenalty_005"
+        },
+        {
+          "family": "clinical_threshold_projection",
+          "inference": "all22",
+          "method": "Qpenalty_010"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "GenLRA7"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "P01_plus_max_0.1"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "Q500"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "max_0.1"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "max_0.25"
+        },
+        {
+          "family": "joint_noncapacity_projection",
+          "inference": "all22",
+          "method": "max_0.5"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "P01_plus_max0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "cat025_gated0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "nearest5_max0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "nearest5_mean0.1"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "nearest5_selfonly0.05"
+        },
+        {
+          "family": "neighbor",
+          "inference": "all22",
+          "method": "neighbor2_median0.1"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "A_full_public_remove"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "A_public_keep20"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_cond_sex_age10_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_cond_sex_age10_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_cond_sex_pref_year1_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_cond_sex_pref_year1_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_exact_age10_standalone"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_exact_age10_w0.15"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "B_time_exact_age10_w0.35"
+        },
+        {
+          "family": "p08",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "AIA_residual_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_C_home_high_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_all"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_imprint_high"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_imprint_high_LOO_public"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_imprint_low_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "Cnn_quantized_C_control"
+        },
+        {
+          "family": "posthoc_gates_diagnostic",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.01_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.001_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.001_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.005_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.005_penalty0.05"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.01_penalty0.02"
+        },
+        {
+          "family": "smallgap",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.01_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top10_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top20_margin0.1_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.02_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.02_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.05_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.05_penalty0.15"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.1_penalty0.05"
+        },
+        {
+          "family": "sparse",
+          "inference": "all22",
+          "method": "sparse_top40_margin0.1_penalty0.15"
+        }
+      ]
+    }
+  },
+  "fusion": {
+    "status": "passed",
+    "coverage": {
+      "prelim": {
+        "backgrounds": 7,
+        "configurations_per_background": 60,
+        "configurations_total": 420,
+        "same_exact_config_set_across_backgrounds": true
+      },
+      "main": {
+        "backgrounds": 7,
+        "configurations_per_background": 30,
+        "configurations_total": 210,
+        "same_exact_config_set_across_backgrounds": true
+      }
+    },
+    "stored_target_rows": 23940,
+    "sample_rows_recomputed": 2520,
+    "TPR_values_recomputed": 7560,
+    "max_abs_TPR_error": 0.0,
+    "prediction_hashes_checked": 630,
+    "population_policy": "full1049 official-style plus explicitly labeled normal875; fusion also nonrare1025",
+    "method": "independent tie-group ROC; experiment methods not imported",
+    "config_sets": {
+      "prelim": [
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all20",
+          "method": "originalKDEA_mix0.25"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all20",
+          "method": "originalKDEA_mix0.5"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all20",
+          "method": "originalKDEA_mix0.75"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all20",
+          "method": "originalKDEA_mix1"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "legacy18",
+          "method": "P01"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "legacy18",
+          "method": "originalKDEA_mix0.25"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "legacy18",
+          "method": "originalKDEA_mix0.5"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "legacy18",
+          "method": "originalKDEA_mix0.75"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "legacy18",
+          "method": "originalKDEA_mix1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_median_iqr_h1.5_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all20",
+          "method": "kde_raw_h1.5_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "P01"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_median_iqr_h1.5_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "legacy18",
+          "method": "kde_raw_h1.5_mix0.5"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P01"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_nn1_w0.05"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_nn1_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_nn1_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_nn1_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_nn1_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_rel_med_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_rel_med_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_top20_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_top20_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_two_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all20",
+          "method": "P03_two_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P01"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_nn1_w0.05"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_nn1_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_nn1_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_nn1_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_nn1_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_rel_med_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_rel_med_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_top20_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_top20_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_two_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "legacy18",
+          "method": "P03_two_w0.2"
+        }
+      ],
+      "main": [
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all22",
+          "method": "originalKDEA_mix0.25"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all22",
+          "method": "originalKDEA_mix0.5"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all22",
+          "method": "originalKDEA_mix0.75"
+        },
+        {
+          "family": "archived_kdeA_mix_full",
+          "inference": "all22",
+          "method": "originalKDEA_mix1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_median_iqr_h1.5_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h0.75_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h0.75_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h0.75_mix0.5"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h1.5_mix0.1"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h1.5_mix0.25"
+        },
+        {
+          "family": "new_kde_fusion",
+          "inference": "all22",
+          "method": "kde_raw_h1.5_mix0.5"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P01"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_nn1_w0.05"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_nn1_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_nn1_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_nn1_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_nn1_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_rel_med_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_rel_med_w0.2"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_top20_w0.15"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_top20_w0.3"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_two_w0.1"
+        },
+        {
+          "family": "p03_threshold010",
+          "inference": "all22",
+          "method": "P03_two_w0.2"
+        }
+      ]
+    }
+  }
+}

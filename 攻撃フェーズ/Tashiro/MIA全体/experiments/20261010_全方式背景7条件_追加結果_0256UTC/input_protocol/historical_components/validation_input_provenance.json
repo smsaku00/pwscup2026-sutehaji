@@ -1,0 +1,22 @@
+{
+  "starter_B_practice": {
+    "path": "<workspace>/mia_recovered_validation/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/private_inputs/starter_B_practice.csv",
+    "sha256": "ea6e7acc08b9da0ce30507e255fe51b802f729225bdaf985b3e0270a9e017a19",
+    "matches_both_original_and_revised_historical_inputs": true,
+    "git_blob": "300861b2d92c602b47e1d74497e3f21865064148",
+    "source": "https://github.com/pwscup/pwscup2026-kit/blob/main/participant_data/B_practice.csv"
+  },
+  "prelim_B_reconstructed": {
+    "path": "<workspace>/mia_recovered_validation/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/private_inputs/prelim_share_team05_B.csv",
+    "sha256": "cc8bda42a0708b8a9b2904cf40fc2ec86bc216e2671b616a086d27f3b1b9454d",
+    "operation": "Remove is_rare from original pinned B_self.csv preserving string cells and LF CSV; matches historical file bytes exactly"
+  },
+  "main_round3_F_mia": {
+    "path": "<workspace>/mia_recovered_validation/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/private_inputs/main_round3_F_mia.csv",
+    "bytes": 394633,
+    "sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "git_blob": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+    "commit": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+    "role": "private historical confidence baseline; exclude from deliverable"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "ref": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "original_path": "公式データ/予備戦/結果/公開用結果表_20260909.xlsx",
+  "git_blob_sha": "797313bde67ca8fd2fd12ecede5edd12c38a853a",
+  "sha256": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508",
+  "size": 54473,
+  "purpose": "Original published score table for historical policy counterfactual validation; not training truth or current main accuracy",
+  "delivery": "private_input_excluded_from_aggregate_only_ZIP"
+}

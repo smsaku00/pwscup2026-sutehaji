@@ -1,0 +1,25 @@
+{
+  "complete_request": false,
+  "complete_families": [
+    "direct",
+    "attribute_seeds",
+    "stable_centers"
+  ],
+  "source_recipe_BG_evaluations": 10976,
+  "rows": 219520,
+  "same_recipe_crossing_targets": [
+    1,
+    2,
+    3,
+    6,
+    10,
+    12,
+    13,
+    22,
+    23,
+    24,
+    26
+  ],
+  "snapshot_utc": "2026-10-10T02:17:34Z",
+  "interpretation": "Seven overlapping background source conditions, not seven independent replications. Selection across methods/BGs is descriptive and uses preliminary evaluation labels. Historical adaptively selected feature recipes remain exploratory. Old means here use the same current numerical execution protocol and fixed recipe as the changed-BG run; historical catalog comparisons are separate."
+}

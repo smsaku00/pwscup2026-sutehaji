@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "backgrounds": {
+    "starter": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "305d36d5387debbabec62881ec3a407f4c5a0fe480761519cbeeb3cf57610e02",
+      "prediction_frozen_at": "2026-10-10T02:21:53.627154+00:00"
+    },
+    "prelim": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "8297ffe60dc3c38db8a480d25fac89defd2ed8d06f6a450f233d979cfc101039",
+      "prediction_frozen_at": "2026-10-10T02:17:29.676802+00:00"
+    },
+    "main": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "4d9701a4db6c45aed0d47abfccacb539cd2a8b8ab7780387d71bcc34bbb51ab9",
+      "prediction_frozen_at": "2026-10-10T02:26:20.430757+00:00"
+    },
+    "starter+prelim": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "fe32deaa0233da07450302569d4a1f27d8591d94900ab76c5b5f7d0ff1517d20",
+      "prediction_frozen_at": "2026-10-10T02:31:34.232718+00:00"
+    },
+    "starter+main": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "590d374f1467731a53af7e0cc4bfcbf9dddefe145e3ef91a7bd5d0a977682b2f",
+      "prediction_frozen_at": "2026-10-10T02:36:55.163686+00:00"
+    },
+    "prelim+main": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "33b4802559ea21d73e611403c71f9e5c40e0dc437cb26095874843f1432ea106",
+      "prediction_frozen_at": "2026-10-10T02:42:27.895240+00:00"
+    },
+    "starter+prelim+main": {
+      "settings": 300,
+      "targets": 20,
+      "target_population_rows": 18000,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "f444a05ef719d92d8fbca4ca0cd19e86c2ae25aa2c857e1145243a1c96d31716",
+      "prediction_frozen_at": "2026-10-10T02:49:37.620637+00:00"
+    }
+  },
+  "method": "independent tie-group ROC and trapezoidal AUC; no experiment methods imported",
+  "sampling": "First and last method, then every 33rd sorted source output; first and last target; all three populations; every BG",
+  "settings_per_background": 300,
+  "backgrounds_complete": 7,
+  "condition_panels": 2100,
+  "stored_target_population_rows": 126000,
+  "same_exact_config_set_across_backgrounds": true,
+  "prediction_matrix_hashes_checked": 2100,
+  "representative_target_population_rows_checked": 462,
+  "metric_values_checked": 2310,
+  "max_absolute_metric_error": 0.0,
+  "historical_regression_scope": "Historical source/catalog regression is recorded separately by the source runner; current independently checked all20 inference/evaluation scores do not establish historical byte reproduction.",
+  "audited_at_utc": "2026-10-10T02:51:05.928230+00:00"
+}

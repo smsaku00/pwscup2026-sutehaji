@@ -1,0 +1,1836 @@
+{
+  "passed": true,
+  "background_pairs": [
+    {
+      "left": "starter",
+      "right": "prelim",
+      "bare_id_overlap": 5143,
+      "exact_qi7_overlap": 0,
+      "exact_features13_overlap": 0
+    },
+    {
+      "left": "starter",
+      "right": "main",
+      "bare_id_overlap": 5143,
+      "exact_qi7_overlap": 0,
+      "exact_features13_overlap": 0
+    },
+    {
+      "left": "prelim",
+      "right": "main",
+      "bare_id_overlap": 5143,
+      "exact_qi7_overlap": 0,
+      "exact_features13_overlap": 0
+    }
+  ],
+  "verified_repository_files": 142,
+  "subsets": {
+    "starter": 5143,
+    "prelim": 5143,
+    "main": 5143,
+    "starter+prelim": 10286,
+    "starter+main": 10286,
+    "prelim+main": 10286,
+    "starter+prelim+main": 15429
+  },
+  "phases": {
+    "prelim": {
+      "phase": "prelim",
+      "self_id": 5,
+      "target_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29
+      ],
+      "official_target_columns_including_self": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29
+      ],
+      "b_self": "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+      "attack_dir": "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/PWSCup2026_prelim_attack",
+      "phase_original_bg": "<workspace>/mia_bg7_inputs/root/公式データ/予備戦/PWSCup2026_prelim_common/A_bg.csv",
+      "private_rows": 163,
+      "rare_rows": 24,
+      "nonrare_rows": 1025,
+      "normal_unknown_nonrare_rows": 875,
+      "unknown_including_rare_rows": 886,
+      "files": [
+        {
+          "kind": "B_self",
+          "team": 5,
+          "rows": 1049,
+          "columns": [
+            "record_id",
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death",
+            "is_rare"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 1,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 2,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 3,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 4,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 5,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 6,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 7,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 8,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 9,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 10,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 12,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 13,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 17,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 18,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 19,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 20,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 22,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 23,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 24,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 26,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 29,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 1,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 2,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 3,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 4,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 5,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 6,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 1
+        },
+        {
+          "kind": "C",
+          "team": 7,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 8,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 9,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 10,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 12,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 13,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 17,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 18,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 19,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 45
+        },
+        {
+          "kind": "C",
+          "team": 20,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 22,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 23,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 24,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 26,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 29,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 118
+        }
+      ]
+    },
+    "main": {
+      "phase": "main",
+      "self_id": 28,
+      "target_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        25,
+        26,
+        27
+      ],
+      "official_target_columns_including_self": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        25,
+        26,
+        27,
+        28
+      ],
+      "b_self": "<workspace>/mia_bg7_inputs/root/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "attack_dir": "<workspace>/mia_bg7_inputs/root/公式データ/PWSCup2026_final_attack",
+      "phase_original_bg": "<workspace>/mia_bg7_inputs/root/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv",
+      "private_rows": 163,
+      "rare_rows": 24,
+      "nonrare_rows": 1025,
+      "normal_unknown_nonrare_rows": 875,
+      "unknown_including_rare_rows": 886,
+      "files": [
+        {
+          "kind": "B_self",
+          "team": 28,
+          "rows": 1049,
+          "columns": [
+            "record_id",
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death",
+            "is_rare"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 0,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 1,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 2,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 3,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 4,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 5,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 6,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 7,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 8,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 9,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 10,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 11,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 12,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 13,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 14,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 15,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 16,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 17,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 22,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 25,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 26,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 27,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "Q",
+          "team": 28,
+          "rows": 326,
+          "columns": [
+            "challenge_row_id",
+            "age",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "sex",
+            "prefecture"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 0,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 18
+        },
+        {
+          "kind": "C",
+          "team": 1,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 2,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 3,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 4,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 5,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 6,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 7,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 8,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 9,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 10,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 11,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 12,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 13,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 14,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 15,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 16,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 17,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 22,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 25,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 26,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 27,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        },
+        {
+          "kind": "C",
+          "team": 28,
+          "rows": 1049,
+          "columns": [
+            "age",
+            "sex",
+            "prefecture",
+            "BMI",
+            "SBP",
+            "TG",
+            "HDL",
+            "ALT",
+            "smoking",
+            "FPG",
+            "time",
+            "onset",
+            "death"
+          ],
+          "duplicates_qi7": 0
+        }
+      ]
+    }
+  },
+  "truth_labels_parsed": false,
+  "all_model_input_original_bytes_preserved": true
+}
