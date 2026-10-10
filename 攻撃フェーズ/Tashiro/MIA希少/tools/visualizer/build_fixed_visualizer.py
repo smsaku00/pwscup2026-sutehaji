@@ -2,6 +2,7 @@
 import hashlib
 import json
 import re
+from fractions import Fraction
 from pathlib import Path
 from artifact_layout import artifact_path, rewrite_links
 
@@ -17,6 +18,25 @@ def main():
     code = json.loads(code_path.read_text(encoding='utf-8'))
     encoding = json.loads(encoding_path.read_text(encoding='utf-8'))
     padding = json.loads(padding_path.read_text(encoding='utf-8'))
+    history_path = DEST / 'resources/intro_history.json'
+    history = json.loads(history_path.read_text(encoding='utf-8'))
+    conditions = history['conditions']
+    if len(history['cases']) != 102 or conditions['rare_count'] != 24 or conditions['low_fpr'] != .01:
+        raise ValueError('unexpected historical input')
+    predicted = []
+    for row in history['cases']:
+        counts = [row['counts'][t] for t in conditions['teams']]
+        active = sum(m > 0 for m in counts)
+        if any(m not in (0, 1, 2) for m in counts) or sum(counts) > 11 or active != row['active_teams'] or sum(counts) != row['total_members']:
+            raise ValueError('invalid historical count configuration')
+        values = [sum((Fraction(24 - m, 100 * (n - m)) for n, m in zip(sizes, counts) if m), Fraction()) / active
+                  for sizes in [conditions['round1_sizes'], conditions['round2_sizes']]]
+        if abs(float(values[0]) - conditions['round1_rare_score']) > 1e-13 or values[1] != Fraction(row['round2_score_exact']):
+            raise ValueError('historical score does not reproduce')
+        predicted.append(values[1])
+    winners = [row['case_id'] for row, score in zip(history['cases'], predicted) if abs(float(score) - conditions['round2_rare_score']) < 1e-13]
+    if len(set(predicted)) != 102 or winners != [history['winner']]:
+        raise ValueError('historical uniqueness check failed')
     if code['candidate_ids'] != padding['candidate_ids'] or code['total_high'] != encoding['total_high']:
         raise ValueError('fixed code disagrees with shared score settings')
     ids, queries = code['candidate_ids'], code['query_masks']
@@ -52,10 +72,12 @@ def main():
     cards = ''.join(f'<article id="glass-card-{i+1}" class="glass-card" style="--layer:{i+1};--z:{i+2}"><div id="glass-meta-{i+1}" class="card-meta"></div><div id="glass-grid-{i+1}" class="sheet-grid"></div></article>' for i in range(5))
     legacy_style = re.search(r'<style>([\s\S]*?)</style>', (HERE / 'viewer5.template.html').read_text(encoding='utf-8')).group(1)
     configurations = [
-        ('cards', 'fixed_pair_lines.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_pair_lines.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_assignment.css').read_text(encoding='utf-8'),
-         'FIXED_UI': prefix + (HERE / 'fixed_pair_lines_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_assignment_ui.js').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_pair_lines_overview.js').read_text(encoding='utf-8'),
+        ('cards', 'fixed_pair_lines.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_pair_lines.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_assignment.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_intro.css').read_text(encoding='utf-8'),
+         'DATA': json.dumps({**data, 'intro': history}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),
+         'INTRO_PANEL': (HERE / 'fixed_intro.template.html').read_text(encoding='utf-8'),
+         'FIXED_UI': prefix + (HERE / 'fixed_pair_lines_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_assignment_ui.js').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_intro_ui.js').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_pair_lines_overview.js').read_text(encoding='utf-8'),
          'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出'), 'GLASS_CARDS': cards},
-         'size_report_5query.json', 'single offline HTML; horizontal include/exclude patterns for 11 records gathered vertically into five fixed submission sets; manual assignment and explicit automatic animation; one-member rows or two-member pair edges eliminated by five revealed results; separate assignment/overview/candidates views and combined overview/candidates'),
+         'size_report_5query.json', 'single offline HTML; interactive ROC and TPR at FPR 0.01; actual first/two-submission history with all 102 saved count configurations; horizontal include/exclude patterns for 11 records gathered vertically into five fixed submission sets; manual assignment and explicit automatic animation; one-member rows or two-member pair edges eliminated by five revealed results; separate assignment/overview/candidates views and combined overview/candidates'),
         ('patterns', 'fixed_records.template.html', {'STYLE': (HERE / 'fixed_compact.css').read_text(encoding='utf-8') + '\n' + (HERE / 'fixed_records.css').read_text(encoding='utf-8'),
          'FIXED_UI': prefix + (HERE / 'fixed_lesson_ui.js').read_text(encoding='utf-8') + '\n' + operations.replace('調査ID', '対象ID').replace('質問', '提出') + '\n' + (HERE / 'fixed_overview_ui.js').read_text(encoding='utf-8'),
          'CODE_MATRIX': matrix.replace('質問', '提出'), 'MEAN_INPUTS': inputs.replace('質問', '提出')},
@@ -85,7 +107,7 @@ def main():
                   'guarantee_method': code['guarantee']['basis'], 'provenance': code['provenance'],
                   'source_files': [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
                                    'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
-                                  for p in (code_path, encoding_path, padding_path)]}
+                                  for p in ((code_path, encoding_path, padding_path, history_path) if name == 'cards' else (code_path, encoding_path, padding_path))]}
         artifact_path(report_name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(json.dumps({'file': output.name, 'bytes': report['html_bytes'], 'sha256': report['html_sha256']}, ensure_ascii=False))
 

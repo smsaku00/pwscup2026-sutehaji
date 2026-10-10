@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const el = id => document.getElementById(id), lesson = globalThis.MIA_FIXED_LESSON;
-  let memberships = data.demo_masks.slice(), selectedTeam = 1, selectedRound = 0, view = 'assignment', depth = 0, revealedCount = 0;
+  let memberships = data.demo_masks.slice(), selectedTeam = 1, selectedRound = 0, view = 'intro', depth = 0, revealedCount = 0;
   const activeTeams = {1: 0, 2: 1};
   const label = mask => shared.maskIDs(mask, ids).join('＋');
   function assign(team, member) {
@@ -44,6 +44,7 @@
     el('lesson-team').value = String(data.teams[t]);
     el('selected-team-caption').textContent = `② Team ${data.teams[t]}：${data.caps[t] === 2 ? '2人組を線で絞る' : '1人の候補行を絞る'}`;
     el('lesson-workspace').setAttribute('data-view', view);
+    el('show-intro').setAttribute('aria-pressed', String(view === 'intro'));
     el('show-assignment').setAttribute('aria-pressed', String(view === 'assignment'));
     el('show-overview').setAttribute('aria-pressed', String(view === 'overview'));
     el('show-cards').setAttribute('aria-pressed', String(view === 'cards'));
@@ -51,8 +52,9 @@
     el('overview-panel').hidden = !['overview', 'both'].includes(view);
     el('pairs-panel').hidden = !['cards', 'both'].includes(view);
     el('assignment-panel').hidden = view !== 'assignment';
-    el('lesson-controls').hidden = view === 'assignment';
-    el('lesson-actions').hidden = view === 'assignment';
+    el('intro-panel').hidden = view !== 'intro';
+    el('lesson-controls').hidden = ['assignment', 'intro'].includes(view);
+    el('lesson-actions').hidden = ['assignment', 'intro'].includes(view);
     for (let i = 0; i < 5; i++) el(`record-heading-${i + 1}`).classList.toggle('row-focus', i === r);
   }
   function fromLesson(state) {
@@ -75,9 +77,9 @@
     selectedRound = round; render();
   }
   function setView(value) {
-    if (!['assignment', 'overview', 'cards', 'both'].includes(value)) throw Error('表示を選んでください。');
-    if (value === 'assignment') {lesson.pause(); lesson.render();}
-    else globalThis.MIA_FIXED_ASSIGNMENT.stop();
+    if (!['intro', 'assignment', 'overview', 'cards', 'both'].includes(value)) throw Error('表示を選んでください。');
+    if (['assignment', 'intro'].includes(value)) {lesson.pause(); lesson.render();}
+    if (value !== 'assignment') globalThis.MIA_FIXED_ASSIGNMENT.stop();
     view = value; render();
     if (view === 'assignment') globalThis.MIA_FIXED_ASSIGNMENT.render();
   }
@@ -93,7 +95,7 @@
     } else selectRound(Number(target.dataset.overviewRound));
   };
   el('lesson-team').onchange = () => selectTeam(data.teams.indexOf(Number(el('lesson-team').value)));
-  el('show-assignment').onclick = () => setView('assignment'); el('show-overview').onclick = () => setView('overview'); el('show-cards').onclick = () => setView('cards'); el('show-both').onclick = () => setView('both'); el('reset-overview').onclick = reset;
+  el('show-intro').onclick = () => setView('intro'); el('show-assignment').onclick = () => setView('assignment'); el('show-overview').onclick = () => setView('overview'); el('show-cards').onclick = () => setView('cards'); el('show-both').onclick = () => setView('both'); el('reset-overview').onclick = reset;
   globalThis.MIA_FIXED_OVERVIEW = Object.freeze({fromLesson, selectTeam, selectCapacity, selectRound, setView, reset,
     snapshot: () => ({selectedTeam, selectedRound, view, memberships: memberships.slice(), depth, revealedCount, ...model()})});
   const state = lesson.snapshot(); fromLesson({cap: state.cap, member: state.member, depth: state.depth, revealedCount: state.revealedCount});

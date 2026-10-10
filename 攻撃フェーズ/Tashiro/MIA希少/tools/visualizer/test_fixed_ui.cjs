@@ -132,9 +132,10 @@ function assertOverview(viewer,result) {
   assert.equal(viewer.elements.get('overview-panel').hidden,!['overview','both'].includes(state.view));
   assert.equal(viewer.elements.get('pairs-panel').hidden,!['cards','both'].includes(state.view));
   assert.equal(viewer.elements.get('assignment-panel').hidden,state.view!=='assignment');
-  assert.equal(viewer.elements.get('lesson-controls').hidden,state.view==='assignment');
-  assert.equal(viewer.elements.get('lesson-actions').hidden,state.view==='assignment');
-  for(const [id,view] of [['show-assignment','assignment'],['show-overview','overview'],['show-cards','cards'],['show-both','both']])assert.equal(viewer.elements.get(id).attributes['aria-pressed'],String(state.view===view));
+  assert.equal(viewer.elements.get('intro-panel').hidden,state.view!=='intro');
+  assert.equal(viewer.elements.get('lesson-controls').hidden,['assignment','intro'].includes(state.view));
+  assert.equal(viewer.elements.get('lesson-actions').hidden,['assignment','intro'].includes(state.view));
+  for(const [id,view] of [['show-intro','intro'],['show-assignment','assignment'],['show-overview','overview'],['show-cards','cards'],['show-both','both']])assert.equal(viewer.elements.get(id).attributes['aria-pressed'],String(state.view===view));
   let used=0;state.memberships.forEach((member,t)=>{assert.equal(pc(member),CAPS[t]);assert.equal(used & member,0);used|=member;});assert.equal(pc(used),9);
   assert.equal(CAPS[state.selectedTeam],lesson.cap);assert.equal(state.memberships[state.selectedTeam],lesson.member);
   assert.equal(state.depth,lesson.depth);assert.equal(state.revealedCount,lesson.revealedCount);
@@ -194,7 +195,7 @@ async function main() {
   const viewer=simulatedViewer();assert.deepEqual(viewer.json('MIA_FIXED_LESSON.values()'),{cap:2,depth:0,masks:{'1':128,'2':129},playing:false});
   assert.deepEqual(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').memberships,[2,129,4,24,32,320]);assertGraph(viewer,129,0,null,result);
   assert.equal(pairPaths(viewer.elements.get('pair-lines').innerHTML).length,55);
-  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'assignment');assert.equal(viewer.elements.get('overview-panel').hidden,true);assert.equal(viewer.elements.get('pairs-panel').hidden,true);
+  assert.equal(viewer.json('MIA_FIXED_OVERVIEW.snapshot()').view,'intro');assert.equal(viewer.elements.get('intro-panel').hidden,false);assert.equal(viewer.elements.get('overview-panel').hidden,true);assert.equal(viewer.elements.get('pairs-panel').hidden,true);viewer.click('show-assignment');
   result.assignment_checks={records:0,cells:0,manual_steps:0,automatic_steps:0};
   function checkAssignment(v) {
     const state=v.json('MIA_FIXED_ASSIGNMENT.snapshot()'), a=result.assignment_checks;
@@ -489,4 +490,5 @@ async function main() {
   if (process.argv.includes('--write-report')) fs.writeFileSync(path.join(__dirname, 'validation_fixed_ui.json'), JSON.stringify(result, null, 2) + '\n');
   console.log(JSON.stringify(result));
 }
-main().catch(error => {console.error(error); process.exitCode = 1;});
+module.exports = {simulatedViewer};
+if (require.main === module) main().catch(error => {console.error(error); process.exitCode = 1;});

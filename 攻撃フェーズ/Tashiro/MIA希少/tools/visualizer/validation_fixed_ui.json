@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "environment": "Node VM simulated DOM, independently enumerated one/two-member sets, controlled reveal/fade timers and numeric SVG geometry",
-  "html_bytes": 105859,
-  "html_sha256": "1847d30b0163f10509c4f03cf7a2316a525c5a9f118c44d3e81ebefdbee838b0",
+  "html_bytes": 174278,
+  "html_sha256": "9298bbd7333c5d9e4169fd80b05e044bf15de6bc45958cf73b34158b6862db88",
   "single_member_examples": 11,
   "two_member_examples": 55,
   "graph_states_checked": 3216,

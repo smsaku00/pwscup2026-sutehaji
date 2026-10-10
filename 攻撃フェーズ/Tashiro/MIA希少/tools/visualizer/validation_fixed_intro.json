@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "environment": "Node simulated DOM; independent tied-score ROC interpolation over 24 records; all 102 saved count configurations",
+  "roc_configurations": 63,
+  "historical_configurations": 102,
+  "historical_team_settings": 22,
+  "bridge_score_cases": 15,
+  "manual_navigation_has_no_timers": true,
+  "visual_browser_validation": false,
+  "html_bytes": 174278,
+  "html_sha256": "9298bbd7333c5d9e4169fd80b05e044bf15de6bc45958cf73b34158b6862db88"
+}

@@ -1,8 +1,8 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 105859,
-  "html_sha256": "1847d30b0163f10509c4f03cf7a2316a525c5a9f118c44d3e81ebefdbee838b0",
-  "format": "single offline HTML; horizontal include/exclude patterns for 11 records gathered vertically into five fixed submission sets; manual assignment and explicit automatic animation; one-member rows or two-member pair edges eliminated by five revealed results; separate assignment/overview/candidates views and combined overview/candidates",
+  "html_bytes": 174278,
+  "html_sha256": "9298bbd7333c5d9e4169fd80b05e044bf15de6bc45958cf73b34158b6862db88",
+  "format": "single offline HTML; interactive ROC and TPR at FPR 0.01; actual first/two-submission history with all 102 saved count configurations; horizontal include/exclude patterns for 11 records gathered vertically into five fixed submission sets; manual assignment and explicit automatic animation; one-member rows or two-member pair edges eliminated by five revealed results; separate assignment/overview/candidates views and combined overview/candidates",
   "single_team_states": [
     11,
     55
@@ -32,6 +32,11 @@
       "path": "analysis/full_depth4_20261007/padding_rule.json",
       "bytes": 760,
       "sha256": "34076f0288ffbfc17ade46b35be84e11eb85b6c9aefbc78c47eb3c3d141f3227"
+    },
+    {
+      "path": "docs/visualizer/resources/intro_history.json",
+      "bytes": 60387,
+      "sha256": "c2fee06aa26a4433dc0740d2fb5c38295d10fa56aa3713a95cd5fbc2652287c3"
     }
   ]
 }

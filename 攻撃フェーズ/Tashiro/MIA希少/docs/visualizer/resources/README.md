@@ -7,6 +7,7 @@
 | 資料 | 内容 |
 |---|---|
 | [DETAILS.md](DETAILS.md) | 操作方法、11人・55組・2,494,800配置の数え方、保証の範囲、検証、再生成 |
+| [intro_history.json](intro_history.json) | 第1・2回の実履歴：全22チームの同点人数、公式平均点、全102通りの人数配置、出典のGit blob |
 | [nonadaptive_code.json](nonadaptive_code.json) | 固定5回の対象ID・5桁コード・提出設定 |
 | [size_report_5query.json](size_report_5query.json) | 教材の非適応5回版のサイズ・入力ハッシュ |
 | [size_report.json](size_report.json) | 適応4回版と53証明書のサイズ |
