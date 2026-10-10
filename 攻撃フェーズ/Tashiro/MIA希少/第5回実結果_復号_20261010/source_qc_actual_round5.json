@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "第5回実結果の読取専用独立QC。audit.pyとdecode_actual_round5.pyをimportしない別コードで検算。",
+  "raw_html_sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+  "raw_html_bytes": 3884,
+  "team_id": 28,
+  "validation_ok": true,
+  "actual_round5_tpr_rare": "0.011166666666666667",
+  "actual_round5_exact": "67/6000",
+  "independent_configurations_after_round4": 1296,
+  "matching_round5_branch_id": 21,
+  "independent_configurations_after_actual_round5": 16,
+  "round5_positive_high_counts_target_order_6_10_11_16_17_25": [1, 0, 0, 1, 0, 1],
+  "remaining_16_csv_placements_and_exact_predictions_match": true,
+  "official_scorer_independent_calls": 96,
+  "official_scorer_call_scope": "16配置×希少陽性あり6対象。第5回実CSVの希少24行を公式score_miaで採点し、各配置の6対象平均が生の公式点数にfloat完全一致。",
+  "future_round6_branches": 6,
+  "future_round6_branch_sizes_in_score_order": [2, 2, 4, 2, 2, 4],
+  "future_round6_7_unique_response_pairs": 16,
+  "future_collision_groups": 0,
+  "future_worst_remaining_after_round6": 4,
+  "future_worst_remaining_after_round7": 1,
+  "future_rounding_given_raw_observations_through_round5": {
+    "decimal_places_3_unique_pairs": 8,
+    "decimal_places_3_worst_remaining": 2,
+    "decimal_places_4_unique_pairs": 16,
+    "decimal_places_4_worst_remaining": 1
+  },
+  "wording_notes": [
+    "第6・7回の固定質問（5bit第4・5問）と表記する。",
+    "ID47について確定するのは今回の22対象のいずれにも含まれないこと。非共有P28や全29他コホートでの非会員とは断定しない。",
+    "Team17のID115確定と未来2回の保証は、元監査の原本対応・候補・人数・排他・固定所属・公式採点条件に依存する。未来の点数は予測である。"
+  ],
+  "raw_html_or_medical_attributes_copied": false,
+  "prior_audit_or_submission_csv_changed": false,
+  "github_updated": false
+}

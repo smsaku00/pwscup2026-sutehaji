@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source_audit_publication_commit": "42deb52906836eafc73edec941b385aeabaaa70c",
+  "original_local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010",
+  "published_prior_audit": "攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/希少残り2問_独立監査",
+  "verified_github_prior_audit": {
+    "audit.py": {
+      "blob": "1f856d9e7e41d12ae7a15b169525f2a485bd89ee",
+      "sha256": "1ffc788722701f2ab84a7016a7ded4b5882e8b7e90c6517329bd24bfbb500a1b"
+    },
+    "input_manifest.json": {
+      "blob": "f423751d8eb95cd3ece7ca7e9f738346ee1b5550",
+      "sha256": "e8eee6fb86ea028d6d09dd01bc1264be14dc8ae90c35f007a8b9fa538a7cdf6a"
+    },
+    "all_1296_placements_and_observations.csv": {
+      "blob": "f46c9170e50be280eae68693a3bf4e78faab8292",
+      "sha256": "2403e72ed9ace9eb8e7621736d8319ae16c93ca3b0aec735ef42505172778840"
+    }
+  },
+  "adjusted_files": {
+    "decode_actual_round5.py": {
+      "original_sha256": "d43ea2721beae7a41091926e1c324cd68544bfa8b29893e062c48989daa211cf",
+      "publication_sha256": "e81af950036153090122b1045b2fa3c17fc51263f3b1133b6706a4cf0d056a80"
+    },
+    "independent_result_check.py": {
+      "original_sha256": "87990728f4f9d6d0e4a77157a445971107b4d130c528f74e345aac692c7c6463",
+      "publication_sha256": "a3e65b9500c90b3923974b76cf38e741759dd78997942bbab38d86e06b86f785"
+    },
+    "説明.md": {
+      "original_sha256": "2abfccfbe7ac13702ee5427311ab89c000d9b1cc85bdf8c2fe998c6bcdb488d3",
+      "publication_sha256": "4f33c571a26c633e1b4a7509564b4ffddbde1c3b480905ee29179b3c27c8f857"
+    }
+  },
+  "adjustments": [
+    "decodeの旧兄弟監査参照を実掲載監査へ変更し--base-audit-dir/--inputs-dir/--actual-htmlを追加。入力・予測・復号のロジック変更なし。",
+    "別実装に--scorer-srcを追加。列挙ロジック・人数・候補・生点数・固定質問は変更なし。",
+    "説明末尾のローカルのみ記述を作成時履歴として明示し、実掲載参照とCLI/非公開入力の依存を追記。",
+    "Library転送helperは掲載せず、必要な採点HTML複製は共通原本とのバイト一致を確認。"
+  ],
+  "reproduction": {
+    "python_executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "independent_command": "python -B independent_result_check.py --scorer-src /path/to/official-main-kit/starter/src",
+    "decode_command": "python -B decode_actual_round5.py --base-audit-dir /path/to/published-prior-audit --inputs-dir /path/to/local-frozen-inputs",
+    "verified_run_prior_audit_dir": "/tmp/mia_prior_audit_published",
+    "verified_run_inputs_dir": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs",
+    "both_exit_codes": 0,
+    "original_result_json_byte_identical": true,
+    "original_16_placements_and_future_predictions_byte_identical": true,
+    "official_scorer_calls": 1850,
+    "official_full_1049_row_witnesses": 16,
+    "independent_all_legal_configurations": 2494800,
+    "remaining_after_round5": 16,
+    "worst_after_round6": 4,
+    "worst_after_round7": 1,
+    "collision_groups": 0
+  },
+  "private_input_snapshot_republished": false,
+  "token_or_credentials_republished": false,
+  "submission_csv_or_zip_changed": false,
+  "prior_published_17_files_modified": false,
+  "hash_manifest_self_reference": "output_hashes_actual_round5.json excludes itself; this report does not hash that manifest."
+}

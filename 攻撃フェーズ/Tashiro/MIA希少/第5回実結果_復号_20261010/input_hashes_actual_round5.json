@@ -1,0 +1,115 @@
+{
+  "B_self.csv": {
+    "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "bytes": 164152,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/B_self.csv"
+  },
+  "aia_challenge_28.csv": {
+    "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "bytes": 31088,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/aia_challenge_28.csv"
+  },
+  "round1_F_mia.csv": {
+    "sha256": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "bytes": 392545,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round1_F_mia.csv"
+  },
+  "round2_F_mia.csv": {
+    "sha256": "92c780eee9762989a8140feee6fac3258b2bd3e27eee3146fccaa07a811412ae",
+    "bytes": 392933,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round2_F_mia.csv"
+  },
+  "round3_F_mia.csv": {
+    "sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "bytes": 394633,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round3_F_mia.csv"
+  },
+  "round4_F_mia.csv": {
+    "sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+    "bytes": 394665,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round4_F_mia.csv"
+  },
+  "round5_F_mia.csv": {
+    "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "bytes": 394649,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round5_F_mia.csv"
+  },
+  "round1_detailed_results.html": {
+    "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+    "bytes": 3795,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round1_detailed_results.html"
+  },
+  "round2_detailed_results.html": {
+    "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+    "bytes": 3763,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round2_detailed_results.html"
+  },
+  "round3_detailed_results.html": {
+    "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+    "bytes": 3903,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round3_detailed_results.html"
+  },
+  "round4_detailed_results.html": {
+    "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+    "bytes": 3775,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round4_detailed_results.html"
+  },
+  "fixed_plan.json": {
+    "sha256": "3236035d39ab2d9caf612b37f2e91cceb882c606a70bd543e302b2b03d24ddae",
+    "bytes": 3307,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/fixed_plan.json"
+  },
+  "fixed_code.csv": {
+    "sha256": "00799e87fbbed4b44850092c176fee4af41769f93c1bace53aaa2bb66e9e5865",
+    "bytes": 122,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/fixed_code.csv"
+  },
+  "official_attack_score.py": {
+    "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "bytes": 10057,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/official_attack_score.py"
+  },
+  "official_scoring_io.py": {
+    "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "bytes": 24293,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/official_scoring_io.py"
+  },
+  "official_result.py": {
+    "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "bytes": 3121,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/official_result.py"
+  },
+  "round4_provenance.json": {
+    "sha256": "e9f6b753799e0741789f6d09386aabd3cd6ad099c09f1f394c08f09073129220",
+    "bytes": 1418,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/inputs/round4_provenance.json"
+  },
+  "actual_round5_detailed_results.html": {
+    "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+    "bytes": 3884,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/inputs/detailed_results.html",
+    "library_file_id": "libfile_b942113fd8c8819194a7296d6bb49a41",
+    "team_id": 28,
+    "validation_ok": true
+  },
+  "audit.py": {
+    "sha256": "1ffc788722701f2ab84a7016a7ded4b5882e8b7e90c6517329bd24bfbb500a1b",
+    "bytes": 25804,
+    "source_path": "/private/tmp/mia_prior_audit_published/audit.py"
+  },
+  "all_1296_placements_and_observations.csv": {
+    "sha256": "2403e72ed9ace9eb8e7621736d8319ae16c93ca3b0aec735ef42505172778840",
+    "bytes": 174512,
+    "source_path": "/private/tmp/mia_prior_audit_published/all_1296_placements_and_observations.csv"
+  },
+  "independent_result_check.json": {
+    "sha256": "a0a03db8bd24510d5bd024a2448847204b53fab5ee37a57e255d90cc6bce1132",
+    "bytes": 59466,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/independent_result_check.json"
+  },
+  "independent_result_check.py": {
+    "sha256": "a3e65b9500c90b3923974b76cf38e741759dd78997942bbab38d86e06b86f785",
+    "bytes": 11033,
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/independent_result_check.py"
+  }
+}

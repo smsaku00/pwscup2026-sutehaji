@@ -1,0 +1,358 @@
+{
+  "status": "PASS",
+  "date": "2026-10-10",
+  "base_commit": "42deb52906836eafc73edec941b385aeabaaa70c",
+  "base_tree": "e651cdae78577e672f3a827038de70b40b89f74a",
+  "scope": "第5回採点結果・現行案内・原本値と回答一致・確定希少復号の掲載前検証",
+  "checks": {
+    "original_html_bytes_sha256": true,
+    "parsed_json_matches_original": true,
+    "exact_metrics_match_original": true,
+    "aia_equality_88_rows_all326_not_identical": true,
+    "aia_equal_rows_totals_R1_R2_R3_R4": [
+      0,
+      651,
+      2957,
+      2682
+    ],
+    "aia_metrics_22_rows_match_html": true,
+    "rare_16_placements_and_ID115": true,
+    "rare_ID47_outside_only22_targets": true,
+    "rare_source_QC_PASS": true,
+    "relative_links_checked": 396,
+    "table_rows_checked": 341,
+    "json_finite_parse": true,
+    "modified_answer_csvs": false,
+    "new_submission_generated": false,
+    "new_secret_zip_or_token_published": false,
+    "helper_or_raw_medical_input_in_allowlist": false
+  },
+  "files_excluding_this_validation_json": [
+    {
+      "path": "README.md",
+      "bytes": 1273,
+      "sha256": "13c4fdfb5fe451fbc80c17d4de78ac23955adc4b1b621fa45119f2a39cf83092",
+      "git_blob": "2815356df05b3449752a6d15ab29e715168dc12c",
+      "base_blob": "0772fa4ce06b5828a85628f212436f375bcac29d"
+    },
+    {
+      "path": "攻撃フェーズ/README.md",
+      "bytes": 1327,
+      "sha256": "00fa0c3cf6f2e3e5383584a7f8d1e9b879723c5c1290b09ea438149d802bce53",
+      "git_blob": "b7fa38c8b9f0af40ccba00e45afe9e9df53e59bd",
+      "base_blob": "b4da364ff657903f6dcaa3d89c844fdf98e16faf"
+    },
+    {
+      "path": "攻撃フェーズ/成績一覧.md",
+      "bytes": 17124,
+      "sha256": "11d65ad0adc1f4d193ee9eac85a48191685395c2494144f4d5a4880510cc6b4a",
+      "git_blob": "e3f0c35672b4590c64948a76a7d3457992336b00",
+      "base_blob": "4d0a19ea265de7f2c5a3a8ba06e8e1f8961923e2"
+    },
+    {
+      "path": "攻撃フェーズ/MIA/README.md",
+      "bytes": 3923,
+      "sha256": "11bb0294258f643e069e4605611eff970aa38a9397c314fd6b44c84f1368c15a",
+      "git_blob": "ab604e921e0b7a42f6599b138836afbb6c4bcb19",
+      "base_blob": "ac2a46a32c361e0de85cb6a0ad8a5b27244c1e7b"
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/README.md",
+      "bytes": 6942,
+      "sha256": "d6ab4aa0e65e366e78451e8cc9d82ec15360ea818466779054c9ce13d9ee2902",
+      "git_blob": "c08968659d4f1e30ff06047e847c25f59c95f344",
+      "base_blob": "737add3d4a69885310f8123ce7c419927916db8b"
+    },
+    {
+      "path": "攻撃フェーズ/AIA/README.md",
+      "bytes": 3518,
+      "sha256": "14f42f6ece181d44e4418daa4152e7eb40e3696d183823119cd52fc693106969",
+      "git_blob": "518b73b6933358791df9ff5ca7ce60c57398d51b",
+      "base_blob": "b0a4db5750c9077939224a2f37418929b38ff2f7"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/README.md",
+      "bytes": 8856,
+      "sha256": "8c455070b045e8c6d9b97344f1ce20eeaf10b931948cb88322f1dfab3dda7724",
+      "git_blob": "067c37c02e826b0025a7c425afb207da72fa19b5",
+      "base_blob": "eb5ad3c1b03609186a3c470371a5d91b9b360cc9"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/README.md",
+      "bytes": 20580,
+      "sha256": "70fb44badbb0eaf3ab9dc39a30385ab3cb35a302e50089d46a34deb07fe7f779",
+      "git_blob": "c877f9ef4c1fafdecc53730dfeb438654b313b25",
+      "base_blob": "0ebc74266a8946f15f4e2baa729ee5cd4a4aacd2"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/proposal/README.md",
+      "bytes": 5371,
+      "sha256": "baec11244b1e9c02877d7133ed54f4e194063f04bafdbade12ef3799bb7cb178",
+      "git_blob": "bd77a15562b1a4d3273c229e4213d20339226203",
+      "base_blob": "c20c65e7a489fbc24d049b5ee3af94f681c24e59"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/rounds/README.md",
+      "bytes": 2931,
+      "sha256": "0eb7a07eccc367ead4d565adef0c778f8fb6aecb7ef6fc949840c3525b32c475",
+      "git_blob": "4992bc884a43e6020a3cc5b362f9c278a4dc23ab",
+      "base_blob": "6fee4ba3ac237e6e9a9fbaa68d81033e45e752a9"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/README.md",
+      "bytes": 5746,
+      "sha256": "188dea90a130b79b203d983f6e8584900e425ef6e19bcf37cde21722a636fedb",
+      "git_blob": "7f5b44e4ca4e636b3f27003d60638cb4e0735e62",
+      "base_blob": "44a2093221caddffb6fbc1213c49b45723781a95"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/README.md",
+      "bytes": 8080,
+      "sha256": "d47c35e477cb52cd0cc58230ba07fac33addb1afccec75c1462e7cf0a9fe0a6e",
+      "git_blob": "43647da575ee357b047714e2ac6234caec9bd36c",
+      "base_blob": "75a8f5f7e9775f74398a4b7e2ee409206baa3c61"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/rounds/README.md",
+      "bytes": 5030,
+      "sha256": "0d528f9cbe2c7c2900c27e889b06e80f09ae345347024c16b57d03a6c244ec6a",
+      "git_blob": "4960af883d3502d84d6ddaf9f46a513cd63e88d3",
+      "base_blob": "fda4a764e300115aad1ef0337238555e87ba8ed4"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/docs/01_現在の方針.md",
+      "bytes": 5866,
+      "sha256": "488b31ea46ef058731268a0e7cb61d7c8a6caa51714b1666716e19cd53497691",
+      "git_blob": "92dd69a327e8de3476019977d6ffd01b02c972ea",
+      "base_blob": "bbc352418b48abbd02853f09e141aabda632229e"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/docs/03_第3回以降の進め方.md",
+      "bytes": 6598,
+      "sha256": "ff1b277cbd2fa36d104d1fca34486d7c7e441c1a1a908d220d1de3a9d02d1f4b",
+      "git_blob": "532f81c28b48a3dd6831e276d1295a3ba988b504",
+      "base_blob": "4b3d5abf954d22179197aca385d9c5b5524cd9eb"
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "bytes": 3884,
+      "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "git_blob": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/採点結果/出典と照合.json",
+      "bytes": 1029,
+      "sha256": "3e525a577f133643f0013bc63788471008081f46b5991cee0a56b805a490d651",
+      "git_blob": "1b976218b1250846497a724d4a6fd728f041f5c1",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/採点結果/parsed_breakdown.json",
+      "bytes": 1364,
+      "sha256": "a0ebbc49bf4450078da1516818aceb23c7ef8a02b4ee89d26c0dfc14aee26e6b",
+      "git_blob": "b2de53a026252ae6dc0160b79eb7fef9f93437fc",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/採点結果/採点結果.md",
+      "bytes": 1617,
+      "sha256": "1b2af5c369fc72e570a5d8ad2499931a36af75343d50e38c046f9261ea79927b",
+      "git_blob": "6bc562e25fde86bd5de038800f9ec9b1a00a86bd",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/decision_audit.md",
+      "bytes": 6303,
+      "sha256": "459b046d357accf099d5d4b299e2942a94a4ec14948d509ff9ca9bcea7416647",
+      "git_blob": "08ef917234a23398c17772a891e8ff86ae18b740",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_submission_equality.md",
+      "bytes": 2788,
+      "sha256": "2bd861d5cb2050318c674e78efbd66ae5936889a8fa2d6ba345ecb104b52dee7",
+      "git_blob": "917ec3843a6064e2a54ea2540b0ec2431da537c9",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_submission_equality.csv",
+      "bytes": 2559,
+      "sha256": "187decf5933a973a4875f1da13fdecb0b7e10c3cefa38b449a9bb3913d17ffbb",
+      "git_blob": "b05facd6cb3b342ce7d4873f0af246f22e9f1cac",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/decision_audit.json",
+      "bytes": 9761,
+      "sha256": "25af0acc7559264d8378c3bb5f1ee087f17945afabbb184f814c0c79924b889c",
+      "git_blob": "764c59d477f4d4631dcfe332f896ab0451e6a729",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/README.md",
+      "bytes": 5428,
+      "sha256": "980d86b5277d9fa416ad675cdb46a15772e69b400a87a0f349ddcf64741a71c6",
+      "git_blob": "dd71d10020a2bf6a1f46468f6d0e017607942cac",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_submission_equality.json",
+      "bytes": 32731,
+      "sha256": "b723f0d2ea299e62883c9ff4355ba259c93850bfd175e54c308eb85a34a4a99a",
+      "git_blob": "4c2937d0c13f92e7dde746785771e23d9b3936d5",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/history_metrics.json",
+      "bytes": 24185,
+      "sha256": "92a72937075b9cb1dcd935554ee14813ce22485e2e24a28562670a719e2a0a8e",
+      "git_blob": "7ec10e1c62d44c0487a9ea46a4760ccc85fd15a5",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_comparison_audit.md",
+      "bytes": 6553,
+      "sha256": "d29f248d4e4c77d4187e102ce3e1fcebeadfc0e5a4658ef8cd0dc0d3d53fcf1d",
+      "git_blob": "a2f4ad7d674ff8116278f44939017297541d73b6",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_comparison_audit.json",
+      "bytes": 20258,
+      "sha256": "3b7d0fd686eba054066e01457d338df7f559605f91e509734b1bedb455070259",
+      "git_blob": "159882d16b99bad4573564b098d6f0d2c1eeca09",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_target_comparison.csv",
+      "bytes": 5207,
+      "sha256": "15729b497e9e64edfd81113b43f2be0d357a3c8c0c8b433318fc5ff9fe49581a",
+      "git_blob": "f50670a512de25311858eacaddcf1a41fb8f05ff",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/history_metrics.md",
+      "bytes": 7638,
+      "sha256": "af85e097f0ad59206b59d091e1f62c35895a9e930849a6f9283af4beeedfa22d",
+      "git_blob": "b57614bf9ae4acfc1f6c91b5f337873bb10695a1",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/remaining_16_placements_and_predictions.csv",
+      "bytes": 2357,
+      "sha256": "7877e2c10b8f22b3a355d179f5e948ebdcba6cff52f8b071f5148a7f23c1f8d2",
+      "git_blob": "79b9e3ee7d35bd6e8c9f8441bc24fac6061339a9",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/rounding_precision_actual_branch.json",
+      "bytes": 506,
+      "sha256": "be0b2381b6189a663e1f999eb87a15877ce8212bbef5726aec0b3d2bd60f4ee3",
+      "git_blob": "65a17fffe916375048113df8e767eb6ee6855717",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/source_qc_actual_round5.json",
+      "bytes": 2033,
+      "sha256": "58138b045cbc787a48217f49b5449099f0384a268e47824453cbcc884f700bd5",
+      "git_blob": "9d1259e4d7a414e4a72506e1832587c83b7eafc6",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/independent_result_check.json",
+      "bytes": 59466,
+      "sha256": "a0a03db8bd24510d5bd024a2448847204b53fab5ee37a57e255d90cc6bce1132",
+      "git_blob": "d924f9cee2f711dd4ea8cb75327f9a6d7d19319c",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/round6_prediction_branches.csv",
+      "bytes": 808,
+      "sha256": "f7a930e3f0e962fc07148ddd4ddd773824bf44671a6c7ea9bbde912e0a4c8933",
+      "git_blob": "9960f50ad17b98c627deaf459f8ba0e2e628bb60",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/decode_actual_round5.py",
+      "bytes": 16371,
+      "sha256": "e81af950036153090122b1045b2fa3c17fc51263f3b1133b6706a4cf0d056a80",
+      "git_blob": "53ee0829639c5680896ec1d6b74ef19e2f1b116b",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/input_hashes_actual_round5.json",
+      "bytes": 6879,
+      "sha256": "6135170370f2526d691c829cefa150049e717464a5bb160456b745b9ace9a6ab",
+      "git_blob": "80b2d8aff0d54526394ca70ace8b44c9d7459e39",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/independent_result_check.py",
+      "bytes": 11033,
+      "sha256": "a3e65b9500c90b3923974b76cf38e741759dd78997942bbab38d86e06b86f785",
+      "git_blob": "a8fab4775a93a42745824c2a5e7828b3cc4344b5",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/publication_adjustments.json",
+      "bytes": 3568,
+      "sha256": "9df558d64466bc808f66cb4bb7e2b04cca2ffe522a6a645feed05ef630b11f8d",
+      "git_blob": "0090314f9757252cbfbe95c6f133d9f79d218428",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/説明.md",
+      "bytes": 7855,
+      "sha256": "4f33c571a26c633e1b4a7509564b4ffddbde1c3b480905ee29179b3c27c8f857",
+      "git_blob": "94bd845801b09439ad5535e3b42a22db12dd67af",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/output_hashes_actual_round5.json",
+      "bytes": 1434,
+      "sha256": "22da3b21178e927887fd751010c9e667ec0113d163b5fe356e7cb8cdb4d31b85",
+      "git_blob": "8c42e47ad3af87e4a05b1d87fd2444062c6feb16",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/target_candidates.json",
+      "bytes": 2493,
+      "sha256": "04aa980fbf674fd800acd78dcd94f9de4c60f76e07671c3183612c610f1a5c9d",
+      "git_blob": "c4d6f884e1bf0869ff32d26259a631c3d351a9a2",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/actual_round5_results.json",
+      "bytes": 8452,
+      "sha256": "15b4aad8f0226a9e9a3d3373012ed9ce5a6aafa52d452ffa00a563f3471c2c19",
+      "git_blob": "861ac36bb035928a12b568ca0f89e2d8698f56cd",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/collision_check_actual_branch.json",
+      "bytes": 160,
+      "sha256": "11fe5adacc4bb5672d61a280012a91e847915a9fa43b965d28953b16a1c957a2",
+      "git_blob": "3cf811bc39d7da5829120e1f19287ffa23c2948a",
+      "base_blob": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/inputs/detailed_results.html",
+      "bytes": 3884,
+      "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "git_blob": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+      "base_blob": null
+    }
+  ],
+  "remaining_limits": [
+    "サーバー入力ZIPの直接hash照合は未実施。対応はユーザー提供説明と保存原本照合に基づく。",
+    "第5回総点生値scores.json未提供。MIA力は保守区間、R4比較は未確定。",
+    "個別MIA方式勝敗は公開帯から未確定。",
+    "希少確定は人数・候補・共有排他・固定所属・質問仕様の前提に依存。",
+    "将来第6・7回は未決定、未生成、未提出。"
+  ],
+  "environment": {
+    "python": "3.12.15",
+    "numpy": "2.4.6"
+  }
+}

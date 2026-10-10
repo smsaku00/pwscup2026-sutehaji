@@ -1,0 +1,382 @@
+{
+  "status": "PASS",
+  "conclusion": "条件付きで、変更しない第6・7回の固定質問（5bit第4・5問）により全16配置を必ず一意に特定できる。",
+  "actual_round5_observed": true,
+  "round5_official_float": "0.011166666666666667",
+  "round5_exact": "67/6000",
+  "prior_audit_publication_commit": "42deb52906836eafc73edec941b385aeabaaa70c",
+  "round5_submission_source_commit": "27d40de61aeb025858038230802bd822381a773c",
+  "round5_csv_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+  "raw_html_sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+  "raw_html_bytes": 3884,
+  "library_file_id": "libfile_b942113fd8c8819194a7296d6bb49a41",
+  "team_id": 28,
+  "validation_ok": true,
+  "count_rederivation": {
+    "first_candidates": 102,
+    "both_candidates": 1,
+    "round1_integer_scale": 23279256000,
+    "lattice_minimum_step": "1/256071816000",
+    "round2_candidate_minimum_gap": "1/936000",
+    "score_comparison_tolerance": "1e-15"
+  },
+  "prior_official_observations_exactly_reproduced": true,
+  "prior_forecast_all_1296_rows_exactly_reproduced": true,
+  "remaining_after_round3": 43200,
+  "remaining_after_round4": 1296,
+  "matching_round5_branch_id": 21,
+  "all_round5_branches": 91,
+  "remaining_after_actual_round5": 16,
+  "round5_positive_high_counts_by_target": {
+    "6": 1,
+    "10": 0,
+    "11": 0,
+    "16": 1,
+    "17": 0,
+    "25": 1
+  },
+  "target_candidates": {
+    "6": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          90
+        ],
+        [
+          495
+        ]
+      ],
+      "possible_member_ids": [
+        90,
+        495
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        115,
+        169,
+        264,
+        304,
+        383,
+        462,
+        675
+      ]
+    },
+    "10": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          169,
+          304
+        ],
+        [
+          169,
+          675
+        ],
+        [
+          304,
+          383
+        ],
+        [
+          383,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        169,
+        304,
+        383,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        115,
+        264,
+        462,
+        495
+      ]
+    },
+    "11": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          169
+        ],
+        [
+          383
+        ]
+      ],
+      "possible_member_ids": [
+        169,
+        383
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        115,
+        264,
+        304,
+        462,
+        495,
+        675
+      ]
+    },
+    "16": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          76,
+          462
+        ],
+        [
+          264,
+          304
+        ],
+        [
+          264,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        76,
+        264,
+        304,
+        462,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        90,
+        115,
+        169,
+        383,
+        495
+      ]
+    },
+    "17": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          115
+        ]
+      ],
+      "possible_member_ids": [
+        115
+      ],
+      "certain_member_ids": [
+        115
+      ],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        169,
+        264,
+        304,
+        383,
+        462,
+        495,
+        675
+      ]
+    },
+    "25": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          76,
+          462
+        ],
+        [
+          264,
+          304
+        ],
+        [
+          264,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        76,
+        264,
+        304,
+        462,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        90,
+        115,
+        169,
+        383,
+        495
+      ]
+    }
+  },
+  "zero_positive_targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    22,
+    26,
+    27
+  ],
+  "possible_outside_22_target_pairs": [
+    [
+      47,
+      90
+    ],
+    [
+      47,
+      495
+    ]
+  ],
+  "certain_outside_22_target_ids": [
+    47
+  ],
+  "future_questions": {
+    "6": [
+      47,
+      76,
+      264,
+      304,
+      383
+    ],
+    "7": [
+      47,
+      76,
+      90,
+      115,
+      169
+    ]
+  },
+  "future_padding_by_target": {
+    "6": [
+      126
+    ],
+    "10": [
+      126,
+      136
+    ],
+    "11": [
+      126,
+      136
+    ],
+    "16": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440
+    ],
+    "17": [
+      126,
+      136,
+      271,
+      273,
+      317
+    ],
+    "25": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440,
+      480
+    ]
+  },
+  "future_round6_branches": [
+    {
+      "round6_exact": "77/9000",
+      "round6_official_float": "0.008555555555555558",
+      "remaining_after_round6": 2,
+      "round7_response_branches": 2,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.012481481481481482 | 0.020148148148148148",
+      "placement_ids": "804+1272"
+    },
+    {
+      "round6_exact": "19/2160",
+      "round6_official_float": "0.008796296296296297",
+      "remaining_after_round6": 2,
+      "round7_response_branches": 2,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.012314814814814813 | 0.019981481481481482",
+      "placement_ids": "807+1277"
+    },
+    {
+      "round6_exact": "13/1200",
+      "round6_official_float": "0.010833333333333334",
+      "remaining_after_round6": 4,
+      "round7_response_branches": 4,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.012314814814814813 | 0.012481481481481482 | 0.019981481481481482 | 0.020148148148148148",
+      "placement_ids": "772+775+1240+1245"
+    },
+    {
+      "round6_exact": "107/9000",
+      "round6_official_float": "0.011888888888888892",
+      "remaining_after_round6": 2,
+      "round7_response_branches": 2,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.009148148148148148 | 0.016814814814814814",
+      "placement_ids": "692+1160"
+    },
+    {
+      "round6_exact": "131/10800",
+      "round6_official_float": "0.012129629629629629",
+      "remaining_after_round6": 2,
+      "round7_response_branches": 2,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.008981481481481483 | 0.016648148148148148",
+      "placement_ids": "695+1165"
+    },
+    {
+      "round6_exact": "233/18000",
+      "round6_official_float": "0.012944444444444444",
+      "remaining_after_round6": 4,
+      "round7_response_branches": 4,
+      "worst_remaining_after_round7": 1,
+      "possible_round7_official_floats": "0.008981481481481483 | 0.009148148148148148 | 0.016648148148148148 | 0.016814814814814814",
+      "placement_ids": "660+663+1128+1133"
+    }
+  ],
+  "round6_worst_remaining": 4,
+  "round7_unique_response_pairs": 16,
+  "round7_worst_remaining": 1,
+  "collision_groups": 0,
+  "adaptive_question_change_required": false,
+  "official_scorer_calls": 1850,
+  "full_1049_row_round5_witnesses_checked": 16,
+  "independent_enumeration_placements_match": true,
+  "minimum_future_decimal_places_for_actual_16_given_raw_past": 4,
+  "assumptions": [
+    "第5回保存CSVと実際のサーバー入力の同一性は依頼者の回番号対応に依存し、サーバー入力ZIPのhashは未確認",
+    "元独立監査の候補・人数・共有排他・固定所属・公式希少マスク・nan除外平均の前提が維持",
+    "第6・7回は示した固定質問と対象別paddingを使う（将来CSVは未生成・未提出）",
+    "生のmia.tpr_rareを用いる。今回の実16分岐は未来2問4桁でも区別するが、第5回まで4桁だけに丸める保証ではない"
+  ],
+  "prior_audit_unchanged": true,
+  "github_updated_by_this_script": false,
+  "submission_csv_changed": false,
+  "tournament_submitted": false
+}

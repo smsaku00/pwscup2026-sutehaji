@@ -1,0 +1,706 @@
+{
+  "created_date": "2026-10-10",
+  "scope": "Direct original official HTML extraction for rounds 1-5; no truth labels, no scoring rerun, no submission-file changes",
+  "method": "HTML entity decode then parse pre JSON and LB table. AIA power is numpy.nanmean of all 22 returned aia_per_target values. Historial audit summary metrics are not extraction inputs.",
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "numpy": "2.4.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "metric_definitions": {
+    "MIA_all": "mean over targets of TPR at FPR=.01 from all 1049 candidate rows",
+    "MIA_rare": "nanmean over defined target rare-stratum TPR at FPR=.01; targets with zero rare members produce NaN and are excluded",
+    "MIA_auc": "mean target AUC, diagnostic and not an attack score component",
+    "MIA_power": "mean over targets of max(TPR_all_k,TPR_rare_k) with fallback to all when rare is undefined; not max of the returned aggregate means",
+    "AIA_all": "mean target R_all where R=clip((p_m-p_c)/(1-p_c),0,1), tau_time=.5",
+    "AIA_rare": "mean defined target R_rare after z=1.64 SE deadzone; not the raw rare R and not an additional floor-adjusted channel",
+    "AIA_corrected_power": "mean over targets of clip(max(R_all_k,R_rare_k)-aia_floor_k,0,1); directly obtainable from the returned aia_per_target array",
+    "AIA_floor": "per-target organizer truth-side floor; its values are not reconstructed from aggregate p_m/p_c",
+    "total": "MIA_power + AIA_corrected_power",
+    "MIA_exact_availability": "HTML breakdown has no exact MIA power. R2/R4 exact score_1 from original scores.json permits derivation to machine precision; R1/R3/R5 only displayed total permits an interval",
+    "rounding": "Official renderer uses Python .4f. Conservative closed +/-0.00005 decimal envelopes are reported, not fabricated exact totals. Float summation differences below 1e-15 do not affect any reported sign conclusion."
+  },
+  "definition_sources": [
+    {
+      "local_source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "bytes": 10057,
+      "definition_line_numbers": [
+        40,
+        71,
+        90,
+        110,
+        144,
+        178
+      ]
+    },
+    {
+      "local_source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "bytes": 24293,
+      "definition_line_numbers": [
+        247,
+        301,
+        315,
+        380,
+        383,
+        427
+      ]
+    },
+    {
+      "local_source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec",
+      "bytes": 16015,
+      "definition_line_numbers": [
+        147,
+        152,
+        176,
+        194
+      ]
+    }
+  ],
+  "records": [
+    {
+      "round": 1,
+      "source": {
+        "repository_path": "攻撃フェーズ/AIA/一回目/detailed_results.html",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "local_source_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第1回_detailed_results.html",
+        "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+        "bytes": 3795,
+        "git_blob_sha": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+        "fixed_ref_blob_match": true,
+        "acquisition": "local saved official HTML",
+        "direct_html_read": true
+      },
+      "mia_all": 0.03434084434084434,
+      "mia_rare": 0.014934210526315791,
+      "mia_auc": 0.5834342948682125,
+      "aia_all": 0.07398274355774309,
+      "aia_rare_deadzone": 0.006786460549338022,
+      "aia_corrected_power_mean": 0.0465048160147104,
+      "aia_per_target_corrected": {
+        "0": 0.00841328759147894,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0341408690483874,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.7322253012880818,
+        "10": 0.0,
+        "11": 0.09093049141246133,
+        "12": 0.05285730977287794,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.07383292969759966,
+        "16": 0.0,
+        "17": 0.0,
+        "22": 0.030705763512741575,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0
+      },
+      "mia_per_target_bands": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "22": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "aia_diagnostic_mean_rates": {
+        "p_m": 0.5635805911879531,
+        "p_c": 0.5471277189068601,
+        "p_m_rare": 0.41958041958041964,
+        "p_c_rare": 0.40909090909090917
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      "display_scores_4dp": {
+        "score_1": "0.0839",
+        "score_2": "0.0343",
+        "score_3": "0.0149",
+        "score_4": "0.0740",
+        "score_5": "0.0068",
+        "score_6": "―"
+      },
+      "exact_total_score": null,
+      "direct_mia_power_present_in_html": false,
+      "direct_aia_rare_worst_present_in_html": false,
+      "mia_power_derived_from_exact_total": null,
+      "rounded_total_conservative_interval": {
+        "lower_decimal": "0.08385",
+        "upper_decimal": "0.08395",
+        "endpoint_policy": "closed conservative envelope for .4f display; binary-float boundary details are not used"
+      },
+      "mia_power_conservative_interval_from_rounded_total": {
+        "lower_decimal": "0.0373451839852896",
+        "upper_decimal": "0.0374451839852896",
+        "endpoint_policy": "closed conservative envelope; float arithmetic uncertainty below 1e-15"
+      }
+    },
+    {
+      "round": 2,
+      "source": {
+        "repository_path": "攻撃フェーズ/AIA/第2回/detailed_results.html",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "local_source_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_detailed_results.html",
+        "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+        "bytes": 3763,
+        "git_blob_sha": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+        "fixed_ref_blob_match": true,
+        "acquisition": "local saved official HTML",
+        "direct_html_read": true
+      },
+      "mia_all": 0.010909090909090908,
+      "mia_rare": 0.014445669283130584,
+      "mia_auc": 0.6137569063561341,
+      "aia_all": 0.07478675289469745,
+      "aia_rare_deadzone": 0.01341867353562226,
+      "aia_corrected_power_mean": 0.05239556086187496,
+      "aia_per_target_corrected": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.05368562981510988,
+        "4": 0.04634784373021727,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.7462012678502552,
+        "10": 0.0,
+        "11": 0.16677014471690332,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.13969745284876345,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "22": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0
+      },
+      "mia_per_target_bands": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "22": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "aia_diagnostic_mean_rates": {
+        "p_m": 0.6564417177914111,
+        "p_c": 0.6372002230897936,
+        "p_m_rare": 0.41258741258741255,
+        "p_c_rare": 0.39860139860139865
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      "display_scores_4dp": {
+        "score_1": "0.0672",
+        "score_2": "0.0109",
+        "score_3": "0.0144",
+        "score_4": "0.0748",
+        "score_5": "0.0134",
+        "score_6": "―"
+      },
+      "exact_total_score": 0.06724437975727421,
+      "direct_mia_power_present_in_html": false,
+      "direct_aia_rare_worst_present_in_html": false,
+      "mia_power_derived_from_exact_total": 0.014848818895399248,
+      "rounded_total_conservative_interval": {
+        "lower_decimal": "0.06715",
+        "upper_decimal": "0.06725",
+        "endpoint_policy": "closed conservative envelope for .4f display; binary-float boundary details are not used"
+      },
+      "mia_power_conservative_interval_from_rounded_total": {
+        "lower_decimal": "0.01475443913812504",
+        "upper_decimal": "0.01485443913812504",
+        "endpoint_policy": "closed conservative envelope; float arithmetic uncertainty below 1e-15"
+      },
+      "scores_json_source": {
+        "local_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_scores.json",
+        "repository_path": "攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_scores.json",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "sha256": "df641ac1d1865ab8bd9278034426b557b3ad59cf134a9789324de34da8335e2c",
+        "bytes": 162,
+        "git_blob_sha": "563e4705b1c09f84708d20c8e7923c8482e55d6f",
+        "parsed_scores": {
+          "score_1": 0.06724437975727421,
+          "score_2": 0.010909090909090908,
+          "score_3": 0.014445669283130584,
+          "score_4": 0.07478675289469745,
+          "score_5": 0.01341867353562226
+        },
+        "formal_github_fetch_byte_match": true,
+        "formal_github_blob_sha": "563e4705b1c09f84708d20c8e7923c8482e55d6f"
+      }
+    },
+    {
+      "round": 3,
+      "source": {
+        "repository_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "local_source_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/現状監査/入力/第3回_detailed_results.html",
+        "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+        "bytes": 3903,
+        "git_blob_sha": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+        "fixed_ref_blob_match": true,
+        "acquisition": "local saved official HTML",
+        "direct_html_read": true
+      },
+      "mia_all": 0.039795389795389796,
+      "mia_rare": 0.017203703703703704,
+      "mia_auc": 0.584355857567103,
+      "aia_all": 0.1286673349621246,
+      "aia_rare_deadzone": 0.018426598571064545,
+      "aia_corrected_power_mean": 0.08246098340252228,
+      "aia_per_target_corrected": {
+        "0": 0.06473858879629824,
+        "1": 0.0,
+        "2": 0.08320111050414326,
+        "3": 0.14299982439246173,
+        "4": 0.1305796496601362,
+        "5": 0.0,
+        "6": 0.11695611340175327,
+        "7": 0.0134356465155418,
+        "8": 0.0,
+        "9": 0.7522338155494697,
+        "10": 0.055080120152619844,
+        "11": 0.11247150218296668,
+        "12": 0.0,
+        "13": 0.14146731892983327,
+        "14": 0.1491209561747061,
+        "15": 0.006765862630532596,
+        "16": 0.031811132377003976,
+        "17": 0.013279993588023373,
+        "22": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.0
+      },
+      "mia_per_target_bands": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 2,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "22": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "aia_diagnostic_mean_rates": {
+        "p_m": 0.676798661461238,
+        "p_c": 0.6324595649749024,
+        "p_m_rare": 0.5174825174825174,
+        "p_c_rare": 0.458041958041958
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      "display_scores_4dp": {
+        "score_1": "0.1250",
+        "score_2": "0.0398",
+        "score_3": "0.0172",
+        "score_4": "0.1287",
+        "score_5": "0.0184",
+        "score_6": "―"
+      },
+      "exact_total_score": null,
+      "direct_mia_power_present_in_html": false,
+      "direct_aia_rare_worst_present_in_html": false,
+      "mia_power_derived_from_exact_total": null,
+      "rounded_total_conservative_interval": {
+        "lower_decimal": "0.12495",
+        "upper_decimal": "0.12505",
+        "endpoint_policy": "closed conservative envelope for .4f display; binary-float boundary details are not used"
+      },
+      "mia_power_conservative_interval_from_rounded_total": {
+        "lower_decimal": "0.04248901659747772",
+        "upper_decimal": "0.04258901659747772",
+        "endpoint_policy": "closed conservative envelope; float arithmetic uncertainty below 1e-15"
+      }
+    },
+    {
+      "round": 4,
+      "source": {
+        "repository_path": "攻撃フェーズ/AIA/第4回/detailed_results.html",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "local_source_path": null,
+        "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+        "bytes": 3775,
+        "git_blob_sha": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+        "fixed_ref_blob_match": true,
+        "acquisition": "formal GitHub fetch_file (utf-8)",
+        "direct_html_read": true
+      },
+      "mia_all": 0.03972545972545973,
+      "mia_rare": 0.010814814814814814,
+      "mia_auc": 0.5844610190216781,
+      "aia_all": 0.08848454576121505,
+      "aia_rare_deadzone": 0.0,
+      "aia_corrected_power_mean": 0.054608191790439305,
+      "aia_per_target_corrected": {
+        "0": 0.0,
+        "1": 0.0326742346975572,
+        "2": 0.0,
+        "3": 0.2069833125245568,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.03451292988790697,
+        "8": 0.0,
+        "9": 0.718207919734956,
+        "10": 0.0,
+        "11": 0.047112025058783716,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.055686612740362386,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "22": 0.0,
+        "25": 0.0,
+        "26": 0.0,
+        "27": 0.10620318474554148
+      },
+      "mia_per_target_bands": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 2,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "22": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "aia_diagnostic_mean_rates": {
+        "p_m": 0.6335750139431121,
+        "p_c": 0.6179587283881763,
+        "p_m_rare": 0.5209790209790209,
+        "p_c_rare": 0.5174825174825174
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      "display_scores_4dp": {
+        "score_1": "0.0957",
+        "score_2": "0.0397",
+        "score_3": "0.0108",
+        "score_4": "0.0885",
+        "score_5": "0.0000",
+        "score_6": "―"
+      },
+      "exact_total_score": 0.09566698484923238,
+      "direct_mia_power_present_in_html": false,
+      "direct_aia_rare_worst_present_in_html": false,
+      "mia_power_derived_from_exact_total": 0.04105879305879307,
+      "rounded_total_conservative_interval": {
+        "lower_decimal": "0.09565",
+        "upper_decimal": "0.09575",
+        "endpoint_policy": "closed conservative envelope for .4f display; binary-float boundary details are not used"
+      },
+      "mia_power_conservative_interval_from_rounded_total": {
+        "lower_decimal": "0.041041808209560695",
+        "upper_decimal": "0.041141808209560695",
+        "endpoint_policy": "closed conservative envelope; float arithmetic uncertainty below 1e-15"
+      },
+      "scores_json_source": {
+        "local_path": null,
+        "repository_path": "攻撃フェーズ/AIA/第4回/scores.json",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "sha256": "47e79e6bcf6330464610f501494608efdb94c515b9b7f9b34b88b8e13238ced9",
+        "bytes": 145,
+        "git_blob_sha": "3f066f3a204bcc143c72f07abb7af95c59d77b66",
+        "parsed_scores": {
+          "score_1": 0.09566698484923238,
+          "score_2": 0.03972545972545973,
+          "score_3": 0.010814814814814814,
+          "score_4": 0.08848454576121505,
+          "score_5": 0.0
+        }
+      }
+    },
+    {
+      "round": 5,
+      "source": {
+        "repository_path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+        "fixed_ref": null,
+        "local_source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+        "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+        "bytes": 3884,
+        "git_blob_sha": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+        "fixed_ref_blob_match": null,
+        "acquisition": "local saved official HTML",
+        "direct_html_read": true
+      },
+      "mia_all": 0.03797720797720798,
+      "mia_rare": 0.011166666666666667,
+      "mia_auc": 0.5944443117653443,
+      "aia_all": 0.14775730680466903,
+      "aia_rare_deadzone": 0.006067506896200141,
+      "aia_corrected_power_mean": 0.1027627850065516,
+      "aia_per_target_corrected": {
+        "0": 0.0,
+        "1": 0.1637143657376881,
+        "2": 0.3745253114173855,
+        "3": 0.0636210495865947,
+        "4": 0.20915107823156465,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.25622800581816974,
+        "10": 0.0,
+        "11": 0.2881135900040105,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.2966881776855895,
+        "15": 0.07084607187203218,
+        "16": 0.03773785651493494,
+        "17": 0.0,
+        "22": 0.13819971999944577,
+        "25": 0.1347411133708944,
+        "26": 0.009900634049172949,
+        "27": 0.2173142958566527
+      },
+      "mia_per_target_bands": {
+        "0": 1,
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 2,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "22": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "aia_diagnostic_mean_rates": {
+        "p_m": 0.6586726157278305,
+        "p_c": 0.6048522030117123,
+        "p_m_rare": 0.402097902097902,
+        "p_c_rare": 0.33916083916083917
+      },
+      "constants": {
+        "low_fpr": 0.01,
+        "tau_time": 0.5,
+        "aia_rare_se_z": 1.64,
+        "mia_band_edges": [
+          0.25,
+          0.5,
+          0.75
+        ]
+      },
+      "display_scores_4dp": {
+        "score_1": "0.1438",
+        "score_2": "0.0380",
+        "score_3": "0.0112",
+        "score_4": "0.1478",
+        "score_5": "0.0061",
+        "score_6": "―"
+      },
+      "exact_total_score": null,
+      "direct_mia_power_present_in_html": false,
+      "direct_aia_rare_worst_present_in_html": false,
+      "mia_power_derived_from_exact_total": null,
+      "rounded_total_conservative_interval": {
+        "lower_decimal": "0.14375",
+        "upper_decimal": "0.14385",
+        "endpoint_policy": "closed conservative envelope for .4f display; binary-float boundary details are not used"
+      },
+      "mia_power_conservative_interval_from_rounded_total": {
+        "lower_decimal": "0.0409872149934484",
+        "upper_decimal": "0.0410872149934484",
+        "endpoint_policy": "closed conservative envelope; float arithmetic uncertainty below 1e-15"
+      }
+    }
+  ],
+  "round5_comparisons": [
+    {
+      "baseline_round": 1,
+      "round5_minus_baseline": {
+        "mia_all": 0.003636363636363639,
+        "mia_rare": -0.0037675438596491244,
+        "mia_auc": 0.011010016897131769,
+        "aia_all": 0.07377456324692594,
+        "aia_rare_deadzone": -0.0007189536531378811,
+        "aia_corrected_power_mean": 0.056257968991841205,
+        "mia_power_difference_conservative_interval": {
+          "lower_decimal": "0.0035420310081588",
+          "upper_decimal": "0.0037420310081588",
+          "sign": "positive"
+        }
+      }
+    },
+    {
+      "baseline_round": 2,
+      "round5_minus_baseline": {
+        "mia_all": 0.02706811706811707,
+        "mia_rare": -0.0032790026164639177,
+        "mia_auc": -0.019312594590789822,
+        "aia_all": 0.07297055390997158,
+        "aia_rare_deadzone": -0.0073511666394221195,
+        "aia_corrected_power_mean": 0.05036722414467664,
+        "mia_power_difference_conservative_interval": {
+          "lower_decimal": "0.026138396098049152",
+          "upper_decimal": "0.026238396098049152",
+          "sign": "positive"
+        }
+      }
+    },
+    {
+      "baseline_round": 3,
+      "round5_minus_baseline": {
+        "mia_all": -0.001818181818181816,
+        "mia_rare": -0.006037037037037037,
+        "mia_auc": 0.010088454198241337,
+        "aia_all": 0.019089971842544434,
+        "aia_rare_deadzone": -0.012359091674864403,
+        "aia_corrected_power_mean": 0.02030180160402932,
+        "mia_power_difference_conservative_interval": {
+          "lower_decimal": "-0.00160180160402932",
+          "upper_decimal": "-0.00140180160402932",
+          "sign": "negative"
+        }
+      }
+    },
+    {
+      "baseline_round": 4,
+      "round5_minus_baseline": {
+        "mia_all": -0.0017482517482517515,
+        "mia_rare": 0.0003518518518518532,
+        "mia_auc": 0.009983292743666161,
+        "aia_all": 0.059272761043453984,
+        "aia_rare_deadzone": 0.006067506896200141,
+        "aia_corrected_power_mean": 0.0481545932161123,
+        "mia_power_difference_conservative_interval": {
+          "lower_decimal": "-0.00007157806534467",
+          "upper_decimal": "0.00002842193465533",
+          "sign": "unresolved"
+        }
+      }
+    }
+  ],
+  "conclusions": {
+    "round5_total_display_highest": true,
+    "round5_mia_all_below_round3_and4": true,
+    "round5_mia_power_below_round3_confirmed_by_nonoverlapping_intervals": true,
+    "round5_mia_power_vs_round4": "unresolved without round5 exact total",
+    "round5_aia_corrected_power_highest": true,
+    "mia_per_target_band_exact_tpr_unavailable": true
+  },
+  "remaining_limits": [
+    "Exact round5 score_1 absent from the supplied HTML; need original scores.json to identify exact MIA power and its change against round4.",
+    "Target-specific MIA TPR is banded. Aggregate changes do not identify which selected method improved or worsened.",
+    "Changes against round4 include both normal-method and rare-question changes and are not effects of only the selected five normal columns.",
+    "AIA comparisons by target and rank-preserved normal-column attribution are handled separately."
+  ]
+}
