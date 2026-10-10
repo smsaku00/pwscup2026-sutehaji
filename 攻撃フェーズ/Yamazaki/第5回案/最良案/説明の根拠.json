@@ -1,0 +1,54 @@
+{
+  "snapshot_date_jst": "2026-10-11",
+  "source_sha256": {
+    "運用/継続探索/5サイクル報告/001_005.json": "9b6f3988c5b4ec4eb92c8b36f36e85f9ee2d578eefaed6c4cb9f966f5b8fcb23",
+    "運用/継続探索/5サイクル報告/006_010.json": "bbb9e14d1b3289cd156db4a2de2c9a65111b9825cbb3f1d325da7397d8073e88",
+    "運用/継続探索/5サイクル報告/011_015.json": "3f0c39fa755f85f8ef613d18f930bc393eca246eb09831716e79e1a92e9dd2ea",
+    "運用/継続探索/5サイクル報告/016_020.json": "242e25e4627334be640d17c4bd9c5c5e8a693deaafcfd67ce45c37a10734c97c",
+    "運用/継続探索/5サイクル報告/021_025.json": "c90061c8ad129d427e389ddd0064e83ea2ed827f497e0c3fc6c901487eaefcbf",
+    "運用/継続探索/5サイクル報告/026_030.json": "b24f957c526b76c9f42b9404ca108653082c48163b807420576865470a41a5af",
+    "運用/継続探索/5サイクル報告/031_035.json": "26b60937dab11a476dcd6297708bbfe2e90a9a81ba0d9fd7339d8b0b116fd156",
+    "運用/継続探索/5サイクル報告/036_040.json": "636481f099289aa0b2c43a44a60d4d94d9d577d1449ed751ef3ee671dbdf2757",
+    "運用/継続探索/5サイクル報告/041_045.json": "cdbb0d02dc8b349ae95d27d1f657beecb52e244402ece2bd69d00e412f0d9dea",
+    "運用/継続探索/5サイクル報告/046_050.json": "71ea2dc7b2b1ee0ce1f313379efef7ab538db46f45cdb39f2a1e594ab04a17fe",
+    "運用/継続探索/5サイクル報告/051_055.json": "0e32c33397c1f85c5a04da341c9d089d9cea2e82e375a3436ccf27d36aeff7e5",
+    "運用/継続探索/5サイクル報告/056_056.json": "5a4a92882a920ded8ce5bba3058c34aa5ebc1ec544583c470fd51e2e26e923bb",
+    "運用/継続探索/5サイクル報告/057_061.json": "0bf1a28b2c427d8dbb30ca7ad909e803fbf89c773dd69d854537fcb7ee064347",
+    "運用/継続探索/5サイクル報告/062_066.json": "72ae9afcb4be3be7bd1b473110800ce8bda9280612eaa9c8414fca2d8d654856",
+    "運用/継続探索/5サイクル報告/067_071.json": "c09aecf8ef12a74667109245fd0410fc6d5129b7ca69003fd4f3994f087a9881",
+    "運用/継続探索/5サイクル報告/072_076.json": "7e21cc93c3afecb857494c4efa71ddbb12f382aba66413b922f113e796c66be4",
+    "運用/継続探索/5サイクル報告/077_081.json": "56fa8aa5313d9056b92e7c509574b6b20eef292f2b355686b9eaa29f009b9cca",
+    "運用/継続探索/5サイクル報告/082_086.json": "14441ea098a1bc8855d06d23c0c5f21501f31fb29418b2fb163eee8a7bec5b14",
+    "運用/継続探索/5サイクル報告/087_091.json": "854a3bcbad0bf4141ea43c3691d8738e76f5fb63cb49244e18f298a63c0fc319",
+    "運用/継続探索/5サイクル報告/092_096.json": "07b964d137f99c8e6662c0cdf6710c3f5572dd90b21a05bac3c4a94f2fde4ccd",
+    "results/prelim/23_継続探索_wave15/採点/集計.csv": "a4098f28e7e3333a606a76c5f54100cb5aadc5310f84f3817541b90c1ff357fd",
+    "results/prelim/02_結合と排他制約/README.md": "7666f33efc7cdbe70288dbb2f9a03523dbcd05fe4d06eb84b7f463f9ee02a166",
+    "最良案/予備戦対象別.csv": "6831529f0753241bddfce8803ea44bdea4c07190cc447fd9cccc1ce46b938648",
+    "最良案/検証結果.json": "f95821ca5d060ecab3961648b359ff8c4666b974c7472e302c03f067e9ac652d",
+    "最良案/manifest.json": "e17c51a93749a495a07c71413ebc8ef5c60f28ec23179e589d9dba17a1fe62b7",
+    "results/main/20261011_cycle67本戦適用/適用検証.json": "1b2a87d3e69b9f6ffe8b11ed341b75fde9d048879b391ee4bbc5315d00854c8c"
+  },
+  "scope": "希少除外1025人・全20対象・公式TPR@FPR1%",
+  "numbered_scored_comparisons": 101,
+  "report_collection_through_cycle": 96,
+  "additional_scoring_cycles": [
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "additional_scoring_independent_audit": "未確認",
+  "max_observed_mean": 0.12000000000000002,
+  "tied_best_cycles": [
+    67,
+    68,
+    69
+  ],
+  "selected_cycle": 67,
+  "selection_reason": "同点候補68/69に比べ距離で使う属性と変換が少なく、元方式を早い条件で保持する。独立検証PASS。未知データでの優越は未証明。",
+  "comparison_csv_sha256": "6de04904471a224df99bf0fa1f07e3e09dd54be2832906c04cc5c39827ba9bbe",
+  "repository_context_sha256": {
+    "攻撃フェーズ/MIA/5回目/README.md": "d6ab4aa0e65e366e78451e8cc9d82ec15360ea818466779054c9ce13d9ee2902"
+  }
+}
