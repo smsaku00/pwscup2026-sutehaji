@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-10-10T02:04:47.121953+00:00",
+  "official_page": "https://www.iwsec.org/pws/2026/cup26.html",
+  "official_link_label": "攻撃フェーズの提出物 (zip)",
+  "download_url": "https://drive.google.com/file/d/1x1KGX_XmEMunHqEmjq8ZYMcDqx5BtQs8/view",
+  "archive_name": "攻撃提出物_20260909.zip",
+  "archive_bytes": 2483653,
+  "archive_sha256": "ee53263e1e001debffb75f165cbc848548bf2cf0e0fb7beb66773967ac1724dc",
+  "nested_member": "攻撃提出物/cohort05_F.zip",
+  "nested_zip_sha256": "170a2f373798c331d152109cba5b97a919f56270ef95de25e04d744f10b269bc",
+  "csv_member": "F_mia.csv",
+  "csv_sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+  "csv_bytes": 350241,
+  "matches_recovered_submission8_expected_sha256": true,
+  "local_input": "<workspace>/mia_recovered_validation/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/private_inputs/prelim_submission8_F_mia.csv",
+  "purpose": "Fixed historical baseline component for Gen7/9/10 posthoc replay; not background training input."
+}

@@ -1,0 +1,78 @@
+{
+  "chosen": "A_mixed7_9",
+  "status": "作成済み・未提出",
+  "self_team": 28,
+  "k": 10,
+  "rho": 0.98,
+  "nonrare_features": [
+    "age",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "sex",
+    "prefecture"
+  ],
+  "rare_features": [
+    "age",
+    "BMI",
+    "SBP",
+    "TG",
+    "HDL",
+    "ALT",
+    "FPG",
+    "sex",
+    "prefecture"
+  ],
+  "rare_cap": 0.5,
+  "private_nonmembers": 163,
+  "private_rare": 13,
+  "unknown_rare": 11,
+  "old48_negatives_reused": false,
+  "old_team_exceptions_reused": false,
+  "variant_descriptions": {
+    "A_mixed7_9": [
+      "予備戦型7/9属性・初回用",
+      "基準"
+    ],
+    "B_ordinal7_9_fixedh": [
+      "順序符号化7/9属性・帯域数値固定",
+      "Aと同属性・同帯域数値で前処理とカーネルを変更"
+    ],
+    "C_ordinal7_9_autoh": [
+      "順序符号化7/9属性・自動帯域",
+      "Bから帯域の次元だけ変更"
+    ],
+    "D_ordinal10": [
+      "順序符号化10属性",
+      "Cから全員10属性・帯域も変更する構成比較"
+    ],
+    "E_ordinal13_fixedh10": [
+      "順序符号化13属性・10次元帯域固定",
+      "Dから転帰3属性だけ追加（近傍も変わる）"
+    ],
+    "F_ordinal13_autoh": [
+      "順序符号化13属性・自動帯域",
+      "Eから13次元自動帯域へ変更"
+    ],
+    "G_member_global_repaired": [
+      "メンバー既定・全体順位・非会員修正",
+      "Fから希少と非希少の値域分離だけ除去"
+    ],
+    "H_member_original": [
+      "メンバー既定・除外なし参考",
+      "Gから専用163人の0化を除去。提出候補ではない"
+    ]
+  },
+  "bandwidths": {
+    "5": 0.363612145105352,
+    "7": 0.42716935309972204,
+    "9": 0.4794319616791784,
+    "10": 0.5021494782504965,
+    "13": 0.5596630056019813
+  },
+  "member_source": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/a465f1051d8f002f3364d38f311d527608a1957e/攻撃フェーズ/Yamazaki/gen_lra/run_gen_lra.py",
+  "member_port": "前ターンで読んだ固定コミットの計算部を移植。実行器・入力読取・出力処理は本分析側。",
+  "input_csv_float_precision": "round_trip",
+  "performance_limit": "本戦の所属真値は未公開。予備戦評価は事後検証で本戦の改善保証ではない。"
+}

@@ -1,0 +1,273 @@
+{
+  "asof_utc": "2026-10-10T02:56:17.068460+00:00",
+  "scope": "Bounded recovered through-Oct8 whole-MIA catalog/source scope plus original Oct7/archive. Does not include later Oct9/Oct10/policy expanded outputs or main-only/rare secondary. Not a global task percentage.",
+  "eligible_source_registrations": 8241,
+  "planned_source_panels": 57687,
+  "completed_source_panels": 50269,
+  "prediction_frozen_not_scored": 0,
+  "canonical_eligible_recipes": 8206,
+  "canonical_planned_panels": 57442,
+  "canonical_completed_panels": 50105,
+  "source_history_unresolved": 3,
+  "BG_unaffected": 2,
+  "unmapped_emitted_outputs": [],
+  "family_counts": [
+    {
+      "family": "aligned_distance",
+      "source_registrations": 750,
+      "planned_source_panels": 5250,
+      "completed_source_panels": 5250,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 750
+    },
+    {
+      "family": "archive",
+      "source_registrations": 106,
+      "planned_source_panels": 742,
+      "completed_source_panels": 742,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 106
+    },
+    {
+      "family": "broad_calibration",
+      "source_registrations": 65,
+      "planned_source_panels": 455,
+      "completed_source_panels": 455,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 65
+    },
+    {
+      "family": "broad_calibration_mix",
+      "source_registrations": 31,
+      "planned_source_panels": 217,
+      "completed_source_panels": 217,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 31
+    },
+    {
+      "family": "discrete_dependency_tree",
+      "source_registrations": 3,
+      "planned_source_panels": 21,
+      "completed_source_panels": 21,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 3
+    },
+    {
+      "family": "geometry_distance",
+      "source_registrations": 666,
+      "planned_source_panels": 4662,
+      "completed_source_panels": 4662,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 666
+    },
+    {
+      "family": "hierarchical_histogram",
+      "source_registrations": 1920,
+      "planned_source_panels": 13440,
+      "completed_source_panels": 13440,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 1920
+    },
+    {
+      "family": "learned_background_ablation",
+      "source_registrations": 25,
+      "planned_source_panels": 175,
+      "completed_source_panels": 175,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 25
+    },
+    {
+      "family": "learned_background_transfer",
+      "source_registrations": 37,
+      "planned_source_panels": 259,
+      "completed_source_panels": 259,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 37
+    },
+    {
+      "family": "learned_center_seed",
+      "source_registrations": 249,
+      "planned_source_panels": 1743,
+      "completed_source_panels": 0,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "learned_feature_ablation",
+      "source_registrations": 157,
+      "planned_source_panels": 1099,
+      "completed_source_panels": 1099,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 157
+    },
+    {
+      "family": "learned_legacy_18_check",
+      "source_registrations": 14,
+      "planned_source_panels": 98,
+      "completed_source_panels": 98,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 14
+    },
+    {
+      "family": "learned_low_fpr",
+      "source_registrations": 361,
+      "planned_source_panels": 2527,
+      "completed_source_panels": 361,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "learned_multiview",
+      "source_registrations": 49,
+      "planned_source_panels": 343,
+      "completed_source_panels": 49,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "learned_multiview_loo",
+      "source_registrations": 25,
+      "planned_source_panels": 175,
+      "completed_source_panels": 0,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "learned_representative_base",
+      "source_registrations": 23,
+      "planned_source_panels": 161,
+      "completed_source_panels": 23,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "learned_split_sensitivity",
+      "source_registrations": 84,
+      "planned_source_panels": 588,
+      "completed_source_panels": 336,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "local_density",
+      "source_registrations": 300,
+      "planned_source_panels": 2100,
+      "completed_source_panels": 2100,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 300
+    },
+    {
+      "family": "meta_public_C_row_removal",
+      "source_registrations": 9,
+      "planned_source_panels": 63,
+      "completed_source_panels": 63,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 9
+    },
+    {
+      "family": "meta_public_Q_owner_removal",
+      "source_registrations": 69,
+      "planned_source_panels": 483,
+      "completed_source_panels": 483,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 69
+    },
+    {
+      "family": "meta_public_null_nested",
+      "source_registrations": 7,
+      "planned_source_panels": 49,
+      "completed_source_panels": 49,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 7
+    },
+    {
+      "family": "meta_public_null_strength",
+      "source_registrations": 2,
+      "planned_source_panels": 14,
+      "completed_source_panels": 14,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 2
+    },
+    {
+      "family": "meta_smooth_competition",
+      "source_registrations": 259,
+      "planned_source_panels": 1813,
+      "completed_source_panels": 0,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "meta_split_A_fixed",
+      "source_registrations": 6,
+      "planned_source_panels": 42,
+      "completed_source_panels": 42,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 6
+    },
+    {
+      "family": "meta_split_A_gaussian_seed",
+      "source_registrations": 15,
+      "planned_source_panels": 105,
+      "completed_source_panels": 105,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 15
+    },
+    {
+      "family": "meta_split_A_interval_density",
+      "source_registrations": 3,
+      "planned_source_panels": 21,
+      "completed_source_panels": 0,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "mixture",
+      "source_registrations": 960,
+      "planned_source_panels": 6720,
+      "completed_source_panels": 6720,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 960
+    },
+    {
+      "family": "oct07",
+      "source_registrations": 206,
+      "planned_source_panels": 1442,
+      "completed_source_panels": 1442,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 206
+    },
+    {
+      "family": "source_direct_ratio",
+      "source_registrations": 1008,
+      "planned_source_panels": 7056,
+      "completed_source_panels": 7056,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 1008
+    },
+    {
+      "family": "source_public_classifier",
+      "source_registrations": 272,
+      "planned_source_panels": 1904,
+      "completed_source_panels": 1088,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 0
+    },
+    {
+      "family": "source_ratio_attribute_seed",
+      "source_registrations": 320,
+      "planned_source_panels": 2240,
+      "completed_source_panels": 2240,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 320
+    },
+    {
+      "family": "source_ratio_stable_centers",
+      "source_registrations": 240,
+      "planned_source_panels": 1680,
+      "completed_source_panels": 1680,
+      "prediction_frozen_not_scored": 0,
+      "complete_all7_registrations": 240
+    }
+  ],
+  "audit_status": "Completion is from worker completion records; independent audit artifacts are separate and stronger where available. Historical numerical differences remain separate from current execution completeness."
+}

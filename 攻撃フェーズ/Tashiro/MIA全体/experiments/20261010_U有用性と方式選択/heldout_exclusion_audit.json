@@ -1,0 +1,800 @@
+[
+  {
+    "scope": "strict18",
+    "team": 3,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 3,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 3,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 4,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 4,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 4,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 6,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 6,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 6,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 7,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 7,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 7,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 8,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 8,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 8,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 9,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 9,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 9,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 10,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 10,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 10,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 12,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 12,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 12,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 13,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 13,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 13,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 17,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 17,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 17,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 18,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 18,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 18,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 19,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 19,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 19,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 20,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 20,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 20,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 22,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 22,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 22,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 23,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 23,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 23,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 24,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 24,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 24,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 26,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 26,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 26,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 29,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 29,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "strict18",
+    "team": 29,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 1,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 1,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 1,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 2,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 2,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 2,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 3,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 3,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 3,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 4,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 4,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 4,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 6,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 6,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 6,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 7,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 7,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 7,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 8,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 8,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 8,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 9,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 9,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 9,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 10,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 10,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 10,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 12,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 12,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 12,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 13,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 13,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 13,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 17,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 17,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 17,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 18,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 18,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 18,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 19,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 19,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 19,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 20,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 20,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 20,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 22,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 22,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 22,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 23,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 23,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 23,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 24,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 24,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 24,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 26,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 26,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 26,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 29,
+    "view": "C",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 29,
+    "view": "U",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  },
+  {
+    "scope": "all20",
+    "team": 29,
+    "view": "CU",
+    "heldout_perturbation_selection_invariant": true,
+    "heldout_perturbation_inner_objective_invariant": true
+  }
+]

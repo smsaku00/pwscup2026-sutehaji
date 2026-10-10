@@ -1,0 +1,271 @@
+{
+  "status": "generated_verified_not_submitted",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "branch": "codex/mia-round5-five-targets-20261010",
+  "created_utc": "2026-10-10T14:04:48.656999+00:00",
+  "base_commit": "1a5d47bba85711322994098b0de16df894acdf95",
+  "base_tree": "40a2385ed6c041ab819d30256c34facf30181db0",
+  "baseline": "round3_saved_original",
+  "rows": 1049,
+  "target_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "ordinary_selected_methods": {
+    "5": "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+    "7": "q7_robust_lofC_k100__age100__cross0.1",
+    "13": "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+    "14": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+    "15": "q7_hist5_s100_pairwise__county500__cross0.1"
+  },
+  "ordinary_other17_preserved": true,
+  "haruna_main9_all1049_preserved": true,
+  "k_main6_ordinary_excluded": true,
+  "background": {
+    "name": "starter+prelim+main",
+    "order": [
+      "starter",
+      "prelim",
+      "main"
+    ],
+    "rows": 15429,
+    "source_rows_each": 5143,
+    "bare_record_id_duplicates_retained": true,
+    "concatenated_csv_sha256": "01772d964672cd742c0d44ac69e058d2db91283c330edac78671a0ec2d7fb650"
+  },
+  "runtime": {
+    "python_executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "python_version": "3.12.15",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0",
+    "threadpool_limit": 1,
+    "inference_threadpools": [
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Users/taisei1105/pws2026-local/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+        "version": null
+      }
+    ],
+    "kde_query_block_rows": 256,
+    "LOKY_MAX_CPU_COUNT": "2",
+    "warnings_note": "FutureWarning表示のみ抑制。原alignのint列からfloatへの代入結果をpandas2.3.3で保持。"
+  },
+  "seeds": {
+    "GMM_A": 20261008,
+    "GMM_C": "20261008+main_target_id",
+    "LOF_histogram_alignment": "deterministic; no random seed"
+  },
+  "calibration": {
+    "county500": {
+      "columns": [
+        "prefecture",
+        "sex"
+      ],
+      "strength": 500
+    },
+    "age100": {
+      "columns": [
+        "sex",
+        "age_bin"
+      ],
+      "strength": 100
+    },
+    "controls": "all public main AIA Q including self28, excluding the scored target",
+    "formula": ".999*(local midpoint CDF * n/(n+s) + global midpoint CDF * s/(n+s)) + .001*all1049 B average_rank/1049"
+  },
+  "rank_and_cross": {
+    "first": "average_rank on ordinary875 /875",
+    "cross": "each target minus .1*row median of the other21 targets in the same method",
+    "confidence": ".6+.3*min_rank(cross_score on ordinary875)/875",
+    "no_cross_after_column_selection": true
+  },
+  "fit_labels_used": false,
+  "truth_files_read": false,
+  "rare": {
+    "question": 3,
+    "submission_round": 5,
+    "previous_questions": {
+      "round3": 1,
+      "round4": 2
+    },
+    "active_counts": {
+      "6": 1,
+      "10": 2,
+      "11": 1,
+      "16": 2,
+      "17": 1,
+      "25": 2
+    },
+    "high_unknown_record_ids": [
+      47,
+      90,
+      264,
+      462,
+      495
+    ],
+    "exclusive_partitions": {
+      "ordinary": 875,
+      "nonrare_known_negative": 150,
+      "rare": 24
+    },
+    "known_negative163_rare_overlap": 13,
+    "note": "希少と重なる13人は原仕様どおり質問値。非希少150人のみ常に0。"
+  },
+  "comparison": {
+    "vs_round3": {
+      "ordinary": 4366,
+      "rare": 36,
+      "total": 4402
+    },
+    "vs_round4": {
+      "ordinary": 13938,
+      "rare": 36,
+      "total": 13974
+    },
+    "round4_note": "第4回通常は別のチーム別6方式。第4回比は5対象変更だけの効果ではない。"
+  },
+  "input_sha256": {
+    "round3": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "round4": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+    "selected": "44ebd1c6e873f157f06f22290a2e16c406fae2ec6edf64d7050aad0515517dd0",
+    "partitions": "1854300d400dc3fc5ab1df1a0398545b0673605d354d4bc3bf77d34f722101fc",
+    "rare_expected": "8e7bd1f7c13dd51f92290b76fc8274453e1ae1df928231ecfcb59e12d76a78ff"
+  },
+  "full_method_input_provenance": {
+    "path": "../../Tashiro/MIA全体/round5_generation_20261010/methods/generated/generation_manifest.json",
+    "sha256": "ce6ac1766ff21a0827f79afbf7af484b87d61f37a1a8ffc34279def9c4841496",
+    "input_files": 50,
+    "source_files": 8
+  },
+  "artifacts": {
+    "F_mia.csv": {
+      "bytes": 394649,
+      "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a"
+    },
+    "MIA_AIA_round5_no_token.zip": {
+      "bytes": 76123,
+      "sha256": "03ab49c50551aac17b6d3f547393c7ee7b11c6830ca86ddfe19c8f351fb0f4a7"
+    },
+    "MIA_round5_components.zip": {
+      "bytes": 57377,
+      "sha256": "3e088e32755180946bd22a324f54229bc701d575f6683415f02e2c267cae9887"
+    },
+    "README.md": {
+      "bytes": 6143,
+      "sha256": "9a36d228de6ec7e8545b19a6e1f603aa23f519a7979569027370cf2ee1d2e0a1"
+    },
+    "assemble_round5.py": {
+      "bytes": 7381,
+      "sha256": "0f6a5122e67c410eed25cffcf5aeafe315bf1d821e0d6165e374b949ccab7638"
+    },
+    "assembly_validation.json": {
+      "bytes": 1635,
+      "sha256": "9b6546a7a968b5d5e0b9b0b691be1e3ba5d6b70dbd9865c48ffa77524af1e438"
+    },
+    "differences.csv": {
+      "bytes": 972,
+      "sha256": "4ef59d458eec07d8ac04bd1e4e6a2f3475d0c3c8939a9d398975836a584aa44c"
+    },
+    "package_submission.py": {
+      "bytes": 3001,
+      "sha256": "1b6b57b13f3eec4491385dd514395724d815e4cf02eeee5dbe8c33c4337844dd"
+    },
+    "submission_zip_validation.json": {
+      "bytes": 2013,
+      "sha256": "4002096b8e1e5f7ef6b16628c3e2187f510092bbbfe11b61f12b46bcc62e16ea"
+    }
+  },
+  "verification": {
+    "independent_final": "PASS",
+    "official_mia_logical_validator": "PASS",
+    "generation_repeat": "byte_identical",
+    "assembly_repeat": "byte_identical",
+    "report_path": "../../Tashiro/MIA全体/round5_generation_20261010/final_round5_independent_audit.json",
+    "report_sha256": "72a5b82cce05a8c93a34fa75f777e58455e2632fbf15e85d96f96aa2dc8ff228",
+    "AIA_and_ZIP_independent": "PASS",
+    "AIA_and_ZIP_report_path": "../../Tashiro/MIA全体/round5_generation_20261010/aia_zip_independent_audit.json",
+    "AIA_and_ZIP_report_sha256": "df2f1c14db5c6efabf1bb51885a629ff758f03c0a0fad642c357e7bd21e5aaaa"
+  },
+  "distribution_archive": {
+    "filename": "MIA_round5_components.zip",
+    "members": [
+      "F_mia.csv"
+    ],
+    "is_official_submission_zip": false,
+    "official_required_members": [
+      "F_mia.csv",
+      "F_aia.csv",
+      "token.txt"
+    ],
+    "full_zip_created": true,
+    "reason": "追加指定のAIA/5_2で公式ZIP作成・検証済み。token入り完成ZIPはローカル/Library納品、GitHubはtokenなし配布ZIP。"
+  },
+  "competition_submitted": false,
+  "main_modified": false,
+  "limitations": [
+    "本戦の正解が未公開のため精度・TPR・得点向上は未評価",
+    "希少人数は保存結果と共有条件に基づく条件付き導出",
+    "大会への実際の提出は行っていない"
+  ],
+  "official_submission_zip": {
+    "name": "MIA_AIA_round5_submission.zip",
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv",
+      "token.txt"
+    ],
+    "bytes": 76244,
+    "sha256": "fd4597c0120502b21db3871ea0b03bc57f16ad3ec855fac9e308108f4fe4b62b",
+    "github_uploaded": false,
+    "library_file_id": "libfile_d417053d7a708191aef3cc7395ec8781",
+    "file_id": "file_00000000117c8206b42e115237f90fa8"
+  },
+  "aia_source": {
+    "commit": "b023ca627fb664ffb0f4b26f34ca6a4448b26418",
+    "path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+    "git_blob_sha": "bade408752830d55a634bc1248bd49694c7664a1",
+    "bytes": 71363,
+    "sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "modified": false
+  },
+  "submission_zip_validation": {
+    "path": "submission_zip_validation.json",
+    "sha256": "4002096b8e1e5f7ef6b16628c3e2187f510092bbbfe11b61f12b46bcc62e16ea"
+  },
+  "github_mia_aia_archive": {
+    "name": "MIA_AIA_round5_no_token.zip",
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv"
+    ],
+    "bytes": 76123,
+    "sha256": "03ab49c50551aac17b6d3f547393c7ee7b11c6830ca86ddfe19c8f351fb0f4a7",
+    "is_official_submission_zip": false
+  }
+}

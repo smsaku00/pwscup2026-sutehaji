@@ -1,0 +1,14 @@
+﻿phase,family,planned_source_output_BG,completed_backgrounds,status,additional_score_recipes_per_BG,membership_truth_scored,source_script
+main,public_null,14,7,completed_for_all7_BG,2,False,公開非会員だけで較正を選ぶ.py
+main,nested_public_null,49,6,partial,7,False,非会員較正の広い集団を保留検証.py
+main,q_owner_removal,504,7,completed_for_all7_BG,72,False,公開課題の除外に対する順位感度.py
+main,gaussian_seeds,105,7,completed_for_all7_BG,15,False,共有GaussianのA分割seed感度.py
+main,split_A,42,7,completed_for_all7_BG,6,False,公開背景の分割較正.py
+main,C_row_removal,63,7,completed_for_all7_BG,9,False,公開背景行を除いた診断.py
+main,local_intervals,21,0,not_executed_yet,3,False,局所支持区間の密度比.py
+main,source_only_A3,252,0,not_executed_yet,36,False,公開背景三分割の独立非会員診断.py
+main,source_only_A3_C_strata,252,0,not_executed_yet,0,False,三分割Atestの公開C一致層別診断.py
+main,source_only_shared_midrank_gaussian,21,0,"not_executed_yet; alias/prediction coverage only, original additional owner metrics remain unexecuted",0,False,共有中順位座標の密度比.py
+main,source_only_whole_Q_owner_holdout,7,7,"completed_for_all7_BG; alias/prediction coverage only, original additional owner metrics remain unexecuted",0,False,非会員課題を丸ごと保留.py
+main,chow,21,3,partial,3,False,離散依存木の密度比を確認.py
+prelim,source_only_A3,252,1,includes_retained_validation_failure; remaining_backgrounds_attempted_independently,36,False,公開背景三分割の独立非会員診断.py

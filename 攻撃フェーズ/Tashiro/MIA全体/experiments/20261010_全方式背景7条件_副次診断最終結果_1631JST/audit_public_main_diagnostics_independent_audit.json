@@ -1,0 +1,13 @@
+{
+  "audit_utc": "2026-10-10T07:07:59.572777+00:00",
+  "status": "passed_sealed_main_rank_only_panels",
+  "models_hashed": 798,
+  "target_aggregate_rows": 17556,
+  "aggregate_values_recomputed": 35112,
+  "max_absolute_error": 0.0,
+  "main_truth_accessed": false,
+  "NPZ_with_explicit_record_ids_verified": 21,
+  "row_order_limit": "For source caches without record_ids, normal875 order is retained by the byte-verified canonical loader/source; the cache alone does not independently encode row identities.",
+  "all_expected_models": 798,
+  "all7_allfamilies_complete": true
+}

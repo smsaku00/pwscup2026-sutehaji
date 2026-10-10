@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "timestamp": "2026-10-10T04:43:51.159482+00:00",
+  "primary_target_count": 18,
+  "secondary_target_count": 20,
+  "candidate_count": 43148,
+  "heldout_perturbation_checks": 114,
+  "all_C_baseline_reproductions_passed": true,
+  "main_truth_read": false,
+  "new_base_models_fit": 0
+}

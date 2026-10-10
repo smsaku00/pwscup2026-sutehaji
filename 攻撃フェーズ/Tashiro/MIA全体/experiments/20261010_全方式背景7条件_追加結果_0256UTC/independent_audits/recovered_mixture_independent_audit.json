@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "backgrounds": {
+    "starter": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "bf7e51eaa451de54dcbefc01ddc771c15203b5056d401acd6bb5ab9b5095a66e",
+      "prediction_frozen_at": "2026-10-10T01:14:57.492142+00:00"
+    },
+    "prelim": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "0ef311e913d18ff39dfc0d2973de4cc213ec753803d46fc263f6814d9eb7d528",
+      "prediction_frozen_at": "2026-10-10T01:10:30.866598+00:00"
+    },
+    "main": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "bb42a614f91a2a909f72652e1d8911a881d126cbdfcf568d034179a9eb7d2dcb",
+      "prediction_frozen_at": "2026-10-10T01:19:33.065802+00:00"
+    },
+    "starter+prelim": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "714b8c2d78b7aa910150ee576aa35956ebbb57bb49c26cb156fbb278726229ec",
+      "prediction_frozen_at": "2026-10-10T01:25:15.992274+00:00"
+    },
+    "starter+main": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "1236ba4a8a8c3fd0be34db0d909e4b8f801d2c366f90f27cd09175c149ff64b4",
+      "prediction_frozen_at": "2026-10-10T01:31:36.326194+00:00"
+    },
+    "prelim+main": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "b4683c9ae1503c8267ed6e4fbb1f60686e3da491a68da03dbd1706b023978b79",
+      "prediction_frozen_at": "2026-10-10T01:37:05.111734+00:00"
+    },
+    "starter+prelim+main": {
+      "settings": 960,
+      "targets": 20,
+      "target_population_rows": 57600,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "11738fa03c6454c0a9fe5ea3a12dc8fb17570a66a938a812396f0122e20c20b9",
+      "prediction_frozen_at": "2026-10-10T01:42:43.789499+00:00"
+    }
+  },
+  "method": "independent tie-group ROC and trapezoidal AUC; no experiment methods imported",
+  "sampling": "First and last method, then every 48th sorted source output; first and last target; all three populations; every BG",
+  "settings_per_background": 960,
+  "backgrounds_complete": 7,
+  "condition_panels": 6720,
+  "stored_target_population_rows": 403200,
+  "same_exact_config_set_across_backgrounds": true,
+  "prediction_matrix_hashes_checked": 6720,
+  "representative_target_population_rows_checked": 882,
+  "metric_values_checked": 4410,
+  "max_absolute_metric_error": 0.0,
+  "historical_regression_scope": "Source worker checked all960 historical means with inference20/evaluation19(excluding12), distinct from current all20 evaluation.",
+  "audited_at_utc": "2026-10-10T01:45:20.867430+00:00",
+  "fit_diagnostics": {
+    "fits": 52920,
+    "all_converged": true,
+    "warnings": 0,
+    "maximum_iterations": 135,
+    "summary_recomputed_exact": true
+  }
+}

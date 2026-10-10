@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "original_files": 260,
+  "python_syntax_pass": 245,
+  "calculation_json_parse_pass": 11,
+  "source_root_byte_comparisons": 260,
+  "catalog_rows": 14864,
+  "catalog_three_restorations_identical": true,
+  "catalog_sha256": "cee31ab588cd943aa8b34d560d02dd249d8ab7d5cba37c02dcb5d07a89185cb3",
+  "requested_missing": [],
+  "credential_pattern_findings": 0,
+  "limitations": "Static and byte validation only. Credential screening is not a formal proof. No experiment, source import, MIA score validation, submission or dependency installation.",
+  "initial_recovery_verification": {
+    "status": "pass",
+    "original_files": 252,
+    "python_syntax_pass": 238,
+    "calculation_json_parse_pass": 11,
+    "source_root_byte_comparisons": 252,
+    "catalog_rows": 14864,
+    "catalog_three_restorations_identical": true,
+    "catalog_sha256": "cee31ab588cd943aa8b34d560d02dd249d8ab7d5cba37c02dcb5d07a89185cb3",
+    "requested_missing": [],
+    "credential_pattern_findings": 0,
+    "limitations": "Static and byte validation only. Credential screening is not a formal proof. No experiment, source import, MIA score validation, submission or dependency installation.",
+    "runtime_wrapper": {
+      "prepared_files": 252,
+      "rewritten_runtime_files": 10,
+      "runtime_syntax_pass": 238,
+      "original_bundle_unchanged": true,
+      "existing_output_refusal": "pass",
+      "data_path_alias_checks": "pass; paths only, no MIA inputs processed",
+      "token_linked": false,
+      "recovered_sources_imported_or_executed": 0,
+      "new_venv_or_dependencies_created": false
+    }
+  },
+  "followup_9": {
+    "generators_or_composition_located": 6,
+    "generators_missing": 3,
+    "new_original_files": 8,
+    "previous_252_original_bytes_unchanged": true,
+    "new_python_syntax_pass": 7,
+    "mjs_node_check": "pass (syntax only, no execution)",
+    "score_hash_links": "pass; existing artifacts only",
+    "old_saved_raw_cache_distributed_input_hash_checks": [
+      24,
+      24
+    ],
+    "new_attack_computations": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "config": {
+    "condition": "original",
+    "target": 0,
+    "kind": "original",
+    "seed": null,
+    "removed": 0,
+    "remaining": 10286,
+    "removed_by_source": {
+      "starter": 0,
+      "prelim": 0
+    },
+    "removal_mask_sha256": "60adb21f5fa422b1553cacf9666367a1995b6e140648d3d4de9cc054061666ca",
+    "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+  },
+  "fit_details": {
+    "h_kde13": 0.858053666892821,
+    "genlra_scale": [
+      12.601927353595256,
+      18.594502109870827,
+      0.6874687272807847,
+      8.586862058266103,
+      0.7858547617696627
+    ],
+    "seconds": 32.55304932594299,
+    "original_raw_bitwise_regression": true,
+    "P01_bitwise_regression": true
+  },
+  "matrix_sha256": "d806a7dbff96e3fa1121cca9881b8455663531a008a1961b048d6707e416cbdd",
+  "prediction_hashes": {
+    "P01": "8fd8e41e7b4aab98be37bd91bb9617107a9867a894cd7b2e5a43158abb82d0ab",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "badc35961d746a37e63eb54488572408d31fe903e5e47f45a5fb62e0fb2ac3e2"
+  },
+  "frozen_utc": "2026-10-10T03:19:55.045023+00:00"
+}

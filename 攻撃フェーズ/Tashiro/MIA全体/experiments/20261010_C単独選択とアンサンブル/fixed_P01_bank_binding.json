@@ -1,0 +1,10 @@
+{
+  "candidate_index": 14109,
+  "family": "geometry",
+  "background": "prelim",
+  "method": "gen7_reference__county500__cross0.1",
+  "source_score_file": "/workspace/shared/mia_all_bg_fusion/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/recovered_oct8/geometry/prelim/prelim/scores.npz",
+  "exact_prediction_array_match": true,
+  "max_abs_score_error": 0.0,
+  "matrix_sha256": "bb0c36166a7e67f34f3a8f9a35803c4cd0127a8c23838da62f834281d10999e9"
+}

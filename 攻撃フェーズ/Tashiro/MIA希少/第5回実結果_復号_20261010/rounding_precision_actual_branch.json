@@ -1,0 +1,26 @@
+[
+  {
+    "decimal_places": 3,
+    "unique_future_response_pairs": 8,
+    "collision_groups": 8,
+    "worst_remaining": 2
+  },
+  {
+    "decimal_places": 4,
+    "unique_future_response_pairs": 16,
+    "collision_groups": 0,
+    "worst_remaining": 1
+  },
+  {
+    "decimal_places": 5,
+    "unique_future_response_pairs": 16,
+    "collision_groups": 0,
+    "worst_remaining": 1
+  },
+  {
+    "decimal_places": 6,
+    "unique_future_response_pairs": 16,
+    "collision_groups": 0,
+    "worst_remaining": 1
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "family": "direct",
+  "background": "prelim",
+  "comparison_count": 1008,
+  "matching_historical_means": 1008,
+  "maximum_historical_mean_TPR_difference": 9.71445146547012e-17,
+  "primary_numeric_runtime": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "forest_prediction_execution": null
+  },
+  "original_experiment_versions_proven": false,
+  "interpretation": "Historical catalog reproduction and same-protocol BG comparisons are separate. Use the regenerated preliminary-BG baseline when measuring a changed BG. Numerical drift is not tuned away, and its complete causal decomposition has not been established. Learned OOF results retain historical feature-selection/adaptive-exploration caveats.",
+  "optimizer_diagnostics": []
+}

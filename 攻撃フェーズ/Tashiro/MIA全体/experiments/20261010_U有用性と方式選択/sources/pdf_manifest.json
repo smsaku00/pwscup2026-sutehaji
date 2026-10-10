@@ -1,0 +1,16 @@
+[
+  {
+    "local_filename": "main-process-20260912.pdf",
+    "git_blob_sha": "4909c5b7d08a4aa307a2fb2c08ea0178dc15ac98",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/rulebook/PWS_Cup2026_%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF_main-process-20260912.pdf",
+    "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "prelim-attack-20260825.pdf",
+    "git_blob_sha": "6f8cd81535dd4e9fb916cce704ac724749c49b9f",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/rulebook/PWS_Cup2026_%E3%83%AB%E3%83%BC%E3%83%AB%E3%83%96%E3%83%83%E3%82%AF_prelim-attack-20260825.pdf",
+    "sha256": "344399a6c2b688f845d8dfc3056c129649476636c5f7c5208d62b5fdb785d12d",
+    "git_blob_verified": true
+  }
+]

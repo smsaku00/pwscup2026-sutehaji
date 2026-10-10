@@ -1,0 +1,6 @@
+# 基本実行・MIA/AIA採点・Excel出力用。NumPy 2系は公式ROCのnp.trapezoidで必要。
+numpy>=2.0,<3
+pandas>=2.2,<3
+PyYAML>=6,<7
+openpyxl>=3.1,<4
+# 有用性Uも採点する場合は、指定公式キットの依存も導入してください。

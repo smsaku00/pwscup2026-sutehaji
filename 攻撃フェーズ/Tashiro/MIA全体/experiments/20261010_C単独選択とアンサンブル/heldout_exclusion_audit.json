@@ -1,0 +1,230 @@
+[
+  {
+    "scope": "all20",
+    "heldout_team": 1,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 2,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 3,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 4,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 6,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 7,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 8,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 9,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 10,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 12,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 13,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 17,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 18,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 19,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 20,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 22,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 23,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 24,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 26,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "all20",
+    "heldout_team": 29,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 3,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 4,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 6,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 7,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 8,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 9,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 10,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 12,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 13,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 17,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 18,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 19,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 20,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 22,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 23,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 24,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 26,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  },
+  {
+    "scope": "train_and_test_without1_2",
+    "heldout_team": 29,
+    "heldout_metric_perturbation_changes_fixed_gate_or_global_or_champions": false,
+    "heldout_target_not_in_any_inner_training_or_validation_set": true
+  }
+]

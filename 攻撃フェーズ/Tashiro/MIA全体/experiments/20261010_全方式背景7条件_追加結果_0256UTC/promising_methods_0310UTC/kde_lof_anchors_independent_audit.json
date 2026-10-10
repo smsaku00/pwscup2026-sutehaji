@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "audit_time_utc": "2026-10-10T03:38:14.144035+00:00",
+  "rows": 14,
+  "metric_values_recomputed": 70,
+  "method": "Independent tie-group ROC from frozen matrices; no original scorer imported",
+  "checks": [
+    {
+      "family": "alignment",
+      "background": "starter",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.15384615384615385,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "13b8f58b93a36906b8735fdb45067a8b835e2a9ef62911ee4c198561552e71ca"
+    },
+    {
+      "family": "alignment",
+      "background": "prelim",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.07692307692307693,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "e5cec6a114d4030530ee8b885149bdb806af0b0f95fb0fd86b7499aa94f45a32"
+    },
+    {
+      "family": "alignment",
+      "background": "main",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.11538461538461539,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "2738fc2fedb8ad1b3784d5a7d87dce9a193b02b57e94aa37f48c688f060b64cb"
+    },
+    {
+      "family": "alignment",
+      "background": "starter+prelim",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.15384615384615385,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "af327e781867be17ecee3f72b8e4fe69bd87a8bf2b87a283e6b76f157dff7d5c"
+    },
+    {
+      "family": "alignment",
+      "background": "starter+main",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.11538461538461539,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "e8883168cdb6da9f7075d9faa55f0e0886c56dac704a2943a6c43f6956a4a7c6"
+    },
+    {
+      "family": "alignment",
+      "background": "prelim+main",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.15384615384615385,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "439c698437e4b3820685b4fd9bac3ba7d1798b70618b97af9e86f2e51a3e07b9"
+    },
+    {
+      "family": "alignment",
+      "background": "starter+prelim+main",
+      "team": 10,
+      "method": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+      "TPR_FPR001": 0.15384615384615385,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "261e714a5afc3d5ef08f7a9ec73cee8943d54f385ee072c3d7c6b4b169c4af20"
+    },
+    {
+      "family": "local",
+      "background": "starter",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "9652514842b5f75e9fd2c41de390308621496980abfcffc916caf79454518a32"
+    },
+    {
+      "family": "local",
+      "background": "prelim",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.16,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "c63cebb3f01ea0fda462dc8fd8e9b57904e440227b43510f731aeb837299e5c0"
+    },
+    {
+      "family": "local",
+      "background": "main",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "5edba7eb6f545f233906f3c98c36bbfd62b1d1331569f25f35b1eba74ebb06b6"
+    },
+    {
+      "family": "local",
+      "background": "starter+prelim",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.08,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "66ba6418180a00dc9addd506d2357a85c73e1b4c8cdc4f841977788c69925e31"
+    },
+    {
+      "family": "local",
+      "background": "starter+main",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "bdddd888d8330df2ce09b457c19a7b09937b1fe50b1b40f815aef0d8158127b2"
+    },
+    {
+      "family": "local",
+      "background": "prelim+main",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "36d11bada71399b14e3a7215eba37dc7c45f9e93192cd6e2a4bbae1a8ac10c3c"
+    },
+    {
+      "family": "local",
+      "background": "starter+prelim+main",
+      "team": 17,
+      "method": "q7_rank_lof_ratio_k100__county500__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "bd85347854389a39e5e64f9d3b1be19c281aef33735cd385e8f941b79e85789f"
+    }
+  ]
+}

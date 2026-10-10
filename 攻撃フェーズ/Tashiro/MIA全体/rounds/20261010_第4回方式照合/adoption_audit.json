@@ -1,0 +1,391 @@
+{
+  "verified_utc": "2026-10-10T04:33:08Z",
+  "conclusion": "全22対象の生成元・チーム別6方式を特定",
+  "round4_sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+  "round4_bytes": 394665,
+  "mac_saved_inputs_and_code_hashes_verified": 60,
+  "source_generated_jst": "2026-10-09T00:34:19+09:00",
+  "final_audit_jst": "2026-10-09T00:43:09+09:00",
+  "integration_zip_created_jst": "2026-10-09 00:51 JST（分単位の記録）",
+  "server_input_zip_direct_hash_verified": false,
+  "independent_cloud_reproduction_targets": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    17,
+    26,
+    27
+  ],
+  "mac_stored_array_verified_targets": [
+    0,
+    4,
+    5,
+    11,
+    15,
+    16,
+    22,
+    25
+  ],
+  "remaining_unidentified_targets": [],
+  "recipes": [
+    {
+      "id": "P01",
+      "teams": [
+        1,
+        2,
+        7,
+        9,
+        12,
+        13,
+        17,
+        26
+      ],
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致"
+    },
+    {
+      "id": "GenLRA7_age100",
+      "teams": [
+        6,
+        14,
+        27
+      ],
+      "method": "Gen-LRA7＋性別・年齢五分位の非会員較正100＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致"
+    },
+    {
+      "id": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "teams": [
+        3,
+        8,
+        10
+      ],
+      "method": "QI7 robust固定幅KDE密度比 h1・非会員較正なし・他対象補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致"
+    },
+    {
+      "id": "q7_robust_adaptivek15_h1__age100__cross0.1",
+      "teams": [
+        0,
+        15,
+        22
+      ],
+      "method": "可変幅KDE密度比：C側k15・BG側k74・倍率1・性別/年齢較正100・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認"
+    },
+    {
+      "id": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "teams": [
+        4,
+        5,
+        25
+      ],
+      "method": "性別内中央値/IQR整列後の最近傍k1：性別・県の不一致に各1加算、非会員較正なし、他対象補正なし",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認"
+    },
+    {
+      "id": "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+      "teams": [
+        11,
+        16
+      ],
+      "method": "性別内分位点整列KDE密度比：幅倍率0.5・県/性別較正500・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウド同名設定試算との一致は未確認"
+    }
+  ],
+  "targets": [
+    {
+      "team": 0,
+      "recipe_id": "q7_robust_adaptivek15_h1__age100__cross0.1",
+      "method": "可変幅KDE密度比：C側k15・BG側k74・倍率1・性別/年齢較正100・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 874,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "93df4f09e030b7d56df426f084feb628d973ac5e3201eb1a6d327079001c85b9"
+    },
+    {
+      "team": 1,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "1e4448a14743d19881a0e91fb11a5e6fa4380906e27b7cd966b9e74da704175d",
+      "independent_normal_float64_sha256": "35c2820857f9fd27109bae0c502a649976088a10ac21acfa50ca8642b9a56416",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 2,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "c4c474a371a11b5afa4cd2b894ae40cd91551f474c9595caaa23cd3d09ebd113",
+      "independent_normal_float64_sha256": "1130d7fe5914f94db4eb8c9d592221176002d2d01b93e7185b2a636ab53f300e",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 3,
+      "recipe_id": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "method": "QI7 robust固定幅KDE密度比 h1・非会員較正なし・他対象補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 871,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "764f5adca183f77f9f2620c8af5f94405742ec1d78ca9f1670f827fa343fec03",
+      "independent_normal_float64_sha256": "cb6028b733ce26a06fb6ccc4e421f30b178a0e2d271195fa59a47746ca60caa4",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 4,
+      "recipe_id": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "method": "性別内中央値/IQR整列後の最近傍k1：性別・県の不一致に各1加算、非会員較正なし、他対象補正なし",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 872,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "5c0cf904fa15922218a397e1d56e08c1f5d9a701a68660664c92ced03f450653"
+    },
+    {
+      "team": 5,
+      "recipe_id": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "method": "性別内中央値/IQR整列後の最近傍k1：性別・県の不一致に各1加算、非会員較正なし、他対象補正なし",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 875,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "cca067a366e9b7963b9dac47782048d610058033d09d6a74b1ca76debab3ff36"
+    },
+    {
+      "team": 6,
+      "recipe_id": "GenLRA7_age100",
+      "method": "Gen-LRA7＋性別・年齢五分位の非会員較正100＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 849,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "d2619d851bd59b3b3869bc99d57a7153a5694345e28f797456e5189eb3c43ae8",
+      "independent_normal_float64_sha256": "d64f4e61878c876703b740e13d57b19e0f778e02952ed1205c77dfc6207b27fd",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 7,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "9035797ae04e03817449cdc19b8cc9b11baef92841426782d826a818122d1841",
+      "independent_normal_float64_sha256": "a769c6bb6e687e084fc6aa009f1a69b489b357ad9a3323d5f5267b8d7caf4066",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 8,
+      "recipe_id": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "method": "QI7 robust固定幅KDE密度比 h1・非会員較正なし・他対象補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 872,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "8ba6d92d3c338e9de3e8edd912528b9c4a52e9d89a354aef38657ddf09bff6f4",
+      "independent_normal_float64_sha256": "f93e7eff0ab1e5b935c7f99240dc70cd901005861067eea7a9b8e3a8eef5feb6",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 9,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "ed093addc58b25bca3d81b6c465e2951d4c6a013c032f8f1a38c24a1d347da38",
+      "independent_normal_float64_sha256": "b98f515e10a9442d0215fae0023b8cb4ea23c5ce09f2cdbe34145ed8dfee11a5",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 10,
+      "recipe_id": "q7_robust_kde_ratio_h1__raw__cross0.1",
+      "method": "QI7 robust固定幅KDE密度比 h1・非会員較正なし・他対象補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 872,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "187d96ecb4bd5259379c3c5043877cf7fd7442d56c2b6d6ce4eb90705fdaf2a5",
+      "independent_normal_float64_sha256": "47a223966d70f12a00a27bda8bf5a71e135fb70d1648a61da343fe06553b8ffd",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 11,
+      "recipe_id": "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+      "method": "性別内分位点整列KDE密度比：幅倍率0.5・県/性別較正500・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウド同名設定試算との一致は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 872,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "8f248d27de25197d345e9b2196e0e4a1996ac83f248697d11e7c34880e316454"
+    },
+    {
+      "team": 12,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "f764a01cb4604144087b6c2e2e1064322c17f821aab5d9b3d215bba7e52e1a9c",
+      "independent_normal_float64_sha256": "e3234acf7055a9b01156b75b320b2cd63a7219ee2e364dcafdd02ec2bbc6af25",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 13,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "c06a0bac99b03bfeda630d3bc24d92c975ddc4dddd9174293b43f4e7bfd08b6b",
+      "independent_normal_float64_sha256": "a5f1726ba94636ec15eaf1b4389366d9116293a2be6d061f5bace95dc9397a51",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 14,
+      "recipe_id": "GenLRA7_age100",
+      "method": "Gen-LRA7＋性別・年齢五分位の非会員較正100＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 863,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "27e00be33acc4199dd4f4dd669d846a0effd4710763e7be45bab9b50addcec2b",
+      "independent_normal_float64_sha256": "c2c10de6d902afa039d01bb4692f51f1a3307d8a27a1450cfb25013035bf1f50",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 15,
+      "recipe_id": "q7_robust_adaptivek15_h1__age100__cross0.1",
+      "method": "可変幅KDE密度比：C側k15・BG側k74・倍率1・性別/年齢較正100・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 872,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "0c35025b5abd2b58216cee5cbea138d249420d7c73e2ceb0618cc0e3335dfd8b"
+    },
+    {
+      "team": 16,
+      "recipe_id": "q7_quantile_sex1_kde_ratio_h0.5__county500__cross0.1",
+      "method": "性別内分位点整列KDE密度比：幅倍率0.5・県/性別較正500・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウド同名設定試算との一致は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 873,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "94c784bd916a6593f1f760973223387a5aafd16880f501c73073daadb54689a3"
+    },
+    {
+      "team": 17,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "ddb5d772ec4b6f7d69899d46457fe54a0cdcf4e12b38837f942d8247f3268cf0",
+      "independent_normal_float64_sha256": "e91551648ebfe9a6093e3ce396a52b2c756201283db63b34d1e920a4a5a368ba",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 22,
+      "recipe_id": "q7_robust_adaptivek15_h1__age100__cross0.1",
+      "method": "可変幅KDE密度比：C側k15・BG側k74・倍率1・性別/年齢較正100・他対象補正0.1",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 873,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "09b4793e4e49b2fcab794a72d96023b1508b3dd8bdbe5c10046513bad2af03e2"
+    },
+    {
+      "team": 25,
+      "recipe_id": "q7_median_iqr_sex1_dcr_k1__raw__cross0",
+      "method": "性別内中央値/IQR整列後の最近傍k1：性別・県の不一致に各1加算、非会員較正なし、他対象補正なし",
+      "verification": "Macの生成設定・保存内部NPZ・提出CSVを照合：通常875セル一致。クラウドで独立再生成は未確認",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 874,
+      "rare_changed_from_round3": 6,
+      "original_normal_text_sha256": "9b8e991d89a20783d37a71186392eaae66f334fce069b2fbed44c342bb74e3a1"
+    },
+    {
+      "team": 26,
+      "recipe_id": "P01",
+      "method": "Gen-LRA7＋県・性別の非会員較正500＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 0,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "feae5291d50d53ce538f6939d845eeef08759bf16c0fd2bdca54971c9b754dd6",
+      "independent_normal_float64_sha256": "43c39b2663a4bc776079673a06b327baa8fd8e6359c65e0cf82379f73398f6e5",
+      "independent_reproduction_max_error": 0
+    },
+    {
+      "team": 27,
+      "recipe_id": "GenLRA7_age100",
+      "method": "Gen-LRA7＋性別・年齢五分位の非会員較正100＋他対象中央値補正0.1",
+      "verification": "クラウドで独立再現：通常875人のfloat64全要素・SHA256一致",
+      "normal_cells": 875,
+      "nonrare_changed_from_round3": 867,
+      "rare_changed_from_round3": 0,
+      "original_normal_text_sha256": "b9a56811aaf4781a5306c4d41c5f941e35175753dbf6ef6c40d5535a1a0746b1",
+      "independent_normal_float64_sha256": "45667ac467571af320c902cacb7f030da52f682d1e1aa81718da71f9c63d721e",
+      "independent_reproduction_max_error": 0
+    }
+  ],
+  "remaining_reproduction_caveat": "生成元と保存配列の対応は全22対象で確認。8列のクラウド独立再生成は未確認。特に11/16の同名設定試算は完全一致しておらず、原因は未精査。",
+  "independent_match_check_is_earlier_substage": true,
+  "source_files": [
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/作成.py",
+      "sha256": "608bd46663648ab71b993a7d93d57077b0bd8932dda5c9e7a33a1a7b0268bb3f"
+    },
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/結果/設定.json",
+      "sha256": "2088ccc7738c0389cb0dedd88ec2adb0c2945ca7d84fcd203283169fdcf65ce2"
+    },
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/結果/F_mia.csv",
+      "sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+      "bytes": 394665
+    }
+  ],
+  "historical_source_trace": "第4回の実生成コード・固定設定・保存内部NPZ・CSVの対応をMac保存ファイルで確認。元コードそのものはこの記録へ重複掲載していない。",
+  "selection_rationale_summary": {
+    "selection_type": "公開情報と既存成績を用いた提案を承認後に固定する手動選択",
+    "information_used": [
+      "加工データCの観察可能な特徴",
+      "公開背景BGとの比較",
+      "公開課題Qとの比較",
+      "加工が似ると推測した別番号の予備戦対象の成績",
+      "既存本戦提出結果"
+    ],
+    "not_a_C_only_automatic_policy": true,
+    "generator_selected_mapping_fixed": true,
+    "generator_parameter_search": false,
+    "generator_main_truth_used": false,
+    "explicit_selection_threshold_verified": false,
+    "rationale_is_hypothesis_not_accuracy_proof": true,
+    "comparison_limit": "C単独LOTO選択とは利用情報と判断手順が異なる。C単独選択実験の成否を、この第4回の手動選択全体の成否へそのまま読み替えない。"
+  },
+  "selection_rationale_file": "selection_rationale.json",
+  "server_submission_timestamp_verified": false
+}

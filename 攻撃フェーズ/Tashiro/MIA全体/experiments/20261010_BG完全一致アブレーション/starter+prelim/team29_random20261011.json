@@ -1,0 +1,33 @@
+{
+  "config": {
+    "condition": "team29_random20261011",
+    "target": 29,
+    "kind": "random",
+    "seed": 20261011,
+    "removed": 266,
+    "remaining": 10020,
+    "removed_by_source": {
+      "starter": 28,
+      "prelim": 238
+    },
+    "removal_mask_sha256": "f5b4f0b8de7650695f4e5ba369e25c3808b0c0db0bb63f1f94e610f4604eb606",
+    "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+  },
+  "fit_details": {
+    "h_kde13": 0.8599291774028754,
+    "genlra_scale": [
+      12.601927353595256,
+      18.61570173589106,
+      0.6869067818149609,
+      8.615251255322908,
+      0.7850745640303312
+    ],
+    "seconds": 33.94720244407654
+  },
+  "matrix_sha256": "02b19d83bbf7eeb6a9e6b1d5de331f0d42267790c8413dfebf3f2d78b69054a9",
+  "prediction_hashes": {
+    "P01": "efe027fe7399ff91c023324d8a979985744a48a77ea72a6d7f83e38b96d7a019",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "8240b6f64bf06124aae319777d002c5317953c7407172b8642449c243363358d"
+  },
+  "frozen_utc": "2026-10-10T03:28:07.534533+00:00"
+}

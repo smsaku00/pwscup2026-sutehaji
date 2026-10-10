@@ -1,0 +1,32 @@
+{
+  "asof_utc": "2026-10-10T02:56:20.207514+00:00",
+  "complete_families": [
+    "alignment",
+    "attribute_seeds",
+    "direct",
+    "geometry",
+    "histogram",
+    "local",
+    "mixture",
+    "stable_centers"
+  ],
+  "source_output_registrations": 6164,
+  "backgrounds": [
+    "starter",
+    "prelim",
+    "main",
+    "starter+prelim",
+    "starter+main",
+    "prelim+main",
+    "starter+prelim+main"
+  ],
+  "evaluation_populations": [
+    "Full1049 confidence, mean20 inference targets",
+    "Same20 inference targets, mean18 excluding teams1/2"
+  ],
+  "fpr": 0.01,
+  "selection_use": "Descriptive retrospective BG sensitivity only; no method/background selected for an independent test or claimed as universal best.",
+  "weighting_note": "Every original source output retained; parameter-grid density and aliases mean cross-family unweighted averages are not an overall attack-quality metric.",
+  "label_note": "These complete families do not train on membership truth; released preliminary truth is used to calculate these retrospective comparisons after frozen predictions.",
+  "main_note": "All listed scores are preliminary target evaluation, even when the selected public BG source is main. No main membership accuracy is available."
+}

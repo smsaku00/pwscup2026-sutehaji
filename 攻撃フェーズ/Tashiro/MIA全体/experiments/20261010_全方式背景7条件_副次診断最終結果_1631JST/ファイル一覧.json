@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-10T07:31:48.041481+00:00",
+  "package": "副次診断最終結果",
+  "files": {
+    "01_A3全14背景の成否.csv": {
+      "size": 929,
+      "sha256": "48cf9311b1f1f16029896f2bda8e3de622f932acf23471680c7ccfe6a894d726"
+    },
+    "02_A3検証停止の概要.csv": {
+      "size": 1028,
+      "sha256": "a99d0140262d0467d27e7400edc3379f43db0b70094383cce42516736a46b14a"
+    },
+    "03_元検査合格時の補助順位差.csv": {
+      "size": 598,
+      "sha256": "62e30a5fbb57a17e309d946d9eb7bd701f0dda06e76458228bf486669dad1572"
+    },
+    "04_本戦公開診断_全対象順位集約.csv.gz": {
+      "size": 70932,
+      "sha256": "bc10599778d531098ea718fc4add651f3c3ed43109a33bcac78fcafec04266b5"
+    },
+    "05_本戦Chow_背景間順位変化.csv.gz": {
+      "size": 6027,
+      "sha256": "570a9180346ffa421994f61aec94e090561efa01f1b6e6626d805fa49c427777"
+    },
+    "06_A3公開テストCDF集約.csv.gz": {
+      "size": 14492,
+      "sha256": "fca4d4f23c5907e0bc13fdfdaabc9130b20ccbb50ee5ce20b7abc771188406ec"
+    },
+    "07_A3公開テスト尾部集約.csv.gz": {
+      "size": 9272,
+      "sha256": "ea6a2f53afc2ea000d98c2696dcea044734afdf9c0e90502b3b230720173af1f"
+    },
+    "08_A3公開C一致層の集約.csv.gz": {
+      "size": 20586,
+      "sha256": "c6dc37b253d722ad694a4b7f700fcb8f65a67688ac23022d50754512e8f5b0f1"
+    },
+    "README.md": {
+      "size": 3483,
+      "sha256": "cd906703f8dda1c728a681fb2d88c840df5ec87eb6a8ca7cb85bbca469f6c4f1"
+    },
+    "audit_A3_current_completed_provenance_independent_audit.json": {
+      "size": 2792,
+      "sha256": "d11e257c5bc4c3af11191c5f958b162b09e150bce7b320e3c80ab179d92376df"
+    },
+    "audit_main_chow_provenance_independent_audit.json": {
+      "size": 1158,
+      "sha256": "d2dab2094529454aaa74982a1d1ca1b91ea13a75badf81b6e2f7b69e1b8bced2"
+    },
+    "audit_main_gaussian_alias_independent_audit.json": {
+      "size": 947,
+      "sha256": "d576f00f7eb880c8b6f46e0b94af9766e09715a535497c57886b5b643dd6a062"
+    },
+    "audit_public_main_diagnostics_independent_audit.json": {
+      "size": 576,
+      "sha256": "d7220c08f08dd7e47ad266e3e0c8e45ebfdf3f79c1dbee76a92ffc0fda74d7f0"
+    },
+    "検証と範囲.json": {
+      "size": 10995,
+      "sha256": "15c22ba1cbf98079282ac4ccec6e10b74a3be7684157a87b536091f1b0508b79"
+    },
+    "集約表の独立再結合検証.json": {
+      "size": 716,
+      "sha256": "70525b9f79539f23da6eacf91093278ad6e1a3011804947ea1f41ac6d5ac9e4d"
+    }
+  },
+  "file_count_excluding_this_manifest": 15,
+  "raw_inputs_or_candidate_arrays_included": false,
+  "all_computations_terminated": true
+}

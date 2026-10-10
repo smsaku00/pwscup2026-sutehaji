@@ -1,0 +1,30 @@
+{
+  "after_primary_results": true,
+  "permutations": 199,
+  "shuffle": "permute only the 4U block jointly across strict18 target identities; C stays fixed in CU",
+  "selector": "fixed k=3 local weight=.5; no nested retuning or policy change",
+  "result": [
+    {
+      "view": "U",
+      "observed_mean_tpr": 0.023852484963596078,
+      "shuffle_mean_tpr": 0.01295367244579975,
+      "shuffle_median_tpr": 0.01299778410889522,
+      "shuffle_p025": 0.004273504273504274,
+      "shuffle_p975": 0.023944286166508386,
+      "shuffles_ge_observed": 8,
+      "exploratory_upper_tail_fraction": 0.045
+    },
+    {
+      "view": "CU",
+      "observed_mean_tpr": 0.01727761949984172,
+      "shuffle_mean_tpr": 0.01085144430605067,
+      "shuffle_median_tpr": 0.010861031972143085,
+      "shuffle_p025": 0.002136752136752137,
+      "shuffle_p975": 0.01949984172206394,
+      "shuffles_ge_observed": 15,
+      "exploratory_upper_tail_fraction": 0.08
+    }
+  ],
+  "elapsed_seconds": 2.699422836303711,
+  "limitations": "not confirmatory p-values; targets nonexchangeable and bank historically adapted to prelim labels"
+}

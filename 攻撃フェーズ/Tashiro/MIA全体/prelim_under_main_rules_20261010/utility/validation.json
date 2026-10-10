@@ -1,0 +1,26 @@
+{
+  "all_pass": true,
+  "checks": {
+    "all_locked_dependency_versions_match": true,
+    "official_code_dependencies_all_blob_verified": true,
+    "prelim_facets_reproduced_to_1e_9": true,
+    "same_U_spec_U_rare_to_1e_14": true,
+    "main_U_gen_min_5_identity": true,
+    "main_U_valid_mean_4_identity": true,
+    "main_U_min_4_identity": true,
+    "retained_utility_configs_identical": true,
+    "all22_unique_teams": true,
+    "all21_finite_bounds": true,
+    "all21_bounds_in_range": true,
+    "only_self5_point_estimate": true,
+    "cohort21_uncomputed": true,
+    "all21_no_U_increase_upper": true,
+    "four_known_drops": true,
+    "official_round_trip_duplicate_counts_match_all21": true,
+    "parser_difference_only_team29": true,
+    "all_C_inputs_still_match_hashes": true,
+    "canonical_C_invariant_to_row_permutation": true,
+    "self5_input_hashes_unchanged": true,
+    "all21_C_match_published_workbook_hashes": true
+  }
+}

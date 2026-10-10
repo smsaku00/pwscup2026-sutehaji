@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checked_values": 10,
+  "checks": [
+    {
+      "background": "prelim",
+      "method": "q7_hist5_s100_pairwise__county500__cross0.1",
+      "team": 20,
+      "population": "all_fixed1049",
+      "members": 27,
+      "independently_recomputed_TPR_at_FPR001": 0.07407407407407407,
+      "all_four_FPRs_and_AUC_checked": true,
+      "maximum_error": 0.0,
+      "matrix_sha256": "47dac0adc73372feba8a5ec1e4555583eb3389b3d41b5e878e6ac79affe5c1dd"
+    },
+    {
+      "background": "starter+main",
+      "method": "q7_hist5_s100_pairwise__county500__cross0.1",
+      "team": 20,
+      "population": "all_fixed1049",
+      "members": 27,
+      "independently_recomputed_TPR_at_FPR001": 0.2222222222222222,
+      "all_four_FPRs_and_AUC_checked": true,
+      "maximum_error": 0.0,
+      "matrix_sha256": "97894cef2daf083e36d5f77ee2561fbbde366530e84c589dec0451490357166b"
+    }
+  ],
+  "method": "Independent tie-group ROC from frozen scores; no source scorer imported",
+  "audit_time_utc": "2026-10-10T03:17:42.363588+00:00"
+}

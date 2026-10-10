@@ -1,0 +1,49 @@
+[
+  {
+    "local_filename": "main_utility.py",
+    "git_blob_sha": "eec6d6de936a646a94bbeb35835eeadb6781614a",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/scoring/utility.py",
+    "utf8_byte_source": "Github fetch_file content; saved via apply_patch",
+    "local_sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "prelim_utility.py",
+    "git_blob_sha": "827effe1a17de8414afca45da0494a4678cddca4",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/scoring/utility.py",
+    "utf8_byte_source": "Github fetch_file content; saved via apply_patch",
+    "local_sha256": "b766cfa88991b4c57fdda4f41baf1de3e661a45a6b1f7a63f03aa3ffa9baa22a",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "prelim_process_utility.py",
+    "git_blob_sha": "827effe1a17de8414afca45da0494a4678cddca4",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-process-20260808/starter/src/pwscup2026/scoring/utility.py",
+    "utf8_byte_source": "Github fetch_file content; saved via apply_patch",
+    "local_sha256": "b766cfa88991b4c57fdda4f41baf1de3e661a45a6b1f7a63f03aa3ffa9baa22a",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "main-process-20260912_scoring_config.yaml",
+    "git_blob_sha": "0bd370d3b3e6495038c2bccf08f0429c90244713",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/participant_data/scoring_config.yaml",
+    "utf8_byte_source": "Github fetch_file content; saved via apply_patch",
+    "local_sha256": "b5e92c09d9a00b6399aac450c58adabb65e459d2e3820164292b2cf632c3db22",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "prelim-attack-20260825_scoring_config.yaml",
+    "git_blob_sha": "fd7ba51a24233a0f3416bcea55812f363e9241f5",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/participant_data/scoring_config.yaml",
+    "utf8_byte_source": "Github fetch_file content; saved via apply_patch",
+    "local_sha256": "428ffb7c7c4fda1a034cc52af0b6330ba699745007277bc1dfa44e2dc16f5942",
+    "git_blob_verified": true
+  },
+  {
+    "local_filename": "prelim_scoring_io.py",
+    "git_blob_sha": "8997fdcf6b44e5f4a67e1abb08c4a22144429a95",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+    "local_sha256": "44d0a4d5327eed0cad116d02824f46f25164cd41a24dd83efca45741d8a1c376",
+    "git_blob_verified": true
+  }
+]

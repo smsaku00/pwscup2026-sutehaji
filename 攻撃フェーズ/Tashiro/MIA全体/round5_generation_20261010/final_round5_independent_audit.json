@@ -1,0 +1,661 @@
+{
+  "status": "PASS",
+  "submitted": false,
+  "auditor_imported_generation_code": false,
+  "main_individual_truth_used": false,
+  "rows": 1049,
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "target_count": 22,
+  "selected_ordinary_methods": {
+    "5": "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+    "7": "q7_robust_lofC_k100__age100__cross0.1",
+    "13": "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+    "14": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+    "15": "q7_hist5_s100_pairwise__county500__cross0.1"
+  },
+  "partitions_independently_derived_from_main_B_and_self_QI": {
+    "ordinary": 875,
+    "nonrare_known_negative": 150,
+    "rare": 24,
+    "known_nonshared_all": 163,
+    "known_nonshared_rare_overlap": 13
+  },
+  "checks": {
+    "exact_header_and_row_order": true,
+    "finite_and_unit_interval_cells": 23078,
+    "ordinary_outside_five_unchanged_cells": 14875,
+    "ordinary_outside_five_changed_cells": 0,
+    "haruna_unchanged_cells": 1049,
+    "haruna_changed_cells": 0,
+    "nonrare_known_negative_zero_cells": 3300,
+    "rare_question3_matching_cells": 528,
+    "selected_ordinary_matching_cells": 4375,
+    "component_zip_csv_bytes_match": true,
+    "assembly_differences_all_44_rows_match": true,
+    "normal_min": 0.6003428571428571,
+    "normal_max": 0.8999999999999999,
+    "rare_max": 0.4,
+    "rare_known_nonshared_nonzero_cells": 78,
+    "haruna_textually_unchanged_cells": 1049
+  },
+  "history_fixed5bit": [
+    {
+      "submission_round": 3,
+      "fixed_question": 1,
+      "checked_cells": 528,
+      "mismatches": 0
+    },
+    {
+      "submission_round": 4,
+      "fixed_question": 2,
+      "checked_cells": 528,
+      "mismatches": 0
+    },
+    {
+      "submission_round": 5,
+      "fixed_question": 3,
+      "checked_cells": 528,
+      "mismatches": 0
+    }
+  ],
+  "method_array_audit": {
+    "methods": [
+      "q7_hist5_s100_pairwise__county500__cross0.1",
+      "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+      "q7_robust_lofC_k100__age100__cross0.1",
+      "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+      "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1"
+    ],
+    "teams": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "normal_rows": 875,
+    "leave_target_out_median_other_targets": 21,
+    "cross_alpha": 0.1,
+    "maximum_cross_error": 0.0,
+    "confidence_transform": "0.6 + 0.3 * ascending_min_rank(cross_scores) / 875",
+    "maximum_all_method_transform_error": 0.0,
+    "maximum_selected_transform_error": 0.0,
+    "selected_tied_extra_rows": {
+      "15": 55,
+      "13": 25,
+      "7": 30,
+      "5": 24,
+      "14": 31
+    },
+    "raw_to_calibrated_rank_audit": {
+      "q7_calibrated_columns": 88,
+      "q13_raw_rank_columns": 22,
+      "controls_per_target": 7172,
+      "all_B_tie_rows": 1049,
+      "normal_rank_rows": 875,
+      "maximum_variant_rank_error": 0.0,
+      "query_and_controls_rebuilt_from_main_public_inputs": true
+    },
+    "post_mix_recorrection": false,
+    "imported_builder_or_method_driver": false
+  },
+  "method_manifest_audit": {
+    "background": {
+      "name": "starter+prelim+main",
+      "order": [
+        "starter",
+        "prelim",
+        "main"
+      ],
+      "rows": 15429,
+      "source_rows_each": 5143,
+      "bare_record_id_duplicates_retained": true,
+      "concatenated_csv_sha256": "01772d964672cd742c0d44ac69e058d2db91283c330edac78671a0ec2d7fb650"
+    },
+    "seeds": {
+      "GMM_A": 20261008,
+      "GMM_C": "20261008+main_target_id",
+      "LOF_histogram_alignment": "deterministic; no random seed"
+    },
+    "source_sha256": {
+      "common.py": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "distance_distribution.py": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "hierarchical_hist.py": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a",
+      "gmm_local.py": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083",
+      "aligned.py": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "base_oct7.py": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "additional_oct7.py": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+      "calibration.py": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946"
+    },
+    "driver_sha256": "d0974ded808b9f8ee714498acabca225159ff2dd8a207f7fd60f59f8b6ee3363",
+    "input_spec_sha256": "db65dffe5697df99bbde542e4d2e2506e69027cc8a28badfe60b8031e5802d34",
+    "input_count": 50,
+    "fit_labels_used": false,
+    "truth_files_read": false
+  },
+  "official_mia_validator": {
+    "ok": true,
+    "errors": [],
+    "layer": "MIA logical",
+    "validator_sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+    "submission_schema_sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+    "packaging": "MIA単体ZIPは公式提出ZIPではない。F_aia.csv/token.txtの統合前。"
+  },
+  "differences": [
+    {
+      "baseline": "round3",
+      "main_team": 0,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 1,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 2,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 3,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 4,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 5,
+      "ordinary_changed_cells": 873,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 873,
+      "ordinary_max_abs_change": 0.28045714285714285
+    },
+    {
+      "baseline": "round3",
+      "main_team": 6,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 7,
+      "ordinary_changed_cells": 875,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 875,
+      "ordinary_max_abs_change": 0.29108571428571417
+    },
+    {
+      "baseline": "round3",
+      "main_team": 8,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 9,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 10,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 11,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 12,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 13,
+      "ordinary_changed_cells": 875,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 875,
+      "ordinary_max_abs_change": 0.2904
+    },
+    {
+      "baseline": "round3",
+      "main_team": 14,
+      "ordinary_changed_cells": 870,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 870,
+      "ordinary_max_abs_change": 0.24445714285714293
+    },
+    {
+      "baseline": "round3",
+      "main_team": 15,
+      "ordinary_changed_cells": 873,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 873,
+      "ordinary_max_abs_change": 0.29382857142857133
+    },
+    {
+      "baseline": "round3",
+      "main_team": 16,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 17,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 22,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 25,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 26,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round3",
+      "main_team": 27,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 0,
+      "ordinary_changed_cells": 874,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 874,
+      "ordinary_max_abs_change": 0.27908571428571427
+    },
+    {
+      "baseline": "round4",
+      "main_team": 1,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 2,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 3,
+      "ordinary_changed_cells": 871,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 871,
+      "ordinary_max_abs_change": 0.23760000000000003
+    },
+    {
+      "baseline": "round4",
+      "main_team": 4,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 872,
+      "ordinary_max_abs_change": 0.2825142857142856
+    },
+    {
+      "baseline": "round4",
+      "main_team": 5,
+      "ordinary_changed_cells": 875,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 875,
+      "ordinary_max_abs_change": 0.2890285714285714
+    },
+    {
+      "baseline": "round4",
+      "main_team": 6,
+      "ordinary_changed_cells": 849,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 855,
+      "ordinary_max_abs_change": 0.06514285714285717
+    },
+    {
+      "baseline": "round4",
+      "main_team": 7,
+      "ordinary_changed_cells": 875,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 875,
+      "ordinary_max_abs_change": 0.29108571428571417
+    },
+    {
+      "baseline": "round4",
+      "main_team": 8,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 872,
+      "ordinary_max_abs_change": 0.2598857142857143
+    },
+    {
+      "baseline": "round4",
+      "main_team": 9,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 10,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 878,
+      "ordinary_max_abs_change": 0.24857142857142855
+    },
+    {
+      "baseline": "round4",
+      "main_team": 11,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 878,
+      "ordinary_max_abs_change": 0.28079999999999994
+    },
+    {
+      "baseline": "round4",
+      "main_team": 12,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 13,
+      "ordinary_changed_cells": 875,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 875,
+      "ordinary_max_abs_change": 0.2904
+    },
+    {
+      "baseline": "round4",
+      "main_team": 14,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 872,
+      "ordinary_max_abs_change": 0.24239999999999995
+    },
+    {
+      "baseline": "round4",
+      "main_team": 15,
+      "ordinary_changed_cells": 872,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 872,
+      "ordinary_max_abs_change": 0.2904
+    },
+    {
+      "baseline": "round4",
+      "main_team": 16,
+      "ordinary_changed_cells": 873,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 879,
+      "ordinary_max_abs_change": 0.29177142857142857
+    },
+    {
+      "baseline": "round4",
+      "main_team": 17,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 6,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 22,
+      "ordinary_changed_cells": 873,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 873,
+      "ordinary_max_abs_change": 0.2701714285714285
+    },
+    {
+      "baseline": "round4",
+      "main_team": 25,
+      "ordinary_changed_cells": 874,
+      "rare_changed_cells": 6,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 880,
+      "ordinary_max_abs_change": 0.26777142857142855
+    },
+    {
+      "baseline": "round4",
+      "main_team": 26,
+      "ordinary_changed_cells": 0,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 0,
+      "ordinary_max_abs_change": 0.0
+    },
+    {
+      "baseline": "round4",
+      "main_team": 27,
+      "ordinary_changed_cells": 867,
+      "rare_changed_cells": 0,
+      "nonrare_known_negative_changed_cells": 0,
+      "all_changed_cells": 867,
+      "ordinary_max_abs_change": 0.05142857142857149
+    }
+  ],
+  "round4_difference_interpretation": "第4回は別の通常方式を使用。第4回比は今回5対象変更だけの効果と解釈しない。",
+  "input_sha256": {
+    "round3": {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+      "sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb"
+    },
+    "round4": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261009_第4回MIA_チーム別方式と固定5bit/結果/F_mia.csv",
+      "sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183"
+    },
+    "B_self": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1"
+    },
+    "self_challenge": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv",
+      "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26"
+    },
+    "mia_columns": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json",
+      "sha256": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181"
+    },
+    "fixed_bits": {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/固定5bit符号.csv",
+      "sha256": "00799e87fbbed4b44850092c176fee4af41769f93c1bace53aaa2bb66e9e5865"
+    },
+    "saved_settings": {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/設定.json",
+      "sha256": "3236035d39ab2d9caf612b37f2e91cceb882c606a70bd543e302b2b03d24ddae"
+    },
+    "certificate": {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/希少監査_再検証.json",
+      "sha256": "5d379e04e0b00604df2d95bce92e89a06a629576b6e2ebcc00c01f040c3f16f5"
+    },
+    "candidate": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/F_mia.csv",
+      "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a"
+    },
+    "component_zip": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/MIA_round5_components.zip",
+      "sha256": "3e088e32755180946bd22a324f54229bc701d575f6683415f02e2c267cae9887"
+    },
+    "selected_ordinary": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/methods/generated/selected_confidence.csv",
+      "sha256": "44ebd1c6e873f157f06f22290a2e16c406fae2ec6edf64d7050aad0515517dd0"
+    },
+    "method_arrays": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/methods/generated/all_method_arrays.npz",
+      "sha256": "613fe0e264b2a23ce7c78878740fba5d08af8f57c7d7d1be3339dfa389f78979"
+    },
+    "method_manifest": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/methods/generated/generation_manifest.json",
+      "sha256": "ce6ac1766ff21a0827f79afbf7af484b87d61f37a1a8ffc34279def9c4841496"
+    },
+    "assembly_differences": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/differences.csv",
+      "sha256": "4ef59d458eec07d8ac04bd1e4e6a2f3475d0c3c8939a9d398975836a584aa44c"
+    },
+    "rare_expected": {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/rare_round5_expected.csv",
+      "sha256": "8e7bd1f7c13dd51f92290b76fc8274453e1ae1df928231ecfcb59e12d76a78ff"
+    },
+    "validator": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3"
+    }
+  },
+  "auditor_sha256": "069b50e5e63d21015c58cdf6de10fd8142f1da329e5241bc873d0539cb4039e5",
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "audit_seed": "deterministic; no sampling"
+  },
+  "limits": [
+    "監査は整合性・再現処理の検証。本戦MIA精度の独立評価には未知の所属正解が必要。",
+    "希少人数の条件付き導出は保存された公式結果と共有条件に依存する。",
+    "MIA単体ZIPは配布用。公式提出ZIPにはF_aia.csvとtoken.txtの統合が必要。"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿family,comparisons,matched,different,max_absolute_error,historical_target_scope
+learned_ablation,157,19,138,0.0132475633528265,Explicit historical target IDs in each original comparison record
+smooth,255,193,62,0.0105263157894736,Explicit historical target IDs in each original comparison record
+learned_multiview_loo,25,2,23,0.0076038986354776,Explicit historical target IDs in each original comparison record
+classifiers,272,224,48,0.0103703703703703,Explicit historical target IDs in each original comparison record
+learned_multiview,49,3,46,0.0088453441295547,Explicit historical target IDs in each original comparison record
+learned_bg_transfer,37,1,36,0.0088453441295547,Explicit historical target IDs in each original comparison record
+learned_lowfpr,361,9,352,0.0327065527065527,Explicit historical target IDs in each original comparison record
+learned_bg_ablation,25,2,23,0.0076038986354776,Explicit historical target IDs in each original comparison record
+learned_centers,249,9,240,0.0142315789473684,Explicit historical target IDs in each original comparison record
+learned_base,22,6,16,0.0081624231518967,Explicit historical target IDs in each original comparison record
+learned_split,84,2,82,0.0145808966861598,Explicit historical target IDs in each original comparison record
+learned_yesterday,14,14,0,9.020562075079396e-17,Explicit historical target IDs in each original comparison record

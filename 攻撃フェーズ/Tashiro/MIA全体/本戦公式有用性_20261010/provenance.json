@@ -1,0 +1,46 @@
+{
+  "retrieved_at_utc": "2026-10-10T04:44:00Z",
+  "competition_id": 17698,
+  "phase_id": 29525,
+  "phase_name": "本戦：加工フェーズ",
+  "snapshot_commit": "5f913c2cff0346959a38f44cf7a24f7b2b89500a",
+  "snapshot_commit_time_utc": "2026-09-24T23:55:23Z",
+  "snapshot_commit_time_jst": "2026-09-25T08:55:23+09:00",
+  "snapshot_file_blob_sha": "f968fa944b8841607d3a1a23974094d6945c238a",
+  "snapshot_source": "https://github.com/Taisei-Tashiro/pws-cup-2026-monitor/blob/5f913c2cff0346959a38f44cf7a24f7b2b89500a/.monitor/state.json",
+  "official_identity_source": "https://www.iwsec.org/pws/2026/cup26.html",
+  "monitor_source": "https://github.com/Taisei-Tashiro/pws-cup-2026-monitor/blob/b604347f64e272e6a94f904b0f838006e4c73034/main.py",
+  "official_api_from_monitor": "https://www.codabench.org/api/phases/29525/get_leaderboard/?page_size=all",
+  "rows": 23,
+  "matched_submission_ids": 23,
+  "score_mapping": {
+    "35273:score_1": "得点（加工=有用性U／攻撃=攻撃力合計）",
+    "35273:score_2": "内訳1（加工=U_gen／攻撃=MIA全体）",
+    "35273:score_3": "内訳2（加工=U_spec／攻撃=MIA希少）",
+    "35273:score_4": "内訳3（加工=U_rare／攻撃=AIA全体）",
+    "35273:score_5": "内訳4（加工=U_valid／攻撃=AIA希少）",
+    "35273:score_6": "保護（加工のみ・参照攻撃1本／本番の匿名性ではない）"
+  },
+  "caveats": [
+    "Values are the stored leaderboard display/API values (up to 4 decimal places); full-precision scores were not recovered.",
+    "Snapshot commit time is a preservation timestamp, not necessarily the exact upstream response timestamp.",
+    "Official distributed-C identifiers match all 23 preserved leaderboard submission identifiers.",
+    "Official website says one 1,048-row C was padded to 1,049 by organizers and same padded C is used in utility scoring; affected cohort and any post-deadline rescored U remain unverified.",
+    "Do not use score_6 protection as a U feature: it contains reference attack information and is explicitly not the final anonymity metric.",
+    "Do not pool preliminary/main U values as the utility formula changes between phases."
+  ],
+  "live_verification": {
+    "at_utc": "2026-10-10T04:45:50Z",
+    "api_url": "https://www.codabench.org/api/phases/29525/get_leaderboard/?page_size=all",
+    "http_status": 200,
+    "content_type": "text/html",
+    "bytes": 2153,
+    "json_valid": false,
+    "competition_browser_observation": "Unrelated literary prose; no leaderboard rendered.",
+    "phase_browser_observation": "Page.enable then DOMSnapshot.captureSnapshot timed out.",
+    "conclusion": "Unable to verify live official scores or later rescoring. Existing monitor preservation is the numeric source."
+  },
+  "padded_cohort_identity": "Unverified; neither preserved state nor distributed README identifies it.",
+  "local_source_monitor_state_sha256": "718dcc785e78b1365f3556e244f2d4a61074931d23d0b7292321d08a28598f66",
+  "local_main_utility_scores_sha256": "3f8a031eadc8653eab905d5e9324cc2fcce3ae5a20f0297296b0d4b2b3625a46"
+}

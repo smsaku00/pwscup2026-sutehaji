@@ -1,0 +1,2543 @@
+{
+  "parameters": {
+    "candidate_ids": [
+      47,
+      76,
+      90,
+      115,
+      169,
+      264,
+      304,
+      383,
+      462,
+      495,
+      675
+    ],
+    "active_teams": [
+      6,
+      10,
+      11,
+      16,
+      17,
+      25
+    ],
+    "positive_counts": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "rare_population": 24,
+    "high_side_counts": [
+      6,
+      7,
+      7,
+      11,
+      10,
+      12
+    ],
+    "questions_round3_to7": [
+      [
+        115,
+        169,
+        264,
+        383,
+        462
+      ],
+      [
+        47,
+        115,
+        304,
+        462,
+        675
+      ],
+      [
+        47,
+        90,
+        264,
+        462,
+        495
+      ],
+      [
+        47,
+        76,
+        264,
+        304,
+        383
+      ],
+      [
+        47,
+        76,
+        90,
+        115,
+        169
+      ]
+    ],
+    "official_observations_round3_to5": [
+      "0.017203703703703704",
+      "0.010814814814814814",
+      "0.011166666666666667"
+    ],
+    "observation_source": "Official round-5 mia.tpr_rare supplied by parent; HTML acquisition and source hashing handled separately by parent.",
+    "low_fpr": 0.01,
+    "mean_denominator_active_teams": 6,
+    "shared_membership_exclusive": true
+  },
+  "parameters_sha256": "4d95ea92d46be19864c87334a6114de0c5264ff8e915cc67b9a16d8bfcc56cd0",
+  "reproduction_script_sha256": "a3e65b9500c90b3923974b76cf38e741759dd78997942bbab38d86e06b86f785",
+  "scorer_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+  "scorer_sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+  "official_scorer_rational_formula_max_abs_error": 6.938893903907228e-18,
+  "observation_fractions_round3_to5": [
+    "929/54000",
+    "73/6750",
+    "67/6000"
+  ],
+  "all_legal_configurations_before_observations": 2494800,
+  "configurations_after_round3": 43200,
+  "configurations_after_round4": 1296,
+  "configurations_after_actual_round5": 16,
+  "round5_high_positive_vectors_in_active_team_order": [
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ]
+  ],
+  "always_shared_ids_across_active_teams": [
+    76,
+    115,
+    169,
+    264,
+    304,
+    383,
+    462,
+    675
+  ],
+  "never_shared_ids_across_active_teams": [
+    47
+  ],
+  "target_candidates_after_actual_round5": {
+    "6": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          90
+        ],
+        [
+          495
+        ]
+      ],
+      "possible_member_ids": [
+        90,
+        495
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        115,
+        169,
+        264,
+        304,
+        383,
+        462,
+        675
+      ]
+    },
+    "10": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          169,
+          304
+        ],
+        [
+          169,
+          675
+        ],
+        [
+          304,
+          383
+        ],
+        [
+          383,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        169,
+        304,
+        383,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        115,
+        264,
+        462,
+        495
+      ]
+    },
+    "11": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          169
+        ],
+        [
+          383
+        ]
+      ],
+      "possible_member_ids": [
+        169,
+        383
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        115,
+        264,
+        304,
+        462,
+        495,
+        675
+      ]
+    },
+    "16": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          76,
+          462
+        ],
+        [
+          264,
+          304
+        ],
+        [
+          264,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        76,
+        264,
+        304,
+        462,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        90,
+        115,
+        169,
+        383,
+        495
+      ]
+    },
+    "17": {
+      "number_members": 1,
+      "possible_member_subsets": [
+        [
+          115
+        ]
+      ],
+      "possible_member_ids": [
+        115
+      ],
+      "certain_member_ids": [
+        115
+      ],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        76,
+        90,
+        169,
+        264,
+        304,
+        383,
+        462,
+        495,
+        675
+      ]
+    },
+    "25": {
+      "number_members": 2,
+      "possible_member_subsets": [
+        [
+          76,
+          462
+        ],
+        [
+          264,
+          304
+        ],
+        [
+          264,
+          675
+        ]
+      ],
+      "possible_member_ids": [
+        76,
+        264,
+        304,
+        462,
+        675
+      ],
+      "certain_member_ids": [],
+      "certain_nonmember_ids_within_11_candidates": [
+        47,
+        90,
+        115,
+        169,
+        383,
+        495
+      ]
+    }
+  },
+  "all_16_configurations": [
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          169,
+          304
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          675
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 699,
+          "denominator": 54000,
+          "fraction": "233/18000",
+          "float": 0.012944444444444444
+        },
+        {
+          "numerator": 908,
+          "denominator": 54000,
+          "fraction": "227/13500",
+          "float": 0.016814814814814814
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          169,
+          304
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          264,
+          675
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 699,
+          "denominator": 54000,
+          "fraction": "233/18000",
+          "float": 0.012944444444444444
+        },
+        {
+          "numerator": 899,
+          "denominator": 54000,
+          "fraction": "899/54000",
+          "float": 0.016648148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          169,
+          675
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          304
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 642,
+          "denominator": 54000,
+          "fraction": "107/9000",
+          "float": 0.011888888888888888
+        },
+        {
+          "numerator": 908,
+          "denominator": 54000,
+          "fraction": "227/13500",
+          "float": 0.016814814814814814
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          169,
+          675
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          264,
+          304
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 655,
+          "denominator": 54000,
+          "fraction": "131/10800",
+          "float": 0.012129629629629629
+        },
+        {
+          "numerator": 899,
+          "denominator": 54000,
+          "fraction": "899/54000",
+          "float": 0.016648148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          304,
+          383
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          675
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 585,
+          "denominator": 54000,
+          "fraction": "13/1200",
+          "float": 0.010833333333333334
+        },
+        {
+          "numerator": 1088,
+          "denominator": 54000,
+          "fraction": "68/3375",
+          "float": 0.020148148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          304,
+          383
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          264,
+          675
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 585,
+          "denominator": 54000,
+          "fraction": "13/1200",
+          "float": 0.010833333333333334
+        },
+        {
+          "numerator": 1079,
+          "denominator": 54000,
+          "fraction": "1079/54000",
+          "float": 0.019981481481481482
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          383,
+          675
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          304
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 462,
+          "denominator": 54000,
+          "fraction": "77/9000",
+          "float": 0.008555555555555556
+        },
+        {
+          "numerator": 1088,
+          "denominator": 54000,
+          "fraction": "68/3375",
+          "float": 0.020148148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          90
+        ],
+        "10": [
+          383,
+          675
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          264,
+          304
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        495
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 475,
+          "denominator": 54000,
+          "fraction": "19/2160",
+          "float": 0.008796296296296297
+        },
+        {
+          "numerator": 1079,
+          "denominator": 54000,
+          "fraction": "1079/54000",
+          "float": 0.019981481481481482
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          169,
+          304
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          675
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 699,
+          "denominator": 54000,
+          "fraction": "233/18000",
+          "float": 0.012944444444444444
+        },
+        {
+          "numerator": 494,
+          "denominator": 54000,
+          "fraction": "247/27000",
+          "float": 0.009148148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          169,
+          304
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          264,
+          675
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 699,
+          "denominator": 54000,
+          "fraction": "233/18000",
+          "float": 0.012944444444444444
+        },
+        {
+          "numerator": 485,
+          "denominator": 54000,
+          "fraction": "97/10800",
+          "float": 0.008981481481481481
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          169,
+          675
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          304
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 642,
+          "denominator": 54000,
+          "fraction": "107/9000",
+          "float": 0.011888888888888888
+        },
+        {
+          "numerator": 494,
+          "denominator": 54000,
+          "fraction": "247/27000",
+          "float": 0.009148148148148148
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          169,
+          675
+        ],
+        "11": [
+          383
+        ],
+        "16": [
+          264,
+          304
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 655,
+          "denominator": 54000,
+          "fraction": "131/10800",
+          "float": 0.012129629629629629
+        },
+        {
+          "numerator": 485,
+          "denominator": 54000,
+          "fraction": "97/10800",
+          "float": 0.008981481481481481
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          304,
+          383
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          675
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 585,
+          "denominator": 54000,
+          "fraction": "13/1200",
+          "float": 0.010833333333333334
+        },
+        {
+          "numerator": 674,
+          "denominator": 54000,
+          "fraction": "337/27000",
+          "float": 0.012481481481481482
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          304,
+          383
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          264,
+          675
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 585,
+          "denominator": 54000,
+          "fraction": "13/1200",
+          "float": 0.010833333333333334
+        },
+        {
+          "numerator": 665,
+          "denominator": 54000,
+          "fraction": "133/10800",
+          "float": 0.012314814814814815
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          383,
+          675
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          76,
+          462
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          264,
+          304
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 462,
+          "denominator": 54000,
+          "fraction": "77/9000",
+          "float": 0.008555555555555556
+        },
+        {
+          "numerator": 674,
+          "denominator": 54000,
+          "fraction": "337/27000",
+          "float": 0.012481481481481482
+        }
+      ]
+    },
+    {
+      "team_members": {
+        "6": [
+          495
+        ],
+        "10": [
+          383,
+          675
+        ],
+        "11": [
+          169
+        ],
+        "16": [
+          264,
+          304
+        ],
+        "17": [
+          115
+        ],
+        "25": [
+          76,
+          462
+        ]
+      },
+      "unassigned_candidates": [
+        47,
+        90
+      ],
+      "scores_round3_to7": [
+        {
+          "numerator": 929,
+          "denominator": 54000,
+          "fraction": "929/54000",
+          "float": 0.017203703703703704
+        },
+        {
+          "numerator": 584,
+          "denominator": 54000,
+          "fraction": "73/6750",
+          "float": 0.010814814814814815
+        },
+        {
+          "numerator": 603,
+          "denominator": 54000,
+          "fraction": "67/6000",
+          "float": 0.011166666666666667
+        },
+        {
+          "numerator": 475,
+          "denominator": 54000,
+          "fraction": "19/2160",
+          "float": 0.008796296296296297
+        },
+        {
+          "numerator": 665,
+          "denominator": 54000,
+          "fraction": "133/10800",
+          "float": 0.012314814814814815
+        }
+      ]
+    }
+  ],
+  "round6_distinct_branches": 6,
+  "round6_worst_remaining_configurations": 4,
+  "round6_branch_size_histogram": {
+    "2": 4,
+    "4": 2
+  },
+  "round6_round7_distinct_pairs": 16,
+  "round6_round7_collision_buckets": 0,
+  "round7_worst_remaining_configurations": 1,
+  "all_future_branches": [
+    {
+      "round6_predicted_score": {
+        "numerator": 462,
+        "denominator": 54000,
+        "fraction": "77/9000",
+        "float": 0.008555555555555556
+      },
+      "remaining_configurations": 2,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 674,
+            "denominator": 54000,
+            "fraction": "337/27000",
+            "float": 0.012481481481481482
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  383,
+                  675
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  304
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 462,
+                  "denominator": 54000,
+                  "fraction": "77/9000",
+                  "float": 0.008555555555555556
+                },
+                {
+                  "numerator": 674,
+                  "denominator": 54000,
+                  "fraction": "337/27000",
+                  "float": 0.012481481481481482
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 1088,
+            "denominator": 54000,
+            "fraction": "68/3375",
+            "float": 0.020148148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  383,
+                  675
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  304
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 462,
+                  "denominator": 54000,
+                  "fraction": "77/9000",
+                  "float": 0.008555555555555556
+                },
+                {
+                  "numerator": 1088,
+                  "denominator": 54000,
+                  "fraction": "68/3375",
+                  "float": 0.020148148148148148
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round6_predicted_score": {
+        "numerator": 475,
+        "denominator": 54000,
+        "fraction": "19/2160",
+        "float": 0.008796296296296297
+      },
+      "remaining_configurations": 2,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 665,
+            "denominator": 54000,
+            "fraction": "133/10800",
+            "float": 0.012314814814814815
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  383,
+                  675
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  264,
+                  304
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 475,
+                  "denominator": 54000,
+                  "fraction": "19/2160",
+                  "float": 0.008796296296296297
+                },
+                {
+                  "numerator": 665,
+                  "denominator": 54000,
+                  "fraction": "133/10800",
+                  "float": 0.012314814814814815
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 1079,
+            "denominator": 54000,
+            "fraction": "1079/54000",
+            "float": 0.019981481481481482
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  383,
+                  675
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  264,
+                  304
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 475,
+                  "denominator": 54000,
+                  "fraction": "19/2160",
+                  "float": 0.008796296296296297
+                },
+                {
+                  "numerator": 1079,
+                  "denominator": 54000,
+                  "fraction": "1079/54000",
+                  "float": 0.019981481481481482
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round6_predicted_score": {
+        "numerator": 585,
+        "denominator": 54000,
+        "fraction": "13/1200",
+        "float": 0.010833333333333334
+      },
+      "remaining_configurations": 4,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 665,
+            "denominator": 54000,
+            "fraction": "133/10800",
+            "float": 0.012314814814814815
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  304,
+                  383
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  264,
+                  675
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 585,
+                  "denominator": 54000,
+                  "fraction": "13/1200",
+                  "float": 0.010833333333333334
+                },
+                {
+                  "numerator": 665,
+                  "denominator": 54000,
+                  "fraction": "133/10800",
+                  "float": 0.012314814814814815
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 674,
+            "denominator": 54000,
+            "fraction": "337/27000",
+            "float": 0.012481481481481482
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  304,
+                  383
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  675
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 585,
+                  "denominator": 54000,
+                  "fraction": "13/1200",
+                  "float": 0.010833333333333334
+                },
+                {
+                  "numerator": 674,
+                  "denominator": 54000,
+                  "fraction": "337/27000",
+                  "float": 0.012481481481481482
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 1079,
+            "denominator": 54000,
+            "fraction": "1079/54000",
+            "float": 0.019981481481481482
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  304,
+                  383
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  264,
+                  675
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 585,
+                  "denominator": 54000,
+                  "fraction": "13/1200",
+                  "float": 0.010833333333333334
+                },
+                {
+                  "numerator": 1079,
+                  "denominator": 54000,
+                  "fraction": "1079/54000",
+                  "float": 0.019981481481481482
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 1088,
+            "denominator": 54000,
+            "fraction": "68/3375",
+            "float": 0.020148148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  304,
+                  383
+                ],
+                "11": [
+                  169
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  675
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 585,
+                  "denominator": 54000,
+                  "fraction": "13/1200",
+                  "float": 0.010833333333333334
+                },
+                {
+                  "numerator": 1088,
+                  "denominator": 54000,
+                  "fraction": "68/3375",
+                  "float": 0.020148148148148148
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round6_predicted_score": {
+        "numerator": 642,
+        "denominator": 54000,
+        "fraction": "107/9000",
+        "float": 0.011888888888888888
+      },
+      "remaining_configurations": 2,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 494,
+            "denominator": 54000,
+            "fraction": "247/27000",
+            "float": 0.009148148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  169,
+                  675
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  304
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 642,
+                  "denominator": 54000,
+                  "fraction": "107/9000",
+                  "float": 0.011888888888888888
+                },
+                {
+                  "numerator": 494,
+                  "denominator": 54000,
+                  "fraction": "247/27000",
+                  "float": 0.009148148148148148
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 908,
+            "denominator": 54000,
+            "fraction": "227/13500",
+            "float": 0.016814814814814814
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  169,
+                  675
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  304
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 642,
+                  "denominator": 54000,
+                  "fraction": "107/9000",
+                  "float": 0.011888888888888888
+                },
+                {
+                  "numerator": 908,
+                  "denominator": 54000,
+                  "fraction": "227/13500",
+                  "float": 0.016814814814814814
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round6_predicted_score": {
+        "numerator": 655,
+        "denominator": 54000,
+        "fraction": "131/10800",
+        "float": 0.012129629629629629
+      },
+      "remaining_configurations": 2,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 485,
+            "denominator": 54000,
+            "fraction": "97/10800",
+            "float": 0.008981481481481481
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  169,
+                  675
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  264,
+                  304
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 655,
+                  "denominator": 54000,
+                  "fraction": "131/10800",
+                  "float": 0.012129629629629629
+                },
+                {
+                  "numerator": 485,
+                  "denominator": 54000,
+                  "fraction": "97/10800",
+                  "float": 0.008981481481481481
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 899,
+            "denominator": 54000,
+            "fraction": "899/54000",
+            "float": 0.016648148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  169,
+                  675
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  264,
+                  304
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 655,
+                  "denominator": 54000,
+                  "fraction": "131/10800",
+                  "float": 0.012129629629629629
+                },
+                {
+                  "numerator": 899,
+                  "denominator": 54000,
+                  "fraction": "899/54000",
+                  "float": 0.016648148148148148
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round6_predicted_score": {
+        "numerator": 699,
+        "denominator": 54000,
+        "fraction": "233/18000",
+        "float": 0.012944444444444444
+      },
+      "remaining_configurations": 4,
+      "round7_branches": [
+        {
+          "round7_predicted_score": {
+            "numerator": 485,
+            "denominator": 54000,
+            "fraction": "97/10800",
+            "float": 0.008981481481481481
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  169,
+                  304
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  264,
+                  675
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 699,
+                  "denominator": 54000,
+                  "fraction": "233/18000",
+                  "float": 0.012944444444444444
+                },
+                {
+                  "numerator": 485,
+                  "denominator": 54000,
+                  "fraction": "97/10800",
+                  "float": 0.008981481481481481
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 494,
+            "denominator": 54000,
+            "fraction": "247/27000",
+            "float": 0.009148148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  495
+                ],
+                "10": [
+                  169,
+                  304
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  675
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                90
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 699,
+                  "denominator": 54000,
+                  "fraction": "233/18000",
+                  "float": 0.012944444444444444
+                },
+                {
+                  "numerator": 494,
+                  "denominator": 54000,
+                  "fraction": "247/27000",
+                  "float": 0.009148148148148148
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 899,
+            "denominator": 54000,
+            "fraction": "899/54000",
+            "float": 0.016648148148148148
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  169,
+                  304
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  264,
+                  675
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  76,
+                  462
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 699,
+                  "denominator": 54000,
+                  "fraction": "233/18000",
+                  "float": 0.012944444444444444
+                },
+                {
+                  "numerator": 899,
+                  "denominator": 54000,
+                  "fraction": "899/54000",
+                  "float": 0.016648148148148148
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "round7_predicted_score": {
+            "numerator": 908,
+            "denominator": 54000,
+            "fraction": "227/13500",
+            "float": 0.016814814814814814
+          },
+          "remaining_configurations": 1,
+          "decoded_configurations": [
+            {
+              "team_members": {
+                "6": [
+                  90
+                ],
+                "10": [
+                  169,
+                  304
+                ],
+                "11": [
+                  383
+                ],
+                "16": [
+                  76,
+                  462
+                ],
+                "17": [
+                  115
+                ],
+                "25": [
+                  264,
+                  675
+                ]
+              },
+              "unassigned_candidates": [
+                47,
+                495
+              ],
+              "scores_round3_to7": [
+                {
+                  "numerator": 929,
+                  "denominator": 54000,
+                  "fraction": "929/54000",
+                  "float": 0.017203703703703704
+                },
+                {
+                  "numerator": 584,
+                  "denominator": 54000,
+                  "fraction": "73/6750",
+                  "float": 0.010814814814814815
+                },
+                {
+                  "numerator": 603,
+                  "denominator": 54000,
+                  "fraction": "67/6000",
+                  "float": 0.011166666666666667
+                },
+                {
+                  "numerator": 699,
+                  "denominator": 54000,
+                  "fraction": "233/18000",
+                  "float": 0.012944444444444444
+                },
+                {
+                  "numerator": 908,
+                  "denominator": 54000,
+                  "fraction": "227/13500",
+                  "float": 0.016814814814814814
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "future_display_precision_given_exact_past_observations": {
+    "3": {
+      "distinct_round6_round7_observation_pairs": 8,
+      "collision_buckets": 8,
+      "worst_remaining_configurations": 2
+    },
+    "4": {
+      "distinct_round6_round7_observation_pairs": 16,
+      "collision_buckets": 0,
+      "worst_remaining_configurations": 1
+    },
+    "5": {
+      "distinct_round6_round7_observation_pairs": 16,
+      "collision_buckets": 0,
+      "worst_remaining_configurations": 1
+    },
+    "6": {
+      "distinct_round6_round7_observation_pairs": 16,
+      "collision_buckets": 0,
+      "worst_remaining_configurations": 1
+    }
+  },
+  "conclusion": "With the stated population, exclusivity, candidate and scoring assumptions, the unchanged fixed round-6 and round-7 questions identify all 16 surviving configurations uniquely.",
+  "no_submission_csv_read_or_changed": true,
+  "no_tournament_submission": true,
+  "no_github_mutation": true
+}

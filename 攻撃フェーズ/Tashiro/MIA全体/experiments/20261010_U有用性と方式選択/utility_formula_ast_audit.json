@@ -1,0 +1,17 @@
+{
+  "_score_u_gen": {
+    "same_executable_ast": false
+  },
+  "_score_u_spec": {
+    "same_executable_ast": true
+  },
+  "_score_u_rare": {
+    "same_executable_ast": true
+  },
+  "_score_u_valid": {
+    "same_executable_ast": false
+  },
+  "_aggregate": {
+    "same_executable_ast": true
+  }
+}

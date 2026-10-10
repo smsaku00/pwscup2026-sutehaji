@@ -1,0 +1,9 @@
+# Python 3.12. 本戦公式キットの固定版とバトルの既存定義を再利用。
+-r 本戦/配布データ/pwscup2026-kit-main_revised0912/starter/requirements-kit.txt
+-r 本戦/バトル/requirements.txt
+# 旧PWS環境で使用したExcel出力版を維持。
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+# 現行の資料作成.pyの直接依存と、その追加依存。
+reportlab==5.0.1
+charset-normalizer==3.5.1

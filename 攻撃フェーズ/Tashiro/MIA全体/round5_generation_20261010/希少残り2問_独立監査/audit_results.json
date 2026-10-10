@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "conclusion": "条件付きで必ず特定できる。予定第6・7回の事前固定質問で十分。",
+  "round5_submitted": false,
+  "counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 1,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "22": 0,
+    "25": 2,
+    "26": 0,
+    "27": 0
+  },
+  "count_rederivation": {
+    "first_candidates": 102,
+    "both_candidates": 1,
+    "round1_integer_scale": 23279256000,
+    "lattice_minimum_step": "1/256071816000",
+    "round2_candidate_minimum_gap": "1/936000",
+    "score_comparison_tolerance": "1e-15"
+  },
+  "official_observations_round1_to_4": [
+    0.014934210526315791,
+    0.014445669283130584,
+    0.017203703703703704,
+    0.010814814814814814
+  ],
+  "round3_and_4_positive_high_counts": {
+    "3": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "4": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1
+    ]
+  },
+  "past_4_official_float_means_exactly_reproduced": true,
+  "rare_cell_checks": [
+    {
+      "round": 3,
+      "checked": 528,
+      "mismatches": 0
+    },
+    {
+      "round": 4,
+      "checked": 528,
+      "mismatches": 0
+    },
+    {
+      "round": 5,
+      "checked": 528,
+      "mismatches": 0
+    }
+  ],
+  "round5_padding_cells": 78,
+  "nonrare_known_negative_cells_zero": 3300,
+  "all_legal_placements_before_round3": 2494800,
+  "remaining_after_round3": 43200,
+  "remaining_after_round4": 1296,
+  "round5_observation_branches": 91,
+  "worst_remaining_after_round5": 48,
+  "round5_branch_size_distribution": {
+    "8": 42,
+    "16": 39,
+    "24": 4,
+    "32": 3,
+    "48": 3
+  },
+  "worst_remaining_after_round6": 12,
+  "worst_remaining_after_round7": 1,
+  "observation_prefix_counts_round5_to_7": [
+    91,
+    554,
+    1296
+  ],
+  "collision_groups": 0,
+  "query_average_minimum_gap_all_216": "1/54000",
+  "round5_legal_response_minimum_gap": "1/54000",
+  "single_word_count": 11,
+  "unique_pair_word_count": 55,
+  "official_scorer_calls": 30010,
+  "max_exact_vs_float_error": 6.938893903907228e-18,
+  "minimum_sufficient_decimal_places_for_these_1296": 5,
+  "known_counts_without_exclusivity_final_unique_placements": 60750,
+  "assumptions": [
+    "保存CSVと公式結果の回番号対応が正しい（サーバー入力ZIPのhash未確認）",
+    "is_rare列が公式希少マスクに対応する",
+    "自AIA課題のB一致163人は非共有で、希少13人も全相手で非会員",
+    "希少1人の共有先は最大1対象、各対象0/1/2人、合計11人以下",
+    "第1・2回の人数推定、22対象、真の所属が第1〜7回で固定",
+    "FPR=0.01、同点一括ROC補間、陽性0はnan除外という公式採点が維持",
+    "第6・7回も保存5bitの希少528セルをpadding込みで使う",
+    "観測にdetailed_results.htmlの生のmia.tpr_rareを使う（4桁だけでは保証しない）"
+  ],
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "python_executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "numpy": "2.4.6",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "input_sha256": {
+    "B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "round1_F_mia.csv": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "round2_F_mia.csv": "92c780eee9762989a8140feee6fac3258b2bd3e27eee3146fccaa07a811412ae",
+    "round3_F_mia.csv": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "round4_F_mia.csv": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+    "round5_F_mia.csv": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "round1_detailed_results.html": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+    "round2_detailed_results.html": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+    "round3_detailed_results.html": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+    "round4_detailed_results.html": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+    "fixed_plan.json": "3236035d39ab2d9caf612b37f2e91cceb882c606a70bd543e302b2b03d24ddae",
+    "fixed_code.csv": "00799e87fbbed4b44850092c176fee4af41769f93c1bace53aaa2bb66e9e5865",
+    "official_attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "official_scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "official_result.py": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "round4_provenance.json": "e9f6b753799e0741789f6d09386aabd3cd6ad099c09f1f394c08f09073129220"
+  }
+}

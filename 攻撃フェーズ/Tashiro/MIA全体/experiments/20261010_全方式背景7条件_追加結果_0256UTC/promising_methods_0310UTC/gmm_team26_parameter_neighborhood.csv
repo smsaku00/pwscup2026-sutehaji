@@ -1,0 +1,13 @@
+team,family,method,starter,prelim,main,starter+prelim,starter+main,prelim+main,starter+prelim+main,minimum,median,maximum,mean,BGs_above010
+26,mixture,q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1,0.12,0.12,0.12,0.16,0.16,0.16,0.16,0.12,0.16,0.16,0.14285714285714285,7
+26,mixture,q7_robust_sex0_diag_reg0.01_gmm1__age100__cross0.1,0.08,0.08,0.04,0.04,0.08,0.00960000000000001,0.04,0.00960000000000001,0.04,0.08,0.0528,0
+26,mixture,q7_robust_sex0_diag_reg0.1_gmm1__age100__cross0.1,0.08,0.08,0.04,0.04,0.08,0.0,0.08,0.0,0.08,0.08,0.05714285714285715,0
+26,mixture,q7_robust_sex0_diag_reg0.1_gmm2__age100__cross0.1,0.04,0.0,0.04,0.0,0.04,0.04,0.0,0.0,0.04,0.04,0.022857142857142857,0
+26,mixture,q7_robust_sex0_diag_reg0.01_bic_selected__age100__cross0.1,0.04,0.0,0.04,0.04,0.0,0.0,0.0,0.0,0.0,0.04,0.017142857142857144,0
+26,mixture,q7_robust_sex0_diag_reg0.01_gmm8__age100__cross0.1,0.04,0.0,0.04,0.04,0.0,0.0,0.0,0.0,0.0,0.04,0.017142857142857144,0
+26,mixture,q7_robust_sex0_diag_reg0.01_gmm16__age100__cross0.1,0.0,0.0,0.0,0.0,0.04,0.0,0.04,0.0,0.0,0.04,0.011428571428571429,0
+26,mixture,q7_robust_sex0_diag_reg0.1_bic_selected__age100__cross0.1,0.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04,0.005714285714285714,0
+26,mixture,q7_robust_sex0_diag_reg0.1_gmm4__age100__cross0.1,0.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04,0.005714285714285714,0
+26,mixture,q7_robust_sex0_diag_reg0.01_gmm4__age100__cross0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
+26,mixture,q7_robust_sex0_diag_reg0.1_gmm16__age100__cross0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
+26,mixture,q7_robust_sex0_diag_reg0.1_gmm8__age100__cross0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0

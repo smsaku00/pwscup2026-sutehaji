@@ -1,0 +1,50 @@
+[
+  {
+    "phase": "prelim",
+    "path": "common/schema.py",
+    "git_blob_sha": "ef91a9698520e555efefd02b6274055c82821282",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/common/schema.py",
+    "local_sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+    "exact_blob_match": true
+  },
+  {
+    "phase": "prelim",
+    "path": "rare/outlier.py",
+    "git_blob_sha": "47631e386710989beab0e76aa93ca503975fa7ab",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/rare/outlier.py",
+    "local_sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+    "exact_blob_match": true
+  },
+  {
+    "phase": "prelim",
+    "path": "scoring/result.py",
+    "git_blob_sha": "800df5a345b326b6758439f355ec6d461be80474",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/scoring/result.py",
+    "local_sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "exact_blob_match": true
+  },
+  {
+    "phase": "main",
+    "path": "common/schema.py",
+    "git_blob_sha": "ef91a9698520e555efefd02b6274055c82821282",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/common/schema.py",
+    "local_sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+    "exact_blob_match": true
+  },
+  {
+    "phase": "main",
+    "path": "rare/outlier.py",
+    "git_blob_sha": "47631e386710989beab0e76aa93ca503975fa7ab",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/rare/outlier.py",
+    "local_sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+    "exact_blob_match": true
+  },
+  {
+    "phase": "main",
+    "path": "scoring/result.py",
+    "git_blob_sha": "800df5a345b326b6758439f355ec6d461be80474",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/scoring/result.py",
+    "local_sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "exact_blob_match": true
+  }
+]

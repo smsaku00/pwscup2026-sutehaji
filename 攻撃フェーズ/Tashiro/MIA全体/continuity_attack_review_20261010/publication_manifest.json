@@ -1,0 +1,418 @@
+{
+  "base_commit": "1a5d47bba85711322994098b0de16df894acdf95",
+  "scope": "Latest cloud-available review and existing experiment summaries; not a complete Mac-local audit.",
+  "new_experiment": false,
+  "competition_submission": false,
+  "excluded": [
+    "cache/",
+    "predictions/",
+    "blocks/",
+    "raw B/Q/C inputs",
+    "focus_top50_records.csv",
+    "intermediate workbooks",
+    "render previews",
+    "Library helper tools"
+  ],
+  "files": [
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/all_distinct_recipe_peaks_0310.csv.gz",
+      "size": 74037,
+      "sha": "748bf7bc8a454d3398e8f2d299a9c958fb49a34c",
+      "sha256": "32c2a76dbd6087dfeb4bfa9ab0a1b5af089c2dab40e665b912d57dfd91dcbb6d",
+      "source": "continuity_attack_review_20261010/candidates/all_distinct_recipe_peaks_0310.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/build_recommendations.py",
+      "size": 17445,
+      "sha": "b627c1bfbc25c654d3176c1bc2ef41486383019a",
+      "sha256": "176391b194d9ddbf32be3c0200c043bdf5a91e616df20b03495d0858dad18ef1",
+      "source": "continuity_attack_review_20261010/candidates/build_recommendations.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/candidate_pool_seven_backgrounds.csv",
+      "size": 87684,
+      "sha": "756c5f0229aae3bc9cd24efe7f57b33ff641932b",
+      "sha256": "7bceeabf9520fa2bc038a73b669a20e0329f6a045c0204608a5033869fc760e8",
+      "source": "continuity_attack_review_20261010/candidates/candidate_pool_seven_backgrounds.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/candidate_pool_with_seven_background_summary.csv",
+      "size": 35142,
+      "sha": "75bf81183326f270dd9f0e3e45c8a5ef9d6fc427",
+      "sha256": "9ba52f60c611994b0ca67806155b0244a0788756a39d3ff4937863438ee221c4",
+      "source": "continuity_attack_review_20261010/candidates/candidate_pool_with_seven_background_summary.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/extract_candidates.py",
+      "size": 4219,
+      "sha": "5dcd4977d45e23fa959301d279d304352e31238e",
+      "sha256": "72a90b04de2b6bcd5d37e2d8de95670b59a4d92fc29c43c2e79567c096b554e4",
+      "source": "continuity_attack_review_20261010/candidates/extract_candidates.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/membership_label_OOF_optional_separate.csv",
+      "size": 2792,
+      "sha": "116a7905c4ab5ca4f93089dfcbeb48de1b76a33f",
+      "sha256": "7d25e440a132892e5bd385e0204c6fbb6fad250358db491e75f4e6e23f57bb33",
+      "source": "continuity_attack_review_20261010/candidates/membership_label_OOF_optional_separate.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/recommended_three_methods_per_team.csv",
+      "size": 14587,
+      "sha": "a92848c3bd9be20b452715e1bb28685a7d157898",
+      "sha256": "42a99468389d7a458937fe6d98eed8e85af093ffabdf786748a80e01b0aacce1",
+      "source": "continuity_attack_review_20261010/candidates/recommended_three_methods_per_team.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/recommended_three_methods_seven_backgrounds.csv",
+      "size": 29257,
+      "sha": "924bda5716fd66e342126ade21e9338d047d1471",
+      "sha256": "5b9074745e3b41197fa232e8291a4025f3167f9796ae6f5e6e633b97632d36b7",
+      "source": "continuity_attack_review_20261010/candidates/recommended_three_methods_seven_backgrounds.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/related_variants_not_extra_families.csv",
+      "size": 5362,
+      "sha": "532786f51123124d0bafcafecf6e9d82912d0814",
+      "sha256": "21af8cc0417abb9dcbc9183d393ff1a6a02b3c475ff3ce6a60b4947c59ed08a5",
+      "source": "continuity_attack_review_20261010/candidates/related_variants_not_extra_families.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/source_manifest.json",
+      "size": 24521,
+      "sha": "633cf3fdd6bb0baac00dcc983bf566648f674963",
+      "sha256": "6f6b3e5460ce826dca05ee6c0808f74cd12f6cc3b31a5991bbf8e1a4d3b6d36b",
+      "source": "continuity_attack_review_20261010/candidates/source_manifest.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/strict_top3_distinct_parameter_recipes.csv",
+      "size": 10294,
+      "sha": "695b29aeb31f677297bbc5a312731e9ceaabe605",
+      "sha256": "6117cbdd13e26f6be7d60d3ea114fde5e03bfad5d88db81ce392783d91b1c219",
+      "source": "continuity_attack_review_20261010/candidates/strict_top3_distinct_parameter_recipes.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/candidates/予備戦7チーム_有望3方式レビュー.md",
+      "size": 13963,
+      "sha": "b56f8039a27289d3593c9dc6f6ee3a2f5cc84d66",
+      "sha256": "e5dd4ce0a1815f196f79309c8758536e95efb07442b450f0a6b2db1211e3d42b",
+      "source": "continuity_attack_review_20261010/candidates/予備戦7チーム_有望3方式レビュー.md"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/compile.py",
+      "size": 10220,
+      "sha": "3446382c4ad3547c3374ed002fc77b321fdac860",
+      "sha256": "17c5d3a7948860a34afb5ac591621ccf9e911c3c2df61b2db4ef6d0e1f39ba95",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/compile.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/data.json",
+      "size": 20264,
+      "sha": "0fbe7e7e2dd37dc00157959585d3447247921ed5",
+      "sha256": "fecea46f87cd875870fa77e07509e903e0ff810e5e09ceb6fa2e50b29680ab71",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/data.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/source_hashes.json",
+      "size": 811,
+      "sha": "3ee33ae80715b124f252ce32eef1f8e06a3686ff",
+      "sha256": "7001dfd81bce0461a59b8b1a63bcf452ccbadf3038647f4efb307dc42104af3d",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/source_hashes.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/transfer_assessment.json",
+      "size": 64584,
+      "sha": "15162720bfbdeef4da6c6db5649bffef2b17387e",
+      "sha256": "64d08e6bd695fa900a90ed5a8130285c89f47bf8cdd0d926952d743d47d0cbf8",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/transfer_assessment.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/全22チーム_本戦転用評価付き.csv",
+      "size": 48166,
+      "sha": "ead32b7c4eebcaf4ac36ea99c4f90afcb723f7c0",
+      "sha256": "318e9f74f27c05ac3306fa287fd980f4d3f6dfccfb5cce06b1e7a447da046216",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/全22チーム_本戦転用評価付き.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/全22チーム_第5回向け採用判断案.csv",
+      "size": 14176,
+      "sha": "3d983da8339ac0e97b2ededb56d9f612d81180f4",
+      "sha256": "3c7d98aae56da6974909d9f7e878a35a9c514fe66ee18a11747409a884eb6124",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/全22チーム_第5回向け採用判断案.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/decision_review_20261010/全22チーム_第5回向け採用判断案.xlsx",
+      "size": 23317,
+      "sha": "0707399ac524f9e36adca7e054a7944ed82564e5",
+      "sha256": "8afd9f4e928560e53861ecaaee9e7c882cbfe5ccfb886ac911be6202aa30e562",
+      "source": "continuity_attack_review_20261010/decision_review_20261010/全22チーム_第5回向け採用判断案.xlsx"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/submissions/audit_submitted_records.py",
+      "size": 7281,
+      "sha": "5690f4ca0d6ef6c6681fe0252ea3ad6e2f5fac1a",
+      "sha256": "fc3b2ebb9e943bca45967a15341d5b1f3e250f57bfbbd8e8e5b0317f19eb75bd",
+      "source": "continuity_attack_review_20261010/submissions/audit_submitted_records.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/submissions/history_availability_check.json",
+      "size": 700,
+      "sha": "cc29b4f9267883df46ea999582b71d1bf64c2f70",
+      "sha256": "3549eb87a9272f2b6de4b7a4c7a05d1490d3d68e17da5338a4195dbfbe74f7b0",
+      "source": "continuity_attack_review_20261010/submissions/history_availability_check.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/submissions/main_official_receipt_snapshots.json",
+      "size": 16587,
+      "sha": "ec00e3d0774ff60538e0e0f828149660d149b0f7",
+      "sha256": "f20d7538be1ec4336830739adc1782a45685644044fde733a2534b2cbd285e2f",
+      "source": "continuity_attack_review_20261010/submissions/main_official_receipt_snapshots.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/submissions/seven_team_submitted_records.csv",
+      "size": 7943,
+      "sha": "35b2a480594a3942fb7a5ab9b085ccd29976550f",
+      "sha256": "18f6d017a42240b74f3d302f4e7227b9716460c77ac96ce3f0e68be9c32474c0",
+      "source": "continuity_attack_review_20261010/submissions/seven_team_submitted_records.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/submissions/submitted_records_audit.json",
+      "size": 16775,
+      "sha": "0b817f25aa88ec1d78f6ce46b944ac2be2e1047a",
+      "sha256": "b003b3940c3ce7c1ff071d33f8bff68c2e32758c5f9d12869b5280c91b978e36",
+      "source": "continuity_attack_review_20261010/submissions/submitted_records_audit.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/継続候補7チーム_提出記録と有用性_予備戦3候補.csv",
+      "size": 36711,
+      "sha": "ad9d775c8bfb0bfef202109ae2f4ea3401a43657",
+      "sha256": "aa38cd9c11ebc25f4effd550da4dec398f31cc47a1a23f63ad558fe3ec5cb314",
+      "source": "continuity_attack_review_20261010/継続候補7チーム_提出記録と有用性_予備戦3候補.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/順位集約反復数比較_スコア.csv",
+      "size": 1134,
+      "sha": "de74e74706c0ca95cab25c0b2e6e5ad38b1c47f8",
+      "sha256": "9c3950d32e30359fc51c58d1fbb38e6f46dc8a76eed3d00239640bf591e12820",
+      "source": "experiments/20261010_順位集約反復数比較/順位集約反復数比較_スコア.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/順位集約反復数比較_結果要約.txt",
+      "size": 5959,
+      "sha": "23cb24dab5aa658f0cd5b92edf10e80fcac6127b",
+      "sha256": "dce6c48f727e097e4888cbc0164d282a1a05914e014897e46ac6107631a45e00",
+      "source": "experiments/20261010_順位集約反復数比較/順位集約反復数比較_結果要約.txt"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/scores_all_targets.csv",
+      "size": 114803,
+      "sha": "0e3ba6dad3cd2f028e0d8727c0b66b055eecbddb",
+      "sha256": "56bfd035f595ee1a2127adf6cdedf813c7a78e144811dd7f2a02cbd2d37f439c",
+      "source": "experiments/20261010_順位集約反復数比較/scores_all_targets.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/focus_scores.csv",
+      "size": 1451,
+      "sha": "78443608a22f0da87d16cc922c3479c6d45cf82d",
+      "sha256": "afb73f8b5805e31f7a601abd33b8b4b48099dd1c1451e93812ea7264a27d422e",
+      "source": "experiments/20261010_順位集約反復数比較/focus_scores.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/rank_stability.csv",
+      "size": 37667,
+      "sha": "11b565a996d2e8b5ef326eb1db3f13c00058d4e5",
+      "sha256": "73182bd8648b0f44f78cf88dd4cefd8be7aab09dc9f620382052370d0b3ad131",
+      "source": "experiments/20261010_順位集約反復数比較/rank_stability.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/fpr1_boundaries.csv",
+      "size": 53979,
+      "sha": "cbd0451d2892a65eb99c126b68998e41a7dc529e",
+      "sha256": "dd3cc37a5d03a0a45ebe13712a635d9d123354ca2d0aef5ffdb596bd2f51657d",
+      "source": "experiments/20261010_順位集約反復数比較/fpr1_boundaries.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/seed_block_stability.csv",
+      "size": 10059,
+      "sha": "1e7f2229bf463fca74c320554bb30c70f403d908",
+      "sha256": "887d5aa05258c21ece61cc005a121b944204f63120e6e64aa667e59678fe632d",
+      "source": "experiments/20261010_順位集約反復数比較/seed_block_stability.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/seeds.csv.gz",
+      "size": 66069,
+      "sha": "28d099ba7972b75fe096bc9c890059aa6d95cbab",
+      "sha256": "6d0ef7dca644ef43dd9cbf8e4e8922b2e4a5343c2fabf741b97b8673986864b2",
+      "source": "experiments/20261010_順位集約反復数比較/seeds.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/N10_regression_prelim.json",
+      "size": 964,
+      "sha": "5c9b61ca8eefe01f331a4dffc10e3fdabf6d0288",
+      "sha256": "7ff1fae595a1587bd264190e4e3831f7d52b8258e91aceed23e86c2085413f93",
+      "source": "experiments/20261010_順位集約反復数比較/N10_regression_prelim.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/N10_regression_starter+prelim+main.json",
+      "size": 1003,
+      "sha": "4b4255caf42ae35f1fa607548cb043073f53217e",
+      "sha256": "8848fd3d60a32441fb1795ef8ea889540a87a7fe86cdc0c87df465928d6a0e77",
+      "source": "experiments/20261010_順位集約反復数比較/N10_regression_starter+prelim+main.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/extended_seed_original_audit.json",
+      "size": 48122,
+      "sha": "f1dc1a3d86bb453a4557fee82e52d0786dd9c3be",
+      "sha256": "3b80abf0dd7cb78da5d4e92d78b53b1bd40374b08ce9f281737e03ab5f4efae8",
+      "source": "experiments/20261010_順位集約反復数比較/extended_seed_original_audit.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/final_verification.json",
+      "size": 1755,
+      "sha": "62478b5fa076ad9c69e990bf75f51a206fb00ff8",
+      "sha256": "c9ed949b0a76f6c4933edd1b2fa316f10ae485bcdde869e721dd8b943029646f",
+      "source": "experiments/20261010_順位集約反復数比較/final_verification.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/run_record.json",
+      "size": 15493,
+      "sha": "44b910578e10a7a19f06b9968981b2b0500b2959",
+      "sha256": "df457cffcb1042f94871132216b7d4e29fa48c6e344f6cf6666af30513a5bfc3",
+      "source": "experiments/20261010_順位集約反復数比較/run_record.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/timings.json",
+      "size": 1183,
+      "sha": "3f1681f8114dee13ad1e20e6935a8c1e4d71bff7",
+      "sha256": "93fca0350d3851f5aee68f45fd7e96dd4b201e627a453dc726f31604ebb804e2",
+      "source": "experiments/20261010_順位集約反復数比較/timings.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/prediction_hashes.json",
+      "size": 6107,
+      "sha": "1505ebec7a49ac9121c6dce0637381906ba71be0",
+      "sha256": "6c92b068a8a2d7e60530eb810943fb9b2b996845b8940d0d2ce874caa21ce4c0",
+      "source": "experiments/20261010_順位集約反復数比較/prediction_hashes.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/audit_and_report.py",
+      "size": 6502,
+      "sha": "0b9087512042afddc4299d41ba5317e8ebf34b79",
+      "sha256": "a560fe1bbe0de1000413ee2534dbcd45551f02ad9ebf63d8718e67ed50429a37",
+      "source": "experiments/20261010_順位集約反復数比較/source/audit_and_report.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261007_MIA全体改善の検討__分析.py",
+      "size": 16899,
+      "sha": "9ac70646f19f967bb1694c7e8e48dc241114fb53",
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261007_MIA全体改善の検討__分析.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__共通.py",
+      "size": 7783,
+      "sha": "01c2ae8158be2a58fd8c9e04dc1d38c8460a00b5",
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__共通.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__密度比の属性と乱数を確認.py",
+      "size": 3947,
+      "sha": "79be487e09885e664a6b2e3e411d0b68c06dee8f",
+      "sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__密度比の属性と乱数を確認.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__直接密度比の探索.py",
+      "size": 3307,
+      "sha": "9ea43940d0407d200677073105c2cf10d68d05a3",
+      "sha256": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__直接密度比の探索.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__距離と分布の探索.py",
+      "size": 9105,
+      "sha": "8fc8be95afc1de2e2a01a7414d42306b643acae6",
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_朝9時までの方式探索__距離と分布の探索.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_較正の広範比較__分析.py",
+      "size": 19380,
+      "sha": "4972a007a62b4dae9772db400cecdc7c308a44df",
+      "sha256": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/20261008_MIA全体_較正の広範比較__分析.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/originals/mia_recovered_calibration__runtime.py",
+      "size": 2602,
+      "sha": "ab3b09fb9257c74789484b991b0afea9a4f626f0",
+      "sha256": "b99210a74d87f5b44a3423cf3d9851ad988f131527be6b65b9a03f695b65efd5",
+      "source": "experiments/20261010_順位集約反復数比較/source/originals/mia_recovered_calibration__runtime.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/source/run_experiment.py",
+      "size": 11878,
+      "sha": "a865bbfba39dbfacbc8297c33956e8f7d8a9bd67",
+      "sha256": "41e54054bc20ee1be024dfe4950eec4a578486fde0ae1f02319966718f2183fc",
+      "source": "experiments/20261010_順位集約反復数比較/source/run_experiment.py"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/本戦公式有用性_20261010/README.md",
+      "size": 1184,
+      "sha": "d05594e456ecee0704a75d88f4194b347ae31eb0",
+      "sha256": "43bee563cdd8ad9729e2863bd5a17c6342153472996c40f64dd0d957fa31cf59",
+      "source": "本戦公式有用性_20261010/README.md"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/本戦公式有用性_20261010/SHA256SUMS.txt",
+      "size": 422,
+      "sha": "f11c43d723d223e4b793f4a237a19679c24d92ef",
+      "sha256": "80595234eddfb83b16ea5709c4934d972fcba9373706412d1003b4954c563153",
+      "source": "本戦公式有用性_20261010/SHA256SUMS.txt"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/本戦公式有用性_20261010/main_utility_scores.csv",
+      "size": 8310,
+      "sha": "2010a0ca977dea6046ecf92d861a508b4cfa2f13",
+      "sha256": "3f8a031eadc8653eab905d5e9324cc2fcce3ae5a20f0297296b0d4b2b3625a46",
+      "source": "本戦公式有用性_20261010/main_utility_scores.csv"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/本戦公式有用性_20261010/provenance.json",
+      "size": 3069,
+      "sha": "57ec6f2af7275da0034a629f5dd685afe3191fbc",
+      "sha256": "f34984dd13e369fcece5c7e5a7ce3e5538283e0d43032398530b362a3691fcc4",
+      "source": "本戦公式有用性_20261010/provenance.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/本戦公式有用性_20261010/validation.json",
+      "size": 254,
+      "sha": "7e5287c48754157c72ffd0cc3703222da329374c",
+      "sha256": "10b80776523c106f690721486f954e127d0d716719243d7778b3e6a82a8e054b",
+      "source": "本戦公式有用性_20261010/validation.json"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/continuity_attack_review_20261010/README.md",
+      "size": 3566,
+      "sha": "d781c1521ca2caad80c018d8da84996ab8263b98",
+      "sha256": "1be3fe0e7d2c043a1bfd849827f4195f141e509fd85d29fa34835c6bc5d955e8",
+      "source": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_順位集約反復数比較/README.md",
+      "size": 2110,
+      "sha": "d89740aa66349b889ba5fe63fdd37b65b139741f",
+      "sha256": "6cea0e03ec02ed249125cebd3b34b8ffeb037477770dd6d0ac92499ed8a7e592",
+      "source": null
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/README.md",
+      "size": 19286,
+      "sha": "5dbac1ad7fa2c1cfae0c69b647c2eebd2abdb602",
+      "sha256": "eca8acd60fa5ea36ad99b3f68670b4c322a0d68e2f7927c3dbd26c6f76157cb6",
+      "source": null
+    }
+  ],
+  "unchanged_remote_paths": []
+}

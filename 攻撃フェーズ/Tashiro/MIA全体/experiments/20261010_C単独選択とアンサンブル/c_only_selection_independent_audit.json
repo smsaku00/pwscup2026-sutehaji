@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "audit_utc": "2026-10-10T04:00:33.267413+00:00",
+  "code_sha256": "193696296aff92055e74f8f9ad0ef548c1cfe4029e72684b2ec1d2256c493499",
+  "completion_sha256": "17235de92f3dc483c438999114b9002dc69e35978c1548a22bdd0241993fd173",
+  "selected_table_sha256": "ac3b29c18040fe921cb19841634ea97da9f322e7b23c68bb03719c2349025a4b",
+  "results_sha256": "bc5799ffa4248c34ec3d70627739169de7c497a370406856c8077693db7b9323",
+  "candidate_count": 43148,
+  "C_only_features": 19,
+  "outer_folds": 38,
+  "inner_folds_independently_recomputed": 686,
+  "selection_and_family_champion_indices_checked": 456,
+  "all_frozen_output_TPR_values_recomputed": 532,
+  "max_absolute_TPR_error": 0.0,
+  "source_review": {
+    "outer_target_labels_excluded_from_all_nonoracle_training": true,
+    "inner_model_selection_excludes_outer_target": true,
+    "standardization_fitted_on_training_targets": true,
+    "gate_feature_function_receives_only_C": true,
+    "base_attack_bank_contains_only_no_membership_label_families": true,
+    "team_ID_alignment_verified_in_source": true,
+    "fixed_private_and_rare_overwrite_matches_canonical_protocol": true
+  },
+  "limitations": [
+    "The oracle uses held-out labels intentionally and is not deployable.",
+    "Base-grid development historically used released preliminary labels; this retrospective LOTO exercise is not an untouched prospective test.",
+    "Bootstrap intervals are descriptive; target folds overlap and the candidate grid is adaptive.",
+    "No new base model was fitted by this audit."
+  ]
+}

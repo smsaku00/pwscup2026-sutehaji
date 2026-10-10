@@ -1,0 +1,14 @@
+{
+  "audit_utc": "2026-10-10T07:10:10.838657+00:00",
+  "status": "passed_main_source_alias_binding_and_seed_diagnostic_recalculation",
+  "source_alias_matrices_checked_against_seed08": 21,
+  "source_prediction_AST_independently_reconstructed": true,
+  "seed_diagnostic_scalar_values_recomputed": 21714,
+  "max_absolute_error": 0.0,
+  "additional_distinct_recipes": 0,
+  "owner_holdout_extra_tables_reexecuted": false,
+  "original_historical_saved_matrix_barrier_available": false,
+  "source_model_predictions_independently_refit_by_this_audit": false,
+  "main_truth_accessed": false,
+  "limitation": "The worker executed the unchanged companion prediction path and recorded bitwise equality. This audit independently reconstructs that source AST, binds its21 reported matrix hashes to existing seed08 arrays, and recomputes all seed rank/head tables. It does not independently refit model densities or replay omitted owner-holdout diagnostics."
+}

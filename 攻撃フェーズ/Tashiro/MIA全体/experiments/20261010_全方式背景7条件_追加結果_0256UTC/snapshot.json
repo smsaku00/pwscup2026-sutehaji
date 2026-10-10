@@ -1,0 +1,11 @@
+{
+  "snapshot_utc": "2026-10-10T02:56:23Z",
+  "complete_all_history": false,
+  "full_snapshot_sha256": "9eb6eac074775ea7017e241250dd6ec2d7d1c13f713a6f3e16323709919d49e6",
+  "tables": 24,
+  "primary_metric": "TPR at FPR 0.01",
+  "result_branch": "codex/mia-source-recovery-20261010",
+  "main_membership_truth_available": false,
+  "raw_inputs_included": false,
+  "individual_predictions_included": false
+}

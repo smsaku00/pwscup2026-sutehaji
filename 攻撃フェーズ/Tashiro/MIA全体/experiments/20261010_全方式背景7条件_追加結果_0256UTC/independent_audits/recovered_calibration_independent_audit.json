@@ -1,0 +1,31 @@
+{
+  "direct": {
+    "status": "passed",
+    "configurations_per_BG": 1008,
+    "backgrounds": 7,
+    "all_matrix_hashes_checked": 7056,
+    "same_exact_config_set": true,
+    "target_fpr_rows": 564480,
+    "representative_TPR_values_recomputed": 952,
+    "max_abs_TPR_error": 0.0
+  },
+  "broad": {
+    "status": "passed",
+    "source_registrations_per_BG": 96,
+    "source_proven_distinct_per_BG": 89,
+    "backgrounds": 7,
+    "phases": [
+      "prelim",
+      "main_rank_only"
+    ],
+    "all_matrix_hashes_checked": 1344,
+    "same_exact_config_set": true,
+    "prelim_target_rows": 13440,
+    "representative_TPR_values_recomputed": 5376,
+    "max_abs_TPR_error": 0.0
+  },
+  "audit_metadata": {
+    "method": "Independent tie-group ROC; source methods not imported",
+    "audit_time_utc": "2026-10-10T01:32:14.145358+00:00"
+  }
+}

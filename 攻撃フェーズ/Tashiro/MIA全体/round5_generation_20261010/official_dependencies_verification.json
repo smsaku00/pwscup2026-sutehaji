@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checked_date_utc": "2026-10-10",
+  "repository": "pwscup/pwscup2026-kit",
+  "ref": "main",
+  "official_fetch_method": "GitHub fetch_file repository path + ref main; base64",
+  "files": [
+    {
+      "repository_path": "starter/src/pwscup2026/kit/kit_config.yaml",
+      "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/starter/src/pwscup2026/kit/kit_config.yaml",
+      "official_git_blob_sha": "6baa0e74c8c6d6ed2f8bbf0002b6cf65f36b6b17",
+      "local_git_blob_sha": "6baa0e74c8c6d6ed2f8bbf0002b6cf65f36b6b17",
+      "local_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml",
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+      "bytes": 3438,
+      "byte_equal": true
+    },
+    {
+      "repository_path": "starter/src/pwscup2026/common/submission_schema.py",
+      "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/starter/src/pwscup2026/common/submission_schema.py",
+      "official_git_blob_sha": "79f079f27fbd5a29c0cd7b3a38779dc90b670294",
+      "local_git_blob_sha": "79f079f27fbd5a29c0cd7b3a38779dc90b670294",
+      "local_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+      "bytes": 13316,
+      "byte_equal": true
+    }
+  ],
+  "validator_body_already_verified": true,
+  "main_audits_rerun": false,
+  "submission_originals_modified": false,
+  "token_content_logged": false,
+  "token_hash_recorded": false,
+  "temporary_fetch_urls_recorded": false
+}

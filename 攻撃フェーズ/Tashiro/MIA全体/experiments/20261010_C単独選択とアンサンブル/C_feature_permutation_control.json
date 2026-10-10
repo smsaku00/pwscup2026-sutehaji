@@ -1,0 +1,18 @@
+{
+  "added_after_primary_results": true,
+  "scope": "18 targets, excluding1_2 in both training and evaluation",
+  "strategy": "fixed k3 localweight.5; no nested retuning",
+  "shuffled": "C feature vectors assigned to target identities",
+  "permutations": 199,
+  "seed": 20261010,
+  "observed_mean_tpr": 0.013162393162393165,
+  "permutation_mean_tpr_mean": 0.012939689902503975,
+  "permutation_mean_tpr_median": 0.012997784108895221,
+  "permutation_p025": 0.0022222222222222222,
+  "permutation_p975": 0.023879550490661598,
+  "permutations_ge_observed": 89,
+  "exploratory_one_sided_tail_fraction": 0.45,
+  "not_confirmatory_p_value": true,
+  "limitation": "Candidate bank historical adaptation and target nonexchangeability remain; this diagnostic cannot establish null or alternative scientifically",
+  "elapsed_seconds": 1.4237258434295654
+}

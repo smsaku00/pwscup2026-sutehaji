@@ -1,0 +1,1210 @@
+{
+  "files": [
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py",
+      "imports": [
+        ".result",
+        "__future__",
+        "numpy"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/result.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum",
+        "math"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/utility.py",
+      "imports": [
+        "..common",
+        "..rare",
+        ".result",
+        "__future__",
+        "dataclasses",
+        "lifelines",
+        "lifelines.exceptions",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.model_selection",
+        "statsmodels.api",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "platform",
+        "pwscup2026.scoring.attack_score",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "pwscup2026/kit/codabench/scoring_io.py",
+        "pwscup2026/scoring/attack_score.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "F_mia.csv",
+        "result.txt",
+        "チーム内の同時確率.json",
+        "モデル比較.json",
+        "入力ファイルSHA256.json",
+        "各組のモデル内確率.json",
+        "実行記録.json",
+        "期待希少TPRと順位.json",
+        "検証結果.json",
+        "第4回目/F_mia.csv",
+        "距離と対応の診断.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "fractions",
+        "importlib.util",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "16_MIA希少の制約付き同時確率/分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "C_20.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "Team20の45状態と採点.json",
+        "aia_challenge_5.csv",
+        "主設定の近傍別寄与.json",
+        "入力ファイルSHA256.json",
+        "同条件の距離と点密度比.json",
+        "固定条件と前処理.json",
+        "実行記録.json",
+        "希少24人の全設定順位.json",
+        "希少スコアの範囲.json",
+        "検証結果.json",
+        "設定比較.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "importlib.util",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pwscup2026.scoring.attack_score",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "20_Team20希少のGenLRA検証/分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "5_20260906_Codex/F_mia.csv",
+        "C_5.csv",
+        "F_mia.csv",
+        "MIA/希少24人のスコア.json",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "aia_challenge_5.csv",
+        "result.txt",
+        "既存の比較結果.jsonは上書きしません。--saveを外すと読み取り専用で再検証できます。",
+        "既検討の希少案.json",
+        "比較結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "importlib.util",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "分析.py",
+        "検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "aia_challenge_5.csv",
+        "比較結果.json",
+        "比較結果を独立照合し、全体・希少同時変更の採点条件を検査する。\n\npython3 -B 検証.py --save  # このフォルダの追加検証結果.jsonだけを新規作成\npython3 -B 検証.py         # 再照合のみ（ファイルは更新しない）\n予想時間5〜30秒。仮ラベルは採点の単体テストだけに使用し、攻撃性能として報告しない。\n",
+        "追加検証結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "importlib.util",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "Gen-LRAの7/9/10属性比較。分析JSON以外は生成・更新しない。\n\n実行: python3 -B 分析.py --save   # 比較結果.jsonを新規保存（上書き拒否）\n再確認: python3 -B 分析.py        # ファイルを一切書き込まない\n必要: NumPy, pandas。Codex同梱Pythonで実行可能。通信なし。\n計算時間の予想: 20〜90秒。20対象の9属性と喫煙の分解、希少の同時分布を計算。\n7属性・10属性は分析21の検証済み結果を、入力ハッシュを確認して再利用する。\n各対象終了時に実測時間と残り計算時間の目安を表示。\n\n主比較: 7属性、7+BMI+FPGの9属性、9+喫煙の10属性。h倍率1、k=10、rho=.98。\n9/10は数値7列とhが同じ。7/9は自動hも変わり、純粋な固定帯域比較ではない。\n喫煙の分解では近傍のみ・カーネルのみを替えた診断値を計算するが、提出案にはしない。\n正解ラベルがない部分のTPRは推定済みと呼ばない。新しい個別会員を確定しない。\n",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "aia_challenge_5.csv",
+        "result.txt",
+        "比較結果.json",
+        "追加検証結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "importlib.util",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "python_path_literals": [
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "9属性の独立再計算、9対10の同一割当での比較、全体・希少の組合せ検査。\n\npython3 -B 検証.py --save  # 検証結果.jsonを新規保存。既存ファイルは上書きしない。\npython3 -B 検証.py         # 読み取り専用の再照合\n予想時間5〜40秒。NumPy・pandasのみ。仮ラベルは実装検査で、性能評価ではない。\n",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "aia_challenge_5.csv",
+        "検証結果.json",
+        "比較結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/gen_lra.py",
+      "imports": [
+        "__future__",
+        "math",
+        "numpy",
+        "pandas",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/test_gen_lra.py",
+      "imports": [
+        "gen_lra",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.neighbors",
+        "unittest",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "gen_lra",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "*.py",
+        "https://github.com/smsaku00/pwscup2026-sutehaji/blob/a465f1051d8f002f3364d38f311d527608a1957e/攻撃フェーズ/Yamazaki/gen_lra/run_gen_lra.py",
+        "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+        "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+        "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+        "参照コード/attack_score_20260928.py",
+        "参照コード/validate_20260928.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/F_mia.csv。CodaBenchには未提出。",
+        "A_bg.csv",
+        "B.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_*/B_self.csv",
+        "mia_columns.json",
+        "pool_ids_5.csv",
+        "requirements.txt",
+        "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/比較結果.json",
+        "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/比較結果.json",
+        "予備戦_対象別評価.csv",
+        "予備戦_旧生スコア照合.csv",
+        "予備戦_集約評価.csv",
+        "作成時検証.json",
+        "入力SHA256.json",
+        "入力記録.json",
+        "出力SHA256.json",
+        "実行記録.json",
+        "方式間の順位比較.csv",
+        "本戦_希少24人の順位.csv",
+        "本戦_生スコア.csv",
+        "本戦_非会員163人.csv",
+        "本戦_非希少上位20人.csv",
+        "計算条件.json",
+        "配布*/PWSCup2026_final_team28_*/B_self.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "imports": [
+        ".result",
+        "__future__",
+        "numpy"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "imports": [
+        "..common",
+        "..common.submission_schema",
+        "..rare",
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "sys",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "B_practice.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "`dist_dir` が本番の真値ディレクトリか（`tokens.csv` があるか）。\n\n    `scoring_io.is_production_reference` と同じ目印。検証器は採点アダプタ（codabench）に\n    依存しない層なので、同じ判定をここにも置く。\n    ",
+        "`token.txt` が登録済みトークンかを検査する（本番の reference_data に対してのみ効く）。\n\n    `dist_dir` に `tokens.csv`（列 `token,team_id`）があれば本番参照データ＝一致を要求する。\n    無ければ練習・参加者手元なので**何も検査しない**（参加者は tokens.csv を持たない）。\n\n    未知のトークンでの提出は**提出回数を消費しません**。CodaBench 側で \"Failed\" に\n    する必要があるため、採点ではなく**検証で落とします**（`run._run` が非ゼロ終了します）。\n    ルールブック §5.5 と同じ扱いです。★正しいトークンが何かは示しません\n    （総当たりの手掛かりにしないため）。\n    ",
+        "aia_challenge_*.csv",
+        "aia_truth_*.csv",
+        "kit_config.yaml",
+        "mia_columns.json",
+        "pool_ids_attacker.csv",
+        "schema.json",
+        "token.txt",
+        "token.txt: 1行でない（非空",
+        "token.txt: UTF-8でデコードできない",
+        "token.txt: 形式不一致（",
+        "token.txt: 登録されているトークンと一致しません（配布物に同梱された token.txt をそのまま入れてください）",
+        "tokens.csv",
+        "採点・検証パラメータ（既定＝パッケージ同梱の kit_config.yaml）。別のファイルを指定することもできる。",
+        "提出種を判定できない（C.csv / F_mia.csv+F_aia.csv のいずれも直下に無い）: ",
+        "本番で、提出者の検証に要る参照が揃っていなければ理由を返す（揃っていれば空）。\n\n    本番（`tokens.csv` がある真値ディレクトリ）で参照が見つからないときは、検査を黙って省かずに\n    **検証で落とす**（Failed＝提出回数を消費しない・ルールブック §5.5）。黙って省くと、\n    行数や行キーの検査が効いていないことに気づけないため。\n    提出者が解決できない（未知トークン）ときは `check_token_registered` が先に落とすので何もしない。\n    練習・参加者の手元（`tokens.csv` が無い）も何もしない。\n    ",
+        "本番の真値ディレクトリの `tokens.csv` で token から team_id を引く。練習・未知トークンは None。\n\n    `scoring_io.resolve_team_id` と同じ引き方（前後の空白を落として完全一致・重複時は後の行）。\n    ",
+        "配布物から検証に使う参照を読む: mia_columns（ターゲット集合）とAIAチャレンジ集合。\n\n    渡されたディレクトリを読むだけで、置き場所には依存しない。\n\n    本番の真値ディレクトリはチーム番号つきの名前（`B_{id}.csv`・`pool_ids_{id}.csv`・\n    `aia_truth_{id}.csv`）で、練習用の固定名（`B_practice.csv`・`pool_ids_attacker.csv`・\n    `aia_challenge_*.csv`）を持たない。`team_id`（提出者。`lookup_team_id` で引く）を渡すと、\n    C の行数（|C|==|B_i|）と F_mia の行キーを提出者のチーム番号つきの名前で読む。\n    チャレンジ集合は、`aia_challenge_*.csv` が無ければ `aia_truth_*.csv` の `challenge_row_id` から作る\n    （配布する `aia_challenge_<k>.csv` と同じ集合）。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/検証.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "F_mia.csv",
+        "入力SHA256.json",
+        "出力SHA256.json",
+        "本戦_希少24人の順位.csv",
+        "本戦_生スコア.csv",
+        "本戦_非会員163人.csv",
+        "計算条件.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "本戦の順位安定性.csv",
+        "背景再標本化.json",
+        "背景再標本化_対象別比較.csv",
+        "背景再標本化_集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "importlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "zoneinfo",
+        "分析",
+        "参照データの検討"
+      ],
+      "python_path_literals": [
+        "参照データの検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "予備戦の上位候補診断.csv",
+        "低FPR_対象別比較.csv",
+        "低FPR_集約比較.csv",
+        "低FPR再集計.json",
+        "参照人数.csv",
+        "本戦の上位候補診断.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/公開準備.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "*.py",
+        ".py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "*.csv",
+        ".csv",
+        ".json",
+        "F_aia.csv",
+        "F_mia.csv",
+        "token.txt",
+        "目標と公式結果.json",
+        "集計検証結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [
+        "ブートストラップの検討.py",
+        "低FPRと対象偏りの検討.py",
+        "分析.py",
+        "参照データの検討.py",
+        "固定候補の感度検証.py",
+        "学習による順位補正の検討.py",
+        "対照を揃えた補助検証.py",
+        "属性部分集合の検討.py",
+        "追加検討.py",
+        "非会員を使う順位較正の検討.py",
+        "非会員較正の感度検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "主要候補の比較.csv",
+        "低FPR結果/低FPR再集計.json",
+        "参照結果_拡張版/参照_集約比較.csv",
+        "参照結果_拡張版/参照再集計.json",
+        "固定候補の感度結果/感度検証.json",
+        "固定候補の感度結果/感度検証_集約比較.csv",
+        "固定候補の背景感度.csv",
+        "学習結果_順位校正版/学習_集約比較.csv",
+        "学習結果_順位校正版/学習再集計.json",
+        "実行記録.json",
+        "属性部分集合結果/部分集合再集計.json",
+        "結果/再集計.json",
+        "背景再標本化結果/背景再標本化.json",
+        "補助結果/補助検証.json",
+        "追加結果_最終版/予備戦_追加集約比較.csv",
+        "追加結果_最終版/追加再集計.json",
+        "非会員較正の感度結果/較正感度_集約比較.csv",
+        "非会員較正の感度結果/較正感度検証.json",
+        "非会員較正結果/非会員較正.json",
+        "非会員較正結果/非会員較正_集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.covariance",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "C_*.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "pool_ids_5.csv",
+        "予備戦_対象別比較.csv",
+        "予備戦_集約比較.csv",
+        "再集計.json",
+        "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/予備戦_対象別評価.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.model_selection",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "参照_対象別比較.csv",
+        "参照_集約比較.csv",
+        "参照の人数.csv",
+        "参照再集計.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照結果/実行時の参照データの検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "参照_対象別比較.csv",
+        "参照_集約比較.csv",
+        "参照の人数.csv",
+        "参照再集計.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析",
+        "参照データの検討"
+      ],
+      "python_path_literals": [
+        "参照データの検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "感度検証.json",
+        "感度検証_対象別比較.csv",
+        "感度検証_集約比較.csv",
+        "背景の抽出条件.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "交差検証の分割.csv",
+        "学習_対象別比較.csv",
+        "学習_集約比較.csv",
+        "学習再集計.json",
+        "標準化後の係数.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習結果/実行時の学習による順位補正の検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "交差検証の分割.csv",
+        "学習_対象別比較.csv",
+        "学習_集約比較.csv",
+        "学習再集計.json",
+        "標準化後の係数.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "対照一致_対象別比較.csv",
+        "対照一致_集約比較.csv",
+        "補助検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "部分集合_対象別比較.csv",
+        "部分集合_集約比較.csv",
+        "部分集合再集計.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "ast",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "statistics",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "*.py",
+        "分析.py",
+        "記録と図の作成.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "低FPR結果/低FPR_対象別比較.csv",
+        "低FPR結果/低FPR_集約比較.csv",
+        "共有集計_確認版/主要候補の比較.csv",
+        "共有集計_確認版/実行記録.json",
+        "参照結果_拡張版/参照_対象別比較.csv",
+        "参照結果_拡張版/参照_集約比較.csv",
+        "固定候補の感度結果/感度検証_対象別比較.csv",
+        "固定候補の感度結果/感度検証_集約比較.csv",
+        "学習結果_順位校正版/学習_対象別比較.csv",
+        "学習結果_順位校正版/学習_集約比較.csv",
+        "属性部分集合結果/部分集合_対象別比較.csv",
+        "属性部分集合結果/部分集合_集約比較.csv",
+        "掲載ファイル一覧.json",
+        "結果/予備戦_対象別比較.csv",
+        "結果/予備戦_集約比較.csv",
+        "背景再標本化結果/背景再標本化_対象別比較.csv",
+        "背景再標本化結果/背景再標本化_集約比較.csv",
+        "補助結果/対照一致_対象別比較.csv",
+        "補助結果/対照一致_集約比較.csv",
+        "追加結果_最終版/予備戦_追加対象別比較.csv",
+        "追加結果_最終版/予備戦_追加集約比較.csv",
+        "非会員較正の感度結果/較正低FPR_対象別比較.csv",
+        "非会員較正の感度結果/較正低FPR_集約比較.csv",
+        "非会員較正の感度結果/較正感度_対象別比較.csv",
+        "非会員較正の感度結果/較正感度_集約比較.csv",
+        "非会員較正結果/非会員較正_対象別比較.csv",
+        "非会員較正結果/非会員較正_集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/結果/実行時の分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.covariance",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "C_*.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "pool_ids_5.csv",
+        "予備戦_対象別比較.csv",
+        "予備戦_集約比較.csv",
+        "再集計.json",
+        "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/予備戦_対象別評価.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [
+        "ブートストラップの検討.py",
+        "低FPRと対象偏りの検討.py",
+        "分析.py",
+        "参照データの検討.py",
+        "固定候補の感度検証.py",
+        "学習による順位補正の検討.py",
+        "対照を揃えた補助検証.py",
+        "属性部分集合の検討.py",
+        "追加検討.py",
+        "非会員を使う順位較正の検討.py",
+        "非会員較正の感度検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "主要候補の比較.csv",
+        "低FPR結果/低FPR再集計.json",
+        "参照結果_拡張版/参照_集約比較.csv",
+        "参照結果_拡張版/参照再集計.json",
+        "固定候補の感度結果/感度検証.json",
+        "固定候補の感度結果/感度検証_集約比較.csv",
+        "固定候補の背景感度.csv",
+        "学習結果_順位校正版/学習_集約比較.csv",
+        "学習結果_順位校正版/学習再集計.json",
+        "実行記録.json",
+        "属性部分集合結果/部分集合再集計.json",
+        "結果/再集計.json",
+        "背景再標本化結果/背景再標本化.json",
+        "補助結果/補助検証.json",
+        "追加結果_最終版/予備戦_追加集約比較.csv",
+        "追加結果_最終版/追加再集計.json",
+        "非会員較正の感度結果/較正感度_集約比較.csv",
+        "非会員較正の感度結果/較正感度検証.json",
+        "非会員較正結果/非会員較正.json",
+        "非会員較正結果/非会員較正_集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.optimize",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "予備戦_追加対象別比較.csv",
+        "予備戦_追加集約比較.csv",
+        "追加再集計.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加結果/実行時の追加検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "予備戦_追加対象別比較.csv",
+        "予備戦_追加集約比較.csv",
+        "追加再集計.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "zoneinfo",
+        "分析"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "較正に使った人数.csv",
+        "非会員較正.json",
+        "非会員較正_対象別比較.csv",
+        "非会員較正_集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.metrics",
+        "time",
+        "zoneinfo",
+        "低FPRと対象偏りの検討",
+        "分析",
+        "固定候補の感度検証",
+        "非会員を使う順位較正の検討"
+      ],
+      "python_path_literals": [
+        "低FPRと対象偏りの検討.py",
+        "固定候補の感度検証.py",
+        "非会員を使う順位較正の検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "本戦の較正順位診断.csv",
+        "背景の抽出条件.csv",
+        "較正低FPR_対象別比較.csv",
+        "較正低FPR_集約比較.csv",
+        "較正感度_対象別比較.csv",
+        "較正感度_集約比較.csv",
+        "較正感度検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開背景との属性単位一致.py",
+        "公開背景三分割の独立非会員診断.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "Atestの対象fold別CRPSと単CDF診断.csv",
+        "Atestの対象fold別通常順位閾値超過.csv",
+        "一致層別の三fold対象exposure集約.csv",
+        "一致層別の単CDFとCRPS集約.csv",
+        "一致層別の通常順位閾値超過.csv",
+        "事前固定条件.json",
+        "元三分割対照と同一参照数値QA.csv",
+        "公開C支持へのAtest一致三flag組合せ件数.csv",
+        "完了記録.json",
+        "実行記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pathlib",
+        "scipy.spatial.distance",
+        "sklearn.cluster",
+        "time",
+        "共通",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "公開データでの設定選択.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "共通",
+        "別系統特徴の学習",
+        "特徴を外して学習を確認"
+      ],
+      "python_path_literals": [
+        "特徴を外して学習を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "交差検証分割.csv",
+        "代表特徴の再現結果/代表特徴.npz",
+        "公開特徴のフェーズ識別.csv",
+        "内部フェーズ識別値.npz",
+        "実行記録.json",
+        "本戦の順位診断結果/内部特徴と順位.npz",
+        "特徴間相関の変化.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/他対象との競合を滑らかに補正.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "内部順位キャッシュ.npz",
+        "実行記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pathlib",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "scipy.stats",
+        "公開データ分類器の探索",
+        "共通",
+        "別系統特徴の学習",
+        "密度比の属性と乱数を確認",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "代表特徴を計算.py",
+        "公開データ分類器の探索.py",
+        "別系統特徴の学習.py",
+        "密度比の属性と乱数を確認.py",
+        "直接密度比の探索.py",
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.optimize",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.preprocessing",
+        "time",
+        "共通",
+        "特徴を外して学習を確認"
+      ],
+      "python_path_literals": [
+        "低FPRを重視する学習.py",
+        "特徴を外して学習を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "交差検証分割.csv",
+        "代表特徴の再現結果/代表特徴.npz",
+        "実行記録.json",
+        "実験方針.json",
+        "最適化の収束.csv",
+        "進捗.json"
+      ],
+      "absolute_path_literals": []
+    }
+  ]
+}

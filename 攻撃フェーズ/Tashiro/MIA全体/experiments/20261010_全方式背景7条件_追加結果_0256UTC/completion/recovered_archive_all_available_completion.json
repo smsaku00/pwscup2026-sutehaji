@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_AVAILABLE_ARCHIVE_AND_SIX_FOLLOWUPS",
+  "completed_at_utc": "2026-10-10T02:20:04Z",
+  "source_recipe_ids": 107,
+  "background_dependent_recipes": 105,
+  "background_dependent_conditions": 735,
+  "background_independent_controls": 2,
+  "control_conditions": 14,
+  "total_method_background_conditions": 749,
+  "target_rows": 14623,
+  "full20_recipes": 104,
+  "source_native_three_target_recipes": 3,
+  "three_target_ids": [
+    24,
+    26,
+    29
+  ],
+  "rare_secondary_recipes": 26,
+  "rare_secondary_conditions": 182,
+  "official_metric_values_checked": 29246,
+  "official_metric_max_error": 0,
+  "independent_composition_values_checked": 587440,
+  "independent_composition_max_error": 0,
+  "remaining_generator_missing_recipes": [
+    "legacy_submission_1",
+    "legacy_submission_2",
+    "legacy_saved_過去のコード__mia_domias__zhou__F_mia_zhou"
+  ],
+  "historical_baseline_tpr_exact_recipes": 94,
+  "historical_baseline_tpr_mismatching_recipes": 13,
+  "historical_baseline_auc_exact_recipes": 73,
+  "historical_baseline_auc_mismatching_recipes": 31,
+  "historical_baseline_auc_unavailable_recipes": 3,
+  "main_target_labels_used": false,
+  "historical_query_outcomes_used_by": [
+    "legacy_submission_7"
+  ],
+  "r2_owned_elsewhere": "fixed22 policy panel",
+  "scope": "available recovered archive, not all historical methods across other panels"
+}

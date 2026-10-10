@@ -1,0 +1,280 @@
+{
+  "after_primary_result": true,
+  "absolute_tie_tolerance": 1e-12,
+  "tie_rule": "first candidate or option within 1e-12 of maximum; P01 wins guarded-policy ties",
+  "passed": true,
+  "outer_views": 54,
+  "outer_plus_inner_policy_selections_checked": 12636,
+  "checks": [
+    {
+      "team": 3,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 3,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 3,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 4,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 4,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 4,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 6,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 6,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 6,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 7,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 7,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 7,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 8,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 8,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 8,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 9,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 9,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 9,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 10,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 10,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 10,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 12,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 12,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 12,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 13,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 13,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 13,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 17,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 17,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 17,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 18,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 18,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 18,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 19,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 19,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 19,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 20,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 20,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 20,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 22,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 22,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 22,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 23,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 23,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 23,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 24,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 24,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 24,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 26,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 26,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 26,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 29,
+      "view": "C",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 29,
+      "view": "U",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    },
+    {
+      "team": 29,
+      "view": "CU",
+      "all_outer_and_inner_argmax_match_independent_weighted_dot": true
+    }
+  ]
+}

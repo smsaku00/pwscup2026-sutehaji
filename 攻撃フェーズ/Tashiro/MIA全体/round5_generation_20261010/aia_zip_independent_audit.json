@@ -1,0 +1,409 @@
+{
+  "status": "PASS",
+  "submitted": false,
+  "aia_original_modified": false,
+  "mia_original_modified": false,
+  "token_original_modified": false,
+  "aia_source": {
+    "repository": "smsaku00/pwscup2026-sutehaji",
+    "commit": "b023ca627fb664ffb0f4b26f34ca6a4448b26418",
+    "path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+    "git_blob_sha": "bade408752830d55a634bc1248bd49694c7664a1",
+    "sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "bytes": 71363
+  },
+  "mia_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+  "aia_checks": {
+    "columns": [
+      "target_k",
+      "challenge_row_id",
+      "time_hat"
+    ],
+    "rows": 7172,
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "target_count": 22,
+    "matches_mia_target_set": true,
+    "rows_per_target": 326,
+    "duplicate_pairs": 0,
+    "integer_finite_target_k_and_challenge_row_id": true,
+    "all_time_hat_finite_nonnegative": true,
+    "time_hat_min": 9.5,
+    "time_hat_max": 11.0,
+    "public_challenges": {
+      "0": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "1": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "2": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "3": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "4": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "5": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "6": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "7": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "8": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "9": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "10": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "11": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "12": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "13": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "14": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "15": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "16": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "17": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "22": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "25": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "26": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      },
+      "27": {
+        "rows": 326,
+        "record_id_set_matches": true,
+        "row_order_matches_public_challenge": true
+      }
+    },
+    "row_order_preserved_in_both_archives": true
+  },
+  "main_team28_token_provenance": {
+    "source": "本戦team28参加者配布folderのtoken.txt",
+    "same_folder_B_self_sha256_matches_pinned_main": true,
+    "team_id": 28,
+    "format_pass": true,
+    "byte_match_with_zip": true,
+    "token_content_logged": false,
+    "token_hash_recorded": false
+  },
+  "reference": {
+    "kind": "participant public main distribution",
+    "team_id": 28,
+    "attacker_record_ids_from": "本戦team28配布B_self.csv",
+    "attacker_record_id_count": 1049,
+    "aia_challenge_targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27,
+      28
+    ],
+    "csv_targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "individual_truth_used": false,
+    "token_registry_accessed": false
+  },
+  "official_validation": {
+    "package_ok": true,
+    "mia_ok": true,
+    "aia_ok": true,
+    "zip_mia_ok": true,
+    "zip_aia_ok": true,
+    "errors": [],
+    "validator_git_blob_sha": "07284c2239bfcd98dbadd17c69345490461718dc",
+    "validator_sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+    "kit_config_sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+  },
+  "official_private_zip": {
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv",
+      "token.txt"
+    ],
+    "member_count": 3,
+    "crc_pass": true,
+    "mia_original_byte_match": true,
+    "aia_original_byte_match": true,
+    "mia_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "aia_sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "token_original_byte_match": true,
+    "token_content_logged": false,
+    "token_hash_recorded": false,
+    "GitHub_upload_allowed": false
+  },
+  "public_no_token_zip": {
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv"
+    ],
+    "member_count": 2,
+    "crc_pass": true,
+    "mia_original_byte_match": true,
+    "aia_original_byte_match": true,
+    "mia_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "aia_sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "token_file_present": false,
+    "GitHub_upload_allowed": true,
+    "public_archive_is_official_submission": false,
+    "zip_sha256": "03ab49c50551aac17b6d3f547393c7ee7b11c6830ca86ddfe19c8f351fb0f4a7"
+  },
+  "input_sha256": {
+    "aia": {
+      "path": "/tmp/mia_round5_aia/F_aia.csv",
+      "sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c"
+    },
+    "mia": {
+      "path": "攻撃フェーズ/MIA/5回目/F_mia.csv",
+      "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a"
+    },
+    "B_self": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1"
+    },
+    "mia_columns": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json",
+      "sha256": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181"
+    },
+    "validator": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3"
+    },
+    "aia_challenge_0": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_0.csv",
+      "sha256": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854"
+    },
+    "aia_challenge_1": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_1.csv",
+      "sha256": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3"
+    },
+    "aia_challenge_2": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_2.csv",
+      "sha256": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d"
+    },
+    "aia_challenge_3": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_3.csv",
+      "sha256": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962"
+    },
+    "aia_challenge_4": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_4.csv",
+      "sha256": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b"
+    },
+    "aia_challenge_5": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_5.csv",
+      "sha256": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02"
+    },
+    "aia_challenge_6": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_6.csv",
+      "sha256": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b"
+    },
+    "aia_challenge_7": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_7.csv",
+      "sha256": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984"
+    },
+    "aia_challenge_8": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_8.csv",
+      "sha256": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238"
+    },
+    "aia_challenge_9": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_9.csv",
+      "sha256": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a"
+    },
+    "aia_challenge_10": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_10.csv",
+      "sha256": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd"
+    },
+    "aia_challenge_11": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_11.csv",
+      "sha256": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a"
+    },
+    "aia_challenge_12": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_12.csv",
+      "sha256": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac"
+    },
+    "aia_challenge_13": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_13.csv",
+      "sha256": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9"
+    },
+    "aia_challenge_14": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_14.csv",
+      "sha256": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad"
+    },
+    "aia_challenge_15": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_15.csv",
+      "sha256": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3"
+    },
+    "aia_challenge_16": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_16.csv",
+      "sha256": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5"
+    },
+    "aia_challenge_17": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_17.csv",
+      "sha256": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57"
+    },
+    "aia_challenge_22": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_22.csv",
+      "sha256": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00"
+    },
+    "aia_challenge_25": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_25.csv",
+      "sha256": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c"
+    },
+    "aia_challenge_26": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_26.csv",
+      "sha256": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07"
+    },
+    "aia_challenge_27": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_27.csv",
+      "sha256": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05"
+    },
+    "aia_challenge_28": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv",
+      "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26"
+    },
+    "kit_config": {
+      "path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml",
+      "sha256": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+    }
+  },
+  "auditor_sha256": "fdf71cbe1acbfe9b32e24f79ff2dc74833627ab0dac997b761019226a6d69c29",
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "seed": "deterministic; no sampling"
+  },
+  "limits": [
+    "公式token登録はサーバー側のtokens.csvが必要。本検証は本戦28配布出典・形式・byte同一性まで。",
+    "token入り公式ZIPはローカル/Library用。GitHubへの掲載対象は無token ZIPと公開検証資料。",
+    "大会送信・採点は行っていない。AIA推定精度とMIA所属精度は未知の本戦正解で未評価。"
+  ]
+}

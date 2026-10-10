@@ -1,0 +1,165 @@
+{
+  "status": "passed_for_all_completed_family_jobs",
+  "audit_time_utc": "2026-10-10T02:18:15.571570+00:00",
+  "family_background_jobs_checked": 21,
+  "matrix_files_sha256_checked": 21,
+  "method_background_conditions_checked": 42,
+  "all_completed_target_rows_recomputed": 840,
+  "TPR_and_AUC_values_recomputed": 1680,
+  "maximum_absolute_error": 0.0,
+  "BG_independent_controls_verified_invariant": {},
+  "method": "Independent tie-group ROC and trapezoidal AUC on native full1049 frozen confidence, no prediction/scorer modules imported",
+  "scope": "Exactly completed recovered follow-up recipes on all20 targets. R1 historical metrics are separately validated; raw historical score-byte equivalence is not established. Gen composers preserve their original fixed historical confidence components.",
+  "coverage_at_audit": {
+    "scope": "Recovered R1 and historical Gen posthoc compositions only; includes completed family jobs."
+  },
+  "jobs": [
+    {
+      "background": "main",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "e63e48910fc716025551fda5e622da913a14f6f08f9480024f4b2b09b2aea0b3"
+    },
+    {
+      "background": "main",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "9d7e7e602d14872a92116695fdafa689fffe1bc67dabe665335cb1d76ce9f94d"
+    },
+    {
+      "background": "main",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "d7709d4dfa1bdae8b4655b681a7c320d02878eed898564a7e6ab6921376db8ae"
+    },
+    {
+      "background": "prelim",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "48e0702ae06c4487748f7ca311dc415d038fa50313f7f0e58f4456c0b885b8a8"
+    },
+    {
+      "background": "prelim",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "4d5899450c1326d8d26c53bf8cc5da58e6580566e500142b48db4c88ba4eb890"
+    },
+    {
+      "background": "prelim",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "bea150ab09cf1f72df0ce7b9d934f05fa5008ecc05c23d7c60f54033f1f1e673"
+    },
+    {
+      "background": "prelim+main",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "1391ab1d0ce5000fbb384f961771b417c71f3a6909a93e3c641888a4a8e8cc4c"
+    },
+    {
+      "background": "prelim+main",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "e87aa98c4c83b0366190c335b2a1772c21eb8310b3da987d1554a9347f236739"
+    },
+    {
+      "background": "prelim+main",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "68a48714a4abd3f575f6702a93952e5aebf57ad8f32d0d3215c0013523cf3a20"
+    },
+    {
+      "background": "starter",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "9f7f01a59e28fa8e2781c2866616cdaf18894dc7911c16290a9bf06830bfaae8"
+    },
+    {
+      "background": "starter",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "c2a0f701d04d74c9b2c40f197c02ce39f580754b7b126597dcac4788b744c372"
+    },
+    {
+      "background": "starter",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "cb98c17141a2d835ed6650642a52e410fc3bea334278956fa94736f51d8cac5d"
+    },
+    {
+      "background": "starter+main",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "762c08dd296a67dbbbcbaa89da202b0297c012ef048ab4dece71d534ee66b629"
+    },
+    {
+      "background": "starter+main",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "a2783302aa265aad39cd5f89ef9cda30a77f0b998979f8d94f0c92c444f824cd"
+    },
+    {
+      "background": "starter+main",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "e4379a5c6774d4a3ee5058f6482776563acd2f91f8dfdf409bd490b925cc6a0a"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "b3898f911173f3f36b2c7f8c69910bf81f37642340a1da38efdda2ed97bbf805"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "294ea87f224cd8d5cc7ee1fc3946696a9f99748c97ad9061756dc5daec80c18a"
+    },
+    {
+      "background": "starter+prelim",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "752cff20e817f299d60f3d02fe4c3cccff993fe2e92bc812f0596bb33d7480e4"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "composites",
+      "methods": 3,
+      "targets": 20,
+      "freeze_sha256": "c1543abce6f36b17bd37170f18b8b7df93b23e2c6b73a3fcaa3a189ab0f54a3c"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "r1_followup",
+      "methods": 2,
+      "targets": 20,
+      "freeze_sha256": "8ad22054a7868edfdc57c62244a16c30ce8f21752ec6d3b94570c10d9c2a4f04"
+    },
+    {
+      "background": "starter+prelim+main",
+      "family": "submission7",
+      "methods": 1,
+      "targets": 20,
+      "freeze_sha256": "fac009c5dfeb13f499546ef6f02b7f68675a5164565a1de01f2228fcba025cdf"
+    }
+  ]
+}

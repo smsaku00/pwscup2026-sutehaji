@@ -1,0 +1,8 @@
+{
+  "tested_placements": 16,
+  "unique_round6_7_pairs": 16,
+  "collision_groups": 0,
+  "worst_after_round6": 4,
+  "worst_after_round7": 1,
+  "collisions": []
+}

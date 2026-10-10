@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "truth_labels_parsed": false,
+  "tests": [
+    {
+      "test": "background_load",
+      "subset": "starter",
+      "rows": 5143,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "prelim",
+      "rows": 5143,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "main",
+      "rows": 5143,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "starter+prelim",
+      "rows": 10286,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "starter+main",
+      "rows": 10286,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "prelim+main",
+      "rows": 10286,
+      "passed": true
+    },
+    {
+      "test": "background_load",
+      "subset": "starter+prelim+main",
+      "rows": 15429,
+      "passed": true
+    },
+    {
+      "test": "phase_load",
+      "phase": "prelim",
+      "targets": 20,
+      "normal": 875,
+      "passed": true
+    },
+    {
+      "test": "phase_load",
+      "phase": "main",
+      "targets": 22,
+      "normal": 875,
+      "passed": true
+    },
+    {
+      "test": "modified_predictions_rejected",
+      "passed": true
+    },
+    {
+      "test": "truth_load_rejected_before_invalid_freeze",
+      "passed": true
+    }
+  ]
+}

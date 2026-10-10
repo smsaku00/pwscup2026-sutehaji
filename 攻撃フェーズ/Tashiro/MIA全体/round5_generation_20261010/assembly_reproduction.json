@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "two_assemblies_byte_identical": {
+    "differences.csv": true,
+    "assembly_validation.json": true,
+    "F_mia.csv": true,
+    "MIA_round5_components.zip": true
+  },
+  "csv_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+  "submitted": false,
+  "scope": "同一検証済入力からの組立再現。統計fit全体の二度目再実行とは別。"
+}

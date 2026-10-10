@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "submitted": false,
+  "attacker_team_id": 28,
+  "official_validator_git_blob_sha": "07284c2239bfcd98dbadd17c69345490461718dc",
+  "official_checks": {
+    "package": true,
+    "MIA": true,
+    "AIA": true
+  },
+  "aia_source": {
+    "commit": "b023ca627fb664ffb0f4b26f34ca6a4448b26418",
+    "path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+    "git_blob_sha": "bade408752830d55a634bc1248bd49694c7664a1",
+    "bytes": 71363,
+    "sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "modified": false
+  },
+  "official_submission_zip": {
+    "name": "MIA_AIA_round5_submission.zip",
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv",
+      "token.txt"
+    ],
+    "bytes": 76244,
+    "sha256": "fd4597c0120502b21db3871ea0b03bc57f16ad3ec855fac9e308108f4fe4b62b",
+    "github_uploaded": false,
+    "library_file_id": "libfile_d417053d7a708191aef3cc7395ec8781",
+    "file_id": "file_00000000117c8206b42e115237f90fa8"
+  },
+  "github_distribution_zip": {
+    "name": "MIA_AIA_round5_no_token.zip",
+    "members": [
+      "F_mia.csv",
+      "F_aia.csv"
+    ],
+    "bytes": 76123,
+    "sha256": "03ab49c50551aac17b6d3f547393c7ee7b11c6830ca86ddfe19c8f351fb0f4a7",
+    "is_official_submission_zip": false
+  },
+  "MIA_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+  "token_source": "本戦team28参加者配布token.txt（原本コピー、内容とhashは非掲載）",
+  "token_registration_verified": false,
+  "token_registration_note": "参加者配布には事務局のtokens.csvがないため、形式とコピー一致まで。",
+  "original_csv_bytes_preserved": true,
+  "zip_crc_pass": true,
+  "flat_root_no_duplicate_or_extra_members": true,
+  "independent_report": "../../Tashiro/MIA全体/round5_generation_20261010/aia_zip_independent_audit.json",
+  "credential_publication_policy": "先の認証情報再掲載禁止に従いtoken入りZIPはGitHubから除外。ユーザー本人のLibraryとローカルへ納品。"
+}

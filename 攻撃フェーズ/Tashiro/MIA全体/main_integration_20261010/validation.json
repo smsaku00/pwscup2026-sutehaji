@@ -1,0 +1,267 @@
+{
+  "verification_stage": "prepared_and_verified_merge_tree",
+  "date": "2026-10-10",
+  "authorization": "ユーザーの明示依頼により研究資料と第5回成果をmainへ統合。従来main不変制約はこの範囲に限り解除。",
+  "ordered_parent_commits": [
+    "539201034f983f0c6bc15ee71c43814d96368b9f",
+    "5196467a82ce69dee1a5a84a1e68797f59b9c5a5",
+    "b11798f4eb702d0f5b6bd5029c8fd8aa86b14a9f"
+  ],
+  "ancestor": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "source_paths_added": 1072,
+  "source_paths_modified": 14,
+  "deleted_paths": 0,
+  "source_round_overlap_resolutions": [
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/README.md",
+      "base": "b4fd65c70d299ba3b725e8920590e8e666171ad2",
+      "main": "b4fd65c70d299ba3b725e8920590e8e666171ad2",
+      "source": "5dbac1ad7fa2c1cfae0c69b647c2eebd2abdb602",
+      "round": "c877f9ef4c1fafdecc53730dfeb438654b313b25",
+      "resolution": "第5回採点後の案内を採用し、先行研究・方式照合へのリンクと履歴を保持"
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/rounds/README.md",
+      "base": "d0a6af46ed5b74acab3d9e48870cf43adfb92092",
+      "main": "d0a6af46ed5b74acab3d9e48870cf43adfb92092",
+      "source": "6fee4ba3ac237e6e9a9fbaa68d81033e45e752a9",
+      "round": "4992bc884a43e6020a3cc5b362f9c278a4dc23ab",
+      "resolution": "第5回採点後の案内を採用し、先行研究・方式照合へのリンクと履歴を保持"
+    }
+  ],
+  "main_overlap_resolutions": [
+    {
+      "path": "攻撃フェーズ/AIA/README.md",
+      "reason": "R5 version preserves main AIA5_2 description and other candidates; updates current scoring state",
+      "main": "0bb66b95a2f9b4955b5490f5731d2ffd383996b3",
+      "result": "518b73b6933358791df9ff5ca7ce60c57398d51b"
+    }
+  ],
+  "latest_main_only_paths": [
+    {
+      "path": "攻撃フェーズ/AIA/5_2/.gitignore",
+      "before_blob": "4325d28653f002b2747bfa17f1c9fe7c4c37e98b",
+      "after_blob": "4325d28653f002b2747bfa17f1c9fe7c4c37e98b",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/README.md",
+      "before_blob": "cd9d54d43cbb1d5148f6c5c73bf6ffbc65e68c75",
+      "after_blob": "cd9d54d43cbb1d5148f6c5c73bf6ffbc65e68c75",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/feature_engine.py",
+      "before_blob": "0f129f22053cee39ac127ebbee15e36821af1122",
+      "after_blob": "0f129f22053cee39ac127ebbee15e36821af1122",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/LICENSE",
+      "before_blob": "ec9b57047f84a92829a727aa080e5256df2fede9",
+      "after_blob": "ec9b57047f84a92829a727aa080e5256df2fede9",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/__init__.py",
+      "before_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "after_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/common/__init__.py",
+      "before_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "after_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/common/config.py",
+      "before_blob": "18cf72fc261987c0f80b555bb5c6da3671d63ca8",
+      "after_blob": "18cf72fc261987c0f80b555bb5c6da3671d63ca8",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/common/schema.py",
+      "before_blob": "a7aaf3c00c2b28a7e837dcf7efa56373e2c210bb",
+      "after_blob": "a7aaf3c00c2b28a7e837dcf7efa56373e2c210bb",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/common/submission_schema.py",
+      "before_blob": "0fa25fbbd9ece2545322de191963da0232b527f6",
+      "after_blob": "0fa25fbbd9ece2545322de191963da0232b527f6",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/kit/__init__.py",
+      "before_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "after_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/kit/kit_config.yaml",
+      "before_blob": "d5ebcba0fe32d1a75ed74d962bda3596fd1318ca",
+      "after_blob": "d5ebcba0fe32d1a75ed74d962bda3596fd1318ca",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/kit/validate.py",
+      "before_blob": "0927a4d9548f236d7cf22dc674cae5b2bf534b56",
+      "after_blob": "0927a4d9548f236d7cf22dc674cae5b2bf534b56",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/rare/__init__.py",
+      "before_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "after_blob": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/official_validator_snapshot/pwscup2026/rare/outlier.py",
+      "before_blob": "27997191344c735af133c712c18c201f716e0342",
+      "after_blob": "27997191344c735af133c712c18c201f716e0342",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/reproduce.py",
+      "before_blob": "7ff1e19c1ba8f60152d5fc1448b14ab0fda0496d",
+      "after_blob": "7ff1e19c1ba8f60152d5fc1448b14ab0fda0496d",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/requirements.txt",
+      "before_blob": "acb980ff651d2a21bca23284c2b3caf49f462455",
+      "after_blob": "acb980ff651d2a21bca23284c2b3caf49f462455",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/round5_engine.py",
+      "before_blob": "49aa8e09bc8e5eb438b1086949aacdfff40f6e2b",
+      "after_blob": "49aa8e09bc8e5eb438b1086949aacdfff40f6e2b",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/base_model/モデル詳細説明.md",
+      "before_blob": "13ba1ec7a993dfbe2dec7ac086c9e22f04617a16",
+      "after_blob": "13ba1ec7a993dfbe2dec7ac086c9e22f04617a16",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/reproduce.py",
+      "before_blob": "d0b55ba78cf2f0e546fe0557b58f195d0c061560",
+      "after_blob": "d0b55ba78cf2f0e546fe0557b58f195d0c061560",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/selected.json",
+      "before_blob": "33867e8ce1453fc292ca4fd6fcc3ec1df997fc65",
+      "after_blob": "33867e8ce1453fc292ca4fd6fcc3ec1df997fc65",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+      "before_blob": "bade408752830d55a634bc1248bd49694c7664a1",
+      "after_blob": "bade408752830d55a634bc1248bd49694c7664a1",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/結果/generation_audit.json",
+      "before_blob": "d99ddea51ebe19dc0089e4b64aa661bcf8d3c1cf",
+      "after_blob": "d99ddea51ebe19dc0089e4b64aa661bcf8d3c1cf",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/結果/group_assignments.csv",
+      "before_blob": "fbbe3ab357661d52e8dd80d70e4328a5a104d662",
+      "after_blob": "fbbe3ab357661d52e8dd80d70e4328a5a104d662",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/結果/per_target_changes.csv",
+      "before_blob": "e7b63f29599d834b4424b7239c323f77773e1433",
+      "after_blob": "e7b63f29599d834b4424b7239c323f77773e1433",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/5_2/結果/zhang_T28_test05_2_small_groups_no_token.zip",
+      "before_blob": "7c018456323aca0687facc4e8b5857563c59a1a7",
+      "after_blob": "7c018456323aca0687facc4e8b5857563c59a1a7",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/AIA/README.md",
+      "before_blob": "0bb66b95a2f9b4955b5490f5731d2ffd383996b3",
+      "after_blob": "518b73b6933358791df9ff5ca7ce60c57398d51b",
+      "preserved_byte_identical": false
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/F_mia.csv",
+      "before_blob": "eecbd9ec968e0a93a56521f04fd6e1a46f543bfc",
+      "after_blob": "eecbd9ec968e0a93a56521f04fd6e1a46f543bfc",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/README.md",
+      "before_blob": "15d58a4ff9801cbbcc03ea9a1d36cbca53448925",
+      "after_blob": "15d58a4ff9801cbbcc03ea9a1d36cbca53448925",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/再現記録.json",
+      "before_blob": "3b153065f1ef6bde9c6b7326d315074d3c51200a",
+      "after_blob": "3b153065f1ef6bde9c6b7326d315074d3c51200a",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/対象別適用状況.csv",
+      "before_blob": "d16dc7d43aaa8b5c27cc6039ec605ba764d75787",
+      "after_blob": "d16dc7d43aaa8b5c27cc6039ec605ba764d75787",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/第3回通常者.csv",
+      "before_blob": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+      "after_blob": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+      "preserved_byte_identical": true
+    },
+    {
+      "path": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用/適用検証.json",
+      "before_blob": "be6abf815a1445a94ad28ff8b915895dd4076526",
+      "after_blob": "be6abf815a1445a94ad28ff8b915895dd4076526",
+      "preserved_byte_identical": true
+    }
+  ],
+  "document_publication": {
+    "commit": "b11798f4eb702d0f5b6bd5029c8fd8aa86b14a9f",
+    "files": 46,
+    "all_git_blob_hashes_match": true,
+    "key_readback_sha256_matches": 6,
+    "relative_links": 396,
+    "table_rows": 341
+  },
+  "checks": {
+    "all_other_main_changes_preserved": true,
+    "source_and_round_histories_preserved_with_additional_parents": true,
+    "existing_submission_csv_hashes_unchanged": true,
+    "new_answer_or_competition_submission": false,
+    "force_push": false,
+    "deleted_existing_paths": false
+  },
+  "package_inspection": {
+    "introduced_zip_files": 2,
+    "zip_secret_members": 0,
+    "zip_crc_pass": true,
+    "xlsx_archive_inspected": 1,
+    "gz_inspected": 66,
+    "gz_existing_not_content_inspected": 1,
+    "public_kit_pdf_sha256_matched": 2,
+    "confirmed_secret_values_detected": 0,
+    "coverage_limit": "既存all_results_strictly_gt_010.csv.gzは正規コネクタの1MB/UTF8制限で内容未取得。全既存ファイルの秘密情報不存在を断言する検査ではない。"
+  },
+  "remaining_limits": [
+    "第5回総点生値scores.json未提供。MIA力R4比較は保留。",
+    "サーバー入力ZIPの直接hash照合は未実施。",
+    "既存ローカル独立監査_20261010の21ファイルは別担当の一般検討資料で、今回指定の両ブランチには未掲載。今回のマージ対象外。",
+    "将来第6・7回の用途は未決定、答案生成・提出なし。"
+  ]
+}

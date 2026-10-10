@@ -1,0 +1,31 @@
+{
+  "created_jst": "2026-10-08T05:39:04.391690+09:00",
+  "code_sha256": "73c74b2201bc55cbb99e93e1d4342da5d55d32bdd682a8f893599695db9231ac",
+  "strengths": [
+    "0",
+    "25",
+    "50",
+    "100",
+    "200",
+    "300",
+    "500",
+    "750",
+    "1000",
+    "2000",
+    "5000",
+    "global"
+  ],
+  "folds": 5,
+  "seed": 20261008,
+  "prediction": "固定Gen-LRA7;県×性別のCDF縮小;他対象中央値補正0.1",
+  "selection": "非会員CRPSをQ所有者単位で集約し、最小値の1SE以内で最大の縮小強度を選ぶ。フェーズ内対象共通。予備戦の選択対象から1・2を除外。",
+  "primary": "owner_one_se",
+  "membership_labels_used": false,
+  "metric_grid_chosen_from_existing_20261008_calibration_grid": true,
+  "no_mia_score_or_per_team_answer_selection": true,
+  "source": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf",
+  "numerical_qa": {
+    "comparisons": 64,
+    "maximum_absolute_error": 8.881784197001252e-16
+  }
+}

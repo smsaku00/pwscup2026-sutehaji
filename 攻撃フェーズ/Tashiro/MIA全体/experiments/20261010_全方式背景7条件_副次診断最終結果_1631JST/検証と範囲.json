@@ -1,0 +1,256 @@
+{
+  "created_utc": "2026-10-10T07:30:57.446040+00:00",
+  "main_public_families": 7,
+  "main_public_recipe_BG_conditions": 798,
+  "main_Chow_recipe_BG_conditions": 21,
+  "main_Gaussian_additional_alias_paths": 21,
+  "additional_recipes_from_Gaussian_aliases": 0,
+  "A3_planned_recipe_BG_conditions": 504,
+  "A3_completed": 360,
+  "A3_background_validation_blocked_conditions": 144,
+  "A3_unattempted_backgrounds": 0,
+  "A3_phase_completed": {
+    "prelim": 108,
+    "main": 252
+  },
+  "main_membership_truth_used": false,
+  "membership_accuracy_claim": false,
+  "independent_audits": {
+    "public_main_diagnostics_independent_audit.json": {
+      "sha256": "da08f8f553494145b095b6537cd651ec8dd6cb33e6dd60266e9e6ef23d410550",
+      "status": "passed_sealed_main_rank_only_panels"
+    },
+    "main_chow_provenance_independent_audit.json": {
+      "sha256": "8fc9a813f52bb5d4491a664d93d5ba593761ee2d7850487ccd351e35364c251f",
+      "status": "passed_source_input_output_binding_and_aggregate_invariants"
+    },
+    "main_gaussian_alias_independent_audit.json": {
+      "sha256": "06c5fdefc17f98451b1b013d0987476fb14af7f051931147e94d3bbf544d6bc1",
+      "status": "passed_main_source_alias_binding_and_seed_diagnostic_recalculation"
+    },
+    "A3_current_completed_provenance_independent_audit.json": {
+      "sha256": "b054ca909583ead0d92a12a479c33a506371026a6048ba03af95ab5d02322992",
+      "status": "passed_completed_A3_source_input_AST_and_record_binding"
+    }
+  },
+  "aggregate_input_tables": [
+    {
+      "path": "main_secondary/public_null/starter/main_rank_only_qa.csv",
+      "sha256": "434a3d5234b0218e65390b20adb646bfce2803e4dee030ea15cc38b00e8379a5"
+    },
+    {
+      "path": "main_secondary/public_null/prelim/main_rank_only_qa.csv",
+      "sha256": "68766fd99c8ee0bc09f550d17dd7ea84a2254da3ed18162fc15f33a7261112e8"
+    },
+    {
+      "path": "main_secondary/public_null/main/main_rank_only_qa.csv",
+      "sha256": "dd51dd4240761faf376274b573b4b5135be94085e585c57161d0a41ba634dbc5"
+    },
+    {
+      "path": "main_secondary/public_null/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "56abd63f936114e0cea6aabeb3b9e144b00c0862a2afcda542d12b3985a2d18e"
+    },
+    {
+      "path": "main_secondary/public_null/starter+main/main_rank_only_qa.csv",
+      "sha256": "f516af4637059cb28c3e16a2b11e6c515a019c2720dc4f3ae0cf2b435c9ab6ee"
+    },
+    {
+      "path": "main_secondary/public_null/prelim+main/main_rank_only_qa.csv",
+      "sha256": "9022777a09c2682afb012c157f0f4dd6e7f5c0c5f8c37c85b7f981df63604c67"
+    },
+    {
+      "path": "main_secondary/public_null/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "881b3afaa7d127572cd29717ed880a90d93d267db9670811fd3707709c372b38"
+    },
+    {
+      "path": "main_secondary/nested_public_null/starter/main_rank_only_qa.csv",
+      "sha256": "d9c9b5d711820ee72ea6587450f9e5d4e1f21170b762fd88587c3c93a141dcc8"
+    },
+    {
+      "path": "main_secondary/nested_public_null/prelim/main_rank_only_qa.csv",
+      "sha256": "19d841ddf6a9137e00899a499e4b1ab2bbe08525412d6fe72094647fd4a77785"
+    },
+    {
+      "path": "main_secondary/nested_public_null/main/main_rank_only_qa.csv",
+      "sha256": "6065f0e84473aeb8b8e44b8af4d3bb68e4c18481017929b517c770925bc5295b"
+    },
+    {
+      "path": "main_secondary/nested_public_null/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "169e2c81af0dfebf7d73a6033ce5d05a1751a3cc18d53bb18103f8ee964541e0"
+    },
+    {
+      "path": "main_secondary/nested_public_null/starter+main/main_rank_only_qa.csv",
+      "sha256": "9511c11ace132f1dd01efa0869b1530da78afa325e26d7d972f7e4063d4fc351"
+    },
+    {
+      "path": "main_secondary/nested_public_null/prelim+main/main_rank_only_qa.csv",
+      "sha256": "ed266c48a951610f40cd654164c8d0c222b54448e5fe50ce898ec8c6f9eff186"
+    },
+    {
+      "path": "main_secondary/nested_public_null/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "8c66adb4cd8a9fba7761e4d40cd0612974dc8d04fe4e1e4848f945e245c5b776"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/starter/main_rank_only_qa.csv",
+      "sha256": "321316eb0ea90cff1e4df4a80d4a55672958afb0393cfd01120dbf5a430d3391"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/prelim/main_rank_only_qa.csv",
+      "sha256": "f818b2b98c7f47e4aec56389312b46ff64c8c1489b91fc9eb77bd7715e2dafc8"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/main/main_rank_only_qa.csv",
+      "sha256": "ca34fe78473a010bb0a455d91114136b00707d0d65607beb85abab95ea3f9cf7"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "5b6d95b757b1d3481ad279f4eccc9c4588651df15ff414f5fce9349193ef7695"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/starter+main/main_rank_only_qa.csv",
+      "sha256": "fbd896bb135db9c08b6f8479aa17f41fe0ffb6d7c1de35640ac259a3ed967979"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/prelim+main/main_rank_only_qa.csv",
+      "sha256": "95d6ccc380dda53a4cd7b705e35a905f227812dc130ccf88be234f56836c2cc0"
+    },
+    {
+      "path": "main_secondary/q_owner_removal/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "db223d72b4d13b4f7fa7913bb448ce4c6fe2d3a9d871a31565658cae39263b92"
+    },
+    {
+      "path": "main_secondary/split_A/starter/main_rank_only_qa.csv",
+      "sha256": "4d93b885f04aef76dee315c38938d836e344d207e999e81c82be0863ac57817f"
+    },
+    {
+      "path": "main_secondary/split_A/prelim/main_rank_only_qa.csv",
+      "sha256": "c0d25b4cdb18c91fe573443d32b7d2b18712b1015c838ca59f0946de2ecfb743"
+    },
+    {
+      "path": "main_secondary/split_A/main/main_rank_only_qa.csv",
+      "sha256": "a57890ceb02a78d3b2a6e024f7a96a7302afcee867d0b6d26d0b3540929cf2b2"
+    },
+    {
+      "path": "main_secondary/split_A/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "f51f9276ccaf5a964b33b1c1b626c1c50531afa0195ac28482e14dcc14b939d1"
+    },
+    {
+      "path": "main_secondary/split_A/starter+main/main_rank_only_qa.csv",
+      "sha256": "c43c5ad423a5eb23416e9d0f972264835c0fee2ec649289837b7e27ea982f8fb"
+    },
+    {
+      "path": "main_secondary/split_A/prelim+main/main_rank_only_qa.csv",
+      "sha256": "a14a2d4cd1fa2fdcee78b5af7d7633d737a20dbd007b7bac73e5e5390bffa012"
+    },
+    {
+      "path": "main_secondary/split_A/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "03ce15a343a5777f903a9bbe0cf0818e266c0abffaa126cf937943c2763cc2a2"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/starter/main_rank_only_qa.csv",
+      "sha256": "c7b50b6737965cab42de212f661d3f31bd9aaaa75604fd6c6cb06237945f2c29"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/prelim/main_rank_only_qa.csv",
+      "sha256": "c7c541fcd0423e24d24f3830b7d898732becc6741cead192ddb2e5a8bcea7a5a"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/main/main_rank_only_qa.csv",
+      "sha256": "9e99545528f8096ee8119dc4445999cd45613f248fa82d9b16f808a4c1c7dbcb"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "aa79063175e6831fec0b2fccd65f4d94fbb7b3582c272dd2ac3618fef53821d7"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/starter+main/main_rank_only_qa.csv",
+      "sha256": "ab38b030d370fe777d26be1a15aa42323be90f7a797431ff621aa9b790e1ca16"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/prelim+main/main_rank_only_qa.csv",
+      "sha256": "2f6b84ade123045600b1ca0267facab9ca3d33b7fc584d29ba3059de818d3f00"
+    },
+    {
+      "path": "main_secondary/gaussian_seeds/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "c2ce80555b24a509da9da9208703957b1d874532e7a20371a90245e16431e50a"
+    },
+    {
+      "path": "main_secondary/C_row_removal/starter/main_rank_only_qa.csv",
+      "sha256": "a6ce656e3c1d9948acdbd926a2ebd002d0d365052d6de8f4106ee539383efc1b"
+    },
+    {
+      "path": "main_secondary/C_row_removal/prelim/main_rank_only_qa.csv",
+      "sha256": "1b9a21510c6f2317c95de64e21edbcf7b8e8cede8384148a2efe9d35aee904c8"
+    },
+    {
+      "path": "main_secondary/C_row_removal/main/main_rank_only_qa.csv",
+      "sha256": "dbee3a804b0bbe362f175028071634572eb200e47203f661b1a30ccdfdb8e00e"
+    },
+    {
+      "path": "main_secondary/C_row_removal/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "a70a65ef39cdb887ed1bcd1a9cca4a406ead90da2a40d2f3681db341a411940f"
+    },
+    {
+      "path": "main_secondary/C_row_removal/starter+main/main_rank_only_qa.csv",
+      "sha256": "6e20677acde5786816c968dc4c178fb4b5c84aa0e6dbb01799a102420738845d"
+    },
+    {
+      "path": "main_secondary/C_row_removal/prelim+main/main_rank_only_qa.csv",
+      "sha256": "963ded63de5e9352d33bdcd2a47c56760d29d8737da1b2776f9d0fe6b2f3fbdc"
+    },
+    {
+      "path": "main_secondary/C_row_removal/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "7d3302e96341c692b2a15a69c77817ca40425118670b9df964e17530526324a4"
+    },
+    {
+      "path": "main_secondary/local_intervals/starter/main_rank_only_qa.csv",
+      "sha256": "defece7f2f6ffc46336c1c36b866d26a5fb3d43b604c09257236c4fa1a210871"
+    },
+    {
+      "path": "main_secondary/local_intervals/prelim/main_rank_only_qa.csv",
+      "sha256": "cf0a6820854d81ceeeb93ca143346c77fc16f160f9c5317e3b2233dd55c69451"
+    },
+    {
+      "path": "main_secondary/local_intervals/main/main_rank_only_qa.csv",
+      "sha256": "e761149e34340c3a953cff6be0c5988c8b1340826495cbd661787ec2bfa057e6"
+    },
+    {
+      "path": "main_secondary/local_intervals/starter+prelim/main_rank_only_qa.csv",
+      "sha256": "91a0699c58352fc8c62de1b7ae627e17880e04fbf96c285f724a15cd6f25dbc2"
+    },
+    {
+      "path": "main_secondary/local_intervals/starter+main/main_rank_only_qa.csv",
+      "sha256": "b412f0e24578066aefe05649360404ab0af8269c49cbece7c17ae1362d7c840b"
+    },
+    {
+      "path": "main_secondary/local_intervals/prelim+main/main_rank_only_qa.csv",
+      "sha256": "dc3b419e68409cc5b00605bc0c62ca36a7749649f029937bda5e09aac79fe4b0"
+    },
+    {
+      "path": "main_secondary/local_intervals/starter+prelim+main/main_rank_only_qa.csv",
+      "sha256": "7573afb1d240a6a5800d427694df0aa319092cfa621bfc3f8aa51335fa611fc8"
+    },
+    {
+      "path": "source_only_A3/A3_public_Atest_CDF_summary.csv",
+      "sha256": "6cc36b1582b1b1d3e37a3312d1d800a8f3f35edb7fbe838e1d5bd71cb2e0d415"
+    },
+    {
+      "path": "source_only_A3/A3_public_Atest_threshold_summary.csv",
+      "sha256": "fead2520adc45421395e6e6af89aaf0f72e9f9a892c85a0a42b0c30ad5e29205"
+    },
+    {
+      "path": "source_only_A3/public_C_strata_exposure_summary.csv",
+      "sha256": "762ceb1c7ae3fedec845896bddd862ca6e83be70df6997da073e17cb8b88dd5d"
+    }
+  ],
+  "remaining_source_generators": [
+    "submission1",
+    "submission2",
+    "mia_mixed_density_attack_improved.py"
+  ],
+  "auxiliary_metrics_not_replayed": [
+    "Shared midrank Gaussian companion additional owner-holdout tables",
+    "Whole-Q owner-holdout300/500 public loss tables beyond already-covered candidate score alias"
+  ],
+  "original_individual_array_guards_preserved": true
+}

@@ -1,0 +1,32 @@
+{
+  "read_only_sources": [
+    {
+      "path": "/Users/taisei1105/pws2026-local/AGENTS.md",
+      "sha256": "d68dc1395beffd464658e538f56a402e6685745f3b63724906eb417b40e4b423"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/README.md",
+      "sha256": "491a55a7ebca3ec5046d25e8a3bd6768db7999d3d6d48de96b8e70904fc16588"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+      "sha256": "9290c6e98b85214ca691bb90ff961196642c72d85348810f8df36741489885f2"
+    }
+  ],
+  "repository_source_checkout": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji",
+  "repository_source_head": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "selected_checkout_AGENTS_md_found": false,
+  "selected_checkout_agents_skills_found": false,
+  "rule_sections_reviewed": [
+    "3.1",
+    "3.2"
+  ],
+  "rule_interpretation": "AIA targets come from private rows; rare overlap blocks contain 0-2 individuals. Maximum one other sharing target is treated as the cohort model assumption, not verification against the official hidden truth.",
+  "round5_remote_commit": "27d40de61aeb025858038230802bd822381a773c",
+  "round5_remote_blob": "33b4c23ee276fda47b04dae6d54a241bd9ad3ef3",
+  "official_aggregation_remote_ref": "main-attack-20260928",
+  "official_aggregation_remote_blob": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+  "github_read_success_via_connector": true,
+  "github_publish_performed": false,
+  "submission_performed": false
+}

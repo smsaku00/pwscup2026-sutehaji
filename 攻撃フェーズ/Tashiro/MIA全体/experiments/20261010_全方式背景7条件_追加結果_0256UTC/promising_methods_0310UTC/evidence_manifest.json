@@ -1,0 +1,244 @@
+{
+  "cutoff_utc": "2026-10-10T03:10:00Z",
+  "sources": [
+    {
+      "source_path": "recovered_oct8/alignment/prelim/main/by_target.csv",
+      "sha256": "2bdf4670836ed1ed331c2102618f4a7fda1a8b18f713bef168136c2969e301ea"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/prelim+main/by_target.csv",
+      "sha256": "4e2df51ef64bc6327c9f54d6b2f8579020cc1fe2c01617cadbcae215cf44b94b"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/prelim/by_target.csv",
+      "sha256": "24f2e2c88ea354641794523856a3005c7af0773f35e99e17006ea09fa6beded2"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+main/by_target.csv",
+      "sha256": "75a879d6464e148fb190a61651858639a296bf53631157af83134163a3407088"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "f850ffdc2ae896e5cf4710849bebb5763800c01fbc00938b63ebb190f44a2cff"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+prelim/by_target.csv",
+      "sha256": "f69040ae16058cef2ec8977048e83088f936bed43820a6cc30a82c3a4ce2d750"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter/by_target.csv",
+      "sha256": "473217cfb3b3fdf9bb2e087398ab39ebbc0ce9b98d9cbf6df16cd66d79ecf34c"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/main/by_target.csv",
+      "sha256": "7bcf60aacfe43a6e53a7c4fc8d9bd41af96d5e030c6cd577b97859ec08254074"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/prelim+main/by_target.csv",
+      "sha256": "8ebe1b7e9564b176f92dd62510c6e139563d3c9d58f62e31b1caad7a76aeb843"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/prelim/by_target.csv",
+      "sha256": "c429e262bbcd6c9d3f24ae4624eb43b7fd84df69ad97af296089cac3d561526c"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+main/by_target.csv",
+      "sha256": "153079f142959763b2a10f6b523f72a1e7ee743937848938f53e1896ec686fab"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "bc1d46b3b2e05d3894030e958c9817567fa7a0ff7e5a88664920d0d986fa6c3b"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+prelim/by_target.csv",
+      "sha256": "660e0f48f79eb3e906ab6d43ea27bba77262b3afebdcaaf3ad443a226eeedea5"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter/by_target.csv",
+      "sha256": "7fa7a20323b7d3fd507374e11e2d532ac5c4aa677f6bab36d772117f62e6fa0a"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/main/by_target.csv",
+      "sha256": "801746c7ceb574bc50106b0a20f789dcac7979ef5a91848289251e49a68cb234"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/prelim+main/by_target.csv",
+      "sha256": "6a089ee740a8e090a6517e9efaecfd0a42c06045d9a5db8e25d3855c07471928"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/prelim/by_target.csv",
+      "sha256": "a35742d3db85e9744293cd81568fe428eb1d496cb862bb2ce994cb933ce2fb1e"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+main/by_target.csv",
+      "sha256": "1c7c46716090fff5da121bd2a94bb01918b1235fec5841cfe5ec35706a112113"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "69eb0c37e6254c898c084b7b7de1fcd4974cb45cc853ca40ba4839b19adb17dc"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+prelim/by_target.csv",
+      "sha256": "df7d63030b137e7b1a423ca7fc2a935ee87fe7cb55065c267de709d6f33d2450"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter/by_target.csv",
+      "sha256": "32d3563406e03e34a333ce4b7a46a26363fbabffc1b045910617e2b4440d46ed"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/main/by_target.csv",
+      "sha256": "14d6d2218a71cb69278feb179a4f46ef855c25240f641149f644658e9084e632"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/prelim+main/by_target.csv",
+      "sha256": "0a3501b3507a96629ec05f70b4a9c9b5f853dbc627d34dbc4aa67b45d3a0397b"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/prelim/by_target.csv",
+      "sha256": "4b7d8d975779fd6906bf0abc92c2196b38b0f140ec6ae20f8f472ac6721b728a"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+main/by_target.csv",
+      "sha256": "76cc54b36ebaf1de0b91f7e2f1a0c44675a328b2a72767d021deaaf4d3b8e15b"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "b5176f9dba821ab21b8fd5866fa03eac75216aba7b2d78138798a3b1e87a04a9"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+prelim/by_target.csv",
+      "sha256": "4362b99408f330818059209ae00503181b8a75876035604b96aee134a463f9f2"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter/by_target.csv",
+      "sha256": "774da13c67fea2373f2d33a8e5a25880d1c344f83f4742a3a4766f4b77faa795"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/main/by_target.csv",
+      "sha256": "a711e46fa41fcb818e6e8ad3788d9340bc04cd3b99b7ed39a17c32a8290b4037"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/prelim+main/by_target.csv",
+      "sha256": "79de210c0a872ff2bc3e47fbb21f3900890d6fad78d3eb80b4c8e64eb9a8b214"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/prelim/by_target.csv",
+      "sha256": "e1f318ffdbe1e3c6f035905e806fa57db0fbe5a707162389127490bc2a23e346"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+main/by_target.csv",
+      "sha256": "29577ca81ff7d3dfee241d034f2dcf3541f9a158e75f6e41834f00ecf294c29f"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "cd89e175b91b234cc67049cbdd7352fcaebfceacdb6814172e9365230f7c2ac0"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+prelim/by_target.csv",
+      "sha256": "08534734aa15876ab3d781d9daf3938f29df4c9b867898f12a79d0f7f2feae85"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter/by_target.csv",
+      "sha256": "fefaebbf48429e15f027d01d1f8d460da7a7f41135834924cb4f48b7c97174c7"
+    },
+    {
+      "source_path": "available/results_prelim_primary/by_target.csv",
+      "sha256": "7ab82afaa632745345938cbad7b32b21e0e4c6b6214f4f8736c61b574735c0de"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter/対象別TPR.csv",
+      "sha256": "fdff6c8499f24708d52418a067b4d5f9bedf75f33a71bc69038012370966ad19"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/prelim/対象別TPR.csv",
+      "sha256": "647c7b873797a19e6caaa66ac69c55b39783c8ae09eaa4297f55d57b8c4e6292"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/main/対象別TPR.csv",
+      "sha256": "0fdce8eb5b857c7bf449d0ed81eac91d7e476ca2cc8919efd6da43ecc3cfd50c"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+prelim/対象別TPR.csv",
+      "sha256": "29bff8fa14b314981230b2921799ca6e48aa345265de49a6bd759a8fdcaeca1c"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+main/対象別TPR.csv",
+      "sha256": "cacaa942d0f83bdf52a9fa00988038258a4500505a506e2fffebc9c219d9305c"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/prelim+main/対象別TPR.csv",
+      "sha256": "b9197708a1d4ad16580b00bb8d17a412069d83c3e74a196f1fd83a08ff4d951d"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+prelim+main/対象別TPR.csv",
+      "sha256": "025f2b88883b4eeb7ce9e95e233ae641c25d345acc8c4778c4d066f86971a51a"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "有望方式の考察と公開BG一致の影響.md",
+      "bytes": 14774,
+      "sha256": "792a1b58eb4f2778fae8725bf7f0a775b52ae5ffe1855e347ba254591940af42"
+    },
+    {
+      "file": "candidate_stability_summary.csv",
+      "bytes": 2031,
+      "sha256": "65faefb535fff37abae2b7225af4500c4391d7d474f2a2c1d1e57a5c4f9eb38f"
+    },
+    {
+      "file": "priority_team_seven_backgrounds.csv",
+      "bytes": 15312,
+      "sha256": "07fb97871e1be3918c227dfc099751dce899f357b4dde6ccbbc4c29ad523fe08"
+    },
+    {
+      "file": "fixed_methods_all_teams_seven_backgrounds.csv",
+      "bytes": 293097,
+      "sha256": "2521fbdd4e5a437af903c4233bfcc957db1f31c6e50bf83ba165f9aafa10e641"
+    },
+    {
+      "file": "parameter_neighborhood_descriptive.csv",
+      "bytes": 32732,
+      "sha256": "435f9808fd765fad44b0043223129f53c8ae442f423a67e5b040ef3df311d64e"
+    },
+    {
+      "file": "overlap_ablation_summary.csv",
+      "bytes": 4921,
+      "sha256": "d709e629fb2d5bcf98285698b80a81a8e4bb18bde2bbf8aa6cd843c14b29ba62"
+    },
+    {
+      "file": "公開BG完全一致の限定検証.md",
+      "bytes": 10966,
+      "sha256": "7c37fbd56f8a77a1855d62d945a7e8c58087da2e5a8c1dba95f582eb9c5953fb"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 726,
+      "sha256": "28859d83e340672814e78c33dd33282a6d934c32fa75ece43b7328fe7868d14a"
+    },
+    {
+      "file": "deferred_peak_checks.csv",
+      "bytes": 1684,
+      "sha256": "dc73353abb4f6ced08df19f77221271d1505a1c5777292b861bb79f1a53f60d8"
+    },
+    {
+      "file": "stable_gmm_anchors_independent_audit.json",
+      "bytes": 4311,
+      "sha256": "3eb74927f6b77a7535a0ee3b3a8c988cae3cd0770e2c0b1d3516bbaf32c5d6f6"
+    },
+    {
+      "file": "gmm_team26_parameter_neighborhood.csv",
+      "bytes": 1664,
+      "sha256": "09c9334fe61f44d1d406d6af41983a2478b092896493a42de3a9bb9b73b98ed1"
+    },
+    {
+      "file": "pairwise_histogram_team20_parameter_neighborhood.csv",
+      "bytes": 3791,
+      "sha256": "499ca197f76dc45410e5824a5157085c32c111920b4a3cccc92750cbb0cc59f0"
+    },
+    {
+      "file": "kde_lof_anchors_independent_audit.json",
+      "bytes": 4773,
+      "sha256": "68f03870f02b01ef1624d77d657d9b49b5419d504275e610389a8a92d05e7237"
+    }
+  ]
+}

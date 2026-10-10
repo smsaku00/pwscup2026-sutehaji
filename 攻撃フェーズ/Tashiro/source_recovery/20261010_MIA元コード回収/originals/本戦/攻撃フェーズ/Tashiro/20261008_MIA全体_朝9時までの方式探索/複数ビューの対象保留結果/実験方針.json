@@ -1,0 +1,21 @@
+{
+  "pid": 16503,
+  "C": 0.1,
+  "person_seeds": [
+    20261008,
+    20261009,
+    20261010,
+    20261011,
+    20261012
+  ],
+  "target_split": "leave_one_target_out",
+  "panels": "without_kde",
+  "contexts": [
+    "full_only",
+    "background47",
+    "center10",
+    "balanced_background_and_centers"
+  ],
+  "weighting": "ビュー数で重みを正規化。背景と中心の混合では各家族1/2。",
+  "label_usage": "テスト人物・テスト対象・1/2の正解は全ビューの学習から除く。"
+}

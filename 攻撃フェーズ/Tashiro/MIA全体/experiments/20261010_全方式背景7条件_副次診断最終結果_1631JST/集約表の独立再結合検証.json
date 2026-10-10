@@ -1,0 +1,19 @@
+{
+  "audit_utc": "2026-10-10T07:31:30.690352+00:00",
+  "status": "PASS",
+  "A3_status_rows": 14,
+  "background_batches_blocked": 4,
+  "source_recipe_conditions_in_blocked_batches": 144,
+  "hypothetical_rank_advisory_records": 2,
+  "all_delivered_aggregate_rows_rejoined_exactly": {
+    "04_本戦公開診断_全対象順位集約.csv.gz": 17556,
+    "05_本戦Chow_背景間順位変化.csv.gz": 462,
+    "06_A3公開テストCDF集約.csv.gz": 360,
+    "07_A3公開テスト尾部集約.csv.gz": 240,
+    "08_A3公開C一致層の集約.csv.gz": 960
+  },
+  "all_numeric_rejoins_exact": true,
+  "input_audit_hashes_verified": 4,
+  "candidate_level_rows_exported": false,
+  "main_membership_truth_accessed": false
+}

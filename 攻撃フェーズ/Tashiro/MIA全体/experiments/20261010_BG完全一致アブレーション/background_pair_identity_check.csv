@@ -1,0 +1,4 @@
+source_a,source_b,bare_record_id_intersection,full13_tuple_intersection,qi7_tuple_intersection
+starter,prelim,5143,0,0
+starter,main,5143,0,0
+prelim,main,5143,0,0

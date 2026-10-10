@@ -1,0 +1,5 @@
+﻿phase,background,incomplete_source_recipe_conditions,validation_stop_unit,largest_recorded_PIT_error,source_limit,fixed_execution_limit,last_fold,last_target,last_form,actual_B_CDF_max_error,recorded_hypothetical_ranks_ties_tails_equal,evidence_sha256
+prelim,starter,36,one_background_batch_not_36_independent_failures,4.677627884639921e-10,1e-12,1e-10,2,4,gen7k10,0.0,True,51be51815d36890674e5005e7f51a0907b00104664f511c23bbedefcffdd6658
+prelim,starter+prelim,36,one_background_batch_not_36_independent_failures,8.859068451700855e-10,1e-12,1e-10,2,4,gen7k10,0.0,True,a5eb14507e51e2bd7f1a2c55ea7ee6b545b2c0c6517343692c6976ab7f675e37
+prelim,starter+main,36,one_background_batch_not_36_independent_failures,1.248823488521865e-09,1e-12,1e-10,2,4,gen7k10,0.0,True,c9830dac3d7b95a5da0cb61eaa4c2b10ada81ae450bb3ceeb289c16ea7dfd57e
+prelim,starter+prelim+main,36,one_background_batch_not_36_independent_failures,1.3934987666704667e-08,1e-12,1e-10,2,4,gen7k10,0.0,True,5109423c52fef6bc397f4aaf9f93f78eb456465f2f8f1f3624b91a37d9521bc6

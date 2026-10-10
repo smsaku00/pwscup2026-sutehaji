@@ -1,0 +1,72 @@
+{
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "ref": "main",
+  "verification": "GitHub connector blob SHA == Git hash of local bytes, read-only",
+  "server_submission_zip_hash_checked": false,
+  "checked": [
+    {
+      "name": "round1_F_mia.csv",
+      "path": "攻撃フェーズ/MIA/20261005_MIA希少_第1回同点データ/結果/F_mia.csv",
+      "local_git_blob": "da76f6a111f1ea3a3476a2d213f640c31272cde5",
+      "remote_git_blob": "da76f6a111f1ea3a3476a2d213f640c31272cde5",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round2_F_mia.csv",
+      "path": "攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/結果/F_mia.csv",
+      "local_git_blob": "c01f7ce1e92c02b9593f68bf6358184ab37fac9a",
+      "remote_git_blob": "c01f7ce1e92c02b9593f68bf6358184ab37fac9a",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round3_F_mia.csv",
+      "path": "攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+      "local_git_blob": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+      "remote_git_blob": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round4_F_mia.csv",
+      "path": "攻撃フェーズ/MIA/20261010_第4回MIA_提出原本と固定5bit照合/F_mia.csv",
+      "local_git_blob": "d1c4188ffae8d20bc57113b5f13c1e031b1f6e46",
+      "remote_git_blob": "d1c4188ffae8d20bc57113b5f13c1e031b1f6e46",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round1_detailed_results.html",
+      "path": "攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第1回_detailed_results.html",
+      "local_git_blob": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "remote_git_blob": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round2_detailed_results.html",
+      "path": "攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_detailed_results.html",
+      "local_git_blob": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "remote_git_blob": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round3_detailed_results.html",
+      "path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "local_git_blob": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "remote_git_blob": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "match": true,
+      "isError": false
+    },
+    {
+      "name": "round4_detailed_results.html",
+      "path": "攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "local_git_blob": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+      "remote_git_blob": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+      "match": true,
+      "isError": false
+    }
+  ]
+}

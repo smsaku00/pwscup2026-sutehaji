@@ -1,0 +1,18 @@
+{
+  "audit_utc": "2026-10-10T06:13:00.310959+00:00",
+  "status": "passed",
+  "source_tables_hash_verified": 56,
+  "all_source_target_rows_checked": 185080,
+  "strict_threshold_rows_checked": 5085,
+  "top10_rows_checked": 400,
+  "maximum_TPR_error": 0.0,
+  "checks": "Exact source-row rejoin; complete strict-threshold set equality; alias registry hash; baseline rejoin; canonical recipe uniqueness and no omitted higher-scoring recipe; categories separated.",
+  "threshold": "12-decimal numeric equality, strictly above0.10; original values retained.",
+  "pending_families": [],
+  "artifact_hashes": {
+    "09_追加パネル_TPR010超過全登録.csv.gz": "d0d9c22ea3ba0104e3abd483cffff60485ee8f71333cf8a2fdbb9fed61436f89",
+    "10_追加パネル_対象別上位10方式.csv": "3828b36b63753c81cd19ad159e8c3f8925edee6aa95d1be7cb06a988853f2edb",
+    "11_追加パネル_閾値超過件数.csv": "67680a938743726060a321f1f4c545e37db4651ee215630b0495d9660dbe5d50",
+    "追加ランキングの範囲.json": "202f97c22ef9cc3b3846a4a81ab0e6754484613d6cafa5d5bce15c57c3027a73"
+  }
+}

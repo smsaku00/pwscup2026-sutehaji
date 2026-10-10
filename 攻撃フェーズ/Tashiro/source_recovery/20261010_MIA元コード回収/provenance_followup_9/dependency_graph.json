@@ -1,0 +1,224 @@
+{
+  "scope": "Static only; original source not imported",
+  "new_sources": [
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+      "imports": [
+        "argparse",
+        "harness",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sklearn.neighbors",
+        "submit_audit",
+        "sys"
+      ],
+      "path_literals": [
+        ".csv",
+        "C_*.csv",
+        "F_aia.csv",
+        "F_mia.csv"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+      "imports": [
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys"
+      ],
+      "path_literals": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "mia_columns.json",
+        "report.json",
+        "work/attack_state.json"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+      "imports": [
+        "build_attack2",
+        "json",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sys"
+      ],
+      "path_literals": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "prelim_attack2/r1/F_mia.csv"
+      ]
+    },
+    {
+      "source": "予備戦/結果分析/分析.py",
+      "imports": [
+        "hashlib",
+        "importlib.util",
+        "io",
+        "json",
+        "numpy",
+        "openpyxl",
+        "pandas",
+        "pathlib",
+        "pwscup2026.scoring.attack_score",
+        "scipy.spatial.distance",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sys",
+        "zipfile"
+      ],
+      "path_literals": [
+        ".csv",
+        "15_*/分析.py",
+        "21*/比較結果.json",
+        "22*/比較結果.json",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05*/B_self.csv",
+        "sha256.defense.C_5.csv",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "候補順位と期待希少TPR.json",
+        "期待希少TPRと順位.json",
+        "検証結果.json"
+      ]
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time"
+      ],
+      "path_literals": [
+        ".csv",
+        "CSV作成.mjs",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "aia_challenge_5.csv",
+        "作成.py",
+        "入力SHA256.json",
+        "分析.py",
+        "実行記録.json",
+        "希少24人のスコア.json",
+        "提出行列.json",
+        "検証.py",
+        "検証結果.json",
+        "比較結果.json",
+        "計算条件.json"
+      ]
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "csv",
+        "hashlib",
+        "importlib.util",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pwscup2026.common.submission_schema",
+        "pwscup2026.scoring.attack_score",
+        "re",
+        "sys",
+        "time"
+      ],
+      "path_literals": [
+        ".csv",
+        "20_Team20希少のGenLRA検証/検証.py",
+        "21_MIA全体と希少のGenLRA比較/比較結果.json",
+        "22_GenLRAの7属性9属性10属性比較/比較結果.json",
+        "F_mia.csv",
+        "PWSCup2026_prelim_attack/aia_challenge_5.csv",
+        "PWSCup2026_prelim_attack/mia_columns.json",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "pwscup2026/kit/validate.py",
+        "入力SHA256.json",
+        "希少24人のスコア.json",
+        "提出行列.json",
+        "計算条件.json"
+      ]
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+      "imports": [
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pwscup2026.scoring.attack_score",
+        "sys",
+        "time"
+      ],
+      "path_literals": [
+        "14_MIA希少の距離と対応固有性/距離と対応の診断.json",
+        "PWSCup2026_prelim_attack/C_20.csv",
+        "PWSCup2026_prelim_attack/aia_challenge_5.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv",
+        "Team20の45状態と採点.json",
+        "主設定の近傍別寄与.json",
+        "入力ファイルSHA256.json",
+        "同条件の距離と点密度比.json",
+        "固定条件と前処理.json",
+        "希少24人の全設定順位.json",
+        "希少スコアの範囲.json",
+        "検証結果.json",
+        "設定比較.json"
+      ]
+    }
+  ],
+  "new_external_dependencies": {
+    "openpyxl": "3.1.5 observed in root .venv",
+    "@oai/artifact-tool": "2.8.89 observed in current bundled Node cache, historical original version not recorded"
+  },
+  "source_location_aliases": [
+    {
+      "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/作成.py",
+      "sha256": "5ff3b91f00b0f44fbc6e2c9a403522fd6ac4dcb83c44e6939360d068e96c92ae"
+    },
+    {
+      "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/検証.py",
+      "sha256": "b869232bb851e2d62bbdb85d057ecf4ef649a4008b889b26dbce8500980822ce"
+    },
+    {
+      "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+      "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/CSV作成.mjs",
+      "sha256": "379007ee10c315dd7e8710ca68891a566f63c79fe718323601a72019995182c6"
+    }
+  ]
+}

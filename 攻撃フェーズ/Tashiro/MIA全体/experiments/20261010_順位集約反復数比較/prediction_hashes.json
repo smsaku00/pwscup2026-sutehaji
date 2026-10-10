@@ -1,0 +1,130 @@
+[
+  {
+    "background": "starter+prelim+main",
+    "N": 10,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "14c823a1ae5f0efb97ca1c710061f552bdefc070b7f8c79479be4a33cbac903e",
+    "file_sha256": "4c95be6b92495b6b0a4097cb2dd65c53ec0465c586fa2fe7b8df5153c33fbb58",
+    "file": "predictions/starter+prelim+main/N10_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 10,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "34795e13178fcc82191263de27712548e8dfcaee2ac2a79c3466ee850e453b3f",
+    "file_sha256": "14796a4aeda64adf474d41eac19e7b2b9131efda40caa8f4852ec5807f603ede",
+    "file": "predictions/starter+prelim+main/N10_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 10,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "456a01b78307fcacb0c96f3b3886372c10174bddd2c7126e03de88216c990ae2",
+    "file_sha256": "8c630eb65fc1fdc0adcbd979d02700de26af3ef138afa9ee33bba159c6e526bb",
+    "file": "predictions/prelim/N10_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 10,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "dd4111284adf6c67a025395cb5e069287fbbec3cd27922e2935530af3513252b",
+    "file_sha256": "7a2c726fb9f0980650aa5c3c9c52aa35efb25c31c3d774c49bc4d775e075a576",
+    "file": "predictions/prelim/N10_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 30,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "96e11c4bbb989c6cd80a8deac7a4460e3a9668c18254f9aa14df2774845977b3",
+    "file_sha256": "8965d74995420eea282b6a421c58bc56c0ed4c7f1aea3e114f7b9496d161a160",
+    "file": "predictions/starter+prelim+main/N30_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 30,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "c0dbba2c356b31db6beffcc9c113ad99f5a68bb22370da03a3ca4ccbf13850b5",
+    "file_sha256": "293b115d328d5a2ea4ef93094aa8cf84ca4294890874b5676814d91ca9c0ceef",
+    "file": "predictions/starter+prelim+main/N30_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 30,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "7eb011c929c154a407f02ce579ab407fac6efefc52ad0f9fa0a10c3ea66b789c",
+    "file_sha256": "28b82bbf4a0b91d5743131cf1b7ae5bb5151a304182979d559edec72959632c0",
+    "file": "predictions/prelim/N30_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 30,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "5d69fc130272594c8309e9f86507618628c32b5339139e5b2048df628a278854",
+    "file_sha256": "22646d59627bff704779f9db8726e50c90d6e757c2630c4c299c617e23c03dd5",
+    "file": "predictions/prelim/N30_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 100,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "b7db2e141db877d7a8ffc42aee05f2ed58f45cd9e60f4036253a2a7066adf8d7",
+    "file_sha256": "ed3db47221771eaf3bddc3b7a07583bca60a6d96856a5c3087e909bfbed79c3a",
+    "file": "predictions/starter+prelim+main/N100_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 100,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "7d523c3ef6d11209b5b60684f0cfb2e0caa17ccd2970739b53286750386d0c6b",
+    "file_sha256": "f1879190ce1285e7afcb820a83c6b67f82e1cea987ee12eb1eccdcb488a1b837",
+    "file": "predictions/starter+prelim+main/N100_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 100,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "f82dbf831ff4276a414468ba13824fefefa14eb7a44c129ac2f944e6cbed3efe",
+    "file_sha256": "0e37edfa0b15813e0b83a29ee744cde77e50d1f22a1e04ba61848cb69f5481e0",
+    "file": "predictions/prelim/N100_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 100,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "ee44a7174c354116392671981ba899f8a451cd0e8471d3afe3a7b379a2d996df",
+    "file_sha256": "78dd168651007563e9980db29a7706d9a5a118696ede9846834727fb662a4586",
+    "file": "predictions/prelim/N100_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 1000,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "4d20abca05f8e353f820183ca05e6d764677c564028da0c50855d41e4b88f4ad",
+    "file_sha256": "60cc241aefba3944d2468a2631701d6c368d7a87cde4b5a41e69dd496be9ed27",
+    "file": "predictions/starter+prelim+main/N1000_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "starter+prelim+main",
+    "N": 1000,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "101110bda93b947ba5d973e5af7bbdc0680c647b4c741c76d0d94c4cc09ac426",
+    "file_sha256": "ad061ab8c9245fbed29de5fe12ad3ad0dd10f9039b8d1bef2073812dddc6bd7d",
+    "file": "predictions/starter+prelim+main/N1000_without_outcomes_rank_median__raw__cross0.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 1000,
+    "method": "numeric8_sexpref_rank_mean__raw__cross0.1",
+    "score_sha256": "5c549526d0d936e143ce1b046d7389d6287f7c09b9c700b573786c2197fa4699",
+    "file_sha256": "2ed492a74db22f688952ab70aad9375e1a27923b70281c5449ae79878ad0b130",
+    "file": "predictions/prelim/N1000_numeric8_sexpref_rank_mean__raw__cross0.1.npz"
+  },
+  {
+    "background": "prelim",
+    "N": 1000,
+    "method": "without_outcomes_rank_median__raw__cross0",
+    "score_sha256": "415d17d1e6b8be62c1b2863e131a1bf865ecb0f1be124233573abd10b5d12faa",
+    "file_sha256": "722c410985ac7a2c60f249eb4aea01191be75fcab6642e17798760b049b1c04f",
+    "file": "predictions/prelim/N1000_without_outcomes_rank_median__raw__cross0.npz"
+  }
+]

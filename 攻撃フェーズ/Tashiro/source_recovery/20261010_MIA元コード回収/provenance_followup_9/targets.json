@@ -1,0 +1,776 @@
+{
+  "task": "Nine saved-score provenance follow-up; no attack calculation",
+  "targets": [
+    {
+      "id": "prelim_attack_r1",
+      "source_id": "S0058",
+      "status": "generator_located_numeric_reproduction_not_run",
+      "saved_output": {
+        "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/prelim_attack/r1/F_mia.csv",
+        "exists": true,
+        "sha256": "07e67834c0614f423832d5f231306ae0fa1421020b78fa90b1406180d9ed6a32",
+        "bytes": 415609,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0058"
+      },
+      "generator": {
+        "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+        "exists": true,
+        "sha256": "5d69a236546303692cc1320111bdfd910950ce021b999efcb9fb3c3a488b406b",
+        "bytes": 7504,
+        "role": "source_code",
+        "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+        "evidence_lines": [
+          3,
+          5,
+          130,
+          161
+        ]
+      },
+      "fixed_settings": {
+        "self": 5,
+        "home": "東京都",
+        "round_default": 1,
+        "saved_rare_round_residue": 1,
+        "round_modulus": 10,
+        "continuous": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "scale": "A mean/std ddof0; no log in nn_dist/_z",
+        "double_centering": "L=-log(clip(D,1e-12)); subtract row/column means, add grand mean",
+        "top_nonhome_nonrare": 12,
+        "confirmed_thresholds": [
+          0.05,
+          0.3
+        ],
+        "time_fingerprint_round_decimals": 9,
+        "rare_range": [
+          0.52,
+          0.58
+        ]
+      },
+      "evidence": {
+        "builder_docstring_command": "build_attack.py --round 1 --out prelim_attack/r1",
+        "identical_code_alias": {
+          "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack.py",
+          "exists": true,
+          "sha256": "5d69a236546303692cc1320111bdfd910950ce021b999efcb9fb3c3a488b406b",
+          "bytes": 7504
+        },
+        "saved_score_statistics": {
+          "rows": 1049,
+          "targets": 20,
+          "min": 0.02007626310772164,
+          "max": 1.0,
+          "zero_cells": 0,
+          "one_cells": 75,
+          "all_zero_rows": 0
+        },
+        "rare_placement_pattern": "matches round=1 modulo10 in all non-overridden rare cells; no distances computed"
+      },
+      "input_locations": {
+        "historical": "work/data_prelim_team05/{B_self.csv,A_bg.csv,scoring_config.yaml,utility_ref.json}",
+        "historical_path_currently_missing": true,
+        "candidate_relocated_data": "予備戦/加工フェーズ/分析/資料/加工コード_share_team05/data/",
+        "candidate_same_as_current_prelim_B_self_and_A_bg": true,
+        "targets": "予備戦/配布データ/PWSCup2026_prelim_attack/C_*.csv",
+        "exact_generation_input_hashes": "not recorded in saved r1 folder"
+      },
+      "limits": [
+        "No original invocation log; round1 is the documented command and stored pattern matches modulo10.",
+        "No claim of full score or byte regeneration.",
+        "Original main also writes AIA/token and must not be executed as-is in this recovery."
+      ]
+    },
+    {
+      "id": "prelim_attack2_r1",
+      "source_id": "S0060",
+      "status": "generator_located_numeric_reproduction_not_run",
+      "saved_output": {
+        "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/prelim_attack2/r1/F_mia.csv",
+        "exists": true,
+        "sha256": "1c787571f9774d0bfcd00002cb2c30d110611d26add45aabf1e9414b2ec81527",
+        "bytes": 364390,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0060"
+      },
+      "generator": {
+        "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+        "exists": true,
+        "sha256": "5c4fd31337ce98ce06103c1a0be9bd3d6091bec00d9b82bfb7d483a2156a5dad",
+        "bytes": 11271,
+        "role": "source_code",
+        "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+        "evidence_lines": [
+          12,
+          66,
+          154,
+          185,
+          227
+        ]
+      },
+      "fixed_settings": {
+        "round": 1,
+        "self": 5,
+        "home": "東京都",
+        "numeric": [
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "discrete_key": [
+          "sex",
+          "prefecture",
+          "smoking",
+          "onset",
+          "death"
+        ],
+        "age_tolerance": 1,
+        "reference_mean_std_ddof": 0,
+        "null_sampling_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "confirmed_threshold_grid": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3
+        ],
+        "confirmed_gate": "mean null matches<1 and at least3 B matches",
+        "private_zero_rows": 163,
+        "top_nonhome_nonrare": 12,
+        "rare_range": [
+          0.52,
+          0.58
+        ],
+        "state": "found/ruled read before execution; empty-state nomination formula matches saved nominees"
+      },
+      "evidence": {
+        "report_metadata": {
+          "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/prelim_attack2/r1/report.json",
+          "exists": true,
+          "sha256": "967dd208a63b00601e5b37b8cb51376a27715dcea481994a7db164d256322e99",
+          "bytes": 2584
+        },
+        "report_round": 1,
+        "saved_score_statistics": {
+          "rows": 1049,
+          "targets": 20,
+          "min": 0.0,
+          "max": 1.0,
+          "zero_cells": 3260,
+          "one_cells": 37,
+          "all_zero_rows": 163
+        },
+        "saved_report_nomination_matches_empty_state": true,
+        "verification_code": {
+          "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+          "exists": true,
+          "sha256": "2e0a426937cbc0b2aecae7b2fe01564b905dd59d90997fc00135d9661b7f81c5",
+          "bytes": 2524,
+          "role": "source_code",
+          "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+          "evidence_lines": [
+            4,
+            37
+          ]
+        }
+      },
+      "input_locations": {
+        "historical": "share_team05/data/{B_self.csv,A_bg.csv}",
+        "candidate_relocated_data": "予備戦/加工フェーズ/分析/資料/加工コード_share_team05/data/",
+        "candidate_same_as_current_prelim_B_self_and_A_bg": true,
+        "targets": "予備戦/配布データ/PWSCup2026_prelim_attack/C_*.csv",
+        "state_before_run": "work/attack_state.json (pre-run snapshot not found)"
+      },
+      "same_name_caution": {
+        "previously_recovered_path": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+        "same_bytes": false,
+        "note": "The earlier recovered fingerprint/structural builder is a different implementation; do not substitute it."
+      },
+      "limits": [
+        "Saved report was inspected only for round/nomination structure; person-ID lists are not published.",
+        "Actual historical pre-run state is not proven even though empty-state formula fits.",
+        "No new nearest-neighbor calculation or full output match."
+      ]
+    },
+    {
+      "id": "F_mia_zhou",
+      "source_id": "S0088",
+      "status": "generator_missing_documented_settings_and_output_hash_confirmed",
+      "saved_output": {
+        "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/zhou/F_mia_zhou.csv",
+        "exists": true,
+        "sha256": "822a6f27599ccd187ce8837083238940246ed2e0dc7a80780311e5a31f2fdc05",
+        "bytes": 318677,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0088"
+      },
+      "generator_expected_filename": "mia_mixed_density_attack_improved.py",
+      "generator_expected_sha256": "c3733d631da40b2450b3a085285428cba4a230f8bc0e7e04fcf6dda59400aa38",
+      "evidence": {
+        "document": {
+          "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/zhou/README_mia_submission_Zhou.md",
+          "exists": true,
+          "sha256": "1d449d127ef18a0d844f58dab12c0d4d5f5cc28c216fd660362bd822160db3f7",
+          "bytes": 17696
+        },
+        "command_lines": [
+          424,
+          441
+        ],
+        "hash_lines": [
+          458,
+          462
+        ],
+        "document_saved_output_sha_matches": true
+      },
+      "fixed_settings": {
+        "exclude_target_id": 5,
+        "continuous": [
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG",
+          "time"
+        ],
+        "categorical": [
+          "age",
+          "sex",
+          "prefecture",
+          "smoking",
+          "onset",
+          "death"
+        ],
+        "TG_ALT": "natural log",
+        "time": "log1p",
+        "standardization": "A mean/std (exact ddof requires missing code)",
+        "kde": "independent1D scipy.stats.gaussian_kde, Scott default; missing implementation fallback is not recovered",
+        "categorical_weight": 0.5,
+        "alpha": 1.0,
+        "exclusion_mode": "primary",
+        "score_transform": "rank",
+        "C1_excluded_rows": 120,
+        "C2_excluded_rows": 0
+      },
+      "input_locations": {
+        "B": "Team05 B.csv",
+        "A": "A_bg.csv only",
+        "targets": "all public C except5",
+        "exclusions": "c_exclusion_candidates.csv (not found; person-level file not uploaded)"
+      },
+      "limits": [
+        "README pseudocode is not treated as the missing original code.",
+        "Missing KDE fallback, rank/tie behavior and exclusion list prevent exact original-method reconstruction.",
+        "The existing build_F_mia_domias.py is a different joint Gaussian DOMIAS implementation."
+      ]
+    },
+    {
+      "id": "legacy_submission_1",
+      "source_id": "S0098",
+      "status": "generator_missing",
+      "saved_output": {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/1_20260902_Seo/F_mia.csv",
+        "exists": true,
+        "sha256": "b22a4753d487c14ca92a4ce524446313b116b3c2464bf35e97cf512216d30d0f",
+        "bytes": 351373,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0098"
+      },
+      "generator": null,
+      "limits": [
+        "Saved F_mia exists and can be evaluated separately, but no generator is recovered.",
+        "Do not label a reconstruction from prose as the original method.",
+        "Documentation is substantial but exact source, fallbacks, input snapshots and serialization remain missing."
+      ],
+      "evidence": {
+        "documentation": [
+          {
+            "original_relative_path": "予備戦/攻撃フェーズ/提出記録/1_20260902_Seo/mia.md",
+            "exists": true,
+            "sha256": "7633173cb0ce10add41f14bd7b01aba4779c0c5571546b5d9a173a208ee025ea",
+            "bytes": 18422
+          },
+          {
+            "original_relative_path": "予備戦/攻撃フェーズ/提出記録/1_20260902_Seo/手法メモ_Seo.md",
+            "exists": true,
+            "sha256": "e24a95c88e8235751cabf84569e3a1c1c727c8452ce3cd419f77d302130a4751",
+            "bytes": 13649
+          }
+        ]
+      },
+      "documented_settings": {
+        "attributes": "numeric7 + sex/prefecture/smoking",
+        "numeric": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "TG_ALT": "log1p",
+        "scale": "old A_bg IQR/1.349",
+        "base_rank_mix": {
+          "NN": 0.9,
+          "KDE": 0.1
+        },
+        "private_zero_rows": 163,
+        "team_specific": [
+          "2/23 interval distances",
+          "18/19/29 public-material selection correction",
+          "6 unique vectors for KDE",
+          "24 exclude68 public matches for KDE"
+        ]
+      }
+    },
+    {
+      "id": "legacy_submission_2",
+      "source_id": "S0099",
+      "status": "generator_missing",
+      "saved_output": {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/2_20260906_Seo/F_mia.csv",
+        "exists": true,
+        "sha256": "b2149bc70b316375aef0caef3c23e4843e5cc96f15cab4d8e2319209e9d1ac3c",
+        "bytes": 351697,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0099"
+      },
+      "generator": null,
+      "limits": [
+        "Saved F_mia exists and can be evaluated separately, but no generator is recovered.",
+        "Do not label a reconstruction from prose as the original method."
+      ],
+      "evidence": {
+        "submission_zip_members": [
+          "F_mia.csv",
+          "F_aia.csv",
+          "token.txt"
+        ],
+        "no_code_member": true
+      },
+      "documented_settings": "no reliable generation configuration located"
+    },
+    {
+      "id": "legacy_submission_7",
+      "source_id": "S0100",
+      "status": "generator_located_numeric_reproduction_not_run",
+      "saved_output": {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/F_mia.csv",
+        "exists": true,
+        "sha256": "41802a7525f6ce0b500c4cdde6c5b27374042013a7605912d66c0515205f0200",
+        "bytes": 350279,
+        "role": "saved_output_not_uploaded",
+        "source_id": "S0100"
+      },
+      "generator": {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+        "exists": true,
+        "sha256": "5ff3b91f00b0f44fbc6e2c9a403522fd6ac4dcb83c44e6939360d068e96c92ae",
+        "bytes": 12552,
+        "role": "source_code",
+        "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+        "evidence_lines": [
+          78,
+          127,
+          198
+        ]
+      },
+      "dependencies": [
+        {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+          "exists": true,
+          "sha256": "b869232bb851e2d62bbdb85d057ecf4ef649a4008b889b26dbce8500980822ce",
+          "bytes": 14346,
+          "role": "source_code",
+          "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py"
+        },
+        {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+          "exists": true,
+          "sha256": "379007ee10c315dd7e8710ca68891a566f63c79fe718323601a72019995182c6",
+          "bytes": 2282,
+          "role": "source_code",
+          "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs"
+        },
+        {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+          "exists": true,
+          "sha256": "343edfc7c2e719a62980c3ceddcfc0129469a848be11cc3e4f7988955725872e",
+          "bytes": 13036,
+          "role": "source_code",
+          "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py"
+        },
+        {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+          "exists": true,
+          "sha256": "d7dbade1ca7ba1a07c4d2df53a570fe5b0e322484ae18962848687df98a83872",
+          "bytes": 19620,
+          "role": "source_code",
+          "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py"
+        },
+        {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+          "exists": true,
+          "sha256": "64f6b5e814ab77a895d43cdf291231a8fc660b056d7f067235c2ef3f60e3bbad",
+          "bytes": 16960,
+          "role": "source_code",
+          "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py"
+        }
+      ],
+      "fixed_settings": {
+        "overall_method": "QI7/h1/k10/rho0.98; Team1,2 nonrare unchanged",
+        "rare_plan": "gen9_after48",
+        "numeric": [
+          "age",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT"
+        ],
+        "categorical": [
+          "sex",
+          "prefecture"
+        ],
+        "rare_numeric": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG"
+        ],
+        "rare_categorical": [
+          "sex",
+          "prefecture"
+        ],
+        "log1p": [
+          "TG",
+          "ALT"
+        ],
+        "bandwidth_factor": 1,
+        "neighbors": 10,
+        "rho": 0.98
+      },
+      "settings_file": "provenance_followup_9/submission7_fixed_settings.json",
+      "evidence": {
+        "generation_record": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/実行記録.json",
+          "exists": true,
+          "sha256": "2cc1cc0b13cceb09ad5a37c497817ec70c4e9c33be27c3ed2065fb6a92098a92",
+          "bytes": 423
+        },
+        "recorded_output_sha_matches_saved_output": true,
+        "migration_record": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/移管確認記録.json",
+          "exists": true,
+          "sha256": "9db523e6d7ab97f02fefd3ea7a931d506aff9e20ed5843a826330838f59985d1",
+          "bytes": 15641
+        },
+        "input_record": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/入力SHA256.json",
+          "exists": true,
+          "sha256": "ba6e04d12e8670e70f3b351e1ccfcb7bef797835ee936c87261ed192b468aec6",
+          "bytes": 17435
+        },
+        "source_hash_matches_input_and_migration_records": true,
+        "code_path_mapping": [
+          {
+            "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+            "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/作成.py",
+            "sha256": "5ff3b91f00b0f44fbc6e2c9a403522fd6ac4dcb83c44e6939360d068e96c92ae"
+          },
+          {
+            "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+            "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/検証.py",
+            "sha256": "b869232bb851e2d62bbdb85d057ecf4ef649a4008b889b26dbce8500980822ce"
+          },
+          {
+            "stored_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+            "original_execution_relative_path": "予備戦/攻撃フェーズ/提出準備/7_20260907_GenLRA7_9_MIA/CSV作成.mjs",
+            "sha256": "379007ee10c315dd7e8710ca68891a566f63c79fe718323601a72019995182c6"
+          }
+        ]
+      },
+      "input_locations": {
+        "baseline": "予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv",
+        "raw7": "analysis21 比較結果.json#raw_scores[target].qi7_gen",
+        "raw9": "analysis22 比較結果.json#raw_new_scores[target].attrs9",
+        "additional": "analysis21/22 validation/cache/history records; private membership Q; official B/A/C",
+        "copy_protection": "Inputs containing rows/IDs/scores and submission CSVs are not uploaded"
+      },
+      "limits": [
+        "These stored source files have been relocated: HERE.parents[3] is wrong at current stored depth. Use original_execution_relative_path in a separate working tree.",
+        "CSV serialization depends on bundled Node and @oai/artifact-tool. Current observed artifact-tool2.8.89 is not proof of the historical package version.",
+        "Some calculated settings contain person-level history; scalar projection is provided instead of publishing the JSON.",
+        "No new raw-score or CSV reproduction in this recovery."
+      ]
+    },
+    {
+      "id": "legacy_gen10_nonrare_historical_replace",
+      "source_id": "S0101",
+      "status": "composition_generator_located_numeric_reproduction_not_run",
+      "saved_aggregate": {
+        "original_relative_path": "予備戦/結果分析/集計/未採用手法_対象別.csv",
+        "exists": true,
+        "sha256": "45e464954899a6d3a537620e44212f86b0c7875d8f3b93f48f389c407796a2dc",
+        "bytes": 236288,
+        "role": "aggregate_not_uploaded",
+        "fragment": "Gen10_非希少のみ差替"
+      },
+      "generator": {
+        "original_relative_path": "予備戦/結果分析/分析.py",
+        "exists": true,
+        "sha256": "ee397ffecdb7f5493091c20e67a04ce646d9dc2650d3a9f73b60babed9b78e12",
+        "bytes": 24180,
+        "role": "source_code",
+        "bundle_relative_path": "originals/予備戦/結果分析/分析.py",
+        "evidence_lines": [
+          172,
+          209
+        ]
+      },
+      "existing_catalog_reader": {
+        "original_relative_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "exists": true,
+        "sha256": "bce8d0775c95257fd26cc06df838cafc3a4d2b00697a68aa33bdac4021cf331a",
+        "bytes": 32228,
+        "role": "source_code",
+        "bundle_relative_path": null,
+        "already_in_repository_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "evidence_lines": [
+          155,
+          179
+        ]
+      },
+      "fixed_settings": {
+        "dim": 10,
+        "raw_key": "attrs10_gen",
+        "raw_cache": "analysis21",
+        "preserve_targets": [
+          1,
+          2
+        ],
+        "preserve_rare": true,
+        "replacement_mask": "~rare & ~private (875 rows)",
+        "private_nonrare_zero": true,
+        "replacement_score": ".1 + .8 * rankdata(raw[mask], method=\"average\") / (mask.sum()+1)",
+        "mask_size": 875,
+        "denominator": 876,
+        "AIA": "official adopted af8 unchanged",
+        "status": "post-public-truth composition evaluation; not original pre-release independent selection"
+      },
+      "inputs": {
+        "baseline": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/8_20260907_GenLRA_Zhou/F_mia.csv",
+          "exists": true,
+          "sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "bytes": 350241,
+          "role": "baseline_not_uploaded",
+          "official_zip_relative_path": "予備戦/配布データ/結果/攻撃提出物/cohort05_F.zip",
+          "official_zip_member": "F_mia.csv",
+          "official_member_sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "byte_equal_official_adopted": true
+        },
+        "raw_cache": {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/比較結果.json",
+          "exists": true,
+          "sha256": "4988ce2d9b4856b3304eb098a33b3941b5e2fac5eaa93a6a304d05611aca4421",
+          "bytes": 2963969
+        },
+        "B_and_Q": "Current preliminary B_self + aia_challenge_5; original script filters Q member rows using public aia_truth_5 when constructing private mask",
+        "truth": "Public pool_ids/aia_truth for evaluation only; do not use for main"
+      },
+      "limits": [
+        "These are 3 synthetic post-hoc compositions, not copies of the original submission7 output.",
+        "The .1/.8 average-rank/(875+1) mapping differs from submission7 cap-dependent min-rank/875 mapping.",
+        "Original main also scores all public submissions and writes reports; it is not executed here.",
+        "Score arrays/truth/submission CSVs are not published."
+      ]
+    },
+    {
+      "id": "legacy_gen7_nonrare_historical_replace",
+      "source_id": "S0102",
+      "status": "composition_generator_located_numeric_reproduction_not_run",
+      "saved_aggregate": {
+        "original_relative_path": "予備戦/結果分析/集計/未採用手法_対象別.csv",
+        "exists": true,
+        "sha256": "45e464954899a6d3a537620e44212f86b0c7875d8f3b93f48f389c407796a2dc",
+        "bytes": 236288,
+        "role": "aggregate_not_uploaded",
+        "fragment": "Gen7_非希少のみ差替"
+      },
+      "generator": {
+        "original_relative_path": "予備戦/結果分析/分析.py",
+        "exists": true,
+        "sha256": "ee397ffecdb7f5493091c20e67a04ce646d9dc2650d3a9f73b60babed9b78e12",
+        "bytes": 24180,
+        "role": "source_code",
+        "bundle_relative_path": "originals/予備戦/結果分析/分析.py",
+        "evidence_lines": [
+          172,
+          209
+        ]
+      },
+      "existing_catalog_reader": {
+        "original_relative_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "exists": true,
+        "sha256": "bce8d0775c95257fd26cc06df838cafc3a4d2b00697a68aa33bdac4021cf331a",
+        "bytes": 32228,
+        "role": "source_code",
+        "bundle_relative_path": null,
+        "already_in_repository_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "evidence_lines": [
+          155,
+          179
+        ]
+      },
+      "fixed_settings": {
+        "dim": 7,
+        "raw_key": "qi7_gen",
+        "raw_cache": "analysis21",
+        "preserve_targets": [
+          1,
+          2
+        ],
+        "preserve_rare": true,
+        "replacement_mask": "~rare & ~private (875 rows)",
+        "private_nonrare_zero": true,
+        "replacement_score": ".1 + .8 * rankdata(raw[mask], method=\"average\") / (mask.sum()+1)",
+        "mask_size": 875,
+        "denominator": 876,
+        "AIA": "official adopted af8 unchanged",
+        "status": "post-public-truth composition evaluation; not original pre-release independent selection"
+      },
+      "inputs": {
+        "baseline": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/8_20260907_GenLRA_Zhou/F_mia.csv",
+          "exists": true,
+          "sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "bytes": 350241,
+          "role": "baseline_not_uploaded",
+          "official_zip_relative_path": "予備戦/配布データ/結果/攻撃提出物/cohort05_F.zip",
+          "official_zip_member": "F_mia.csv",
+          "official_member_sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "byte_equal_official_adopted": true
+        },
+        "raw_cache": {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/比較結果.json",
+          "exists": true,
+          "sha256": "4988ce2d9b4856b3304eb098a33b3941b5e2fac5eaa93a6a304d05611aca4421",
+          "bytes": 2963969
+        },
+        "B_and_Q": "Current preliminary B_self + aia_challenge_5; original script filters Q member rows using public aia_truth_5 when constructing private mask",
+        "truth": "Public pool_ids/aia_truth for evaluation only; do not use for main"
+      },
+      "limits": [
+        "These are 3 synthetic post-hoc compositions, not copies of the original submission7 output.",
+        "The .1/.8 average-rank/(875+1) mapping differs from submission7 cap-dependent min-rank/875 mapping.",
+        "Original main also scores all public submissions and writes reports; it is not executed here.",
+        "Score arrays/truth/submission CSVs are not published."
+      ]
+    },
+    {
+      "id": "legacy_gen9_nonrare_historical_replace",
+      "source_id": "S0103",
+      "status": "composition_generator_located_numeric_reproduction_not_run",
+      "saved_aggregate": {
+        "original_relative_path": "予備戦/結果分析/集計/未採用手法_対象別.csv",
+        "exists": true,
+        "sha256": "45e464954899a6d3a537620e44212f86b0c7875d8f3b93f48f389c407796a2dc",
+        "bytes": 236288,
+        "role": "aggregate_not_uploaded",
+        "fragment": "Gen9_非希少のみ差替"
+      },
+      "generator": {
+        "original_relative_path": "予備戦/結果分析/分析.py",
+        "exists": true,
+        "sha256": "ee397ffecdb7f5493091c20e67a04ce646d9dc2650d3a9f73b60babed9b78e12",
+        "bytes": 24180,
+        "role": "source_code",
+        "bundle_relative_path": "originals/予備戦/結果分析/分析.py",
+        "evidence_lines": [
+          172,
+          209
+        ]
+      },
+      "existing_catalog_reader": {
+        "original_relative_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "exists": true,
+        "sha256": "bce8d0775c95257fd26cc06df838cafc3a4d2b00697a68aa33bdac4021cf331a",
+        "bytes": 32228,
+        "role": "source_code",
+        "bundle_relative_path": null,
+        "already_in_repository_path": "攻撃フェーズ/Tashiro/MIA全体/experiments/20261008_帯別横断検証/historical_results.py",
+        "evidence_lines": [
+          155,
+          179
+        ]
+      },
+      "fixed_settings": {
+        "dim": 9,
+        "raw_key": "attrs9",
+        "raw_cache": "analysis22",
+        "preserve_targets": [
+          1,
+          2
+        ],
+        "preserve_rare": true,
+        "replacement_mask": "~rare & ~private (875 rows)",
+        "private_nonrare_zero": true,
+        "replacement_score": ".1 + .8 * rankdata(raw[mask], method=\"average\") / (mask.sum()+1)",
+        "mask_size": 875,
+        "denominator": 876,
+        "AIA": "official adopted af8 unchanged",
+        "status": "post-public-truth composition evaluation; not original pre-release independent selection"
+      },
+      "inputs": {
+        "baseline": {
+          "original_relative_path": "予備戦/攻撃フェーズ/提出記録/8_20260907_GenLRA_Zhou/F_mia.csv",
+          "exists": true,
+          "sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "bytes": 350241,
+          "role": "baseline_not_uploaded",
+          "official_zip_relative_path": "予備戦/配布データ/結果/攻撃提出物/cohort05_F.zip",
+          "official_zip_member": "F_mia.csv",
+          "official_member_sha256": "cecc02572e677666d9b42283e25a8a656801b804cd83b25afc799adc700fffa3",
+          "byte_equal_official_adopted": true
+        },
+        "raw_cache": {
+          "original_relative_path": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/比較結果.json",
+          "exists": true,
+          "sha256": "9afedb1b6d84c278347a4975691a388b2dc0f9293f35d4e11d5ca1d0575b4276",
+          "bytes": 1427032
+        },
+        "B_and_Q": "Current preliminary B_self + aia_challenge_5; original script filters Q member rows using public aia_truth_5 when constructing private mask",
+        "truth": "Public pool_ids/aia_truth for evaluation only; do not use for main"
+      },
+      "limits": [
+        "These are 3 synthetic post-hoc compositions, not copies of the original submission7 output.",
+        "The .1/.8 average-rank/(875+1) mapping differs from submission7 cap-dependent min-rank/875 mapping.",
+        "Original main also scores all public submissions and writes reports; it is not executed here.",
+        "Score arrays/truth/submission CSVs are not published."
+      ]
+    }
+  ]
+}

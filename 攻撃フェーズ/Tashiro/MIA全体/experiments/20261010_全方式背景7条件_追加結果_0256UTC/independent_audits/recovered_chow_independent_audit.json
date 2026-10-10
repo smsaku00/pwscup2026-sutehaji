@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "method": "Independent selected-BG half-split/bin reconstruction, file hashes, owner/fold aggregation arithmetic and diagnostic scope checks; no membership truth loaded",
+  "backgrounds": 7,
+  "forms": 3,
+  "condition_panels": 21,
+  "matrix_hashes_recorded": 21,
+  "matrix_hashes_independently_rechecked": 0,
+  "matrix_limitation": "Original no-GT guard prohibits NPZ; matrices intentionally not persisted, so this audit verifies public aggregate outputs and provenance rather than rehashing matrices.",
+  "source_and_output_hashes_checked": 105,
+  "BG_half_sex_attribute_bin_sets_recomputed": 140,
+  "aggregate_numeric_cells_recomputed": 35280,
+  "maximum_aggregate_error": 8.881784197001252e-16,
+  "rank_diagnostic_rows": 420,
+  "no_membership_accuracy_claim": true,
+  "audit_time_utc": "2026-10-10T01:33:40.948068+00:00"
+}

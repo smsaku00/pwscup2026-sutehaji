@@ -1,0 +1,68 @@
+{
+  "audit_utc": "2026-10-10T07:27:54.053644+00:00",
+  "status": "passed_completed_A3_source_input_AST_and_record_binding",
+  "completed_recipe_BG_diagnostics": 360,
+  "completed_BG_runs": 10,
+  "phase_counts": {
+    "prelim": 108,
+    "main": 252
+  },
+  "input_support_files_rehashed": 111,
+  "source_ASTs_independently_recreated_per_run": 2,
+  "check_records_verified": 2568,
+  "native_aggregate_hash_checks": 132,
+  "validation_failed_recipe_BG_diagnostics": 144,
+  "pending_recipe_BG_diagnostics": 0,
+  "source_no_NPZ_guard_preserved": true,
+  "independent_prediction_recomputation": false,
+  "main_truth_accessed": false,
+  "official_membership_FPR_claim": false,
+  "limitation": "Only completed runs are audited. Matrices are not retained under original guard, so this is source/input/static-AST and recorded-check validation, not independent matrix or aggregate-numeric regeneration. Failed pools are not counted complete.",
+  "original_pass_hypothetical_rank_sensitivity_advisories": [
+    {
+      "phase": "main",
+      "background": "starter",
+      "component": "A3",
+      "fold": 1,
+      "target": 27,
+      "form": "shared_probit_gaussian_lw",
+      "pit_error": 3.4416913763379853e-15,
+      "original_source_assertion_passed": true,
+      "changed_hypothetical_checks": [
+        {
+          "config": "A_only__county300_sex_age100",
+          "Atest_relative_rank_changed_rows": 4,
+          "Atest_unique_unscaled": 1711,
+          "Atest_unique_scaled": 1710,
+          "normal875_rank_extension_changed_rows": 1,
+          "normal875_rank_extension_max_error": 0.0011428571428571122,
+          "cdf_above_95_changed_rows": 0,
+          "cdf_above_99_changed_rows": 0
+        }
+      ]
+    },
+    {
+      "phase": "main",
+      "background": "starter",
+      "component": "public_C_strata",
+      "fold": 1,
+      "target": 27,
+      "form": "shared_probit_gaussian_lw",
+      "pit_error": 3.4416913763379853e-15,
+      "original_source_assertion_passed": true,
+      "changed_hypothetical_checks": [
+        {
+          "config": "A_only__county300_sex_age100",
+          "Atest_relative_rank_changed_rows": 4,
+          "Atest_unique_unscaled": 1711,
+          "Atest_unique_scaled": 1710,
+          "normal875_rank_extension_changed_rows": 1,
+          "normal875_rank_extension_max_error": 0.0011428571428571122,
+          "cdf_above_95_changed_rows": 0,
+          "cdf_above_99_changed_rows": 0
+        }
+      ]
+    }
+  ],
+  "advisory_interpretation": "Hypothetical scaled/unscaled Atest substitutions only; the rank-extension row count refers to Atest values placed against the normal875 reference distribution, not changes to actual candidate B ranks. Original predictions and B-CDF arrays stay unchanged. Existing04:13 conditional execution rule is preserved."
+}

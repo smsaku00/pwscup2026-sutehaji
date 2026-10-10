@@ -1,0 +1,27 @@
+{
+  "scope": "Same PWS local tree, including hidden/ignored source files; excluded venv/.git/node_modules and large 本戦/バトル generated copies",
+  "source_files_in_named_search": 1249,
+  "exact_Zhou_filename_matches": 0,
+  "Zhou_content_pattern_candidates": 0,
+  "submission2_and7_zip_member_names_checked_without_reading_tokens": true,
+  "not_searched": [
+    "Downloads/Desktop/email attachments outside PWS tree",
+    "unavailable original member working directories"
+  ],
+  "missing": [
+    {
+      "id": "F_mia_zhou",
+      "code_filename": "mia_mixed_density_attack_improved.py",
+      "expected_sha256": "c3733d631da40b2450b3a085285428cba4a230f8bc0e7e04fcf6dda59400aa38",
+      "also_missing": "c_exclusion_candidates.csv"
+    },
+    {
+      "id": "legacy_submission_1",
+      "missing": "Source Python/script and authoritative full settings/input snapshot; documentation only"
+    },
+    {
+      "id": "legacy_submission_2",
+      "missing": "Source code and generation configuration; saved CSV/ZIP only"
+    }
+  ]
+}

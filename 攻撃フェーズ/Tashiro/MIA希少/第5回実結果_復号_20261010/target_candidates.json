@@ -1,0 +1,185 @@
+{
+  "6": {
+    "number_members": 1,
+    "possible_member_subsets": [
+      [
+        90
+      ],
+      [
+        495
+      ]
+    ],
+    "possible_member_ids": [
+      90,
+      495
+    ],
+    "certain_member_ids": [],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      76,
+      115,
+      169,
+      264,
+      304,
+      383,
+      462,
+      675
+    ]
+  },
+  "10": {
+    "number_members": 2,
+    "possible_member_subsets": [
+      [
+        169,
+        304
+      ],
+      [
+        169,
+        675
+      ],
+      [
+        304,
+        383
+      ],
+      [
+        383,
+        675
+      ]
+    ],
+    "possible_member_ids": [
+      169,
+      304,
+      383,
+      675
+    ],
+    "certain_member_ids": [],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      76,
+      90,
+      115,
+      264,
+      462,
+      495
+    ]
+  },
+  "11": {
+    "number_members": 1,
+    "possible_member_subsets": [
+      [
+        169
+      ],
+      [
+        383
+      ]
+    ],
+    "possible_member_ids": [
+      169,
+      383
+    ],
+    "certain_member_ids": [],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      76,
+      90,
+      115,
+      264,
+      304,
+      462,
+      495,
+      675
+    ]
+  },
+  "16": {
+    "number_members": 2,
+    "possible_member_subsets": [
+      [
+        76,
+        462
+      ],
+      [
+        264,
+        304
+      ],
+      [
+        264,
+        675
+      ]
+    ],
+    "possible_member_ids": [
+      76,
+      264,
+      304,
+      462,
+      675
+    ],
+    "certain_member_ids": [],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      90,
+      115,
+      169,
+      383,
+      495
+    ]
+  },
+  "17": {
+    "number_members": 1,
+    "possible_member_subsets": [
+      [
+        115
+      ]
+    ],
+    "possible_member_ids": [
+      115
+    ],
+    "certain_member_ids": [
+      115
+    ],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      76,
+      90,
+      169,
+      264,
+      304,
+      383,
+      462,
+      495,
+      675
+    ]
+  },
+  "25": {
+    "number_members": 2,
+    "possible_member_subsets": [
+      [
+        76,
+        462
+      ],
+      [
+        264,
+        304
+      ],
+      [
+        264,
+        675
+      ]
+    ],
+    "possible_member_ids": [
+      76,
+      264,
+      304,
+      462,
+      675
+    ],
+    "certain_member_ids": [],
+    "certain_nonmember_ids_within_11_candidates": [
+      47,
+      90,
+      115,
+      169,
+      383,
+      495
+    ]
+  }
+}

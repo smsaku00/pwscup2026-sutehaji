@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "backgrounds": {
+    "starter": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "72600d0116d41715257e20a8d99b34cd02b7030ba1408faf9f73b542784c916b",
+      "prediction_frozen_at": "2026-10-10T01:13:00.566592+00:00"
+    },
+    "prelim": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "2d032177c07ff2e909bceded6edd8b1b3ce3d847cf735fb9d92f37c2d0cd9835",
+      "prediction_frozen_at": "2026-10-10T01:10:38.355342+00:00"
+    },
+    "main": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "2e18f7ef5bded240a29397b2cbd68222c6ea7e48d5ac765137cf3402f65d6fa4",
+      "prediction_frozen_at": "2026-10-10T01:15:30.228390+00:00"
+    },
+    "starter+prelim": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "9c4794b0ba7ab5c3c1db87f96753484bd4ce233f17ad48fb0607bb8c3caa1267",
+      "prediction_frozen_at": "2026-10-10T01:18:30.667009+00:00"
+    },
+    "starter+main": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "c1b2cc966ece9313838454a7c04a5e47eb696512e86e82d93d06b0aa7cc18f5d",
+      "prediction_frozen_at": "2026-10-10T01:21:42.849961+00:00"
+    },
+    "prelim+main": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "155a9a7c843c2d2c428f6ad159fc3a2c3463ae3c869473c8cbd92a83a1b09957",
+      "prediction_frozen_at": "2026-10-10T01:25:04.792140+00:00"
+    },
+    "starter+prelim+main": {
+      "settings": 666,
+      "targets": 20,
+      "target_population_rows": 39960,
+      "all_prediction_hashes_passed": true,
+      "score_file_sha256": "745f0ce0b4c4f6436cda08deb0bd5261213a015c07cfecba9b816f47f77b47f7",
+      "prediction_frozen_at": "2026-10-10T01:28:59.650155+00:00"
+    }
+  },
+  "method": "independent tie-group ROC and trapezoidal AUC; no experiment methods imported",
+  "sampling": "First and last method, then every 33rd sorted source output; first and last target; all three populations; every BG",
+  "settings_per_background": 666,
+  "backgrounds_complete": 7,
+  "condition_panels": 4662,
+  "stored_target_population_rows": 279720,
+  "same_exact_config_set_across_backgrounds": true,
+  "prediction_matrix_hashes_checked": 4662,
+  "representative_target_population_rows_checked": 924,
+  "metric_values_checked": 4620,
+  "max_absolute_metric_error": 0.0,
+  "historical_regression_scope": "Source worker checked all662 catalog means with inference20/evaluation19(excluding12); four extra source outputs retained. Current evaluation uses all20.",
+  "audited_at_utc": "2026-10-10T01:32:22.673228+00:00"
+}

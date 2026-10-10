@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "audit_time_utc": "2026-10-10T02:56:23.535912+00:00",
+  "families": [
+    "direct",
+    "attribute_seeds",
+    "stable_centers"
+  ],
+  "source_recipe_background_rows": 10976,
+  "source_target_rows": 219520,
+  "paired_crossing_rows": 512,
+  "panel_best_target_rows": 20,
+  "numeric_values_checked": 33010,
+  "maximum_absolute_error": 9.71445146547012e-17,
+  "scope": "Retrospective within-panel BG comparisons only. Distinct source grids and overlapping background pools are not independent replications; these maxima are not all-history records or a validated selector.",
+  "files_sha256": {
+    "same_recipe_new_010_crossings.csv": "bc3f3a446c925ec883795216fa08859472ca305a6e0a6186cf96b17cc66bdafc",
+    "method_background_means.csv": "a56a8a407c0779bc49ca6029d9a17b60cc0a33f9f596d55057ce0c7f8f4d650d",
+    "descriptive_bg_robustness.csv": "7be6814d743bd973eeca792171806b713973e8e13211957e0725fb46418cc8f3",
+    "mean_over_fixed_configs.csv": "3fb1f0aaf565153b4b8fd1e1210d7e4804e5642b81ce6f0659d40b0c4666e75e",
+    "comparison_record.json": "0a6e5c33b35ea773a2ad53d018b5d73051208a77225b30f2212daec9b532c0ba",
+    "per_team_panel_best.csv": "2b3f3e99274c30d35cdf635f31da513882e20f1c781092ffabdf5d78bedaade3"
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "status": "PASS",
+  "scope": "R1〜R5公式保存HTMLからの補正後AIA対象別比較。回答生成・再採点・大会提出なし。",
+  "metric": "aia_per_target corrected score arithmetic mean over main22 targets",
+  "metric_definition": {
+    "per_target_corrected": "clip(max(R_time_all, R_time_rare_after_SE_deadzone) - aia_floor[target], 0, 1)",
+    "mean": "np.nanmean(aia_per_target values in main target order), 22 finite values; computed from HTML; no aia_mean field",
+    "r_time_all": "全体チャネルの対象別R平均。床控除前。補正後22対象平均とは別。",
+    "r_time_rare": "希少チャネルの対象別R平均。SE補正後・床控除前。補正後22対象平均とは別。",
+    "p_m_p_c": "成功率の対象平均。平均成功率からRを再計算すると対象別R平均と一致しない。",
+    "historical_best": "各対象の公式補正後AIA値を観測後に最大化した参考統計。実際に採点された新しい構成ではない。"
+  },
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "round_summaries": [
+    {
+      "round": 1,
+      "aia_per_target_corrected_mean": 0.0465048160147104,
+      "aia_r_time_all_before_floor": 0.07398274355774309,
+      "aia_r_time_rare_after_se_before_floor": 0.006786460549338022,
+      "target_count": 22,
+      "aia_per_target_corrected_mean_fsum_crosscheck": 0.0465048160147104
+    },
+    {
+      "round": 2,
+      "aia_per_target_corrected_mean": 0.05239556086187496,
+      "aia_r_time_all_before_floor": 0.07478675289469745,
+      "aia_r_time_rare_after_se_before_floor": 0.01341867353562226,
+      "target_count": 22,
+      "aia_per_target_corrected_mean_fsum_crosscheck": 0.05239556086187496
+    },
+    {
+      "round": 3,
+      "aia_per_target_corrected_mean": 0.08246098340252228,
+      "aia_r_time_all_before_floor": 0.1286673349621246,
+      "aia_r_time_rare_after_se_before_floor": 0.018426598571064545,
+      "target_count": 22,
+      "aia_per_target_corrected_mean_fsum_crosscheck": 0.08246098340252227
+    },
+    {
+      "round": 4,
+      "aia_per_target_corrected_mean": 0.054608191790439305,
+      "aia_r_time_all_before_floor": 0.08848454576121505,
+      "aia_r_time_rare_after_se_before_floor": 0.0,
+      "target_count": 22,
+      "aia_per_target_corrected_mean_fsum_crosscheck": 0.0546081917904393
+    },
+    {
+      "round": 5,
+      "aia_per_target_corrected_mean": 0.1027627850065516,
+      "aia_r_time_all_before_floor": 0.14775730680466903,
+      "aia_r_time_rare_after_se_before_floor": 0.006067506896200141,
+      "target_count": 22,
+      "aia_per_target_corrected_mean_fsum_crosscheck": 0.10276278500655162
+    }
+  ],
+  "r5_differences": {
+    "corrected_mean_vs_r3": 0.02030180160402932,
+    "corrected_mean_vs_r4": 0.0481545932161123,
+    "r_time_all_vs_r3": 0.019089971842544434,
+    "r_time_rare_vs_r3": -0.012359091674864403,
+    "target_change_counts": {
+      "r3": {
+        "improved": 11,
+        "decreased": 8,
+        "tied": 3
+      },
+      "r4": {
+        "improved": 11,
+        "decreased": 3,
+        "tied": 8
+      },
+      "prior_r1to4": {
+        "improved": 10,
+        "decreased": 11,
+        "tied": 1
+      },
+      "prior_r3to4": {
+        "improved": 11,
+        "decreased": 8,
+        "tied": 3
+      }
+    }
+  },
+  "reference_targetwise_max_means": {
+    "prior_r1to4": 0.10350679444263906,
+    "prior_r3to4": 0.09263999208195677,
+    "r3to5": 0.1511902003440833,
+    "r1to5": 0.15528042928257568
+  },
+  "reference_max_is_scoring_guarantee": false,
+  "reference_max_new_answer_created": false,
+  "round_sources": [
+    {
+      "round": 1,
+      "bytes": 3795,
+      "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+      "git_blob_sha": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "team_id": 28,
+      "official_html_validation_complete": true,
+      "aia_mean_key_present": false,
+      "aia_per_target_count": 22,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "acquisition": "local saved original, byte hash matched pinned GitHub",
+      "local_read_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第1回_detailed_results.html"
+    },
+    {
+      "round": 2,
+      "bytes": 3763,
+      "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+      "git_blob_sha": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "team_id": 28,
+      "official_html_validation_complete": true,
+      "aia_mean_key_present": false,
+      "aia_per_target_count": 22,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "acquisition": "local saved original, byte hash matched pinned GitHub",
+      "local_read_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_detailed_results.html"
+    },
+    {
+      "round": 3,
+      "bytes": 3903,
+      "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "git_blob_sha": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "team_id": 28,
+      "official_html_validation_complete": true,
+      "aia_mean_key_present": false,
+      "aia_per_target_count": 22,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "acquisition": "local saved original, byte hash matched pinned GitHub",
+      "local_read_path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261008_AIA_C特徴と方式探索/現状監査/入力/第3回_detailed_results.html"
+    },
+    {
+      "round": 4,
+      "bytes": 3775,
+      "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+      "git_blob_sha": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+      "team_id": 28,
+      "official_html_validation_complete": true,
+      "aia_mean_key_present": false,
+      "aia_per_target_count": 22,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "acquisition": "official GitHub fetch_file path/ref fixed, base64"
+    },
+    {
+      "round": 5,
+      "bytes": 3884,
+      "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "git_blob_sha": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+      "team_id": 28,
+      "official_html_validation_complete": true,
+      "aia_mean_key_present": false,
+      "aia_per_target_count": 22,
+      "repository_path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "acquisition": "user-provided Library original, materialized by root through authorized Library tools",
+      "submission_mapping": "user/root-provided round5 association; server input ZIP not independently fetched"
+    }
+  ],
+  "population_validation": {
+    "status": "PASS",
+    "rounds": [
+      {
+        "round": 1,
+        "columns": [
+          "target_k",
+          "challenge_row_id",
+          "time_hat"
+        ],
+        "rows": 7172,
+        "scored_rows": 7172,
+        "ignored_self28_rows": 0,
+        "scored_targets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          25,
+          26,
+          27
+        ],
+        "rows_per_scored_target": 326,
+        "unique_pair_count": 7172,
+        "scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+        "public_main_challenge_set_match": true,
+        "source_sha256": "0a0af97596c6318d3a01358fb2e21eb5e0f11f8c01f95d770fd6994b896964be",
+        "source_git_blob_sha": "9ddaa54b04445ce7fab78bff5eb3ef681507317f",
+        "finite_nonnegative_time_hat": true
+      },
+      {
+        "round": 2,
+        "columns": [
+          "target_k",
+          "challenge_row_id",
+          "time_hat"
+        ],
+        "rows": 7172,
+        "scored_rows": 7172,
+        "ignored_self28_rows": 0,
+        "scored_targets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          25,
+          26,
+          27
+        ],
+        "rows_per_scored_target": 326,
+        "unique_pair_count": 7172,
+        "scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+        "public_main_challenge_set_match": true,
+        "source_sha256": "f41838ef3c3822e43e6dbbb3902ce7f4eed451b21fe723cdaa8b7a5462772678",
+        "source_git_blob_sha": "988ed4498e4ac9c5fb7a95497b66725337ea34f9",
+        "finite_nonnegative_time_hat": true
+      },
+      {
+        "round": 3,
+        "columns": [
+          "target_k",
+          "challenge_row_id",
+          "time_hat"
+        ],
+        "rows": 7172,
+        "scored_rows": 7172,
+        "ignored_self28_rows": 0,
+        "scored_targets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          25,
+          26,
+          27
+        ],
+        "rows_per_scored_target": 326,
+        "unique_pair_count": 7172,
+        "scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+        "public_main_challenge_set_match": true,
+        "source_sha256": "84c6313537388199aae3feaaba3c335d0c1033ea1bd04c5d6eee1380ebbeca1e",
+        "source_git_blob_sha": "63f941cfa79979524ab6b53ffe96d4c33788bbda",
+        "finite_nonnegative_time_hat": true
+      },
+      {
+        "round": 4,
+        "columns": [
+          "target_k",
+          "challenge_row_id",
+          "time_hat"
+        ],
+        "rows": 7172,
+        "scored_rows": 7172,
+        "ignored_self28_rows": 0,
+        "scored_targets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          25,
+          26,
+          27
+        ],
+        "rows_per_scored_target": 326,
+        "unique_pair_count": 7172,
+        "scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+        "public_main_challenge_set_match": true,
+        "source_sha256": "41f0f024fd680c8f7e54fd8706cee8f376b913d2d83b46855511ba2d3701bd84",
+        "source_git_blob_sha": "9c5cc09330ac69aea1e55f58c46714813706e8c6",
+        "finite_nonnegative_time_hat": true
+      },
+      {
+        "round": 5,
+        "columns": [
+          "target_k",
+          "challenge_row_id",
+          "time_hat"
+        ],
+        "rows": 7172,
+        "scored_rows": 7172,
+        "ignored_self28_rows": 0,
+        "scored_targets": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          22,
+          25,
+          26,
+          27
+        ],
+        "rows_per_scored_target": 326,
+        "unique_pair_count": 7172,
+        "scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+        "public_main_challenge_set_match": true,
+        "source_sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+        "source_git_blob_sha": "bade408752830d55a634bc1248bd49694c7664a1",
+        "finite_nonnegative_time_hat": true
+      }
+    ],
+    "identical_scored_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "rows_per_target": 326,
+    "scored_rows_each_round": 7172,
+    "public_main_challenges": [
+      {
+        "main_team": 0,
+        "rows": 326,
+        "sha256": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854"
+      },
+      {
+        "main_team": 1,
+        "rows": 326,
+        "sha256": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3"
+      },
+      {
+        "main_team": 2,
+        "rows": 326,
+        "sha256": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d"
+      },
+      {
+        "main_team": 3,
+        "rows": 326,
+        "sha256": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962"
+      },
+      {
+        "main_team": 4,
+        "rows": 326,
+        "sha256": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b"
+      },
+      {
+        "main_team": 5,
+        "rows": 326,
+        "sha256": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02"
+      },
+      {
+        "main_team": 6,
+        "rows": 326,
+        "sha256": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b"
+      },
+      {
+        "main_team": 7,
+        "rows": 326,
+        "sha256": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984"
+      },
+      {
+        "main_team": 8,
+        "rows": 326,
+        "sha256": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238"
+      },
+      {
+        "main_team": 9,
+        "rows": 326,
+        "sha256": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a"
+      },
+      {
+        "main_team": 10,
+        "rows": 326,
+        "sha256": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd"
+      },
+      {
+        "main_team": 11,
+        "rows": 326,
+        "sha256": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a"
+      },
+      {
+        "main_team": 12,
+        "rows": 326,
+        "sha256": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac"
+      },
+      {
+        "main_team": 13,
+        "rows": 326,
+        "sha256": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9"
+      },
+      {
+        "main_team": 14,
+        "rows": 326,
+        "sha256": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad"
+      },
+      {
+        "main_team": 15,
+        "rows": 326,
+        "sha256": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3"
+      },
+      {
+        "main_team": 16,
+        "rows": 326,
+        "sha256": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5"
+      },
+      {
+        "main_team": 17,
+        "rows": 326,
+        "sha256": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57"
+      },
+      {
+        "main_team": 22,
+        "rows": 326,
+        "sha256": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00"
+      },
+      {
+        "main_team": 25,
+        "rows": 326,
+        "sha256": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c"
+      },
+      {
+        "main_team": 26,
+        "rows": 326,
+        "sha256": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07"
+      },
+      {
+        "main_team": 27,
+        "rows": 326,
+        "sha256": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05"
+      }
+    ],
+    "source_csv_vs_server_input_limitation": "保存AIA原本のキー集合と公式HTML対象は確認。各回サーバー入力ZIPの直接hash照合は未実施。"
+  },
+  "official_metric_semantics_code": [
+    {
+      "path": "pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+    },
+    {
+      "path": "pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    }
+  ],
+  "validation": {
+    "html_hashes_pinned_or_user_provided_match": true,
+    "html_team_id28_and_scoring_complete_all_rounds": true,
+    "all5_have_same22_targets": true,
+    "all_target_values_finite_unit_interval": true,
+    "tau_time_0_5_and_rare_se_z_1_64_all_rounds": true,
+    "r5_parent_速報_agrees_within": 1e-15,
+    "reference_r3to5_parent_value_agrees_within": 1e-15,
+    "target_csv_readback110_values_match": true,
+    "population_AIA_same_7172_keys_each_round": true
+  },
+  "new_answers_generated": false,
+  "individual_MIA_winner_inferred": false,
+  "individual_truth_read": false,
+  "token_accessed": false,
+  "git_operations_performed_by_this_auditor": false,
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "seed": "deterministic; no random sampling"
+  },
+  "reproduction": [
+    "R1〜R3を記録local_pathからread。R4は記録fixed_ref/source_urlのGitHub fetch_file base64をdecodeしblob/SHA256照合。R5は記録SHA256の原本をread。",
+    "html.unescapeしたHTMLの唯一のpreブロックをJSONでparse。aia_per_targetの22キーを本戦順に揃え、math.fsum(values)/22。",
+    "CSVのr1..r5値は返却値そのまま。deltaは直接差、maxは指定round集合だけを使い、同値roundをすべて記載。",
+    "公開Q各326の(target_k,challenge_row_id)集合を7172キーへ連結。R1〜4保存F_aiaはfixed_refのGitHub fetch_fileでread、R5は検証済AIA原本をreadし、同じキー集合/hashを照合。"
+  ],
+  "limits": [
+    "対象別最高の事後選択は参考構成上限であり、新回答の採点保証・未見データ性能保証にはならない。",
+    "r_time_all/rareは別チャネル平均であり、補正後対象別AIA平均を置き換えない。",
+    "MIA個別対象のexact値や最良回答を推定しない。今回対象別比較は数値が返却されたAIAだけ。",
+    "R5採点HTMLはユーザー提供Library原本をrootが正規取得して第5回と対応付けたもの。サーバー入力ZIPの直接hash照合や採点再実行はしていない。"
+  ],
+  "output_sha256": {
+    "aia_target_comparison.csv": "15729b497e9e64edfd81113b43f2be0d357a3c8c0c8b433318fc5ff9fe49581a",
+    "aia_comparison_audit.md": "d29f248d4e4c77d4187e102ce3e1fcebeadfc0e5a4658ef8cd0dc0d3d53fcf1d"
+  },
+  "primary_aggregation": {
+    "function": "numpy.nanmean",
+    "reason": "official aggregation alignment requested by root; all22 finite, no NaN excluded",
+    "target_count": 22,
+    "numpy_version": "2.4.6",
+    "R5_primary": 0.1027627850065516,
+    "fsum_max_abs_difference": 1.3877787807814457e-17
+  }
+}

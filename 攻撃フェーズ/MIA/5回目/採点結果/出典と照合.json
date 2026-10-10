@@ -1,0 +1,19 @@
+{
+  "library_file_id": "libfile_b942113fd8c8819194a7296d6bb49a41",
+  "file_name": "detailed_results.html",
+  "mime_type": "text/plain",
+  "bytes": 3884,
+  "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+  "received_result_for": "user_reported_round5",
+  "team_id": 28,
+  "validation_ok": true,
+  "scoring_finished": true,
+  "source_submission_commit": "27d40de61aeb025858038230802bd822381a773c",
+  "associated_MIA_sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+  "associated_AIA_source_commit": "b023ca627fb664ffb0f4b26f34ca6a4448b26418",
+  "associated_AIA_path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+  "associated_AIA_sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+  "association_basis": "ユーザーからの第5回結果としての提供＋team28/検証OK/採点完了。受領HTMLにサーバー入力ZIPのhashや提出IDは無い。",
+  "server_input_zip_hash_verified": false,
+  "token_value_present_in_result": false
+}

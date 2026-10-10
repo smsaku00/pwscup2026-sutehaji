@@ -1,0 +1,14 @@
+﻿category,family,registered_outputs,improved,degraded,unchanged,median_delta,scope
+membership_label_OOF,learned_ablation,156,44,111,1,-0.002865843621399177,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_base,21,13,7,1,0.0011458056346945243,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_bg_ablation,24,5,19,0,-0.005363026274137385,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_bg_transfer,36,2,34,0,-0.006972902817347263,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_centers,248,49,196,3,-0.0049037037037037035,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_lowfpr,360,116,244,0,-0.004439916298903227,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_multiview,48,10,38,0,-0.0030713675213675223,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_multiview_loo,24,0,24,0,-0.008454447610003166,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_split,84,8,76,0,-0.006663501107945554,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,learned_yesterday,12,5,5,2,0.0,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+membership_label_OOF,smooth,74,41,30,3,0.0021367521367521365,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+no_membership_labels,classifiers,272,100,130,42,0.0,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。
+no_membership_labels,smooth,185,48,126,11,-0.0020576131687242796,20対象で推論、対象1/2を除く18対象の平均TPR。全3背景プール対同一方式の今回再生成した予備戦背景。

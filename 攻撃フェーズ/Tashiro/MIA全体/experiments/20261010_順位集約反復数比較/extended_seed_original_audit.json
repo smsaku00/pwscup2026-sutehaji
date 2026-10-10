@@ -1,0 +1,1927 @@
+{
+  "checks": [
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 30,
+      "actual_seed": 20261038,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 100,
+      "actual_seed": 20261108,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 1000,
+      "actual_seed": 20262008,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 30,
+      "actual_seed": 20261047,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 100,
+      "actual_seed": 20261117,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 1000,
+      "actual_seed": 20262017,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 30,
+      "actual_seed": 20261049,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 100,
+      "actual_seed": 20261119,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 1000,
+      "actual_seed": 20262019,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 30,
+      "actual_seed": 20261050,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 100,
+      "actual_seed": 20261120,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 1000,
+      "actual_seed": 20262020,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 30,
+      "actual_seed": 20261054,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 100,
+      "actual_seed": 20261124,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 1000,
+      "actual_seed": 20262024,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 30,
+      "actual_seed": 20261055,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 100,
+      "actual_seed": 20261125,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 1000,
+      "actual_seed": 20262025,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 30,
+      "actual_seed": 20261056,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 100,
+      "actual_seed": 20261126,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 1000,
+      "actual_seed": 20262026,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 30,
+      "actual_seed": 20261039,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 100,
+      "actual_seed": 20261109,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 1000,
+      "actual_seed": 20262009,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 30,
+      "actual_seed": 20261057,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 100,
+      "actual_seed": 20261127,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 1000,
+      "actual_seed": 20262027,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 30,
+      "actual_seed": 20261059,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 100,
+      "actual_seed": 20261129,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 1000,
+      "actual_seed": 20262029,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 30,
+      "actual_seed": 20261060,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 100,
+      "actual_seed": 20261130,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 1000,
+      "actual_seed": 20262030,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 30,
+      "actual_seed": 20261061,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 100,
+      "actual_seed": 20261131,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 1000,
+      "actual_seed": 20262031,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 30,
+      "actual_seed": 20261063,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 100,
+      "actual_seed": 20261133,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 1000,
+      "actual_seed": 20262033,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 30,
+      "actual_seed": 20261066,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 100,
+      "actual_seed": 20261136,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 1000,
+      "actual_seed": 20262036,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 30,
+      "actual_seed": 20261040,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 100,
+      "actual_seed": 20261110,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 1000,
+      "actual_seed": 20262010,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 30,
+      "actual_seed": 20261041,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 100,
+      "actual_seed": 20261111,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 1000,
+      "actual_seed": 20262011,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 30,
+      "actual_seed": 20261043,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 100,
+      "actual_seed": 20261113,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 1000,
+      "actual_seed": 20262013,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 30,
+      "actual_seed": 20261044,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 100,
+      "actual_seed": 20261114,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 1000,
+      "actual_seed": 20262014,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 30,
+      "actual_seed": 20261045,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 100,
+      "actual_seed": 20261115,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 1000,
+      "actual_seed": 20262015,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 30,
+      "actual_seed": 20261046,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 100,
+      "actual_seed": 20261116,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 1000,
+      "actual_seed": 20262016,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 30,
+      "actual_seed": 20261038,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 100,
+      "actual_seed": 20261108,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 1000,
+      "actual_seed": 20262008,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 30,
+      "actual_seed": 20261047,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 100,
+      "actual_seed": 20261117,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 1000,
+      "actual_seed": 20262017,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 30,
+      "actual_seed": 20261049,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 100,
+      "actual_seed": 20261119,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 1000,
+      "actual_seed": 20262019,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 30,
+      "actual_seed": 20261050,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 100,
+      "actual_seed": 20261120,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 1000,
+      "actual_seed": 20262020,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 30,
+      "actual_seed": 20261054,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 100,
+      "actual_seed": 20261124,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 1000,
+      "actual_seed": 20262024,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 30,
+      "actual_seed": 20261055,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 100,
+      "actual_seed": 20261125,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 1000,
+      "actual_seed": 20262025,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 30,
+      "actual_seed": 20261056,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 100,
+      "actual_seed": 20261126,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 1000,
+      "actual_seed": 20262026,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 30,
+      "actual_seed": 20261039,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 100,
+      "actual_seed": 20261109,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 1000,
+      "actual_seed": 20262009,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 30,
+      "actual_seed": 20261057,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 100,
+      "actual_seed": 20261127,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 1000,
+      "actual_seed": 20262027,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 30,
+      "actual_seed": 20261059,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 100,
+      "actual_seed": 20261129,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 1000,
+      "actual_seed": 20262029,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 30,
+      "actual_seed": 20261060,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 100,
+      "actual_seed": 20261130,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 1000,
+      "actual_seed": 20262030,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 30,
+      "actual_seed": 20261061,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 100,
+      "actual_seed": 20261131,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 1000,
+      "actual_seed": 20262031,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 30,
+      "actual_seed": 20261063,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 100,
+      "actual_seed": 20261133,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 1000,
+      "actual_seed": 20262033,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 30,
+      "actual_seed": 20261066,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 100,
+      "actual_seed": 20261136,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 1000,
+      "actual_seed": 20262036,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 30,
+      "actual_seed": 20261040,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 100,
+      "actual_seed": 20261110,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 1000,
+      "actual_seed": 20262010,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 30,
+      "actual_seed": 20261041,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 100,
+      "actual_seed": 20261111,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 1000,
+      "actual_seed": 20262011,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 30,
+      "actual_seed": 20261043,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 100,
+      "actual_seed": 20261113,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 1000,
+      "actual_seed": 20262013,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 30,
+      "actual_seed": 20261044,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 100,
+      "actual_seed": 20261114,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 1000,
+      "actual_seed": 20262014,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 30,
+      "actual_seed": 20261045,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 100,
+      "actual_seed": 20261115,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 1000,
+      "actual_seed": 20262015,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 30,
+      "actual_seed": 20261046,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 100,
+      "actual_seed": 20261116,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "starter+prelim+main",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 1000,
+      "actual_seed": 20262016,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 30,
+      "actual_seed": 20261038,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 100,
+      "actual_seed": 20261108,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 1,
+      "N": 1000,
+      "actual_seed": 20262008,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 30,
+      "actual_seed": 20261047,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 100,
+      "actual_seed": 20261117,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 10,
+      "N": 1000,
+      "actual_seed": 20262017,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 30,
+      "actual_seed": 20261049,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 100,
+      "actual_seed": 20261119,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 12,
+      "N": 1000,
+      "actual_seed": 20262019,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 30,
+      "actual_seed": 20261050,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 100,
+      "actual_seed": 20261120,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 13,
+      "N": 1000,
+      "actual_seed": 20262020,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 30,
+      "actual_seed": 20261054,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 100,
+      "actual_seed": 20261124,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 17,
+      "N": 1000,
+      "actual_seed": 20262024,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 30,
+      "actual_seed": 20261055,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 100,
+      "actual_seed": 20261125,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 18,
+      "N": 1000,
+      "actual_seed": 20262025,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 30,
+      "actual_seed": 20261056,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 100,
+      "actual_seed": 20261126,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 19,
+      "N": 1000,
+      "actual_seed": 20262026,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 30,
+      "actual_seed": 20261039,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 100,
+      "actual_seed": 20261109,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 2,
+      "N": 1000,
+      "actual_seed": 20262009,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 30,
+      "actual_seed": 20261057,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 100,
+      "actual_seed": 20261127,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 20,
+      "N": 1000,
+      "actual_seed": 20262027,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 30,
+      "actual_seed": 20261059,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 100,
+      "actual_seed": 20261129,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 22,
+      "N": 1000,
+      "actual_seed": 20262029,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 30,
+      "actual_seed": 20261060,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 100,
+      "actual_seed": 20261130,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 23,
+      "N": 1000,
+      "actual_seed": 20262030,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 30,
+      "actual_seed": 20261061,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 100,
+      "actual_seed": 20261131,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 24,
+      "N": 1000,
+      "actual_seed": 20262031,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 30,
+      "actual_seed": 20261063,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 100,
+      "actual_seed": 20261133,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 26,
+      "N": 1000,
+      "actual_seed": 20262033,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 30,
+      "actual_seed": 20261066,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 100,
+      "actual_seed": 20261136,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 29,
+      "N": 1000,
+      "actual_seed": 20262036,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 30,
+      "actual_seed": 20261040,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 100,
+      "actual_seed": 20261110,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 3,
+      "N": 1000,
+      "actual_seed": 20262010,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 30,
+      "actual_seed": 20261041,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 100,
+      "actual_seed": 20261111,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 4,
+      "N": 1000,
+      "actual_seed": 20262011,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 30,
+      "actual_seed": 20261043,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 100,
+      "actual_seed": 20261113,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 6,
+      "N": 1000,
+      "actual_seed": 20262013,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 30,
+      "actual_seed": 20261044,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 100,
+      "actual_seed": 20261114,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 7,
+      "N": 1000,
+      "actual_seed": 20262014,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 30,
+      "actual_seed": 20261045,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 100,
+      "actual_seed": 20261115,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 8,
+      "N": 1000,
+      "actual_seed": 20262015,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 30,
+      "actual_seed": 20261046,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 100,
+      "actual_seed": 20261116,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "numeric8_sexpref",
+      "team": 9,
+      "N": 1000,
+      "actual_seed": 20262016,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 30,
+      "actual_seed": 20261038,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 100,
+      "actual_seed": 20261108,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 1,
+      "N": 1000,
+      "actual_seed": 20262008,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 30,
+      "actual_seed": 20261047,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 100,
+      "actual_seed": 20261117,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 10,
+      "N": 1000,
+      "actual_seed": 20262017,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 30,
+      "actual_seed": 20261049,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 100,
+      "actual_seed": 20261119,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 12,
+      "N": 1000,
+      "actual_seed": 20262019,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 30,
+      "actual_seed": 20261050,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 100,
+      "actual_seed": 20261120,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 13,
+      "N": 1000,
+      "actual_seed": 20262020,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 30,
+      "actual_seed": 20261054,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 100,
+      "actual_seed": 20261124,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 17,
+      "N": 1000,
+      "actual_seed": 20262024,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 30,
+      "actual_seed": 20261055,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 100,
+      "actual_seed": 20261125,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 18,
+      "N": 1000,
+      "actual_seed": 20262025,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 30,
+      "actual_seed": 20261056,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 100,
+      "actual_seed": 20261126,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 19,
+      "N": 1000,
+      "actual_seed": 20262026,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 30,
+      "actual_seed": 20261039,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 100,
+      "actual_seed": 20261109,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 2,
+      "N": 1000,
+      "actual_seed": 20262009,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 30,
+      "actual_seed": 20261057,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 100,
+      "actual_seed": 20261127,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 20,
+      "N": 1000,
+      "actual_seed": 20262027,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 30,
+      "actual_seed": 20261059,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 100,
+      "actual_seed": 20261129,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 22,
+      "N": 1000,
+      "actual_seed": 20262029,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 30,
+      "actual_seed": 20261060,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 100,
+      "actual_seed": 20261130,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 23,
+      "N": 1000,
+      "actual_seed": 20262030,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 30,
+      "actual_seed": 20261061,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 100,
+      "actual_seed": 20261131,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 24,
+      "N": 1000,
+      "actual_seed": 20262031,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 30,
+      "actual_seed": 20261063,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 100,
+      "actual_seed": 20261133,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 26,
+      "N": 1000,
+      "actual_seed": 20262033,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 30,
+      "actual_seed": 20261066,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 100,
+      "actual_seed": 20261136,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 29,
+      "N": 1000,
+      "actual_seed": 20262036,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 30,
+      "actual_seed": 20261040,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 100,
+      "actual_seed": 20261110,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 3,
+      "N": 1000,
+      "actual_seed": 20262010,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 30,
+      "actual_seed": 20261041,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 100,
+      "actual_seed": 20261111,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 4,
+      "N": 1000,
+      "actual_seed": 20262011,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 30,
+      "actual_seed": 20261043,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 100,
+      "actual_seed": 20261113,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 6,
+      "N": 1000,
+      "actual_seed": 20262013,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 30,
+      "actual_seed": 20261044,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 100,
+      "actual_seed": 20261114,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 7,
+      "N": 1000,
+      "actual_seed": 20262014,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 30,
+      "actual_seed": 20261045,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 100,
+      "actual_seed": 20261115,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 8,
+      "N": 1000,
+      "actual_seed": 20262015,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 30,
+      "actual_seed": 20261046,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 100,
+      "actual_seed": 20261116,
+      "original_checkpoint_seed_ranks_exact": true
+    },
+    {
+      "background": "prelim",
+      "panel": "without_outcomes",
+      "team": 9,
+      "N": 1000,
+      "actual_seed": 20262016,
+      "original_checkpoint_seed_ranks_exact": true
+    }
+  ],
+  "total_checks": 240,
+  "all_exact": true,
+  "seconds": 10.842482730004122
+}

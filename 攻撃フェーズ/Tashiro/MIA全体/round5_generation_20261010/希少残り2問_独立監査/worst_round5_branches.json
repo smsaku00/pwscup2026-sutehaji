@@ -1,0 +1,743 @@
+[
+  {
+    "round5_exact": "73/6750",
+    "round5_official_float": "0.010814814814814814",
+    "remaining": 48,
+    "responses": [
+      {
+        "placement_id": 17,
+        "round6_exact": "187/9000",
+        "round7_exact": "103/5400"
+      },
+      {
+        "placement_id": 18,
+        "round6_exact": "169/9000",
+        "round7_exact": "103/5400"
+      },
+      {
+        "placement_id": 21,
+        "round6_exact": "187/9000",
+        "round7_exact": "101/6000"
+      },
+      {
+        "placement_id": 22,
+        "round6_exact": "169/9000",
+        "round7_exact": "101/6000"
+      },
+      {
+        "placement_id": 25,
+        "round6_exact": "143/6750",
+        "round7_exact": "7/375"
+      },
+      {
+        "placement_id": 26,
+        "round6_exact": "143/6750",
+        "round7_exact": "1/60"
+      },
+      {
+        "placement_id": 29,
+        "round6_exact": "341/18000",
+        "round7_exact": "7/375"
+      },
+      {
+        "placement_id": 30,
+        "round6_exact": "341/18000",
+        "round7_exact": "1/60"
+      },
+      {
+        "placement_id": 65,
+        "round6_exact": "7/375",
+        "round7_exact": "143/6750"
+      },
+      {
+        "placement_id": 66,
+        "round6_exact": "1/60",
+        "round7_exact": "143/6750"
+      },
+      {
+        "placement_id": 69,
+        "round6_exact": "7/375",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 70,
+        "round6_exact": "1/60",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 73,
+        "round6_exact": "103/5400",
+        "round7_exact": "187/9000"
+      },
+      {
+        "placement_id": 74,
+        "round6_exact": "103/5400",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 77,
+        "round6_exact": "101/6000",
+        "round7_exact": "187/9000"
+      },
+      {
+        "placement_id": 78,
+        "round6_exact": "101/6000",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 99,
+        "round6_exact": "52/3375",
+        "round7_exact": "209/9000"
+      },
+      {
+        "placement_id": 100,
+        "round6_exact": "181/13500",
+        "round7_exact": "209/9000"
+      },
+      {
+        "placement_id": 101,
+        "round6_exact": "52/3375",
+        "round7_exact": "83/3600"
+      },
+      {
+        "placement_id": 103,
+        "round6_exact": "79/6000",
+        "round7_exact": "83/3600"
+      },
+      {
+        "placement_id": 121,
+        "round6_exact": "22/1125",
+        "round7_exact": "103/5400"
+      },
+      {
+        "placement_id": 122,
+        "round6_exact": "79/4500",
+        "round7_exact": "103/5400"
+      },
+      {
+        "placement_id": 129,
+        "round6_exact": "1069/54000",
+        "round7_exact": "7/375"
+      },
+      {
+        "placement_id": 131,
+        "round6_exact": "79/4500",
+        "round7_exact": "7/375"
+      },
+      {
+        "placement_id": 171,
+        "round6_exact": "52/3375",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 172,
+        "round6_exact": "181/13500",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 173,
+        "round6_exact": "52/3375",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 175,
+        "round6_exact": "79/6000",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 193,
+        "round6_exact": "22/1125",
+        "round7_exact": "799/54000"
+      },
+      {
+        "placement_id": 194,
+        "round6_exact": "79/4500",
+        "round7_exact": "799/54000"
+      },
+      {
+        "placement_id": 201,
+        "round6_exact": "1069/54000",
+        "round7_exact": "259/18000"
+      },
+      {
+        "placement_id": 203,
+        "round6_exact": "79/4500",
+        "round7_exact": "259/18000"
+      },
+      {
+        "placement_id": 271,
+        "round6_exact": "103/5400",
+        "round7_exact": "22/1125"
+      },
+      {
+        "placement_id": 272,
+        "round6_exact": "103/5400",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 273,
+        "round6_exact": "7/375",
+        "round7_exact": "1069/54000"
+      },
+      {
+        "placement_id": 277,
+        "round6_exact": "7/375",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 287,
+        "round6_exact": "209/9000",
+        "round7_exact": "52/3375"
+      },
+      {
+        "placement_id": 288,
+        "round6_exact": "209/9000",
+        "round7_exact": "181/13500"
+      },
+      {
+        "placement_id": 289,
+        "round6_exact": "83/3600",
+        "round7_exact": "52/3375"
+      },
+      {
+        "placement_id": 293,
+        "round6_exact": "83/3600",
+        "round7_exact": "79/6000"
+      },
+      {
+        "placement_id": 303,
+        "round6_exact": "799/54000",
+        "round7_exact": "22/1125"
+      },
+      {
+        "placement_id": 304,
+        "round6_exact": "799/54000",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 305,
+        "round6_exact": "259/18000",
+        "round7_exact": "1069/54000"
+      },
+      {
+        "placement_id": 309,
+        "round6_exact": "259/18000",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 319,
+        "round6_exact": "341/18000",
+        "round7_exact": "52/3375"
+      },
+      {
+        "placement_id": 320,
+        "round6_exact": "341/18000",
+        "round7_exact": "181/13500"
+      },
+      {
+        "placement_id": 321,
+        "round6_exact": "169/9000",
+        "round7_exact": "52/3375"
+      },
+      {
+        "placement_id": 325,
+        "round6_exact": "169/9000",
+        "round7_exact": "79/6000"
+      }
+    ]
+  },
+  {
+    "round5_exact": "16/1125",
+    "round5_official_float": "0.014222222222222221",
+    "remaining": 48,
+    "responses": [
+      {
+        "placement_id": 451,
+        "round6_exact": "269/18000",
+        "round7_exact": "1139/54000"
+      },
+      {
+        "placement_id": 452,
+        "round6_exact": "233/18000",
+        "round7_exact": "1139/54000"
+      },
+      {
+        "placement_id": 455,
+        "round6_exact": "41/2700",
+        "round7_exact": "113/5400"
+      },
+      {
+        "placement_id": 459,
+        "round6_exact": "233/18000",
+        "round7_exact": "113/5400"
+      },
+      {
+        "placement_id": 499,
+        "round6_exact": "77/6000",
+        "round7_exact": "1253/54000"
+      },
+      {
+        "placement_id": 500,
+        "round6_exact": "13/1200",
+        "round7_exact": "1253/54000"
+      },
+      {
+        "placement_id": 503,
+        "round6_exact": "353/27000",
+        "round7_exact": "311/13500"
+      },
+      {
+        "placement_id": 507,
+        "round6_exact": "13/1200",
+        "round7_exact": "311/13500"
+      },
+      {
+        "placement_id": 567,
+        "round6_exact": "583/54000",
+        "round7_exact": "1253/54000"
+      },
+      {
+        "placement_id": 568,
+        "round6_exact": "19/2160",
+        "round7_exact": "1253/54000"
+      },
+      {
+        "placement_id": 569,
+        "round6_exact": "583/54000",
+        "round7_exact": "311/13500"
+      },
+      {
+        "placement_id": 571,
+        "round6_exact": "77/9000",
+        "round7_exact": "311/13500"
+      },
+      {
+        "placement_id": 589,
+        "round6_exact": "269/18000",
+        "round7_exact": "343/18000"
+      },
+      {
+        "placement_id": 590,
+        "round6_exact": "233/18000",
+        "round7_exact": "343/18000"
+      },
+      {
+        "placement_id": 597,
+        "round6_exact": "41/2700",
+        "round7_exact": "1007/54000"
+      },
+      {
+        "placement_id": 599,
+        "round6_exact": "233/18000",
+        "round7_exact": "1007/54000"
+      },
+      {
+        "placement_id": 701,
+        "round6_exact": "353/27000",
+        "round7_exact": "589/27000"
+      },
+      {
+        "placement_id": 707,
+        "round6_exact": "77/6000",
+        "round7_exact": "589/27000"
+      },
+      {
+        "placement_id": 717,
+        "round6_exact": "31/1800",
+        "round7_exact": "53/3000"
+      },
+      {
+        "placement_id": 723,
+        "round6_exact": "31/1800",
+        "round7_exact": "941/54000"
+      },
+      {
+        "placement_id": 733,
+        "round6_exact": "19/2160",
+        "round7_exact": "589/27000"
+      },
+      {
+        "placement_id": 739,
+        "round6_exact": "77/9000",
+        "round7_exact": "589/27000"
+      },
+      {
+        "placement_id": 749,
+        "round6_exact": "233/18000",
+        "round7_exact": "53/3000"
+      },
+      {
+        "placement_id": 755,
+        "round6_exact": "233/18000",
+        "round7_exact": "941/54000"
+      },
+      {
+        "placement_id": 883,
+        "round6_exact": "269/18000",
+        "round7_exact": "29/2160"
+      },
+      {
+        "placement_id": 884,
+        "round6_exact": "233/18000",
+        "round7_exact": "29/2160"
+      },
+      {
+        "placement_id": 889,
+        "round6_exact": "41/2700",
+        "round7_exact": "179/13500"
+      },
+      {
+        "placement_id": 893,
+        "round6_exact": "233/18000",
+        "round7_exact": "179/13500"
+      },
+      {
+        "placement_id": 931,
+        "round6_exact": "77/6000",
+        "round7_exact": "839/54000"
+      },
+      {
+        "placement_id": 932,
+        "round6_exact": "13/1200",
+        "round7_exact": "839/54000"
+      },
+      {
+        "placement_id": 937,
+        "round6_exact": "353/27000",
+        "round7_exact": "83/5400"
+      },
+      {
+        "placement_id": 941,
+        "round6_exact": "13/1200",
+        "round7_exact": "83/5400"
+      },
+      {
+        "placement_id": 999,
+        "round6_exact": "583/54000",
+        "round7_exact": "839/54000"
+      },
+      {
+        "placement_id": 1000,
+        "round6_exact": "19/2160",
+        "round7_exact": "839/54000"
+      },
+      {
+        "placement_id": 1001,
+        "round6_exact": "583/54000",
+        "round7_exact": "83/5400"
+      },
+      {
+        "placement_id": 1003,
+        "round6_exact": "77/9000",
+        "round7_exact": "83/5400"
+      },
+      {
+        "placement_id": 1021,
+        "round6_exact": "269/18000",
+        "round7_exact": "41/3600"
+      },
+      {
+        "placement_id": 1022,
+        "round6_exact": "233/18000",
+        "round7_exact": "41/3600"
+      },
+      {
+        "placement_id": 1029,
+        "round6_exact": "41/2700",
+        "round7_exact": "593/54000"
+      },
+      {
+        "placement_id": 1031,
+        "round6_exact": "233/18000",
+        "round7_exact": "593/54000"
+      },
+      {
+        "placement_id": 1169,
+        "round6_exact": "353/27000",
+        "round7_exact": "191/13500"
+      },
+      {
+        "placement_id": 1175,
+        "round6_exact": "77/6000",
+        "round7_exact": "191/13500"
+      },
+      {
+        "placement_id": 1185,
+        "round6_exact": "31/1800",
+        "round7_exact": "1/100"
+      },
+      {
+        "placement_id": 1191,
+        "round6_exact": "31/1800",
+        "round7_exact": "527/54000"
+      },
+      {
+        "placement_id": 1201,
+        "round6_exact": "19/2160",
+        "round7_exact": "191/13500"
+      },
+      {
+        "placement_id": 1207,
+        "round6_exact": "77/9000",
+        "round7_exact": "191/13500"
+      },
+      {
+        "placement_id": 1217,
+        "round6_exact": "233/18000",
+        "round7_exact": "1/100"
+      },
+      {
+        "placement_id": 1223,
+        "round6_exact": "233/18000",
+        "round7_exact": "527/54000"
+      }
+    ]
+  },
+  {
+    "round5_exact": "499/27000",
+    "round5_official_float": "0.01848148148148148",
+    "remaining": 48,
+    "responses": [
+      {
+        "placement_id": 453,
+        "round6_exact": "59/4500",
+        "round7_exact": "101/6000"
+      },
+      {
+        "placement_id": 454,
+        "round6_exact": "1/90",
+        "round7_exact": "101/6000"
+      },
+      {
+        "placement_id": 458,
+        "round6_exact": "73/5400",
+        "round7_exact": "1/60"
+      },
+      {
+        "placement_id": 462,
+        "round6_exact": "203/18000",
+        "round7_exact": "1/60"
+      },
+      {
+        "placement_id": 501,
+        "round6_exact": "11/1000",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 502,
+        "round6_exact": "9/1000",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 506,
+        "round6_exact": "77/6750",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 510,
+        "round6_exact": "11/1200",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 603,
+        "round6_exact": "209/27000",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 604,
+        "round6_exact": "31/5400",
+        "round7_exact": "341/18000"
+      },
+      {
+        "placement_id": 605,
+        "round6_exact": "209/27000",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 607,
+        "round6_exact": "11/2000",
+        "round7_exact": "169/9000"
+      },
+      {
+        "placement_id": 625,
+        "round6_exact": "107/9000",
+        "round7_exact": "799/54000"
+      },
+      {
+        "placement_id": 626,
+        "round6_exact": "89/9000",
+        "round7_exact": "799/54000"
+      },
+      {
+        "placement_id": 633,
+        "round6_exact": "131/10800",
+        "round7_exact": "259/18000"
+      },
+      {
+        "placement_id": 635,
+        "round6_exact": "89/9000",
+        "round7_exact": "259/18000"
+      },
+      {
+        "placement_id": 704,
+        "round6_exact": "77/6750",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 709,
+        "round6_exact": "11/1000",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 720,
+        "round6_exact": "7/450",
+        "round7_exact": "181/13500"
+      },
+      {
+        "placement_id": 725,
+        "round6_exact": "277/18000",
+        "round7_exact": "79/6000"
+      },
+      {
+        "placement_id": 736,
+        "round6_exact": "77/10800",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 741,
+        "round6_exact": "121/18000",
+        "round7_exact": "79/4500"
+      },
+      {
+        "placement_id": 752,
+        "round6_exact": "203/18000",
+        "round7_exact": "181/13500"
+      },
+      {
+        "placement_id": 757,
+        "round6_exact": "1/90",
+        "round7_exact": "79/6000"
+      },
+      {
+        "placement_id": 885,
+        "round6_exact": "59/4500",
+        "round7_exact": "77/6750"
+      },
+      {
+        "placement_id": 886,
+        "round6_exact": "1/90",
+        "round7_exact": "77/6750"
+      },
+      {
+        "placement_id": 892,
+        "round6_exact": "73/5400",
+        "round7_exact": "11/1000"
+      },
+      {
+        "placement_id": 896,
+        "round6_exact": "203/18000",
+        "round7_exact": "11/1000"
+      },
+      {
+        "placement_id": 933,
+        "round6_exact": "11/1000",
+        "round7_exact": "73/5400"
+      },
+      {
+        "placement_id": 934,
+        "round6_exact": "9/1000",
+        "round7_exact": "73/5400"
+      },
+      {
+        "placement_id": 940,
+        "round6_exact": "77/6750",
+        "round7_exact": "59/4500"
+      },
+      {
+        "placement_id": 944,
+        "round6_exact": "11/1200",
+        "round7_exact": "59/4500"
+      },
+      {
+        "placement_id": 1035,
+        "round6_exact": "209/27000",
+        "round7_exact": "7/450"
+      },
+      {
+        "placement_id": 1036,
+        "round6_exact": "31/5400",
+        "round7_exact": "7/450"
+      },
+      {
+        "placement_id": 1037,
+        "round6_exact": "209/27000",
+        "round7_exact": "277/18000"
+      },
+      {
+        "placement_id": 1039,
+        "round6_exact": "11/2000",
+        "round7_exact": "277/18000"
+      },
+      {
+        "placement_id": 1057,
+        "round6_exact": "107/9000",
+        "round7_exact": "77/6750"
+      },
+      {
+        "placement_id": 1058,
+        "round6_exact": "89/9000",
+        "round7_exact": "77/6750"
+      },
+      {
+        "placement_id": 1065,
+        "round6_exact": "131/10800",
+        "round7_exact": "11/1000"
+      },
+      {
+        "placement_id": 1067,
+        "round6_exact": "89/9000",
+        "round7_exact": "11/1000"
+      },
+      {
+        "placement_id": 1172,
+        "round6_exact": "77/6750",
+        "round7_exact": "107/9000"
+      },
+      {
+        "placement_id": 1177,
+        "round6_exact": "11/1000",
+        "round7_exact": "131/10800"
+      },
+      {
+        "placement_id": 1188,
+        "round6_exact": "7/450",
+        "round7_exact": "209/27000"
+      },
+      {
+        "placement_id": 1193,
+        "round6_exact": "277/18000",
+        "round7_exact": "209/27000"
+      },
+      {
+        "placement_id": 1204,
+        "round6_exact": "77/10800",
+        "round7_exact": "107/9000"
+      },
+      {
+        "placement_id": 1209,
+        "round6_exact": "121/18000",
+        "round7_exact": "131/10800"
+      },
+      {
+        "placement_id": 1220,
+        "round6_exact": "203/18000",
+        "round7_exact": "209/27000"
+      },
+      {
+        "placement_id": 1225,
+        "round6_exact": "1/90",
+        "round7_exact": "209/27000"
+      }
+    ]
+  }
+]

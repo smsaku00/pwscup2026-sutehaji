@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "immutable_original_files": 142,
+  "overlap_pairs": 63,
+  "frozen_conditions": 19,
+  "score_matrices": 38,
+  "independently_recomputed_metric_rows": 84,
+  "original_P01_bitwise_match": true
+}

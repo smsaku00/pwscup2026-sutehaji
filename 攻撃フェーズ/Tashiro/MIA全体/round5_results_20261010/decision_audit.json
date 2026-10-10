@@ -1,0 +1,203 @@
+{
+  "status": "completed_independent_decision_audit",
+  "date": "2026-10-10",
+  "scope": "第5回公式採点結果を第3回と比較し、通常5対象bundleの採用判断を提案する。正解・新回答・rollback・希少新復号・ZIP/token読込は行わない。",
+  "round5_published_commit": "27d40de61aeb025858038230802bd822381a773c",
+  "official_observed_results": {
+    "round3": {
+      "mia_all": 0.039795389795389796,
+      "detail_sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "source_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "source_ref": "8188510261744ebf622fad583dc226e7ae6da840"
+    },
+    "round5": {
+      "mia_all": 0.03797720797720798,
+      "mia_rare": 0.011166666666666667,
+      "detail_sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "source_path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html"
+    },
+    "target_count": 22,
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "same_per_target_bands_both_rounds": true,
+    "bands_summary": "本戦9 HarunaDan@GUのみ2、他21対象は1。変更5対象はすべて1。",
+    "band_edges": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "low_fpr": 0.01
+  },
+  "official_scoring_definition": {
+    "all_channel": "各対象の全1049候補TPR@FPR0.01を22対象で単純平均。875人だけのROCではない。",
+    "rare_channel": "rare_maskだけで別ROCを計算し、有効な希少陽性がいる対象だけnanmean。",
+    "mia_power": "各対象max(tpr_all,tpr_rare)の平均。MIA全体平均とは別指標。",
+    "tied_scores": "同confidenceの全行を1つのROC動作点にまとめ、同点群を行順で分割しない。",
+    "interpolation": "np.interp(low_fpr, fpr, tpr)。重複FPRの完全一致点は右端となるため、通常終端FPRがstrictly >.01である条件が必要。",
+    "degeneracy": "全陽性または全陰性の対象はTPR0固定で値変更により動かない。",
+    "per_target_band": "score=max(all,rare)でなくtpr_allのみ。band1=[0,.25], band2=(.25,.5], band3=(.5,.75], band4=(.75,1]。"
+  },
+  "comparison_conditions": {
+    "same_main_phase_attacker_team": 28,
+    "same_candidate_row_order_and_target_columns": true,
+    "same_underlying_truth_and_scoring_protocol": "固定本戦入力と両公式詳細結果の同じlow_fpr/対象集合を前提にする。非公開真値は読み込まない。",
+    "exclusive_partitions": {
+      "ordinary": 875,
+      "nonrare_known_negative": 150,
+      "rare": 24
+    },
+    "round3_ordinary_min": 0.6003428571428571,
+    "round5_ordinary_min": 0.6003428571428571,
+    "lower_174_rows_max_both_rounds": 0.4,
+    "ordinary_changed_targets": [
+      5,
+      7,
+      13,
+      14,
+      15
+    ],
+    "ordinary_other17_changed_cells": 0,
+    "haruna_all1049_changed_cells": 0,
+    "normal_negative_condition": "各非退化対象で、通常内陰性数N_o / 全1049陰性数N >.01。",
+    "negative_condition_proof": {
+      "uses_membership_truth_or_inferred_member_count": false,
+      "assumption_for_contradiction": "N_o/N <=.01",
+      "implies": "N_o <= floor(.01*N) <=floor(.01*1049)=10、通常内陽性P_o=875-N_o>=865。",
+      "label_free_tpr_lower_bound": "通常875全員を含むROC点はFPR<=.01、TPR=P_o/P>=865/1049≈.82459。以降の線形補間TPRも単調でこの値以上。",
+      "observed_contradiction": "両回の全target band<=2はTPR<=.5。したがって通常終端FPR<=.01は不可能（等号も排除）。",
+      "conclusion": "FPR.01を囲むROC両端と重複FPR点は通常875の高得点側に収まる。希少・その他低得点側のconfidence変更はMIA全体TPRに影響しない。",
+      "stronger_optional_bound": "既知非希少150の非会員性を使うとP<=P_o+24により865/889≈.9730。ただし本判断にはこの仮定も人数復号も不要。"
+    }
+  },
+  "quantitative_attribution": {
+    "round5_minus_round3_mia_all": -0.001818181818181816,
+    "all22_mean_delta_percentage_points": -0.1818181818181816,
+    "sum_of_full_population_target_tpr_deltas_float": -0.03999999999999995,
+    "sum_of_changed_five_target_tpr_deltas_approximately": -0.04,
+    "mean_delta_of_changed_five_target_tpr_approximately": -0.008,
+    "changed_five_mean_delta_percentage_points": -0.8,
+    "unchanged_other17_tpr_delta": 0,
+    "attributable_to": "通常5列の変更bundle。ただし各対象の全1049人ROCのTPR変化。",
+    "permitted_inference": "5対象全体として改善条件を満たさず、少なくとも1対象の全体TPRは悪化した。",
+    "forbidden_inferences": [
+      "5対象すべてが悪化した",
+      "特定対象・特定方式が悪化した",
+      "約-.04を4人減や1人減と解釈する",
+      "同点・補間を無視して整数hitへ換算する",
+      "第4回比を同じ5列bundle効果とする",
+      "MIA全体の差分だけを根拠にMIA希少・AUC・MIA力・攻撃力合計まで低下したとする"
+    ]
+  },
+  "selected_methods": {
+    "5": "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+    "7": "q7_robust_lofC_k100__age100__cross0.1",
+    "13": "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+    "14": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+    "15": "q7_hist5_s100_pairwise__county500__cross0.1"
+  },
+  "interpretation_limits": {
+    "per_target_winners": "帯1は0〜.25の広い範囲。変更5対象は両回とも帯1なので個別winnerは決められない。",
+    "shenshen_sex_split": "神神公社の今回の方式はsex1の性別分割ピーク案。sex0非分割GMMの予備戦全7背景.12安定案は今回未採用。bundleの低下だけでsex1敗北やsex0優位を判定できない。",
+    "round4": "第4回は別のチーム別6方式構成で、R3→R5の5通常列差替え比較とは変更条件が異なる。R4差分は別比較。",
+    "main_generalization": "過去公開予備戦でのピーク・背景安定性は今回本戦で5方式bundle優位を保証しなかった。個別手法の汎化失敗を確定する証拠ではない。",
+    "rare_decoding": "希少第3問結果の新しい人数・人物推定はこの監査では行っていない。第5回を含む希少の独立復号は別資料に整理しており、希少採用・統合判断はこの監査の外。MIA全体の帰属証明は復号結果や未知の人数を前提にしない。"
+  },
+  "recommendation": {
+    "type": "proposal_only_no_new_answer_or_rollback",
+    "bundle_adoption": "R5通常5方式を改善版として一括採用する条件は未達。MIA全体比較ではR3の通常構成が現時点で優位。",
+    "per_method_adoption": "個別方式の採否は保留。帯だけでwinnerを割り当てず、sex1ピーク/sex0安定の未実施比較も区別する。",
+    "next_step": "予定している他メンバー案の比較方針を維持し、R5を5対象bundleの検証記録として残す。新回答・rollback・過去提出更新を勝手に作成しない。",
+    "pending": "希少の採用条件は第5回を含む独立復号資料と前提・限界を確認し、通常部の採用判断と別に整理する。第6・7回の構成は他メンバー案も含めたチーム判断であり、この監査は次の回答を生成・採用しない。"
+  },
+  "evidence": [
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/final_round5_independent_audit.json",
+      "claims": [
+        "固定17通常差0",
+        "Haruna全1049差0",
+        "通常/希少分離",
+        "原本SHA・対象順"
+      ]
+    },
+    {
+      "path": "攻撃フェーズ/MIA/5回目/assembly_validation.json",
+      "claims": [
+        "選択5対象",
+        "875/150/24排他的区分",
+        "R4比較注意"
+      ]
+    },
+    {
+      "repository": "pwscup/pwscup2026-kit",
+      "path": "starter/src/pwscup2026/scoring/attack_score.py",
+      "git_blob_sha": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "official_current_main_fetched_and_local_byte_match": true,
+      "lines": [
+        12,
+        39
+      ]
+    },
+    {
+      "repository": "pwscup/pwscup2026-kit",
+      "path": "starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "git_blob_sha": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "official_current_main_fetched_and_local_byte_match": true,
+      "lines": [
+        140,
+        247,
+        372
+      ]
+    },
+    {
+      "path": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010/説明.md",
+      "claims": [
+        "希少の独立復号は別資料に整理",
+        "本監査のMIA全体帰属証明は希少復号を前提にしない"
+      ],
+      "read_for_label_free_mia_attribution": false
+    }
+  ],
+  "independent_review": {
+    "status": "PASS",
+    "reviewer": "independent_methods_check",
+    "confirmed": [
+      "target mean",
+      "tie aggregation",
+      "interpolation equality caveat",
+      "strict normal boundary proof",
+      "fivebundle attribution",
+      "per-target/hit limits"
+    ]
+  },
+  "prohibited_actions_performed": false,
+  "actions_performed": [
+    "公式2コードread-only確認",
+    "R3/R5公開詳細HTML読込とSHA確認",
+    "既存CSVの分離・固定17・Haruna差分read-only追認",
+    "decision_audit.json/.md作成"
+  ]
+}

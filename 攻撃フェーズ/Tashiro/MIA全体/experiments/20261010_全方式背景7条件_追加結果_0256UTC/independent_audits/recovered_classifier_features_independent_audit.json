@@ -1,0 +1,193 @@
+{
+  "attribute_seeds": {
+    "status": "passed_completed_primary_backgrounds",
+    "configurations_per_BG": 320,
+    "completed_backgrounds": [
+      "starter",
+      "prelim",
+      "main",
+      "starter+prelim",
+      "starter+main",
+      "prelim+main",
+      "starter+prelim+main"
+    ],
+    "all7_complete": true,
+    "all_matrix_hashes_checked": 2240,
+    "same_exact_config_set": true,
+    "target_fpr_rows": 179200,
+    "representative_TPR_values_recomputed": 840,
+    "max_abs_TPR_error": 0.0,
+    "records": [
+      {
+        "background": "starter",
+        "record_sha256": "18249f1055c9326c28ccf513688762a4c774ae0eca6573ff8cd9f3d03eb8ec62",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "prelim",
+        "record_sha256": "cfe25cece9167af320c1d35b8fbfcb38d20b25ac71c3a575b0df2054d32cecbe",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": null
+      },
+      {
+        "background": "main",
+        "record_sha256": "25fc92692cfb959c73af686459f94280ad37a4401585e4f9946ac8d8e66caa3c",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+prelim",
+        "record_sha256": "4af88b94ce2f5812d97c409d5b763bbdbf6b28b06c4ee4e66dc4613a6824f6ce",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+main",
+        "record_sha256": "147c6faf8b1ee27a9d82139a4a4019d4f4dc625420dc2cea57b182ebc1464381",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "prelim+main",
+        "record_sha256": "5648804e0da149af91bd9caf3c891ee76df7ad4a4052d77b9cfaf1234390830a",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+prelim+main",
+        "record_sha256": "548682cba78e7dfaf391e6aeb13cf12af254f1630c18b11912c2f4f7023bf8be",
+        "source_sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+        "numpy": "2.3.5",
+        "sklearn": "1.8.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      }
+    ]
+  },
+  "stable_centers": {
+    "status": "passed_completed_primary_backgrounds",
+    "configurations_per_BG": 240,
+    "completed_backgrounds": [
+      "starter",
+      "prelim",
+      "main",
+      "starter+prelim",
+      "starter+main",
+      "prelim+main",
+      "starter+prelim+main"
+    ],
+    "all7_complete": true,
+    "all_matrix_hashes_checked": 1680,
+    "same_exact_config_set": true,
+    "target_fpr_rows": 134400,
+    "representative_TPR_values_recomputed": 672,
+    "max_abs_TPR_error": 0.0,
+    "records": [
+      {
+        "background": "starter",
+        "record_sha256": "f8855d6286b98194f6e40faeb18a9e9ecf8e55f23a0bf55ac1d09c638b87ce83",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "prelim",
+        "record_sha256": "b3643eeca58fe81406778c640b154b30480b2f6d4f92615e51b5d360a23637ad",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": null
+      },
+      {
+        "background": "main",
+        "record_sha256": "e728c5bcc1b1db5f6f2b06cb253f1794cfbfc8ffa4014ffb166c859650d47f8e",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+prelim",
+        "record_sha256": "621f3e953f3af0fb4b381e6230a498706169c93b60f78dadb1ca11f4c1844e60",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+main",
+        "record_sha256": "d46aec8d66fecde96c8bb92497da89b24c1e380196c350cd93687a3a72544c6b",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "prelim+main",
+        "record_sha256": "a34076dab6e6ce5ff46ed58cc126bd155d742d5f4594a6316a665eab48485e00",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "starter+prelim+main",
+        "record_sha256": "12ef7e1a29905a6492d4a3adf00cf2d71e52aad908421efde7950e50e0fabd9a",
+        "source_sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      }
+    ]
+  },
+  "classifiers": {
+    "status": "passed_completed_primary_backgrounds",
+    "configurations_per_BG": 272,
+    "completed_backgrounds": [
+      "starter",
+      "prelim"
+    ],
+    "all7_complete": false,
+    "all_matrix_hashes_checked": 544,
+    "same_exact_config_set": true,
+    "target_fpr_rows": 43520,
+    "representative_TPR_values_recomputed": 208,
+    "max_abs_TPR_error": 0.0,
+    "records": [
+      {
+        "background": "starter",
+        "record_sha256": "2fa70c9ab63e2b95ba842f88d2299c746d071d3fee87f31fce2bbc28c70a2991",
+        "source_sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      },
+      {
+        "background": "prelim",
+        "record_sha256": "f2dc65e019181e07f83178f90a0e2520575ad4c16055adee240867d027ec8641",
+        "source_sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833",
+        "numpy": "2.4.6",
+        "sklearn": "1.9.0",
+        "forest_prediction_execution": "fixed_tree_order_serial_predict_v1"
+      }
+    ]
+  },
+  "audit_metadata": {
+    "method": "Independent tie-group ROC; no source prediction/scorer modules imported. Exact primary folders only; earlier parallel/cloud controls excluded.",
+    "audit_time_utc": "2026-10-10T02:19:24.406255+00:00",
+    "historical_reproduction": "Historical HGB/forest/KMeans differences are not repaired by this current-score audit."
+  }
+}

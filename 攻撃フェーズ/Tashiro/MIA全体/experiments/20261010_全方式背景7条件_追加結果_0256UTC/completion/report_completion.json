@@ -1,0 +1,17 @@
+{
+  "historical_ids": 48,
+  "source_expanded_additions": 91,
+  "registered_outputs": 139,
+  "explicit_P04_semantic_aliases": 2,
+  "registered_semantic_recipes_before_data_dependent_equivalence": 137,
+  "outer_backgrounds": 7,
+  "coverage_rows": 973,
+  "note": "P06 split-view historical identities retained; numerical agreement on one dataset does not make different parameters semantic aliases.",
+  "coverage_complete": 973,
+  "preliminary_explicit_not_applicable": 0,
+  "main_not_applicable_registrations": 139,
+  "per_target_rows": 47295,
+  "summary_rows": 2919,
+  "main_policy_scores": "not applicable; original public-only P04 family projection has no score implementation",
+  "candidate_arrays_delivered": false
+}

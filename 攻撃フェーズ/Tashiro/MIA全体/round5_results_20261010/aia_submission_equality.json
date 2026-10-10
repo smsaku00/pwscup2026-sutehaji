@@ -1,0 +1,1042 @@
+{
+  "status": "PASS",
+  "question": "第5回AIAは過去第1〜4回と同じ回答を出したチームがあるか",
+  "answer": "全326課題が過去のいずれかと同じチームは0。22対象すべて、各過去回と少なくとも1予測が異なる。",
+  "comparison_rule": "(target_k,challenge_row_id)で整列しtime_hatをDecimalへ変換した厳密数値比較。許容誤差なし。数値が同じなら10と10.0等の表記差は同一。スコア同点を判定に使わない。",
+  "current_round_source": {
+    "round": 5,
+    "repository": "smsaku00/pwscup2026-sutehaji",
+    "source_commit": "b023ca627fb664ffb0f4b26f34ca6a4448b26418",
+    "repository_path": "攻撃フェーズ/AIA/5_2/結果/F_aia.csv",
+    "git_blob_sha": "bade408752830d55a634bc1248bd49694c7664a1",
+    "sha256": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "local_read_path": "/tmp/mia_round5_aia/F_aia.csv",
+    "original_verified": true
+  },
+  "past_sources": [
+    {
+      "past_round": 1,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/一回目/F_aia.csv",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/一回目/F_aia.csv",
+      "git_blob_sha": "9ddaa54b04445ce7fab78bff5eb3ef681507317f",
+      "sha256": "0a0af97596c6318d3a01358fb2e21eb5e0f11f8c01f95d770fd6994b896964be",
+      "acquisition": "authorized GitHub fetch_file path/fixed_ref/base64; decoded bytes git blob verified",
+      "original_verified": true
+    },
+    {
+      "past_round": 2,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第2回/F_aia.csv",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第2回/F_aia.csv",
+      "git_blob_sha": "988ed4498e4ac9c5fb7a95497b66725337ea34f9",
+      "sha256": "f41838ef3c3822e43e6dbbb3902ce7f4eed451b21fe723cdaa8b7a5462772678",
+      "acquisition": "authorized GitHub fetch_file path/fixed_ref/base64; decoded bytes git blob verified",
+      "original_verified": true
+    },
+    {
+      "past_round": 3,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第3回/F_aia.csv",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第3回/F_aia.csv",
+      "git_blob_sha": "63f941cfa79979524ab6b53ffe96d4c33788bbda",
+      "sha256": "84c6313537388199aae3feaaba3c335d0c1033ea1bd04c5d6eee1380ebbeca1e",
+      "acquisition": "authorized GitHub fetch_file path/fixed_ref/base64; decoded bytes git blob verified",
+      "original_verified": true
+    },
+    {
+      "past_round": 4,
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "repository_path": "攻撃フェーズ/AIA/第4回/F_aia.csv",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第4回/F_aia.csv",
+      "git_blob_sha": "9c5cc09330ac69aea1e55f58c46714813706e8c6",
+      "sha256": "41f0f024fd680c8f7e54fd8706cee8f376b913d2d83b46855511ba2d3701bd84",
+      "acquisition": "authorized GitHub fetch_file path/fixed_ref/base64; decoded bytes git blob verified",
+      "original_verified": true
+    }
+  ],
+  "round_summary": [
+    {
+      "past_round": 1,
+      "completely_identical_targets": [],
+      "completely_identical_target_count": 0,
+      "same_prediction_rows_all22": 0,
+      "different_prediction_rows_all22": 7172,
+      "compared_rows_all22": 7172,
+      "key_set_exact_match": true
+    },
+    {
+      "past_round": 2,
+      "completely_identical_targets": [],
+      "completely_identical_target_count": 0,
+      "same_prediction_rows_all22": 651,
+      "different_prediction_rows_all22": 6521,
+      "compared_rows_all22": 7172,
+      "key_set_exact_match": true
+    },
+    {
+      "past_round": 3,
+      "completely_identical_targets": [],
+      "completely_identical_target_count": 0,
+      "same_prediction_rows_all22": 2957,
+      "different_prediction_rows_all22": 4215,
+      "compared_rows_all22": 7172,
+      "key_set_exact_match": true
+    },
+    {
+      "past_round": 4,
+      "completely_identical_targets": [],
+      "completely_identical_target_count": 0,
+      "same_prediction_rows_all22": 2682,
+      "different_prediction_rows_all22": 4490,
+      "compared_rows_all22": 7172,
+      "key_set_exact_match": true
+    }
+  ],
+  "target_round_comparisons": [
+    {
+      "main_team": 0,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 0,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 0,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 0,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 1,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 1,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 125,
+      "different_prediction_rows": 201,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 1,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 186,
+      "different_prediction_rows": 140,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 1,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 163,
+      "different_prediction_rows": 163,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 2,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 2,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 102,
+      "different_prediction_rows": 224,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 9.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 2,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 195,
+      "different_prediction_rows": 131,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 2,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 6,
+      "different_prediction_rows": 320,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 1.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 3,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 3,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 2,
+      "different_prediction_rows": 324,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.25,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 3,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 1,
+      "different_prediction_rows": 325,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.25,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 3,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 206,
+      "different_prediction_rows": 120,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 4,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 4,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 76,
+      "different_prediction_rows": 250,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 4,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 48,
+      "different_prediction_rows": 278,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 4,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 212,
+      "different_prediction_rows": 114,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 5,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 5,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 5,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 192,
+      "different_prediction_rows": 134,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 5,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 164,
+      "different_prediction_rows": 162,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 6,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 6,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 6,
+      "different_prediction_rows": 320,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 9.25,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 6,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 192,
+      "different_prediction_rows": 134,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 6,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 120,
+      "different_prediction_rows": 206,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 7,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 7,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 49,
+      "different_prediction_rows": 277,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 7,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 188,
+      "different_prediction_rows": 138,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 7,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 188,
+      "different_prediction_rows": 138,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 8,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 8,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 52,
+      "different_prediction_rows": 274,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 8,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 185,
+      "different_prediction_rows": 141,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 8,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 123,
+      "different_prediction_rows": 203,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 9,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 9,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 9,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 9,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 10,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 10,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 2,
+      "different_prediction_rows": 324,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 10,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 197,
+      "different_prediction_rows": 129,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 10,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 11,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 11,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 95,
+      "different_prediction_rows": 231,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 11,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 61,
+      "different_prediction_rows": 265,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 11,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 12,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 12,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 12,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 187,
+      "different_prediction_rows": 139,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 12,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 223,
+      "different_prediction_rows": 103,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.42476757395692,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 13,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 13,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 13,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 188,
+      "different_prediction_rows": 138,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 13,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 128,
+      "different_prediction_rows": 198,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 14,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 14,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 1,
+      "different_prediction_rows": 325,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 14,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 1,
+      "different_prediction_rows": 325,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 14,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 213,
+      "different_prediction_rows": 113,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 15,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 15,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 15,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 15,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 130,
+      "different_prediction_rows": 196,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 16,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 16,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 76,
+      "different_prediction_rows": 250,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 16,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 185,
+      "different_prediction_rows": 141,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 16,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 205,
+      "different_prediction_rows": 121,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 17,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 17,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 3,
+      "different_prediction_rows": 323,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.25,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 17,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 191,
+      "different_prediction_rows": 135,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 17,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 182,
+      "different_prediction_rows": 144,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 22,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 22,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 5,
+      "different_prediction_rows": 321,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.5,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 22,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 191,
+      "different_prediction_rows": 135,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 22,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 205,
+      "different_prediction_rows": 121,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 25,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 25,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 1,
+      "different_prediction_rows": 325,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 9.75,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 25,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 191,
+      "different_prediction_rows": 135,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 25,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 26,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 26,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 2,
+      "different_prediction_rows": 324,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 26,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 187,
+      "different_prediction_rows": 139,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 26,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 27,
+      "past_round": 1,
+      "challenge_rows": 326,
+      "same_prediction_rows": 0,
+      "different_prediction_rows": 326,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 27,
+      "past_round": 2,
+      "challenge_rows": 326,
+      "same_prediction_rows": 54,
+      "different_prediction_rows": 272,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 10.264781691766649,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 27,
+      "past_round": 3,
+      "challenge_rows": 326,
+      "same_prediction_rows": 191,
+      "different_prediction_rows": 135,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    },
+    {
+      "main_team": 27,
+      "past_round": 4,
+      "challenge_rows": 326,
+      "same_prediction_rows": 214,
+      "different_prediction_rows": 112,
+      "all326_predictions_identical": false,
+      "max_abs_time_hat_difference": 11,
+      "same_numeric_but_different_text_rows": 0
+    }
+  ],
+  "validation": {
+    "past_originals_verified_rounds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "unverified_rounds": [],
+    "targets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "rows_per_target": 326,
+    "rows_each_original": 7172,
+    "duplicate_pairs_each_original": 0,
+    "pair_set_matches_all5_originals": true,
+    "pair_set_matches_public_main_challenges": true,
+    "common_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+    "csv88rows_readback_matches": true,
+    "all_prediction_values_finite_nonnegative": true
+  },
+  "new_answers_generated": false,
+  "score_equality_used_to_infer_prediction_equality": false,
+  "individual_MIA_winner_inferred": false,
+  "token_accessed": false,
+  "individual_truth_read": false,
+  "limits": [
+    "保存された実提出対応原本の比較。各過去回のサーバー入力ZIPを直接取得して照合したものではない。",
+    "一部予測の一致は全課題の同じ回答を意味しない。各対象326件すべての一致を別に判定した。",
+    "同じ採点スコアでも予測値が同じとは限らない。今回はスコア値を比較判定に使っていない。"
+  ],
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "seed": "deterministic; no sampling"
+  },
+  "output_sha256": {
+    "aia_submission_equality.csv": "187decf5933a973a4875f1da13fdecb0b7e10c3cefa38b449a9bb3913d17ffbb",
+    "aia_submission_equality.md": "2bd861d5cb2050318c674e78efbd66ae5936889a8fa2d6ba345ecb104b52dee7"
+  }
+}

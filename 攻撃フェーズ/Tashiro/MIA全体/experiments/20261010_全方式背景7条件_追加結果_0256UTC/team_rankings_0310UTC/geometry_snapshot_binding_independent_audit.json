@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "audit_time_utc": "2026-10-10T03:20:48.920497+00:00",
+  "clarification": "score_file_sha256 in the original geometry audit means scores.npz, not by_target.csv. Different hashes between those different artifacts are expected.",
+  "checks": [
+    {
+      "background": "starter",
+      "frozen_metric_csv_sha256": "7fa7a20323b7d3fd507374e11e2d532ac5c4aa677f6bab36d772117f62e6fa0a",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "72600d0116d41715257e20a8d99b34cd02b7030ba1408faf9f73b542784c916b",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "prelim",
+      "frozen_metric_csv_sha256": "c429e262bbcd6c9d3f24ae4624eb43b7fd84df69ad97af296089cac3d561526c",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "2d032177c07ff2e909bceded6edd8b1b3ce3d847cf735fb9d92f37c2d0cd9835",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "main",
+      "frozen_metric_csv_sha256": "7bcf60aacfe43a6e53a7c4fc8d9bd41af96d5e030c6cd577b97859ec08254074",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "2e18f7ef5bded240a29397b2cbd68222c6ea7e48d5ac765137cf3402f65d6fa4",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "starter+prelim",
+      "frozen_metric_csv_sha256": "660e0f48f79eb3e906ab6d43ea27bba77262b3afebdcaaf3ad443a226eeedea5",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "9c4794b0ba7ab5c3c1db87f96753484bd4ce233f17ad48fb0607bb8c3caa1267",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "starter+main",
+      "frozen_metric_csv_sha256": "153079f142959763b2a10f6b523f72a1e7ee743937848938f53e1896ec686fab",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "c1b2cc966ece9313838454a7c04a5e47eb696512e86e82d93d06b0aa7cc18f5d",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "prelim+main",
+      "frozen_metric_csv_sha256": "8ebe1b7e9564b176f92dd62510c6e139563d3c9d58f62e31b1caad7a76aeb843",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "155a9a7c843c2d2c428f6ad159fc3a2c3463ae3c869473c8cbd92a83a1b09957",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    },
+    {
+      "background": "starter+prelim+main",
+      "frozen_metric_csv_sha256": "bc1d46b3b2e05d3894030e958c9817567fa7a0ff7e5a88664920d0d986fa6c3b",
+      "live_metric_csv_byte_identical": true,
+      "original_audit_score_file_is_NPZ": true,
+      "scores_NPZ_sha256": "745f0ce0b4c4f6436cda08deb0bd5261213a015c07cfecba9b816f47f77b47f7",
+      "current_NPZ_matches_original_audit": true,
+      "rows": 39960
+    }
+  ],
+  "frozen_snapshot_sha256": "9eb6eac074775ea7017e241250dd6ec2d7d1c13f713a6f3e16323709919d49e6",
+  "direct_anchor_audit": "rank_leading_anchor_independent_audit.json separately reconstructs target20 prelim/starter+main TPRs from these same matrix bytes."
+}

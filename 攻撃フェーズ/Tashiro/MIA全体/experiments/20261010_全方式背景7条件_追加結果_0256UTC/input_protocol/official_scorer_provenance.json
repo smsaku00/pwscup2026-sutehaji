@@ -1,0 +1,51 @@
+{
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "commit": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "snapshot_status": "Exact historical official scorer copy from repository, no formula reimplementation",
+  "package_import_root": "<workspace>/mia_bg7_inputs/official_scoring/src",
+  "files": [
+    {
+      "cache_path": "<workspace>/mia_bg7_inputs/official_scoring/src/pwscup2026/__init__.py",
+      "repository_path": "加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/__init__.py",
+      "git_blob_sha": "482d7c6bfb440694436ba843a016d50b31c07c7b",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    {
+      "cache_path": "<workspace>/mia_bg7_inputs/official_scoring/src/pwscup2026/scoring/__init__.py",
+      "repository_path": "加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/__init__.py",
+      "git_blob_sha": "12d0440a481b1b75bea2259525951767bb7b1c6c",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    {
+      "cache_path": "<workspace>/mia_bg7_inputs/official_scoring/src/pwscup2026/scoring/attack_score.py",
+      "repository_path": "加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/attack_score.py",
+      "git_blob_sha": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "cache_path": "<workspace>/mia_bg7_inputs/official_scoring/src/pwscup2026/scoring/result.py",
+      "repository_path": "加工フェーズ/加工案/zhang_04_05_06_final28_AIA_study/zhang_04_05_06/official_scoring/src/pwscup2026/scoring/result.py",
+      "git_blob_sha": "800df5a345b326b6758439f355ec6d461be80474",
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd"
+    }
+  ],
+  "smoke_test": {
+    "confidence": [
+      0.1,
+      0.2,
+      0.8,
+      0.9
+    ],
+    "truth": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "alpha": 0.01,
+    "result": [
+      1.0,
+      1.0
+    ]
+  }
+}
