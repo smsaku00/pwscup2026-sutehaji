@@ -1,0 +1,23 @@
+{
+  "frozen_before_new_selection_results_utc": "2026-10-10T03:52:00Z",
+  "phase": "prelim",
+  "inference_targets": [1,2,3,4,6,7,8,9,10,12,13,17,18,19,20,22,23,24,26,29],
+  "evaluation_population": "all_fixed_1049",
+  "normal_ranking_population": 875,
+  "families": {"histogram":1920,"geometry":666,"alignment":750,"mixture":960,"local":300,"direct":1008,"attribute_seeds":320,"stable_centers":240},
+  "backgrounds": ["starter","prelim","main","starter+prelim","starter+main","prelim+main","starter+prelim+main"],
+  "candidate_count": 43148,
+  "feature_input": "C only, no Q, B, external BG, candidate scores, truth, or target ID",
+  "feature_design": "Fixed aggregate structural, quantization, entropy, distribution-shape, and dependence diagnostics; train-only standardization",
+  "primary_gate": {"nearest_targets":3,"local_weight":0.5},
+  "nested_gate": {"k":[1,3,5,9],"local_weight":[0.25,0.5,1.0],"also_global_baseline":true,"objective":"mean inner-held-target TPR at FPR .01"},
+  "primary_baseline": "Single method-background chosen by mean training-target TPR, separately inside every outer fold",
+  "ensembles": ["uniform rank mean of every candidate","equal family and background mean","median/max of eight fixed family rank means","mean/median/max of eight training-selected family champions","training-selected top3/top5 family champion mean","training-performance-weighted family champions with fixed temperature .05"],
+  "rank_ties":"average ranks for blending, original min-rank confidence for official evaluation",
+  "holdout":"Entire target held out; no person-fold mixing. Features scaled and all choices made using training targets only. Fixed all20 base-score inference remains public transductive.",
+  "report_views":["all20 outer LOTO","same predictions summarized without1_2","18-target outer LOTO excluding1_2 from both training and evaluation"],
+  "oracle":"Per-target best candidate is an infeasible descriptive upper bound, never a deployable method",
+  "limits":"The full candidate grids have historical preliminary-label exposure. New LOTO excludes evaluation labels from the new selector/ensemble, but does not create an untouched external validation set. Does not identify true anonymization algorithm uniquely.",
+  "resource_limits":"One thread; stream one family-background bank; no base-model reruns; no external publication",
+  "publication":"Aggregate tables, source code and hashes only. Per-person scores stay private."
+}

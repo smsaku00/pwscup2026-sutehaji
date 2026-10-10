@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "audit_time_utc": "2026-10-10T03:33:57.820369+00:00",
+  "rows": 14,
+  "metric_values_recomputed": 70,
+  "method": "Independent tie-group ROC from frozen matrices; no original scorer imported",
+  "checks": [
+    {
+      "background": "starter",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "ab730b10248b8af090a22ba8599174332ec90ee5f57c0eae7497f0432c1ad008"
+    },
+    {
+      "background": "starter",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "78cec69064f11fbdf0628e11f0321ea6649c487c109cfd4cf48e14c6f3b3a04f"
+    },
+    {
+      "background": "prelim",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "e56ea54e01f84360d1427b630c2def590d7ee484cfb57e6e5baf253c5229e9cc"
+    },
+    {
+      "background": "prelim",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "b8733358da92b2607f20b7cd1d5d5c8b3756cc3805fc09902acb99774ece9800"
+    },
+    {
+      "background": "main",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "7d7f6edc4a0803a596196d0c77dbc6ec41fcac616ec2d01110ee0f2fd7a2b19e"
+    },
+    {
+      "background": "main",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "b88d354ae0171c57b3c0c82e383d580934e044810878a04974020384aad7c8b1"
+    },
+    {
+      "background": "starter+prelim",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "6bf72abffac7bf22b99fa610238b02336e60075ec4bbad16a0b8279da32494fd"
+    },
+    {
+      "background": "starter+prelim",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.16,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "c3aec4eaa72b634412432d863b8d866c77d941cbdbb98158722ee9714f4d7fbc"
+    },
+    {
+      "background": "starter+main",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "254a5f491e9f6f5b89cf55316f3571f0636d9577d5eac14afb58c2d1cb71364f"
+    },
+    {
+      "background": "starter+main",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.16,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "7a214548f4ef31b181b92739655d4aeb24d8b68ad4cc922ea0cf041bb568a18e"
+    },
+    {
+      "background": "prelim+main",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "0bc994cc362b886f7f04e0bbbf38a2d99cc764d36cc809649be98ee3f9622c62"
+    },
+    {
+      "background": "prelim+main",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.16,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "3d96db1426e14c5704aa31d78b8289a4b709cf57d6914351470c34499c620e36"
+    },
+    {
+      "background": "starter+prelim+main",
+      "team": 7,
+      "method": "q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0",
+      "TPR_FPR001": 0.12,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "d1f848264a7be443c9de2b4ccb234a73bdb30b8aeea614838c9004b57d18cc12"
+    },
+    {
+      "background": "starter+prelim+main",
+      "team": 26,
+      "method": "q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1",
+      "TPR_FPR001": 0.16,
+      "max_error_four_FPRs_and_AUC": 0.0,
+      "matrix_sha256": "1862e9396d3decee59eec6c1fcbedddd292d39c3761d9bbe60a71debeeb2041d"
+    }
+  ]
+}

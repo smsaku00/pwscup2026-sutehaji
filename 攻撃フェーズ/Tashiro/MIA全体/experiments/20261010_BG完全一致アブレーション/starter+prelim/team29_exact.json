@@ -1,0 +1,33 @@
+{
+  "config": {
+    "condition": "team29_exact",
+    "target": 29,
+    "kind": "exact",
+    "seed": null,
+    "removed": 266,
+    "remaining": 10020,
+    "removed_by_source": {
+      "starter": 28,
+      "prelim": 238
+    },
+    "removal_mask_sha256": "3df5edbcd89e39a4e0d8d111852bb5ba6f78f73fa7f09082f85d4d8645df0e94",
+    "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+  },
+  "fit_details": {
+    "h_kde13": 0.8599291774028754,
+    "genlra_scale": [
+      12.601927353595256,
+      18.54177379043876,
+      0.6877143020636887,
+      8.569717661268593,
+      0.7845998613797756
+    ],
+    "seconds": 33.31966233253479
+  },
+  "matrix_sha256": "6455fa3bd87642ccf9e58921099a2f361732736f55332e4f87b5a980c56bd91b",
+  "prediction_hashes": {
+    "P01": "362d9825e826972c4e50c6f8695d2cfef25441f1622e5e568bd4eedd86002a43",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "ab25d067b3327a8520777c2670e666f2ed8ccfc7c1c78037c1296b61021cdade"
+  },
+  "frozen_utc": "2026-10-10T03:21:36.044828+00:00"
+}

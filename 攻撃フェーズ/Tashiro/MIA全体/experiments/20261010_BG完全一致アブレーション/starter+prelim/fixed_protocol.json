@@ -1,0 +1,61 @@
+{
+  "pool": "starter+prelim",
+  "pool_rows": 10286,
+  "targets": [
+    18,
+    19,
+    29
+  ],
+  "methods": [
+    "P01",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1"
+  ],
+  "inference_targets": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "method_selection": "Fixed before new ablation outputs; historical method development used preliminary labels, so not independent validation.",
+  "comparison": "For each target remove BG rows whose full13 tuple matches that target C; all20 model columns refit on that same modified BG.",
+  "control": "Five predeclared seeds; source-stratified same-count removal from non-overlapping BG rows without replacement, retaining original row order.",
+  "random_seeds": [
+    20261010,
+    20261011,
+    20261012,
+    20261013,
+    20261014
+  ],
+  "matching": "No record_id joins; exact float64 round_trip numeric values, NFC prefecture, no rounding/tolerance.",
+  "candidate_and_label_policy": "1049 fixed B candidates; original private=0, rare_nonprivate=.4, normal875=.6+.3*minrank/875. Scoring labels only after freeze.",
+  "calibration": "Original non-target public Q prefecture/sex shrink500, all Q; no fold change or membership-training labels.",
+  "preprocessing": "Refit all BG scales, bandwidth, category counts, KDE numerator alignment and denominator; fixed hyperparameters.",
+  "KDE_variant": "Ungated standalone original q13 KDE ratio cross0.1, not gated mix1 or a newly chosen winner.",
+  "manifest_sha256": "95820447e6a4cccb8da8a228ae9d21adc24d35f0b1bb03d71c019c52b597ddda",
+  "background_sha256": "d176cd6531e1fc0a5d03efd828f30abe89312ba73e2511c5524f6737c638943a",
+  "code_hashes": {
+    "run_ablation.py": "d99490d5e45bb6cdbff3ec88a9ca26ecaaa7d40fe32f51bd837a4f2ad1b5087a",
+    "source/archive.py": "db09fadc7b35dbd385f76179bb4d78685a7f0a52a7825b478754424ba989eaee",
+    "source/base.py": "28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3",
+    "source/bounded_core.py": "9e544830c3f6f3a6d4005c4076e093957928b7dfe27a448de85dab98993f44e2",
+    "source/general.py": "2828ae2b8f1c9db1973c5d3ce5107f2c69781d5f1af7a91c147c41b13e20c8e8",
+    "source/分析.py": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+    "source/非会員を使う順位較正の検討.py": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833"
+  }
+}

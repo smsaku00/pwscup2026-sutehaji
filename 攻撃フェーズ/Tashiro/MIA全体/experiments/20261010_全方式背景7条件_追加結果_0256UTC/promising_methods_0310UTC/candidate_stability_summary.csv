@@ -1,0 +1,13 @@
+candidate_id,family,method,team,role,min,median,mean_descriptive_only,max,BGs_gt_010,BGs_positive_delta,prelim_bg_tpr,other_teams_ever_gt_010,all_non_easy_teams_ever_gt010
+pairwise_hist20,geometry,q7_hist5_s100_pairwise__county500__cross0.1,20,主力候補,0.074074074074074,0.2222222222222222,0.17989417989417986,0.2222222222222222,6,6,0.074074074074074,,20
+stable_gmm26,mixture,q7_robust_sex0_diag_reg0.01_gmm2__age100__cross0.1,26,同家族の別対象候補,0.12,0.16,0.14285714285714285,0.16,7,4,0.12,,26
+stable_gmm7_bic,mixture,q13_robust_sex0_full_reg0.1_bic_selected__raw__cross0,7,公開BIC選択の対照,0.12,0.12,0.12,0.12,7,0,0.12,,7
+stable_gmm7,mixture,q13_robust_sex0_diag_reg0.01_gmm4__raw__cross0,7,安定寄り候補,0.12,0.12,0.12,0.12,7,0,0.12,,7
+aligned_kde10_h1,alignment,q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1,10,主候補・h2より背景安定,0.0769230769230769,0.1538461538461538,0.13186813186813182,0.1538461538461538,6,6,0.0769230769230769,20,"10,20"
+lof17_k100,local,q7_rank_lof_ratio_k100__county500__cross0.1,17,主候補・k10より背景安定,0.08,0.12,0.12000000000000001,0.16,6,0,0.16,24,"17,24"
+aligned_kde10,alignment,q7_median_iqr_sex1_kde_ratio_h2__age100__cross0.1,10,安定寄り候補,0.0384615384615384,0.1153846153846153,0.10439560439560433,0.1538461538461538,5,6,0.0384615384615384,20,"10,20"
+aligned_dcr13,alignment,q7_median_iqr_sex1_dcr_k1__county500__cross0,13,同家族の攻めた併走候補,0.08,0.12,0.10857142857142857,0.16,4,4,0.08,,13
+lof17,local,q7_rank_lof_ratio_k10__county500__cross0.1,17,攻めた候補,0.0,0.12,0.08,0.16,4,5,0.0,,17
+peak_gmm7,mixture,q7_rank_sex1_full_reg0.01_gmm16__county500__cross0,7,最高値との対照,0.0,0.04,0.06857142857142857,0.16,2,3,0.04,,7
+peak_gmm19,mixture,q7_robust_sex0_full_reg0.01_gmm16__county500__cross0.1,19,追加調査候補,0.0,0.0,0.028571428571428574,0.12,1,3,0.0,,19
+peak_hist3,histogram,q7_pref_sex_bins40_s1_zscore__age100__cross0.1,3,追加調査候補,0.0,0.04,0.06285714285714286,0.16,2,3,0.04,9,"3,9"

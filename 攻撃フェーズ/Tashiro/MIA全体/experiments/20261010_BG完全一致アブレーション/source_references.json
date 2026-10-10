@@ -1,0 +1,15 @@
+{
+  "pinned_input_commit": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "existing_P01_table": {
+    "path": "/workspace/shared/mia_all_bg_available/攻撃フェーズ/Tashiro/MIA全体/experiments/20261010_全方式背景7条件/available/results_prelim_primary/by_target.csv",
+    "sha256": "7ab82afaa632745345938cbad7b32b21e0e4c6b6214f4f8736c61b574735c0de"
+  },
+  "official_page": "https://www.iwsec.org/pws/2026/cup26.html",
+  "rulebook_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/rulebook/PWS_Cup2026_ルールブック_prelim-process-20260808.pdf",
+  "rulebook_blob_sha": "f49ea0d8dac645147af8c02515e9f3ae4a7e4058",
+  "rulebook_file_sha256": "4be79a77b15ced28a6d6fca8fde8f2341f1c37b5c3aaa5d49ad7ba871f672df8",
+  "rulebook_read_notes": {
+    "p2": "A_bgはコホートと非重複の公開背景データとして説明。",
+    "p20_section7.4": "公開データ参照による攻撃は自由。C内一致から加工時の利用意図や監査上の判定は断定しない。"
+  }
+}

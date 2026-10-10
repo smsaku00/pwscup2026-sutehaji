@@ -1,0 +1,116 @@
+{
+  "scope": "aggregate results and reproducibility code only",
+  "excluded": [
+    "private_cache/",
+    "per-person predictions",
+    "membership truth",
+    "source C row data"
+  ],
+  "files": [
+    {
+      "name": "C_only_feature_input_audit.json",
+      "bytes": 5642,
+      "sha256": "1f1069700383b66ee69c3c968fad1f2361cf96b26e79f7ad842a78d71c541c32"
+    },
+    {
+      "name": "C_only_features.csv",
+      "bytes": 6984,
+      "sha256": "5c0abfc022470243c76bc808063133bca352de3e65d8897d7f7d25f8265b6beb"
+    },
+    {
+      "name": "Cだけの方式選択とアンサンブル_検証結果.md",
+      "bytes": 15745,
+      "sha256": "33a37c90271c866bc356be071eb7335ab5a77f6d69b12e67bab9474ff7fd837d"
+    },
+    {
+      "name": "build_report.py",
+      "bytes": 13970,
+      "sha256": "20cc57b7bfaa25fc2b8737cc0b6047ce4fc230ab8fb9998a942023b8da40b38f"
+    },
+    {
+      "name": "candidate_catalog.csv",
+      "bytes": 3329314,
+      "sha256": "3d9bc49989d69c9d9d76d1d9ec58bd36b63c7208661aa45960761e528e84cb96"
+    },
+    {
+      "name": "completion.json",
+      "bytes": 380,
+      "sha256": "17235de92f3dc483c438999114b9002dc69e35978c1548a22bdd0241993fd173"
+    },
+    {
+      "name": "ensemble_training_weights.csv",
+      "bytes": 39432,
+      "sha256": "6278c6b9b4f9744e08bd15a63f983f79a283ca86134b107f89a7c576602eb12b"
+    },
+    {
+      "name": "heldout_by_target.csv",
+      "bytes": 38150,
+      "sha256": "bc5799ffa4248c34ec3d70627739169de7c497a370406856c8077693db7b9323"
+    },
+    {
+      "name": "heldout_exclusion_audit.json",
+      "bytes": 8329,
+      "sha256": "d7e142ce0b0875a927663c8335067d92adb2f8dbc62849741416174ebde48334"
+    },
+    {
+      "name": "independent_validation.json",
+      "bytes": 14684,
+      "sha256": "1d9ac553db421f0039f53463db3020109db77f33d949f86881b98b5302ec68ba"
+    },
+    {
+      "name": "nested_gate_inner_validation.csv",
+      "bytes": 24973,
+      "sha256": "aba2d9882aeb71b82ccee5dd09fc5385b69513eaf901e09ed45e135793fd494d"
+    },
+    {
+      "name": "official_scoring_test.json",
+      "bytes": 54,
+      "sha256": "14db36a0a5ca6288a75f3d819bffd3787aed12b89f5df8d23fa19f5bc40a24ec"
+    },
+    {
+      "name": "paired_target_deltas.csv",
+      "bytes": 54836,
+      "sha256": "9628f2937f9a8a489b82fe38e22ce8b4622dfeffd201db82be4d1b267f469090"
+    },
+    {
+      "name": "primary18_team_comparison.csv",
+      "bytes": 1041,
+      "sha256": "2cfcf68e9ad2fd306ae96196623842152f7a9c580304fc71b66cb1fa8483fcad"
+    },
+    {
+      "name": "protocol.json",
+      "bytes": 2459,
+      "sha256": "82a8ea5b8198a34a894a3353ea3a6646004e1710929e9deb9e77b8523a0cf2a1"
+    },
+    {
+      "name": "run_experiment.py",
+      "bytes": 18769,
+      "sha256": "193696296aff92055e74f8f9ad0ef548c1cfe4029e72684b2ec1d2256c493499"
+    },
+    {
+      "name": "selected_methods_by_target.csv",
+      "bytes": 22720,
+      "sha256": "ac3b29c18040fe921cb19841634ea97da9f322e7b23c68bb03719c2349025a4b"
+    },
+    {
+      "name": "source_score_audit.json",
+      "bytes": 56203,
+      "sha256": "7ac08c4185874637ee1732ce50c8acff37c19ad6e0b9be8782ffca3b3a398b95"
+    },
+    {
+      "name": "summary.csv",
+      "bytes": 11037,
+      "sha256": "9827125a99666e6684800de9c589d4bc2a268f6d90b59ad5b6a0f1755d5017db"
+    },
+    {
+      "name": "summary_ja.txt",
+      "bytes": 517,
+      "sha256": "639bd97606cc0fe9935f9741f62692dc64a45779e0e0eee99f549d875f0c5058"
+    },
+    {
+      "name": "verify_experiment.py",
+      "bytes": 3949,
+      "sha256": "82318addc7bf115b0d82d3b21ca074117f94f5dc3bd401bc11a4f4dff3812278"
+    }
+  ]
+}

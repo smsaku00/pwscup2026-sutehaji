@@ -1,0 +1,635 @@
+{
+  "conditions": 19,
+  "frozen_utc": "2026-10-10T03:29:47.610154+00:00",
+  "records": [
+    {
+      "config": {
+        "condition": "original",
+        "target": 0,
+        "kind": "original",
+        "seed": null,
+        "removed": 0,
+        "remaining": 10286,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "60adb21f5fa422b1553cacf9666367a1995b6e140648d3d4de9cc054061666ca",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.858053666892821,
+        "genlra_scale": [
+          12.601927353595256,
+          18.594502109870827,
+          0.6874687272807847,
+          8.586862058266103,
+          0.7858547617696627
+        ],
+        "seconds": 32.55304932594299,
+        "original_raw_bitwise_regression": true,
+        "P01_bitwise_regression": true
+      },
+      "matrix_sha256": "d806a7dbff96e3fa1121cca9881b8455663531a008a1961b048d6707e416cbdd",
+      "prediction_hashes": {
+        "P01": "8fd8e41e7b4aab98be37bd91bb9617107a9867a894cd7b2e5a43158abb82d0ab",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "badc35961d746a37e63eb54488572408d31fe903e5e47f45a5fb62e0fb2ac3e2"
+      },
+      "frozen_utc": "2026-10-10T03:19:55.045023+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_exact",
+        "target": 18,
+        "kind": "exact",
+        "seed": null,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "8865172b2e9fbdc19cda0ef37022d988d1bf4f471f9b94b3e9c18a6a5b29cdd3",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.535023517455528,
+          0.6868796496386345,
+          8.623958115934354,
+          0.7856111397007647
+        ],
+        "seconds": 35.126948595047
+      },
+      "matrix_sha256": "c2e11978680a785fee9a2c1ed27dcd9202e30c235f333349a0ad2a0b5032e342",
+      "prediction_hashes": {
+        "P01": "80624cd17caf2b2f8bbc437c9c44f52a92f219c3ea0b97df35c39de8db8c875c",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "4275b76502bcad7847893defd1b4bebb81035025f37cf36cd1b90382e94360d8"
+      },
+      "frozen_utc": "2026-10-10T03:20:30.180369+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_exact",
+        "target": 19,
+        "kind": "exact",
+        "seed": null,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "a05933f03145bcdcb76291a6f03d33ff87ad23aec5f7c1863b3dd47002b1d9e4",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.582533943096593,
+          0.6859328251983589,
+          8.576328353331192,
+          0.784704919344633
+        ],
+        "seconds": 32.52492952346802
+      },
+      "matrix_sha256": "bfa11c712e5c255b6986b76098af12d9c6a8e9f66e5ef11d2aee432683f8c70b",
+      "prediction_hashes": {
+        "P01": "e57c3c038dbb01b09235e6b88c3b2a2eb1cfa1472dde9ab9e896aef0c49fce3f",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "748263527f1ead813305629ad00e1eab9262e239a5c981efc8197a36718d342f"
+      },
+      "frozen_utc": "2026-10-10T03:21:02.715761+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_exact",
+        "target": 29,
+        "kind": "exact",
+        "seed": null,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "3df5edbcd89e39a4e0d8d111852bb5ba6f78f73fa7f09082f85d4d8645df0e94",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.54177379043876,
+          0.6877143020636887,
+          8.569717661268593,
+          0.7845998613797756
+        ],
+        "seconds": 33.31966233253479
+      },
+      "matrix_sha256": "6455fa3bd87642ccf9e58921099a2f361732736f55332e4f87b5a980c56bd91b",
+      "prediction_hashes": {
+        "P01": "362d9825e826972c4e50c6f8695d2cfef25441f1622e5e568bd4eedd86002a43",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "ab25d067b3327a8520777c2670e666f2ed8ccfc7c1c78037c1296b61021cdade"
+      },
+      "frozen_utc": "2026-10-10T03:21:36.044828+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_random20261010",
+        "target": 18,
+        "kind": "random",
+        "seed": 20261010,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "d7d9947a2298919c74460363e5fbadc53d2d8dc43188ffd76e5a8b783ad67195",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.516847533463235,
+          0.687317780525476,
+          8.581501575052853,
+          0.7829919047783381
+        ],
+        "seconds": 34.315271615982056
+      },
+      "matrix_sha256": "62d47df261eaebbcdafa4a2a9292d86530319062feda0ded6b4ce424a2ae3d72",
+      "prediction_hashes": {
+        "P01": "f67934609426849a57940ec0fe091d486c71ed92625f1cf8fb9942917db8946b",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "f2084172a4a0dc3fa4e8063f550a047f08ba589dcbe4cfb56b06dfd1f8f82af3"
+      },
+      "frozen_utc": "2026-10-10T03:22:10.371827+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_random20261011",
+        "target": 18,
+        "kind": "random",
+        "seed": 20261011,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "47b59a3d2b19c4087150f6d6fea8fe45eef430cb1cd37f84077cea41d5274751",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.625136825170586,
+          0.6852687639356925,
+          8.554596177842356,
+          0.788934648618876
+        ],
+        "seconds": 30.848514080047607
+      },
+      "matrix_sha256": "b6f694c02e3b3300905f124dde25aab8bec80be6536e8db1b74cafd557d308ea",
+      "prediction_hashes": {
+        "P01": "5c4911ed2877f4e1f90f50804e40e03f1e2b080cc76818ea278bb5990f57cffa",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "c33218d99dbcfde18145a3337809b4671ebb74080de80d3a4fe155a6cdc72d6c"
+      },
+      "frozen_utc": "2026-10-10T03:22:41.229244+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_random20261012",
+        "target": 18,
+        "kind": "random",
+        "seed": 20261012,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "ac89e571eeb83306bb2e14307516761248e32c7f5d0524dfee42fdc4bc0d3873",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.587531335602034,
+          0.6892018620147317,
+          8.592827293202431,
+          0.7871375529062594
+        ],
+        "seconds": 31.52953028678894
+      },
+      "matrix_sha256": "47ee4bcb6b8ebd62f1adfdf72b67a7335e08abea875af5ba8e21a3fd28e172ce",
+      "prediction_hashes": {
+        "P01": "53ca83625704185dea10a273b139bc788d58a87655c242f39daeef1c268e8555",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "aee5c09801fd20ae502dbf2410a2c31975af58a4d54ce3faa68a47ae51003a06"
+      },
+      "frozen_utc": "2026-10-10T03:23:12.769150+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_random20261013",
+        "target": 18,
+        "kind": "random",
+        "seed": 20261013,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "c46d892e7954d59c3d1a89ea269dce2a3a453064eecfacc3536ee1e09beae2ed",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.553497130646853,
+          0.690491056681287,
+          8.563579365834405,
+          0.7896874505608029
+        ],
+        "seconds": 32.66806745529175
+      },
+      "matrix_sha256": "61cd29c7a6ef44619879f269a118bcc171d5decf190fe5d356c4052f563c200e",
+      "prediction_hashes": {
+        "P01": "d74f6815e8501b05359d5934eed925d645eb57f3fa2b5b489e8d434c597c368b",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "a7c8bb576e22dfd0b6b071b1e98b80c35ce3ed0a8411c91db0dbdcca3debedc5"
+      },
+      "frozen_utc": "2026-10-10T03:23:45.446215+00:00"
+    },
+    {
+      "config": {
+        "condition": "team18_random20261014",
+        "target": 18,
+        "kind": "random",
+        "seed": 20261014,
+        "removed": 429,
+        "remaining": 9857,
+        "removed_by_source": {
+          "starter": 0,
+          "prelim": 429
+        },
+        "removal_mask_sha256": "f1a53838c2391405b01f38baa72483ba99610b12895859d701ba2694d5fe555f",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.86110530586626,
+        "genlra_scale": [
+          12.601927353595256,
+          18.609092358143354,
+          0.6873752164334493,
+          8.609281736129892,
+          0.7832492264247274
+        ],
+        "seconds": 33.211485624313354
+      },
+      "matrix_sha256": "eb06980e51083cf22434c51910ecad52b0ee820cbb5657db9e16489646f9bb71",
+      "prediction_hashes": {
+        "P01": "24be8acb0289ca14ab72a1dc2d728176f700ba84a0d7f5c14804c0c975f89779",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "949ea1e8a5c3979e3920ad4723d8506a3992b58f6001c026d52861e872a11764"
+      },
+      "frozen_utc": "2026-10-10T03:24:18.665760+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_random20261010",
+        "target": 19,
+        "kind": "random",
+        "seed": 20261010,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "6fecacaaf9d33a27fd0f7289df44a527a6fbca256400c362c5a0671cadacd5ef",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.598180148568574,
+          0.6876918044294194,
+          8.579816008918556,
+          0.7882088787928114
+        ],
+        "seconds": 32.44062829017639
+      },
+      "matrix_sha256": "857917a7161d0fea849d1847d1f0a40e2bb9d51ef55585d7b87a0ff6d70992f2",
+      "prediction_hashes": {
+        "P01": "e66fb81eda51f28bee4ef72bf738aa44c61366d5451c918e1a7cef4a7c840368",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "6458889a5193319769842eae66ae4cda786c2b856b924cdbb7277961f3f9c4c2"
+      },
+      "frozen_utc": "2026-10-10T03:24:51.126556+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_random20261011",
+        "target": 19,
+        "kind": "random",
+        "seed": 20261011,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "ea0e8431504f0e1b0566dfd4ba5b0898dda3bbfc1571964606a1a882a6b237d2",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.582211381431115,
+          0.686911050771597,
+          8.595125760631968,
+          0.785702634805257
+        ],
+        "seconds": 33.06471371650696
+      },
+      "matrix_sha256": "5696148550bc8d4d98c9657f43cc184ae55892004a3c552b324c48b1335303a1",
+      "prediction_hashes": {
+        "P01": "865fb19000c32fc81e411a64d79647cd4e5742688fa3e77a375ea933d8f2ac99",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "972969248c52654f086c3134cec9ebc358b3d9696f848ef140de49947e93417e"
+      },
+      "frozen_utc": "2026-10-10T03:25:24.211533+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_random20261012",
+        "target": 19,
+        "kind": "random",
+        "seed": 20261012,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "e4cc7cdaf061b9663bca925ac9112f0d4171d5f39c421040b87d4d6c1c4b1439",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.62002126080197,
+          0.6869580974653036,
+          8.600750779834918,
+          0.7851418525383326
+        ],
+        "seconds": 31.640902757644653
+      },
+      "matrix_sha256": "3b7f0f5c119af5b4a0aa4c15a216e6756dfd8dbda66839359fa9efcc89cd13ca",
+      "prediction_hashes": {
+        "P01": "43b52ae45db2a0828fbd879af3a2d575c50fe56993d674a8c8844fcd897e0369",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "bcc07a6d60b5022c396306efa112afddd25b8a69e0acd43db0028c5d49241204"
+      },
+      "frozen_utc": "2026-10-10T03:25:55.863906+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_random20261013",
+        "target": 19,
+        "kind": "random",
+        "seed": 20261013,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "c0398b17586f62a62957a6bc0fde4e20bc9954c5395729158c69828cec476689",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.567553938775102,
+          0.68790171804864,
+          8.564186457873326,
+          0.7863214847810089
+        ],
+        "seconds": 32.92094612121582
+      },
+      "matrix_sha256": "f3b07acfd4f6a8dd201be60aa573142c97a46eb5c2c20065636bc19075ecac0b",
+      "prediction_hashes": {
+        "P01": "6eb584098a41d3fc8a915f9b9ebb35cd9c763db655dfd6ee28ada00071757821",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "4ae52f6eaf5634f3f126213ed80a3c1f2fad02c561cca11fb3680ffadb8d0678"
+      },
+      "frozen_utc": "2026-10-10T03:26:28.805135+00:00"
+    },
+    {
+      "config": {
+        "condition": "team19_random20261014",
+        "target": 19,
+        "kind": "random",
+        "seed": 20261014,
+        "removed": 117,
+        "remaining": 10169,
+        "removed_by_source": {
+          "starter": 117,
+          "prelim": 0
+        },
+        "removal_mask_sha256": "ebdb74bb4ab90725159a0cd2ea78b31986e4232e92066dda375bb839c23d16c5",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8588720588323183,
+        "genlra_scale": [
+          12.601927353595256,
+          18.595311035710996,
+          0.6870357059365659,
+          8.609626211729923,
+          0.786096580003911
+        ],
+        "seconds": 32.05660820007324
+      },
+      "matrix_sha256": "d2e24c0cfa33b65e36474dfae804622d2ce4709e511a838dc35c8858d10c29a8",
+      "prediction_hashes": {
+        "P01": "b6b498dd6e697a2c1ef8806e3e26d3ce5b93d61d1f263eb20c53651926d7024f",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "2f33f28a4eb68a5b1918aa268be1c35a36741a09804d9be0abd5a6df4c45a6ed"
+      },
+      "frozen_utc": "2026-10-10T03:27:00.872015+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_random20261010",
+        "target": 29,
+        "kind": "random",
+        "seed": 20261010,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "b9abce8a933304c9ab46b16bd9904e99944bded892dff6055d07326070bec207",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.597978588888218,
+          0.6877067019259098,
+          8.611481123769748,
+          0.7855629557148459
+        ],
+        "seconds": 32.69452476501465
+      },
+      "matrix_sha256": "cc12c23e53b8d78e9e94989f8cd816a00673e0332bec1d1b9bb5d7f4b6eba3cb",
+      "prediction_hashes": {
+        "P01": "afdabeb1eb2bf0b71474bec1f39fbe962991cb16badd18f2745fbbff8c8ee382",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "0c4c9b7d832c55cb3e38912f2206b63da9d184281d998fdfbf65829497339bda"
+      },
+      "frozen_utc": "2026-10-10T03:27:33.576603+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_random20261011",
+        "target": 29,
+        "kind": "random",
+        "seed": 20261011,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "f5b4f0b8de7650695f4e5ba369e25c3808b0c0db0bb63f1f94e610f4604eb606",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.61570173589106,
+          0.6869067818149609,
+          8.615251255322908,
+          0.7850745640303312
+        ],
+        "seconds": 33.94720244407654
+      },
+      "matrix_sha256": "02b19d83bbf7eeb6a9e6b1d5de331f0d42267790c8413dfebf3f2d78b69054a9",
+      "prediction_hashes": {
+        "P01": "efe027fe7399ff91c023324d8a979985744a48a77ea72a6d7f83e38b96d7a019",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "8240b6f64bf06124aae319777d002c5317953c7407172b8642449c243363358d"
+      },
+      "frozen_utc": "2026-10-10T03:28:07.534533+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_random20261012",
+        "target": 29,
+        "kind": "random",
+        "seed": 20261012,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "ecf1574f1ebc1ba32d60642ccb752296d18e1db26de01aededaa2da79030eeb2",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.57129309907128,
+          0.6866417292248695,
+          8.611240156433775,
+          0.7861350270723526
+        ],
+        "seconds": 32.97505068778992
+      },
+      "matrix_sha256": "ede3d7cfc4b8095e78243b445ca28df88b6de8910b17679606ecb16b2d88dfe3",
+      "prediction_hashes": {
+        "P01": "4ec015b4b23f4f6f5268f1995aabaf876aa53d6ea2f432eb1900c57a38250a38",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "27d30466bdab478163457dbb04c8f4a5263ad0dbc144640be61f103e22f93311"
+      },
+      "frozen_utc": "2026-10-10T03:28:40.518025+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_random20261013",
+        "target": 29,
+        "kind": "random",
+        "seed": 20261013,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "94874f0e611d5b16b8727b35d2332904faf787d2e8e4060830e2addd943dba77",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.603866566831986,
+          0.6877212652475948,
+          8.578067694680152,
+          0.7883654958420004
+        ],
+        "seconds": 35.00920629501343
+      },
+      "matrix_sha256": "7485ce14a1704ca1ca2168b9e973d2de2e5bc698980c181b53b34bc5fc60b0e4",
+      "prediction_hashes": {
+        "P01": "5be869d867c45c41c656a16291c89457cc3b339b6a8b0c977d69c210fcc37c00",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "e96cb63eef489bfad147036b6978b043bea566b1025f4ba31c37b128708e97f9"
+      },
+      "frozen_utc": "2026-10-10T03:29:15.535569+00:00"
+    },
+    {
+      "config": {
+        "condition": "team29_random20261014",
+        "target": 29,
+        "kind": "random",
+        "seed": 20261014,
+        "removed": 266,
+        "remaining": 10020,
+        "removed_by_source": {
+          "starter": 28,
+          "prelim": 238
+        },
+        "removal_mask_sha256": "64041af0b0be95605d2a0e6f68821951743fdd2c5811e6a1e672d79366db2c9a",
+        "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+      },
+      "fit_details": {
+        "h_kde13": 0.8599291774028754,
+        "genlra_scale": [
+          12.601927353595256,
+          18.60971566956214,
+          0.6859198713455094,
+          8.586201692934946,
+          0.7849516847768506
+        ],
+        "seconds": 32.06604838371277
+      },
+      "matrix_sha256": "30b9dd0e258a039c816c6deaddcbb0a8fa4233711bf2dd8ece150e63f84e1f15",
+      "prediction_hashes": {
+        "P01": "1a92fa6d2799257386631f9b89ba2eda592e35420065c307ecccea74c64ca23b",
+        "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "18ffbff1f79354e95f6bc7436d020e54f7d7ee14274bfc95f68a6a398f725a02"
+      },
+      "frozen_utc": "2026-10-10T03:29:47.609949+00:00"
+    }
+  ]
+}

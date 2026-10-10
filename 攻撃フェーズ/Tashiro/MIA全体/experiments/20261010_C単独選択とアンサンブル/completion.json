@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "elapsed_seconds": 121.46305298805237,
+  "finished_utc": "2026-10-10T03:57:04.043721+00:00",
+  "code_sha256": "193696296aff92055e74f8f9ad0ef548c1cfe4029e72684b2ec1d2256c493499",
+  "protocol_sha256": "82a8ea5b8198a34a894a3353ea3a6646004e1710929e9deb9e77b8523a0cf2a1",
+  "candidate_count": 43148,
+  "features": 19,
+  "threads": 1,
+  "base_models_rerun": 0
+}

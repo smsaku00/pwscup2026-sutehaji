@@ -1,0 +1,235 @@
+{
+  "publication_status": "cloud-stage only; no GitHub write performed",
+  "validation": {
+    "passed": true,
+    "immutable_original_files": 142,
+    "overlap_pairs": 63,
+    "frozen_conditions": 19,
+    "score_matrices": 38,
+    "independently_recomputed_metric_rows": 84,
+    "original_P01_bitwise_match": true
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7c37fbd56f8a77a1855d62d945a7e8c58087da2e5a8c1dba95f582eb9c5953fb",
+      "bytes": 10966
+    },
+    {
+      "path": "background_candidate_overlap_check.csv",
+      "sha256": "91937433ebc9bd6fe6f139a19fac4cfca11dacf4c4b68a12f1f6466e621862ec",
+      "bytes": 201
+    },
+    {
+      "path": "background_pair_identity_check.csv",
+      "sha256": "08b4a3548895aac3e48a7eab6781d9a3a103b1d400dd13479c1eb1566fa66d85",
+      "bytes": 162
+    },
+    {
+      "path": "existing_bg7_P01_affected_teams.csv",
+      "sha256": "642056d9fa4beb7d8e3d053d7ee1cdcb55e0bd5a3b14665ae21b9ce0bfec7e3c",
+      "bytes": 2130
+    },
+    {
+      "path": "finalize_summary.py",
+      "sha256": "7b3cf62180b17bcdca32c93e8481e22580b6dfa637f67ee01401c6ef01cb59bc",
+      "bytes": 1585
+    },
+    {
+      "path": "input_hash_verification.json",
+      "sha256": "47ae7520af6b7b440b501b2b2f26f7e898533457c44431ef18425380ae6c2c2c",
+      "bytes": 42662
+    },
+    {
+      "path": "prelim_all_teams_overlap.csv",
+      "sha256": "ea90bcc3fa324f66e25fbe8d533544e4fc01cf3846f5fc2b071580b181c0a45b",
+      "bytes": 11216
+    },
+    {
+      "path": "run_ablation.py",
+      "sha256": "b4a6bf8e7ff944fba20e7cef4f9414090120fad0af88ac6ff193ebf83dd15808",
+      "bytes": 11946
+    },
+    {
+      "path": "run_ablation_prediction_frozen.py",
+      "sha256": "d99490d5e45bb6cdbff3ec88a9ca26ecaaa7d40fe32f51bd837a4f2ad1b5087a",
+      "bytes": 11872
+    },
+    {
+      "path": "scoring_only_correction.json",
+      "sha256": "da629b61132779186e1cc67f8ac66c6f9c02a4d8b88f6140f3c3e220987e0e47",
+      "bytes": 3263
+    },
+    {
+      "path": "source/archive.py",
+      "sha256": "db09fadc7b35dbd385f76179bb4d78685a7f0a52a7825b478754424ba989eaee",
+      "bytes": 13695
+    },
+    {
+      "path": "source/base.py",
+      "sha256": "28b6a7c6106d89c9bcca6ca138c0aaae23c0b7c03e8dc299c34efd98c9bd4cb3",
+      "bytes": 16167
+    },
+    {
+      "path": "source/bounded_core.py",
+      "sha256": "9e544830c3f6f3a6d4005c4076e093957928b7dfe27a448de85dab98993f44e2",
+      "bytes": 2155
+    },
+    {
+      "path": "source/general.py",
+      "sha256": "2828ae2b8f1c9db1973c5d3ce5107f2c69781d5f1af7a91c147c41b13e20c8e8",
+      "bytes": 8798
+    },
+    {
+      "path": "source/分析.py",
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "bytes": 16899
+    },
+    {
+      "path": "source/非会員を使う順位較正の検討.py",
+      "sha256": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833",
+      "bytes": 7846
+    },
+    {
+      "path": "source_references.json",
+      "sha256": "e8e884e19f4aa481d5344cefd9c0684d5e7ab3e09bec35f4debd6fb78f142db4",
+      "bytes": 1005
+    },
+    {
+      "path": "starter+prelim/ablation_summary.csv",
+      "sha256": "d709e629fb2d5bcf98285698b80a81a8e4bb18bde2bbf8aa6cd843c14b29ba62",
+      "bytes": 4921
+    },
+    {
+      "path": "starter+prelim/by_condition.csv",
+      "sha256": "b1bbca528e23092f01cc8e9b4c3359d3d2f12a0b3cce787e82f80fcb2eed5182",
+      "bytes": 28959
+    },
+    {
+      "path": "starter+prelim/completion.json",
+      "sha256": "692f797596d74ea7dd81c6cbf4512a31254352945edf63ef09f18a1c40121420",
+      "bytes": 343
+    },
+    {
+      "path": "starter+prelim/fixed_protocol.json",
+      "sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1",
+      "bytes": 2444
+    },
+    {
+      "path": "starter+prelim/original.json",
+      "sha256": "55b54c94f47e900027a72d976001f3bd9e4833166d1a6d74891f8f2790d4dda2",
+      "bytes": 1108
+    },
+    {
+      "path": "starter+prelim/prediction_freeze.json",
+      "sha256": "a5ce459db9e33a24f133f2079d5001c12f8e324b452f29aa601d69cfa63ad099",
+      "bytes": 22535
+    },
+    {
+      "path": "starter+prelim/team18_exact.json",
+      "sha256": "844ceaf95742ee71e4789b8423144485cebf73a98c0d98d53b0d393b51710d55",
+      "bytes": 1029
+    },
+    {
+      "path": "starter+prelim/team18_random20261010.json",
+      "sha256": "9c81afadb4649994fc5e139745bf4ee1aaa9bdd9d92ae792f6aa81771a2ead7e",
+      "bytes": 1045
+    },
+    {
+      "path": "starter+prelim/team18_random20261011.json",
+      "sha256": "f7d876dfc4c1f3434f42ed8160c5c1c71fea44849e44bb648c53dce391b5f1ef",
+      "bytes": 1045
+    },
+    {
+      "path": "starter+prelim/team18_random20261012.json",
+      "sha256": "05d341ebd67822bc48790d78990574683458fec2a51c809bb4a0341c942af7ca",
+      "bytes": 1045
+    },
+    {
+      "path": "starter+prelim/team18_random20261013.json",
+      "sha256": "159ac3392ad59c3ba1cfca667760b8b0c1f40d6c1d053f131023bc942b3af955",
+      "bytes": 1044
+    },
+    {
+      "path": "starter+prelim/team18_random20261014.json",
+      "sha256": "f63e25d27fe02cf524fc7196679ca1a810045dc0458912a436f4960da964ad4c",
+      "bytes": 1046
+    },
+    {
+      "path": "starter+prelim/team19_exact.json",
+      "sha256": "ee7dda37d691269e8f25790f46ab422ed4c3c866185d3339f29e56e8091fe270",
+      "bytes": 1033
+    },
+    {
+      "path": "starter+prelim/team19_random20261010.json",
+      "sha256": "29a8dd0360987a41a35c314a029409dafaa55d2f25d77d14f31a5eea1d8f27dc",
+      "bytes": 1048
+    },
+    {
+      "path": "starter+prelim/team19_random20261011.json",
+      "sha256": "154d130c62f211d7513191f546b105fb25845d0484cb24a4973c9e8f7f1a8741",
+      "bytes": 1046
+    },
+    {
+      "path": "starter+prelim/team19_random20261012.json",
+      "sha256": "e82df2d8c068b19424361807030f1dc27080b0905f553c8829c2c54afad74f12",
+      "bytes": 1048
+    },
+    {
+      "path": "starter+prelim/team19_random20261013.json",
+      "sha256": "e97abcc8f0ed340edf76a2237bb4215816b98fb83c855e6cddc811c0f67ee310",
+      "bytes": 1046
+    },
+    {
+      "path": "starter+prelim/team19_random20261014.json",
+      "sha256": "d70730ea98714beab29678b5a698fa033e8a073f18112768cccaa45e079ed8c6",
+      "bytes": 1047
+    },
+    {
+      "path": "starter+prelim/team29_exact.json",
+      "sha256": "515bcbbf3aa50a802682bb6ef22e20a75db6af865a39180a9186cfb4bee164e4",
+      "bytes": 1034
+    },
+    {
+      "path": "starter+prelim/team29_random20261010.json",
+      "sha256": "4ffcb97343fd3c29c04c47ea1101289cd8f7985226a5f5fe36386a3e70f9fb54",
+      "bytes": 1049
+    },
+    {
+      "path": "starter+prelim/team29_random20261011.json",
+      "sha256": "98a037ca5c9a9e3faffcc362ccdbae5cdd91e431ed313bce488326fa8a20283e",
+      "bytes": 1048
+    },
+    {
+      "path": "starter+prelim/team29_random20261012.json",
+      "sha256": "37bd11f2e08c8ce698dec7178efbf10badf4fe56142bbc2ffcbb0e0a96aeb9f2",
+      "bytes": 1048
+    },
+    {
+      "path": "starter+prelim/team29_random20261013.json",
+      "sha256": "dcc68be6557c86567e1f78ae89ac26212d237103f08207d1c7319f321af370ea",
+      "bytes": 1049
+    },
+    {
+      "path": "starter+prelim/team29_random20261014.json",
+      "sha256": "64ea14fc7fec0c96807e724de4f62c2580912674cea28e0002eae3f4262e32f8",
+      "bytes": 1048
+    },
+    {
+      "path": "starter+prelim/truth_audit.json",
+      "sha256": "777dd29474ca6e067bd18d9f19ca5f14010b6cb2038ccb7769cd8d0eeb4815ff",
+      "bytes": 5239
+    },
+    {
+      "path": "starter+prelim/validation.json",
+      "sha256": "b4bac3ba2a4701c3e1f1dd85c5da2e90873e9655309eb8eb475b90602eedd637",
+      "bytes": 214
+    },
+    {
+      "path": "test_ablation.py",
+      "sha256": "2d068535137d461e2dc05fb13da8380c9f0e310452b2b6ac2ddc9a50428b5465",
+      "bytes": 4945
+    }
+  ],
+  "excluded": "Synthetic candidate score NPZ caches and downloaded rulebook bytes are excluded from publication bundle."
+}

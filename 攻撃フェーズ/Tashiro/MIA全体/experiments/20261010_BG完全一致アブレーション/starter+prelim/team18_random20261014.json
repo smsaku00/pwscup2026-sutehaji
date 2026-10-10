@@ -1,0 +1,33 @@
+{
+  "config": {
+    "condition": "team18_random20261014",
+    "target": 18,
+    "kind": "random",
+    "seed": 20261014,
+    "removed": 429,
+    "remaining": 9857,
+    "removed_by_source": {
+      "starter": 0,
+      "prelim": 429
+    },
+    "removal_mask_sha256": "f1a53838c2391405b01f38baa72483ba99610b12895859d701ba2694d5fe555f",
+    "protocol_sha256": "08d1ff3c07685d3ff9969273908e756ec45332d8cb4aea431abc89240a2d76c1"
+  },
+  "fit_details": {
+    "h_kde13": 0.86110530586626,
+    "genlra_scale": [
+      12.601927353595256,
+      18.609092358143354,
+      0.6873752164334493,
+      8.609281736129892,
+      0.7832492264247274
+    ],
+    "seconds": 33.211485624313354
+  },
+  "matrix_sha256": "eb06980e51083cf22434c51910ecad52b0ee820cbb5657db9e16489646f9bb71",
+  "prediction_hashes": {
+    "P01": "24be8acb0289ca14ab72a1dc2d728176f700ba84a0d7f5c14804c0c975f89779",
+    "q13_median_iqr_sex0_kde_ratio_h2__raw__cross0.1": "949ea1e8a5c3979e3920ad4723d8506a3992b58f6001c026d52861e872a11764"
+  },
+  "frozen_utc": "2026-10-10T03:24:18.665760+00:00"
+}

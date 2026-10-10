@@ -1,0 +1,852 @@
+{
+  "cutoff_utc": "2026-10-10T03:10:00+00:00",
+  "sealed_snapshot_utc": "2026-10-10T02:56:23Z",
+  "sources": [
+    {
+      "source_path": "available/results_prelim_primary/by_target.csv",
+      "sha256": "7ab82afaa632745345938cbad7b32b21e0e4c6b6214f4f8736c61b574735c0de",
+      "bytes": 337488,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "available/results_prelim/by_target.csv",
+      "sha256": "5a5b5b56339727167a06090e1a82cc068ccb08d2d8576501d3c0d518e3ef4d02",
+      "bytes": 340075,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "joint/prelim/by_target.csv",
+      "sha256": "2aaf22f3fdf02bbfb90bf4050b15a5350086dc8b2171793b4695191409d01069",
+      "bytes": 7080827,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "fusion/prelim_by_target.csv",
+      "sha256": "5ccb31816d25af11655f5fc07006ed47f5afdd8622d0812a9e168c7478f992b6",
+      "bytes": 3219142,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter/by_target.csv",
+      "sha256": "32d3563406e03e34a333ce4b7a46a26363fbabffc1b045910617e2b4440d46ed",
+      "bytes": 13601253,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/prelim/by_target.csv",
+      "sha256": "a35742d3db85e9744293cd81568fe428eb1d496cb862bb2ce994cb933ce2fb1e",
+      "bytes": 13488018,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/main/by_target.csv",
+      "sha256": "801746c7ceb574bc50106b0a20f789dcac7979ef5a91848289251e49a68cb234",
+      "bytes": 13221034,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+prelim/by_target.csv",
+      "sha256": "df7d63030b137e7b1a423ca7fc2a935ee87fe7cb55065c267de709d6f33d2450",
+      "bytes": 14426773,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+main/by_target.csv",
+      "sha256": "1c7c46716090fff5da121bd2a94bb01918b1235fec5841cfe5ec35706a112113",
+      "bytes": 14165757,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/prelim+main/by_target.csv",
+      "sha256": "6a089ee740a8e090a6517e9efaecfd0a42c06045d9a5db8e25d3855c07471928",
+      "bytes": 14040241,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/histogram/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "69eb0c37e6254c898c084b7b7de1fcd4974cb45cc853ca40ba4839b19adb17dc",
+      "bytes": 14965063,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter/by_target.csv",
+      "sha256": "7fa7a20323b7d3fd507374e11e2d532ac5c4aa677f6bab36d772117f62e6fa0a",
+      "bytes": 4433476,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/prelim/by_target.csv",
+      "sha256": "c429e262bbcd6c9d3f24ae4624eb43b7fd84df69ad97af296089cac3d561526c",
+      "bytes": 4392133,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/main/by_target.csv",
+      "sha256": "7bcf60aacfe43a6e53a7c4fc8d9bd41af96d5e030c6cd577b97859ec08254074",
+      "bytes": 4313931,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+prelim/by_target.csv",
+      "sha256": "660e0f48f79eb3e906ab6d43ea27bba77262b3afebdcaaf3ad443a226eeedea5",
+      "bytes": 4719510,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+main/by_target.csv",
+      "sha256": "153079f142959763b2a10f6b523f72a1e7ee743937848938f53e1896ec686fab",
+      "bytes": 4637224,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/prelim+main/by_target.csv",
+      "sha256": "8ebe1b7e9564b176f92dd62510c6e139563d3c9d58f62e31b1caad7a76aeb843",
+      "bytes": 4597867,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/geometry/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "bc1d46b3b2e05d3894030e958c9817567fa7a0ff7e5a88664920d0d986fa6c3b",
+      "bytes": 4921939,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter/by_target.csv",
+      "sha256": "473217cfb3b3fdf9bb2e087398ab39ebbc0ce9b98d9cbf6df16cd66d79ecf34c",
+      "bytes": 5413178,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/prelim/by_target.csv",
+      "sha256": "24f2e2c88ea354641794523856a3005c7af0773f35e99e17006ea09fa6beded2",
+      "bytes": 5372422,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/main/by_target.csv",
+      "sha256": "2bdf4670836ed1ed331c2102618f4a7fda1a8b18f713bef168136c2969e301ea",
+      "bytes": 5278065,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+prelim/by_target.csv",
+      "sha256": "f69040ae16058cef2ec8977048e83088f936bed43820a6cc30a82c3a4ce2d750",
+      "bytes": 5736285,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+main/by_target.csv",
+      "sha256": "75a879d6464e148fb190a61651858639a296bf53631157af83134163a3407088",
+      "bytes": 5639917,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/prelim+main/by_target.csv",
+      "sha256": "4e2df51ef64bc6327c9f54d6b2f8579020cc1fe2c01617cadbcae215cf44b94b",
+      "bytes": 5599925,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/alignment/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "f850ffdc2ae896e5cf4710849bebb5763800c01fbc00938b63ebb190f44a2cff",
+      "bytes": 5963067,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter/by_target.csv",
+      "sha256": "fefaebbf48429e15f027d01d1f8d460da7a7f41135834924cb4f48b7c97174c7",
+      "bytes": 6968104,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/prelim/by_target.csv",
+      "sha256": "e1f318ffdbe1e3c6f035905e806fa57db0fbe5a707162389127490bc2a23e346",
+      "bytes": 6902213,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/main/by_target.csv",
+      "sha256": "a711e46fa41fcb818e6e8ad3788d9340bc04cd3b99b7ed39a17c32a8290b4037",
+      "bytes": 6786455,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+prelim/by_target.csv",
+      "sha256": "08534734aa15876ab3d781d9daf3938f29df4c9b867898f12a79d0f7f2feae85",
+      "bytes": 7364999,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+main/by_target.csv",
+      "sha256": "29577ca81ff7d3dfee241d034f2dcf3541f9a158e75f6e41834f00ecf294c29f",
+      "bytes": 7252601,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/prelim+main/by_target.csv",
+      "sha256": "79de210c0a872ff2bc3e47fbb21f3900890d6fad78d3eb80b4c8e64eb9a8b214",
+      "bytes": 7190626,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/mixture/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "cd89e175b91b234cc67049cbdd7352fcaebfceacdb6814172e9365230f7c2ac0",
+      "bytes": 7655752,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter/by_target.csv",
+      "sha256": "774da13c67fea2373f2d33a8e5a25880d1c344f83f4742a3a4766f4b77faa795",
+      "bytes": 1965621,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/prelim/by_target.csv",
+      "sha256": "4b7d8d975779fd6906bf0abc92c2196b38b0f140ec6ae20f8f472ac6721b728a",
+      "bytes": 1941020,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/main/by_target.csv",
+      "sha256": "14d6d2218a71cb69278feb179a4f46ef855c25240f641149f644658e9084e632",
+      "bytes": 1906149,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+prelim/by_target.csv",
+      "sha256": "4362b99408f330818059209ae00503181b8a75876035604b96aee134a463f9f2",
+      "bytes": 2087013,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+main/by_target.csv",
+      "sha256": "76cc54b36ebaf1de0b91f7e2f1a0c44675a328b2a72767d021deaaf4d3b8e15b",
+      "bytes": 2053681,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/prelim+main/by_target.csv",
+      "sha256": "0a3501b3507a96629ec05f70b4a9c9b5f853dbc627d34dbc4aa67b45d3a0397b",
+      "bytes": 2030099,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_oct8/local/prelim/starter+prelim+main/by_target.csv",
+      "sha256": "b5176f9dba821ab21b8fd5866fa03eac75216aba7b2d78138798a3b1e87a04a9",
+      "bytes": 2176937,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/starter/対象別TPR.csv",
+      "sha256": "f7e86ad7166c148a96bc61db7c6adad1db0f0bc2a6c9dd1b7aca2356c8b88916",
+      "bytes": 7234744,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/prelim/対象別TPR.csv",
+      "sha256": "b8781960e938c9648073f751685b0add661e04ab4d8d679f4bee7f250736eb9e",
+      "bytes": 7235017,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/main/対象別TPR.csv",
+      "sha256": "8233af987878c5c904bc045264c478a238cf42b53508431eb44ef5f80cc65587",
+      "bytes": 7231431,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/starter+prelim/対象別TPR.csv",
+      "sha256": "5bc34361f2b68fcb779ef118dae3b6f09ff3939dc5e34912ce31ea51c206b659",
+      "bytes": 7234641,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/starter+main/対象別TPR.csv",
+      "sha256": "8c3c60301fc8fb53c2693824f00b65c2b3fbfbba26c8c8b79e1b5914ed1b4f20",
+      "bytes": 7231602,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/prelim+main/対象別TPR.csv",
+      "sha256": "deaf77024b2b7ed2defa55c549bc2cca5c96b5228c513632fc4644c00abb0728",
+      "bytes": 7232571,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/direct/starter+prelim+main/対象別TPR.csv",
+      "sha256": "b3133ed50b9a5e822e1484566911bf11e9a65353dfee9de1d82031d8ba02841b",
+      "bytes": 7232929,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/starter/対象別TPR.csv",
+      "sha256": "b4294f6e18d45d6219086fd8df3a493b0d036b889494ea4402ef5db9e591a854",
+      "bytes": 1744690,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/prelim/対象別TPR.csv",
+      "sha256": "581f242041c589515f8cf1a65ad26a0179b1df77c45d6b3f46bfed2f61e253b6",
+      "bytes": 1743946,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/main/対象別TPR.csv",
+      "sha256": "5707655598b6e51c2674eb53eed286d62d548e6beece24db007f09c47c04ae94",
+      "bytes": 1745265,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/starter+prelim/対象別TPR.csv",
+      "sha256": "551b87a3db8a262b57c7c190bf038b249199b330b85cc0d6e2db4cda86ce0219",
+      "bytes": 1744734,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/starter+main/対象別TPR.csv",
+      "sha256": "f781e7229b1953b1f2709a6a3e338b377ff45b99e5a1a1b35f7e7fdcbd6642d1",
+      "bytes": 1744845,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/prelim+main/対象別TPR.csv",
+      "sha256": "f0c96e1903b50fc487d6119c883667b914b75a00eceabea0a018d5247e2d0d2c",
+      "bytes": 1744529,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/attribute_seeds/starter+prelim+main/対象別TPR.csv",
+      "sha256": "e69371ebce28eea0eead94fd9ae3f937d7aaf4d402b0dd490cfa0fc6481a7433",
+      "bytes": 1744785,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter/対象別TPR.csv",
+      "sha256": "fdff6c8499f24708d52418a067b4d5f9bedf75f33a71bc69038012370966ad19",
+      "bytes": 1290821,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/prelim/対象別TPR.csv",
+      "sha256": "647c7b873797a19e6caaa66ac69c55b39783c8ae09eaa4297f55d57b8c4e6292",
+      "bytes": 1291532,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/main/対象別TPR.csv",
+      "sha256": "0fdce8eb5b857c7bf449d0ed81eac91d7e476ca2cc8919efd6da43ecc3cfd50c",
+      "bytes": 1294411,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+prelim/対象別TPR.csv",
+      "sha256": "29bff8fa14b314981230b2921799ca6e48aa345265de49a6bd759a8fdcaeca1c",
+      "bytes": 1291219,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+main/対象別TPR.csv",
+      "sha256": "cacaa942d0f83bdf52a9fa00988038258a4500505a506e2fffebc9c219d9305c",
+      "bytes": 1291486,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/prelim+main/対象別TPR.csv",
+      "sha256": "b9197708a1d4ad16580b00bb8d17a412069d83c3e74a196f1fd83a08ff4d951d",
+      "bytes": 1289008,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/stable_centers/starter+prelim+main/対象別TPR.csv",
+      "sha256": "025f2b88883b4eeb7ce9e95e233ae641c25d345acc8c4778c4d066f86971a51a",
+      "bytes": 1287531,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/starter/対象別TPR.csv",
+      "sha256": "04911c5689ab3aa0a246709f10325fa9698a300ead47d6cdedea4d140983e442",
+      "bytes": 387763,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/prelim/対象別TPR.csv",
+      "sha256": "d8ede9a1fd1bbeb2f1b8bc939e9b768235c277ab95cfe85bf3efdde609ad4d72",
+      "bytes": 391709,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/main/対象別TPR.csv",
+      "sha256": "13909d791954178568723b5f192f9fe4c0518024ea5d3d39d0d552a3856553ad",
+      "bytes": 380430,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/starter+prelim/対象別TPR.csv",
+      "sha256": "5e8f831b4c5a6aa42a741fb40c00cd044b23ebe8ed7d69335f5dace0cbad95ff",
+      "bytes": 392038,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/starter+main/対象別TPR.csv",
+      "sha256": "e6e727986fe798f4d034c2e33776fbf3242afe7ce5ba07445c66f2ec20b58a8c",
+      "bytes": 376923,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/prelim+main/対象別TPR.csv",
+      "sha256": "bbac27463125be714a91f27bb1091f06eff6fe6b88a5d035fd9d386b9ae3c874",
+      "bytes": 386640,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/q_owner_removal/starter+prelim+main/対象別TPR.csv",
+      "sha256": "3ea7d5bd56c2417b3b30e012f50ae3476eb0ecf1036a767ae26f692d049cfbf0",
+      "bytes": 387279,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/starter/対象別TPR.csv",
+      "sha256": "2be467360758725a539525acb9eb96bdf739ba1e4110d7f91f0deea498c3a18f",
+      "bytes": 8339,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/prelim/対象別TPR.csv",
+      "sha256": "a65af61f615c6b6df5ab7a24c9feee1b105221253b5c4e7aa40eaeee5104866f",
+      "bytes": 8445,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/main/対象別TPR.csv",
+      "sha256": "b6085bd2c1537a57885e99ce03270828e773fcd02d0a80408fc68320dc1424ad",
+      "bytes": 8048,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/starter+prelim/対象別TPR.csv",
+      "sha256": "577dbad1362a386b37d927d445633653551e1abce117a234b815c9a76797d541",
+      "bytes": 8398,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/starter+main/対象別TPR.csv",
+      "sha256": "0d768a262a2375692b2fa3250c945b2c1b5d9159035fb1b6353bcfa33763980f",
+      "bytes": 7965,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/prelim+main/対象別TPR.csv",
+      "sha256": "935bc481e7d9f299fc99cc549f92debc3d4057b54bbbe92f1aa1904590fff749",
+      "bytes": 8220,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/public_null/starter+prelim+main/対象別TPR.csv",
+      "sha256": "14f4782d70cb08313557ec6edd9739c5177eb93a03b24e0e130207364387acbd",
+      "bytes": 8238,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/starter/対象別TPR.csv",
+      "sha256": "e2bba9fe681b860f9ec412412704297ced84f6b121858b1a6cf8a77907a44300",
+      "bytes": 31334,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/prelim/対象別TPR.csv",
+      "sha256": "b84ecef3e3878cd2addfaaa4ace5cb10d416ab029cc70a813ad7948136fd03c1",
+      "bytes": 31727,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/main/対象別TPR.csv",
+      "sha256": "c52b4530e50ca114f3d27ba4dc53cd76c5c7eea90d79e12c5b4fbb36f523e641",
+      "bytes": 30612,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/starter+prelim/対象別TPR.csv",
+      "sha256": "76602e85b6507a27aa47116dc89d9c40e9d45e3a6d124e0a46c49a1a9b999701",
+      "bytes": 31949,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/starter+main/対象別TPR.csv",
+      "sha256": "337be30cc249b879b13a951f0e43673a767493894df67252c9b98f0c84bdfde1",
+      "bytes": 30503,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/prelim+main/対象別TPR.csv",
+      "sha256": "e4e509f685bc9d5fa31631061acf891e9fba40973218d486b3ceb88c7a632828",
+      "bytes": 31444,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/nested_public_null/starter+prelim+main/対象別TPR.csv",
+      "sha256": "160560f7cbc637f76fe316364259aafa17415c7cd869f6f561eb39fdc0568478",
+      "bytes": 31597,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/starter/対象別TPR.csv",
+      "sha256": "adfc1bc05d23ad3e27f16f408e2d60abe2c34cec11547b8df1b8e1d0d8624638",
+      "bytes": 32939,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/prelim/対象別TPR.csv",
+      "sha256": "5416b1a32c5006f7004340405af7195482223ed3649fafe6aa3511d35179f263",
+      "bytes": 33528,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/main/対象別TPR.csv",
+      "sha256": "7191e090f26fea3d6c6abbd970179b909e743b7ef4f1384900fb49aa83b329e1",
+      "bytes": 33065,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/starter+prelim/対象別TPR.csv",
+      "sha256": "51d291b1cb094864a62b3c52e22a8277d04831a71b6de9d6e05413cfcedb0f3d",
+      "bytes": 33471,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/starter+main/対象別TPR.csv",
+      "sha256": "b5f44f50c5b2dea0a4c8e9cd94e71c1623ce6eb324ae5d0712ad7c441a5f1e50",
+      "bytes": 32734,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/prelim+main/対象別TPR.csv",
+      "sha256": "d72d3818e683d58f8c95aaacacb9131d3e6470bc0dabfff1cc1e9f148cff9255",
+      "bytes": 33486,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/split_A/starter+prelim+main/対象別TPR.csv",
+      "sha256": "2132caa15b516ba15f7b8a19ff42f90d28a8e0f632980a55957c4d7ab1140c77",
+      "bytes": 33266,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/starter/対象別TPR.csv",
+      "sha256": "541600838002edd9e3399031f86de109d146d3b1e629a12661328b71235fb7ea",
+      "bytes": 91579,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/prelim/対象別TPR.csv",
+      "sha256": "b6cf99fd2afc7ca2860cf3f0f9fc87b5602ee8c7b637e92be8cf9065f43a8fe4",
+      "bytes": 90396,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/main/対象別TPR.csv",
+      "sha256": "3df61098cfafafd5282b95619a5a79b448f98a304ac6a97ed3849dae25c5b37f",
+      "bytes": 90233,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/starter+prelim/対象別TPR.csv",
+      "sha256": "54599fcd9051a7708ffa4cebc9a2946f3dd966f593e361249a9478b0a85119b0",
+      "bytes": 91261,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/starter+main/対象別TPR.csv",
+      "sha256": "0bd478a5cdeac508369ce803a5a200e70312e5ec42ca63676c349f32006071be",
+      "bytes": 91504,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/prelim+main/対象別TPR.csv",
+      "sha256": "f524088dfd10d7411b621545f4845e94a4602b43026feb72aa979215a7f6eb1e",
+      "bytes": 90497,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/gaussian_seeds/starter+prelim+main/対象別TPR.csv",
+      "sha256": "1e1a0040cb7419ba383f1dc37fd5784bfcb1d8b3c4ffc8f00f1d2fcf2b02f56d",
+      "bytes": 91743,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/starter/対象別TPR.csv",
+      "sha256": "b8bdea271459ff22070e0b4be2cfd3bb2aa14c4aded7ce5b2db24912f74933f4",
+      "bytes": 53707,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/prelim/対象別TPR.csv",
+      "sha256": "d99c5d4e408c22d975cba35f538ae67343d1ec1d884079afe0eca95e95294689",
+      "bytes": 53819,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/main/対象別TPR.csv",
+      "sha256": "2b4d454505877ce39f8469fdff9dab8bb21abdc0a4e68bd74423de776a65e18d",
+      "bytes": 53388,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/starter+prelim/対象別TPR.csv",
+      "sha256": "bb6e8b60e13f19f3111ffa2161799a1dcddcd4c15860f073326e322979c52406",
+      "bytes": 53706,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/starter+main/対象別TPR.csv",
+      "sha256": "b131bd654a53140bdfa99ba59ee89e08282b48611f41c0f2896cc0f744fa3cba",
+      "bytes": 53405,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/prelim+main/対象別TPR.csv",
+      "sha256": "2fe13698922d23716b8b8cfddd1e8f8d05eaf4569dde683d9b329a4f86bffae6",
+      "bytes": 53370,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/diagnostics/C_row_removal/starter+prelim+main/対象別TPR.csv",
+      "sha256": "6d5b2338caa28ce49f5cebde4dcb6aa6ffb309aa4cac5227f13a2a0f2ad772e1",
+      "bytes": 53479,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_calibration/broad/prelim/by_target.csv",
+      "sha256": "4427513eabc9f214c5ff4e9391f1ea014296d92111ba0322fe52835743896c02",
+      "bytes": 1344453,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "legacy/aggregate/by_target_primary_canonical.csv",
+      "sha256": "a0eca80219ff99b011d80e58d7aee07865a0818a6a2925e3e57f2b8ba37d5fec",
+      "bytes": 5522217,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "recovered_archive/all_available_by_target.csv",
+      "sha256": "27cf1beed83e4ddbefd2bcc9fe353ef079fa6ddfac2dd8766034ddc161becf97",
+      "bytes": 1321929,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/report/primary_by_target.csv",
+      "sha256": "707c9d9bb88dd589a3ca22c57e618a9f7f6f4f331be9d6f4393dfda2daf20aee",
+      "bytes": 5098900,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/starter/by_target.csv",
+      "sha256": "899283bf6fd644641e4277f4c1dbae4f8356acf2dd9c308aac89ee13d196bf42",
+      "bytes": 1383432,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/prelim/by_target.csv",
+      "sha256": "e1b8dcb51cab6f8d60f40dfb3becd68740ab17d185acbca52e085ac9722d7a6f",
+      "bytes": 1376509,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/main/by_target.csv",
+      "sha256": "8cace15d44d74efd0caa598f9afdf9f8638424716e6a03d31038fdb107e430fc",
+      "bytes": 1347306,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/starter+prelim/by_target.csv",
+      "sha256": "c025497b560cd41083dfeb896cc2075b18cbf6b80ca4370431ab0f89216a4fa7",
+      "bytes": 1452221,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/starter+main/by_target.csv",
+      "sha256": "e4bb67b31d231787ac33465db6539c3ecc3c08868338412e906ab6346d18f6ea",
+      "bytes": 1426626,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/prelim+main/by_target.csv",
+      "sha256": "a6bad90fc9a21a23842d201cd7b8fa41bf11b7486e519f2c0984723140ec5e33",
+      "bytes": 1416358,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "policy/cache/fixed22/starter+prelim+main/by_target.csv",
+      "sha256": "0a6667e28f0796dbfb86f79a8ab13816d9adf3d6e0afad7b0189817d27f8ff41",
+      "bytes": 1495347,
+      "seal": "025623UTC_snapshot"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/starter/対象別TPR.csv",
+      "sha256": "b26d5f086b09efdeec4b7b50ab7b30d8d6ce2b7c6dd2bdac1a3ad2e01b1725c2",
+      "bytes": 69373,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/prelim/対象別TPR.csv",
+      "sha256": "47ab7e3ee3bba5034c099d595be927103125dc6c6075c629a7eceffbfb4f2a70",
+      "bytes": 68839,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/main/対象別TPR.csv",
+      "sha256": "e76a4a9a4c77661b986ba0da70b8570bd8b4d1ff31a1c3255819d1b14bf07dc2",
+      "bytes": 67423,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/starter+prelim/対象別TPR.csv",
+      "sha256": "3dfa52ae79be7c10a15d2026209ff89e825add9b0ddc486244465f64557aca83",
+      "bytes": 69720,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/starter+main/対象別TPR.csv",
+      "sha256": "03a15fab6cb58b4cc80e11cedff2fd0b4c56b9653724f6ce25a62cf59852e1cb",
+      "bytes": 67765,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/prelim+main/対象別TPR.csv",
+      "sha256": "633f805384a033c5508b05d0d9cf54e84b46339532e3778335e1d32b7854218b",
+      "bytes": 68366,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_yesterday/starter+prelim+main/対象別TPR.csv",
+      "sha256": "6a36b0928d0a6664066b2cb64b5ed6a596c73076cc610593b2cd1d8033f7628a",
+      "bytes": 68716,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/starter/対象別TPR.csv",
+      "sha256": "b780e90c4cc388f333d7263716d6e23ca09188f2a213e6f1d1788ebf0364c965",
+      "bytes": 175487,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/prelim/対象別TPR.csv",
+      "sha256": "d6ca295d049dce1e2b00328f45405ab18821fffdb4d6a003d0c11ce807b446d3",
+      "bytes": 179898,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/main/対象別TPR.csv",
+      "sha256": "5c91414897e13ab98f3c323f1cbf761b9db9bad5cf57a678af06a86ef2faa020",
+      "bytes": 177010,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/starter+prelim/対象別TPR.csv",
+      "sha256": "810d790b855d0cd8fb31368348c655aa067ce9a004fd569b001bce14c3d77542",
+      "bytes": 172759,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/starter+main/対象別TPR.csv",
+      "sha256": "15100cd9faae61a8cdb8e1d744914812ec9e390c4c97fb52099ed85410109e5e",
+      "bytes": 173995,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/prelim+main/対象別TPR.csv",
+      "sha256": "b27d0967314b8caeab8c27caa8a1d5d3ddcbac1c8bc5c4447cdc81d120e6249d",
+      "bytes": 177700,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_transfer/starter+prelim+main/対象別TPR.csv",
+      "sha256": "1c279fad68db0e9323a13671a96f6015bb78682961c8273d205bdeee74ae2915",
+      "bytes": 175011,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/starter/対象別TPR.csv",
+      "sha256": "9cc8670278efff10c0e9e6d693ed5aa92991c923aa30e4f55b649433e80b60cc",
+      "bytes": 143412,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/prelim/対象別TPR.csv",
+      "sha256": "5197ed1da389363fac9fd2adc0ab671dc1ae43dd4f88f3f26c5a37b65a74b357",
+      "bytes": 146312,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/main/対象別TPR.csv",
+      "sha256": "5387e0cb9d36e6a56bede15206f0b536c697c6f50e56de480988ddebff1b7f24",
+      "bytes": 145939,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/starter+prelim/対象別TPR.csv",
+      "sha256": "3c3fd556766e7965405b2fcb44ae1a3313efa89a5ed9074c4d8b602664ef7d1c",
+      "bytes": 142952,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/starter+main/対象別TPR.csv",
+      "sha256": "b898c92944cd5dbf9a1e92cb010de536f792621d2db6959d5ce2330dcc164b8d",
+      "bytes": 144468,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/prelim+main/対象別TPR.csv",
+      "sha256": "b14995ea98257ddb9eb812ca5d374384742ca9128b12e66918653e9f435f6478",
+      "bytes": 146547,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_bg_ablation/starter+prelim+main/対象別TPR.csv",
+      "sha256": "870f6c1f827273f9216584d4e599570af8c595b2bfe67eadb73d63fedb20dc8a",
+      "bytes": 143991,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/starter/対象別TPR.csv",
+      "sha256": "2f6ebb117ec83c630bdb5519ed2504019015effb885c08a08314be05020d18b1",
+      "bytes": 892300,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/prelim/対象別TPR.csv",
+      "sha256": "19bcaec802d5bc616dc4a88712b5a8da8af9665f082659ddda096f68eeaf36c3",
+      "bytes": 904941,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/main/対象別TPR.csv",
+      "sha256": "62c7fe2c12a26a11f5cae14cd4ff1a2d1b01b7ac0949327bdf2a789ae0bf0e02",
+      "bytes": 898856,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/starter+prelim/対象別TPR.csv",
+      "sha256": "3a55bcfe117ed3f3a6bc32b29a704a8575346c0c9bea6fc9dadae46d5a50d810",
+      "bytes": 887757,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/starter+main/対象別TPR.csv",
+      "sha256": "2ec57d146d732df5c74aec5b9f1d0caecd7855892443eb0371f94a42462ab2a9",
+      "bytes": 888521,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/prelim+main/対象別TPR.csv",
+      "sha256": "35ec6dbceca615371387e6ce96104b34620c6e7695b86571ca1ccc89cf7c077a",
+      "bytes": 899109,
+      "seal": "completed_before_0310UTC"
+    },
+    {
+      "source_path": "learned_completed/learned_ablation/starter+prelim+main/対象別TPR.csv",
+      "sha256": "a8ac4279477bfe5b20697074de253c68650c9789c17548b4bee9c722b49369ae",
+      "bytes": 890730,
+      "seal": "completed_before_0310UTC"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+method,team,background,tpr_0.01,source_path
+conditional_quartile500,12,prelim,0.0,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,starter,0.0769230769230769,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,main,0.0384615384615384,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,starter+prelim,0.1538461538461538,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,starter+main,0.0384615384615384,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,prelim+main,0.0384615384615384,available/results_prelim_primary/by_target.csv
+conditional_quartile500,12,starter+prelim+main,0.0384615384615384,available/results_prelim_primary/by_target.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,starter,0.037037037037037,recovered_calibration/stable_centers/starter/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,prelim,0.0,recovered_calibration/stable_centers/prelim/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,main,0.037037037037037,recovered_calibration/stable_centers/main/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,starter+prelim,0.037037037037037,recovered_calibration/stable_centers/starter+prelim/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,starter+main,0.037037037037037,recovered_calibration/stable_centers/starter+main/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,prelim+main,0.1481481481481481,recovered_calibration/stable_centers/prelim+main/対象別TPR.csv
+q7_kmeans100_h0.5_reg0.1__raw__cross0,22,starter+prelim+main,0.0,recovered_calibration/stable_centers/starter+prelim+main/対象別TPR.csv
