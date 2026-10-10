@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the round-5 Team28 AIA proposal from official released inputs.
+"""Shared baseline functions used by the 5_2 reproduction entry point.
 
 Reads main public background/C/challenge only. No main B time/labels, network,
 or competition submission. MIA and token are copied, never modeled or printed.
@@ -94,27 +94,3 @@ def validate(path,attack_dir):
     assert np.isin(aia.time_hat,[9.5,11]).all()
     return {'format':'PASS','aia_rows':len(aia),'targets':len(targets),'mia_rows':len(package.frames['F_mia.csv'])}
 
-def main():
-    ap=argparse.ArgumentParser(description=__doc__)
-    for n in ['prelim-common','prelim-attack','prelim-truth','main-attack','main-team']:ap.add_argument('--'+n,type=Path,required=True,help='ZIP or expanded directory; only required public files are read')
-    ap.add_argument('--base-submission',type=Path,help='Existing round-3 attack ZIP providing unchanged MIA/token')
-    ap.add_argument('--mia-csv',type=Path);ap.add_argument('--token-file',type=Path)
-    ap.add_argument('--work-dir',type=Path,default=Path('reproduction_work'))
-    ap.add_argument('--out',type=Path,default=Path('reproduced'))
-    args=ap.parse_args()
-    if args.base_submission:
-        mia=read_named(args.base_submission,'F_mia.csv');token=read_named(args.base_submission,'token.txt')
-    else:
-        if not args.mia_csv or not args.token_file:ap.error('Specify --base-submission, or both --mia-csv and --token-file')
-        mia=args.mia_csv.read_bytes();token=args.token_file.read_bytes()
-    root=stage(args);D,pred,changes,diagnostics=generate_selected(root);args.out.mkdir(parents=True,exist_ok=True)
-    config=json.loads((HERE/'selected.json').read_text());records=[]
-    for proposal in config['proposals']:
-        raw=csv_bytes(D,pred[proposal['method']]);path=args.out/proposal['file'];make_zip(path,raw,mia,token);record=validate(path,root/'tmp/main_attack')
-        with zipfile.ZipFile(path) as z:assert z.read('F_mia.csv')==mia and z.read('token.txt')==token
-        record.update(file=path.name,method=proposal['method'],F_aia_sha256=hashlib.sha256(raw).hexdigest(),MIA_copied_byte_for_byte=True,token_copied_byte_for_byte=True);records.append(record)
-    import scipy,sklearn,platform
-    manifest={'source_commit':config['source_commit'],'main_B_used_for_prediction':False,'main_truth_used':False,'training':'all 21 released preliminary cohorts','versions':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,'scipy':scipy.__version__,'sklearn':sklearn.__version__},'outputs':records,'rare_changes':changes}
-    (args.out/'generation_audit.json').write_text(json.dumps(manifest,indent=2));diagnostics.to_csv(args.out/'row_diagnostics.csv',index=False);(args.out/'F_aia.csv').write_bytes(raw);print(json.dumps(records,indent=2))
-
-if __name__=='__main__':main()

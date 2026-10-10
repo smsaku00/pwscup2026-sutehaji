@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-BASE = HERE.parent / '第5回'
+BASE = HERE / 'base_model'
 sys.path.insert(0, str(BASE))
 spec = importlib.util.spec_from_file_location('original_round5', BASE / 'reproduce.py')
 original = importlib.util.module_from_spec(spec)
