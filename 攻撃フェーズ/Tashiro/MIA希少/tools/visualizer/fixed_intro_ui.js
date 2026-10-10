@@ -96,8 +96,9 @@
     for (const r of [1, 2]) el(`history-mean-round-${r}`).setAttribute('aria-pressed', String(historyRound === r));
     const details = state.meanDetails, observed = state.observed[historyRound - 1];
     el('history-mean-contributions').innerHTML = details.contributions.map(x => `<div data-mean-team="${x.team}" data-mean-tpr="${x.exact}"><b>Team ${x.team}</b><span>仮定 m＝${x.members}人 ／ 高側 n＝${x.high}人</span><b>TPR＝${x.exact}</b><span> ≈ ${decimal(x.value)}</span></div>`).join('');
-    el('history-mean-equation').innerHTML = `<span>この仮定では${details.denominator}チームに所属者がいる。m＝0の${details.excluded}チームは平均から外れる。</span><br>（${details.contributions.map(x => x.exact).join(' ＋ ')}）<br>÷ <b>${details.denominator}チーム</b> ＝ <b>${details.meanExact}</b> ≈ ${decimal(details.meanValue)}<br>` + (observed === null ? `第${historyRound}回の返却点はまだ表示していません。` : `<b>${Math.abs(details.meanValue - observed) < conditions.score_match_tolerance ? '一致' : '不一致'}</b>：第${historyRound}回の返却点 ${decimal(observed)} と照合`);
-    el('history-conclusion').textContent = stage === 0 ? '実際に返るのは、所属が1人以上いるチームだけの平均点です。各チームの点数が個別に返る前提ではありません。' : stage === 1 ? '全102配置で第1回の平均点は同じ。第2回は、既知非所属者を混ぜる人数を変え、102通りの予測平均点をすべて異なる値にしました。' : '第2回終了時点：Team 6・11・17は各1人、10・16・25は各2人、他16チームは0人。合計9人。誰がどこに所属するかは、この2回だけでは未特定です。';
+    const checks = state.predicted.map((value, r) => state.observed[r] === null ? '未表示' : Math.abs(value - state.observed[r]) < conditions.score_match_tolerance ? '一致' : '不一致');
+    el('history-mean-equation').innerHTML = `<b>第${historyRound}回：mの配置を照合（h＝m）</b><br><span>この仮定ではK＝${details.denominator}チームに所属者がいる。m＝0の${details.excluded}チームは平均から外れる。</span><br>（${details.contributions.map(x => x.exact).join(' ＋ ')}）<br>÷ <b>${details.denominator}チーム</b> ＝ <b>${details.meanExact}</b> ≈ ${decimal(details.meanValue)}<br>` + (observed === null ? `第${historyRound}回の返却点はまだ表示していません。` : `<b>${Math.abs(details.meanValue - observed) < conditions.score_match_tolerance ? '一致' : '不一致'}</b>：第${historyRound}回の返却点 ${decimal(observed)} と照合`) + `<br><span class="history-joint-check">同じm配置を確認：第1回 ${checks[0]} ／ 第2回 ${checks[1]}${stage === 2 ? checks.every(value => value === '一致') ? ' → 両方一致する配置を残す' : ' → 不一致の配置を外す' : ''}</span>`;
+    el('history-conclusion').textContent = stage === 0 ? 'ここでは、22チームの所属人数mを探します。各チームの点数は個別に返らず、m＞0のチームの平均点が返ります。同じmなら個人を入れ替えても同点です。' : stage === 1 ? '第1回の平均点に合うmの配置は102通り。この中にはK＝6とK＝7の仮定が残ります。同じm配置に第2回の設定nを当てはめ、2つの平均点の両方に合う配置を探します。' : '第2回でmが確定：Team 6・11・17は各1人、10・16・25は各2人、他16チームは0人。合計9人。次はmと対象6チームを固定し、提出対象の所属人数hを読んで個人IDを絞ります。';
   }
   function bridgeModel() {
     const state = globalThis.MIA_FIXED_LESSON.snapshot();
@@ -112,7 +113,7 @@
     el('intro-page-roc').hidden = page !== 'roc'; el('intro-page-history').hidden = page !== 'history'; el('intro-page-bridge').hidden = page !== 'bridge';
     for (const value of ['roc', 'history', 'bridge']) el(`intro-tab-${value}`).setAttribute('aria-pressed', String(page === value));
     el('intro-prev').disabled = page === 'roc';
-    el('intro-next').textContent = page === 'roc' ? '第1・2回の流れへ →' : page === 'bridge' ? ['この仮定の平均を計算 →', '返却点と照合 →', '216通りすべてを照合 →', '⓪ 5回に振り分けるへ →'][globalThis.MIA_FIXED_MEAN.model().stage] : ['第1回の結果を見る →', '第2回で絞る →', '平均点の照合へ →'][stage];
+    el('intro-next').textContent = page === 'roc' ? '第1・2回でmを特定する →' : page === 'bridge' ? ['仮置きしたhの平均を計算 →', '今回の返却点と照合 →', '216通りすべてを照合 →', '⓪ 5回に振り分けるへ →'][globalThis.MIA_FIXED_MEAN.model().stage] : ['第1回の平均点で絞る →', '第2回の平均点も使う →', 'mを固定して、その後のhを読む →'][stage];
     renderROC(); renderHistory(); renderBridge();
   }
   function setPage(value) {if (!['roc', 'history', 'bridge'].includes(value)) throw Error('説明ページを選んでください。'); page = value; render();}

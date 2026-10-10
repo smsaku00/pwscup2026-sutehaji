@@ -52,11 +52,11 @@
       el(`bridge-choices-${i}`).textContent = Array.from({length: data.caps[i] + 1}, (_, h) => `${h}人 → ${text(score(data.high[i], data.caps[i], h))}`).join(' ／ ');
       el(`bridge-tpr-${i}`).innerHTML = `<span>${stage === 3 ? '一致した組のTPR' : '仮定から計算したTPR'}</span><b>${state.contributions[i].exact}</b><small> ≈ ${decimal(state.contributions[i].value)}</small>`;
     });
-    el('bridge-assumption-label').textContent = stage === 3 ? '④ 一致した組：高側人数と各チームのTPRを読み取れる' : '① 高側の所属者 h を仮置き → そのチームのTPRを計算';
+    el('bridge-assumption-label').textContent = stage === 3 ? '④ 今回の平均点に一致した高側人数hの組' : '① 所属人数mは固定：今回の高側人数hだけを仮置き';
     el('bridge-calculate').disabled = stage >= 1; el('bridge-compare').disabled = stage !== 1; el('bridge-compare-all').disabled = stage !== 2;
     el('bridge-example').innerHTML = stage === 0
-      ? '<p>6チームの人数を仮置きしてください。各TPRは自由な数ではなく、上の0・1・2人の候補から計算されます。次に、この6つを足して6で割ります。</p>'
-      : `<div class="mean-addends">${state.contributions.map(x => `<span><small>Team ${x.team}</small><b>${x.exact}</b></span>`).join('<em>＋</em>')}</div><div class="mean-equation"><span>② 合計 <b>${state.sumExact}</b></span><span> ÷ <b>6チーム</b></span><span>＝ 予測平均 <b>${state.meanExact}</b><small> ≈ ${decimal(state.meanValue)}</small></span></div>`;
+      ? '<p>第1・2回で分かったmは固定し、6チームの高側人数hを仮置きしてください。各TPRを計算し、この6つを足して6で割ります。今回は平均の対象チームも分母も変わりません。</p>'
+      : `<div class="mean-addends">${state.contributions.map(x => `<span><small>Team ${x.team}</small><b>${x.exact}</b></span>`).join('<em>＋</em>')}</div><div class="mean-equation"><span>② 合計 <b>${state.sumExact}</b></span><span> ÷ <b>6チームで固定</b><small>h＝0のチームも含む</small></span><span>＝ 今回の予測平均 <b>${state.meanExact}</b><small> ≈ ${decimal(state.meanValue)}</small></span></div>`;
     el('bridge-comparison').hidden = stage < 2;
     el('bridge-comparison').innerHTML = stage < 2 ? '' : `<div class="mean-verdict ${state.matchesTarget ? 'matched' : 'mismatch'}"><b>③ 予測平均 ${state.meanExact} ${state.matchesTarget ? '＝' : '≠'} 返却点 ${state.targetExact}</b><span>${stage === 3 ? '216組を計算して照合すると、この1組だけが一致。各チームのTPRと高側人数 h が分かります。' : state.matchesTarget ? 'この組は一致。ただし、他の組も同じ平均になるか確認してから特定します。' : 'この組は不一致。仮置きした人数の組を候補から外します。'}</span></div>` + (stage === 3 ? candidatePlot() : '');
     el('bridge-inferred').hidden = stage !== 3;
