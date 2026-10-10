@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "round": 5,
+  "question_number": 3,
+  "question_high_candidates": [
+    47,
+    90,
+    264,
+    462,
+    495
+  ],
+  "target_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "rare_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 1,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "22": 0,
+    "25": 2,
+    "26": 0,
+    "27": 0
+  },
+  "high_total": {
+    "6": 6,
+    "10": 7,
+    "11": 7,
+    "16": 11,
+    "17": 10,
+    "25": 12
+  },
+  "padding_ids": {
+    "6": [
+      126
+    ],
+    "10": [
+      126,
+      136
+    ],
+    "11": [
+      126,
+      136
+    ],
+    "16": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440
+    ],
+    "17": [
+      126,
+      136,
+      271,
+      273,
+      317
+    ],
+    "25": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440,
+      480
+    ]
+  },
+  "exclusive_partition_counts": {
+    "ordinary": 875,
+    "known_nonshared_ordinary": 150,
+    "rare": 24
+  },
+  "known_nonshared_all": 163,
+  "known_nonshared_rare_overlap": 13,
+  "original_zero_semantics": "既知非共有の通常150人のみ0。希少13人は希少あり6対象で人数調整に0.1/0.4を使用。163人全員0では保存5bit仕様と一致しない。",
+  "overlap_nonzero_rare_cells": 78,
+  "history_rare_checks": [
+    {
+      "round": 3,
+      "question_number": 1,
+      "cells": 528,
+      "differences": 0,
+      "high_ids": {
+        "6": [
+          115,
+          126,
+          169,
+          264,
+          383,
+          462
+        ],
+        "10": [
+          115,
+          126,
+          136,
+          169,
+          264,
+          383,
+          462
+        ],
+        "11": [
+          115,
+          126,
+          136,
+          169,
+          264,
+          383,
+          462
+        ],
+        "16": [
+          115,
+          126,
+          136,
+          169,
+          264,
+          271,
+          273,
+          317,
+          383,
+          440,
+          462
+        ],
+        "17": [
+          115,
+          126,
+          136,
+          169,
+          264,
+          271,
+          273,
+          317,
+          383,
+          462
+        ],
+        "25": [
+          115,
+          126,
+          136,
+          169,
+          264,
+          271,
+          273,
+          317,
+          383,
+          440,
+          462,
+          480
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "question_number": 2,
+      "cells": 528,
+      "differences": 0,
+      "high_ids": {
+        "6": [
+          47,
+          115,
+          126,
+          304,
+          462,
+          675
+        ],
+        "10": [
+          47,
+          115,
+          126,
+          136,
+          304,
+          462,
+          675
+        ],
+        "11": [
+          47,
+          115,
+          126,
+          136,
+          304,
+          462,
+          675
+        ],
+        "16": [
+          47,
+          115,
+          126,
+          136,
+          271,
+          273,
+          304,
+          317,
+          440,
+          462,
+          675
+        ],
+        "17": [
+          47,
+          115,
+          126,
+          136,
+          271,
+          273,
+          304,
+          317,
+          462,
+          675
+        ],
+        "25": [
+          47,
+          115,
+          126,
+          136,
+          271,
+          273,
+          304,
+          317,
+          440,
+          462,
+          480,
+          675
+        ]
+      }
+    }
+  ],
+  "round3_vs_round4_haruna_column_differences": 0,
+  "haruna_fixed_column_compatibility": "本戦9の希少人数0で24希少行は保存原本・第3問とも0。第3・第4回の全1049行が同値。",
+  "expected_rare_csv": {
+    "path": "rare_round5_expected.csv",
+    "rows": 24,
+    "targets": 22,
+    "cells": 528,
+    "sha256": "8e7bd1f7c13dd51f92290b76fc8274453e1ae1df928231ecfcb59e12d76a78ff"
+  },
+  "signature_recheck": {
+    "single_cases": 11,
+    "pair_cases": 55,
+    "single_collisions": 0,
+    "pair_collisions": 0,
+    "certificate_legal_joint_configurations": 2494800
+  },
+  "official_score_alphabet": {
+    "official_per_team_cases": 78,
+    "official_mean_cases": 216,
+    "score_collisions": 0,
+    "minimum_gap_exact": "1/54000",
+    "maximum_official_score_error": 6.938893903907228e-18,
+    "five_decimal_alphabet_unique": true,
+    "operational_score_source": "raw detailed-results mia.tpr_rare; four-decimal leaderboard display is insufficient",
+    "zero_positive_team_nan_exclusion": true
+  },
+  "question3_official_synthetic_scorer_checks": {
+    "actual_csv_single_and_pair_cases": 198,
+    "actual_zero_positive_team_cases": 16,
+    "nonrare_isolation_cases": 198,
+    "maximum_actual_csv_score_error": 6.938893903907228e-18,
+    "synthetic_truth_notice": "all single/pair possibilities used for scorer checking; no unreleased individual truth was used"
+  },
+  "official_source_sha256": {
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+  },
+  "candidate_check": {
+    "round": 5,
+    "question_number": 3,
+    "cells": 528,
+    "differences": 0,
+    "high_ids": {
+      "6": [
+        47,
+        90,
+        126,
+        264,
+        462,
+        495
+      ],
+      "10": [
+        47,
+        90,
+        126,
+        136,
+        264,
+        462,
+        495
+      ],
+      "11": [
+        47,
+        90,
+        126,
+        136,
+        264,
+        462,
+        495
+      ],
+      "16": [
+        47,
+        90,
+        126,
+        136,
+        264,
+        271,
+        273,
+        317,
+        440,
+        462,
+        495
+      ],
+      "17": [
+        47,
+        90,
+        126,
+        136,
+        264,
+        271,
+        273,
+        317,
+        462,
+        495
+      ],
+      "25": [
+        47,
+        90,
+        126,
+        136,
+        264,
+        271,
+        273,
+        317,
+        440,
+        462,
+        480,
+        495
+      ]
+    },
+    "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/F_mia.csv",
+    "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "ordinary_nonshared_zero_cells": 3300,
+    "haruna_full_column_differences": 0,
+    "ordinary_min": 0.6003428571428571,
+    "ordinary_max": 0.8999999999999999,
+    "rare_max": 0.4
+  },
+  "inputs": [
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+      "sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+      "git_blob_sha1": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261009_第4回MIA_チーム別方式と固定5bit/結果/F_mia.csv",
+      "sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+      "git_blob_sha1": "d1c4188ffae8d20bc57113b5f13c1e031b1f6e46"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+      "git_blob_sha1": "85c0d1917e93777cc6e6ec145ad3130b3e9dfcc3"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv",
+      "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+      "git_blob_sha1": "21620b2a185d035b28750060ef51d6abc8349b59"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json",
+      "sha256": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+      "git_blob_sha1": "fc6c050eb855f31d8ccd4324c72cfe2c79e41cca"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261006_MIA第2回結果と人数導出/公開用/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/MIA結果.json",
+      "sha256": "411e00d38ffbe7cb38bb73c654b129ca6377a198ad9031e409cccdc19dd725a4",
+      "git_blob_sha1": "14ff6dca73616fba8915f27bd30ab5785833d9b8"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/仕様一覧.md",
+      "sha256": "2653b65197fdc1bf879a678bc804ea3a1821c2ee693f5d395fc7c30c3e05199a",
+      "git_blob_sha1": "9ed4b5927216eebb0a4142c07b7a4b4de806fe75"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/設定.json",
+      "sha256": "3236035d39ab2d9caf612b37f2e91cceb882c606a70bd543e302b2b03d24ddae",
+      "git_blob_sha1": "0ee4b73f4a9031dba9182dce6b9d25d3d99c0f9c"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/固定5bit符号.csv",
+      "sha256": "00799e87fbbed4b44850092c176fee4af41769f93c1bace53aaa2bb66e9e5865",
+      "git_blob_sha1": "b2582a3131887a7f948a041698ec577a49337bc6"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/希少監査_再検証.json",
+      "sha256": "5d379e04e0b00604df2d95bce92e89a06a629576b6e2ebcc00c01f040c3f16f5",
+      "git_blob_sha1": "52f2fdd5855eda8eeb4fcc3fb825bca9ead4836c"
+    },
+    {
+      "path": "/Users/taisei1105/pws2026-local/work/mia_round3_publish_20261008/candidate/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/audit_rare.py",
+      "sha256": "1c6881876c10aeb088f0f1b369d41e970b1ebe5b40370fb453e133b363bd9c16",
+      "git_blob_sha1": "e7c03ecb62a5b215f0ff2a9a7d19da2210d695e9"
+    },
+    {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/inputs/rare_provenance/round4_出典と照合.json",
+      "sha256": "e9f6b753799e0741789f6d09386aabd3cd6ad099c09f1f394c08f09073129220",
+      "git_blob_sha1": "a3b96a90757bb2ebfe0b8fd767e3bb8530d0e42a"
+    },
+    {
+      "path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/inputs/rare_provenance/round4_照合結果.json",
+      "sha256": "e0b230d1e08f80b59f3afee7059b057cf7b5d9574b82e02d6a7c28a93426c611",
+      "git_blob_sha1": "26c5568fe16c4fa1adb25fda1dac3c51face8d90"
+    }
+  ],
+  "auditor_sha256": "cbc8d710669ddd515ef4bfb86e7038111cd0b48f9979a51e5bd35ff3a202d9cd",
+  "environment": {
+    "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "seed": "deterministic; no random sampling"
+  },
+  "limitations": [
+    "人数は第1・2回公式スコアと共有条件に基づく条件付き導出。個人の本戦所属正解は未使用。",
+    "第4回はユーザー提供CSV原本の対応付け。サーバー入力ZIPの直接hash照合は未実施。",
+    "第5回は今回作成する第3問。大会提出・採点・個人所属確定は行っていない。"
+  ],
+  "submitted": false,
+  "main_individual_truth_used": false
+}

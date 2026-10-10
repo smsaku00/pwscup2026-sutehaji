@@ -1,0 +1,35 @@
+{
+  "reason": "KDE全category網羅assert追加とwarning表示/実行中threadpool記録の改善。数学関数・入力・seed・fitは不変。",
+  "first_driver_sha256": "7f2260d62d455ed3aef63a72d73743e5b45cf062e23b9b8ff1a6354a20a6e91e",
+  "current_driver_sha256": "d0974ded808b9f8ee714498acabca225159ff2dd8a207f7fd60f59f8b6ee3363",
+  "prediction_files_byte_equal": {
+    "selected_confidence.csv": {
+      "sha256": "44ebd1c6e873f157f06f22290a2e16c406fae2ec6edf64d7050aad0515517dd0",
+      "byte_equal": true
+    },
+    "row_partitions.csv": {
+      "sha256": "1854300d400dc3fc5ab1df1a0398545b0673605d354d4bc3bf77d34f722101fc",
+      "byte_equal": true
+    },
+    "all_method_arrays.npz": {
+      "sha256": "613fe0e264b2a23ce7c78878740fba5d08af8f57c7d7d1be3339dfa389f78979",
+      "byte_equal": true
+    }
+  },
+  "all_npz_arrays_equal": {
+    "methods": true,
+    "teams": true,
+    "record_ids": true,
+    "normal_record_ids": true,
+    "variant_ranks": true,
+    "cross_scores": true,
+    "all_confidence": true,
+    "raw_b_scores": true,
+    "raw_qi7_scores": true,
+    "query_owner": true
+  },
+  "GMM_numeric_fit_diagnostics_equal": true,
+  "GMM_warnings_difference": "初回A性別群1件のphysical core照会warningのみ。LOKY_MAX_CPU_COUNT=2で再実行時は発生せず。元n_jobs2とmath結果は不変。",
+  "first_completed_utc": "2026-10-10T13:56:01.261272+00:00",
+  "rerun_completed_utc": "2026-10-10T13:57:38.236422+00:00"
+}

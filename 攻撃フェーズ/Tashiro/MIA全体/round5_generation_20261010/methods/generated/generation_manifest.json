@@ -1,0 +1,821 @@
+{
+  "status": "generated_not_submitted",
+  "created_utc": "2026-10-10T13:57:38.236422+00:00",
+  "base_ref": "1a5d47bba85711322994098b0de16df894acdf95",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "source_tree_sha": "40a2385ed6c041ab819d30256c34facf30181db0",
+  "methods": [
+    "q7_hist5_s100_pairwise__county500__cross0.1",
+    "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+    "q7_robust_lofC_k100__age100__cross0.1",
+    "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+    "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1"
+  ],
+  "selected_by_main_target": {
+    "5": "q13_robust_sex1_diag_reg0.01_gmm4__raw__cross0.1",
+    "7": "q7_robust_lofC_k100__age100__cross0.1",
+    "13": "q7_pref_sex_bins20_s1_zscore__county500__cross0.1",
+    "14": "q7_median_iqr_sex1_kde_ratio_h1__age100__cross0.1",
+    "15": "q7_hist5_s100_pairwise__county500__cross0.1"
+  },
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "normal_rows": 875,
+  "partitions": {
+    "ordinary": 875,
+    "nonrare_known_negative": 150,
+    "rare": 24,
+    "known_negative_including_rare": 163,
+    "rare_overlap_known_negative": 13
+  },
+  "background": {
+    "name": "starter+prelim+main",
+    "order": [
+      "starter",
+      "prelim",
+      "main"
+    ],
+    "rows": 15429,
+    "source_rows_each": 5143,
+    "bare_record_id_duplicates_retained": true,
+    "concatenated_csv_sha256": "01772d964672cd742c0d44ac69e058d2db91283c330edac78671a0ec2d7fb650"
+  },
+  "csv_float_parser": "pandas.read_csv(float_precision='round_trip')",
+  "age_bin_cuts": [
+    46.0,
+    52.0,
+    59.0,
+    67.0
+  ],
+  "kde_bandwidth": 0.3218288015820357,
+  "calibration": {
+    "county500": {
+      "columns": [
+        "prefecture",
+        "sex"
+      ],
+      "strength": 500
+    },
+    "age100": {
+      "columns": [
+        "sex",
+        "age_bin"
+      ],
+      "strength": 100
+    },
+    "controls": "all public main AIA Q including self28, excluding the scored target",
+    "formula": ".999*(local midpoint CDF * n/(n+s) + global midpoint CDF * s/(n+s)) + .001*all1049 B average_rank/1049"
+  },
+  "rank_and_cross": {
+    "first": "average_rank on ordinary875 /875",
+    "cross": "each target minus .1*row median of the other21 targets in the same method",
+    "confidence": ".6+.3*min_rank(cross_score on ordinary875)/875",
+    "no_cross_after_column_selection": true
+  },
+  "seeds": {
+    "GMM_A": 20261008,
+    "GMM_C": "20261008+main_target_id",
+    "LOF_histogram_alignment": "deterministic; no random seed"
+  },
+  "fit_labels_used": false,
+  "truth_files_read": false,
+  "source_loading": "AST whitelist of named pure functions; no source module top-level execution/evaluate/main",
+  "source_files": [
+    {
+      "local_name": "common.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "git_blob_sha": "01c2ae8158be2a58fd8c9e04dc1d38c8460a00b5",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E6%9C%9D9%E6%99%82%E3%81%BE%E3%81%A7%E3%81%AE%E6%96%B9%E5%BC%8F%E6%8E%A2%E7%B4%A2/%E5%85%B1%E9%80%9A.py",
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "verified_sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "distance_distribution.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "git_blob_sha": "8fc8be95afc1de2e2a01a7414d42306b643acae6",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E6%9C%9D9%E6%99%82%E3%81%BE%E3%81%A7%E3%81%AE%E6%96%B9%E5%BC%8F%E6%8E%A2%E7%B4%A2/%E8%B7%9D%E9%9B%A2%E3%81%A8%E5%88%86%E5%B8%83%E3%81%AE%E6%8E%A2%E7%B4%A2.py",
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "verified_sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "hierarchical_hist.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "git_blob_sha": "940c7e455319f6efdf315a68aaa4e0e7d9a7ec74",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E6%9C%9D9%E6%99%82%E3%81%BE%E3%81%A7%E3%81%AE%E6%96%B9%E5%BC%8F%E6%8E%A2%E7%B4%A2/%E9%9A%8E%E5%B1%A4%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E6%8E%A2%E7%B4%A2.py",
+      "sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a",
+      "verified_sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "gmm_local.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "git_blob_sha": "320365509d604647d7b3fd7354f6a6b8effa7dc9",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E6%9C%9D9%E6%99%82%E3%81%BE%E3%81%A7%E3%81%AE%E6%96%B9%E5%BC%8F%E6%8E%A2%E7%B4%A2/%E6%B7%B7%E5%90%88%E5%88%86%E5%B8%83%E3%81%A8%E5%B1%80%E6%89%80%E5%AF%86%E5%BA%A6%E3%81%AE%E6%8E%A2%E7%B4%A2.py",
+      "sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083",
+      "verified_sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "aligned.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "git_blob_sha": "ae91cfd76165a720a911405b696520de51a61117",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E6%9C%9D9%E6%99%82%E3%81%BE%E3%81%A7%E3%81%AE%E6%96%B9%E5%BC%8F%E6%8E%A2%E7%B4%A2/%E5%88%86%E5%B8%83%E3%82%92%E6%8F%83%E3%81%88%E3%81%9F%E8%B7%9D%E9%9B%A2%E3%81%AE%E6%8E%A2%E7%B4%A2.py",
+      "sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "verified_sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "base_oct7.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "git_blob_sha": "9ac70646f19f967bb1694c7e8e48dc241114fb53",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261007_MIA%E5%85%A8%E4%BD%93%E6%94%B9%E5%96%84%E3%81%AE%E6%A4%9C%E8%A8%8E/%E5%88%86%E6%9E%90.py",
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "verified_sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "additional_oct7.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "git_blob_sha": "503f956b9e3a0ec1b49d1bbb553a6eae70878ec3",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261007_MIA%E5%85%A8%E4%BD%93%E6%94%B9%E5%96%84%E3%81%AE%E6%A4%9C%E8%A8%8E/%E8%BF%BD%E5%8A%A0%E6%A4%9C%E8%A8%8E.py",
+      "sha256": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+      "verified_sha256": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+      "pure_functions_only": true
+    },
+    {
+      "local_name": "calibration.py",
+      "repository_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "git_blob_sha": "4972a007a62b4dae9772db400cecdc7c308a44df",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/1a5d47bba85711322994098b0de16df894acdf95/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/source_recovery/20261010_MIA%E5%85%83%E3%82%B3%E3%83%BC%E3%83%89%E5%9B%9E%E5%8F%8E/originals/%E6%9C%AC%E6%88%A6/%E6%94%BB%E6%92%83%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA/Tashiro/20261008_MIA%E5%85%A8%E4%BD%93_%E8%BC%83%E6%AD%A3%E3%81%AE%E5%BA%83%E7%AF%84%E6%AF%94%E8%BC%83/%E5%88%86%E6%9E%90.py",
+      "sha256": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+      "verified_sha256": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+      "pure_functions_only": true
+    }
+  ],
+  "input_files": [
+    {
+      "role": "main_B",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+      "git_blob_sha": "85c0d1917e93777cc6e6ec145ad3130b3e9dfcc3",
+      "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+      "bytes": 164152,
+      "rows": 1049
+    },
+    {
+      "role": "background_main",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/A_bg.csv",
+      "git_blob_sha": "cbdf08d5e7b6940ecdbd5f8d95605d18b2a48bd9",
+      "sha256": "3c8d8c7d05c743f747c7f1eccf77ec6470c67961d498f8fd1e33578ff362aa23",
+      "bytes": 794376,
+      "rows": 5143
+    },
+    {
+      "role": "background_prelim",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/予備戦/PWSCup2026_prelim_common/A_bg.csv",
+      "git_blob_sha": "474e6936fbeccd6fc6d73b94f53f20836e1f43d1",
+      "sha256": "f4817fba6c1434d6b74221c2b5abe90e4a53e80d8fa17e12602d43adae0a3126",
+      "bytes": 794278,
+      "rows": 5143
+    },
+    {
+      "role": "background_starter",
+      "repository": "pwscup/pwscup2026-kit",
+      "repository_path": "participant_data/A_bg.csv",
+      "git_blob_sha": "34aa7c6b9cf14772502c1e12e1d9088340afa9eb",
+      "sha256": "8ff0fa1f647771083d35ec7708d3bc8b0c6d7f3ed542c8a05bf1887d4b38682e",
+      "bytes": 794336,
+      "rows": 5143
+    },
+    {
+      "role": "C_0",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_0.csv",
+      "git_blob_sha": "16974cf078daf6804086e759a2d6d0c67a6e0a48",
+      "sha256": "525ff7b79815190d2512ea7716bd5b5198c611ba66b54c24fa58933f6e1d44c1",
+      "bytes": 146142,
+      "rows": 1049
+    },
+    {
+      "role": "C_1",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_1.csv",
+      "git_blob_sha": "56845ce1f2a884e761130f6c86034ead71376eda",
+      "sha256": "eb990d1d41419743273b082e931afc259d4ce251a2a9ab059198b097d85e44dd",
+      "bytes": 146550,
+      "rows": 1049
+    },
+    {
+      "role": "C_10",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_10.csv",
+      "git_blob_sha": "8361a104bba7f0c640c03597eedf15b75e8bd382",
+      "sha256": "7bcc96898b3d6bf4af8b7966d481fd0136dc64bbf3b68d0a5dd751a0b859c7db",
+      "bytes": 158281,
+      "rows": 1049
+    },
+    {
+      "role": "C_11",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_11.csv",
+      "git_blob_sha": "8bc445c6afd7e106aed41a36ea19e85849561872",
+      "sha256": "ec79f5531ffda71f2fddc34e0f30e5f312b5f7d3ca78b95973c56c64bb6790f7",
+      "bytes": 157013,
+      "rows": 1049
+    },
+    {
+      "role": "C_12",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_12.csv",
+      "git_blob_sha": "719202ae26791d8cba45b60c7da2eeca04aa90af",
+      "sha256": "33848d8bd09942287f5c0d52d2092f4b6c19ccfd6a9ecad677209899f15400e1",
+      "bytes": 161236,
+      "rows": 1049
+    },
+    {
+      "role": "C_13",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_13.csv",
+      "git_blob_sha": "74f70dcd650cd2c684852b95a21eb0f64555c321",
+      "sha256": "90b09027567281647a3a3388c359ee73733af63638c9d4c920f202639140dee7",
+      "bytes": 147977,
+      "rows": 1049
+    },
+    {
+      "role": "C_14",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_14.csv",
+      "git_blob_sha": "f51438e23b006f28cdfe91cc901ec4fecb100f2f",
+      "sha256": "b37067cd9508864d7fb85ef5bf122235391b71a10b76c964328ef4f6cef6c4ba",
+      "bytes": 143428,
+      "rows": 1049
+    },
+    {
+      "role": "C_15",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_15.csv",
+      "git_blob_sha": "b1258acb86632156e71485043589fce4eafdaeb6",
+      "sha256": "046ba97c34f0c3d4ef6a6729b629068934de4c9f75c378f61f112f62a557368e",
+      "bytes": 156962,
+      "rows": 1049
+    },
+    {
+      "role": "C_16",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_16.csv",
+      "git_blob_sha": "bcfeb84d8065d6deeb6f44604cd61895c1414909",
+      "sha256": "8481f1279635e1aa6db654895a5a2c6cb4d602ac42c47d30eca48c160f471470",
+      "bytes": 156299,
+      "rows": 1049
+    },
+    {
+      "role": "C_17",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_17.csv",
+      "git_blob_sha": "53ba45c2eef89e88ba768d2bd559d9d934d56b16",
+      "sha256": "cd7f29fbfc8ac9860ceaa3646e125390ce9ed4ac2802134a1ccbc0dbc53c3994",
+      "bytes": 109734,
+      "rows": 1049
+    },
+    {
+      "role": "C_2",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_2.csv",
+      "git_blob_sha": "cd5dd569289b6ba19707c0abb08fe850a1674747",
+      "sha256": "8c1f30b15451864a6373bad76c8bce873ea82da8137e48f824fe3f02f57c1c1b",
+      "bytes": 157449,
+      "rows": 1049
+    },
+    {
+      "role": "C_22",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_22.csv",
+      "git_blob_sha": "750488670da65a96f3ce7bbd4e46dbbfa49af6e4",
+      "sha256": "a2d10f282ba255739a95ad3500e9325d8897f0632833274432bbf5795fcaceea",
+      "bytes": 146984,
+      "rows": 1049
+    },
+    {
+      "role": "C_25",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_25.csv",
+      "git_blob_sha": "81f842992986b913baf355c5aa794d3ab89e5109",
+      "sha256": "35ad7bd8fa4ddd3d3657372b4f0b07b52ebaa2f70466e84f44a0aed8aed2351a",
+      "bytes": 158685,
+      "rows": 1049
+    },
+    {
+      "role": "C_26",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_26.csv",
+      "git_blob_sha": "b4f15a145183e1b5c09880c07d148c0526d8bb2e",
+      "sha256": "f9f978a770147891419e80a3a8c3fe799e38a4d0eb1803d86ee05c14aeb9fa38",
+      "bytes": 144572,
+      "rows": 1049
+    },
+    {
+      "role": "C_27",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_27.csv",
+      "git_blob_sha": "c2f18c4322debeb20f7c2764c7a0140d9ae6086e",
+      "sha256": "cd9e330eba7e2300f7ae745b70113237ba20660fa24794726d8bfa7beac650d4",
+      "bytes": 145568,
+      "rows": 1049
+    },
+    {
+      "role": "C_28",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_28.csv",
+      "git_blob_sha": "ef18b9297cf46454cf10a7a6f377e873014d7cf6",
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091",
+      "bytes": 148191,
+      "rows": 1049
+    },
+    {
+      "role": "C_3",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_3.csv",
+      "git_blob_sha": "a09fa7133e165233b224658b71e405268fa951b2",
+      "sha256": "1240d0483abe84e7f5997872f144b0428ec0ac2d11c662dcc33146371eaa9384",
+      "bytes": 156058,
+      "rows": 1049
+    },
+    {
+      "role": "C_4",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_4.csv",
+      "git_blob_sha": "e1c65f5c6154cae1aa124d58fcf8b22a5f00f5ac",
+      "sha256": "b722a3cdd357af845a10e3bdc312b27570fdea2aa66eb0f688c9c9ca494dbc2b",
+      "bytes": 147052,
+      "rows": 1049
+    },
+    {
+      "role": "C_5",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_5.csv",
+      "git_blob_sha": "f4f9e945c9d5331b799d8181d23d85126d0a7281",
+      "sha256": "0f3d7b95ef1e8380d865de6728397d5f75b04f66ab0218391979a4ce8171628a",
+      "bytes": 146805,
+      "rows": 1049
+    },
+    {
+      "role": "C_6",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_6.csv",
+      "git_blob_sha": "f379d89655ed7d67cc2eccbc1fcc0c4dac1dfc41",
+      "sha256": "f9439ff60b33f7976c22280265b309f27382ce85fb6e2c3fdeeb2644bf6c62db",
+      "bytes": 157470,
+      "rows": 1049
+    },
+    {
+      "role": "C_7",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_7.csv",
+      "git_blob_sha": "bc57f83c8a1ed71eab7d3c59af5ad9995ec380a3",
+      "sha256": "071b81d7b8a37e245b2b20c5b6f89f419fc8005ad772e5352ca568e40a85262e",
+      "bytes": 156570,
+      "rows": 1049
+    },
+    {
+      "role": "C_8",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_8.csv",
+      "git_blob_sha": "77e41cddf74f0b7f73fac9deddc45d7d118dcd85",
+      "sha256": "d5e52dfdc45c7a7a89318c5abc32aa0e80136fe35093d051f01127b985f879a7",
+      "bytes": 161196,
+      "rows": 1049
+    },
+    {
+      "role": "C_9",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/C_9.csv",
+      "git_blob_sha": "27e12d6ebc7addc9ea872862cfa7e9b0c392c877",
+      "sha256": "b5489304725517b445529e1614682042473f16489148d3267c08e0aff59e3af6",
+      "bytes": 158123,
+      "rows": 1049
+    },
+    {
+      "role": "aia_challenge_0",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_0.csv",
+      "git_blob_sha": "b2deaa16888cb400e63f69497f0a2f530699094d",
+      "sha256": "4ca93cd9e8c29809ccef2a36ef25a4153bc1a263c742e86a25b56220caaa5854",
+      "bytes": 30103,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_1",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_1.csv",
+      "git_blob_sha": "e9c0a96fe18ec82906cbb5a8bca95ceca1c38bd2",
+      "sha256": "d806921494158a3ef9cee0ddbe163b810ffef9d00167dd0eb8323225ddd67ff3",
+      "bytes": 30117,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_10",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_10.csv",
+      "git_blob_sha": "0bac2e6a4fced46a002c691fc26c4680d97921b5",
+      "sha256": "18c67f92e2111fa756e5f64fbf86a187fdabcc01970b7480b02b0a84dbc2c0bd",
+      "bytes": 30160,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_11",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_11.csv",
+      "git_blob_sha": "39a88c902e7c3ec150f05e6d4e683366b9d4f2a1",
+      "sha256": "f6612c96ee551b00070ec2a33d69ad948427b361cc8d32ea71969d8acacff97a",
+      "bytes": 30088,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_12",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_12.csv",
+      "git_blob_sha": "514f9319bf42b14b46fb3ad878cda694f31af80d",
+      "sha256": "a5863b3a1af33f0319a33861aa7e607d5d9c443c11420e6b268fe9580c5968ac",
+      "bytes": 30133,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_13",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_13.csv",
+      "git_blob_sha": "7766b6033d6ad915c65683d8f22e998e8e2ccf84",
+      "sha256": "06f41260e135ec7a6ab1ad4773dc2b665390457d7d7db0f32a6993d5da98c9b9",
+      "bytes": 30137,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_14",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_14.csv",
+      "git_blob_sha": "f965430bc5ab635ad7bb26f75538bcbbf20eb78b",
+      "sha256": "ac0eb4bbfe2cece2f52ab93c7a06b542453d61884a38468e0d7eb5204cd6ddad",
+      "bytes": 30128,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_15",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_15.csv",
+      "git_blob_sha": "d24a373269bd0b346505f590c516e4a71d27f97d",
+      "sha256": "ff400ab6e1ec812e4ef6c4eeec0a86f40de674fbb7f250c41a21f7d991e2def3",
+      "bytes": 30130,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_16",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_16.csv",
+      "git_blob_sha": "c16790ec7f6c46ac58d2729627c4439a8eef9955",
+      "sha256": "4755f4222a5f16eed4520d9566722bff22086e3ee8d98952e38e54e75e0db7f5",
+      "bytes": 30105,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_17",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_17.csv",
+      "git_blob_sha": "459eded47ede637f79b39e6eff4602df6f8cab6c",
+      "sha256": "73f438ccb4a15d5f12a7f489f58e839c77d35e7fe53d70a01c2e33b8a6410b57",
+      "bytes": 30143,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_2",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_2.csv",
+      "git_blob_sha": "6326eb38e3e3f00ad395c22997836c404ff2a581",
+      "sha256": "b5cac6afa9e18b8e9a6d734ac7d83b14500672138bc8b505c0fc371d379d516d",
+      "bytes": 31081,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_22",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_22.csv",
+      "git_blob_sha": "a00df84a009dd8a185fbd074b6441d6cad4b8ed2",
+      "sha256": "0850a1b890095927da4d73aa0ca77ee616927bc1886d1d6573143342239e7e00",
+      "bytes": 30132,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_25",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_25.csv",
+      "git_blob_sha": "2e7a44a3ba17a6719072335f4de5fdd1a4a5afde",
+      "sha256": "c73fe7fedaa726965f0bec91e5cdabab4630c4a04b648447872c72119115230c",
+      "bytes": 30168,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_26",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_26.csv",
+      "git_blob_sha": "f5c956c6a570510cc0de8b2a19bc565c0b1caa25",
+      "sha256": "0fa2f579c42a0e1227e10efba916da681d98e2f91055b62121b17b0532370b07",
+      "bytes": 30140,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_27",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_27.csv",
+      "git_blob_sha": "6bde54f480a6b018837b4e65edc0a49e3d979e7c",
+      "sha256": "46fefc3d83639f8987fc2cd08daa30ba4f8d933ca7a8d912c2334d642b9c8c05",
+      "bytes": 30107,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_28",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_28.csv",
+      "git_blob_sha": "21620b2a185d035b28750060ef51d6abc8349b59",
+      "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+      "bytes": 31088,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_3",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_3.csv",
+      "git_blob_sha": "452a89f25880ccd5ca1d897f626f024aa28127d9",
+      "sha256": "82cedd6ad7693425241c2b7da16fd4ee2ac96cd1aeb8657caf2d664ca6167962",
+      "bytes": 30104,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_4",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_4.csv",
+      "git_blob_sha": "9690932d18555a6b3503c50549cb3719f16cbe13",
+      "sha256": "ccd28be9738fee38a1ebca2a128555040ed702afb0a30ff83911f83de5cae87b",
+      "bytes": 30086,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_5",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_5.csv",
+      "git_blob_sha": "f46043191f499e64214e7bc2f0d33848e2dc6ba5",
+      "sha256": "426250fb74741680d16258e9bbbf536b79b0ba7c29828acd5382038780ddcc02",
+      "bytes": 31135,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_6",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_6.csv",
+      "git_blob_sha": "26154826383895ce707fa856aedeec8bfa453a71",
+      "sha256": "5bd3ea48a7e40ac46cfa0bb256f95f17a5f0cc5a2b788ae5fcf7f43bfc28e35b",
+      "bytes": 30116,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_7",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_7.csv",
+      "git_blob_sha": "6883fce61b707396fb750d1c46b618e6f1d47ba6",
+      "sha256": "b4bef96e9acc9e8ac0f76033e2af99e4dc3292f6bb9a03dd36319cd4fc2fa984",
+      "bytes": 30111,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_8",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_8.csv",
+      "git_blob_sha": "d03264aed2f9ab6950877493983db6993d968716",
+      "sha256": "cbeef3c78f15cffb9028a9d163151b3e3af45685fb350f1473854c6fd4871238",
+      "bytes": 30144,
+      "rows": 326
+    },
+    {
+      "role": "aia_challenge_9",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "公式データ/PWSCup2026_final_attack/aia_challenge_9.csv",
+      "git_blob_sha": "db45861e17a8b2995d88a743021fe51af85481ee",
+      "sha256": "0580e6ca24b2e6a4e4071aacedec3b32fd0063d2506cd9f70e847e8e27aabe9a",
+      "bytes": 30109,
+      "rows": 326
+    }
+  ],
+  "runtime": {
+    "python_executable": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+    "python_version": "3.12.15",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0",
+    "threadpool_limit": 1,
+    "inference_threadpools": [
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Users/taisei1105/pws2026-local/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+        "version": null
+      }
+    ],
+    "kde_query_block_rows": 256,
+    "LOKY_MAX_CPU_COUNT": "2",
+    "warnings_note": "FutureWarning表示のみ抑制。原alignのint列からfloatへの代入結果をpandas2.3.3で保持。"
+  },
+  "validation": {
+    "KDE_original_geometry_checks": [
+      {
+        "team": 0,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 1,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 2,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 3,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 4,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 5,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 6,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 7,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 8,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 9,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 10,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 11,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 12,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 13,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 14,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 15,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 16,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 17,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 22,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 25,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 26,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      },
+      {
+        "team": 27,
+        "rows": 12,
+        "direct_geometry_max_error": 0.0
+      }
+    ],
+    "KDE_query_category_levels_all_present_in_background": true,
+    "all_GMM_fits_converged": true,
+    "GMM_fit_groups": 46,
+    "selected_rows": 875,
+    "finite_confidence": true,
+    "ordinary_confidence_min": 0.6003428571428571,
+    "ordinary_confidence_max": 0.8999999999999999,
+    "known_negative_confidence_all_zero": true
+  },
+  "output_sha256": {
+    "selected_confidence.csv": "44ebd1c6e873f157f06f22290a2e16c406fae2ec6edf64d7050aad0515517dd0",
+    "row_partitions.csv": "1854300d400dc3fc5ab1df1a0398545b0673605d354d4bc3bf77d34f722101fc",
+    "all_method_arrays.npz": "613fe0e264b2a23ce7c78878740fba5d08af8f57c7d7d1be3339dfa389f78979",
+    "gmm_fit_diagnostics.csv": "d404329359cf6d9c91841a0c2e6acedb8d4688d1a31d30ae8a2f0a0746bc0cc6"
+  },
+  "driver_sha256": "d0974ded808b9f8ee714498acabca225159ff2dd8a207f7fd60f59f8b6ee3363",
+  "input_spec_sha256": "db65dffe5697df99bbde542e4d2e2506e69027cc8a28badfe60b8031e5802d34",
+  "seconds": 12.44674133398803,
+  "limitation": "選定は既存公開予備戦結果に基づく。本戦TPR・優位性・真の会員識別は未確認。希少質問の更新と旧提出保存列の統合は別スクリプトで行う。",
+  "repeated_generation_validation": {
+    "reason": "KDE全category網羅assert追加とwarning表示/実行中threadpool記録の改善。数学関数・入力・seed・fitは不変。",
+    "first_driver_sha256": "7f2260d62d455ed3aef63a72d73743e5b45cf062e23b9b8ff1a6354a20a6e91e",
+    "current_driver_sha256": "d0974ded808b9f8ee714498acabca225159ff2dd8a207f7fd60f59f8b6ee3363",
+    "prediction_files_byte_equal": {
+      "selected_confidence.csv": {
+        "sha256": "44ebd1c6e873f157f06f22290a2e16c406fae2ec6edf64d7050aad0515517dd0",
+        "byte_equal": true
+      },
+      "row_partitions.csv": {
+        "sha256": "1854300d400dc3fc5ab1df1a0398545b0673605d354d4bc3bf77d34f722101fc",
+        "byte_equal": true
+      },
+      "all_method_arrays.npz": {
+        "sha256": "613fe0e264b2a23ce7c78878740fba5d08af8f57c7d7d1be3339dfa389f78979",
+        "byte_equal": true
+      }
+    },
+    "all_npz_arrays_equal": {
+      "methods": true,
+      "teams": true,
+      "record_ids": true,
+      "normal_record_ids": true,
+      "variant_ranks": true,
+      "cross_scores": true,
+      "all_confidence": true,
+      "raw_b_scores": true,
+      "raw_qi7_scores": true,
+      "query_owner": true
+    },
+    "GMM_numeric_fit_diagnostics_equal": true,
+    "GMM_warnings_difference": "初回A性別群1件のphysical core照会warningのみ。LOKY_MAX_CPU_COUNT=2で再実行時は発生せず。元n_jobs2とmath結果は不変。",
+    "first_completed_utc": "2026-10-10T13:56:01.261272+00:00",
+    "rerun_completed_utc": "2026-10-10T13:57:38.236422+00:00"
+  }
+}

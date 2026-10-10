@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-10",
+  "official_validator_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/starter/src/pwscup2026/kit/validate.py",
+  "official_validator_git_blob_sha": "07284c2239bfcd98dbadd17c69345490461718dc",
+  "local_snapshot_git_blob_sha": "07284c2239bfcd98dbadd17c69345490461718dc",
+  "local_snapshot_sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+  "official_current_main_byte_verified": true,
+  "rulebook_url": "https://github.com/pwscup/pwscup2026-kit/blob/main/rulebook/PWS_Cup2026_ルールブック_main-process-20260912.pdf",
+  "rulebook_sections": [
+    "4.1",
+    "5.2",
+    "5.5"
+  ],
+  "full_attack_package_required_members": [
+    "F_mia.csv",
+    "F_aia.csv",
+    "token.txt"
+  ],
+  "component_archive_is_full_submission": false
+}
