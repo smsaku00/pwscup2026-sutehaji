@@ -1,0 +1,66 @@
+{
+  "format_validation": "PASS",
+  "scope": "AIA only",
+  "base7_sha256": "59ed6173457ef20e643e20d6becd322b02e0a9a84b22d3463c613406bd89acb5",
+  "new_aia_sha256": "4c1c5f03f62c5d47552a2e60dde34d49de57e8ed29b9b077104679d00899b0bc",
+  "input_sha256": {
+    "base_round7_F_aia.csv": "59ed6173457ef20e643e20d6becd322b02e0a9a84b22d3463c613406bd89acb5",
+    "group_assignments.csv": "6f68b0c6af6f9a1f80af9f722068043658ace695437a7fc01ffa867684ea0261",
+    "round1_F_aia.csv": "0a0af97596c6318d3a01358fb2e21eb5e0f11f8c01f95d770fd6994b896964be",
+    "round2_F_aia.csv": "f41838ef3c3822e43e6dbbb3902ce7f4eed451b21fe723cdaa8b7a5462772678",
+    "round3_F_aia.csv": "84c6313537388199aae3feaaba3c335d0c1033ea1bd04c5d6eee1380ebbeca1e",
+    "round4_F_aia.csv": "41f0f024fd680c8f7e54fd8706cee8f376b913d2d83b46855511ba2d3701bd84",
+    "round5_F_aia.csv": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "round5_aia_scores.json": "42f17573b55134da1074c60ee0b05a1504ea0d02d539bff75e866def16c21f71",
+    "round6_F_aia.csv": "47900c8b65e29fd3f9c790d8cb52e9b204269d57b5e5a275267fdea23fb629be",
+    "round6_aia_scores.json": "7a2c11f3e11c39d6b0d37e2ce61c8f074d14c0cecdde9fb42c4dc9ded3fd5716"
+  },
+  "rows": 7172,
+  "groups": 57,
+  "group_rows": 181,
+  "non_group_rows": 6991,
+  "changed_from_base7": 61,
+  "changed_outside_groups": 0,
+  "group_choices": {
+    "5": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      22,
+      25,
+      27
+    ],
+    "6": [
+      11,
+      13,
+      14,
+      15,
+      16,
+      26
+    ],
+    "7": [
+      0,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12,
+      17
+    ]
+  },
+  "answer_counts": {
+    "9.5": 5310,
+    "11.0": 1862
+  },
+  "numeric_identical_team_rounds": [],
+  "selection95_identical_team_rounds": [],
+  "main_B_used": false,
+  "main_truth_used": false,
+  "official_score_obtained": false,
+  "base7_note": "Frozen original candidate; model training is not repeated by this script.",
+  "selection_note": "Whole-team official scores choose group values; group causality is not established.",
+  "comparison_note": "Exact numeric equality and 9.5-selection equality are separate metrics. Selection equality alone does not imply equal scoring."
+}
