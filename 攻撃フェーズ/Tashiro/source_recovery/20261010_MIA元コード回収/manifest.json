@@ -14,7 +14,8 @@
     "requirements": 3,
     "requested_sources": 24,
     "requested_missing": 0,
-    "javascript_mjs": 1
+    "javascript_mjs": 1,
+    "approved_historical_input_files": 2
   },
   "sources": [
     {
@@ -2517,5 +2518,73 @@
     "generator_not_found": 3,
     "new_attack_calculations": 0
   },
-  "dependency_graph_followup": "provenance_followup_9/dependency_graph.json"
+  "dependency_graph_followup": "provenance_followup_9/dependency_graph.json",
+  "approved_historical_inputs": {
+    "parent_commit": "1e185fecfd4a8ff66e3a76538202aeaccf6d6bec",
+    "source_root_original": "/Users/taisei1105/pws2026-local",
+    "source_files_260_unchanged": true,
+    "authorization_scope": "Two explicitly user-approved historical input files, including the fixed record-ID histories in the JSON. Current submission files are outside this addition.",
+    "original_bytes_preserved": true,
+    "secret_screening": {
+      "files_screened": 2,
+      "credential_pattern_findings": 0,
+      "credential_field_findings": 0,
+      "checks": [
+        "credential-related JSON keys",
+        "private key markers",
+        "GitHub tokens",
+        "AWS access key IDs",
+        "Google API keys",
+        "Slack tokens",
+        "Bearer credentials",
+        "JWTs",
+        "credential assignments"
+      ]
+    },
+    "new_attack_computations": 0,
+    "baseline_reference_matches_round6_input_path": true,
+    "files": [
+      {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv",
+        "bundle_relative_path": "reproduction_inputs/予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv",
+        "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/reproduction_inputs/予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv",
+        "bytes": 350924,
+        "sha256": "bb71413e27ff0b005c21dfcd52a24c5a30952b1eb552ae5cdeb585cbd66644e8",
+        "role": "historical_round6_mia_baseline",
+        "csv_data_rows": 1049,
+        "csv_columns": [
+          "record_id",
+          "1",
+          "2",
+          "3",
+          "4",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "12",
+          "13",
+          "17",
+          "18",
+          "19",
+          "20",
+          "22",
+          "23",
+          "24",
+          "26",
+          "29"
+        ]
+      },
+      {
+        "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json",
+        "bundle_relative_path": "reproduction_inputs/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json",
+        "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/reproduction_inputs/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json",
+        "bytes": 33920,
+        "sha256": "1d7f4d369fecf17f2a059bcbe378ea6b061e9fb29cad250e4a0d94c45393be9b",
+        "role": "historical_round7_fixed_calculation_settings_with_record_id_history",
+        "record_id_history_preserved": true
+      }
+    ]
+  }
 }

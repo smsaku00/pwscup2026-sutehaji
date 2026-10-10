@@ -1,5 +1,23 @@
 # MIA元コード回収（2026-10-10）
 
+## 承認された過去入力2件の追記
+
+再現に必要な第6回MIA回答CSVと第7回計算条件JSONの2件だけを、本人の承認範囲として原本のまま追加しました。JSONの固定レコードID別履歴も含めて承認された入力です。配置は `reproduction_inputs/` 以下に元の相対パスを保持しています。これまで回収しなかった過去回答CSV・履歴付きJSONの掲載について、この2件だけが今回の例外です。
+
+| 元入力 | 掲載ファイル | bytes | 原本SHA256 |
+|---|---|---:|---|
+| 第6回MIA回答CSV | [F_mia.csv](reproduction_inputs/予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv) | 350,924 | `bb71413e27ff0b005c21dfcd52a24c5a30952b1eb552ae5cdeb585cbd66644e8` |
+| 第7回計算条件JSON | [計算条件.json](reproduction_inputs/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json) | 33,920 | `1d7f4d369fecf17f2a059bcbe378ea6b061e9fb29cad250e4a0d94c45393be9b` |
+
+回収元は `/Users/taisei1105/pws2026-local` の表中ファイルの元相対パスです。CSVは1,049行・21列（record_idと20対象）で、列数とrecord_idの一意性を確認しました。JSONは指定サイズ・指定SHA256に一致し、その `baseline` は上記第6回CSVの元相対パスと一致します。CSVの期待ハッシュは指定されていないため、表の値は今回読み取った原本ハッシュです。
+
+秘密情報に関連するJSONキー、秘密鍵マーカー、認証トークンの既知形式、パスワード等の代入を点検し、該当は0件でした。データ・履歴は加工していません。個人の実データを追加収集していません。秘密情報検査は形式検査のため、すべての未知形式の不存在を保証するものではありません。
+
+[manifest.json](manifest.json) と [dot_manifest.json](dot_manifest.json) の `approved_historical_inputs.files` に原本パス・掲載パス・サイズ・ハッシュがあります。`source_files=260` は前回までのコード・設定原本の件数のままで、今回の2入力は `approved_historical_input_files=2` として別に記録しています。実行用の別ツリーには、この2入力を `original_relative_path` の位置に無加工で配置してください。掲載原本260件や現在の提出CSVを上書きしないでください。
+
+今回はコピー・CSV/JSON形式確認・ハッシュ照合・秘密情報検査だけです。新しい攻撃計算、採点、現在の本戦提出の作成・差し替えは行っていません。以下の「初回回収」「9件追跡」はそれぞれ当時の記録です。
+
+
 ## 9件の生成元追跡の追記
 
 初回の252原本を保持したまま、8原本（Python7、MJS1）を追加し、現在は260原本です。[provenance_followup_9/index.json](provenance_followup_9/index.json) が今回の入口です。[targets.json](provenance_followup_9/targets.json) に各保存スコアのsource ID、元コードとハッシュ、固定条件、入力・出力のハッシュ対応、確認根拠と未確認部分を記載しました。

@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 15922,
-      "sha256": "ef8cc5fddadd3308d8a00a9f8a3abd1045cf4c69feea644520e25419c25afe6c"
+      "bytes": 18657,
+      "sha256": "760bca265959293ef21a0683e31a90fdd09e7b01f4fec980a3ebd23a33515d32"
     },
     {
       "path": "catalog/catalog_index.json",
@@ -688,8 +688,8 @@
     },
     {
       "path": "dot_manifest.json",
-      "bytes": 15470,
-      "sha256": "a9a4323f0709275a81cba45fa84f992dd6112402f60cd12c7fdaffa673fde3bb"
+      "bytes": 18301,
+      "sha256": "761b9837de6d6cf278022ea0425c994db47b8bf0a23368ad50bef6f26243b98b"
     },
     {
       "path": "environment.json",
@@ -698,8 +698,8 @@
     },
     {
       "path": "manifest.json",
-      "bytes": 199908,
-      "sha256": "848d4ae0aa3442aa66d6e7afa247dff1a9060685fecbb880f0a97d7a8d2e7995"
+      "bytes": 202684,
+      "sha256": "220a02436c1b394f912e63440410b8d83597e6aad08a05f10b4f5ff7788c67f4"
     },
     {
       "path": "missing_files.json",
@@ -2035,6 +2035,16 @@
       "path": "provenance_followup_9/targets.json",
       "bytes": 32160,
       "sha256": "e3149204637982d671a466268c55288841be256d52ff2c7898e00c8e5636e32f"
+    },
+    {
+      "path": "reproduction_inputs/予備戦/攻撃フェーズ/提出記録/6_20260907_GenLRA_Zhou/F_mia.csv",
+      "bytes": 350924,
+      "sha256": "bb71413e27ff0b005c21dfcd52a24c5a30952b1eb552ae5cdeb585cbd66644e8"
+    },
+    {
+      "path": "reproduction_inputs/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json",
+      "bytes": 33920,
+      "sha256": "1d7f4d369fecf17f2a059bcbe378ea6b061e9fb29cad250e4a0d94c45393be9b"
     },
     {
       "path": "requirements-reproduction.txt",
