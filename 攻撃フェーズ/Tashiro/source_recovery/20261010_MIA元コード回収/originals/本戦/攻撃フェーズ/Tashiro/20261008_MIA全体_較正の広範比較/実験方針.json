@@ -1,0 +1,21 @@
+{
+  "date_jst": "2026-10-08",
+  "authorization": "ユーザー指示『100、500みたいなのが数字変えられたりとかもありそう？ 色々試してみて！』",
+  "scope": "全体MIAの較正実験。提出回答・ZIPの作成とCodaBench提出は含まない。",
+  "strength_grid": [0,25,50,100,200,300,500,750,1000,2000,5000],
+  "families": ["raw", "flat_pref_sex", "flat_sex", "flat_sex_age", "hier_pref_sex", "hier_sex_age", "adaptive_pref_sex"],
+  "hierarchical_parent_strengths": [100,500],
+  "hierarchical_local_strengths": [25,100,300,500,1000],
+  "adaptive_base_strengths": [25,50,100,200,500],
+  "adaptive_min_support": [100,200],
+  "adaptive_rule": "local_strength = base_strength * max(1, min_support / group_nonmember_count)",
+  "age_groups": "元の公開背景Aの年齢20・40・60・80パーセンタイルで区分。背景抽出後も同じ境界を使う。正解から境界を選ばない。",
+  "cross_target_alpha": 0.1,
+  "reference_method": "flat_pref_sex_s500",
+  "primary_evaluation": "既存の高得点対象1・2を除いた18対象のTPR@FPR1%、較正500との対象別の改善・悪化数",
+  "sensitivity": "県・性別層内で背景90%・80%・50%抽出、seed20261007と20261008。全背景と合わせて7条件。独立したコホートではない。",
+  "fprs": [0.005,0.01,0.02,0.05],
+  "selection_diagnostic": "18対象について1対象ずつ外して方式を選び、外した対象での較正500との差を確認する。既知の予備戦を再利用した感度診断であり、独立検証ではない。",
+  "truth_separation": "予備戦の全7背景条件・本戦の全方式の予測を固定した後に予備戦正解を読む。本戦所属正解は使わない。",
+  "limitations": "多数設定の探索と予備戦の再利用による過適合があり、最高値をそのまま本戦の予測値にしない。"
+}

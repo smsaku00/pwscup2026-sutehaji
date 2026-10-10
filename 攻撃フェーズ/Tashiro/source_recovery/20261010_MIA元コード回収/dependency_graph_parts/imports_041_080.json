@@ -1,0 +1,609 @@
+{
+  "files": [
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/attack/mia.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/common/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/common/config.py",
+      "imports": [
+        "__future__",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/common/schema.py",
+      "imports": [
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/common/submission_schema.py",
+      "imports": [
+        ".",
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/defense/__init__.py",
+      "imports": [
+        ".perturb",
+        ".synth",
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/defense/perturb.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/defense/synth.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "lifelines",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "CodaBench 採点の配線。\n\n- `scoring_io`: 提出frames＋reference_data＋cfg → スコア（純関数寄り。既存 scoring/ 純関数の薄ラッパ）。\n- `run`: CodaBench `$input`/`$output` 契約のI/Oアダプタ（層1・層2検証→採点→scores.json）。\n\n同一採点コードを CodaBench ライブ採点と starter kit 自己チェックの両方で使う。\n"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/run.py",
+      "imports": [
+        ".",
+        "..validate",
+        "__future__",
+        "html",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "scores.json",
+        "scoring_config.yaml",
+        "採点純関数の返り値を、リーダーボード(score_1〜score_6)と正式名スコアの両方へ写像する。\n\n    NaN/inf はリーダーボードを壊すので0に潰す（棄権・退化入力の保険）。\n    named_keys に None が入っている列は scores.json に出さない＝LBでは空欄になる。\n    ",
+        "練習フェーズ: 提出が C.csv なら加工採点、F_mia/F_aia なら攻撃採点（自動判定）。"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "imports": [
+        "...attack",
+        "...scoring",
+        "...scoring.result",
+        "...scoring.utility",
+        "__future__",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_ref.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "NaN/inf を0に潰す（scores.json は NaN を書けない・LBが壊れる）。",
+        "pool_ids_attacker.csv",
+        "pool_ids_practice.csv",
+        "pool_ids_ref.csv",
+        "reference_data の `utility_ref.json` から `UtilityReference` を復元する。\n\n    mu/sigma/b_is_rare は配列化、band/scalar はそのまま。事務局が B から計算した値を\n    移送しただけで、採点時に再計算はしない。\n    ",
+        "utility_ref.json",
+        "攻撃提出（`F_mia.csv`＋`F_aia.csv`）を採点する（攻撃タスク）。\n\n    1提出で MIA力・AIA力の2スコア列を返す（攻撃は1提出口）。\n    ",
+        "防御提出 `C.csv` を採点する（加工タスク）。\n\n    - `utility` = score_utility(C, B_practice, utility_ref, cfg) の集約スカラー。\n    - `protection` = 1 − 参照攻撃器（overlap_mia）を C にぶつけた membership 露出（score_mia）。\n      候補=`B_ref`、真値=B_ref の pool_id が B_practice の pool 集合に入るか、希少 worst-case 付き。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/selfscore.py",
+      "imports": [
+        ".",
+        "..scoring.result",
+        "..scoring.utility",
+        ".codabench.scoring_io",
+        "__future__",
+        "argparse",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "yaml",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "         配布物の B_self.csv を --dist のフォルダに置くと CodaBench と同じ点数になります。",
+        "  [注意] B_self.csv（真値 is_rare 付き）が無いため U_rare は近似値です。",
+        "B_practice.csv",
+        "B_self.csv",
+        "B_self.csv も B_practice.csv も見つかりません: ",
+        "C.csv",
+        "C.csv または 提出zip のパス",
+        "scoring_config.yaml",
+        "utility_ref.json",
+        "zipの中に C.csv がありません（自己採点は加工提出のみ）: ",
+        "提出物を読む。`C.csv` そのものでも、提出zip（直下フラット）でも受ける。",
+        "配布物から (B, UtilityReference, cfg, info) を読む。info は表示用のメタ（B_selfの有無など）。\n\n    `b_is_rare` は **B_self.csv の is_rare 列**から供給する（真値の配布口を1つに絞る）。\n    utility_ref.json 側の b_is_rare は参加者配布では null。サーバ側 reference_data を `--dist` に\n    渡した場合は JSON 側に真値が入っているのでそれを使う（事務局が同じCLIで検算できる）。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/kit/validate.py",
+      "imports": [
+        "..common",
+        "..common.submission_schema",
+        "..rare",
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "sys",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "B_practice.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "aia_challenge_*.csv",
+        "kit_config.yaml",
+        "mia_columns.json",
+        "pool_ids_attacker.csv",
+        "schema.json",
+        "token.txt",
+        "token.txt: 1行でない（非空",
+        "token.txt: UTF-8でデコードできない",
+        "token.txt: 形式不一致（",
+        "採点・検証パラメータ（既定＝パッケージ同梱の kit_config.yaml）。別のファイルを指定することもできる。",
+        "提出種を判定できない（C.csv / F_mia.csv+F_aia.csv のいずれも直下に無い）: "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/rare/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/rare/outlier.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/scoring/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/scoring/attack_score.py",
+      "imports": [
+        ".result",
+        "__future__",
+        "numpy"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/scoring/result.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/scoring/utility.py",
+      "imports": [
+        "..common",
+        "..rare",
+        ".result",
+        "__future__",
+        "dataclasses",
+        "lifelines",
+        "lifelines.exceptions",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.model_selection",
+        "statsmodels.api",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/aia.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/mia.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/config.py",
+      "imports": [
+        "__future__",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/schema.py",
+      "imports": [
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/submission_schema.py",
+      "imports": [
+        ".",
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/__init__.py",
+      "imports": [
+        ".perturb",
+        ".synth",
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/perturb.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/synth.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "lifelines",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "CodaBench 採点の配線。\n\n- `scoring_io`: 提出frames＋reference_data＋cfg → スコア（純関数寄り。既存 scoring/ 純関数の薄ラッパ）。\n- `run`: CodaBench `$input`/`$output` 契約のI/Oアダプタ（層1・層2検証→採点→scores.json）。\n\n同一採点コードを CodaBench ライブ採点と starter kit 自己チェックの両方で使う。\n"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/run.py",
+      "imports": [
+        ".",
+        "...scoring.result",
+        "..validate",
+        "__future__",
+        "html",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "</b> のものとして採点しました（token.txt から判定）。配布物の README に書かれた自分のチームIDと違う場合は事務局へ連絡してください。</p>",
+        "scores.json",
+        "scoring_config.yaml",
+        "token.txt が登録されているトークンと一致しません。配布物に同梱された token.txt をそのまま提出物に入れてください。",
+        "採点純関数の返り値を、リーダーボード(score_1〜score_6)と正式名スコアの両方へ写像する。\n\n    NaN/inf はリーダーボードを壊すので0に潰す（棄権・退化入力の保険）。\n    named_keys に None が入っている列は scores.json に出さない＝LBでは空欄になる。\n    ",
+        "練習フェーズ: 提出が C.csv なら加工採点、F_mia/F_aia なら攻撃採点（自動判定）。"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "imports": [
+        "...attack",
+        "...scoring",
+        "...scoring.result",
+        "...scoring.utility",
+        "__future__",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".json",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_ref.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "NaN/inf を0に潰す（scores.json は NaN を書けない・LBが壊れる）。",
+        "`tokens.csv`（列 `token,team_id`）を token→team_id で読む。無ければ空辞書。",
+        "pool_ids_attacker.csv",
+        "pool_ids_practice.csv",
+        "pool_ids_ref.csv",
+        "reference_data が本番レイアウト（チーム別参照＋`tokens.csv`）か。",
+        "reference_data の `utility_ref[_k].json` から `UtilityReference` を復元する。\n\n    mu/sigma/b_is_rare は配列化、band/scalar はそのまま。事務局が B から計算した値を\n    移送しただけで、採点時に再計算はしない。\n\n    ★サーバ側の JSON は `b_is_rare`（真の希少ラベル）を入れて配る。参加者に配る\n    `utility_ref.json` は同じ場所が null で、参加者は同じ値を `B_self.csv` の `is_rare` 列から\n    供給する（真値の受け取り口を1つに絞ってある）。どちらの経路でも同じ値が入るので、\n    ローカル自己採点とサーバ採点は一致する（ルールブック §5.4）。\n    ",
+        "tokens.csv",
+        "utility_ref.json",
+        "加工採点で**提出者ごとに変わる**3ファイル (B, utility_ref, pool_ids) のパス。\n\n    練習は固定名、本番はチーム番号つき。`A_bg.csv` と参照攻撃者（`B_ref.csv` /\n    `pool_ids_ref.csv`）は全チーム共通なので、ここでは扱わない。\n    ",
+        "攻撃提出（`F_mia.csv`＋`F_aia.csv`）を採点する（攻撃タスク）。\n\n    1提出で MIA力・AIA力の2スコア列を返す（攻撃は1提出口）。\n\n    `team_id` は**攻撃者自身**の解決に使う（`F_mia` の行キー＝自分のコホートの record_id）。\n    対象側の `pool_ids_{k}.csv` / `aia_truth_{k}.csv` は元から k 付きなので変わらない。\n    ",
+        "攻撃者コホート P の record_id→pool_id/is_rare（F_mia の行キー照合・rare_mask 用）。\n\n    練習は固定名 `pool_ids_attacker.csv`。本番は提出者自身のコホート＝`pool_ids_{team_id}.csv`\n    （対象側と同じファイルを兼用できる＝本番参照データに攻撃者専用のコピーを置かなくてよい）。\n    ",
+        "防御提出 `C.csv` を採点する（加工タスク）。\n\n    - `utility` = score_utility(C, 提出者のB, utility_ref, cfg) の集約スカラー。\n    - `protection` = 1 − 参照攻撃器（overlap_mia）を C にぶつけた membership 露出（score_mia）。\n      候補=`B_ref`、真値=B_ref の pool_id が**提出者の** pool 集合に入るか、希少 worst-case 付き。\n\n    `team_id=None` は練習モード（固定ファイル名）。本番は `token.txt` から解決した team_id が\n    渡され、提出者ごとに参照を選ぶ。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/selfscore.py",
+      "imports": [
+        ".",
+        "..scoring.result",
+        "..scoring.utility",
+        ".codabench.scoring_io",
+        "__future__",
+        "argparse",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "yaml",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "         配布物の B_self.csv を --dist のフォルダに置くと CodaBench と同じ点数になります。",
+        "  [注意] B_self.csv（真値 is_rare 付き）が無いため U_rare は近似値です。",
+        "B_practice.csv",
+        "B_self.csv",
+        "B_self.csv も B_practice.csv も見つかりません: ",
+        "C.csv",
+        "C.csv または 提出zip のパス",
+        "scoring_config.yaml",
+        "utility_ref.json",
+        "zipの中に C.csv がありません（自己採点は加工提出のみ）: ",
+        "提出物を読む。`C.csv` そのものでも、提出zip（直下フラット）でも受ける。",
+        "配布物から (B, UtilityReference, cfg, info) を読む。info は表示用のメタ（B_selfの有無など）。\n\n    `b_is_rare` は **B_self.csv の is_rare 列**から供給する（真値の配布口を1つに絞る）。\n    utility_ref.json 側の b_is_rare は参加者配布では null。サーバ側 reference_data を `--dist` に\n    渡した場合は JSON 側に真値が入っているのでそれを使う（事務局が同じCLIで検算できる）。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/validate.py",
+      "imports": [
+        "..common",
+        "..common.submission_schema",
+        "..rare",
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "sys",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "B_practice.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "`token.txt` が登録済みトークンかを検査する（本番の reference_data に対してのみ効く）。\n\n    `dist_dir` に `tokens.csv`（列 `token,team_id`）があれば本番参照データ＝一致を要求する。\n    無ければ練習・参加者手元なので**何も検査しない**（参加者は tokens.csv を持たない）。\n\n    未知のトークンでの提出は**提出回数を消費しません**。CodaBench 側で \"Failed\" に\n    する必要があるため、採点ではなく**検証で落とします**（`run._run` が非ゼロ終了します）。\n    ルールブック §5.5 と同じ扱いです。★正しいトークンが何かは示しません\n    （総当たりの手掛かりにしないため）。\n    ",
+        "aia_challenge_*.csv",
+        "kit_config.yaml",
+        "mia_columns.json",
+        "pool_ids_attacker.csv",
+        "schema.json",
+        "token.txt",
+        "token.txt: 1行でない（非空",
+        "token.txt: UTF-8でデコードできない",
+        "token.txt: 形式不一致（",
+        "token.txt: 登録されているトークンと一致しません（配布物に同梱された token.txt をそのまま入れてください）",
+        "tokens.csv",
+        "採点・検証パラメータ（既定＝パッケージ同梱の kit_config.yaml）。別のファイルを指定することもできる。",
+        "提出種を判定できない（C.csv / F_mia.csv+F_aia.csv のいずれも直下に無い）: "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/outlier.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "python_executable_original": "/Users/taisei1105/pws2026-local/.venv/bin/python",
+  "platform": "darwin",
+  "libraries": [
+    {
+      "module": "lifelines",
+      "distribution": "lifelines",
+      "version": "0.30.3",
+      "status": "installed"
+    },
+    {
+      "module": "matplotlib",
+      "distribution": "matplotlib",
+      "version": "3.11.0",
+      "status": "installed"
+    },
+    {
+      "module": "numpy",
+      "distribution": "numpy",
+      "version": "2.4.6",
+      "status": "installed"
+    },
+    {
+      "module": "pandas",
+      "distribution": "pandas",
+      "version": "2.3.3",
+      "status": "installed"
+    },
+    {
+      "module": "scipy",
+      "distribution": "scipy",
+      "version": "1.17.1",
+      "status": "installed"
+    },
+    {
+      "module": "sklearn",
+      "distribution": "scikit-learn",
+      "version": "1.9.0",
+      "status": "installed"
+    },
+    {
+      "module": "statsmodels",
+      "distribution": "statsmodels",
+      "version": "0.14.6",
+      "status": "installed"
+    },
+    {
+      "module": "yaml",
+      "distribution": "PyYAML",
+      "version": "6.0.3",
+      "status": "installed"
+    }
+  ],
+  "note": "Observed local versions at recovery time, not new experiment validation. Original requirements are separately retained.",
+  "calculation_dependency_closure": [
+    {
+      "name": "autograd",
+      "version": "1.9.0",
+      "installed": true,
+      "required_distributions": [
+        "numpy"
+      ]
+    },
+    {
+      "name": "autograd-gamma",
+      "version": "0.5.0",
+      "installed": true,
+      "required_distributions": [
+        "autograd",
+        "scipy"
+      ]
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3",
+      "installed": true,
+      "required_distributions": [
+        "numpy"
+      ]
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "fonttools",
+      "version": "4.63.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "formulaic",
+      "version": "1.2.2",
+      "installed": true,
+      "required_distributions": [
+        "interface-meta",
+        "narwhals",
+        "numpy",
+        "pandas",
+        "scipy",
+        "typing-extensions",
+        "wrapt"
+      ]
+    },
+    {
+      "name": "interface_meta",
+      "version": "2.0.1",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.3",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "lifelines",
+      "version": "0.30.3",
+      "installed": true,
+      "required_distributions": [
+        "autograd",
+        "autograd-gamma",
+        "formulaic",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "scipy"
+      ]
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.0",
+      "installed": true,
+      "required_distributions": [
+        "contourpy",
+        "cycler",
+        "fonttools",
+        "kiwisolver",
+        "numpy",
+        "packaging",
+        "pillow",
+        "pyparsing",
+        "python-dateutil"
+      ]
+    },
+    {
+      "name": "narwhals",
+      "version": "2.23.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "packaging",
+      "version": "26.2",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3",
+      "installed": true,
+      "required_distributions": [
+        "numpy",
+        "python-dateutil",
+        "pytz",
+        "tzdata"
+      ]
+    },
+    {
+      "name": "patsy",
+      "version": "1.0.2",
+      "installed": true,
+      "required_distributions": [
+        "numpy"
+      ]
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "installed": true,
+      "required_distributions": [
+        "six"
+      ]
+    },
+    {
+      "name": "pytz",
+      "version": "2026.2",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.0",
+      "installed": true,
+      "required_distributions": [
+        "joblib",
+        "narwhals",
+        "numpy",
+        "scipy",
+        "threadpoolctl"
+      ]
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1",
+      "installed": true,
+      "required_distributions": [
+        "numpy"
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "statsmodels",
+      "version": "0.14.6",
+      "installed": true,
+      "required_distributions": [
+        "numpy",
+        "packaging",
+        "pandas",
+        "patsy",
+        "scipy"
+      ]
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.15.0",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.2",
+      "installed": true,
+      "required_distributions": []
+    },
+    {
+      "name": "wrapt",
+      "version": "2.2.2",
+      "installed": true,
+      "required_distributions": []
+    }
+  ]
+}

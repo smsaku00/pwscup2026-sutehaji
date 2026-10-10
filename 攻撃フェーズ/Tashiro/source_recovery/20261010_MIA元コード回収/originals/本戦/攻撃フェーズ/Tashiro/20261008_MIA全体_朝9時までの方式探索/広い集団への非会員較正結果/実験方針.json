@@ -1,0 +1,57 @@
+{
+  "created_jst": "2026-10-08T06:00:21.233613+09:00",
+  "configs": [
+    {
+      "name": "flat500",
+      "local": 500,
+      "parent": null,
+      "parent_strength": null
+    },
+    {
+      "name": "flat300",
+      "local": 300,
+      "parent": null,
+      "parent_strength": null
+    },
+    {
+      "name": "county300_sex500",
+      "local": 300,
+      "parent": "sex",
+      "parent_strength": 500
+    },
+    {
+      "name": "county300_sex100",
+      "local": 300,
+      "parent": "sex",
+      "parent_strength": 100
+    },
+    {
+      "name": "county300_sex_age500",
+      "local": 300,
+      "parent": "sex_age",
+      "parent_strength": 500
+    },
+    {
+      "name": "county300_sex_age100",
+      "local": 300,
+      "parent": "sex_age",
+      "parent_strength": 100
+    }
+  ],
+  "inner_folds": 5,
+  "seed": 20261008,
+  "code_sha256": "94fb013481832407a6c19aadb08b2a4ca15641fd0e794787f49e621b28ceeb8e",
+  "selection": "六つの事前固定CDF混合案から公開非会員CRPSだけで対象共通選択。",
+  "validation": "全Q所有者の外側保留。外側所有者は内側選択から完全除外。尺度は外側学習のみ。",
+  "aggregation": "Q所有者内で対象平均、その後Q所有者を等重みで集約。外側評価も所有者を等重みにする。",
+  "preliminary_selection_excludes_targets": [
+    1,
+    2
+  ],
+  "membership_labels_used": false,
+  "mia_score_selection": false,
+  "numerical_qa": {
+    "comparisons": 36,
+    "maximum_absolute_error": 1.2212453270876722e-15
+  }
+}

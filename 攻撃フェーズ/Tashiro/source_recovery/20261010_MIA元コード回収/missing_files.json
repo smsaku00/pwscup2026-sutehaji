@@ -1,0 +1,14 @@
+{
+  "explicit_requested_missing": [],
+  "explicit_requested_count": 24,
+  "explicit_requested_found": 24,
+  "runtime_inputs_not_copied": [
+    "official/background/candidate/challenge CSVs",
+    "public preliminary truth CSVs",
+    "schema/utility_ref/scoring_config provided with official data",
+    "old result tables and feature/score NPZ caches",
+    "tokens/.env/keys",
+    "historical submission ZIPs and answer CSVs"
+  ],
+  "not_a_missing_source_claim": "Runtime inputs are excluded deliberately. Missing cache/output inputs must be supplied or generated externally before their dependent scripts can run."
+}

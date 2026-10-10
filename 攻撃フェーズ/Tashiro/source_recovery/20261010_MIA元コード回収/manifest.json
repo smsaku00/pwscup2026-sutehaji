@@ -1,0 +1,2439 @@
+{
+  "format_version": 1,
+  "task": "Source recovery only, 2026-10-10; no experiments or method search executed",
+  "source_root_original": "/Users/taisei1105/pws2026-local",
+  "base_commit": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "branch": "codex/mia-source-recovery-20261010",
+  "destination_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収",
+  "original_bytes_preserved": true,
+  "counts": {
+    "source_files": 252,
+    "python": 238,
+    "calculation_json": 11,
+    "requirements": 3,
+    "requested_sources": 24,
+    "requested_missing": 0
+  },
+  "sources": [
+    {
+      "original_relative_path": "requirements.txt",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/requirements.txt",
+      "bundle_relative_path": "originals/requirements.txt",
+      "sha256": "9cf9b999380a1f097a49672fe73dfa14d56fdb03546ae817d2a146366216e137",
+      "bytes": 420,
+      "role": "original_dependency_definition"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py",
+      "sha256": "1fd8fc4a617ff745d9b32fdbfb75bd55a23dcb8803a8e64857617c970db7a68a",
+      "bytes": 2994,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/anneal_defense.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/anneal_defense.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/anneal_defense.py",
+      "sha256": "e7b2fe791cd6d209f9c98653ba171cac9b94865029bbba31cace12db4f5668c6",
+      "bytes": 24424,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19/mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19/mia.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19/mia.py",
+      "sha256": "ccb0192b5c025b77ae2b15131fd80e28f84cd6e1de669898b10876b4799c251c",
+      "bytes": 3745,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py",
+      "sha256": "5df720488ca1b0595b04d7e451a2e527c0cb841f5b99b3c6c28334fdec05c842",
+      "bytes": 3503,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629/p6_mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629/p6_mia.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629/p6_mia.py",
+      "sha256": "76fc2d8217108ad67da48c0ac4fd7f30ccc17710e5fcabccc14f759e559922f8",
+      "bytes": 3196,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "sha256": "7aa2a93934f4933c6927859e2c31988acdcc2b5dbbf7b75c8b26672e97a5838d",
+      "bytes": 4264,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "sha256": "9f55dc26766b6f436b2e49e6208a3c3f9998dfea9783613ab38f7d07916ae784",
+      "bytes": 1829,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/attacks.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/attacks.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/attacks.py",
+      "sha256": "f4d0baa358451ae5af5793782993c954336ad40a90329d5b2886a5611575489b",
+      "bytes": 10406,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/audit.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/audit.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/audit.py",
+      "sha256": "54f604b7e27f2fb801e648d9c7a56619b77a57fc4db895dfcab64465add4b8c1",
+      "bytes": 15050,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
+      "sha256": "6f6d3b0e9bd655105c01f9e8695850d9c861501c265afe4fea777f880d65e3b1",
+      "bytes": 23752,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py",
+      "sha256": "c8c90def09911277539c2cafa0eacd379e959dce0ff69ea6d5271e1a961dc5da",
+      "bytes": 20980,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/defense.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/defense.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/defense.py",
+      "sha256": "6cd2ee233a9bbc9bec9d97ec6e0a04d807930e1a2d5882291db47f6eab30d3b3",
+      "bytes": 25978,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/fastcox.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/fastcox.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/fastcox.py",
+      "sha256": "f4dd37d32018614c28ad422190f8998a17515ed2e43c4f8ac86241cbead41ee4",
+      "bytes": 6476,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/harness.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/harness.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/harness.py",
+      "sha256": "47d8d4d82f49bd51b21669f2d08ac45a16438588f8eb8f7819bac424470eb3de",
+      "bytes": 9649,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/mia_redteam.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/mia_redteam.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/mia_redteam.py",
+      "sha256": "e4494336aff0c9f8933087add882e3aeb7b95ee9896a863bf811a82b10d8703d",
+      "bytes": 22143,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/outcome_mia_redteam.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/outcome_mia_redteam.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/outcome_mia_redteam.py",
+      "sha256": "b127562a5abef387452de057e04dc0eb03c774e664061c154c7b65ce4a182de3",
+      "bytes": 22224,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/run_defense.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/run_defense.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/run_defense.py",
+      "sha256": "10f992478517040ff0c643fabdc0c6b02076ac9beba08eef640f57aa802735be",
+      "bytes": 9241,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/submit_audit.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/submit_audit.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/submit_audit.py",
+      "sha256": "6ec76972b6cb7023ca0cef3ec561c4886afac75a6e454c401593c41e7f5ca559",
+      "bytes": 29434,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
+      "sha256": "11564dd06d38ddda49141f03e7ac7506b7bc6c5e1390c0e1365b67d8d5cebd4e",
+      "bytes": 20077,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
+      "sha256": "2be75d0eb71bb80f11c8f116bab99735371bc37a053085b161360e3c257b1115",
+      "bytes": 26589,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py",
+      "sha256": "80b3034b9f1ee0e6dcd0e37dc2168c19c37942f0e66340976ab5e7227de619c8",
+      "bytes": 20365,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+      "sha256": "8dedadba0187e644f2600f8fba36b2a39b2f15523c94d7a17db2fe6f24f25a7d",
+      "bytes": 10276,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/teams.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/teams.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/teams.py",
+      "sha256": "8b62ba3d121b3e9327e9b110b288c97b697f62860eb36c10a0d53636c4d74b76",
+      "bytes": 5107,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_exp.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_exp.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_exp.py",
+      "sha256": "6e32ac79e969ae7b46061e76ff43c425950eddbb402b98b512159f84d0654579",
+      "bytes": 8250,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_pm.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_pm.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_pm.py",
+      "sha256": "12dcdf21505967562bad60840934d1231445ca6021973b225caf89fea1bc578e",
+      "bytes": 4033,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_sens.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_sens.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_sens.py",
+      "sha256": "6234e55e5f016332a21c9dc4d67b6977141025e43d7e55ebd599daa792c25058",
+      "bytes": 4848,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/common.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/common.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/common.py",
+      "sha256": "b4ab52a0b887752831e1e008316839f9999638370b821a613a37f2a215c79148",
+      "bytes": 2937,
+      "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/densities.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/densities.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/densities.py",
+      "sha256": "69069e8f6b9538246b85d6162c7dcb88d5442a77d76d25cb49f9147a1d77142b",
+      "bytes": 10130,
+      "role": "explicitly_requested",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/diag_sign.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/diag_sign.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/diag_sign.py",
+      "sha256": "35baef24027a1a922d4ffb525d65d850326fd17c51f9c12563abeb930412f1d9",
+      "bytes": 2887,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_exp.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_exp.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_exp.py",
+      "sha256": "ffb582c3f743bdfd265bac6bbaab235209a20db72ab4e2d862c06ffcd6c1375b",
+      "bytes": 5744,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelA2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelA2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelA2.py",
+      "sha256": "260e3b3da307cd0405fc6fea2bc8ee653cf976987b7977ed6c4ec862fd7adb9b",
+      "bytes": 877,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelB2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelB2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelB2.py",
+      "sha256": "e72c7d801fb5ca6d7d569150646a78ced0eb779fa6ee3c408d74d64e085fa489",
+      "bytes": 2889,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/prep.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/prep.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/prep.py",
+      "sha256": "fb5f786ec61ee662d3bcd74f35c8bce9fac54ceba4da174c958aac8117207f24",
+      "bytes": 1804,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/robust.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/robust.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/robust.py",
+      "sha256": "9ff011c96a6c0b40d0df10077639863fb294467386645295c0cd386c84845f76",
+      "bytes": 4830,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/summarize.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/summarize.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/summarize.py",
+      "sha256": "d72a669ee99fb064257e91777d8102b8b260ea4c3d96e7dd748698153fe4992d",
+      "bytes": 2554,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/twosided.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/twosided.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/twosided.py",
+      "sha256": "4f54ed095eb7a61b6db62b70278e6ed1dbf1ae4b3fafa415d22b2cb0163679d4",
+      "bytes": 2784,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/build_F_mia_domias.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/build_F_mia_domias.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/build_F_mia_domias.py",
+      "sha256": "3122b7795a5d65485cb4537a5a0174a02e83feb7d5f078ae9e4403f0d9cfdf9b",
+      "bytes": 12273,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/__init__.py",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+      "bytes": 109,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/attack/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/attack/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/__init__.py",
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+      "bytes": 115,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/attack/aia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/attack/aia.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/aia.py",
+      "sha256": "e39608ae8141fc62d4c61dcd869d0423ee6ffd7abbe11385fe86ab8ff636d1ff",
+      "bytes": 3074,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/attack/mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/attack/mia.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/mia.py",
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+      "bytes": 2393,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/common/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/common/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/common/__init__.py",
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+      "bytes": 53,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/common/config.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/common/config.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/common/config.py",
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+      "bytes": 360,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/common/schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/common/schema.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/common/schema.py",
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+      "bytes": 292,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/common/submission_schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/common/submission_schema.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "36b8e145f4687770e19ce1dc298320cd2dfceff952c62c392b5136cbc2311cee",
+      "bytes": 11996,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/defense/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/defense/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/__init__.py",
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff",
+      "bytes": 681,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/defense/perturb.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/defense/perturb.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/perturb.py",
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b",
+      "bytes": 2196,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/defense/synth.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/defense/synth.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/synth.py",
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f",
+      "bytes": 10644,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/__init__.py",
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+      "bytes": 91,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+      "bytes": 389,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/run.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/run.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "343490103f35ee6afce481673eb809a00ddfe7bc78023fab0df9046295ede82a",
+      "bytes": 10540,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "3e7bb1a1d19e064b94a7dcbc8d3f77b0a2e699365c6522316053ad38af816418",
+      "bytes": 11984,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/selfscore.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/selfscore.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/selfscore.py",
+      "sha256": "9f3d051a06beee693e1405375931e17d0e51b8367f6681ecda92f30387535bf2",
+      "bytes": 10383,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/kit/validate.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/kit/validate.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/validate.py",
+      "sha256": "69433a791c1e1d5eeb35f0ea7ca60938304c895c73fb20b728fc9f63ef3d17cc",
+      "bytes": 24189,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/rare/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/rare/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/rare/__init__.py",
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+      "bytes": 84,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/rare/outlier.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/rare/outlier.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/rare/outlier.py",
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+      "bytes": 1122,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/scoring/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/scoring/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/__init__.py",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+      "bytes": 55,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/scoring/attack_score.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/scoring/attack_score.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "7217ceffd52ee345a5241f35cbff5127b87aa644bcc4e27110aa7cd2976dcf8c",
+      "bytes": 8744,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/scoring/result.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/scoring/result.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/result.py",
+      "sha256": "6f284fdfff2c14bfc79270ee68e7077ba261535c082cd8bfffcac1f8ea62c93b",
+      "bytes": 1869,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/初版/starter/src/pwscup2026/scoring/utility.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/初版/starter/src/pwscup2026/scoring/utility.py",
+      "bundle_relative_path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/utility.py",
+      "sha256": "8d54ffd3769497f51deddb3ec21fdd69c7711f7a2be0293f457b30dd3898c44c",
+      "bytes": 36824,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/__init__.py",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+      "bytes": 109,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/__init__.py",
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+      "bytes": 115,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/aia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/aia.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/aia.py",
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+      "bytes": 4394,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/mia.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/mia.py",
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+      "bytes": 2393,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/__init__.py",
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+      "bytes": 53,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/config.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/config.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/config.py",
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+      "bytes": 360,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/schema.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/schema.py",
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+      "bytes": 292,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/common/submission_schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/submission_schema.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "ccdd91daf80bd441aee34ff5945a7b74b603f919d28bed4e222a889ea709b501",
+      "bytes": 12278,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/__init__.py",
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff",
+      "bytes": 681,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/perturb.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/perturb.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/perturb.py",
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b",
+      "bytes": 2196,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/synth.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/synth.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/synth.py",
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f",
+      "bytes": 10644,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/__init__.py",
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+      "bytes": 91,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+      "bytes": 389,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/run.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/run.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "7628a2db11f19b7da3b48ff0b9a3974af7e0f1caf5dc2e2712a0fe294d506d27",
+      "bytes": 12519,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "44d0a4d5327eed0cad116d02824f46f25164cd41a24dd83efca45741d8a1c376",
+      "bytes": 21480,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/selfscore.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/selfscore.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/selfscore.py",
+      "sha256": "40072056dcffce89db69b80fe329ead0a5eae16bce5996681ee9eef4fbff1c77",
+      "bytes": 10455,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/validate.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/validate.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/validate.py",
+      "sha256": "98ed6cd52af7d2d7e9c93fe9a4ec6d07dc23d0c96c649062c0a0056c3216a2ba",
+      "bytes": 25568,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/__init__.py",
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+      "bytes": 84,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/outlier.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/outlier.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/outlier.py",
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+      "bytes": 1122,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/__init__.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/__init__.py",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+      "bytes": 55,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "bytes": 10057,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/result.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/result.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/result.py",
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+      "bytes": 3121,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/utility.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/utility.py",
+      "bundle_relative_path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/utility.py",
+      "sha256": "b766cfa88991b4c57fdda4f41baf1de3e661a45a6b1f7a63f03aa3ffa9baa22a",
+      "bytes": 36586,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "sha256": "bcbcae58e8ef2e246e176b8af4da2d7c19074f96440197bf6969a298decfb54c",
+      "bytes": 24176,
+      "role": "literal_path_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "sha256": "0decdc3143eb2dc4cf928e851fa41781f18f72932e43163aacbf189d1212fe30",
+      "bytes": 17755,
+      "role": "literal_path_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "sha256": "d7dbade1ca7ba1a07c4d2df53a570fe5b0e322484ae18962848687df98a83872",
+      "bytes": 19620,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "sha256": "20bfde95cab8888a28eb805c18702d782505925ab04adca3026cf5625e201c82",
+      "bytes": 10172,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "sha256": "64f6b5e814ab77a895d43cdf291231a8fc660b056d7f067235c2ef3f60e3bbad",
+      "bytes": 16960,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "sha256": "b30920e31ef6d2674095658f3bbb14bf34b6c3e9f26c232f1748050d1456a7de",
+      "bytes": 10326,
+      "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/バトル/requirements.txt",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/バトル/requirements.txt",
+      "bundle_relative_path": "originals/本戦/バトル/requirements.txt",
+      "sha256": "b13bdfda63a31e9d3354311fdbb9a2390351b9f84c0b3120b275c7f2d65338aa",
+      "bytes": 259,
+      "role": "original_dependency_definition"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/gen_lra.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/gen_lra.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/gen_lra.py",
+      "sha256": "a6c967af4a7f86414e96b243477ff5beaa45b633e789d5564301141909db1065",
+      "bytes": 8786,
+      "role": "gen_lra_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/test_gen_lra.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/test_gen_lra.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/test_gen_lra.py",
+      "sha256": "d4977ea7fff1e49cbafece592d195a1e83b067402b825ff21a5e50980af394de",
+      "bytes": 3969,
+      "role": "gen_lra_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "sha256": "9fe270408057d7550ef7e8b594ab6da06b3f615aface53882b5ea42c7f001158",
+      "bytes": 16350,
+      "role": "gen_lra_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "bytes": 10057,
+      "role": "gen_lra_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3",
+      "bytes": 32860,
+      "role": "gen_lra_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/検証.py",
+      "sha256": "6f4a3b974008add78b0a82da39c925f5ce6a690f5455b9807e70f86b6ae68a00",
+      "bytes": 2516,
+      "role": "gen_lra_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/計算条件.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/計算条件.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/計算条件.json",
+      "sha256": "b10e88b4d28f6487262836d6f9b9fdc06972cf6675bde543495e21bca5184da0",
+      "bytes": 2318,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "chosen",
+        "status",
+        "self_team",
+        "k",
+        "rho",
+        "nonrare_features",
+        "rare_features",
+        "rare_cap",
+        "private_nonmembers",
+        "private_rare",
+        "unknown_rare",
+        "old48_negatives_reused",
+        "old_team_exceptions_reused",
+        "variant_descriptions",
+        "bandwidths",
+        "member_source",
+        "member_port",
+        "input_csv_float_precision",
+        "performance_limit"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "sha256": "21e28d906ea7078b5109421f4a0fa51876ff16f0187004941dec1322a85e783c",
+      "bytes": 8335,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "sha256": "c48d919441e2031431b9fa1de397f5c05bca04df521180de3751a3e6a9ecf155",
+      "bytes": 9973,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/公開準備.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/公開準備.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/公開準備.py",
+      "sha256": "de26a77004440776a29ef461eb937ba16f2a8055a90d9eca4085a19d00da6333",
+      "bytes": 3119,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "sha256": "0059b977630cb979c8b52971f4b072cc17e1864ec96680c158633348605ec93d",
+      "bytes": 9991,
+      "role": "20261007_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "bytes": 16899,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "sha256": "556bc5e1000d00a4dc3499c557dfee2ce43506462b4edd6533aacca0ee233ec6",
+      "bytes": 11165,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照結果/実行時の参照データの検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照結果/実行時の参照データの検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照結果/実行時の参照データの検討.py",
+      "sha256": "cf5b4286a24b444642c8f00e9a48861c2caf0991986d7313199e749592931eae",
+      "bytes": 8136,
+      "role": "20261007_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "sha256": "cecb2cac528843c977cd7f5b274629433cd099f7d7c469e8d9cd105ece66eacc",
+      "bytes": 5566,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "sha256": "4f6471502598f7b0ed9fdd52e436975352ba42e65aaf229d523ae905cb4bc6e7",
+      "bytes": 9478,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習結果/実行時の学習による順位補正の検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習結果/実行時の学習による順位補正の検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習結果/実行時の学習による順位補正の検討.py",
+      "sha256": "a52508f0fcf66418f906aba28ccb8d78486059b17956135c3a80be8f67d2cc82",
+      "bytes": 8721,
+      "role": "20261007_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "sha256": "44d584d9fb8595cf7612d1857528d81b409d6234584b2ce9c42185ba60fea0ab",
+      "bytes": 5720,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "sha256": "387cb16470471c5e729077c2e270c723ee6c4bf81524db812311b0c4fdceb6d4",
+      "bytes": 3548,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "sha256": "6a76c8f9619ae9ae44a0b0f669b5a17eea4f068d9bfbdfdfbca93684f9c43617",
+      "bytes": 10624,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/結果/実行時の分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/結果/実行時の分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/結果/実行時の分析.py",
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad",
+      "bytes": 16899,
+      "role": "20261007_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "sha256": "5c6b69e0501c4ebcd0f6db520d0d0d7a4e905cc664128f6c753f176f1d39205f",
+      "bytes": 9991,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "sha256": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e",
+      "bytes": 8114,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加結果/実行時の追加検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加結果/実行時の追加検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加結果/実行時の追加検討.py",
+      "sha256": "731b92ec30f61b97c2114532446aa096c8d06eed3f51cdd65a047c4dda6f2e3e",
+      "bytes": 6382,
+      "role": "20261007_dependency_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "sha256": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833",
+      "bytes": 7846,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "sha256": "f75d0c9e8acf8e42ccf24dda7c89170f21d6510b6853a32658937b9d3bbdff1f",
+      "bytes": 7948,
+      "role": "20261007_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "sha256": "fa0e08a5453bb4efbffba91769922830ffb72bdda9a4cdf0f9151c8904139db1",
+      "bytes": 20977,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2",
+      "bytes": 4861,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "sha256": "5d3d650c6d6ff42586fc8e951630a53913cee2a3bc3ba0bcfbd9466f01f52ba7",
+      "bytes": 5364,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/他対象との競合を滑らかに補正.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/他対象との競合を滑らかに補正.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/他対象との競合を滑らかに補正.py",
+      "sha256": "1e86e1eda2eef66a2e41e2a84f90c2bdeb97e79f44b8912645e9e632d7e718e7",
+      "bytes": 3107,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "sha256": "e90deb42e848ccda972ce6d2c9a1cb07a1db4397ffa9fcac1b806c18b1a0d868",
+      "bytes": 5095,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "sha256": "d5208b83cabcc2e733d50f8897b9487d8a98561ba80ab2eb5a8acf3345e26e7f",
+      "bytes": 8164,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/実験方針.json",
+      "sha256": "aa2e1d0e3a058755786f827f60538347ff6a5f400bdc814fa75ddacfb12d2faf",
+      "bytes": 508,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "pid",
+        "started_jst",
+        "panels",
+        "person_seeds",
+        "target_folds",
+        "tail_fractions",
+        "tail_weights",
+        "regularization",
+        "label_usage"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "sha256": "cdf7532856a67f7aca0727084e03fd5d94a495560d9f405b4383fa3eee612db9",
+      "bytes": 3893,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "sha256": "3c36d23b6e33d6588b3466115035d432bbe13c6948ed781e2412bad144fcc7ee",
+      "bytes": 23613,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "sha256": "7ea739ffc11d199532ad42a154b74acda1d87a57f82d6a2b8aa53d5dfd065532",
+      "bytes": 9838,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "sha256": "3a7c804f67ef24d01701fd13a4577ba2d143a16ac7873742dee2a1bd51d5e351",
+      "bytes": 12874,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "sha256": "82e0536a1ee4506db2c1a0ead58ce41c00d698a4bdeedd5560c3ecc5a6707f38",
+      "bytes": 13503,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "sha256": "09a0ddf8a66dcb4603d6cf905f03e59d59e1ac13d635b791621350a21b4ad26a",
+      "bytes": 10580,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "sha256": "76da7c495801006bb139d9c652330b22adcf729a741f0efff10ce3d6f0c77c59",
+      "bytes": 5991,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833",
+      "bytes": 4208,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "sha256": "f77299090b7b5b3609ba7f8e32e71d2917b06c692df55eed500e41a45711fc93",
+      "bytes": 18255,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "sha256": "78107f8974ba343b1256dc34093d4e5ddef30fec72e78519b5eec294127c7bcc",
+      "bytes": 10547,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "sha256": "a8afd48064355f514a1673c6777315df5975282ca4063d52ba80387328aed3e6",
+      "bytes": 18601,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "sha256": "9f932cf262ede47348d570563f8928ac0891aa3f45caea1a80157e5de4ee71ad",
+      "bytes": 14139,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "sha256": "7b795aeb98567c9c99f11afafe29ccdf5a78c9a8782f77889f80fbd1c38fdc50",
+      "bytes": 24520,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "sha256": "f85daa5f24af45951b943441e9a0db9b4e37a12aca670a3f9f407e5a687d4f51",
+      "bytes": 21090,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "sha256": "9e7d8809603e7f9e923e37673f5b15a9ae6944e18542ca66b79eb10accb8d99d",
+      "bytes": 25510,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "sha256": "a1592d76ebae7da3780fd38288c0c7b3e1a99b90d3409c2637fa14bf758c8494",
+      "bytes": 7875,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度結果/実験方針.json",
+      "sha256": "6f82e589d5f86356a9324fbc0e1c5cd86413b34e09425149cb60c3092e0e4106",
+      "bytes": 779,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "created_jst",
+        "code_sha256",
+        "methods",
+        "perturbation",
+        "cross",
+        "member_labels_used",
+        "selection",
+        "interpretation"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "sha256": "b9a5c2fb41afe90e22a4bcfd8630e8f2990d1f2071735c6f12c5e51b71337896",
+      "bytes": 6123,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "sha256": "73c74b2201bc55cbb99e93e1d4342da5d55d32bdd682a8f893599695db9231ac",
+      "bytes": 13591,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員の較正結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員の較正結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員の較正結果/実験方針.json",
+      "sha256": "f98d2382483f7a693c6a57c49372c6f57877e585c2ab63afc3d2e5be3b389bf0",
+      "bytes": 1001,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "created_jst",
+        "code_sha256",
+        "strengths",
+        "folds",
+        "seed",
+        "prediction",
+        "selection",
+        "primary",
+        "membership_labels_used",
+        "metric_grid_chosen_from_existing_20261008_calibration_grid",
+        "no_mia_score_or_per_team_answer_selection",
+        "source",
+        "numerical_qa"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "sha256": "9e01a8372a8004e816d8b503285e0d9f427cd93cba18c5574d331a589e9431eb",
+      "bytes": 19222,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "sha256": "851c6f8f9438228369e81800749684568916c9e9f14454e7e92e3d47dcac4efd",
+      "bytes": 26171,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "bytes": 7783,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/再現監査.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/再現監査.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/再現監査.py",
+      "sha256": "feee09cc69141a30607fefa85447f45fb4c2a01bd754716ce74999d4ea93ebd7",
+      "bytes": 7302,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "bytes": 3719,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "sha256": "a318fbbebaff39ec76ac83a72dee49b7267aa42c53950b8a093567b96ed3058a",
+      "bytes": 5862,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "sha256": "7e783bc6e89c41eff51be6583842ab306b413385df3d6ae6a26efdc5bf1d5cc9",
+      "bytes": 7954,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/失敗記録/学習初回/実行時.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/失敗記録/学習初回/実行時.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/失敗記録/学習初回/実行時.py",
+      "sha256": "56398d2a41938adc9d9e88e224f7709420f394226a2b923c95a419801a48fe59",
+      "bytes": 5845,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "sha256": "7d737d599eabf9e723f23fcd1282256cde605e56534a14bf2674440b591509d5",
+      "bytes": 3650,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "sha256": "46e6e7d06339dc16b97117579a54e630757e001ae043d35efce7f4c175811c7f",
+      "bytes": 5014,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/実験方針.json",
+      "sha256": "0d150cb9e39fe5dd1aad2e2b867d383b2994dc73643cc5eb144b0c759dff80d5",
+      "bytes": 1772,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "authorization",
+        "deadline_jst",
+        "scope",
+        "primary_evaluation",
+        "reference",
+        "secondary",
+        "training",
+        "selection_limit",
+        "phases",
+        "environment"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8",
+      "bytes": 3947,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "sha256": "007b5551a960b66205f2f9ff7059443678f62bb39dbb6bd04659695324ba8609",
+      "bytes": 24022,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/広い集団への非会員較正結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/広い集団への非会員較正結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/広い集団への非会員較正結果/実験方針.json",
+      "sha256": "a258dcd0bac507e354207c4936af09c521a303d6d39a8b51e8094b61a4278f6e",
+      "bytes": 1526,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "created_jst",
+        "configs",
+        "inner_folds",
+        "seed",
+        "code_sha256",
+        "selection",
+        "validation",
+        "aggregation",
+        "preliminary_selection_excludes_targets",
+        "membership_labels_used",
+        "mia_score_selection",
+        "numerical_qa"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "sha256": "fa0e08a5453bb4efbffba91769922830ffb72bdda9a4cdf0f9151c8904139db1",
+      "bytes": 20977,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "sha256": "cdf7532856a67f7aca0727084e03fd5d94a495560d9f405b4383fa3eee612db9",
+      "bytes": 3893,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Aの有限標本p値を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Aの有限標本p値を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Aの有限標本p値を確認.py",
+      "sha256": "3c36d23b6e33d6588b3466115035d432bbe13c6948ed781e2412bad144fcc7ee",
+      "bytes": 23613,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "sha256": "7ea739ffc11d199532ad42a154b74acda1d87a57f82d6a2b8aa53d5dfd065532",
+      "bytes": 9838,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "sha256": "82e0536a1ee4506db2c1a0ead58ce41c00d698a4bdeedd5560c3ecc5a6707f38",
+      "bytes": 13503,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "sha256": "09a0ddf8a66dcb4603d6cf905f03e59d59e1ac13d635b791621350a21b4ad26a",
+      "bytes": 10580,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "sha256": "76da7c495801006bb139d9c652330b22adcf729a741f0efff10ce3d6f0c77c59",
+      "bytes": 5991,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833",
+      "bytes": 4208,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "sha256": "f77299090b7b5b3609ba7f8e32e71d2917b06c692df55eed500e41a45711fc93",
+      "bytes": 18255,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "sha256": "78107f8974ba343b1256dc34093d4e5ddef30fec72e78519b5eec294127c7bcc",
+      "bytes": 10547,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "sha256": "a8afd48064355f514a1673c6777315df5975282ca4063d52ba80387328aed3e6",
+      "bytes": 18601,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との高次属性一致.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との高次属性一致.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との高次属性一致.py",
+      "sha256": "9f932cf262ede47348d570563f8928ac0891aa3f45caea1a80157e5de4ee71ad",
+      "bytes": 14139,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "sha256": "7b795aeb98567c9c99f11afafe29ccdf5a78c9a8782f77889f80fbd1c38fdc50",
+      "bytes": 24520,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "sha256": "f85daa5f24af45951b943441e9a0db9b4e37a12aca670a3f9f407e5a687d4f51",
+      "bytes": 21090,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "sha256": "9e7d8809603e7f9e923e37673f5b15a9ae6944e18542ca66b79eb10accb8d99d",
+      "bytes": 25510,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "sha256": "a1592d76ebae7da3780fd38288c0c7b3e1a99b90d3409c2637fa14bf758c8494",
+      "bytes": 7875,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開較正の局所標本数を集計.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開較正の局所標本数を集計.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開較正の局所標本数を集計.py",
+      "sha256": "b9a5c2fb41afe90e22a4bcfd8630e8f2990d1f2071735c6f12c5e51b71337896",
+      "bytes": 6123,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "sha256": "73c74b2201bc55cbb99e93e1d4342da5d55d32bdd682a8f893599695db9231ac",
+      "bytes": 13591,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有GaussianのA分割seed感度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有GaussianのA分割seed感度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有GaussianのA分割seed感度.py",
+      "sha256": "9e01a8372a8004e816d8b503285e0d9f427cd93cba18c5574d331a589e9431eb",
+      "bytes": 19222,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "sha256": "851c6f8f9438228369e81800749684568916c9e9f14454e7e92e3d47dcac4efd",
+      "bytes": 26171,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c",
+      "bytes": 7783,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/分布を揃えた距離の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/分布を揃えた距離の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/分布を揃えた距離の探索.py",
+      "sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377",
+      "bytes": 3719,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/局所支持区間の密度比.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/局所支持区間の密度比.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/局所支持区間の密度比.py",
+      "sha256": "007b5551a960b66205f2f9ff7059443678f62bb39dbb6bd04659695324ba8609",
+      "bytes": 24022,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の再評価.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の再評価.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の再評価.py",
+      "sha256": "4a2eae7c37101234d019330148bcf0c6f02e7205d9ec7fd0e52b6af328b9ef73",
+      "bytes": 3930,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の学習を18対象で確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の学習を18対象で確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の学習を18対象で確認.py",
+      "sha256": "30dd8e0f5f895fa24f19e1a140dbe95caa492e1935fcd3bb0f5a531cd5fb3ebf",
+      "bytes": 6837,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/有限p値の整数解像度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/有限p値の整数解像度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/有限p値の整数解像度.py",
+      "sha256": "509218564d2754fc469a098d19f7e4042d30a59deb984070e410c1ba143659c0",
+      "bytes": 14042,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/本戦公開特徴の集約表を作る.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/本戦公開特徴の集約表を作る.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/本戦公開特徴の集約表を作る.py",
+      "sha256": "c1c19ac110a1755e65e5467fdf25d2a3e4885483e936b378014b5132bfe72174",
+      "bytes": 6433,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/混合分布と局所密度の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/混合分布と局所密度の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/混合分布と局所密度の探索.py",
+      "sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083",
+      "bytes": 6838,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/理想CDF縮約の条件付き尾率を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/理想CDF縮約の条件付き尾率を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/理想CDF縮約の条件付き尾率を確認.py",
+      "sha256": "edf690aeb6a14651181c6c4f518194f3e13acb2ba28619d8ba949d9ebefeb0ab",
+      "bytes": 17848,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/直接密度比の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/直接密度比の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/直接密度比の探索.py",
+      "sha256": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c",
+      "bytes": 3307,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/縮約係数と局所支持の図.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/縮約係数と局所支持の図.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/縮約係数と局所支持の図.py",
+      "sha256": "d92502d0c0bd283aba0334874882c61e0120813f5deccecc57a5af23074c45ea",
+      "bytes": 3620,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "sha256": "22db33b0df41b0de7d93cc00369fb2fc7dc6cd4258e7fc9f642539e4e46fd2fe",
+      "bytes": 7534,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "sha256": "ca42e5d588fbee92a186dbad5f76df34be6eb900f34cc5c70e3318fcf7352aa1",
+      "bytes": 8708,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "bytes": 9105,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "sha256": "d14798baecdb6fece5d006ac2b9a6d62ece134bc706c0db3a6ee179759f2e17b",
+      "bytes": 20314,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/階層ヒストグラムの探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/階層ヒストグラムの探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/階層ヒストグラムの探索.py",
+      "sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a",
+      "bytes": 3740,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "sha256": "93ee3bcc8b0fc49c453ad4c91e74b11d9932948f018c7cb51ecd000992fc17b1",
+      "bytes": 29314,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "sha256": "1298c3094bc3d32c232e13c0918219727e0a0ab4b4b3e798f07368f2eb2be1b0",
+      "bytes": 7254,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "sha256": "94fb013481832407a6c19aadb08b2a4ca15641fd0e794787f49e621b28ceeb8e",
+      "bytes": 14632,
+      "role": "primary_exploration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "sha256": "96a2aefe308980e25d453de756f4afd9f003b9d40517fd52b2afc47945e05b49",
+      "bytes": 26934,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の再評価.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の再評価.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の再評価.py",
+      "sha256": "4a2eae7c37101234d019330148bcf0c6f02e7205d9ec7fd0e52b6af328b9ef73",
+      "bytes": 3930,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習を18対象で確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習を18対象で確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習を18対象で確認.py",
+      "sha256": "30dd8e0f5f895fa24f19e1a140dbe95caa492e1935fcd3bb0f5a531cd5fb3ebf",
+      "bytes": 6837,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/有限p値の整数解像度.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/有限p値の整数解像度.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/有限p値の整数解像度.py",
+      "sha256": "509218564d2754fc469a098d19f7e4042d30a59deb984070e410c1ba143659c0",
+      "bytes": 14042,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦で順位を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦で順位を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦で順位を確認.py",
+      "sha256": "3e32065bfba374466065dc808fcb576d55f2fdcd9a678b4d22f6c0e4b8874240",
+      "bytes": 5457,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦公開特徴の集約表を作る.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦公開特徴の集約表を作る.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦公開特徴の集約表を作る.py",
+      "sha256": "c1c19ac110a1755e65e5467fdf25d2a3e4885483e936b378014b5132bfe72174",
+      "bytes": 6433,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083",
+      "bytes": 6838,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴の再現確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴の再現確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴の再現確認.py",
+      "sha256": "c5abf708a6f608d99db0abe7ff2ee4a64ac315d1c50957ffdb4bc67dc8587fc9",
+      "bytes": 2683,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "sha256": "94695e7e4f6e7164e7605c749e5e795b9b4882809e754ce37b61c772414053ee",
+      "bytes": 6532,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/理想CDF縮約の条件付き尾率を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/理想CDF縮約の条件付き尾率を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/理想CDF縮約の条件付き尾率を確認.py",
+      "sha256": "edf690aeb6a14651181c6c4f518194f3e13acb2ba28619d8ba949d9ebefeb0ab",
+      "bytes": 17848,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "sha256": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c",
+      "bytes": 3307,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "sha256": "d92502d0c0bd283aba0334874882c61e0120813f5deccecc57a5af23074c45ea",
+      "bytes": 3620,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "sha256": "b9fddb105ac89cf0e2b6fa64a352fbbc55f8aa3de9d514102f4a4998fbef0fe1",
+      "bytes": 4771,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "sha256": "80a06e1045cf5c4d513846a81ca101c28917449b155ff83b2b9816ce147720b1",
+      "bytes": 7936,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "sha256": "3483c2271d0a95ee21fa23f132d4c28c17f0429d8aba12f1473e3bf399705e86",
+      "bytes": 1031,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の学習結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の学習結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の学習結果/実験方針.json",
+      "sha256": "655ccff150007409a8690432ade18b58aa0bdfd63658c113666924c9b75b6664",
+      "bytes": 4019,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "pid",
+        "started_jst",
+        "conditions",
+        "deadline_jst",
+        "code_sha256",
+        "training_labels_exclude",
+        "person_folds",
+        "target_folds",
+        "seeds",
+        "regularization",
+        "interpretation"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/実験方針.json",
+      "sha256": "d836fc288ea46745592eafd34d28b649cc5641d511b0e6338a5aab450f65352b",
+      "bytes": 782,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "pid",
+        "training_groups",
+        "panels",
+        "C",
+        "person_seeds",
+        "target_folds",
+        "interpretation"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "sha256": "22db33b0df41b0de7d93cc00369fb2fc7dc6cd4258e7fc9f642539e4e46fd2fe",
+      "bytes": 7534,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/実験方針.json",
+      "sha256": "f2b5c79cdb220ad1980a53a3b28677b6e1b41f1ab2931192a2fee4d8efe2a1ba",
+      "bytes": 514,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "pid",
+        "C",
+        "person_seeds",
+        "target_split",
+        "panels",
+        "contexts",
+        "weighting",
+        "label_usage"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "sha256": "ca42e5d588fbee92a186dbad5f76df34be6eb900f34cc5c70e3318fcf7352aa1",
+      "bytes": 8708,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e",
+      "bytes": 9105,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "sha256": "d14798baecdb6fece5d006ac2b9a6d62ece134bc706c0db3a6ee179759f2e17b",
+      "bytes": 20314,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a",
+      "bytes": 3740,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "sha256": "93ee3bcc8b0fc49c453ad4c91e74b11d9932948f018c7cb51ecd000992fc17b1",
+      "bytes": 29314,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "sha256": "1298c3094bc3d32c232e13c0918219727e0a0ab4b4b3e798f07368f2eb2be1b0",
+      "bytes": 7254,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "sha256": "94fb013481832407a6c19aadb08b2a4ca15641fd0e794787f49e621b28ceeb8e",
+      "bytes": 14632,
+      "role": "primary_exploration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "sha256": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946",
+      "bytes": 19380,
+      "role": "primary_calibration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/実験方針.json",
+      "sha256": "f14196f3abb0d6f4a8a118c7350e75e500ecb2a23d7996d460be72092ac95279",
+      "bytes": 1905,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "date_jst",
+        "authorization",
+        "scope",
+        "strength_grid",
+        "families",
+        "hierarchical_parent_strengths",
+        "hierarchical_local_strengths",
+        "adaptive_base_strengths",
+        "adaptive_min_support",
+        "adaptive_rule",
+        "age_groups",
+        "cross_target_alpha",
+        "reference_method",
+        "primary_evaluation",
+        "sensitivity",
+        "fprs",
+        "selection_diagnostic",
+        "truth_separation",
+        "limitations"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "sha256": "ab17ee1e250eecae973be6d489db1a0368eb2f75b92434ec4f3b5a1ca8dfa0f1",
+      "bytes": 7682,
+      "role": "primary_calibration_snapshot",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/実験方針.json",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/実験方針.json",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/実験方針.json",
+      "sha256": "eb9d52d6438879e7ff6f0f3f576325b6877a1ba9c155c9697f809f27ba00ef42",
+      "bytes": 1092,
+      "role": "calculation_configuration",
+      "top_level_keys": [
+        "date_jst",
+        "scope",
+        "hypothesis",
+        "county_sex_strengths",
+        "sex_age_strengths",
+        "age_weights",
+        "formula",
+        "new_methods",
+        "comparison",
+        "truth_separation",
+        "submission_files"
+      ],
+      "json_review": "calculation protocol/grid/config; no credentials or person-level records"
+    },
+    {
+      "original_relative_path": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/集計と図.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/集計と図.py",
+      "bundle_relative_path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/集計と図.py",
+      "sha256": "05ff4c6ee47af2a7e9c0b81582ae19675312a32ed642e981e152d825ac9f3c93",
+      "bytes": 5849,
+      "role": "primary_calibration",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/requirements-kit.txt",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/requirements-kit.txt",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/requirements-kit.txt",
+      "sha256": "8dbd72203ef5dd566550f8955f667791ca873068c9c1c28efb0d83db1a8433d1",
+      "bytes": 996,
+      "role": "original_dependency_definition"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py",
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177",
+      "bytes": 109,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/__init__.py",
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc",
+      "bytes": 115,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/aia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/aia.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/aia.py",
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a",
+      "bytes": 4394,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/mia.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/mia.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/mia.py",
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf",
+      "bytes": 2393,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py",
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787",
+      "bytes": 53,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py",
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f",
+      "bytes": 360,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py",
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e",
+      "bytes": 292,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9",
+      "bytes": 13316,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/__init__.py",
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff",
+      "bytes": 681,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/perturb.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/perturb.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/perturb.py",
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b",
+      "bytes": 2196,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/synth.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/synth.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/synth.py",
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f",
+      "bytes": 10644,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/__init__.py",
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5",
+      "bytes": 91,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f",
+      "bytes": 389,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "sha256": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec",
+      "bytes": 16015,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "bytes": 24293,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py",
+      "sha256": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d",
+      "bytes": 10902,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+      "sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+      "bytes": 25603,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py",
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e",
+      "bytes": 84,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py",
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47",
+      "bytes": 1122,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/__init__.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/__init__.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/__init__.py",
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802",
+      "bytes": 55,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+      "bytes": 10057,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+      "bytes": 3121,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py",
+      "bundle_relative_path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py",
+      "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932",
+      "bytes": 58325,
+      "role": "official_kit_code_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    }
+  ],
+  "catalog_index": "catalog/catalog_index.json",
+  "dependency_graph": "dependency_graph.json",
+  "environment": "environment.json",
+  "missing_files": "missing_files.json",
+  "verification_scope": "Byte-preserving SHA256 comparison, JSON parsing, Python static syntax compilation, catalog round-trip and credential-pattern screening. No functional MIA run or TPR validation in this recovery."
+}

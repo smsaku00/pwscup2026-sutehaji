@@ -1,0 +1,842 @@
+{
+  "files": [
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "公開較正の局所標本数結果/集団別支持数の分布.csv",
+        "実行記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "共通",
+        "特徴を外して学習を確認"
+      ],
+      "python_path_literals": [
+        "特徴を外して学習を確認.py",
+        "背景キャッシュで特徴除去を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "full/特徴と順位.npz",
+        "交差検証分割.csv",
+        "全条件の比較.csv",
+        "内部順位キャッシュ.npz",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "特徴と順位.npz",
+        "進捗.json",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "zoneinfo",
+        "代表特徴を計算",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "代表特徴の再現結果/代表特徴.npz",
+        "実行記録.json",
+        "実験方針.json",
+        "対象別TPR.csv",
+        "特徴と順位.npz",
+        "進捗.json",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "sys",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "背景変更で学習を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.preprocessing",
+        "time",
+        "共通",
+        "特徴を外して学習を確認",
+        "背景キャッシュで特徴除去を確認"
+      ],
+      "python_path_literals": [
+        "特徴を外して学習を確認.py",
+        "背景キャッシュで特徴除去を確認.py",
+        "複数ビューの対象保留確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "交差検証分割.csv",
+        "全条件の比較.csv",
+        "内部順位キャッシュ.npz",
+        "収束の確認.csv",
+        "学習係数.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "密度比_属性乱数結果/内部順位キャッシュ.npz",
+        "対象別TPR.csv",
+        "方式一覧.csv",
+        "特徴と順位.npz",
+        "進捗.json",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.preprocessing",
+        "time",
+        "共通",
+        "特徴を外して学習を確認",
+        "背景キャッシュで特徴除去を確認"
+      ],
+      "python_path_literals": [
+        "特徴を外して学習を確認.py",
+        "背景キャッシュで特徴除去を確認.py",
+        "複数背景と乱数で学習.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "交差検証分割.csv",
+        "全条件の比較.csv",
+        "内部順位キャッシュ.npz",
+        "学習係数.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "密度比_属性乱数結果/内部順位キャッシュ.npz",
+        "対象別TPR.csv",
+        "方式一覧.csv",
+        "本戦の内部順位.npz",
+        "本戦の順位診断結果/内部特徴と順位.npz",
+        "特徴と順位.npz",
+        "進捗.json",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "itertools",
+        "numpy",
+        "pathlib",
+        "scipy.linalg",
+        "scipy.spatial.distance",
+        "scipy.special",
+        "sklearn.covariance",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "基準再現.json",
+        "結果/対象別TPR.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "bisect",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開課題の除外に対する順位感度.py",
+        "共通.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "B順位対照.csv",
+        "C_*.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "result.txt",
+        "フェーズ別の通常閾値超過.csv",
+        "候補と公開課題の生スコア.npz",
+        "内部順位だけ.npz",
+        "実行記録.json",
+        "実行記録.json自身を除く。",
+        "対象別の通常閾値超過.csv",
+        "対象所有者別の通常閾値超過.csv",
+        "所有者別の通常閾値超過.csv",
+        "方法.json",
+        "独立順位検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "attack_score.py",
+        "公開背景の分割較正.py",
+        "公開非会員だけで較正を選ぶ.py",
+        "共通.py",
+        "分析.py",
+        "非会員を使う順位較正の検討.py",
+        "非会員較正の広い集団を保留検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "A_bg.csv",
+        "Arefの固定bin境界.json",
+        "B_self.csv",
+        "C_*.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "Q所有者等重みの診断パネル.csv",
+        "batchとsingleの生スコア検証.csv",
+        "fold別の課題所有者保留.csv",
+        "result.txt",
+        "事前固定条件.json",
+        "二fold集約の課題所有者保留.csv",
+        "固定三形の非会員診断.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "対象別の固定三形診断.csv",
+        "木構造とPMF正規化.csv",
+        "独立形との上位12変化.csv",
+        "経験pairMIと木の辺.csv",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開非会員だけで較正を選ぶ.py",
+        "共通.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "候補と公開課題の生スコア.npz",
+        "候補の較正根拠の範囲.csv",
+        "内部順位だけ.npz",
+        "固定条件の集計.csv",
+        "実行記録.json",
+        "課題所有者を保留した較正.csv",
+        "選択結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開非会員だけで較正を選ぶ.py",
+        "共通.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "候補と公開課題の生スコア.npz",
+        "全公開非会員の内側保留.csv",
+        "内部順位だけ.npz",
+        "基準との上位順位差.csv",
+        "外側保留ごとの内側選択.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "課題所有者の外側保留.csv",
+        "選択結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "pwscup2026.scoring.attack_score",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "分析.py",
+        "非会員を使う順位較正の検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+        "pool_ids_5.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "対象を外した方式選択.csv",
+        "対象別TPR.csv",
+        "本戦順位の変化.csv",
+        "背景条件.csv",
+        "較正の標本数.csv",
+        "集約比較.csv",
+        "非会員較正の感度結果/較正感度_対象別比較.csv",
+        "頑健性比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "分析.py",
+        "非会員を使う順位較正の検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "全89方式_対象を外した方式選択.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "対象別TPR.csv",
+        "本戦順位の変化.csv",
+        "結果/対象別TPR.csv",
+        "集約比較.csv",
+        "頑健性比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/集計と図.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "matplotlib",
+        "matplotlib.pyplot",
+        "matplotlib.ticker",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "主要候補の比較.csv",
+        "全89方式_頑健性比較.csv",
+        "結果/頑健性比較.csv",
+        "追加混合/結果/頑健性比較.csv",
+        "集計記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/aia.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/mia.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py",
+      "imports": [
+        "__future__",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py",
+      "imports": [
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "imports": [
+        ".",
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/__init__.py",
+      "imports": [
+        ".perturb",
+        ".synth",
+        "__future__"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/perturb.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/synth.py",
+      "imports": [
+        "..common",
+        "__future__",
+        "lifelines",
+        "numpy",
+        "pandas",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "CodaBench 採点の配線。\n\n- `scoring_io`: 提出frames＋reference_data＋cfg → スコア（純関数寄り。既存 scoring/ 純関数の薄ラッパ）。\n- `run`: CodaBench `$input`/`$output` 契約のI/Oアダプタ（層1・層2検証→採点→scores.json）。\n\n同一採点コードを CodaBench ライブ採点と starter kit 自己チェックの両方で使う。\n"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "imports": [
+        ".",
+        "...scoring.result",
+        "..validate",
+        "__future__",
+        "html",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "</b> のものとして採点しました（token.txt から判定）。配布物の README に書かれた自分のチームIDと違う場合は事務局へ連絡してください。</p>",
+        "scores.json",
+        "scoring_config.yaml",
+        "token.txt が登録されているトークンと一致しません。配布物に同梱された token.txt をそのまま提出物に入れてください。",
+        "tokens.csv",
+        "採点純関数の返り値を、リーダーボード(score_1〜score_6)と正式名スコアの両方へ写像する。\n\n    NaN/inf はリーダーボードを壊すので0に潰す（棄権・退化入力の保険）。\n    named_keys に None が入っている列は scores.json に出さない＝LBでは空欄になる。\n    ",
+        "練習フェーズ: 提出が C.csv なら加工採点、F_mia/F_aia なら攻撃採点（自動判定）。"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "imports": [
+        "...attack",
+        "...common.submission_schema",
+        "...scoring",
+        "...scoring.result",
+        "...scoring.utility",
+        "__future__",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".json",
+        "AIAロングを採点する。ターゲット k ごとに aia_truth_k で member/control に割り、\n    score_aia を取り、ターゲット平均を power とする。\n\n    本番モード（`team_id` が解決できたとき）は**提出者自身の標的を平均から外す**。\n    条文（ルールブック §攻撃の測り方）が母数を「自分のチーム以外の全チーム」と定めているため。\n    検証器は自列入りを受理する（提出物を作り直させない）ので、除外はここで行う。\n\n    ★2026-09-08 追加（§2.5）: AIAの帰無の床を**攻撃力側にも**引く。標的kごとに\n    `score_aia = clip(score_aia - aia_floor[k], 0, 1)` を適用してから平均する（匿名性側の\n    `aggregate_anonymity(aia_floor=...)` と対称）。`truth_dir/aia_floor.csv` が無いときは\n    床0＝従来と同じ挙動（後方一致）。\n    ",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_ref.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "NaN/inf を0に潰す（scores.json は NaN を書けない・LBが壊れる）。",
+        "`tokens.csv`（列 `token,team_id`）を token→team_id で読む。無ければ空辞書。",
+        "aia_floor.csv",
+        "pool_ids_attacker.csv",
+        "pool_ids_practice.csv",
+        "pool_ids_ref.csv",
+        "tokens.csv",
+        "truth_dir の `aia_floor.csv`（team_id,aia_floor）を読む。無ければ空＝床0扱い。\n\n    この表は `tokens.csv` と同じ側（事務局の真値ディレクトリ）にしか\n    無い＝参加者の配布物には入らないので全体表が漏れない（09-07の開示方式そのまま）。\n    ",
+        "truth_dir の `utility_ref[_k].json` から `UtilityReference` を復元する。\n\n    mu/sigma/b_is_rare は配列化、band/scalar はそのまま。事務局が B から計算した値を\n    移送しただけで、採点時に再計算はしない。\n\n    ★事務局側（truth_dir）の JSON は `b_is_rare` を**入れて**出す（`export.utility_reference_json(...,\n    include_b_is_rare=True)`）。参加者配布は null で、参加者は同じ値を `B_self.csv` の\n    `is_rare` 列から供給する＝真値の配布口を1つに絞る設計（ルールブック §5.4）。\n    ",
+        "utility_ref.json",
+        "加工採点で**提出者ごとに変わる**3ファイル (B, utility_ref, pool_ids) のパス。\n\n    練習は固定名、本番はチーム番号つき。`A_bg.csv` と参照攻撃者（`B_ref.csv` /\n    `pool_ids_ref.csv`）は全チーム共通なので、ここでは扱わない。\n    ",
+        "攻撃提出（`F_mia.csv`＋`F_aia.csv`）を採点する（攻撃タスク）。\n\n    1提出で MIA力・AIA力の2スコア列を返す（攻撃は1提出口）。\n\n    `team_id` は**攻撃者自身**の解決に使う（`F_mia` の行キー＝自分のコホートの record_id）。\n    対象側の `pool_ids_{k}.csv` / `aia_truth_{k}.csv` は元から k 付きなので変わらない。\n    ",
+        "攻撃者コホート P の record_id→pool_id/is_rare（F_mia の行キー照合・rare_mask 用）。\n\n    練習は固定名 `pool_ids_attacker.csv`。本番は提出者自身のコホート＝`pool_ids_{team_id}.csv`\n    （対象側と同じファイルを兼用できる＝truth_dir に攻撃者専用のコピーを置かなくてよい）。\n    ",
+        "真値ディレクトリが本番レイアウト（チーム別参照＋`tokens.csv`）か。",
+        "防御提出 `C.csv` を採点する（加工タスク）。\n\n    - `utility` = score_utility(C, 提出者のB, utility_ref, cfg) の集約スカラー。\n    - `protection` = 1 − 参照攻撃器（overlap_mia）を C にぶつけた membership 露出（score_mia）。\n      候補=`B_ref`、真値=B_ref の pool_id が**提出者の** pool 集合に入るか、希少 worst-case 付き。\n\n    `team_id=None` は練習モード（固定ファイル名）。本番は `token.txt` から解決した team_id が\n    渡され、提出者ごとに参照を選ぶ。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py",
+      "imports": [
+        ".",
+        "..common.submission_schema",
+        "..scoring.result",
+        "..scoring.utility",
+        ".codabench.scoring_io",
+        "__future__",
+        "argparse",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "yaml",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "         配布物の B_self.csv を --dist のフォルダに置くと CodaBench と同じ点数になります。",
+        "  [注意] B_self.csv（真値 is_rare 付き）が無いため U_rare は近似値です。",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_self.csv",
+        "B_self.csv も B_practice.csv も見つかりません: ",
+        "C.csv",
+        "C.csv または 提出zip のパス",
+        "scoring_config.yaml",
+        "utility_ref.json",
+        "zipの中に C.csv がありません（自己採点は加工提出のみ）: ",
+        "提出物を読む。`C.csv` そのものでも、提出zip（直下フラット）でも受ける。",
+        "配布物から (B, UtilityReference, cfg, info) を読む。info は表示用のメタ（B_selfの有無など）。\n\n    `b_is_rare` は **B_self.csv の is_rare 列**から供給する（真値の配布口を1つに絞る）。\n    utility_ref.json 側の b_is_rare は参加者配布では null。サーバ側 reference_data を `--dist` に\n    渡した場合は JSON 側に真値が入っているのでそれを使う（事務局が同じCLIで検算できる）。\n    "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+      "imports": [
+        "..common",
+        "..common.submission_schema",
+        "..rare",
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "io",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "re",
+        "sys",
+        "zipfile"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "B_practice.csv",
+        "C.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "`token.txt` が登録済みトークンかを検査する（本番の reference_data に対してのみ効く）。\n\n    `dist_dir` に `tokens.csv`（列 `token,team_id`）があれば本番参照データ＝一致を要求する。\n    無ければ練習・参加者手元なので**何も検査しない**（参加者は tokens.csv を持たない）。\n\n    未知のトークンでの提出は**提出回数を消費しません**。CodaBench 側で \"Failed\" に\n    する必要があるため、採点ではなく**検証で落とします**（`run._run` が非ゼロ終了します）。\n    ルールブック §5.5 と同じ扱いです。★正しいトークンが何かは示しません\n    （総当たりの手掛かりにしないため）。\n    ",
+        "aia_challenge_*.csv",
+        "kit_config.yaml",
+        "mia_columns.json",
+        "pool_ids_attacker.csv",
+        "schema.json",
+        "token.txt",
+        "token.txt: 1行でない（非空",
+        "token.txt: UTF-8でデコードできない",
+        "token.txt: 形式不一致（",
+        "token.txt: 登録されているトークンと一致しません（配布物に同梱された token.txt をそのまま入れてください）",
+        "tokens.csv",
+        "採点・検証パラメータ（既定＝パッケージ同梱の kit_config.yaml）。別のファイルを指定することもできる。",
+        "提出種を判定できない（C.csv / F_mia.csv+F_aia.csv のいずれも直下に無い）: "
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "imports": [
+        ".result",
+        "__future__",
+        "numpy"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "enum",
+        "math"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py",
+      "imports": [
+        "..common",
+        "..rare",
+        ".result",
+        "__future__",
+        "dataclasses",
+        "lifelines",
+        "lifelines.exceptions",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.metrics",
+        "sklearn.model_selection",
+        "statsmodels.api",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scan": "Static AST import/string inventory; no source imports or experiments. Strings may include output files. Static closure does not establish full runtime reproducibility.",
+  "parts": [
+    {
+      "path": "dependency_graph_parts/imports_001_040.json",
+      "bytes": 23326,
+      "sha256": "cf7aafde65889c2628dc71aa8929106bc16c9f27b0b8f9e89f06b138eb13f03a"
+    },
+    {
+      "path": "dependency_graph_parts/imports_041_080.json",
+      "bytes": 24894,
+      "sha256": "8792962903261c219aecbdfe6c89829442a6b3152a799bc478c78d1503c7bc02"
+    },
+    {
+      "path": "dependency_graph_parts/imports_081_120.json",
+      "bytes": 41134,
+      "sha256": "d75d144959d6dd5bc33329c36c0f2fe2656e844e25d44c58aa92b4b43b7a22ee"
+    },
+    {
+      "path": "dependency_graph_parts/imports_121_160.json",
+      "bytes": 41261,
+      "sha256": "968c6b5da973a4e4aabe29a3e4cc8886d69081d42885e138aa672670ef33a6f7"
+    },
+    {
+      "path": "dependency_graph_parts/imports_161_200.json",
+      "bytes": 51389,
+      "sha256": "65937c559a897434142abf3c657ba31285e9d1bc688bfe76fac8c4d59bb1e585"
+    },
+    {
+      "path": "dependency_graph_parts/imports_201_238.json",
+      "bytes": 30891,
+      "sha256": "a47da90cfab9b464505971cd66494017e35a7a47b84336bff84902db03bc1f50"
+    },
+    {
+      "path": "dependency_graph_parts/literal_resolution_candidates.json",
+      "bytes": 109531,
+      "sha256": "da7446aea4738500324638d86bf5f7cde67f629e172e0f7ec954fbb06d979995"
+    }
+  ],
+  "files": 238
+}

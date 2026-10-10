@@ -1,0 +1,29 @@
+{
+  "created_jst": "2026-10-08T06:24:43.863980+09:00",
+  "code_sha256": "a1592d76ebae7da3780fd38288c0c7b3e1a99b90d3409c2637fa14bf758c8494",
+  "methods": [
+    {
+      "name": "flat500",
+      "local": 500,
+      "parent": null,
+      "parent_strength": null
+    },
+    {
+      "name": "flat300",
+      "local": 300,
+      "parent": null,
+      "parent_strength": null
+    },
+    {
+      "name": "county300_sex_age100",
+      "local": 300,
+      "parent": "sex_age",
+      "parent_strength": 100
+    }
+  ],
+  "perturbation": "Delete every public Q owner once; additionally delete owners1,2 together in prelim.",
+  "cross": 0.1,
+  "member_labels_used": false,
+  "selection": false,
+  "interpretation": "Source-composition stress, not independent held-out membership validation."
+}

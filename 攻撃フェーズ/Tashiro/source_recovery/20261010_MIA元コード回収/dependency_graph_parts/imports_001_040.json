@@ -1,0 +1,867 @@
+{
+  "files": [
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py",
+      "imports": [
+        "json",
+        "numpy",
+        "pandas",
+        "scipy.spatial"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/Users/taisei1105/pws2026-local/work/aia2mia/bench.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work/aia2mia/bench.csv",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/anneal_defense.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "calibration",
+        "dataclasses",
+        "defense",
+        "fastcox",
+        "harness",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "typing",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "B_self.csv",
+        "safe base C.csv; omit to build one from A_bg",
+        "schema.json",
+        "scoring_config.yaml",
+        "utility_ref.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19/mia.py",
+      "imports": [
+        "attacks",
+        "harness",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn.neighbors",
+        "submit_audit",
+        "sys",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/Users/taisei1105/pws2026-local/work/atk19/mia.json"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work",
+        "/Users/taisei1105/pws2026-local/work/atk19/mia.json",
+        "/Users/taisei1105/pws2026-local/work/data_prelim_team05",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py",
+      "imports": [
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.neighbors",
+        "submit_audit",
+        "sys"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work",
+        "/Users/taisei1105/pws2026-local/work/data_prelim_team05",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629/p6_mia.py",
+      "imports": [
+        "attacks",
+        "audit",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn.metrics",
+        "sklearn.neighbors",
+        "submit_audit",
+        "sys"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "imports": [
+        "attacks",
+        "audit",
+        "json",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.neighbors",
+        "sys"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "mia_auc.json"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work",
+        "/Users/taisei1105/pws2026-local/work/data_prelim_team05/",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/PWSCup2026_prelim_attack/"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "imports": [
+        "attacks",
+        "json",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.neighbors",
+        "sys"
+      ],
+      "python_path_literals": [
+        "mia.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "mia_auc2.json"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/work",
+        "sys.path.insert(0,\"/Users/taisei1105/pws2026-local/work\")"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/attacks.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.neighbors"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/audit.py",
+      "imports": [
+        "__future__",
+        "attacks",
+        "numpy",
+        "pandas",
+        "sklearn.metrics"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "defense",
+        "harness",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "typing"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.optimize",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sklearn.neighbors",
+        "typing"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "B_self.csv",
+        "capacity26_candidates.csv",
+        "confirmed.json",
+        "cross_c_consensus_results.json",
+        "fingerprint.json",
+        "mia_columns.json",
+        "pairwise_c_distances.csv",
+        "top40_by_method.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/defense.py",
+      "imports": [
+        "__future__",
+        "lifelines",
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.neighbors",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/fastcox.py",
+      "imports": [
+        "__future__",
+        "numpy"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/harness.py",
+      "imports": [
+        "__future__",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pwscup2026.attack",
+        "pwscup2026.common",
+        "pwscup2026.kit.codabench.scoring_io",
+        "pwscup2026.rare",
+        "pwscup2026.scoring",
+        "pwscup2026.scoring.result",
+        "pwscup2026.scoring.utility",
+        "sys",
+        "yaml"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "B_self.csv",
+        "scoring_config.yaml",
+        "utility_ref.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/mia_redteam.py",
+      "imports": [
+        "__future__",
+        "anneal_defense",
+        "argparse",
+        "attacks",
+        "calibration",
+        "collections.abc",
+        "copy",
+        "defense",
+        "harness",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "run_defense",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.neighbors",
+        "third_defense",
+        "time",
+        "typing",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "C_candidate.csv",
+        "methods/C_copula.csv",
+        "methods/C_sa.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/outcome_mia_redteam.py",
+      "imports": [
+        "__future__",
+        "anneal_defense",
+        "argparse",
+        "attacks",
+        "calibration",
+        "dataclasses",
+        "defense",
+        "harness",
+        "hashlib",
+        "json",
+        "mia_redteam",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sklearn.ensemble",
+        "sklearn.neighbors",
+        "third_defense",
+        "time",
+        "typing",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/run_defense.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "defense",
+        "fastcox",
+        "harness",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "B_self.csv",
+        "B_self.csv/A_bg.csv等をまとめた配布データディレクトリ（必須）",
+        "C.csv",
+        "schema.json",
+        "scoring_config.yaml",
+        "search_log.json",
+        "utility_ref.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/submit_audit.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "attacks",
+        "audit",
+        "harness",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.neighbors",
+        "sys"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "C.csv のパス",
+        "report.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "calibration",
+        "defense",
+        "fastcox",
+        "harness",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.covariance",
+        "sklearn.neighbors",
+        "typing",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".json",
+        "A_bg.csv",
+        "B_self.csv",
+        "schema.json",
+        "scoring_config.yaml",
+        "utility_ref.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
+      "imports": [
+        "__future__",
+        "attacks",
+        "dataclasses",
+        "hashlib",
+        "math",
+        "mia_redteam",
+        "numpy",
+        "outcome_mia_redteam",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.neighbors",
+        "typing",
+        "whitebox_audit"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "audit",
+        "defense",
+        "harness",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sklearn.neighbors",
+        "third_defense",
+        "typing"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "C_candidate.csv",
+        "C_copula.csv",
+        "C_sa.csv",
+        "work/prelim_team05/whitebox_audit.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+      "imports": [
+        "argparse",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "shutil",
+        "sklearn.neighbors",
+        "sys",
+        "teams"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "C_*.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "share_team05/data/A_bg.csv",
+        "share_team05/data/B.csv",
+        "share_team05/data/B_self.csv",
+        "token.txt",
+        "work/data_prelim_team05/token.txt",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "スターターキット/初版/participant_data/B_practice.csv",
+        "スターターキット/改訂版_20260824/participant_data/B_practice.csv"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local",
+        "/Users/taisei1105/pws2026-local/work"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/teams.py",
+      "imports": [
+        "hashlib",
+        "unicodedata"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_exp.py",
+      "imports": [
+        "__future__",
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.spatial",
+        "sklearn.linear_model",
+        "time",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "\nwrote aia_results.csv",
+        ".csv",
+        "/C.csv",
+        "PWSCup2026_prelim_common/schema.json",
+        "aia_results.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_pm.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/C.csv",
+        "aia_pm.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_sens.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.spatial",
+        "sklearn.linear_model",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/C.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/common.py",
+      "imports": [
+        "__future__",
+        "json",
+        "numpy",
+        "pandas",
+        "sys"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "B_self.csv",
+        "C_5.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "aia_challenge_5.csv",
+        "schema.json の rare_detector（マハラノビス）。真の is_rare ではないので近似指標。"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/スターターキット/改訂版_20260824/starter/src",
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/",
+        "/Users/taisei1105/pws2026-local/提出データ/"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/densities.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "scipy.spatial",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.mixture",
+        "sklearn.model_selection",
+        "sklearn.pipeline",
+        "sklearn.preprocessing"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/diag_sign.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.stats",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "mia_columns.json",
+        "加工データ候補0812_Tashiro/T05_Pool_Tashiro/C.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_exp.py",
+      "imports": [
+        "__future__",
+        "common",
+        "densities",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.stats",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "\nwrote mia_results.csv",
+        "/C.csv",
+        "PWSCup2026_prelim_common/schema.json",
+        "mia_results.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelA2.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "mia_exp",
+        "numpy",
+        "pandas",
+        "time",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "mia_columns.json",
+        "mia_panelA2.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelB2.py",
+      "imports": [
+        "__future__",
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.stats",
+        "time",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/C.csv",
+        "mia_columns.json",
+        "mia_panelB2.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/prep.py",
+      "imports": [
+        "json",
+        "numpy",
+        "os",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "B_self.csv",
+        "C_5.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "aia_challenge_5.csv"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local/予備戦/配布データ/"
+      ]
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/robust.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "scipy.spatial",
+        "sklearn.linear_model",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/C.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/summarize.py",
+      "imports": [
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "mia_panelA2.csv",
+        "mia_panelB2.csv",
+        "mia_results.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/twosided.py",
+      "imports": [
+        "common",
+        "densities",
+        "json",
+        "numpy",
+        "pandas",
+        "pwscup2026.scoring.attack_score",
+        "warnings"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "/C.csv",
+        "mia_columns.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/build_F_mia_domias.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "C_k / aia_challenge_k / mia_columns.json の場所",
+        "F_mia.csv",
+        "domias.json",
+        "mia_columns.json",
+        "予備戦/配布データ/PWSCup2026_prelim_common/A_bg.csv",
+        "予備戦/配布データ/PWSCup2026_prelim_team05_ステテコは恥だが役に立つ/B_self.csv"
+      ],
+      "absolute_path_literals": [
+        "/Users/taisei1105/pws2026-local"
+      ]
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/attack/__init__.py",
+      "imports": [],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "スターターキット/初版/starter/src/pwscup2026/attack/aia.py",
+      "imports": [
+        "__future__",
+        "numpy",
+        "pandas"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    }
+  ]
+}

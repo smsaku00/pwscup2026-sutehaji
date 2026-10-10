@@ -1,0 +1,1348 @@
+{
+  "files": [
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "html",
+        "json",
+        "pandas",
+        "pathlib",
+        "re",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "実行記録.json",
+        "本戦のMIA全体公式履歴.csv",
+        "本戦の対象別公開バンド.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "bisect",
+        "collections",
+        "datetime",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.special",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "公開背景三分割の独立非会員診断"
+      ],
+      "python_path_literals": [
+        ".py",
+        "attack_score.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_self.csv",
+        "C_*.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "fold別の有限標本p値診断.csv",
+        "result.txt",
+        "三fold集約の有限標本p値診断.csv",
+        "事前固定条件.json",
+        "公開生スコアとCounterの数値QA.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象fold別の有限標本p値診断.csv",
+        "対象別TPR.csv",
+        "群別の較正標本数と閾値到達可否.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.spatial.distance",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "公開背景の一致範囲.csv",
+        "同番号のフェーズ間変化.csv",
+        "実行記録.json",
+        "対象別の公開特徴.csv",
+        "性別ごとの分布幅.csv",
+        "性別ごとの属性間相関.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "unicodedata",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "attack_score.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "C_*.csv",
+        "result.txt",
+        "事前固定条件.json",
+        "公開Q県集合の行対応必要条件.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "必要条件の仮説と証明範囲.json",
+        "本戦22の固定12属性集合と双方向支持必要条件.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "unicodedata",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "attack_score.py",
+        "公開QとCの双方向支持必要条件.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "C_*.csv",
+        "result.txt",
+        "事前固定条件.json",
+        "停止記録.json",
+        "公開Q県集合の行対応必要条件.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "必要条件の仮説と証明範囲.json",
+        "本戦22の固定12属性集合と双方向支持必要条件.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "functools",
+        "importlib.util",
+        "itertools",
+        "json",
+        "pandas",
+        "pathlib",
+        "sys"
+      ],
+      "python_path_literals": [
+        "公開QとCの双方向支持必要条件.py",
+        "公開QとCの双方向支持必要条件_カテゴリ文字列対応.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "事前固定条件.json",
+        "実行記録.json",
+        "対応容量と不足下限の証明範囲.json",
+        "必要条件の仮説と証明範囲.json",
+        "本戦22の固定12属性集合と双方向支持必要条件.csv",
+        "本戦22の固定12集合の最大対応容量とprivate不足下限.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開Cの特徴を整理.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "result.txt",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "公開Cのフェーズ間一致.csv",
+        "公開Qのフェーズ間一致.csv",
+        "公開集合全体の一致.csv",
+        "実行記録.json",
+        "方法.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.svm",
+        "time",
+        "共通",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "公開Cの特徴を整理.py",
+        "公開分布の尾を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "カテゴリとtimeの支持.csv",
+        "カテゴリ値の件数.csv",
+        "公開加工特徴の比較結果/同番号のフェーズ間変化.csv",
+        "公開加工特徴の比較結果/同番号のフェーズ間変化.csvを同番号の比較表に併記。診断入力ではない。",
+        "同番号の特徴変化.csv",
+        "実行記録.json",
+        "実行記録.json自身を除く。",
+        "数値の刻みと集中.csv",
+        "方法.json",
+        "独立検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "公開 A/C の性別別・属性別の中央と裾を、所属正解を使わず記述する。\n\n先に --write-plan で方法.json を保存し、その後に引数なしで計算する。\n実行はプロジェクトルートの .venv/bin/python -B に限定する。\n既存の加工特徴スクリプト、背景プロフィール、採点結果は読み込まない。\n",
+        "公開入力の行数.csv",
+        "実行記録.json",
+        "実行記録.json自身は再帰ハッシュを避けるため対象外。",
+        "性別属性ごとの中央と尾.csv",
+        "方法.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "公開Cの特徴を整理.py",
+        "公開値の刻みとカテゴリを確認.py",
+        "公開分布の尾を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "3背景の行支持重なり.csv",
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "ageの値支持.json",
+        "time区分別のonset_death件数.csv",
+        "time右端と非右端の刻み.csv",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "実行記録.json",
+        "実行記録.json自身は除外。",
+        "属性単位の公開値共有.csv",
+        "属性組と行全体の公開値一致.csv",
+        "方法.json",
+        "独立検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "公開背景との属性単位一致.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "公開背景との属性単位一致結果/属性組と行全体の公開値一致.csv",
+        "実行記録.json",
+        "方法.json",
+        "独立検証.json",
+        "高次属性の同時一致と独立周辺期待.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "attack_score.py",
+        "非会員を使う順位較正の検討.py",
+        "非会員較正の広い集団を保留検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "/participant_data/A_bg.csv",
+        "Aの固定二分割.csv",
+        "F_mia.csv",
+        "Qのみflatとの上位12変化.csv",
+        "Q所有者等重みの診断パネル.csv",
+        "fold別の課題所有者保留.csv",
+        "participant_data/A_bg.csv",
+        "result.txt",
+        "事前固定条件.json",
+        "二fold集約の課題所有者保留.csv",
+        "同一参照の生スコア検証.csv",
+        "固定六案の非会員診断.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "対象別の固定六案診断.csv",
+        "通常875行の内部順位だけ.npz",
+        "通常候補のQとAの支持範囲.csv",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "attack_score.py",
+        "共有中順位座標の密度比.py",
+        "通常順位を通した非会員診断.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".npz",
+        "A_bg.csv",
+        "Atestのfold別固定六CDF診断.csv",
+        "Atestのfold別通常順位閾値超過.csv",
+        "Atestの三fold集約通常順位閾値超過.csv",
+        "Atestの対象fold別CRPSと単CDF診断.csv",
+        "Atestの対象fold別通常順位閾値超過.csv",
+        "B_self.csv",
+        "C_*.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "aia_challenge_*.csv",
+        "result.txt",
+        "三分割の非重複と役割.csv",
+        "事前固定条件.json",
+        "同一参照と凍結順位の数値QA.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別TPR.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.spatial.distance",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "attack_score.py",
+        "公開非会員だけで較正を選ぶ.py",
+        "共通.py",
+        "分析.py",
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "F_mia.csv",
+        "result.txt",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "上位12の内部行診断.csv",
+        "事前固定条件.json",
+        "候補と公開課題の生スコア.npz",
+        "全対象共通の固定条件診断.csv",
+        "公開加工特徴の比較結果/対象別の公開特徴.csv",
+        "公開背景一致と除外数.csv",
+        "内部順位だけ.npz",
+        "固定元方式の再現対照.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "対象別の非会員診断差.csv",
+        "課題所有者を保留したCRPSとPIT.csv",
+        "通常875行の上位12変化.csv",
+        "通常875行の内部順位だけ.npz",
+        "通常候補の較正とCの支持範囲.csv",
+        "除外行の公開根拠.csv",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開非会員だけで較正を選ぶ.py",
+        "共通.py",
+        "分析.py",
+        "非会員較正の広い集団を保留検証.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "result.txt",
+        "候補と公開課題の生スコア.npz",
+        "内部順位だけ.npz",
+        "実行記録.json",
+        "実験方針.json",
+        "対象ごとの課題除外感度.csv",
+        "課題除外ごとの順位差.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "事前固定条件.json",
+        "単純順位較正の分解能の数学例.json",
+        "実行記録.json",
+        "局所標本数と縮約係数の重み.csv",
+        "支持数のフェーズ別集約.csv",
+        "通常候補のQとAの支持範囲.csv",
+        "集団別支持数の分布.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "共通.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+        "内部順位だけ.npz",
+        "基準との順位差.csv",
+        "実行記録.json",
+        "実験方針.json",
+        "強度選択の曲線.csv",
+        "所有者別の保留非会員評価.csv",
+        "所有者単位のCRPS.csv",
+        "選択結果.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy",
+        "scipy.stats",
+        "sklearn",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "共有中順位座標の密度比.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "_内部875順位_外部添付禁止.npz",
+        "primaryCsourceのfloorとclamp集約.csv",
+        "primary対象平均のseed別感度.csv",
+        "sourceGaussianのfloorとclamp集計.csv",
+        "事前固定条件.json",
+        "元seed08の全順位再現QA.json",
+        "単独query一致の集約検証.csv",
+        "四seedと元seedを含む上位集合の共通部分.csv",
+        "固定三形の分割感度集約.csv",
+        "実行記録.json",
+        "対象別seed順位感度.csv",
+        "通常875行の内部順位だけ.npz"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.covariance",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "公開背景の分割較正.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "Arefの共有座標と有限中順位境界.json",
+        "Aの固定二分割.csv",
+        "Q所有者等重みの診断パネル.csv",
+        "fold別の課題所有者保留.csv",
+        "robustLWとの上位12変化.csv",
+        "source別Gaussian固定fit.json",
+        "事前固定条件.json",
+        "二fold集約の課題所有者保留.csv",
+        "同一共有座標の密度比検証.csv",
+        "固定三形の非会員診断.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別の固定三形診断.csv",
+        "数値floorのdataset発生数.csv",
+        "通常875行の内部順位だけ.npz"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "pwscup2026.scoring.attack_score",
+        "scipy.stats",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "内部順位キャッシュ.npz",
+        "実行記録.json",
+        "実験方針.json",
+        "対象別TPR.csv",
+        "方式一覧.csv",
+        "結果/対象別TPR.csv",
+        "集約比較.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/再現監査.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "*.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "18対象の保存結果.csv",
+        "内部順位からの独立再採点.csv",
+        "内部順位キャッシュ.npz",
+        "実ファイルのハッシュ照合.csv",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "特徴と順位.npz"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pathlib",
+        "time",
+        "共通",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "18対象の全方式.csv",
+        "内部順位キャッシュ.npz",
+        "各実験の最大値.csv",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "既存記録のハッシュ照合.csv",
+        "順位からの独立再採点.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "交差検証分割.csv",
+        "内部順位キャッシュ.npz",
+        "実行記録.json",
+        "標準化後係数.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/失敗記録/学習初回/実行時.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [
+        "学習による順位補正の検討.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "交差検証分割.csv",
+        "学習結果_順位校正版/学習_対象別比較.csv",
+        "昨日の学習再現.csv",
+        "標準化後係数.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "time",
+        "共通",
+        "特徴を外して学習を確認"
+      ],
+      "python_path_literals": [
+        "特徴を外して学習を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "交差検証分割.csv",
+        "代表特徴の再現結果/代表特徴.npz",
+        "実行記録.json",
+        "密度比_属性乱数結果/内部順位キャッシュ.npz"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.special",
+        "scipy.stats",
+        "sklearn.linear_model",
+        "sklearn.pipeline",
+        "sklearn.preprocessing",
+        "time",
+        "共通",
+        "別系統特徴の学習"
+      ],
+      "python_path_literals": [
+        "別系統特徴の学習.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "pool_ids_5.csv",
+        "交差検証分割.csv",
+        "実行記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pathlib",
+        "scipy.stats",
+        "time",
+        "共通",
+        "直接密度比の探索",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "直接密度比の探索.py",
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "実装照合.json",
+        "直接密度比結果/対象別TPR.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.integrate",
+        "scipy.special",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        ".py",
+        "公開背景の分割較正.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "Aの固定二分割.csv",
+        "Q所有者等重みの診断パネル.csv",
+        "fold別の課題所有者保留.csv",
+        "事前固定条件.json",
+        "二fold集約の課題所有者保留.csv",
+        "同一参照の密度比検証.csv",
+        "固定三形の非会員診断.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象別の固定三形診断.csv",
+        "性別ごとの固定尺度と帯域.json",
+        "点Gaussianとの上位12変化.csv",
+        "観測支持と仮定した区間幅.csv",
+        "通常875行の内部順位だけ.npz"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開背景との属性単位一致.py",
+        "公開背景三分割の独立非会員診断.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "Atestの対象fold別CRPSと単CDF診断.csv",
+        "Atestの対象fold別通常順位閾値超過.csv",
+        "一致層別の三fold対象exposure集約.csv",
+        "一致層別の単CDFとCRPS集約.csv",
+        "一致層別の通常順位閾値超過.csv",
+        "事前固定条件.json",
+        "元三分割対照と同一参照数値QA.csv",
+        "公開C支持へのAtest一致三flag組合せ件数.csv",
+        "完了記録.json",
+        "実行記録.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "html",
+        "json",
+        "pandas",
+        "pathlib",
+        "re",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "実行記録.json",
+        "本戦のMIA全体公式履歴.csv",
+        "本戦の対象別公開バンド.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Aの有限標本p値を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "bisect",
+        "collections",
+        "datetime",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.special",
+        "scipy.stats",
+        "sys",
+        "time",
+        "unicodedata",
+        "zoneinfo",
+        "公開背景三分割の独立非会員診断"
+      ],
+      "python_path_literals": [
+        ".py",
+        "attack_score.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "A_bg.csv",
+        "B_practice.csv",
+        "B_self.csv",
+        "C_*.csv",
+        "F_aia.csv",
+        "F_mia.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "fold別の有限標本p値診断.csv",
+        "result.txt",
+        "三fold集約の有限標本p値診断.csv",
+        "事前固定条件.json",
+        "公開生スコアとCounterの数値QA.csv",
+        "完了記録.json",
+        "実行記録.json",
+        "対象fold別の有限標本p値診断.csv",
+        "対象別TPR.csv",
+        "群別の較正標本数と閾値到達可否.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.spatial.distance",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "公開背景の一致範囲.csv",
+        "同番号のフェーズ間変化.csv",
+        "実行記録.json",
+        "対象別の公開特徴.csv",
+        "性別ごとの分布幅.csv",
+        "性別ごとの属性間相関.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "unicodedata",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "attack_score.py",
+        "公開QとCの双方向支持必要条件.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        ".npz",
+        "C_*.csv",
+        "result.txt",
+        "事前固定条件.json",
+        "停止記録.json",
+        "公開Q県集合の行対応必要条件.json",
+        "実行記録.json",
+        "対象別TPR.csv",
+        "必要条件の仮説と証明範囲.json",
+        "本戦22の固定12属性集合と双方向支持必要条件.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "functools",
+        "importlib.util",
+        "itertools",
+        "json",
+        "pandas",
+        "pathlib",
+        "sys"
+      ],
+      "python_path_literals": [
+        "公開QとCの双方向支持必要条件.py",
+        "公開QとCの双方向支持必要条件_カテゴリ文字列対応.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "事前固定条件.json",
+        "実行記録.json",
+        "対応容量と不足下限の証明範囲.json",
+        "必要条件の仮説と証明範囲.json",
+        "本戦22の固定12属性集合と双方向支持必要条件.csv",
+        "本戦22の固定12集合の最大対応容量とprivate不足下限.csv"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "json",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "zoneinfo",
+        "共通"
+      ],
+      "python_path_literals": [
+        "公開Cの特徴を整理.py",
+        "分析.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        ".csv",
+        "result.txt",
+        "スターターキット/初版/participant_data/A_bg.csv",
+        "公開Cのフェーズ間一致.csv",
+        "公開Qのフェーズ間一致.csv",
+        "公開集合全体の一致.csv",
+        "実行記録.json",
+        "方法.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "numpy",
+        "pathlib",
+        "scipy.special",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "sklearn.svm",
+        "time",
+        "共通",
+        "距離と分布の探索"
+      ],
+      "python_path_literals": [
+        "距離と分布の探索.py"
+      ],
+      "file_literals_not_all_are_inputs": [],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "zoneinfo"
+      ],
+      "python_path_literals": [
+        "公開Cの特徴を整理.py",
+        "公開分布の尾を確認.py"
+      ],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "カテゴリとtimeの支持.csv",
+        "カテゴリ値の件数.csv",
+        "公開加工特徴の比較結果/同番号のフェーズ間変化.csv",
+        "公開加工特徴の比較結果/同番号のフェーズ間変化.csvを同番号の比較表に併記。診断入力ではない。",
+        "同番号の特徴変化.csv",
+        "実行記録.json",
+        "実行記録.json自身を除く。",
+        "数値の刻みと集中.csv",
+        "方法.json",
+        "独立検証.json"
+      ],
+      "absolute_path_literals": []
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sys",
+        "time",
+        "zoneinfo"
+      ],
+      "python_path_literals": [],
+      "file_literals_not_all_are_inputs": [
+        "A_bg.csv",
+        "C_*.csv",
+        "PWSCup2026_final_team28_*/A_bg.csv",
+        "PWSCup2026_prelim_common/A_bg.csv",
+        "公開 A/C の性別別・属性別の中央と裾を、所属正解を使わず記述する。\n\n先に --write-plan で方法.json を保存し、その後に引数なしで計算する。\n実行はプロジェクトルートの .venv/bin/python -B に限定する。\n既存の加工特徴スクリプト、背景プロフィール、採点結果は読み込まない。\n",
+        "公開入力の行数.csv",
+        "実行記録.json",
+        "実行記録.json自身は再帰ハッシュを避けるため対象外。",
+        "性別属性ごとの中央と尾.csv",
+        "方法.json"
+      ],
+      "absolute_path_literals": []
+    }
+  ]
+}

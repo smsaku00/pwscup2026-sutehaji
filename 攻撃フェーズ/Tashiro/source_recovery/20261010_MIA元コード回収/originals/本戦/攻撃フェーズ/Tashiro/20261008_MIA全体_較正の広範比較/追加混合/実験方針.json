@@ -1,0 +1,13 @@
+{
+  "date_jst": "2026-10-08",
+  "scope": "最初の65方式の結果を見た後の追加探索。独立検証ではない。",
+  "hypothesis": "県・性別較正は予備戦チーム9を維持する一方、性別・年齢帯較正はチーム20を改善して9を悪化。分布尺度の混合で両者の長所が残るか確認する。対象別の回答選択は行わず全対象共通の式を使う。",
+  "county_sex_strengths": [100,200,500],
+  "sex_age_strengths": [100,300],
+  "age_weights": [0.1,0.25,0.5,0.75],
+  "formula": "mix = (1-age_weight)*county_sex_calibrated_CDF + age_weight*sex_age_calibrated_CDF。混合後に通常者順位へ変換し、他チーム順位中央値を0.1引く。",
+  "new_methods": 24,
+  "comparison": "全背景と背景抽出6条件、高得点対象1・2除外の18対象を主指標。各条件の県・性別500を比較基準。",
+  "truth_separation": "追加24方式の全予備戦条件と本戦の予測を固定後に採点。最初の結果を見て方法を追加している事実は明記する。",
+  "submission_files": false
+}

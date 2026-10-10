@@ -1,0 +1,1516 @@
+{
+  "candidates": [
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "literal": "複数ビューの対象保留確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "literal": "背景キャッシュで特徴除去を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "literal": "公開QとCの双方向支持必要条件.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "literal": "公開課題の除外に対する順位感度.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "literal": "低FPRを重視する学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "literal": "複数背景と乱数で学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "literal": "背景キャッシュで特徴除去を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "literal": "検証.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "literal": "共有中順位座標の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "literal": "通常順位を通した非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "literal": "直接密度比の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "literal": "公開背景三分割の独立非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "literal": "公開背景との属性単位一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "literal": "mia.py",
+      "resolved_candidate": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/分布を揃えた距離の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "literal": "公開分布の尾を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "昨日の再評価.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の再評価.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "昨日の学習を18対象で確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習を18対象で確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開データ分類器の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "直接密度比の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "分布を揃えた距離の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "混合分布と局所密度の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "階層ヒストグラムの探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "複数背景と乱数で学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "複数ビューの対象保留確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開背景行を除いた診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "非会員課題を丸ごと保留.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "局所支持区間の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "通常順位を通した非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開課題の除外に対する順位感度.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開分布の尾を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開値の刻みとカテゴリを確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開背景との属性単位一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開データのフェーズ間重なり.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公式提出のMIA全体記録.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開較正の局所標本数を集計.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "本戦公開特徴の集約表を作る.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦公開特徴の集約表を作る.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "共有中順位座標の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "共有GaussianのA分割seed感度.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開背景との高次属性一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "離散依存木の密度比を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "縮約係数と局所支持の図.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開背景三分割の独立非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "三分割Atestの公開C一致層別診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "理想CDF縮約の条件付き尾率を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/理想CDF縮約の条件付き尾率を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開Aの有限標本p値を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "有限p値の整数解像度.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/有限p値の整数解像度.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "literal": "公開QとCの重複数を保つ対応容量.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "literal": "記録と図の作成.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "literal": "公開分布の尾を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "literal": "公開値の刻みとカテゴリを確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有GaussianのA分割seed感度.py",
+      "literal": "共有中順位座標の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "literal": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "resolved_candidate": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "literal": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "resolved_candidate": "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/局所支持区間の密度比.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/直接密度比の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "literal": "20_Team20希少のGenLRA検証/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "literal": "共有中順位座標の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "literal": "複数背景と乱数で学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "literal": "背景キャッシュで特徴除去を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "literal": "参照データの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "literal": "公開課題の除外に対する順位感度.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との高次属性一致.py",
+      "literal": "公開背景との属性単位一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "追加検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "対照を揃えた補助検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "参照データの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "ブートストラップの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "学習による順位補正の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "属性部分集合の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "低FPRと対象偏りの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "固定候補の感度検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "非会員を使う順位較正の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "非会員較正の感度検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "literal": "非会員を使う順位較正の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "literal": "固定候補の感度検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "literal": "低FPRと対象偏りの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "literal": "背景変更で学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "literal": "公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "literal": "公開QとCの双方向支持必要条件.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "literal": "公開背景との属性単位一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "literal": "公開分布の尾を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "literal": "公開値の刻みとカテゴリを確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "literal": "公開背景三分割の独立非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "literal": "公開背景との属性単位一致.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "literal": "公開Cの特徴を整理.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "literal": "公開分布の尾を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "追加検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "対照を揃えた補助検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "参照データの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "ブートストラップの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "学習による順位補正の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "属性部分集合の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "低FPRと対象偏りの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "固定候補の感度検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "非会員を使う順位較正の検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "非会員較正の感度検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "literal": "公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "literal": "公開QとCの双方向支持必要条件.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "literal": "参照データの検討.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "literal": "複数ビューの対象保留確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "literal": "背景キャッシュで特徴除去を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "literal": "背景キャッシュで特徴除去を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "literal": "共有中順位座標の密度比.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "literal": "通常順位を通した非会員診断.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "literal": "特徴を外して学習を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "literal": "公開QとCの双方向支持必要条件.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "literal": "参照コード/attack_score_20260928.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "literal": "参照コード/validate_20260928.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "literal": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "literal": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "literal": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "literal": "別系統特徴の学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "代表特徴を計算.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "公開データ分類器の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "密度比の属性と乱数を確認.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "直接密度比の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "literal": "別系統特徴の学習.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "literal": "非会員較正の広い集団を保留検証.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "共通.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "公開非会員だけで較正を選ぶ.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "距離と分布の探索.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "literal": "分析.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "literal": "公開背景の分割較正.py",
+      "resolved_candidate": "本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "literal": "16_MIA希少の制約付き同時確率/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    },
+    {
+      "source": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "literal": "16_MIA希少の制約付き同時確率/分析.py",
+      "resolved_candidate": "予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "caution": "Static candidate, not proof of runtime path evaluation."
+    }
+  ]
+}

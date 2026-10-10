@@ -1,0 +1,12 @@
+{
+  "authorization": "2026-10-08 ユーザー：昨日と同じようにさらに他の方式を探索。Gen-LRAに拘らず、2チーム除外で昨日の方式も確認。朝9時まで作業。承認はできない。",
+  "deadline_jst": "2026-10-08T09:00:00+09:00",
+  "scope": "ローカルの方法探索、再集計、コード、集計表、図、説明。大会提出・提出回答・ZIP・外部掲載は含まない。",
+  "primary_evaluation": {"phase": "prelim_public_truth", "excluded_targets": [1, 2], "target_count": 18, "fpr": 0.01},
+  "reference": "Gen-LRA7 + pref/sex nonmember CDF strength500 + target-excluded cross median0.1 (round3 normal ranking)",
+  "secondary": ["FPR0.5%,2%,5%", "wins/losses per target", "net gain after removing largest two improving targets", "share of gain from largest improving target", "stratified background sampling", "held-out-target selection sensitivity"],
+  "training": "New membership-label-trained models exclude targets1 and2 from both fitting and evaluation; split persons and targets. C-versus-reference classifiers use public row-source labels, not membership labels.",
+  "selection_limit": "Repeated preliminary truth use, model search and adaptive followups are exploratory; background subsamples are not independent cohorts; main membership truth is unavailable.",
+  "phases": ["Re-evaluate yesterday's saved target-level scores", "Screen distance, direct density, distribution and source-classifier scores", "Revisit label-trained correction without targets1/2", "Sensitivity analysis and main ranking diagnostics for candidates", "Verify records, explain results, work until09:00JST"],
+  "environment": "root .venv/bin/python -B; no dependency installation; no archive access; preserve historical files"
+}

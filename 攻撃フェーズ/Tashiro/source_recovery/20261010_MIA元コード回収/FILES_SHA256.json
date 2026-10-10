@@ -1,0 +1,1995 @@
+{
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10484,
+      "sha256": "d876cc2777413d874d127bef295a19bf1393d461dc9e74937e42fdbd8f5c3332"
+    },
+    {
+      "path": "catalog/catalog_index.json",
+      "bytes": 60855,
+      "sha256": "826bec12b1b668eca78bb319ffc4d54ee3f62022332ee326a9647bb4bceb26e8"
+    },
+    {
+      "path": "catalog/parts/conditions_00001_00500.csv.gz",
+      "bytes": 20291,
+      "sha256": "bd64b263c489ebe9ade7b40c32ffa82508fc25da87d7521266220257797d4fac"
+    },
+    {
+      "path": "catalog/parts/conditions_00501_01000.csv.gz",
+      "bytes": 21539,
+      "sha256": "98c40f9292374985e77eec6dc324dadfd32a72c1cd118d5a574c8642a3106f4e"
+    },
+    {
+      "path": "catalog/parts/conditions_01001_01500.csv.gz",
+      "bytes": 15055,
+      "sha256": "a7bc2f7f0120321ac6213d1be7f892e726e55a5eb7be1843e66dacd9178fa465"
+    },
+    {
+      "path": "catalog/parts/conditions_01501_02000.csv.gz",
+      "bytes": 16023,
+      "sha256": "d27a66f58dcedc623fbcc664afc57d54d89d2a9a4fe61fc0b41a8fb0abc04b2a"
+    },
+    {
+      "path": "catalog/parts/conditions_02001_02500.csv.gz",
+      "bytes": 11193,
+      "sha256": "eba757cafa0f4a845d90d4fdd6a06d9bd804765ecc169d052d5b7fbc4a5be215"
+    },
+    {
+      "path": "catalog/parts/conditions_02501_03000.csv.gz",
+      "bytes": 14922,
+      "sha256": "b137a01673b016bcafd610066169c9aa57a786610197db91862db54783114ebd"
+    },
+    {
+      "path": "catalog/parts/conditions_03001_03500.csv.gz",
+      "bytes": 13904,
+      "sha256": "d7fd72874cd8ecc4e42945a6b9360101b5e0fd7c9e6f48898da5f528afe10fac"
+    },
+    {
+      "path": "catalog/parts/conditions_03501_04000.csv.gz",
+      "bytes": 16584,
+      "sha256": "595fc9f597601e97ff6a2768d2f025520f654bb7d0912d8fb720178b13afca89"
+    },
+    {
+      "path": "catalog/parts/conditions_04001_04500.csv.gz",
+      "bytes": 14485,
+      "sha256": "a0b7e21fe15e74b4a42d99b31fead383eaf2dc1dafd774ee6ff24652f4bcfe71"
+    },
+    {
+      "path": "catalog/parts/conditions_04501_05000.csv.gz",
+      "bytes": 14641,
+      "sha256": "3bb547c7ce299a15edf3553764c79ed04d6e201d289e405b2c8b7e647cf540f0"
+    },
+    {
+      "path": "catalog/parts/conditions_05001_05500.csv.gz",
+      "bytes": 14754,
+      "sha256": "b2fafe4a0748100fa13df674c25a3ef9ba3427b58615cde087dbd0a18d6a205f"
+    },
+    {
+      "path": "catalog/parts/conditions_05501_06000.csv.gz",
+      "bytes": 12253,
+      "sha256": "a772b3db7dc46156af1a03d4f1bf406bb1aca76eb81770bf5d17eca6a9717f36"
+    },
+    {
+      "path": "catalog/parts/conditions_06001_06500.csv.gz",
+      "bytes": 12543,
+      "sha256": "4d314a3318f10fe7b598add58954f175455b0035c00803c2258657a7d4bd2a18"
+    },
+    {
+      "path": "catalog/parts/conditions_06501_07000.csv.gz",
+      "bytes": 15262,
+      "sha256": "c42a826395b09d4efc2d507d3e51a644059e5f638faf0f4a1057502849c7090e"
+    },
+    {
+      "path": "catalog/parts/conditions_07001_07500.csv.gz",
+      "bytes": 18669,
+      "sha256": "f18effc626b3763f54761d597c6eba543e711a8dc5d80898032ae82b1078e20d"
+    },
+    {
+      "path": "catalog/parts/conditions_07501_08000.csv.gz",
+      "bytes": 18100,
+      "sha256": "cb7b83c4382c6a377f177c22ebfff79dcb34b3ee70dd1a2ee8be0bef32aae493"
+    },
+    {
+      "path": "catalog/parts/conditions_08001_08500.csv.gz",
+      "bytes": 17185,
+      "sha256": "47e001cdb76943abf8ca0225055b6814d0224a6ccf9b58ce992d2e18878c2913"
+    },
+    {
+      "path": "catalog/parts/conditions_08501_09000.csv.gz",
+      "bytes": 18005,
+      "sha256": "6dad3d0429bdfcfd64654663ba6a0d9b8ab7942ea614093cfcbff4a66bb65c50"
+    },
+    {
+      "path": "catalog/parts/conditions_09001_09500.csv.gz",
+      "bytes": 15532,
+      "sha256": "0898d6f317ce88582af96c21f76630475c77b44b795c4dd84ee8138735bbb4e7"
+    },
+    {
+      "path": "catalog/parts/conditions_09501_10000.csv.gz",
+      "bytes": 16506,
+      "sha256": "8762080060e4b6f239929cd2e345fa519b325d92cb06667b7cbdf4e4c2da2cd5"
+    },
+    {
+      "path": "catalog/parts/conditions_10001_10500.csv.gz",
+      "bytes": 17017,
+      "sha256": "8839904f27a278778f17bd098a33ead8edf833f4505d6861545fdfb2c3582911"
+    },
+    {
+      "path": "catalog/parts/conditions_10501_11000.csv.gz",
+      "bytes": 17514,
+      "sha256": "5271c0089254e32564225a04d88b134ceb8e9c3690a5e36d7412600536863e10"
+    },
+    {
+      "path": "catalog/parts/conditions_11001_11500.csv.gz",
+      "bytes": 17519,
+      "sha256": "dc17d3c6346f31a4fe562612051027f9ba15f10b8066b430a6feab3d58e1bd5e"
+    },
+    {
+      "path": "catalog/parts/conditions_11501_12000.csv.gz",
+      "bytes": 15086,
+      "sha256": "0ab20d3000bdf3c657b92e5c79ae3558ee5452871b685f2b4ce9443b582f2a1d"
+    },
+    {
+      "path": "catalog/parts/conditions_12001_12500.csv.gz",
+      "bytes": 15202,
+      "sha256": "a8798ec01963534930ab5ac862014bf63d5203c6f1644c882643f73478bc7ba2"
+    },
+    {
+      "path": "catalog/parts/conditions_12501_13000.csv.gz",
+      "bytes": 15133,
+      "sha256": "e393d8763d7e55c893110674f0748a990b4430a6322328b297e3f7d69516641f"
+    },
+    {
+      "path": "catalog/parts/conditions_13001_13500.csv.gz",
+      "bytes": 15213,
+      "sha256": "2d8e3f10152d13170e89f100b0ad52ff1b8263f8a5c4d0536646725b3af720c3"
+    },
+    {
+      "path": "catalog/parts/conditions_13501_14000.csv.gz",
+      "bytes": 15129,
+      "sha256": "689709e79d11b156441a7dcab89b2845baed0fe87e35395211281bb4f96a8532"
+    },
+    {
+      "path": "catalog/parts/conditions_14001_14500.csv.gz",
+      "bytes": 15439,
+      "sha256": "5087696b48d90f8c3d82550550c3c633a2c66d683b3700ad619626b2610aa796"
+    },
+    {
+      "path": "catalog/parts/conditions_14501_14864.csv.gz",
+      "bytes": 11214,
+      "sha256": "c58b1d5cde86b95e222f5cbae8d281e21624d07449dfdb0a8ef39b329f324dfa"
+    },
+    {
+      "path": "catalog/source_index.json",
+      "bytes": 365,
+      "sha256": "dcadc9b6b87087bd22665311d0d500863a434931d0246d284004c6d9b50d0900"
+    },
+    {
+      "path": "catalog/text_parts/conditions_00001_00205.csv",
+      "bytes": 199176,
+      "sha256": "367ac51eeb65dc0a5862c65bd8acc9b95da9719f73e0280ef085fb1912ae3087"
+    },
+    {
+      "path": "catalog/text_parts/conditions_00206_00437.csv",
+      "bytes": 199475,
+      "sha256": "1931e907d93352a01ebc67b7c7842191bd0af176e72d6f8b01555bfc6c5cb045"
+    },
+    {
+      "path": "catalog/text_parts/conditions_00438_00662.csv",
+      "bytes": 199853,
+      "sha256": "49998291256de057a7471566b4c508f57568a4171b6102d4dfe3d0f795eef667"
+    },
+    {
+      "path": "catalog/text_parts/conditions_00663_00897.csv",
+      "bytes": 199267,
+      "sha256": "998a5bb34e274e176f37512e207022cb3b3f544fe18956376e32379ed5b14264"
+    },
+    {
+      "path": "catalog/text_parts/conditions_00898_01084.csv",
+      "bytes": 199129,
+      "sha256": "08504e7b4e7cada9c37979e6953805395887d0789dc022f3e1896795dd4252d6"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01085_01250.csv",
+      "bytes": 199307,
+      "sha256": "8c17f165090025da168ac174ce934a53e0fe0a91e945bfe39858948b86ad6bba"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01251_01418.csv",
+      "bytes": 199005,
+      "sha256": "02f57678b50de812ae694d459f001cdd272637e43d48083a424fe139ca520ef4"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01419_01593.csv",
+      "bytes": 199481,
+      "sha256": "950a0caaa1ffea66d95aeeef0e669a6911b9d4913763a3a89c383dac3168c633"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01594_01771.csv",
+      "bytes": 199018,
+      "sha256": "1eccf0a41acf7a60adae818d963d9f9fa48159f5b9d91b8d8fd2b47c628bbd86"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01772_01942.csv",
+      "bytes": 199468,
+      "sha256": "bcbf8fd0c2dba2274b50a206c386d72c51f13096170bf904f49f2cfd510f03ed"
+    },
+    {
+      "path": "catalog/text_parts/conditions_01943_02112.csv",
+      "bytes": 199722,
+      "sha256": "96e815f354deaa9af260bfd2213e603147d9dbb33a2f80be7e66828a097a03b7"
+    },
+    {
+      "path": "catalog/text_parts/conditions_02113_02298.csv",
+      "bytes": 199364,
+      "sha256": "39cc4ed336f244938aa4e2bef9d755eb917bc304bb6eca35101f5038fef785d4"
+    },
+    {
+      "path": "catalog/text_parts/conditions_02299_02485.csv",
+      "bytes": 199361,
+      "sha256": "9da18eae3460135fdf0f950c002c2e0172764cd4c67f499e83fa27ec747e17c1"
+    },
+    {
+      "path": "catalog/text_parts/conditions_02486_02668.csv",
+      "bytes": 199880,
+      "sha256": "744370d8ac95060f86ded23706e56287c1ee1cb959aef5c4a2b24a1cd4527af2"
+    },
+    {
+      "path": "catalog/text_parts/conditions_02669_02843.csv",
+      "bytes": 199513,
+      "sha256": "500d2769783bf23ec5425dc98d78ed09e3e1ee83f17e0190a3ce81827a9ca920"
+    },
+    {
+      "path": "catalog/text_parts/conditions_02844_03002.csv",
+      "bytes": 198826,
+      "sha256": "4243f7aa60edca086558ecc09026f6387fdac1d90cb1425b162c36ea50325e2f"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03003_03160.csv",
+      "bytes": 198798,
+      "sha256": "46f16135f71e0f940aac3a466b94b0d0ebf67dd815aca772fa5b6b1fd1996bb5"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03161_03334.csv",
+      "bytes": 199014,
+      "sha256": "1119e69b6956f5b14590ee9fd543c5a968ccb3f4706114191dea12b1f9f7d30f"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03335_03518.csv",
+      "bytes": 199934,
+      "sha256": "983f5bd794195b47c7f1361037c815abef17684ff4b136321811bd7cbe4091b2"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03519_03689.csv",
+      "bytes": 199955,
+      "sha256": "c14c18ccf2e8438a21a33db6babf9d47177ea93a5321e82131a97ae0e8d419d0"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03690_03853.csv",
+      "bytes": 199171,
+      "sha256": "606e5fbc847377fe448e49a3aedcca5e6fd65ed05860fffba5c6d6b9f5f157d3"
+    },
+    {
+      "path": "catalog/text_parts/conditions_03854_04024.csv",
+      "bytes": 199686,
+      "sha256": "1a088b8771ba6db031acc8107b1ddf3a98219936990a825cd999c0aed0a0f88a"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04025_04202.csv",
+      "bytes": 199791,
+      "sha256": "314e235a4eb2a338651f85748b4fff5dc3814bc291b20c8e84ac6fc204709ba1"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04203_04395.csv",
+      "bytes": 199635,
+      "sha256": "c5e29979a76240173aec2783f346709e275f5eca920c11832d0f5f9e29a606e7"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04396_04560.csv",
+      "bytes": 199512,
+      "sha256": "aa7a1612855bf13fd822b6552c0fd01003792e7d2fdde90def767f51966de8fc"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04561_04722.csv",
+      "bytes": 199833,
+      "sha256": "7f44cc20b72500d57993f859e4c829045d489b4e617652d0dd8a45678e9f41ae"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04723_04892.csv",
+      "bytes": 199420,
+      "sha256": "259455b5a9eac0883987ec26a71b74a5114618c5f4847195915b18b16ea1d75c"
+    },
+    {
+      "path": "catalog/text_parts/conditions_04893_05057.csv",
+      "bytes": 198575,
+      "sha256": "ab54d7ce29a5a74f40d9a0b05a5a9755cb6fcff60ee13ab5869d84d5f82c9f2c"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05058_05237.csv",
+      "bytes": 199974,
+      "sha256": "d68d9c2c065d839d707231bfe90e96783d905faac92f91484b62d269797533cf"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05238_05429.csv",
+      "bytes": 199611,
+      "sha256": "1ef442b5c2044c4b39f714641208cff4aa534beeee32ecc4cad81b4d5ed20e8d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05430_05590.csv",
+      "bytes": 199489,
+      "sha256": "110328a9491f8b3d633b304b0ffe8751f352888cd89a07a7fe187ebbc39f7741"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05591_05751.csv",
+      "bytes": 199886,
+      "sha256": "06329a280258cb74d148963bd2bfb7fa73f61c2928618aa7364604ca0a27cc06"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05752_05920.csv",
+      "bytes": 199595,
+      "sha256": "294abcd333cf99e9e0ee38efee83c6f888bf5a79da3f1b5757be5e3d4a4fcdc1"
+    },
+    {
+      "path": "catalog/text_parts/conditions_05921_06107.csv",
+      "bytes": 199602,
+      "sha256": "0e68e6da4751373e9bc0d52183600dcb82d08094d68afc6423d9f7db0c57a0eb"
+    },
+    {
+      "path": "catalog/text_parts/conditions_06108_06299.csv",
+      "bytes": 199055,
+      "sha256": "5e6e90afccf78841c07691c92bebe3c86516b0289f4f893227356461a585f013"
+    },
+    {
+      "path": "catalog/text_parts/conditions_06300_06494.csv",
+      "bytes": 199801,
+      "sha256": "f9887f022820faab5c7283e2ee233ff13e65e70ea17d6a29feb523620d8a0658"
+    },
+    {
+      "path": "catalog/text_parts/conditions_06495_06681.csv",
+      "bytes": 199800,
+      "sha256": "845729966601beaf20012d0c465692baf3b975f3f93f44b0ca359ffd31747789"
+    },
+    {
+      "path": "catalog/text_parts/conditions_06682_06864.csv",
+      "bytes": 199147,
+      "sha256": "b0bf4818f1195721dbc9b022780979841d901fc2a249611d00f35d580a34df54"
+    },
+    {
+      "path": "catalog/text_parts/conditions_06865_07050.csv",
+      "bytes": 198945,
+      "sha256": "2fc8d9d71f52d1274fa9dd883bc6d81d6e7415207b76def563acdaa7172a24d1"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07051_07212.csv",
+      "bytes": 199102,
+      "sha256": "932725e9cc4b49911f1da206354b02a4ecc098bd13dffe2d4b4931a9cb52bcc7"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07213_07397.csv",
+      "bytes": 199265,
+      "sha256": "b52258d857eedf10c110140427caca599a474b9a4029ee49a7c9efb00588205d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07398_07564.csv",
+      "bytes": 199066,
+      "sha256": "769a5876fb7ae8a78439be11c94a4b4e3c22b6b77bac9fcf1903bea2c413643d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07565_07708.csv",
+      "bytes": 199825,
+      "sha256": "68757e92bb11f11d847b62c320bbda35a5b84babea47dcc2cf30a571558b162f"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07709_07849.csv",
+      "bytes": 199677,
+      "sha256": "b8e64d406457c33836d565a6c460957c9f64527962c4973d0d4a0f6154f1c2cd"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07850_07965.csv",
+      "bytes": 199006,
+      "sha256": "5e1e7915cd4b517356d288c6734aa4e2f16e8c77d0e83b24aaa3eeb23234502b"
+    },
+    {
+      "path": "catalog/text_parts/conditions_07966_08094.csv",
+      "bytes": 198678,
+      "sha256": "49e268d12e0bf514f8d9818d54ce4929ba04f3ae3d16e951abb627b4f81bb0dd"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08095_08220.csv",
+      "bytes": 199621,
+      "sha256": "fc4ed759bc05b7d5a50793a6c15f79b68d1ff6c51e1c7b79add0051f0a05060f"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08221_08375.csv",
+      "bytes": 199112,
+      "sha256": "8ee17f9629b4b78dff18d9a75ff5d4df8a403ab6bf8284e59cd1e11a87569a9e"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08376_08513.csv",
+      "bytes": 198996,
+      "sha256": "3e5c2d879b669e3a1be92097512edb7a822c396ed10bafb3ecbd786f9dab3c1e"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08514_08611.csv",
+      "bytes": 198143,
+      "sha256": "26fcfc52ea174c5239cbf3b0d3ad58bda10628a95d789a2fd9b0785b9034ed71"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08612_08734.csv",
+      "bytes": 199900,
+      "sha256": "750a4bd55a401981eb22a27b99e80fc89dc3ba92b2255c450fd40841bdff9fdf"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08735_08887.csv",
+      "bytes": 199041,
+      "sha256": "d65868acbaf12856500f59bf8965f0883c2e07e8f4530a29ec760d95c547e133"
+    },
+    {
+      "path": "catalog/text_parts/conditions_08888_09040.csv",
+      "bytes": 198943,
+      "sha256": "8da6513bb9a5fbf5633e228e679a7184942dccaf70fd2d25ee64ebf7747a9844"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09041_09194.csv",
+      "bytes": 199853,
+      "sha256": "3d42fa62a3fdb653b37fb89d649689bcb45f4b109a92719426359c246172ed08"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09195_09348.csv",
+      "bytes": 199362,
+      "sha256": "e59605edc856445a5054987fed7285a87acec0ea534503a51453775dac5f1a61"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09349_09502.csv",
+      "bytes": 198921,
+      "sha256": "10274a13db1baf5ccf6e9365e5fb52dfccc4b2c9ed7d19557a718db0921e30d6"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09503_09651.csv",
+      "bytes": 198818,
+      "sha256": "8037787d492b3ebd4b225abbeb82e6bdc5778ce1aca65ee501dd6f90f947c786"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09652_09801.csv",
+      "bytes": 199716,
+      "sha256": "dd07346d7ac321fa3b1d9f36b99217fd9de366bc01fa5bc98d53968cf4173b19"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09802_09954.csv",
+      "bytes": 199078,
+      "sha256": "d015a282dc62a67a4cc83277967ef440aacad1c1100e52c573eb376528edb166"
+    },
+    {
+      "path": "catalog/text_parts/conditions_09955_10107.csv",
+      "bytes": 199008,
+      "sha256": "7798d4b2e6bd4cf27f0ea587763441e949a7751b1f28218315efa241e6793454"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10108_10261.csv",
+      "bytes": 199713,
+      "sha256": "7dcdf180fdc443cb4afcc585e73603422a540d1293b7054114026d8e265731e7"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10262_10415.csv",
+      "bytes": 199600,
+      "sha256": "9d003a8f8fdb578cfa97ad4e238b3de1ebb2162b31d3aef2219cf382bf16a2ad"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10416_10569.csv",
+      "bytes": 198793,
+      "sha256": "28028d37a9c01b99792ddd8e1d154b6b3cfc6836fb24800cfc9ac16f2a849f43"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10570_10720.csv",
+      "bytes": 198829,
+      "sha256": "401db9d8a1502fa50b7e7c66d3a995a4ee866b05c358341273b50b5e49a0d872"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10721_10870.csv",
+      "bytes": 199886,
+      "sha256": "4e6a2fb1e0784b2924e4ef574027aa148af3bc5ae13301a40feb6c68d7c9d144"
+    },
+    {
+      "path": "catalog/text_parts/conditions_10871_11020.csv",
+      "bytes": 199892,
+      "sha256": "60ada6b6cc5ad8f2f15b43b51a88ec332e80f85b7b1f2cc3ddf4f04d508c5c24"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11021_11170.csv",
+      "bytes": 199467,
+      "sha256": "87dfa0000c896bf70dd870fb310f3b7be532ab9044a2b05bd9df08e090bbbec6"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11171_11320.csv",
+      "bytes": 199018,
+      "sha256": "a18bae14619ce3df57e686859834ca82966fd6aeb46feba2deb26f6d15c04f84"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11321_11471.csv",
+      "bytes": 199923,
+      "sha256": "b40ad477d082ddc336cb77a3975319da1f418a88966a31285298ca3b63da140d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11472_11617.csv",
+      "bytes": 198753,
+      "sha256": "6fe1d9873394e8ede6376043cdcd5297ee9dc0509350605e3dcbf92c70011817"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11618_11763.csv",
+      "bytes": 199036,
+      "sha256": "86475cc3cc6cdaced3d00bb0ec54ea67aa9bbda5efb3010a2315988620c3ebaf"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11764_11901.csv",
+      "bytes": 199970,
+      "sha256": "a9c5037aee93777e1be2aac9c1bf6226a3be50942fc40f30b9125d686bac9a5c"
+    },
+    {
+      "path": "catalog/text_parts/conditions_11902_12039.csv",
+      "bytes": 199125,
+      "sha256": "1b4cafe9a5b6a287192f80d9b833480ed82341fb4e32cae57ee3ac54c15d7a46"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12040_12188.csv",
+      "bytes": 199217,
+      "sha256": "d8beb23b99d2b1da192bc42227d1ef36d9e987ac23f55413864465ffa0d611e1"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12189_12338.csv",
+      "bytes": 199462,
+      "sha256": "0ed5fe96d0ccd6ea1362caa52885981044291748a6dbe712f17bd3c36ced67c7"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12339_12487.csv",
+      "bytes": 199198,
+      "sha256": "492494806c803ae3ecf0a86c60ba938e761ce519ed061b96c883110508b7283d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12488_12635.csv",
+      "bytes": 198782,
+      "sha256": "f4cd88218d09cfd5941ec42839096574565e22d8aeec78e0ab21fb4cf87c64f5"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12636_12779.csv",
+      "bytes": 199742,
+      "sha256": "22d54d575c399eb27098d809e478c88b196e295656b4cdb7e5a456348d64f884"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12780_12921.csv",
+      "bytes": 199939,
+      "sha256": "ae8ca12db54996fa030138c03dbd9e082350955cb89209a6cab03a0a4b1ea27e"
+    },
+    {
+      "path": "catalog/text_parts/conditions_12922_13057.csv",
+      "bytes": 199773,
+      "sha256": "bfe90b5d45db7e4f49626d5c1a62fc24093d3789dd37a820b7948344bcffe8f9"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13058_13194.csv",
+      "bytes": 198815,
+      "sha256": "72d3e7abb56adad35e014f7fe219c976bcc9e9e0557789bccb2e4e69c1c625ec"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13195_13341.csv",
+      "bytes": 199156,
+      "sha256": "f6368d09de9e2804cf309e3391717073548a8fca479aed229afffe95c705c15e"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13342_13488.csv",
+      "bytes": 199514,
+      "sha256": "2cb12eb0687bc8102741961df474e81bbf870447924b0e5ce01b7c8068292be3"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13489_13635.csv",
+      "bytes": 199674,
+      "sha256": "4bf04ebcf517fdfab56ad5fe6fbfb06da7a969447033310022c62bfb817bc85c"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13636_13780.csv",
+      "bytes": 199949,
+      "sha256": "fffeaee5a6d014ab0796060bb1a28ee954fce0cda966cda90a70557a6d573d1e"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13781_13923.csv",
+      "bytes": 198735,
+      "sha256": "3ce64b1009799d8a02721beb600d8eba1e494090d036ff55779a4accf31ad3e8"
+    },
+    {
+      "path": "catalog/text_parts/conditions_13924_14062.csv",
+      "bytes": 199042,
+      "sha256": "12d1de74f34dcbfa0a296cd160c676d989a67af1749dd70574071e85292e5fcc"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14063_14196.csv",
+      "bytes": 198978,
+      "sha256": "17f747b48ed4aa377449535f7c074a79a267b57583dfcffce24a0b95ecd8210b"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14197_14332.csv",
+      "bytes": 199468,
+      "sha256": "2353e1ae132de72e31d24ddd85898d58214c01bd26a18a1fc2a120b02f41e12f"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14333_14477.csv",
+      "bytes": 199119,
+      "sha256": "cecfc16604ba5dbcb0c85269d35a293a90296fe005b062944edb410934fe36dc"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14478_14621.csv",
+      "bytes": 198919,
+      "sha256": "b960986134f914df62b1fa1a43366981f5c7648e681f37f5a9867df454611d7d"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14622_14766.csv",
+      "bytes": 199538,
+      "sha256": "77bd94a2115a7b78c47a6d50a7fc61ceeb5ee584985cd531ac7dd12fe0163caf"
+    },
+    {
+      "path": "catalog/text_parts/conditions_14767_14864.csv",
+      "bytes": 134701,
+      "sha256": "cc1cdc0632a65259828269f182ed2d304c1634ecd880a3c05125fa6a26f4496a"
+    },
+    {
+      "path": "catalog/方式条件一覧.csv.gz",
+      "bytes": 435451,
+      "sha256": "cc68eb98457d84cff55a4cf2963638af117a3ecbdbcfd451d654561bc4a1c661"
+    },
+    {
+      "path": "catalog/結果保存元.csv",
+      "bytes": 73753,
+      "sha256": "7a511b07adf31ce8d793d0e4feb410b766921bda0d4b86e9f84204ab08a9deed"
+    },
+    {
+      "path": "dependency_graph.json",
+      "bytes": 322523,
+      "sha256": "d245495d25ba586c94d1ed77263523f1c54cdfb862c52e5ecae9b7ef65bbfa69"
+    },
+    {
+      "path": "dependency_graph_parts/imports_001_040.json",
+      "bytes": 23326,
+      "sha256": "cf7aafde65889c2628dc71aa8929106bc16c9f27b0b8f9e89f06b138eb13f03a"
+    },
+    {
+      "path": "dependency_graph_parts/imports_041_080.json",
+      "bytes": 24894,
+      "sha256": "8792962903261c219aecbdfe6c89829442a6b3152a799bc478c78d1503c7bc02"
+    },
+    {
+      "path": "dependency_graph_parts/imports_081_120.json",
+      "bytes": 41134,
+      "sha256": "d75d144959d6dd5bc33329c36c0f2fe2656e844e25d44c58aa92b4b43b7a22ee"
+    },
+    {
+      "path": "dependency_graph_parts/imports_121_160.json",
+      "bytes": 41261,
+      "sha256": "968c6b5da973a4e4aabe29a3e4cc8886d69081d42885e138aa672670ef33a6f7"
+    },
+    {
+      "path": "dependency_graph_parts/imports_161_200.json",
+      "bytes": 51389,
+      "sha256": "65937c559a897434142abf3c657ba31285e9d1bc688bfe76fac8c4d59bb1e585"
+    },
+    {
+      "path": "dependency_graph_parts/imports_201_238.json",
+      "bytes": 30891,
+      "sha256": "a47da90cfab9b464505971cd66494017e35a7a47b84336bff84902db03bc1f50"
+    },
+    {
+      "path": "dependency_graph_parts/index.json",
+      "bytes": 1485,
+      "sha256": "85cb938fb2c7e552c96acceb76087986d811e3fc7120883ddb27e3473a0b1c61"
+    },
+    {
+      "path": "dependency_graph_parts/literal_resolution_candidates.json",
+      "bytes": 109531,
+      "sha256": "da7446aea4738500324638d86bf5f7cde67f629e172e0f7ec954fbb06d979995"
+    },
+    {
+      "path": "dot_manifest.json",
+      "bytes": 15261,
+      "sha256": "199cde2fcbcbec8e049b88bb9a904746124f52e65b137502a2006b1149c0d08d"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 6011,
+      "sha256": "0981410373da5cedaf9cf3c04659761caacb067797f1958af3d99bc6def3d59c"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 194151,
+      "sha256": "aec84b61195aa21250b33f12da90632ce24763ef0a3bee7d12241a6dd4cbaf31"
+    },
+    {
+      "path": "missing_files.json",
+      "bytes": 616,
+      "sha256": "2c28aa03dfad896a3ec258fd3335b8f81cb14c4d318e83e852972f1e22510fac"
+    },
+    {
+      "path": "originals/requirements.txt",
+      "bytes": 420,
+      "sha256": "9cf9b999380a1f097a49672fe73dfa14d56fdb03546ae817d2a146366216e137"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/aia2mia/bench.py",
+      "bytes": 2994,
+      "sha256": "1fd8fc4a617ff745d9b32fdbfb75bd55a23dcb8803a8e64857617c970db7a68a"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/anneal_defense.py",
+      "bytes": 24424,
+      "sha256": "e7b2fe791cd6d209f9c98653ba171cac9b94865029bbba31cace12db4f5668c6"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19/mia.py",
+      "bytes": 3745,
+      "sha256": "ccb0192b5c025b77ae2b15131fd80e28f84cd6e1de669898b10876b4799c251c"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk19222023/mia2.py",
+      "bytes": 3503,
+      "sha256": "5df720488ca1b0595b04d7e451a2e527c0cb841f5b99b3c6c28334fdec05c842"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629/p6_mia.py",
+      "bytes": 3196,
+      "sha256": "76fc2d8217108ad67da48c0ac4fd7f30ccc17710e5fcabccc14f759e559922f8"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia.py",
+      "bytes": 4264,
+      "sha256": "7aa2a93934f4933c6927859e2c31988acdcc2b5dbbf7b75c8b26672e97a5838d"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/atk242629b/mia2.py",
+      "bytes": 1829,
+      "sha256": "9f55dc26766b6f436b2e49e6208a3c3f9998dfea9783613ab38f7d07916ae784"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/attacks.py",
+      "bytes": 10406,
+      "sha256": "f4d0baa358451ae5af5793782993c954336ad40a90329d5b2886a5611575489b"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/audit.py",
+      "bytes": 15050,
+      "sha256": "54f604b7e27f2fb801e648d9c7a56619b77a57fc4db895dfcab64465add4b8c1"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
+      "bytes": 23752,
+      "sha256": "6f6d3b0e9bd655105c01f9e8695850d9c861501c265afe4fea777f880d65e3b1"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/cross_c_mia/cross_c_consensus_mia.py",
+      "bytes": 20980,
+      "sha256": "c8c90def09911277539c2cafa0eacd379e959dce0ff69ea6d5271e1a961dc5da"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/defense.py",
+      "bytes": 25978,
+      "sha256": "6cd2ee233a9bbc9bec9d97ec6e0a04d807930e1a2d5882291db47f6eab30d3b3"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/fastcox.py",
+      "bytes": 6476,
+      "sha256": "f4dd37d32018614c28ad422190f8998a17515ed2e43c4f8ac86241cbead41ee4"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/harness.py",
+      "bytes": 9649,
+      "sha256": "47d8d4d82f49bd51b21669f2d08ac45a16438588f8eb8f7819bac424470eb3de"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/mia_redteam.py",
+      "bytes": 22143,
+      "sha256": "e4494336aff0c9f8933087add882e3aeb7b95ee9896a863bf811a82b10d8703d"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/outcome_mia_redteam.py",
+      "bytes": 22224,
+      "sha256": "b127562a5abef387452de057e04dc0eb03c774e664061c154c7b65ce4a182de3"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/run_defense.py",
+      "bytes": 9241,
+      "sha256": "10f992478517040ff0c643fabdc0c6b02076ac9beba08eef640f57aa802735be"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/submit_audit.py",
+      "bytes": 29434,
+      "sha256": "6ec76972b6cb7023ca0cef3ec561c4886afac75a6e454c401593c41e7f5ca559"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
+      "bytes": 20077,
+      "sha256": "11564dd06d38ddda49141f03e7ac7506b7bc6c5e1390c0e1365b67d8d5cebd4e"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
+      "bytes": 26589,
+      "sha256": "2be75d0eb71bb80f11c8f116bab99735371bc37a053085b161360e3c257b1115"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/whitebox_audit.py",
+      "bytes": 20365,
+      "sha256": "80b3034b9f1ee0e6dcd0e37dc2168c19c37942f0e66340976ab5e7227de619c8"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/build_attack2.py",
+      "bytes": 10276,
+      "sha256": "8dedadba0187e644f2600f8fba36b2a39b2f15523c94d7a17db2fe6f24f25a7d"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/予備選分析_スクリプト/teams.py",
+      "bytes": 5107,
+      "sha256": "8b62ba3d121b3e9327e9b110b288c97b697f62860eb36c10a0d53636c4d74b76"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_exp.py",
+      "bytes": 8250,
+      "sha256": "6e32ac79e969ae7b46061e76ff43c425950eddbb402b98b512159f84d0654579"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_pm.py",
+      "bytes": 4033,
+      "sha256": "12dcdf21505967562bad60840934d1231445ca6021973b225caf89fea1bc578e"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/aia_sens.py",
+      "bytes": 4848,
+      "sha256": "6234e55e5f016332a21c9dc4d67b6977141025e43d7e55ebd599daa792c25058"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/common.py",
+      "bytes": 2937,
+      "sha256": "b4ab52a0b887752831e1e008316839f9999638370b821a613a37f2a215c79148"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/densities.py",
+      "bytes": 10130,
+      "sha256": "69069e8f6b9538246b85d6162c7dcb88d5442a77d76d25cb49f9147a1d77142b"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/diag_sign.py",
+      "bytes": 2887,
+      "sha256": "35baef24027a1a922d4ffb525d65d850326fd17c51f9c12563abeb930412f1d9"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_exp.py",
+      "bytes": 5744,
+      "sha256": "ffb582c3f743bdfd265bac6bbaab235209a20db72ab4e2d862c06ffcd6c1375b"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelA2.py",
+      "bytes": 877,
+      "sha256": "260e3b3da307cd0405fc6fea2bc8ee653cf976987b7977ed6c4ec862fd7adb9b"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/mia_panelB2.py",
+      "bytes": 2889,
+      "sha256": "e72c7d801fb5ca6d7d569150646a78ced0eb779fa6ee3c408d74d64e085fa489"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/prep.py",
+      "bytes": 1804,
+      "sha256": "fb5f786ec61ee662d3bcd74f35c8bce9fac54ceba4da174c958aac8117207f24"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/robust.py",
+      "bytes": 4830,
+      "sha256": "9ff011c96a6c0b40d0df10077639863fb294467386645295c0cd386c84845f76"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/summarize.py",
+      "bytes": 2554,
+      "sha256": "d72a669ee99fb064257e91777d8102b8b260ea4c3d96e7dd748698153fe4992d"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/densratio/twosided.py",
+      "bytes": 2784,
+      "sha256": "4f54ed095eb7a61b6db62b70278e6ed1dbf1ae4b3fafa415d22b2cb0163679d4"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/過去のコード/mia_domias/build_F_mia_domias.py",
+      "bytes": 12273,
+      "sha256": "3122b7795a5d65485cb4537a5a0174a02e83feb7d5f078ae9e4403f0d9cfdf9b"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/__init__.py",
+      "bytes": 109,
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/__init__.py",
+      "bytes": 115,
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/aia.py",
+      "bytes": 3074,
+      "sha256": "e39608ae8141fc62d4c61dcd869d0423ee6ffd7abbe11385fe86ab8ff636d1ff"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/attack/mia.py",
+      "bytes": 2393,
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/common/__init__.py",
+      "bytes": 53,
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/common/config.py",
+      "bytes": 360,
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/common/schema.py",
+      "bytes": 292,
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/common/submission_schema.py",
+      "bytes": 11996,
+      "sha256": "36b8e145f4687770e19ce1dc298320cd2dfceff952c62c392b5136cbc2311cee"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/__init__.py",
+      "bytes": 681,
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/perturb.py",
+      "bytes": 2196,
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/defense/synth.py",
+      "bytes": 10644,
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/__init__.py",
+      "bytes": 91,
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bytes": 389,
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/run.py",
+      "bytes": 10540,
+      "sha256": "343490103f35ee6afce481673eb809a00ddfe7bc78023fab0df9046295ede82a"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bytes": 11984,
+      "sha256": "3e7bb1a1d19e064b94a7dcbc8d3f77b0a2e699365c6522316053ad38af816418"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/selfscore.py",
+      "bytes": 10383,
+      "sha256": "9f3d051a06beee693e1405375931e17d0e51b8367f6681ecda92f30387535bf2"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/kit/validate.py",
+      "bytes": 24189,
+      "sha256": "69433a791c1e1d5eeb35f0ea7ca60938304c895c73fb20b728fc9f63ef3d17cc"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/rare/__init__.py",
+      "bytes": 84,
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/rare/outlier.py",
+      "bytes": 1122,
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/__init__.py",
+      "bytes": 55,
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/attack_score.py",
+      "bytes": 8744,
+      "sha256": "7217ceffd52ee345a5241f35cbff5127b87aa644bcc4e27110aa7cd2976dcf8c"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/result.py",
+      "bytes": 1869,
+      "sha256": "6f284fdfff2c14bfc79270ee68e7077ba261535c082cd8bfffcac1f8ea62c93b"
+    },
+    {
+      "path": "originals/スターターキット/初版/starter/src/pwscup2026/scoring/utility.py",
+      "bytes": 36824,
+      "sha256": "8d54ffd3769497f51deddb3ec21fdd69c7711f7a2be0293f457b30dd3898c44c"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/__init__.py",
+      "bytes": 109,
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/__init__.py",
+      "bytes": 115,
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/aia.py",
+      "bytes": 4394,
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/attack/mia.py",
+      "bytes": 2393,
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/__init__.py",
+      "bytes": 53,
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/config.py",
+      "bytes": 360,
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/schema.py",
+      "bytes": 292,
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/common/submission_schema.py",
+      "bytes": 12278,
+      "sha256": "ccdd91daf80bd441aee34ff5945a7b74b603f919d28bed4e222a889ea709b501"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/__init__.py",
+      "bytes": 681,
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/perturb.py",
+      "bytes": 2196,
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/defense/synth.py",
+      "bytes": 10644,
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/__init__.py",
+      "bytes": 91,
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bytes": 389,
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/run.py",
+      "bytes": 12519,
+      "sha256": "7628a2db11f19b7da3b48ff0b9a3974af7e0f1caf5dc2e2712a0fe294d506d27"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bytes": 21480,
+      "sha256": "44d0a4d5327eed0cad116d02824f46f25164cd41a24dd83efca45741d8a1c376"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/selfscore.py",
+      "bytes": 10455,
+      "sha256": "40072056dcffce89db69b80fe329ead0a5eae16bce5996681ee9eef4fbff1c77"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/kit/validate.py",
+      "bytes": 25568,
+      "sha256": "98ed6cd52af7d2d7e9c93fe9a4ec6d07dc23d0c96c649062c0a0056c3216a2ba"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/__init__.py",
+      "bytes": 84,
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/rare/outlier.py",
+      "bytes": 1122,
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/__init__.py",
+      "bytes": 55,
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/attack_score.py",
+      "bytes": 10057,
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/result.py",
+      "bytes": 3121,
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd"
+    },
+    {
+      "path": "originals/スターターキット/改訂版_20260824/starter/src/pwscup2026/scoring/utility.py",
+      "bytes": 36586,
+      "sha256": "b766cfa88991b4c57fdda4f41baf1de3e661a45a6b1f7a63f03aa3ffa9baa22a"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/16_MIA希少の制約付き同時確率/分析.py",
+      "bytes": 24176,
+      "sha256": "bcbcae58e8ef2e246e176b8af4da2d7c19074f96440197bf6969a298decfb54c"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/分析.py",
+      "bytes": 17755,
+      "sha256": "0decdc3143eb2dc4cf928e851fa41781f18f72932e43163aacbf189d1212fe30"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
+      "bytes": 19620,
+      "sha256": "d7dbade1ca7ba1a07c4d2df53a570fe5b0e322484ae18962848687df98a83872"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/検証.py",
+      "bytes": 10172,
+      "sha256": "20bfde95cab8888a28eb805c18702d782505925ab04adca3026cf5625e201c82"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/分析.py",
+      "bytes": 16960,
+      "sha256": "64f6b5e814ab77a895d43cdf291231a8fc660b056d7f067235c2ef3f60e3bbad"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
+      "bytes": 10326,
+      "sha256": "b30920e31ef6d2674095658f3bbb14bf34b6c3e9f26c232f1748050d1456a7de"
+    },
+    {
+      "path": "originals/本戦/バトル/requirements.txt",
+      "bytes": 259,
+      "sha256": "b13bdfda63a31e9d3354311fdbb9a2390351b9f84c0b3120b275c7f2d65338aa"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/gen_lra.py",
+      "bytes": 8786,
+      "sha256": "a6c967af4a7f86414e96b243477ff5beaa45b633e789d5564301141909db1065"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/test_gen_lra.py",
+      "bytes": 3969,
+      "sha256": "d4977ea7fff1e49cbafece592d195a1e83b067402b825ff21a5e50980af394de"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/分析.py",
+      "bytes": 16350,
+      "sha256": "9fe270408057d7550ef7e8b594ab6da06b3f615aface53882b5ea42c7f001158"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/attack_score_20260928.py",
+      "bytes": 10057,
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/参照コード/validate_20260928.py",
+      "bytes": 32860,
+      "sha256": "359589b4e82cb41f4284c5a7cdc7e2d3c793788d6d9d6f12a62b46a7a132f3c3"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/検証.py",
+      "bytes": 2516,
+      "sha256": "6f4a3b974008add78b0a82da39c925f5ce6a690f5455b9807e70f86b6ae68a00"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261005_MIA初回_GenLRA比較/結果/計算条件.json",
+      "bytes": 2318,
+      "sha256": "b10e88b4d28f6487262836d6f9b9fdc06972cf6675bde543495e21bca5184da0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/ブートストラップの検討.py",
+      "bytes": 8335,
+      "sha256": "21e28d906ea7078b5109421f4a0fa51876ff16f0187004941dec1322a85e783c"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/低FPRと対象偏りの検討.py",
+      "bytes": 9973,
+      "sha256": "c48d919441e2031431b9fa1de397f5c05bca04df521180de3751a3e6a9ecf155"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/公開準備.py",
+      "bytes": 3119,
+      "sha256": "de26a77004440776a29ef461eb937ba16f2a8055a90d9eca4085a19d00da6333"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/共有集計/実行時の記録と図の作成.py",
+      "bytes": 9991,
+      "sha256": "0059b977630cb979c8b52971f4b072cc17e1864ec96680c158633348605ec93d"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/分析.py",
+      "bytes": 16899,
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照データの検討.py",
+      "bytes": 11165,
+      "sha256": "556bc5e1000d00a4dc3499c557dfee2ce43506462b4edd6533aacca0ee233ec6"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/参照結果/実行時の参照データの検討.py",
+      "bytes": 8136,
+      "sha256": "cf5b4286a24b444642c8f00e9a48861c2caf0991986d7313199e749592931eae"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/固定候補の感度検証.py",
+      "bytes": 5566,
+      "sha256": "cecb2cac528843c977cd7f5b274629433cd099f7d7c469e8d9cd105ece66eacc"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習による順位補正の検討.py",
+      "bytes": 9478,
+      "sha256": "4f6471502598f7b0ed9fdd52e436975352ba42e65aaf229d523ae905cb4bc6e7"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/学習結果/実行時の学習による順位補正の検討.py",
+      "bytes": 8721,
+      "sha256": "a52508f0fcf66418f906aba28ccb8d78486059b17956135c3a80be8f67d2cc82"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/対照を揃えた補助検証.py",
+      "bytes": 5720,
+      "sha256": "44d584d9fb8595cf7612d1857528d81b409d6234584b2ce9c42185ba60fea0ab"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/属性部分集合の検討.py",
+      "bytes": 3548,
+      "sha256": "387cb16470471c5e729077c2e270c723ee6c4bf81524db812311b0c4fdceb6d4"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/検証.py",
+      "bytes": 10624,
+      "sha256": "6a76c8f9619ae9ae44a0b0f669b5a17eea4f068d9bfbdfdfbca93684f9c43617"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/結果/実行時の分析.py",
+      "bytes": 16899,
+      "sha256": "25cdf97bee3adbda9a5fd8b0793fa0c3f98102366bd1944386fb619d04569aad"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/記録と図の作成.py",
+      "bytes": 9991,
+      "sha256": "5c6b69e0501c4ebcd0f6db520d0d0d7a4e905cc664128f6c753f176f1d39205f"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加検討.py",
+      "bytes": 8114,
+      "sha256": "d3c2caa4a316f11608dafb1aed59640897ecb7d61c260dd5e27a7418900c519e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/追加結果/実行時の追加検討.py",
+      "bytes": 6382,
+      "sha256": "731b92ec30f61b97c2114532446aa096c8d06eed3f51cdd65a047c4dda6f2e3e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員を使う順位較正の検討.py",
+      "bytes": 7846,
+      "sha256": "9643ac8d512147c7926e6cd6ff816d2adbbb12b8ef8c9e46f31b22ce2b0cb833"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261007_MIA全体改善の検討/非会員較正の感度検証.py",
+      "bytes": 7948,
+      "sha256": "f75d0c9e8acf8e42ccf24dda7c89170f21d6510b6853a32658937b9d3bbdff1f"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/三分割Atestの公開C一致層別診断.py",
+      "bytes": 20977,
+      "sha256": "fa0e08a5453bb4efbffba91769922830ffb72bdda9a4cdf0f9151c8904139db1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/中心配置を安定させた密度比.py",
+      "bytes": 4861,
+      "sha256": "c26cb8fb61b8de056f201f3f1b5a2b587d7749e3abd037a3bcad1ec701e8d3a2"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/予備戦と本戦の特徴差を確認.py",
+      "bytes": 5364,
+      "sha256": "5d3d650c6d6ff42586fc8e951630a53913cee2a3bc3ba0bcfbd9466f01f52ba7"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/他対象との競合を滑らかに補正.py",
+      "bytes": 3107,
+      "sha256": "1e86e1eda2eef66a2e41e2a84f90c2bdeb97e79f44b8912645e9e632d7e718e7"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/代表特徴を計算.py",
+      "bytes": 5095,
+      "sha256": "e90deb42e848ccda972ce6d2c9a1cb07a1db4397ffa9fcac1b806c18b1a0d868"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPRを重視する学習.py",
+      "bytes": 8164,
+      "sha256": "d5208b83cabcc2e733d50f8897b9487d8a98561ba80ab2eb5a8acf3345e26e7f"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/低FPR学習結果/実験方針.json",
+      "bytes": 508,
+      "sha256": "aa2e1d0e3a058755786f827f60538347ff6a5f400bdc814fa75ddacfb12d2faf"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公式提出のMIA全体記録.py",
+      "bytes": 3893,
+      "sha256": "cdf7532856a67f7aca0727084e03fd5d94a495560d9f405b4383fa3eee612db9"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Aの有限標本p値を確認.py",
+      "bytes": 23613,
+      "sha256": "3c36d23b6e33d6588b3466115035d432bbe13c6948ed781e2412bad144fcc7ee"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開Cの特徴を整理.py",
+      "bytes": 9838,
+      "sha256": "7ea739ffc11d199532ad42a154b74acda1d87a57f82d6a2b8aa53d5dfd065532"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件.py",
+      "bytes": 12874,
+      "sha256": "3a7c804f67ef24d01701fd13a4577ba2d143a16ac7873742dee2a1bd51d5e351"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "bytes": 13503,
+      "sha256": "82e0536a1ee4506db2c1a0ead58ce41c00d698a4bdeedd5560c3ecc5a6707f38"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開QとCの重複数を保つ対応容量.py",
+      "bytes": 10580,
+      "sha256": "09a0ddf8a66dcb4603d6cf905f03e59d59e1ac13d635b791621350a21b4ad26a"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データのフェーズ間重なり.py",
+      "bytes": 5991,
+      "sha256": "76da7c495801006bb139d9c652330b22adcf729a741f0efff10ce3d6f0c77c59"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開データ分類器の探索.py",
+      "bytes": 4208,
+      "sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開値の刻みとカテゴリを確認.py",
+      "bytes": 18255,
+      "sha256": "f77299090b7b5b3609ba7f8e32e71d2917b06c692df55eed500e41a45711fc93"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開分布の尾を確認.py",
+      "bytes": 10547,
+      "sha256": "78107f8974ba343b1256dc34093d4e5ddef30fec72e78519b5eec294127c7bcc"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との属性単位一致.py",
+      "bytes": 18601,
+      "sha256": "a8afd48064355f514a1673c6777315df5975282ca4063d52ba80387328aed3e6"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景との高次属性一致.py",
+      "bytes": 14139,
+      "sha256": "9f932cf262ede47348d570563f8928ac0891aa3f45caea1a80157e5de4ee71ad"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景の分割較正.py",
+      "bytes": 24520,
+      "sha256": "7b795aeb98567c9c99f11afafe29ccdf5a78c9a8782f77889f80fbd1c38fdc50"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景三分割の独立非会員診断.py",
+      "bytes": 21090,
+      "sha256": "f85daa5f24af45951b943441e9a0db9b4e37a12aca670a3f9f407e5a687d4f51"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開背景行を除いた診断.py",
+      "bytes": 25510,
+      "sha256": "9e7d8809603e7f9e923e37673f5b15a9ae6944e18542ca66b79eb10accb8d99d"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度.py",
+      "bytes": 7875,
+      "sha256": "a1592d76ebae7da3780fd38288c0c7b3e1a99b90d3409c2637fa14bf758c8494"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開課題の除外に対する順位感度結果/実験方針.json",
+      "bytes": 779,
+      "sha256": "6f82e589d5f86356a9324fbc0e1c5cd86413b34e09425149cb60c3092e0e4106"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開較正の局所標本数を集計.py",
+      "bytes": 6123,
+      "sha256": "b9a5c2fb41afe90e22a4bcfd8630e8f2990d1f2071735c6f12c5e51b71337896"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員だけで較正を選ぶ.py",
+      "bytes": 13591,
+      "sha256": "73c74b2201bc55cbb99e93e1d4342da5d55d32bdd682a8f893599695db9231ac"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/公開非会員の較正結果/実験方針.json",
+      "bytes": 1001,
+      "sha256": "f98d2382483f7a693c6a57c49372c6f57877e585c2ab63afc3d2e5be3b389bf0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有GaussianのA分割seed感度.py",
+      "bytes": 19222,
+      "sha256": "9e01a8372a8004e816d8b503285e0d9f427cd93cba18c5574d331a589e9431eb"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共有中順位座標の密度比.py",
+      "bytes": 26171,
+      "sha256": "851c6f8f9438228369e81800749684568916c9e9f14454e7e92e3d47dcac4efd"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/共通.py",
+      "bytes": 7783,
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/再現監査.py",
+      "bytes": 7302,
+      "sha256": "feee09cc69141a30607fefa85447f45fb4c2a01bd754716ce74999d4ea93ebd7"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分布を揃えた距離の探索.py",
+      "bytes": 3719,
+      "sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/分析.py",
+      "bytes": 5862,
+      "sha256": "a318fbbebaff39ec76ac83a72dee49b7267aa42c53950b8a093567b96ed3058a"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/別系統特徴の学習.py",
+      "bytes": 7954,
+      "sha256": "7e783bc6e89c41eff51be6583842ab306b413385df3d6ae6a26efdc5bf1d5cc9"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/失敗記録/学習初回/実行時.py",
+      "bytes": 5845,
+      "sha256": "56398d2a41938adc9d9e88e224f7709420f394226a2b923c95a419801a48fe59"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習でも密度比の乱数を確認.py",
+      "bytes": 3650,
+      "sha256": "7d737d599eabf9e723f23fcd1282256cde605e56534a14bf2674440b591509d5"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/学習の分割感度.py",
+      "bytes": 5014,
+      "sha256": "46e6e7d06339dc16b97117579a54e630757e001ae043d35efce7f4c175811c7f"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/実験方針.json",
+      "bytes": 1772,
+      "sha256": "0d150cb9e39fe5dd1aad2e2b867d383b2994dc73643cc5eb144b0c759dff80d5"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/密度比の属性と乱数を確認.py",
+      "bytes": 3947,
+      "sha256": "b16ad609d5c060dce120424ba74a861232dd9ce59e26bff3d0208bb0423c40d8"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/局所支持区間の密度比.py",
+      "bytes": 24022,
+      "sha256": "007b5551a960b66205f2f9ff7059443678f62bb39dbb6bd04659695324ba8609"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/広い集団への非会員較正結果/実験方針.json",
+      "bytes": 1526,
+      "sha256": "a258dcd0bac507e354207c4936af09c521a303d6d39a8b51e8094b61a4278f6e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/三分割Atestの公開C一致層別診断.py",
+      "bytes": 20977,
+      "sha256": "fa0e08a5453bb4efbffba91769922830ffb72bdda9a4cdf0f9151c8904139db1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公式提出のMIA全体記録.py",
+      "bytes": 3893,
+      "sha256": "cdf7532856a67f7aca0727084e03fd5d94a495560d9f405b4383fa3eee612db9"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Aの有限標本p値を確認.py",
+      "bytes": 23613,
+      "sha256": "3c36d23b6e33d6588b3466115035d432bbe13c6948ed781e2412bad144fcc7ee"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開Cの特徴を整理.py",
+      "bytes": 9838,
+      "sha256": "7ea739ffc11d199532ad42a154b74acda1d87a57f82d6a2b8aa53d5dfd065532"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの双方向支持必要条件_カテゴリ文字列対応.py",
+      "bytes": 13503,
+      "sha256": "82e0536a1ee4506db2c1a0ead58ce41c00d698a4bdeedd5560c3ecc5a6707f38"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開QとCの重複数を保つ対応容量.py",
+      "bytes": 10580,
+      "sha256": "09a0ddf8a66dcb4603d6cf905f03e59d59e1ac13d635b791621350a21b4ad26a"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データのフェーズ間重なり.py",
+      "bytes": 5991,
+      "sha256": "76da7c495801006bb139d9c652330b22adcf729a741f0efff10ce3d6f0c77c59"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開データ分類器の探索.py",
+      "bytes": 4208,
+      "sha256": "7488b386453ecd95cef3a5b3baa9ad569fdc1f8ea5469e822f3953edd40fd833"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開値の刻みとカテゴリを確認.py",
+      "bytes": 18255,
+      "sha256": "f77299090b7b5b3609ba7f8e32e71d2917b06c692df55eed500e41a45711fc93"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開分布の尾を確認.py",
+      "bytes": 10547,
+      "sha256": "78107f8974ba343b1256dc34093d4e5ddef30fec72e78519b5eec294127c7bcc"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との属性単位一致.py",
+      "bytes": 18601,
+      "sha256": "a8afd48064355f514a1673c6777315df5975282ca4063d52ba80387328aed3e6"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景との高次属性一致.py",
+      "bytes": 14139,
+      "sha256": "9f932cf262ede47348d570563f8928ac0891aa3f45caea1a80157e5de4ee71ad"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景の分割較正.py",
+      "bytes": 24520,
+      "sha256": "7b795aeb98567c9c99f11afafe29ccdf5a78c9a8782f77889f80fbd1c38fdc50"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景三分割の独立非会員診断.py",
+      "bytes": 21090,
+      "sha256": "f85daa5f24af45951b943441e9a0db9b4e37a12aca670a3f9f407e5a687d4f51"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開背景行を除いた診断.py",
+      "bytes": 25510,
+      "sha256": "9e7d8809603e7f9e923e37673f5b15a9ae6944e18542ca66b79eb10accb8d99d"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開課題の除外に対する順位感度.py",
+      "bytes": 7875,
+      "sha256": "a1592d76ebae7da3780fd38288c0c7b3e1a99b90d3409c2637fa14bf758c8494"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開較正の局所標本数を集計.py",
+      "bytes": 6123,
+      "sha256": "b9a5c2fb41afe90e22a4bcfd8630e8f2990d1f2071735c6f12c5e51b71337896"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/公開非会員だけで較正を選ぶ.py",
+      "bytes": 13591,
+      "sha256": "73c74b2201bc55cbb99e93e1d4342da5d55d32bdd682a8f893599695db9231ac"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有GaussianのA分割seed感度.py",
+      "bytes": 19222,
+      "sha256": "9e01a8372a8004e816d8b503285e0d9f427cd93cba18c5574d331a589e9431eb"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共有中順位座標の密度比.py",
+      "bytes": 26171,
+      "sha256": "851c6f8f9438228369e81800749684568916c9e9f14454e7e92e3d47dcac4efd"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/共通.py",
+      "bytes": 7783,
+      "sha256": "1189f51f17ec37504b8fced5577c7c9020666bff769617fe62b4762cc917608c"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/分布を揃えた距離の探索.py",
+      "bytes": 3719,
+      "sha256": "dd8a880c3da28b279ddbb8a9517833116e77af359a52d3765dd76559d0fe6377"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/局所支持区間の密度比.py",
+      "bytes": 24022,
+      "sha256": "007b5551a960b66205f2f9ff7059443678f62bb39dbb6bd04659695324ba8609"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の再評価.py",
+      "bytes": 3930,
+      "sha256": "4a2eae7c37101234d019330148bcf0c6f02e7205d9ec7fd0e52b6af328b9ef73"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/昨日の学習を18対象で確認.py",
+      "bytes": 6837,
+      "sha256": "30dd8e0f5f895fa24f19e1a140dbe95caa492e1935fcd3bb0f5a531cd5fb3ebf"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/有限p値の整数解像度.py",
+      "bytes": 14042,
+      "sha256": "509218564d2754fc469a098d19f7e4042d30a59deb984070e410c1ba143659c0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/本戦公開特徴の集約表を作る.py",
+      "bytes": 6433,
+      "sha256": "c1c19ac110a1755e65e5467fdf25d2a3e4885483e936b378014b5132bfe72174"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/混合分布と局所密度の探索.py",
+      "bytes": 6838,
+      "sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/理想CDF縮約の条件付き尾率を確認.py",
+      "bytes": 17848,
+      "sha256": "edf690aeb6a14651181c6c4f518194f3e13acb2ba28619d8ba949d9ebefeb0ab"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/直接密度比の探索.py",
+      "bytes": 3307,
+      "sha256": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/縮約係数と局所支持の図.py",
+      "bytes": 3620,
+      "sha256": "d92502d0c0bd283aba0334874882c61e0120813f5deccecc57a5af23074c45ea"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数ビューの対象保留確認.py",
+      "bytes": 7534,
+      "sha256": "22db33b0df41b0de7d93cc00369fb2fc7dc6cd4258e7fc9f642539e4e46fd2fe"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/複数背景と乱数で学習.py",
+      "bytes": 8708,
+      "sha256": "ca42e5d588fbee92a186dbad5f76df34be6eb900f34cc5c70e3318fcf7352aa1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/距離と分布の探索.py",
+      "bytes": 9105,
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/通常順位を通した非会員診断.py",
+      "bytes": 20314,
+      "sha256": "d14798baecdb6fece5d006ac2b9a6d62ece134bc706c0db3a6ee179759f2e17b"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/階層ヒストグラムの探索.py",
+      "bytes": 3740,
+      "sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/離散依存木の密度比を確認.py",
+      "bytes": 29314,
+      "sha256": "93ee3bcc8b0fc49c453ad4c91e74b11d9932948f018c7cb51ecd000992fc17b1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員課題を丸ごと保留.py",
+      "bytes": 7254,
+      "sha256": "1298c3094bc3d32c232e13c0918219727e0a0ab4b4b3e798f07368f2eb2be1b0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力_20261008_082600/evidence/非会員較正の広い集団を保留検証.py",
+      "bytes": 14632,
+      "sha256": "94fb013481832407a6c19aadb08b2a4ca15641fd0e794787f49e621b28ceeb8e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/技術引継ぎ入力をまとめる.py",
+      "bytes": 26934,
+      "sha256": "96a2aefe308980e25d453de756f4afd9f003b9d40517fd52b2afc47945e05b49"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の再評価.py",
+      "bytes": 3930,
+      "sha256": "4a2eae7c37101234d019330148bcf0c6f02e7205d9ec7fd0e52b6af328b9ef73"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/昨日の学習を18対象で確認.py",
+      "bytes": 6837,
+      "sha256": "30dd8e0f5f895fa24f19e1a140dbe95caa492e1935fcd3bb0f5a531cd5fb3ebf"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/有限p値の整数解像度.py",
+      "bytes": 14042,
+      "sha256": "509218564d2754fc469a098d19f7e4042d30a59deb984070e410c1ba143659c0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦で順位を確認.py",
+      "bytes": 5457,
+      "sha256": "3e32065bfba374466065dc808fcb576d55f2fdcd9a678b4d22f6c0e4b8874240"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/本戦公開特徴の集約表を作る.py",
+      "bytes": 6433,
+      "sha256": "c1c19ac110a1755e65e5467fdf25d2a3e4885483e936b378014b5132bfe72174"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/混合分布と局所密度の探索.py",
+      "bytes": 6838,
+      "sha256": "07372fc3d6519d46609f515a5335dc91aa56060999ab52073da6dbcb260d9083"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴の再現確認.py",
+      "bytes": 2683,
+      "sha256": "c5abf708a6f608d99db0abe7ff2ee4a64ac315d1c50957ffdb4bc67dc8587fc9"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/特徴を外して学習を確認.py",
+      "bytes": 6532,
+      "sha256": "94695e7e4f6e7164e7605c749e5e795b9b4882809e754ce37b61c772414053ee"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/理想CDF縮約の条件付き尾率を確認.py",
+      "bytes": 17848,
+      "sha256": "edf690aeb6a14651181c6c4f518194f3e13acb2ba28619d8ba949d9ebefeb0ab"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/直接密度比の探索.py",
+      "bytes": 3307,
+      "sha256": "9b815bf8ec097a07462d4d7249617ff5b4e5d5263a6da80bf2dc36b857f2314c"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/縮約係数と局所支持の図.py",
+      "bytes": 3620,
+      "sha256": "d92502d0c0bd283aba0334874882c61e0120813f5deccecc57a5af23074c45ea"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景キャッシュで特徴除去を確認.py",
+      "bytes": 4771,
+      "sha256": "b9fddb105ac89cf0e2b6fa64a352fbbc55f8aa3de9d514102f4a4998fbef0fe1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更で学習を確認.py",
+      "bytes": 7936,
+      "sha256": "80a06e1045cf5c4d513846a81ca101c28917449b155ff83b2b9816ce147720b1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の再実行.py",
+      "bytes": 1031,
+      "sha256": "3483c2271d0a95ee21fa23f132d4c28c17f0429d8aba12f1473e3bf399705e86"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/背景変更の学習結果/実験方針.json",
+      "bytes": 4019,
+      "sha256": "655ccff150007409a8690432ade18b58aa0bdfd63658c113666924c9b75b6664"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの学習結果/実験方針.json",
+      "bytes": 782,
+      "sha256": "d836fc288ea46745592eafd34d28b649cc5641d511b0e6338a5aab450f65352b"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留確認.py",
+      "bytes": 7534,
+      "sha256": "22db33b0df41b0de7d93cc00369fb2fc7dc6cd4258e7fc9f642539e4e46fd2fe"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数ビューの対象保留結果/実験方針.json",
+      "bytes": 514,
+      "sha256": "f2b5c79cdb220ad1980a53a3b28677b6e1b41f1ab2931192a2fee4d8efe2a1ba"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/複数背景と乱数で学習.py",
+      "bytes": 8708,
+      "sha256": "ca42e5d588fbee92a186dbad5f76df34be6eb900f34cc5c70e3318fcf7352aa1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/距離と分布の探索.py",
+      "bytes": 9105,
+      "sha256": "9be2af6557922f1e2920f2866c717a41c00af9fac9c16506fd8e070cc27a7c5e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/通常順位を通した非会員診断.py",
+      "bytes": 20314,
+      "sha256": "d14798baecdb6fece5d006ac2b9a6d62ece134bc706c0db3a6ee179759f2e17b"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/階層ヒストグラムの探索.py",
+      "bytes": 3740,
+      "sha256": "7a2f943a9e3875d99262efe4f543b018feeabe47d20efba209cde96dc848486a"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/離散依存木の密度比を確認.py",
+      "bytes": 29314,
+      "sha256": "93ee3bcc8b0fc49c453ad4c91e74b11d9932948f018c7cb51ecd000992fc17b1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員課題を丸ごと保留.py",
+      "bytes": 7254,
+      "sha256": "1298c3094bc3d32c232e13c0918219727e0a0ab4b4b3e798f07368f2eb2be1b0"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_朝9時までの方式探索/非会員較正の広い集団を保留検証.py",
+      "bytes": 14632,
+      "sha256": "94fb013481832407a6c19aadb08b2a4ca15641fd0e794787f49e621b28ceeb8e"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/分析.py",
+      "bytes": 19380,
+      "sha256": "caca3017cf8c2d913d85c50615880cb10f135374790d36f8564f27ba71b9e946"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/実験方針.json",
+      "bytes": 1905,
+      "sha256": "f14196f3abb0d6f4a8a118c7350e75e500ecb2a23d7996d460be72092ac95279"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/分析.py",
+      "bytes": 7682,
+      "sha256": "ab17ee1e250eecae973be6d489db1a0368eb2f75b92434ec4f3b5a1ca8dfa0f1"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/追加混合/実験方針.json",
+      "bytes": 1092,
+      "sha256": "eb9d52d6438879e7ff6f0f3f576325b6877a1ba9c155c9697f809f27ba00ef42"
+    },
+    {
+      "path": "originals/本戦/攻撃フェーズ/Tashiro/20261008_MIA全体_較正の広範比較/集計と図.py",
+      "bytes": 5849,
+      "sha256": "05ff4c6ee47af2a7e9c0b81582ae19675312a32ed642e981e152d825ac9f3c93"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/requirements-kit.txt",
+      "bytes": 996,
+      "sha256": "8dbd72203ef5dd566550f8955f667791ca873068c9c1c28efb0d83db1a8433d1"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/__init__.py",
+      "bytes": 109,
+      "sha256": "ca38ec393bdf40c7a83c803b574acb554e25af2358030b2d7028ab67bb826177"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/__init__.py",
+      "bytes": 115,
+      "sha256": "c4d6d0a4a1af4806e74313144188d239cf3983061bbd63fb20bd38bf615419dc"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/aia.py",
+      "bytes": 4394,
+      "sha256": "f1cfa55c491f5d3447192c381179a69358602091f68bdaf0fbbf10d35f08048a"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/attack/mia.py",
+      "bytes": 2393,
+      "sha256": "f0fe76143ed4d5dbe2e57410b0b870ea36531437a77206fea9d79bce25c421cf"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/__init__.py",
+      "bytes": 53,
+      "sha256": "9b3deade2ab030996f7949ef512e1a3c62ea7d55430c618e2056e33fccb70787"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/config.py",
+      "bytes": 360,
+      "sha256": "33702feadd57f7cfac22d6c7ed5d089da233beba45882605245ebb06cc8a166f"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/schema.py",
+      "bytes": 292,
+      "sha256": "f7ec4f2bedc0843b87d4b71783a62b1074fdafd2f8c0467a576b2d274ef5320e"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/common/submission_schema.py",
+      "bytes": 13316,
+      "sha256": "f7e9b2fe3a0dfe9cf805aee70012f19bbd3fbbe82776ea8b241bd28676464bf9"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/__init__.py",
+      "bytes": 681,
+      "sha256": "ff0390d9c9de08be55c70bd92721ac74cf44e3f0133c78a227b4aec02095e6ff"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/perturb.py",
+      "bytes": 2196,
+      "sha256": "a7ca5164a3243af452a741dee6a7acc70551b56fba38671f6e84d1cd84d0f89b"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/defense/synth.py",
+      "bytes": 10644,
+      "sha256": "ba2b0eac07ecf86e38dec916617da8227c36025d2b060daa186154bd17f2e50f"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/__init__.py",
+      "bytes": 91,
+      "sha256": "b4bbed11925f3cfd54905e095a273282e7812b466cd96e8ecf18a41eeda852f5"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/__init__.py",
+      "bytes": 389,
+      "sha256": "1f910e3ecb02e765f5386693ff22db828be3bb09bc7cdffea3d2fed7819a850f"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/run.py",
+      "bytes": 16015,
+      "sha256": "78d68f4baab795254c23bc679a9175c623bf9609a3d8b3208d740039583656ec"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "bytes": 24293,
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/selfscore.py",
+      "bytes": 10902,
+      "sha256": "8f49e24ec3a2601cecde884659da0ed93cf1806e9385f047e9ea1f96137f147d"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py",
+      "bytes": 25603,
+      "sha256": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/__init__.py",
+      "bytes": 84,
+      "sha256": "716228c07d6ceafe7dea50ed6a3ec9f33fb42dd4ad288fb8c17a3e182b00874e"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/rare/outlier.py",
+      "bytes": 1122,
+      "sha256": "2ade846e60ff0194518fb19cb8aea68c25377870ba9355f946d0625f8a408f47"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/__init__.py",
+      "bytes": 55,
+      "sha256": "1688770c2cda489c35a8de35849460c67ea6c1d3a53b361cc24688fcd2950802"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+      "bytes": 10057,
+      "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+      "bytes": 3121,
+      "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd"
+    },
+    {
+      "path": "originals/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/utility.py",
+      "bytes": 58325,
+      "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
+    },
+    {
+      "path": "requirements-reproduction.txt",
+      "bytes": 307,
+      "sha256": "1cc476c4e20c27f47a157af152002b36d851019cacb681149128a917285ee0fc"
+    },
+    {
+      "path": "tools/prepare_runtime.py",
+      "bytes": 6668,
+      "sha256": "7c8b0d69392f17aa157521a6ba59e5f71cce1c001f9ec5e065d197873bb50aee"
+    },
+    {
+      "path": "tools/restore_catalog.py",
+      "bytes": 2903,
+      "sha256": "4af7a44555a97b89515d4aeab5ff9a3626bb623dda0c86e1fe5806897bf30c8d"
+    },
+    {
+      "path": "tools/verify_recovery.py",
+      "bytes": 4443,
+      "sha256": "e9e8d48d11917bdb4c792c220be08cbdcf909c6d0b8aadaeebd33f25bab60d65"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 962,
+      "sha256": "5412231cb7fb714affe28ae3ff76e3f38a5604aa8d31e60f8d4bf2c8c1e45c9e"
+    }
+  ]
+}

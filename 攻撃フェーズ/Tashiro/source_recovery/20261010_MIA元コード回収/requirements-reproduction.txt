@@ -1,0 +1,12 @@
+# Derived direct calculation dependencies observed on the source Mac.
+# Original requirement definitions remain unchanged under originals/.
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.0
+matplotlib==3.11.0
+lifelines==0.30.3
+statsmodels==0.14.6
+PyYAML==6.0.3
+joblib==1.5.3
+threadpoolctl==3.6.0
