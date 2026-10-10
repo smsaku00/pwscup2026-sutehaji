@@ -1,0 +1,883 @@
+{
+  "status": "PASS",
+  "created_date": "2026-10-10",
+  "scope": "Score-only AIA R1..5 per-target maxima and representative rounds; no answers assembled",
+  "metric": "official corrected aia_per_target",
+  "targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "leaderboard_metric_context": {
+    "reference_metric_label": "総得点に入る補正後AIA力の参考平均",
+    "reference_is_LB_breakdown3": false,
+    "LB_breakdown3": {
+      "leaderboard_key": "score_4",
+      "formal_key": "aia.r_time_all",
+      "meaning": "mean unfloored AIA whole-channel R",
+      "R5_actual": 0.14775730680466903,
+      "R5_display_4dp": "0.1478"
+    },
+    "score_3_is": "MIA rare, not UI breakdown3",
+    "reference_LB_breakdown3_computable_from_saved_HTML": false,
+    "reason": "HTML exposes corrected per-target clip(max(R_all,R_rare)-floor) and whole-channel aggregates, not the selected per-target unfloored R_all; transformation is not invertible",
+    "additional_evidence_needed": "selected round/target unfloored R_all values or official rescoring of that concrete answer",
+    "official_source": {
+      "repository": "pwscup/pwscup2026-kit",
+      "ref": "main-attack-20260928",
+      "path": "starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "git_blob_sha": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "url": "https://github.com/pwscup/pwscup2026-kit/blob/main-attack-20260928/starter/src/pwscup2026/kit/codabench/scoring_io.py#L400-L408",
+      "evidence": "L400-L408 explicitly label LB breakdown1-4; L357 floors per_target; L366 averages corrected values; L368 averages unfloored R_all",
+      "validation": "Root independently fetched official pinned-tag file and matched local SHA256/Git blob; not fetched by this offline script"
+    }
+  },
+  "input_sources": [
+    {
+      "round": 1,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round1.html",
+      "bytes": 3795,
+      "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+      "git_blob_sha": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 2,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round2.html",
+      "bytes": 3763,
+      "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+      "git_blob_sha": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 3,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round3.html",
+      "bytes": 3903,
+      "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "git_blob_sha": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 4,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round4.html",
+      "bytes": 3775,
+      "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+      "git_blob_sha": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 5,
+      "local_read_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "bytes": 3884,
+      "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "git_blob_sha": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "fixed_ref": null,
+      "source_url": null,
+      "origin": "User-provided Library official HTML, materialized by root",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    }
+  ],
+  "summaries": {
+    "r1to5_reference": {
+      "target_count": 22,
+      "primary_mean_np_mean": 0.15528042928257568,
+      "official_equivalent_np_nanmean": 0.15528042928257568,
+      "sum_np_sum": 3.416169444216665,
+      "independent_sum_math_fsum": 3.4161694442166652,
+      "independent_mean_math_fsum_div22": 0.15528042928257568,
+      "decimal_sum_of_original_JSON_numbers": "3.416169444216665476",
+      "decimal_mean_of_original_JSON_numbers": "0.155280429282575703454545454545454545454545454545454545454545",
+      "np_vs_fsum_sum_abs_error": 4.440892098500626e-16,
+      "np_vs_fsum_mean_abs_error": 0.0,
+      "all_values_finite_no_NaN_exclusion": true
+    },
+    "r1to4_reference": {
+      "target_count": 22,
+      "primary_mean_np_mean": 0.10350679444263906,
+      "official_equivalent_np_nanmean": 0.10350679444263906,
+      "sum_np_sum": 2.2771494777380594,
+      "independent_sum_math_fsum": 2.2771494777380594,
+      "independent_mean_math_fsum_div22": 0.10350679444263906,
+      "decimal_sum_of_original_JSON_numbers": "2.277149477738059578",
+      "decimal_mean_of_original_JSON_numbers": "0.103506794442639071727272727272727272727272727272727272727273",
+      "np_vs_fsum_sum_abs_error": 0.0,
+      "np_vs_fsum_mean_abs_error": 0.0,
+      "all_values_finite_no_NaN_exclusion": true
+    },
+    "r3to5_reference": {
+      "target_count": 22,
+      "primary_mean_np_mean": 0.1511902003440833,
+      "official_equivalent_np_nanmean": 0.1511902003440833,
+      "sum_np_sum": 3.326184407569832,
+      "independent_sum_math_fsum": 3.3261844075698326,
+      "independent_mean_math_fsum_div22": 0.1511902003440833,
+      "decimal_sum_of_original_JSON_numbers": "3.326184407569832656",
+      "decimal_mean_of_original_JSON_numbers": "0.151190200344083302545454545454545454545454545454545454545455",
+      "np_vs_fsum_sum_abs_error": 4.440892098500626e-16,
+      "np_vs_fsum_mean_abs_error": 0.0,
+      "all_values_finite_no_NaN_exclusion": true
+    },
+    "r5_single_submission": {
+      "target_count": 22,
+      "primary_mean_np_mean": 0.1027627850065516,
+      "official_equivalent_np_nanmean": 0.1027627850065516,
+      "sum_np_sum": 2.260781270144135,
+      "independent_sum_math_fsum": 2.2607812701441357,
+      "independent_mean_math_fsum_div22": 0.10276278500655162,
+      "decimal_sum_of_original_JSON_numbers": "2.260781270144135629",
+      "decimal_mean_of_original_JSON_numbers": "0.1027627850065516195",
+      "np_vs_fsum_sum_abs_error": 4.440892098500626e-16,
+      "np_vs_fsum_mean_abs_error": 1.3877787807814457e-17,
+      "all_values_finite_no_NaN_exclusion": true
+    }
+  },
+  "mean_differences": {
+    "r1to5_reference_minus_r5": 0.05251764427602408,
+    "r1to5_reference_minus_r1to4_reference": 0.05177363483993662,
+    "r1to5_reference_minus_r3to5_reference": 0.004090228938492396
+  },
+  "per_target": [
+    {
+      "main_team": 0,
+      "r1_aia_corrected": 0.00841328759147894,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.06473858879629824,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.06473858879629824,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.06473858879629824,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.06473858879629824,
+      "reference_minus_r5": 0.06473858879629824,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 1,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0326742346975572,
+      "r5_aia_corrected": 0.1637143657376881,
+      "reference_max_r1to5": 0.1637143657376881,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.0326742346975572,
+      "all_max_rounds_r1to4": [
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.1637143657376881,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.1310401310401309
+    },
+    {
+      "main_team": 2,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.08320111050414326,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.3745253114173855,
+      "reference_max_r1to5": 0.3745253114173855,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.08320111050414326,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.3745253114173855,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.29132420091324224
+    },
+    {
+      "main_team": 3,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.05368562981510988,
+      "r3_aia_corrected": 0.14299982439246173,
+      "r4_aia_corrected": 0.2069833125245568,
+      "r5_aia_corrected": 0.0636210495865947,
+      "reference_max_r1to5": 0.2069833125245568,
+      "all_max_rounds_r1to5": [
+        4
+      ],
+      "reference_representative_round": 4,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.2069833125245568,
+      "all_max_rounds_r1to4": [
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.2069833125245568,
+      "reference_minus_r5": 0.1433622629379621,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 4,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.04634784373021727,
+      "r3_aia_corrected": 0.1305796496601362,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.20915107823156465,
+      "reference_max_r1to5": 0.20915107823156465,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.1305796496601362,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.20915107823156465,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.07857142857142846
+    },
+    {
+      "main_team": 5,
+      "r1_aia_corrected": 0.0341408690483874,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.0341408690483874,
+      "all_max_rounds_r1to5": [
+        1
+      ],
+      "reference_representative_round": 1,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.0341408690483874,
+      "all_max_rounds_r1to4": [
+        1
+      ],
+      "reference_representative_round_r1to4": 1,
+      "reference_max_r3to5": 0.0,
+      "reference_minus_r5": 0.0341408690483874,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 6,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.11695611340175327,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.11695611340175327,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.11695611340175327,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.11695611340175327,
+      "reference_minus_r5": 0.11695611340175327,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 7,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0134356465155418,
+      "r4_aia_corrected": 0.03451292988790697,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.03451292988790697,
+      "all_max_rounds_r1to5": [
+        4
+      ],
+      "reference_representative_round": 4,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.03451292988790697,
+      "all_max_rounds_r1to4": [
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.03451292988790697,
+      "reference_minus_r5": 0.03451292988790697,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 8,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.0,
+      "all_max_rounds_r1to5": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "R5 kept for all-zero tie; convenience only",
+      "reference_max_r1to4": 0.0,
+      "all_max_rounds_r1to4": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.0,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 9,
+      "r1_aia_corrected": 0.7322253012880818,
+      "r2_aia_corrected": 0.7462012678502552,
+      "r3_aia_corrected": 0.7522338155494697,
+      "r4_aia_corrected": 0.718207919734956,
+      "r5_aia_corrected": 0.25622800581816974,
+      "reference_max_r1to5": 0.7522338155494697,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.7522338155494697,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.7522338155494697,
+      "reference_minus_r5": 0.49600580973129993,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 10,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.055080120152619844,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.055080120152619844,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.055080120152619844,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.055080120152619844,
+      "reference_minus_r5": 0.055080120152619844,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 11,
+      "r1_aia_corrected": 0.09093049141246133,
+      "r2_aia_corrected": 0.16677014471690332,
+      "r3_aia_corrected": 0.11247150218296668,
+      "r4_aia_corrected": 0.047112025058783716,
+      "r5_aia_corrected": 0.2881135900040105,
+      "reference_max_r1to5": 0.2881135900040105,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.16677014471690332,
+      "all_max_rounds_r1to4": [
+        2
+      ],
+      "reference_representative_round_r1to4": 2,
+      "reference_max_r3to5": 0.2881135900040105,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.12134344528710717
+    },
+    {
+      "main_team": 12,
+      "r1_aia_corrected": 0.05285730977287794,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.05285730977287794,
+      "all_max_rounds_r1to5": [
+        1
+      ],
+      "reference_representative_round": 1,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.05285730977287794,
+      "all_max_rounds_r1to4": [
+        1
+      ],
+      "reference_representative_round_r1to4": 1,
+      "reference_max_r3to5": 0.0,
+      "reference_minus_r5": 0.05285730977287794,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 13,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.14146731892983327,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.14146731892983327,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.14146731892983327,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.14146731892983327,
+      "reference_minus_r5": 0.14146731892983327,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 14,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.13969745284876345,
+      "r3_aia_corrected": 0.1491209561747061,
+      "r4_aia_corrected": 0.055686612740362386,
+      "r5_aia_corrected": 0.2966881776855895,
+      "reference_max_r1to5": 0.2966881776855895,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.1491209561747061,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.2966881776855895,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.14756722151088342
+    },
+    {
+      "main_team": 15,
+      "r1_aia_corrected": 0.07383292969759966,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.006765862630532596,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.07084607187203218,
+      "reference_max_r1to5": 0.07383292969759966,
+      "all_max_rounds_r1to5": [
+        1
+      ],
+      "reference_representative_round": 1,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.07383292969759966,
+      "all_max_rounds_r1to4": [
+        1
+      ],
+      "reference_representative_round_r1to4": 1,
+      "reference_max_r3to5": 0.07084607187203218,
+      "reference_minus_r5": 0.002986857825567485,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 16,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.031811132377003976,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.03773785651493494,
+      "reference_max_r1to5": 0.03773785651493494,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.031811132377003976,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.03773785651493494,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.0059267241379309665
+    },
+    {
+      "main_team": 17,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.013279993588023373,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.0,
+      "reference_max_r1to5": 0.013279993588023373,
+      "all_max_rounds_r1to5": [
+        3
+      ],
+      "reference_representative_round": 3,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.013279993588023373,
+      "all_max_rounds_r1to4": [
+        3
+      ],
+      "reference_representative_round_r1to4": 3,
+      "reference_max_r3to5": 0.013279993588023373,
+      "reference_minus_r5": 0.013279993588023373,
+      "reference_minus_r1to4_reference": 0.0
+    },
+    {
+      "main_team": 22,
+      "r1_aia_corrected": 0.030705763512741575,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.13819971999944577,
+      "reference_max_r1to5": 0.13819971999944577,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.030705763512741575,
+      "all_max_rounds_r1to4": [
+        1
+      ],
+      "reference_representative_round_r1to4": 1,
+      "reference_max_r3to5": 0.13819971999944577,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.1074939564867042
+    },
+    {
+      "main_team": 25,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.1347411133708944,
+      "reference_max_r1to5": 0.1347411133708944,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.0,
+      "all_max_rounds_r1to4": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.1347411133708944,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.1347411133708944
+    },
+    {
+      "main_team": 26,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.0,
+      "r5_aia_corrected": 0.009900634049172949,
+      "reference_max_r1to5": 0.009900634049172949,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.0,
+      "all_max_rounds_r1to4": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.009900634049172949,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.009900634049172949
+    },
+    {
+      "main_team": 27,
+      "r1_aia_corrected": 0.0,
+      "r2_aia_corrected": 0.0,
+      "r3_aia_corrected": 0.0,
+      "r4_aia_corrected": 0.10620318474554148,
+      "r5_aia_corrected": 0.2173142958566527,
+      "reference_max_r1to5": 0.2173142958566527,
+      "all_max_rounds_r1to5": [
+        5
+      ],
+      "reference_representative_round": 5,
+      "representative_rule": "latest round among all exact maxima; convenience only",
+      "reference_max_r1to4": 0.10620318474554148,
+      "all_max_rounds_r1to4": [
+        4
+      ],
+      "reference_representative_round_r1to4": 4,
+      "reference_max_r3to5": 0.2173142958566527,
+      "reference_minus_r5": 0.0,
+      "reference_minus_r1to4_reference": 0.11111111111111123
+    }
+  ],
+  "representative_round_targets": {
+    "1": [
+      5,
+      12,
+      15
+    ],
+    "2": [],
+    "3": [
+      0,
+      6,
+      9,
+      10,
+      13,
+      17
+    ],
+    "4": [
+      3,
+      7
+    ],
+    "5": [
+      1,
+      2,
+      4,
+      8,
+      11,
+      14,
+      16,
+      22,
+      25,
+      26,
+      27
+    ]
+  },
+  "tie_rule": "all exact maxima recorded; latest representative, target8 R5 kept solely for convenience",
+  "all_zero_target8_max_ties": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "representative_is_adoption_decision": false,
+  "mia_whole_configuration_context": [
+    {
+      "round": 1,
+      "mia_all_whole_configuration": 0.03434084434084434,
+      "total_four_decimal_display": "0.0839",
+      "aia_corrected_power_mean": 0.0465048160147104,
+      "MIA_power_precision": "closed conservative interval from four-decimal total; exact value unavailable",
+      "MIA_power_exact_derived": null,
+      "MIA_power_conservative_interval": {
+        "lower_decimal": "0.0373451839852896",
+        "upper_decimal": "0.0374451839852896"
+      },
+      "exact_total_inherited_ledger": null
+    },
+    {
+      "round": 2,
+      "mia_all_whole_configuration": 0.010909090909090908,
+      "total_four_decimal_display": "0.0672",
+      "aia_corrected_power_mean": 0.05239556086187496,
+      "MIA_power_precision": "derived from independently verified exact scores.json total",
+      "MIA_power_exact_derived": 0.014848818895399248,
+      "MIA_power_conservative_interval": {
+        "lower_decimal": "0.01475443913812504",
+        "upper_decimal": "0.01485443913812504"
+      },
+      "exact_total_inherited_ledger": {
+        "value": 0.06724437975727421,
+        "path": "攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_scores.json",
+        "sha256": "df641ac1d1865ab8bd9278034426b557b3ad59cf134a9789324de34da8335e2c",
+        "git_blob_sha": "563e4705b1c09f84708d20c8e7923c8482e55d6f",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "ledger": "history_metrics.json"
+      }
+    },
+    {
+      "round": 3,
+      "mia_all_whole_configuration": 0.039795389795389796,
+      "total_four_decimal_display": "0.1250",
+      "aia_corrected_power_mean": 0.08246098340252228,
+      "MIA_power_precision": "closed conservative interval from four-decimal total; exact value unavailable",
+      "MIA_power_exact_derived": null,
+      "MIA_power_conservative_interval": {
+        "lower_decimal": "0.04248901659747772",
+        "upper_decimal": "0.04258901659747772"
+      },
+      "exact_total_inherited_ledger": null
+    },
+    {
+      "round": 4,
+      "mia_all_whole_configuration": 0.03972545972545973,
+      "total_four_decimal_display": "0.0957",
+      "aia_corrected_power_mean": 0.054608191790439305,
+      "MIA_power_precision": "derived from independently verified exact scores.json total",
+      "MIA_power_exact_derived": 0.04105879305879307,
+      "MIA_power_conservative_interval": {
+        "lower_decimal": "0.041041808209560695",
+        "upper_decimal": "0.041141808209560695"
+      },
+      "exact_total_inherited_ledger": {
+        "value": 0.09566698484923238,
+        "path": "攻撃フェーズ/AIA/第4回/scores.json",
+        "sha256": "47e79e6bcf6330464610f501494608efdb94c515b9b7f9b34b88b8e13238ced9",
+        "git_blob_sha": "3f066f3a204bcc143c72f07abb7af95c59d77b66",
+        "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+        "ledger": "history_metrics.json"
+      }
+    },
+    {
+      "round": 5,
+      "mia_all_whole_configuration": 0.03797720797720798,
+      "total_four_decimal_display": "0.1438",
+      "aia_corrected_power_mean": 0.1027627850065516,
+      "MIA_power_precision": "closed conservative interval from four-decimal total; exact value unavailable",
+      "MIA_power_exact_derived": null,
+      "MIA_power_conservative_interval": {
+        "lower_decimal": "0.0409872149934484",
+        "upper_decimal": "0.0410872149934484"
+      },
+      "exact_total_inherited_ledger": null
+    }
+  ],
+  "mia_whole_R3_all_and_power_highest_confirmed": true,
+  "mia_targetwise_max_generated": false,
+  "conditional_arithmetic_reference": {
+    "R3_MIA_full1049_kept": {
+      "total_interval_decimal": [
+        "0.19776944588005340",
+        "0.19786944588005340"
+      ],
+      "rare_question_kept": "fixed5bit question1",
+      "condition": "entire old R3 MIA answer including rare cells unchanged"
+    },
+    "R4_MIA_power_plus_AIA_reference": 0.19633922234136875,
+    "is_scored_single_submission": false,
+    "is_scoring_guarantee": false
+  },
+  "rare_context": {
+    "remaining_placements": 16,
+    "condition": "saved membership model and original correspondence",
+    "confirmed_positive_individual_ids": [
+      {
+        "main_team": 17,
+        "record_id": 115
+      }
+    ],
+    "future_two_questions_adopted": false,
+    "future_answers_generated": false,
+    "final_individually_resolved_MIA_CSV_generated": false,
+    "final_MIA_CSV_score_computed": false,
+    "evidence": "../../MIA希少/第5回実結果_復号_20261010/説明.md"
+  },
+  "validation": {
+    "pinned_input_SHA256_and_git_blob": "all5 PASS",
+    "same_22_HTML_targets": true,
+    "same_constants": true,
+    "all110_AIA_values_finite_in_0_1": true,
+    "max_ties_float_and_decimal_equal": true,
+    "max_tie_target_count": 1,
+    "CSV_rows_readback": 22,
+    "CSV_all_numeric_values_and_ties_roundtrip": true,
+    "sum_and_mean_independent_fsum_check": true
+  },
+  "population_context": {
+    "source": "aia_comparison_audit.json",
+    "inherited_verified_targets": 22,
+    "inherited_verified_rows_per_target": 326,
+    "inherited_pair_set_sha256": "1dec4c02e1b9545a7d5d239649df5d68583036dbea62bd69b6101781a36751bc",
+    "standalone_script_checks_HTML_targets_only": true
+  },
+  "limits": [
+    "Reference maxima are observed after scoring, not a scored single submission or a guarantee.",
+    "Server input ZIP hashes are not directly checked; R5 mapping follows user-supplied original.",
+    "MIA target TPR is banded; no targetwise MIA winner or max is inferred.",
+    "MIA exact totals R2/R4 are inherited verified ledger records; R1/R3/R5 use conservative rounded-display intervals.",
+    "Rare fixed-question CSV differs from final individual-resolution answer; future questions and final answer not created."
+  ],
+  "prediction_files_read": false,
+  "new_answers_generated": false,
+  "token_accessed": false,
+  "private_truth_accessed": false,
+  "GitHub_write_performed": false,
+  "environment": {
+    "python": "3.12.15",
+    "numpy": "2.4.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "output_SHA256": {
+    "reference_combination_r1to5.csv": "9ea831ed327d5e319eca2d85faa0c2e629358f4560cf620723129887041a1c3c",
+    "reference_combination_r1to5.md": "beebf08e76ca40b19956b0ab5703255d1ca4a33603c56e97ffa48b7d08ed236a",
+    "reference_combination_r1to5.py": "22b0acaa0d650cf03f6f0969fb82e49d4995b588474ae43ff2b5e7a4bcfdfd7f"
+  }
+}

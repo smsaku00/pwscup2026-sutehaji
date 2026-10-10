@@ -591,7 +591,7 @@
   ],
   "output_sha256": {
     "aia_target_comparison.csv": "15729b497e9e64edfd81113b43f2be0d357a3c8c0c8b433318fc5ff9fe49581a",
-    "aia_comparison_audit.md": "d29f248d4e4c77d4187e102ce3e1fcebeadfc0e5a4658ef8cd0dc0d3d53fcf1d"
+    "aia_comparison_audit.md": "2aa60a4c17d0fcc581830c595c81edea8cafb85850dd2e1f93eb25f9aaacaacf"
   },
   "primary_aggregation": {
     "function": "numpy.nanmean",
@@ -600,5 +600,18 @@
     "numpy_version": "2.4.6",
     "R5_primary": 0.1027627850065516,
     "fsum_max_abs_difference": 1.3877787807814457e-17
+  },
+  "current_reference_combination": {
+    "scope": "R1-R5 all22 targets",
+    "detail": "reference_combination_r1to5.json",
+    "full_precision_csv": "reference_combination_r1to5.csv",
+    "mean": 0.15528042928257568,
+    "sum": 3.416169444216665,
+    "ties": "main8: all rounds1-5 at0; latest round5 is a convenience representative",
+    "new_answer_generated": false,
+    "official_scored_combination": false,
+    "metric_label": "総得点に入る補正後AIA力の参考平均",
+    "is_LB_breakdown3": false,
+    "LB_breakdown3_context": "reference_combination_r1to5.json:leaderboard_metric_context"
   }
 }

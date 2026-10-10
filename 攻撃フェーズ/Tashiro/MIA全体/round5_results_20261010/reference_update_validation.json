@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "date": "2026-10-10",
+  "scope": "Documentation and score-only R1-R5 reference update",
+  "publication_base_commit": "42d13d17f8c2b9fad5ca1d883501d26e62775d36",
+  "publication_base_tree": "9618acaa1bcc2cb68c3621321c0ea89870d67131",
+  "source_originals": [
+    {
+      "round": 1,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round1.html",
+      "bytes": 3795,
+      "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+      "git_blob_sha": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/一回目/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 2,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round2.html",
+      "bytes": 3763,
+      "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+      "git_blob_sha": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第2回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 3,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round3.html",
+      "bytes": 3903,
+      "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+      "git_blob_sha": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第3回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 4,
+      "local_read_path": "/private/tmp/reference_combination_r1to5_inputs/round4.html",
+      "bytes": 3775,
+      "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+      "git_blob_sha": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "fixed_ref": "8188510261744ebf622fad583dc226e7ae6da840",
+      "source_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/8188510261744ebf622fad583dc226e7ae6da840/攻撃フェーズ/AIA/第4回/detailed_results.html",
+      "origin": "Pinned saved official HTML; re-fetched with authorized GitHub fetch_file",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    },
+    {
+      "round": 5,
+      "local_read_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "bytes": 3884,
+      "sha256": "2921cdf8a7af4958b78ac64bae04e6297d46eabf1e7b664d48e48f07a8a980dd",
+      "git_blob_sha": "3adac7628bc6697caa07c4f0b7ddc2118814740b",
+      "repository": "smsaku00/pwscup2026-sutehaji",
+      "repository_path": "攻撃フェーズ/MIA/5回目/採点結果/detailed_results.html",
+      "fixed_ref": null,
+      "source_url": null,
+      "origin": "User-provided Library official HTML, materialized by root",
+      "sha256_and_git_blob_match": true,
+      "team_id": 28,
+      "validation_and_scoring_complete": true
+    }
+  ],
+  "all110_original_AIA_values_match_history_CSV_JSON": true,
+  "all22_maxima_and_all_ties_match": true,
+  "reference_mean": 0.15528042928257568,
+  "reference_sum_numpy": 3.416169444216665,
+  "reference_sum_fsum": 3.4161694442166652,
+  "representative_round_targets": {
+    "1": [
+      5,
+      12,
+      15
+    ],
+    "2": [],
+    "3": [
+      0,
+      6,
+      9,
+      10,
+      13,
+      17
+    ],
+    "4": [
+      3,
+      7
+    ],
+    "5": [
+      1,
+      2,
+      4,
+      8,
+      11,
+      14,
+      16,
+      22,
+      25,
+      26,
+      27
+    ]
+  },
+  "relative_links_checked": 86,
+  "markdown_table_rows_checked": 187,
+  "output_hashes_verified": true,
+  "leaderboard_metric_context": {
+    "reference_metric_label": "総得点に入る補正後AIA力の参考平均",
+    "reference_is_LB_breakdown3": false,
+    "LB_breakdown3": {
+      "leaderboard_key": "score_4",
+      "formal_key": "aia.r_time_all",
+      "meaning": "mean unfloored AIA whole-channel R",
+      "R5_actual": 0.14775730680466903,
+      "R5_display_4dp": "0.1478"
+    },
+    "score_3_is": "MIA rare, not UI breakdown3",
+    "reference_LB_breakdown3_computable_from_saved_HTML": false,
+    "reason": "HTML exposes corrected per-target clip(max(R_all,R_rare)-floor) and whole-channel aggregates, not the selected per-target unfloored R_all; transformation is not invertible",
+    "additional_evidence_needed": "selected round/target unfloored R_all values or official rescoring of that concrete answer",
+    "official_source": {
+      "repository": "pwscup/pwscup2026-kit",
+      "ref": "main-attack-20260928",
+      "path": "starter/src/pwscup2026/kit/codabench/scoring_io.py",
+      "git_blob_sha": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+      "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+      "url": "https://github.com/pwscup/pwscup2026-kit/blob/main-attack-20260928/starter/src/pwscup2026/kit/codabench/scoring_io.py#L400-L408",
+      "evidence": "L400-L408 explicitly label LB breakdown1-4; L357 floors per_target; L366 averages corrected values; L368 averages unfloored R_all",
+      "validation": "Root independently fetched official pinned-tag file and matched local SHA256/Git blob; not fetched by this offline script"
+    }
+  },
+  "independent_agent_QA": "methods_audit PASS: 110 values, maxima/ties, mapping, output hashes, 70 links and187 rows",
+  "historical_validation_retained": "update_validation.json describes earlier R5 publication and is unchanged",
+  "new_prediction_CSV_or_submission_ZIP_created": false,
+  "competition_submission_performed": false,
+  "private_truth_or_credentials_read": false,
+  "Yamazaki_files_modified": false,
+  "changed_files_before_this_report": {
+    "攻撃フェーズ/成績一覧.md": {
+      "bytes": 19931,
+      "sha256": "bf8f6c11e26fb41adfefaebb67c36227a2906b69ad9924db65df6126fc1ffe2e",
+      "git_blob_sha": "b98b07da1eed54045ce83e83fa9a4261aaaed5d4",
+      "before_git_blob_sha": "e3f0c35672b4590c64948a76a7d3457992336b00"
+    },
+    "攻撃フェーズ/README.md": {
+      "bytes": 2126,
+      "sha256": "4a9c4a68299395cb40584cad557fac44678a2a29883905254c9623ba84218730",
+      "git_blob_sha": "9d37df0e53115d641c7d7b1694d2166bb0622cf7",
+      "before_git_blob_sha": "b7fa38c8b9f0af40ccba00e45afe9e9df53e59bd"
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/README.md": {
+      "bytes": 6786,
+      "sha256": "2196fe8d6fceca367c608ba78903fd0cce5ad8a1cba5271c81e2f391a1cc755b",
+      "git_blob_sha": "718f4002eadb8535f81f84af30a08f1693a2ff72",
+      "before_git_blob_sha": "dd71d10020a2bf6a1f46468f6d0e017607942cac"
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_comparison_audit.md": {
+      "bytes": 8062,
+      "sha256": "2aa60a4c17d0fcc581830c595c81edea8cafb85850dd2e1f93eb25f9aaacaacf",
+      "git_blob_sha": "7b2d3427aca5537464f582935923af0403c4d2cb",
+      "before_git_blob_sha": "a2f4ad7d674ff8116278f44939017297541d73b6"
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/aia_comparison_audit.json": {
+      "bytes": 20868,
+      "sha256": "5728498fa89a753d80ab8f4eba59a9f162b0d4794423c886885e3e9ab6e891d2",
+      "git_blob_sha": "193e5f855ab3eb430188f7343471dc4c499300f2",
+      "before_git_blob_sha": "159882d16b99bad4573564b098d6f0d2c1eeca09"
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/reference_combination_r1to5.csv": {
+      "bytes": 4645,
+      "sha256": "9ea831ed327d5e319eca2d85faa0c2e629358f4560cf620723129887041a1c3c",
+      "git_blob_sha": "4adcd093502ab4fe53f53e2cea263476639d8d4d",
+      "before_git_blob_sha": null
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/reference_combination_r1to5.json": {
+      "bytes": 32402,
+      "sha256": "5df856dffc8fd1c1ae3177d8dba49a6eec6ef7cddc45e8932e5ffa57ac046362",
+      "git_blob_sha": "9a26b43d05c403815d88518669ddee9358d39a21",
+      "before_git_blob_sha": null
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/reference_combination_r1to5.md": {
+      "bytes": 9749,
+      "sha256": "beebf08e76ca40b19956b0ab5703255d1ca4a33603c56e97ffa48b7d08ed236a",
+      "git_blob_sha": "f7a5c804a8b5cd92f7a693f01967772c51842b06",
+      "before_git_blob_sha": null
+    },
+    "攻撃フェーズ/Tashiro/MIA全体/round5_results_20261010/reference_combination_r1to5.py": {
+      "bytes": 25875,
+      "sha256": "22b0acaa0d650cf03f6f0969fb82e49d4995b588474ae43ff2b5e7a4bcfdfd7f",
+      "git_blob_sha": "92b386cfc1f2fd70530a49d9e83057e70fb52be1",
+      "before_git_blob_sha": null
+    }
+  },
+  "limits": [
+    "Reference combines observed historical score components after scoring, not a scored new submission or future guarantee.",
+    "Server input ZIP hash correspondence is not independently available; saved original correspondence retained.",
+    "MIA exact target TPR unavailable; no per-target MIA maxima or final rare-member answer inferred.",
+    "Reference LB breakdown3 cannot be recovered from the available aggregate HTML metrics."
+  ],
+  "publication_readback_plan": "Normal GitHub tree/commit + expected-head non-force update; verify all tree changes and changed file hashes afterward"
+}
