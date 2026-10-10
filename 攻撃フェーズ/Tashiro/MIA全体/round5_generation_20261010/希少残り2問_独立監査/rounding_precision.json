@@ -1,0 +1,146 @@
+[
+  {
+    "decimal_places": 3,
+    "unique_observation_sequences": 665,
+    "collision_groups": 419,
+    "worst_final_remaining": 9,
+    "example": {
+      "displayed_round5_6_7": [
+        "0.017",
+        "0.010",
+        "0.009"
+      ],
+      "placement_ids": [
+        1062,
+        1064
+      ],
+      "placements": [
+        {
+          "placement_id": 1062,
+          "Team6": "495",
+          "Team10": "90+115",
+          "Team11": "383",
+          "Team16": "169+304",
+          "Team17": "462",
+          "Team25": "264+675",
+          "outside_22_targets": "47+76",
+          "round5_exact": "899/54000",
+          "round6_exact": "89/9000",
+          "round7_exact": "11/1200",
+          "round5_official_float": "0.016648148148148148",
+          "round6_official_float": "0.00988888888888889",
+          "round7_official_float": "0.009166666666666668"
+        },
+        {
+          "placement_id": 1064,
+          "Team6": "495",
+          "Team10": "90+115",
+          "Team11": "383",
+          "Team16": "169+675",
+          "Team17": "462",
+          "Team25": "264+304",
+          "outside_22_targets": "47+76",
+          "round5_exact": "899/54000",
+          "round6_exact": "181/18000",
+          "round7_exact": "11/1200",
+          "round5_official_float": "0.016648148148148148",
+          "round6_official_float": "0.010055555555555555",
+          "round7_official_float": "0.009166666666666668"
+        }
+      ]
+    }
+  },
+  {
+    "decimal_places": 4,
+    "unique_observation_sequences": 1256,
+    "collision_groups": 40,
+    "worst_final_remaining": 2,
+    "example": {
+      "displayed_round5_6_7": [
+        "0.0114",
+        "0.0154",
+        "0.0232"
+      ],
+      "placement_ids": [
+        97,
+        133
+      ],
+      "placements": [
+        {
+          "placement_id": 97,
+          "Team6": "76",
+          "Team10": "90+115",
+          "Team11": "169",
+          "Team16": "47+264",
+          "Team17": "462",
+          "Team25": "304+383",
+          "outside_22_targets": "495+675",
+          "round5_exact": "41/3600",
+          "round6_exact": "52/3375",
+          "round7_exact": "209/9000",
+          "round5_official_float": "0.011388888888888888",
+          "round6_official_float": "0.01540740740740741",
+          "round7_official_float": "0.023222222222222227"
+        },
+        {
+          "placement_id": 133,
+          "Team6": "76",
+          "Team10": "90+462",
+          "Team11": "169",
+          "Team16": "47+264",
+          "Team17": "115",
+          "Team25": "304+383",
+          "outside_22_targets": "495+675",
+          "round5_exact": "77/6750",
+          "round6_exact": "52/3375",
+          "round7_exact": "1253/54000",
+          "round5_official_float": "0.011407407407407408",
+          "round6_official_float": "0.01540740740740741",
+          "round7_official_float": "0.02320370370370371"
+        }
+      ]
+    }
+  },
+  {
+    "decimal_places": 5,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  },
+  {
+    "decimal_places": 6,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  },
+  {
+    "decimal_places": 7,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  },
+  {
+    "decimal_places": 8,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  },
+  {
+    "decimal_places": 9,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  },
+  {
+    "decimal_places": 10,
+    "unique_observation_sequences": 1296,
+    "collision_groups": 0,
+    "worst_final_remaining": 1,
+    "example": null
+  }
+]

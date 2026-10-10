@@ -1,0 +1,110 @@
+{
+  "B_self.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/公式データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv",
+    "sha256": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "git_blob_sha1": "85c0d1917e93777cc6e6ec145ad3130b3e9dfcc3",
+    "bytes": 164152
+  },
+  "aia_challenge_28.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/公式データ/PWSCup2026_final_attack/aia_challenge_28.csv",
+    "sha256": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "git_blob_sha1": "21620b2a185d035b28750060ef51d6abc8349b59",
+    "bytes": 31088
+  },
+  "round1_F_mia.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261005_MIA希少_第1回同点データ/結果/F_mia.csv",
+    "sha256": "35ee16be3d0bb56bad2db8891aba3b75eb28be413cd8400bec165363d24499af",
+    "git_blob_sha1": "da76f6a111f1ea3a3476a2d213f640c31272cde5",
+    "bytes": 392545
+  },
+  "round2_F_mia.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/結果/F_mia.csv",
+    "sha256": "92c780eee9762989a8140feee6fac3258b2bd3e27eee3146fccaa07a811412ae",
+    "git_blob_sha1": "c01f7ce1e92c02b9593f68bf6358184ab37fac9a",
+    "bytes": 392933
+  },
+  "round3_F_mia.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/F_mia.csv",
+    "sha256": "6ca9604a8936fb47255ae0bd05c9f3958368f0e196bc2af258f8255cf39c08eb",
+    "git_blob_sha1": "9a1b3b6810bb0c2aca71fc3cba5af7db388b537d",
+    "bytes": 394633
+  },
+  "round4_F_mia.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261010_第4回MIA_提出原本と固定5bit照合/F_mia.csv",
+    "sha256": "45077532e5b5cf6109bf86ce67472fce0fac703584fa81a2f0027434fe581183",
+    "git_blob_sha1": "d1c4188ffae8d20bc57113b5f13c1e031b1f6e46",
+    "bytes": 394665
+  },
+  "round5_F_mia.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task-3/攻撃フェーズ/MIA/5回目/F_mia.csv",
+    "sha256": "3e1f260ed7ab2f8beed57e6eb5b6e30d0c96388ac15c1e50ef0cfd1fe0f96c7a",
+    "git_blob_sha1": "33b4c23ee276fda47b04dae6d54a241bd9ad3ef3",
+    "bytes": 394649,
+    "github_commit": "27d40de61aeb025858038230802bd822381a773c",
+    "github_blob": "33b4c23ee276fda47b04dae6d54a241bd9ad3ef3",
+    "github_url": "https://github.com/smsaku00/pwscup2026-sutehaji/blob/27d40de61aeb025858038230802bd822381a773c/攻撃フェーズ/MIA/5回目/F_mia.csv"
+  },
+  "round1_detailed_results.html": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第1回_detailed_results.html",
+    "sha256": "1d06e508ae0e7fd8119bb6da34b205df8e1cd4b0e4aeaa621dba6cd47bcf6687",
+    "git_blob_sha1": "cb811aa86a6013bd7028a2a2540c2b1c804f354c",
+    "bytes": 3795
+  },
+  "round2_detailed_results.html": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261006_MIA第2回_seo02と希少同点/採点結果/第2回_detailed_results.html",
+    "sha256": "470a3971dcfc138269cb336d47d54c02202855c1ebe56a0989527b76d822267b",
+    "git_blob_sha1": "f7df47e26351e60708109729f0f8f61c95ba46c1",
+    "bytes": 3763
+  },
+  "round3_detailed_results.html": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/AIA/第3回/detailed_results.html",
+    "sha256": "34e4f6897de0e400c35a5dbcfd3c9f6b1a0aaff48f100530527b09c5619cf86f",
+    "git_blob_sha1": "1f167977f2869df83ed92ab9463d9d0e754ad10a",
+    "bytes": 3903
+  },
+  "round4_detailed_results.html": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/AIA/第4回/detailed_results.html",
+    "sha256": "5d1b8fd5b2eb1e3ab0ed492ebced4b58d139e49a2e2de682c5d359fa89faa4af",
+    "git_blob_sha1": "d3b533195422cac83cd95ba375c2bb1365b75f53",
+    "bytes": 3775
+  },
+  "fixed_plan.json": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/設定.json",
+    "sha256": "3236035d39ab2d9caf612b37f2e91cceb882c606a70bd543e302b2b03d24ddae",
+    "git_blob_sha1": "0ee4b73f4a9031dba9182dce6b9d25d3d99c0f9c",
+    "bytes": 3307
+  },
+  "fixed_code.csv": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261008_第3回MIA_固定5bitと非会員較正/結果/固定5bit符号.csv",
+    "sha256": "00799e87fbbed4b44850092c176fee4af41769f93c1bace53aaa2bb66e9e5865",
+    "git_blob_sha1": "b2582a3131887a7f948a041698ec577a49337bc6",
+    "bytes": 122
+  },
+  "official_attack_score.py": {
+    "source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py",
+    "sha256": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "git_blob_sha1": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+    "bytes": 10057
+  },
+  "official_scoring_io.py": {
+    "source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py",
+    "sha256": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "git_blob_sha1": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+    "bytes": 24293,
+    "github_blob": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+    "github_ref": "main-attack-20260928",
+    "github_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-attack-20260928/starter/src/pwscup2026/kit/codabench/scoring_io.py"
+  },
+  "official_result.py": {
+    "source_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/result.py",
+    "sha256": "7997fcbaf8b4f407902fc961380c17259b7121c063dcc3877e047d9196fe16cd",
+    "git_blob_sha1": "800df5a345b326b6758439f355ec6d461be80474",
+    "bytes": 3121
+  },
+  "round4_provenance.json": {
+    "source_path": "/Users/taisei1105/Documents/Codex/2026-10-10/task/pwscup2026-sutehaji/攻撃フェーズ/MIA/20261010_第4回MIA_提出原本と固定5bit照合/出典と照合.json",
+    "sha256": "e9f6b753799e0741789f6d09386aabd3cd6ad099c09f1f394c08f09073129220",
+    "git_blob_sha1": "a3b96a90757bb2ebfe0b8fd767e3bb8530d0e42a",
+    "bytes": 1418
+  }
+}

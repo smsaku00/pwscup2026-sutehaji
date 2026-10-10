@@ -1,0 +1,116 @@
+{
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "branch": "codex/mia-round5-five-targets-20261010",
+  "parent_commit": "27d40de61aeb025858038230802bd822381a773c",
+  "base_tree": "06baff29b7c8a6b1e2639a2d306ed7457e283841",
+  "destination": "攻撃フェーズ/Tashiro/MIA全体/round5_generation_20261010/希少残り2問_独立監査/",
+  "source_folder_preserved": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010",
+  "files": {
+    "all_1296_placements_and_observations.csv": {
+      "sha256": "2403e72ed9ace9eb8e7621736d8319ae16c93ca3b0aec735ef42505172778840",
+      "git_blob_sha1": "f46c9170e50be280eae68693a3bf4e78faab8292",
+      "bytes": 174512,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/all_1296_placements_and_observations.csv"
+    },
+    "audit.py": {
+      "sha256": "1ffc788722701f2ab84a7016a7ded4b5882e8b7e90c6517329bd24bfbb500a1b",
+      "git_blob_sha1": "1f856d9e7e41d12ae7a15b169525f2a485bd89ee",
+      "bytes": 25804,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/audit.py"
+    },
+    "audit_results.json": {
+      "sha256": "5f3fe5ff889f6b96307a753b4d1e623f1c87ed496e09621922cc11db9d9f2a22",
+      "git_blob_sha1": "2267e63cc1f90cfda5ab238975ac8f2913dab4be",
+      "bytes": 4887,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/audit_results.json"
+    },
+    "candidate_partition.json": {
+      "sha256": "93ca2f7169fd25bbae19fa635802fabfb77142099130a19f1984eb0c5815a3f9",
+      "git_blob_sha1": "dcb07d8421511d9c28659a778ac1c1d0a527ba81",
+      "bytes": 2044,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/candidate_partition.json"
+    },
+    "collision_check.json": {
+      "sha256": "6c6f64edc696fcad54a44a65f9b1f252a4ce59b8a623818b264c6af2d34f9cea",
+      "git_blob_sha1": "82a6324d37b908afca77381ac4edcec2214de2ea",
+      "bytes": 138,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/collision_check.json"
+    },
+    "exclusivity_dependency.json": {
+      "sha256": "57a5888cef0eb28bb2a595d21ece8e67711fd89faa226d7fb773637a5c12539f",
+      "git_blob_sha1": "a5f511dad24cc93223f30a8ec5bcbdc0bbd0bb92",
+      "bytes": 301,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/exclusivity_dependency.json"
+    },
+    "input_manifest.json": {
+      "sha256": "e8eee6fb86ea028d6d09dd01bc1264be14dc8ae90c35f007a8b9fa538a7cdf6a",
+      "git_blob_sha1": "f423751d8eb95cd3ece7ca7e9f738346ee1b5550",
+      "bytes": 6787,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/input_manifest.json"
+    },
+    "remote_originals_check.json": {
+      "sha256": "da09052e1358eb9f46546304fb86f0d63179979e9d8002f4ab0538946cb3eff8",
+      "git_blob_sha1": "1554ebc9513a3f14505df6181377573e16ec2ec5",
+      "bytes": 2887,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/remote_originals_check.json"
+    },
+    "round1_count_candidates.csv": {
+      "sha256": "d565563b95eb6654dd81d2ad97fd96581c9a28c90a9d03d04a8582a35a436bca",
+      "git_blob_sha1": "e8b177132b990184892deb9186b9e079c37db02b",
+      "bytes": 8962,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/round1_count_candidates.csv"
+    },
+    "round5_all_branches.csv": {
+      "sha256": "2fa603d14f70993461810df6b5eee5df11442e6cb64be618713d673b10b10dce",
+      "git_blob_sha1": "56308b69f09e0b669c2f50e6fc7c819b91288674",
+      "bytes": 6241,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/round5_all_branches.csv"
+    },
+    "rounding_precision.json": {
+      "sha256": "9890c8b36678976db7df2228be10f216cff6c946e1a8b7fe2567cc77477f76f5",
+      "git_blob_sha1": "dea1bc2862fcc54b49b21d575144798fe0aead99",
+      "bytes": 3829,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/rounding_precision.json"
+    },
+    "source_review.json": {
+      "sha256": "ce12c0449905d42133ab8d0530e50550a5bb9a510cc10bdacd44e81599d944b7",
+      "git_blob_sha1": "2d07ff5569e30f6ecdeb33da4a58e8faba33f2c7",
+      "bytes": 1570,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/source_review.json"
+    },
+    "worst_round5_branches.json": {
+      "sha256": "a4ef3a8d88d1688ba5e87d182da5882e21d1bbfdb5ab4ecce8706c275f9ae0c4",
+      "git_blob_sha1": "8b76cfa1cf1b53d01778461593d4e3161172e840",
+      "bytes": 17218,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/worst_round5_branches.json"
+    },
+    "説明.md": {
+      "sha256": "36169016dcf118829d93cf4d9c41b7380e957a3beb77d26d73a50ffb9c9a2386",
+      "git_blob_sha1": "05e59f542d73f9632ad992de04fb8e5f45ed20b4",
+      "bytes": 9857,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/説明.md"
+    },
+    "output_manifest.json": {
+      "sha256": "06ac601532ad665f2f4734339b777ddbd58d4be747d161c2ac3f2fcc3aafba43",
+      "git_blob_sha1": "65a62b4356522f06934cbc226ebd2e17ac67990b",
+      "bytes": 1348,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/独立監査_第5回と残り2問_20261010/output_manifest.json"
+    },
+    "README.md": {
+      "sha256": "bb6c24b42fbf263c2df5a8455b168fa85b97dc272d503cad16a1c80629f90fbd",
+      "git_blob_sha1": "1e742fb33577285cf51f310683c42b3d58522b03",
+      "bytes": 2972,
+      "local_source": "/Users/taisei1105/Documents/Codex/2026-10-10/task-4/攻撃フェーズ/Tashiro/MIA希少/掲載記録_20261010/README.md"
+    }
+  },
+  "manifest_self_hash_excluded": true,
+  "excluded": [
+    "inputs/",
+    "raw medical attribute CSVs",
+    "credential values",
+    "submission CSVs and ZIPs"
+  ],
+  "round5_csv_modified": false,
+  "main_modified": false,
+  "submitted": false
+}

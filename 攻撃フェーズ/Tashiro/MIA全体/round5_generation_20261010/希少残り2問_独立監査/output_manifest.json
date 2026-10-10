@@ -1,0 +1,16 @@
+{
+  "all_1296_placements_and_observations.csv": "2403e72ed9ace9eb8e7621736d8319ae16c93ca3b0aec735ef42505172778840",
+  "audit.py": "1ffc788722701f2ab84a7016a7ded4b5882e8b7e90c6517329bd24bfbb500a1b",
+  "audit_results.json": "5f3fe5ff889f6b96307a753b4d1e623f1c87ed496e09621922cc11db9d9f2a22",
+  "candidate_partition.json": "93ca2f7169fd25bbae19fa635802fabfb77142099130a19f1984eb0c5815a3f9",
+  "collision_check.json": "6c6f64edc696fcad54a44a65f9b1f252a4ce59b8a623818b264c6af2d34f9cea",
+  "exclusivity_dependency.json": "57a5888cef0eb28bb2a595d21ece8e67711fd89faa226d7fb773637a5c12539f",
+  "input_manifest.json": "e8eee6fb86ea028d6d09dd01bc1264be14dc8ae90c35f007a8b9fa538a7cdf6a",
+  "remote_originals_check.json": "da09052e1358eb9f46546304fb86f0d63179979e9d8002f4ab0538946cb3eff8",
+  "round1_count_candidates.csv": "d565563b95eb6654dd81d2ad97fd96581c9a28c90a9d03d04a8582a35a436bca",
+  "round5_all_branches.csv": "2fa603d14f70993461810df6b5eee5df11442e6cb64be618713d673b10b10dce",
+  "rounding_precision.json": "9890c8b36678976db7df2228be10f216cff6c946e1a8b7fe2567cc77477f76f5",
+  "source_review.json": "ce12c0449905d42133ab8d0530e50550a5bb9a510cc10bdacd44e81599d944b7",
+  "worst_round5_branches.json": "a4ef3a8d88d1688ba5e87d182da5882e21d1bbfdb5ab4ecce8706c275f9ae0c4",
+  "説明.md": "36169016dcf118829d93cf4d9c41b7380e957a3beb77d26d73a50ffb9c9a2386"
+}

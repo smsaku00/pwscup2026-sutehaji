@@ -1,0 +1,7 @@
+{
+  "counts_known": true,
+  "overlapping_placements_tested": 60750,
+  "unique_final_observation_sequences": 60750,
+  "collision_groups": 0,
+  "note": "Exclusivity is used for the initial <=11 count model and the 1296 current legal set; fixed-code uniqueness with known counts survives removing it."
+}
