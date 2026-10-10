@@ -97,8 +97,9 @@ async function main() {
   assert.equal(v.execute('MIA_FIXED_VIEWER.meanExact([0,1,0,1,1,1])'),'73/6750');
   const mean=bridge.responses.reduce((sum,h,i)=>sum+independentROC(caps[i],high[i],h).score,0)/6;close(mean,bridge.mean);
   assert(html.includes('216通り'));assert(html.includes('実提出の第3〜7回の符号とは異なります'));unchanged();
+  for(let step=1;step<=3;step++){v.click('intro-next');assert.equal(v.json('MIA_FIXED_MEAN.model()').stage,step);unchanged();}
   v.click('intro-next');assert.equal(v.json('MIA_FIXED_OVERVIEW.snapshot()').view,'assignment');assert.equal(v.json('MIA_FIXED_ASSIGNMENT.snapshot()').placed.length,0);unchanged();
-  v.click('show-intro');v.click('intro-prev');assert.equal(v.json('MIA_FIXED_INTRO.snapshot()').page,'history');v.click('intro-prev');assert.equal(v.json('MIA_FIXED_INTRO.historyModel()').stage,1);v.click('intro-prev');v.click('intro-prev');assert.equal(v.json('MIA_FIXED_INTRO.snapshot()').page,'roc');unchanged();
+  v.click('show-intro');v.click('intro-tab-history');assert.equal(v.json('MIA_FIXED_INTRO.snapshot()').page,'history');v.click('intro-prev');assert.equal(v.json('MIA_FIXED_INTRO.historyModel()').stage,1);v.click('intro-prev');v.click('intro-prev');assert.equal(v.json('MIA_FIXED_INTRO.snapshot()').page,'roc');unchanged();
   v.click('show-overview');const run=v.click('animate-all');v.click('show-intro');const paused=v.json('MIA_FIXED_LESSON.snapshot()');assert.equal(paused.playing,false);assert.equal(paused.phase.stage,'result');await v.tick();await run;assert.deepEqual(v.json('MIA_FIXED_LESSON.snapshot()'),paused);
   if(process.argv.includes('--write-report'))fs.writeFileSync(path.join(__dirname,'validation_fixed_intro.json'),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report));

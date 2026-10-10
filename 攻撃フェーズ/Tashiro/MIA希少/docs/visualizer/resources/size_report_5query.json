@@ -1,7 +1,7 @@
 {
   "strategy": "nonadaptive",
-  "html_bytes": 176087,
-  "html_sha256": "ff71388f99bb542bad3cd5a2c3e1cf324df60d744d7ba09037afc51f3ce7de8c",
+  "html_bytes": 195711,
+  "html_sha256": "62644b4d3229d7a8817cf36e33431efee506cefdf039ccd13f823334ecf51c42",
   "format": "single offline HTML; interactive ROC and TPR at FPR 0.01; actual first/two-submission history with all 102 saved count configurations; horizontal include/exclude patterns for 11 records gathered vertically into five fixed submission sets; manual assignment and explicit automatic animation; one-member rows or two-member pair edges eliminated by five revealed results; separate assignment/overview/candidates views and combined overview/candidates",
   "single_team_states": [
     11,
