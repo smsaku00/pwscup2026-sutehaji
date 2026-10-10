@@ -1,0 +1,27 @@
+{
+  "audit_time_utc": "2026-10-10T06:12:58.446898+00:00",
+  "status": "passed",
+  "source_file_hashes_verified": 337,
+  "selected_method_BG_target_values_rejoined": 280,
+  "trace_rows_rejoined": 280,
+  "numeric_comparisons": 560,
+  "maximum_absolute_error": 0.0,
+  "maxima_scope": "Only sealed all7 families in this report; all20/all1049/TPR@FPR.01. Old max is from matching category in frozen03:10 table. No independent performance/generalization claim.",
+  "files": {
+    "07_採点監査の要約.json": "35b58635382d09059e89abc89ef77696bdeaf1da55a8c371114f818cc07e9449",
+    "04_今回比較の完了範囲.csv": "970e0ea245b4233ee1ff00a38661c71f6e7ff179d39a34fc36da1f274379ee28",
+    "追加ランキングの範囲.json": "202f97c22ef9cc3b3846a4a81ab0e6754484613d6cafa5d5bce15c57c3027a73",
+    "検証と範囲.json": "3360e4fef26e013e439128ec40cf4a97b2b5fcfce88285dd20e1c2010a68bcba",
+    "03_選出方式の背景7条件.csv": "409278e5ee6e86b3236b484fdf8313233bc40a2b376b04f1e61dc3f8fecf4d05",
+    "02_OOF学習_対象別差分.csv": "b956dacffe2d5f74480f0688229c9cafa1c4fea3fa3a4646837aa32fb7334b14",
+    "08_副次診断の進行状況.csv": "8555c5effe4c6a3961df206492995002e0c9eb93bb2937941932c2ca91019d0f",
+    "10_追加パネル_対象別上位10方式.csv": "3828b36b63753c81cd19ad159e8c3f8925edee6aa95d1be7cb06a988853f2edb",
+    "06_全3背景への変更方向.csv": "45f6ba5bda7fe979cf646d167632c167b5af6bb21b0733533a7aa9c4e582db6b",
+    "11_追加パネル_閾値超過件数.csv": "67680a938743726060a321f1f4c545e37db4651ee215630b0495d9660dbe5d50",
+    "01_所属ラベル不使用_対象別差分.csv": "6c6f29e8faed0983b4bb22f41e82af7753454b8168765f13e846caca519beca5",
+    "12_最適化の終了状態.csv": "7c06d201ac81a01a6517f57b8c3d934ef3fbe09692b43e5d0511a2df7b21419c",
+    "05_過去数値の再現状況.csv": "7d98f380e4003ee6dd43993122c582b5250906cc5710f14ec86fcb489f1d7209",
+    "09_追加パネル_TPR010超過全登録.csv.gz": "d0d9c22ea3ba0104e3abd483cffff60485ee8f71333cf8a2fdbb9fed61436f89",
+    "README.md": "4d8994e62b8a87d02a93b2fc0f0592ac7163c87b98f7b0caaca25ca83c82deb9"
+  }
+}

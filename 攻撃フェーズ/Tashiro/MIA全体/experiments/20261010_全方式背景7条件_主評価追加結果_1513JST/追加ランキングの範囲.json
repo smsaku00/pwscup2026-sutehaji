@@ -1,0 +1,251 @@
+{
+  "created_utc": "2026-10-10T06:12:56.510965+00:00",
+  "scope": "Only eight newly complete panel families since frozen03:10. Earlier learned_ablation/bg_transfer/bg_ablation/yesterday remain in the prior report, not repeated here. No old ranking overwritten.",
+  "planned_families": {
+    "classifiers": "source_public_classifier",
+    "learned_base": "learned_representative_base",
+    "learned_split": "learned_split_sensitivity",
+    "learned_centers": "learned_center_seed",
+    "learned_lowfpr": "learned_low_fpr",
+    "learned_multiview": "learned_multiview",
+    "learned_multiview_loo": "learned_multiview_loo",
+    "smooth": "meta_smooth_competition"
+  },
+  "pending_families": [],
+  "source_registration_BG_outputs": 9254,
+  "target_rows": 185080,
+  "strictly_above010_rows": 5085,
+  "top10_rows": 400,
+  "top10_definition": "Ten distinct source-proven canonical recipes per target and training category. Each recipe uses its retrospectively best BG; 12-decimal ties by canonical ID, then prescribed BG order. This is not deployable label-free selection or an all-history ranking.",
+  "threshold_definition": "Original unrounded official-style TPR is retained; threshold uses12-decimal numerical equality and strictly >0.10, matching03:10 and excluding exact0.10 roundoff. Source aliases are retained and flagged in all-row table, collapsed by source proof for top10.",
+  "alias_overlap_max_metric_error": 0.0,
+  "alias_registry_sha256": "20d95e948abc834920042c0c7db6b56c246c9277e9d9d4861575cc7b8f39af4d",
+  "source_files": [
+    {
+      "path": "recovered_calibration/classifiers/starter/対象別TPR.csv",
+      "sha256": "55a29d4259f995768a713cf6e91619a109ff32effc524ff1ff92cad5a5f133fe"
+    },
+    {
+      "path": "recovered_calibration/classifiers/prelim/対象別TPR.csv",
+      "sha256": "c6dc4d81f1fab96c17282b3a8989b7d8661889b63f137c9ff58ada2b2047430d"
+    },
+    {
+      "path": "recovered_calibration/classifiers/main/対象別TPR.csv",
+      "sha256": "dd72bf33911420c343a37942657c86210024683ba13f315a0725083ed38e0d2f"
+    },
+    {
+      "path": "recovered_calibration/classifiers/starter+prelim/対象別TPR.csv",
+      "sha256": "ea76b0c6a533badfddf338769ba13d20e44c7dd56bc646bd79d422ccd98532c2"
+    },
+    {
+      "path": "recovered_calibration/classifiers/starter+main/対象別TPR.csv",
+      "sha256": "ffd467621990ee8849ab01bfc4be53f699f6a7a4c6afb277a15f7c457d8a61b9"
+    },
+    {
+      "path": "recovered_calibration/classifiers/prelim+main/対象別TPR.csv",
+      "sha256": "ad16cacb9b3ddb920b9210c9ab8d3c0af72089170f8e3cbc8a42decd2d92b551"
+    },
+    {
+      "path": "recovered_calibration/classifiers/starter+prelim+main/対象別TPR.csv",
+      "sha256": "7b2ae13af1e457886c2ef787d2792b43be57e71966660212cef33db02a4d69f1"
+    },
+    {
+      "path": "recovered_calibration/learned_base/starter/対象別TPR.csv",
+      "sha256": "8a0cda8d88b87a15309b1a55a6ed5c12374c34f814eef8467c6d8580836113be"
+    },
+    {
+      "path": "recovered_calibration/learned_base/prelim/対象別TPR.csv",
+      "sha256": "a85767aed94f03dc1eec4fa28a78625ab8fa7e9f437b2a832a4c5907c5c597aa"
+    },
+    {
+      "path": "recovered_calibration/learned_base/main/対象別TPR.csv",
+      "sha256": "dee507716f0d637cd99f56f851645c292e2441c36d8887dd7758cfd9c5c2d337"
+    },
+    {
+      "path": "recovered_calibration/learned_base/starter+prelim/対象別TPR.csv",
+      "sha256": "55b79cdc8a14d32650b8e4166e3a092f930f9625001251b791c6f7d9ecceb931"
+    },
+    {
+      "path": "recovered_calibration/learned_base/starter+main/対象別TPR.csv",
+      "sha256": "ddc2cceaae57ed31883e9a0e0c24b23d405737cc65923bc75ee359b65395647d"
+    },
+    {
+      "path": "recovered_calibration/learned_base/prelim+main/対象別TPR.csv",
+      "sha256": "32227956aa2ae0cab7270907bc79640270da1ade65e2766929a9588e9aba1cd2"
+    },
+    {
+      "path": "recovered_calibration/learned_base/starter+prelim+main/対象別TPR.csv",
+      "sha256": "e0c7c6537be4171ece0d1c9c0318fa97e63bcfaa95075f3a524a79b84f88a231"
+    },
+    {
+      "path": "recovered_calibration/learned_split/starter/対象別TPR.csv",
+      "sha256": "e148e340870669f187f7e0733a4c5b79b2e1890527e739fc30844ebd21e5ad2a"
+    },
+    {
+      "path": "recovered_calibration/learned_split/prelim/対象別TPR.csv",
+      "sha256": "30c05e59ab3abd72f1baea88fb84956f60447acdcfc95c51e2cd42753bfb0150"
+    },
+    {
+      "path": "recovered_calibration/learned_split/main/対象別TPR.csv",
+      "sha256": "718f07da1354b1902934c118509494a178dbdc26b95921b19b706f4da106c2f1"
+    },
+    {
+      "path": "recovered_calibration/learned_split/starter+prelim/対象別TPR.csv",
+      "sha256": "72a6c110f3e0614afb344cf54bca3c58bf7d4d4615d1f69235c51c3c6bca19b0"
+    },
+    {
+      "path": "recovered_calibration/learned_split/starter+main/対象別TPR.csv",
+      "sha256": "ed05729c12204d9ce579f69ca5c9dd4a70b63a118b048b80cd88b3a4cc0312cc"
+    },
+    {
+      "path": "recovered_calibration/learned_split/prelim+main/対象別TPR.csv",
+      "sha256": "f408814188f9a5e0fa6f7e321cb1fe2a30b5bacd7b9abf96345fc1e5c38c2c82"
+    },
+    {
+      "path": "recovered_calibration/learned_split/starter+prelim+main/対象別TPR.csv",
+      "sha256": "f8588f80b3252578d046bd48e8f11206d4ac448988d486b67929bcc72e948526"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/starter/対象別TPR.csv",
+      "sha256": "7529007c16ad7706f75888c76620152bfefa8051b4e6dc3f2cc6ed5f33705206"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/prelim/対象別TPR.csv",
+      "sha256": "b2cc24edc8ecbd816ccfdf22a98501b51dcd0693468e12569b56d24b40d402ac"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/main/対象別TPR.csv",
+      "sha256": "3f7819a06c633111ade29b57a11c9b4b3328acfb06578ee780e9609ff4afcb85"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/starter+prelim/対象別TPR.csv",
+      "sha256": "d3f128b058c72975c63b1621673a8229f46f345fe32eba1fa865d34a10a630b3"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/starter+main/対象別TPR.csv",
+      "sha256": "ee3369d3d50864fd8e0cec78d73b21afcf55c60110964c0b3f556c0637994100"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/prelim+main/対象別TPR.csv",
+      "sha256": "e1d843121d70e4616ec659ab8186df3d1788ac6d01e8497c745e9f83a8b1f1b3"
+    },
+    {
+      "path": "recovered_calibration/learned_centers/starter+prelim+main/対象別TPR.csv",
+      "sha256": "da2b2199f6f4d3b8a79edff7a85e43829614c93d0416e94b19f4c657c7b2abc6"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/starter/対象別TPR.csv",
+      "sha256": "9cf52addcd70ac1e961ad6c23f8427f9de51576a22bdaa167e998badb8292002"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/prelim/対象別TPR.csv",
+      "sha256": "7aa314a9434480a177696b5d7e9411e0c4c82296c84b2907bc3e6029e3ca30df"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/main/対象別TPR.csv",
+      "sha256": "71d0ce5605dc7e58d5df93184670dd1c8bcfac8dd098c5d675a1d480dc3e8a0a"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/starter+prelim/対象別TPR.csv",
+      "sha256": "09b6ec5d4fa64b2bb4a47baf60e93aff8a0967c6f6f6f6e07d7b32e3e07a0987"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/starter+main/対象別TPR.csv",
+      "sha256": "384c3e3993b68f48cfb9d653e93889a7284e4f022a4bda2e0c05160169e43e42"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/prelim+main/対象別TPR.csv",
+      "sha256": "4b27073939246617c85c4804456252edcaac9a06295ef78b00815fc3ca7ec502"
+    },
+    {
+      "path": "recovered_calibration/learned_lowfpr/starter+prelim+main/対象別TPR.csv",
+      "sha256": "074bed208c1c42f6d97bbe24f7ea39076af8aab5a7e884a4d208bf1f95e899e1"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/starter/対象別TPR.csv",
+      "sha256": "f8388595c03ca4f5e0158c1a6928666c93d4e9aa5f2bc970de57d647348695f8"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/prelim/対象別TPR.csv",
+      "sha256": "893c63502636145c431698d837f2021470d6ce6ba3661711712eeea40fc8e65c"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/main/対象別TPR.csv",
+      "sha256": "1d6a92945f8b538d5179b59a135e8f003a92d36707d04ecfc62604f765523efd"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/starter+prelim/対象別TPR.csv",
+      "sha256": "40253119a628d89a48c0426bb7ba675495b5c60edc45117447ba6c6a21ab9874"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/starter+main/対象別TPR.csv",
+      "sha256": "18fe07a47b0046faa790ac5bb3ac107d770b1c93d3eb7dca71458f2862c3a97d"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/prelim+main/対象別TPR.csv",
+      "sha256": "95303e8b68d314108d04e6fecbd366b287594caf99c7155745aac718332a587e"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview/starter+prelim+main/対象別TPR.csv",
+      "sha256": "c0bf692f9771c98b9ffb837f3dea2e0e1d0e772fc43fee4dd7e8767a26a56f8c"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/starter/対象別TPR.csv",
+      "sha256": "34f53293b29883000ac4c25d561c3f4b70e405cfbd4a5077a7cbde97b8e5b026"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/prelim/対象別TPR.csv",
+      "sha256": "301e3655437170708dfe4b41f61c0b84f348154c4935ca5742a516dd9e2c3e62"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/main/対象別TPR.csv",
+      "sha256": "d93e352939f2925aca2d62e5e33be33b9f6408a93affef1c87d7f13fbc818d2d"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/starter+prelim/対象別TPR.csv",
+      "sha256": "2b07cf044ae23a617ab1d3fb5b560b2adc063ad4123f263ae0d5c1383ecbd916"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/starter+main/対象別TPR.csv",
+      "sha256": "6ca72aec676a594c2e04751b751d4a93be883e8a501241de701c54d03a6e6fd7"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/prelim+main/対象別TPR.csv",
+      "sha256": "b9e327d263ff8dc1c1a80f30ef6cc25b9126b5b6985ef9e4859a2dd2182ae5ed"
+    },
+    {
+      "path": "recovered_calibration/learned_multiview_loo/starter+prelim+main/対象別TPR.csv",
+      "sha256": "038d6c3777e9dd6afe801d831a641bfe25b7bf17bb84d104dbafb1874e6f72e8"
+    },
+    {
+      "path": "recovered_calibration/smooth/starter/対象別TPR.csv",
+      "sha256": "87b0da6e48abf3ea7722e3b37034007503b78c0617727bb820259ffbbb709c59"
+    },
+    {
+      "path": "recovered_calibration/smooth/prelim/対象別TPR.csv",
+      "sha256": "857c6db28318b94bd4b6f46809189d9a1916697c65a5be2b9aeb790544eac27c"
+    },
+    {
+      "path": "recovered_calibration/smooth/main/対象別TPR.csv",
+      "sha256": "a624cd3a6b7d99c781c381e888f2c8cf491d869e412bf9db0dea3dab5e4626d5"
+    },
+    {
+      "path": "recovered_calibration/smooth/starter+prelim/対象別TPR.csv",
+      "sha256": "9e013b0cd85343391d1dc57dde5e230f9ede9b3dd63a9113e2bea49411d0029a"
+    },
+    {
+      "path": "recovered_calibration/smooth/starter+main/対象別TPR.csv",
+      "sha256": "9be8a77b55ca7b17ae71b6b589376cc6f433f49efddd9aa544b09843a09557b7"
+    },
+    {
+      "path": "recovered_calibration/smooth/prelim+main/対象別TPR.csv",
+      "sha256": "8ce9ffd4675c749ac0bcdf888a76d8f3403005b721e608a3c0e47b90d93aba21"
+    },
+    {
+      "path": "recovered_calibration/smooth/starter+prelim+main/対象別TPR.csv",
+      "sha256": "ad40d0a2cd161e6c0199ecb0fe1696692139203f332bb98f75082543a18f1b3c"
+    }
+  ],
+  "columns_are_aggregate_only": true,
+  "member_level_records_or_scores": false
+}

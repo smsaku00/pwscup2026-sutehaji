@@ -1,0 +1,15 @@
+﻿phase,background,source_defined_recipe_rotations,completed,status,incomplete_due_to_background_validation_stop,official_membership_TPR_or_FPR
+prelim,starter,36,0,validation_failed_PIT_identity_original_prediction_unchanged,36,False
+prelim,prelim,36,36,completed,0,False
+prelim,main,36,36,completed,0,False
+prelim,starter+prelim,36,0,validation_failed_PIT_identity_original_prediction_unchanged,36,False
+prelim,starter+main,36,0,validation_failed_PIT_identity_original_prediction_unchanged,36,False
+prelim,prelim+main,36,36,completed,0,False
+prelim,starter+prelim+main,36,0,validation_failed_PIT_identity_original_prediction_unchanged,36,False
+main,starter,36,36,completed,0,False
+main,prelim,36,36,completed,0,False
+main,main,36,36,completed,0,False
+main,starter+prelim,36,36,completed,0,False
+main,starter+main,36,36,completed,0,False
+main,prelim+main,36,36,completed,0,False
+main,starter+prelim+main,36,36,completed,0,False

@@ -1,0 +1,59 @@
+{
+  "learned": {
+    "evidence_filename": "recovered_learned_independent_audit.json",
+    "evidence_sha256": "e7c2c8db648aa724a7c14c09558549ba8cbb4601f73d893ca213f2be48a8a333",
+    "audit_metadata": {
+      "audit_time_utc": "2026-10-10T06:12:37.451896+00:00",
+      "frozen_matrix_hashes_checked": 8981,
+      "stored_target_FPR_rows": 718480,
+      "all_TPR_values_independently_recomputed": 718480,
+      "method": "Independent tie-group ROC and official-style confidence reconstruction; no original prediction or scoring module imported. Primary exact folders only and final seals required. All target/FPR values and summaries checked.",
+      "training_note": "These are original label-trained/OOF recipes. This audit verifies frozen-score evaluation, not statistical generalization or the original historical numeric values.",
+      "historical_reproduction": "Reported separately; large historical differences are not repaired or relabeled by this current-score audit."
+    },
+    "max_TPR_error": 0.0,
+    "max_summary_error": 0.0
+  },
+  "classifiers": {
+    "evidence_filename": "recovered_classifier_features_independent_audit.json",
+    "evidence_sha256": "0e3f7c435649a29ecc66700960dfbd69bf814eb3e67d0260a1c25189ba08b5f4",
+    "audit_metadata": {
+      "method": "Independent tie-group ROC; no source prediction/scorer modules imported. Exact primary folders only; earlier parallel/cloud controls excluded.",
+      "audit_time_utc": "2026-10-10T04:11:35.006523+00:00",
+      "historical_reproduction": "Historical HGB/forest/KMeans differences are not repaired by this current-score audit."
+    },
+    "classifiers": {
+      "status": "passed_completed_primary_backgrounds",
+      "configurations_per_BG": 272,
+      "completed_backgrounds": [
+        "starter",
+        "prelim",
+        "main",
+        "starter+prelim",
+        "starter+main",
+        "prelim+main",
+        "starter+prelim+main"
+      ],
+      "all7_complete": true,
+      "all_matrix_hashes_checked": 1904,
+      "same_exact_config_set": true,
+      "target_fpr_rows": 152320,
+      "max_abs_TPR_error": 0.0,
+      "all_TPR_values_recomputed": 152320
+    }
+  },
+  "main_rank_only": {
+    "evidence_filename": "recovered_main_secondary_independent_audit.json",
+    "evidence_sha256": "40190fa7e4bd42a0acdca319654601ca567caeb10906407fb027cfbd5f8dcf1b",
+    "status": "passed_completed_secondary_main_panels",
+    "audit_utc": "2026-10-10T05:50:36.399125+00:00",
+    "matrix_hashes_checked": 472,
+    "rank_table_rows": 12144,
+    "aggregate_rank_values_recomputed": 36432,
+    "max_abs_error": 0.0,
+    "main_truth_accessed": false,
+    "membership_accuracy_claim": false,
+    "historical_control_scope": "Original mixed-background training/inference controls are separate from the seven outer-BG panels. No historical learned matrix hash was available.",
+    "not_recomputed": "LOO stability summaries require individual fold predictions, which this aggregate audit does not reconstruct. Original fit/projection semantics have a separate source audit."
+  }
+}

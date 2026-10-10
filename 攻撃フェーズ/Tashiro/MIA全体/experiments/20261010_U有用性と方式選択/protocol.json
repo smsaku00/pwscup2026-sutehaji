@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-10-10T04:42:00Z",
+  "phase": "prelim_only",
+  "primary_target_ids": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "secondary_all20": true,
+  "feature_blocks": {
+    "C": "19 original C-only features (verified before interpreting results; draft stated 21)",
+    "U": [
+      "U_gen",
+      "U_spec",
+      "U_rare",
+      "U_valid"
+    ],
+    "CU": "equal weight of per-block average squared standardized distances"
+  },
+  "standardization": "training targets only; zero variance feature excluded; no target IDs as features",
+  "candidate_bank": "43148 fixed candidate x20 official TPR .01 all_fixed",
+  "options": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0.25
+    ],
+    [
+      3,
+      0.25
+    ],
+    [
+      5,
+      0.25
+    ],
+    [
+      9,
+      0.25
+    ],
+    [
+      1,
+      0.5
+    ],
+    [
+      3,
+      0.5
+    ],
+    [
+      5,
+      0.5
+    ],
+    [
+      9,
+      0.5
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      9,
+      1
+    ]
+  ],
+  "fixed_gate": [
+    3,
+    0.5
+  ],
+  "nested": "outer target held out; inner leave-one-target-out selects neighbor count and shrinkage; deterministic first-option ties",
+  "p01_guard": "additional nested policy includes constant fixed P01, selected only through inner training-target TPR; tie favors P01",
+  "baselines": [
+    "fixed P01 geometry/prelim candidate 14109",
+    "global training mean best",
+    "prior C-only fixed/nested",
+    "prior eight-family rank mean"
+  ],
+  "correlations": "descriptive Spearman over primary18, 5 utility summaries x9 family-heldout/P01 series; BH adjusted as exploratory only",
+  "label_leakage_audit": "perturb all heldout candidate TPR and verify selections unchanged",
+  "no_main_truth": true,
+  "no_raw_utility_cross_phase_pooling": true,
+  "limitations": "prelim attack candidate grid historically developed with prelim labels; nested selection does not erase historical leakage"
+}

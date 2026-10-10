@@ -1,0 +1,3 @@
+﻿phase,background,component,fold,target,form,pit_error,original_source_assertion_passed,config,Atest_relative_rank_changed_rows,Atest_unique_unscaled,Atest_unique_scaled,normal875_rank_extension_changed_rows,normal875_rank_extension_max_error,cdf_above_95_changed_rows,cdf_above_99_changed_rows
+main,starter,A3,1,27,shared_probit_gaussian_lw,3.4416913763379853e-15,True,A_only__county300_sex_age100,4,1711,1710,1,0.0011428571428571122,0,0
+main,starter,public_C_strata,1,27,shared_probit_gaussian_lw,3.4416913763379853e-15,True,A_only__county300_sex_age100,4,1711,1710,1,0.0011428571428571122,0,0

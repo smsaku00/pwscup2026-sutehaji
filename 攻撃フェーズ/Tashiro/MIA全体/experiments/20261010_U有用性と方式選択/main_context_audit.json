@@ -1,0 +1,12 @@
+{
+  "cohort_matches": 23,
+  "submission_id_matches": "see sources/main_validation.json and official table",
+  "snapshot": "2026-09-25 08:55:23 JST",
+  "display_precision": 4,
+  "all_U_min_checks_passed": true,
+  "padded_cohort_unidentified": true,
+  "postpadding_rescore_unverified": true,
+  "main_attack_truth_used": false,
+  "main_values_used_for_prelim_selectors": false,
+  "main_selectors_deployed": false
+}

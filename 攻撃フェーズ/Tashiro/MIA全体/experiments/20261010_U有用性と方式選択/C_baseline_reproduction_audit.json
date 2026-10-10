@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "strict18",
+    "strategy": "C_fixed",
+    "matches_prior_selection_and_tpr": true
+  },
+  {
+    "scope": "strict18",
+    "strategy": "C_nested",
+    "matches_prior_selection_and_tpr": true
+  },
+  {
+    "scope": "strict18",
+    "strategy": "global_train_best",
+    "matches_prior_selection_and_tpr": true
+  },
+  {
+    "scope": "all20",
+    "strategy": "C_fixed",
+    "matches_prior_selection_and_tpr": true
+  },
+  {
+    "scope": "all20",
+    "strategy": "C_nested",
+    "matches_prior_selection_and_tpr": true
+  },
+  {
+    "scope": "all20",
+    "strategy": "global_train_best",
+    "matches_prior_selection_and_tpr": true
+  }
+]

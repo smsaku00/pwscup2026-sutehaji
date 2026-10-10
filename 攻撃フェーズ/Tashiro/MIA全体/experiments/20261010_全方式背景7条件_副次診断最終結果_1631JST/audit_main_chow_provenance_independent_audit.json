@@ -1,0 +1,18 @@
+{
+  "audit_utc": "2026-10-10T06:16:30.568709+00:00",
+  "status": "passed_source_input_output_binding_and_aggregate_invariants",
+  "backgrounds": 7,
+  "source_recipe_BG_outputs": 21,
+  "candidate_targets": 22,
+  "source_input_helper_file_hashes_checked": 67,
+  "native_output_file_hashes_checked": 70,
+  "aggregate_rank_rows_checked": 462,
+  "original_no_GT_no_NPZ_guard_preserved": true,
+  "main_truth_accessed": false,
+  "individual_arrays_saved": false,
+  "independent_frozen_matrix_regeneration": false,
+  "limitation": "Original no-NPZ guard leaves matrices only in memory. Prediction hash names and provenance are bound, but this audit does not independently recompute those21 matrices or the462 rank values. It verifies source/runtime/input hashes, native output hashes, source QA records and aggregate invariants. Public background diagnostics are not official membership FPR.",
+  "completion_sha256": "2c8fa9ee40c9f899ab6b6d9a4b56ff332cfcd2be7188f51ae25b12cf338d9505",
+  "protocol_sha256": "37c9282f262120aa5560e7c2aaee7f26a24980b3996e61cd837ed2a197a93a03",
+  "rank_table_sha256": "22d164dd0631f3b261f33b51092c16230c92760b73d47ff262398e34953ce818"
+}

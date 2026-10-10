@@ -1,0 +1,13 @@
+﻿family,family_ja,completed_backgrounds,planned_backgrounds,all7_complete
+classifiers,公開データ分類器,7,7,True
+learned_base,代表特徴の学習,7,7,True
+learned_split,学習の分割感度,7,7,True
+learned_ablation,特徴除去学習,7,7,True
+learned_centers,密度比中心の乱数学習,7,7,True
+learned_yesterday,旧学習の再確認,7,7,True
+learned_bg_transfer,背景変更学習,7,7,True
+learned_bg_ablation,背景特徴除去学習,7,7,True
+learned_lowfpr,低FPR重視学習,7,7,True
+learned_multiview,複数ビュー学習,7,7,True
+learned_multiview_loo,複数ビュー対象保留学習,7,7,True
+smooth,滑らかな競合補正,7,7,True

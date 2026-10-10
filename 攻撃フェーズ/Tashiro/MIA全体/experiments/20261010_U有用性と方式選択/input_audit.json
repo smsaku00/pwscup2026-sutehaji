@@ -1,0 +1,55 @@
+{
+  "workbook": {
+    "repository": "smsaku00/pwscup2026-sutehaji",
+    "ref": "5b73915671df48a7fe53027977aa1ad4a09e72b2",
+    "original_path": "公式データ/予備戦/結果/公開用結果表_20260909.xlsx",
+    "git_blob_sha": "797313bde67ca8fd2fd12ecede5edd12c38a853a",
+    "sha256": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508",
+    "size": 54473,
+    "purpose": "Original published score table for historical policy counterfactual validation; not training truth or current main accuracy",
+    "delivery": "private_input_excluded_from_aggregate_only_ZIP"
+  },
+  "U_ledger_note": "--ledger の掲載値をそのまま転記（再計算しない・仕様§3.7）",
+  "utility_feature_columns": [
+    "U_gen",
+    "U_spec",
+    "U_rare",
+    "U_valid"
+  ],
+  "C_feature_count": 19,
+  "bank_sha256": "037372558eb8c8fc4849ff5fdee169423fd7198c02591885d70c17eec036c462",
+  "catalog_sha256": "3d9bc49989d69c9d9d76d1d9ec58bd36b63c7208661aa45960761e528e84cb96",
+  "C_features_sha256": "5c0abfc022470243c76bc808063133bca352de3e65d8897d7f7d25f8265b6beb",
+  "phase_join": "same-phase cohort + exact C SHA256 + official submission ID",
+  "all20_team_order": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "four_facets_all_in_0_1": true,
+  "per_facet_nunique_primary18": {
+    "U_gen": 18,
+    "U_spec": 18,
+    "U_rare": 17,
+    "U_valid": 10
+  },
+  "utility_inputs_have_no_attack_metrics": true,
+  "main_utility_values_used_in_prelim_selection": false
+}
