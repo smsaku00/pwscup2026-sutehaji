@@ -1,0 +1,104 @@
+{
+  "selection_type": "公開情報と既存成績を用いた提案を承認後に固定する手動選択",
+  "information_used": [
+    "加工データCの観察可能な特徴",
+    "公開背景BGとの比較",
+    "公開課題Qとの比較",
+    "加工が似ると推測した別番号の予備戦対象の成績",
+    "既存本戦提出結果"
+  ],
+  "not_a_C_only_automatic_policy": true,
+  "generator_selected_mapping_fixed": true,
+  "generator_parameter_search": false,
+  "generator_main_truth_used": false,
+  "explicit_selection_threshold_verified": false,
+  "rationale_is_hypothesis_not_accuracy_proof": true,
+  "per_group": [
+    {
+      "teams": [
+        0,
+        15,
+        22
+      ],
+      "recipe": "可変幅KDE",
+      "stated_rationale": "本戦0・22のHDLの裾拡大が予備戦20に部分的に似るという観察。0の重複、22の値の集中も参考。15は根拠が弱い探索的選択。",
+      "exploratory_teams": [
+        15
+      ]
+    },
+    {
+      "teams": [
+        3,
+        8,
+        10
+      ],
+      "recipe": "固定幅KDE密度比",
+      "stated_rationale": "公開背景の行・値の再利用を示す特徴。3の13属性一致、8の背景への近さ、10の列値の再利用。",
+      "prelim_analogy": "本戦10の候補系列の検討には予備戦24も参考。"
+    },
+    {
+      "teams": [
+        4,
+        5,
+        25
+      ],
+      "recipe": "性別内中央値/IQR整列後の最近傍",
+      "stated_rationale": "性別内HDLのIQRがBGと異なるため、位置・幅を合わせる仮説。"
+    },
+    {
+      "teams": [
+        11,
+        16
+      ],
+      "recipe": "性別内分位点整列KDE",
+      "stated_rationale": "性別内の分布差と、分位点整列後のQ/C距離の改善。"
+    },
+    {
+      "teams": [
+        6,
+        14,
+        27
+      ],
+      "recipe": "性別×年齢較正Gen-LRA",
+      "stated_rationale": "6・14はQと同じ県のC候補が少なく、県較正の代替を試す。27には同じ地域不足がなく、探索的選択。",
+      "exploratory_teams": [
+        27
+      ]
+    },
+    {
+      "teams": [
+        1,
+        2,
+        7,
+        9,
+        12,
+        13,
+        17,
+        26
+      ],
+      "recipe": "P01保持",
+      "stated_rationale": "切替根拠が弱い対象で既存方式を保持。9は既存本戦結果を優先。",
+      "recorded_prior_result_claims": [
+        "提出済み3方式の全体平均TPRはP01が最高",
+        "本戦対象9はP01でTPRが0.25を超える"
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/説明.md",
+      "line": 17
+    },
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/作成.py",
+      "line": 40,
+      "sha256": "608bd46663648ab71b993a7d93d57077b0bd8932dda5c9e7a33a1a7b0268bb3f"
+    },
+    {
+      "original_logical_path": "20261009_第4回MIA_チーム別方式と固定5bit/結果/設定.json",
+      "line": 230,
+      "sha256": "2088ccc7738c0389cb0dedd88ec2adb0c2945ca7d84fcd203283169fdcf65ce2"
+    }
+  ],
+  "comparison_limit": "C単独LOTO選択とは利用情報と判断手順が異なる。C単独選択実験の成否を、この第4回の手動選択全体の成否へそのまま読み替えない。"
+}

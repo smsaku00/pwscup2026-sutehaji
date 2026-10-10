@@ -1,0 +1,22 @@
+{
+  "README.md": {
+    "bytes": 7969,
+    "sha256": "d8b25427345916d1cb679d0f3ce12bae35b838b7673f058a8742c86ee5377669"
+  },
+  "adoption_audit.json": {
+    "bytes": 18812,
+    "sha256": "928a4a8e9a5d735248008a0dd5fdcfe0a9e0708594d2a41eb41e9933554cc100"
+  },
+  "column_comparison.csv": {
+    "bytes": 3038,
+    "sha256": "14bff9983d35b0e6e81b86a72bc0debadd22aa3566dc4e61fd4e58e9ba0e0120"
+  },
+  "selection_rationale.json": {
+    "bytes": 3360,
+    "sha256": "b41213af4cd4ea018b7678c021a13508b95d901bc6913ed13092fb61b81b716f"
+  },
+  "verification_summary.json": {
+    "bytes": 2254,
+    "sha256": "0b40e93a6898611a4e3ca605d11e2f7e821d5f9514adb76a6d9fddd6438613a7"
+  }
+}
