@@ -1,0 +1,65 @@
+{
+  "scope": "AIA only",
+  "format_validation": "PASS",
+  "rows": 7172,
+  "target_count": 22,
+  "rows_per_target": 326,
+  "source_block_exact_string_match": true,
+  "round8_aia_sha256": "94551043ad4f9401d6158fd0f1fbbcb09ef4daf374c677bea74f30938ddba7bd",
+  "input_sha256": {
+    "round1_F_aia.csv": "0a0af97596c6318d3a01358fb2e21eb5e0f11f8c01f95d770fd6994b896964be",
+    "round1to5_aia_scores.csv": "15729b497e9e64edfd81113b43f2be0d357a3c8c0c8b433318fc5ff9fe49581a",
+    "round2_F_aia.csv": "f41838ef3c3822e43e6dbbb3902ce7f4eed451b21fe723cdaa8b7a5462772678",
+    "round3_F_aia.csv": "84c6313537388199aae3feaaba3c335d0c1033ea1bd04c5d6eee1380ebbeca1e",
+    "round4_F_aia.csv": "41f0f024fd680c8f7e54fd8706cee8f376b913d2d83b46855511ba2d3701bd84",
+    "round5_F_aia.csv": "6f625e41a324ffb32ff2958c312a30ee2e06d3a3fac6504015443cb8f867d85c",
+    "round5_aia_scores.json": "42f17573b55134da1074c60ee0b05a1504ea0d02d539bff75e866def16c21f71",
+    "round6_F_aia.csv": "47900c8b65e29fd3f9c790d8cb52e9b204269d57b5e5a275267fdea23fb629be",
+    "round6_aia_scores.json": "7a2c11f3e11c39d6b0d37e2ce61c8f074d14c0cecdde9fb42c4dc9ded3fd5716",
+    "round7_F_aia.csv": "4c1c5f03f62c5d47552a2e60dde34d49de57e8ed29b9b077104679d00899b0bc",
+    "round7_aia_scores.json": "092bd1e3267c2e6e3799990fc8407289cedfb1fe4e62223a09c530f44afdb22b"
+  },
+  "selected_teams_by_round": {
+    "1": [
+      5,
+      12
+    ],
+    "2": [],
+    "3": [
+      0,
+      6,
+      9,
+      10,
+      13,
+      17
+    ],
+    "4": [
+      3,
+      7
+    ],
+    "5": [
+      1,
+      2,
+      4,
+      22,
+      25,
+      27
+    ],
+    "6": [
+      11,
+      14
+    ],
+    "7": [
+      8,
+      15,
+      16,
+      26
+    ]
+  },
+  "reference_mean_corrected_aia": 0.1974545628388099,
+  "reference_note": "過去のチーム別補正後最高点の平均。第8回の新規実採点値ではない。",
+  "official_round8_score_obtained": false,
+  "changed_numeric_rows_from_round7": 2828,
+  "tie_rule": "latest round",
+  "tied_target_count": 0
+}
