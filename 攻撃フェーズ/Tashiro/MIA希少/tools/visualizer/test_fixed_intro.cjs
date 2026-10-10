@@ -26,7 +26,7 @@ function independentMean(row, round) {
 async function main() {
   const v = simulatedViewer(), original = v.json('MIA_FIXED_LESSON.snapshot()'), observations = v.json('MIA_FIXED_VIEWER.snapshot()');
   const report = {status: 'passed', environment: 'Node simulated DOM; independent tied-score ROC interpolation over 24 records; all 102 saved count configurations',
-    roc_configurations: 0, historical_configurations: 0, historical_team_settings: 0, bridge_score_cases: 0, manual_navigation_has_no_timers: true, visual_browser_validation: false,
+    roc_configurations: 0, roc_count_coordinates: 0, historical_configurations: 0, historical_team_settings: 0, bridge_score_cases: 0, manual_navigation_has_no_timers: true, visual_browser_validation: false,
     html_bytes: Buffer.byteLength(html), html_sha256: crypto.createHash('sha256').update(html).digest('hex')};
   assert.equal(v.json('MIA_FIXED_OVERVIEW.snapshot()').view, 'intro');assert.equal(v.json('MIA_FIXED_INTRO.snapshot()').page, 'roc');
   function unchanged() {assert.deepEqual(v.json('MIA_FIXED_LESSON.snapshot()'), original);assert.deepEqual(v.json('MIA_FIXED_VIEWER.snapshot()'), observations);assert.equal(v.timers.length, 0);}
@@ -41,7 +41,18 @@ async function main() {
       const markup = v.elements.get(id).innerHTML;
       assert(!/NaN|Infinity/.test(markup));
       const point = markup.match(/data-fpr="([^"]+)" data-tpr="([^"]+)" cx="([^"]+)" cy="([^"]+)"/);assert(point);
-      close(Number(point[1]), .01);close(Number(point[2]), expected.score);assert(Number(point[3])>=56&&Number(point[3])<=386);assert(Number(point[4])>=30&&Number(point[4])<=220);
+      close(Number(point[1]), .01);close(Number(point[2]), expected.score);assert(Number(point[3])>=56&&Number(point[3])<=386);assert(Number(point[4])>=60&&Number(point[4])<=220);
+      assert(markup.includes(`全所属者の人数（${m}人）`));assert(markup.includes(`全非所属者の人数（${24-m}人）`));
+      assert(markup.includes('拾った所属者の人数'));assert(markup.includes('選んだ非所属者の人数'));
+      if(id==='roc-full') {
+        const counts = markup.match(/data-roc-coordinate="high" data-x-numerator="([^"]+)" data-x-denominator="([^"]+)" data-y-numerator="([^"]+)" data-y-denominator="([^"]+)"/);assert(counts);
+        assert.deepEqual(counts.slice(1).map(Number),[n-h,24-m,h,m]);
+        close(Number(counts[1])/Number(counts[2]),expected.points[1][0]);close(Number(counts[3])/Number(counts[4]),expected.points[1][1]);
+        assert(markup.includes(`x＝${n-h}人 / ${24-m}人`));assert(markup.includes(`y＝${h}人 / ${m}人`));
+        const badge=markup.match(/<rect x="([^"]+)" y="([^"]+)" width="200" height="68"/);assert(badge);
+        assert(Number(badge[1])>=56&&Number(badge[1])+200<=386);assert(Number(badge[2])>=50&&Number(badge[2])+68<=220);
+        report.roc_count_coordinates++;
+      } else {assert(markup.includes('x＝1/100＝1%'));assert(markup.includes('直線で補間'));assert(!markup.includes('data-roc-coordinate="high"'));}
     }
     const dots = (id, label) => [...v.elements.get(id).innerHTML.matchAll(new RegExp(`aria-label="${label}"`, 'g'))].length;
     assert.equal(dots('roc-high-people', '所属者'), h);assert.equal(dots('roc-high-people', '非所属者'), n-h);
