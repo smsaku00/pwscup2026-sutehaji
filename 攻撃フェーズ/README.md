@@ -21,3 +21,5 @@ Team 28「ステテコは恥だが役に立つ」／2026年10月11日更新
 - [zhang：予選2方式の本戦版AIA候補](AIA/候補/zhang_予選方式本戦版_20261009/README.md)
 - [田代の分析](Tashiro/README.md)
 - [リポジトリのトップ](../README.md)
+
+- [Tashiro：第8回の統合結果と4テーマの実績](Tashiro/第8回実結果_20261011/README.md)
