@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 10484,
-      "sha256": "d876cc2777413d874d127bef295a19bf1393d461dc9e74937e42fdbd8f5c3332"
+      "bytes": 15922,
+      "sha256": "ef8cc5fddadd3308d8a00a9f8a3abd1045cf4c69feea644520e25419c25afe6c"
     },
     {
       "path": "catalog/catalog_index.json",
@@ -688,23 +688,23 @@
     },
     {
       "path": "dot_manifest.json",
-      "bytes": 15261,
-      "sha256": "199cde2fcbcbec8e049b88bb9a904746124f52e65b137502a2006b1149c0d08d"
+      "bytes": 15470,
+      "sha256": "a9a4323f0709275a81cba45fa84f992dd6112402f60cd12c7fdaffa673fde3bb"
     },
     {
       "path": "environment.json",
-      "bytes": 6011,
-      "sha256": "0981410373da5cedaf9cf3c04659761caacb067797f1958af3d99bc6def3d59c"
+      "bytes": 6673,
+      "sha256": "aec5afc58b2b1fa616b9a9ce4cc917a6bcf8b932e41b71d7bc65b8c640ab014d"
     },
     {
       "path": "manifest.json",
-      "bytes": 194151,
-      "sha256": "aec84b61195aa21250b33f12da90632ce24763ef0a3bee7d12241a6dd4cbaf31"
+      "bytes": 199908,
+      "sha256": "848d4ae0aa3442aa66d6e7afa247dff1a9060685fecbb880f0a97d7a8d2e7995"
     },
     {
       "path": "missing_files.json",
-      "bytes": 616,
-      "sha256": "2c28aa03dfad896a3ec258fd3335b8f81cb14c4d318e83e852972f1e22510fac"
+      "bytes": 1528,
+      "sha256": "dfe323d3c578d179baa0704275e31a0ce3a2a2b8b576731e78401d06fca74ece"
     },
     {
       "path": "originals/requirements.txt",
@@ -757,6 +757,16 @@
       "sha256": "54f604b7e27f2fb801e648d9c7a56619b77a57fc4db895dfcab64465add4b8c1"
     },
     {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+      "bytes": 7504,
+      "sha256": "5d69a236546303692cc1320111bdfd910950ce021b999efcb9fb3c3a488b406b"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+      "bytes": 11271,
+      "sha256": "5c4fd31337ce98ce06103c1a0be9bd3d6091bec00d9b82bfb7d483a2156a5dad"
+    },
+    {
       "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
       "bytes": 23752,
       "sha256": "6f6d3b0e9bd655105c01f9e8695850d9c861501c265afe4fea777f880d65e3b1"
@@ -805,6 +815,11 @@
       "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/third_defense.py",
       "bytes": 20077,
       "sha256": "11564dd06d38ddda49141f03e7ac7506b7bc6c5e1390c0e1365b67d8d5cebd4e"
+    },
+    {
+      "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+      "bytes": 2524,
+      "sha256": "2e0a426937cbc0b2aecae7b2fe01564b905dd59d90997fc00135d9661b7f81c5"
     },
     {
       "path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/virtual_mia_engine.py",
@@ -1137,6 +1152,11 @@
       "sha256": "0decdc3143eb2dc4cf928e851fa41781f18f72932e43163aacbf189d1212fe30"
     },
     {
+      "path": "originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+      "bytes": 13036,
+      "sha256": "343edfc7c2e719a62980c3ceddcfc0129469a848be11cc3e4f7988955725872e"
+    },
+    {
       "path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
       "bytes": 19620,
       "sha256": "d7dbade1ca7ba1a07c4d2df53a570fe5b0e322484ae18962848687df98a83872"
@@ -1155,6 +1175,26 @@
       "path": "originals/予備戦/攻撃フェーズ/分析/22_GenLRAの7属性9属性10属性比較/検証.py",
       "bytes": 10326,
       "sha256": "b30920e31ef6d2674095658f3bbb14bf34b6c3e9f26c232f1748050d1456a7de"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+      "bytes": 2282,
+      "sha256": "379007ee10c315dd7e8710ca68891a566f63c79fe718323601a72019995182c6"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "bytes": 12552,
+      "sha256": "5ff3b91f00b0f44fbc6e2c9a403522fd6ac4dcb83c44e6939360d068e96c92ae"
+    },
+    {
+      "path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "bytes": 14346,
+      "sha256": "b869232bb851e2d62bbdb85d057ecf4ef649a4008b889b26dbce8500980822ce"
+    },
+    {
+      "path": "originals/予備戦/結果分析/分析.py",
+      "bytes": 24180,
+      "sha256": "ee397ffecdb7f5493091c20e67a04ce646d9dc2650d3a9f73b60babed9b78e12"
     },
     {
       "path": "originals/本戦/バトル/requirements.txt",
@@ -1967,9 +2007,39 @@
       "sha256": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
     },
     {
+      "path": "provenance_followup_9/dependency_graph.json",
+      "bytes": 6693,
+      "sha256": "920d984368fd3356e336cd1070762a2a86a9d2aa789036231f586d64c152db84"
+    },
+    {
+      "path": "provenance_followup_9/index.json",
+      "bytes": 394,
+      "sha256": "aceb0539bc3cf57e0f3a143d46be622f156c2a5d584a5ee697e9956ede00e71d"
+    },
+    {
+      "path": "provenance_followup_9/input_hashes.json",
+      "bytes": 8116,
+      "sha256": "9de92d445af2fdf847160b704d7c96441692e26361f2eaa35951659abaceed66"
+    },
+    {
+      "path": "provenance_followup_9/search_and_missing.json",
+      "bytes": 1032,
+      "sha256": "5db43a77b21b264431b9d58d888a5ccc86b50528e85cd8965ff208ddd69eaf41"
+    },
+    {
+      "path": "provenance_followup_9/submission7_fixed_settings.json",
+      "bytes": 925,
+      "sha256": "889bf7e42a8f416d7e556ebf3dcd0d9b57ab9210879eaf3db456a9ef082b8dc1"
+    },
+    {
+      "path": "provenance_followup_9/targets.json",
+      "bytes": 32160,
+      "sha256": "e3149204637982d671a466268c55288841be256d52ff2c7898e00c8e5636e32f"
+    },
+    {
       "path": "requirements-reproduction.txt",
-      "bytes": 307,
-      "sha256": "1cc476c4e20c27f47a157af152002b36d851019cacb681149128a917285ee0fc"
+      "bytes": 402,
+      "sha256": "7f6d79be08fc4329a605a26ad6cb4a0afa0b31de43a40ee143c370c733512ef6"
     },
     {
       "path": "tools/prepare_runtime.py",
@@ -1988,8 +2058,8 @@
     },
     {
       "path": "verification.json",
-      "bytes": 962,
-      "sha256": "5412231cb7fb714affe28ae3ff76e3f38a5604aa8d31e60f8d4bf2c8c1e45c9e"
+      "bytes": 2051,
+      "sha256": "1525e37e6c728065885b15d23acef56ec8a62c3140a2f7428ff1bff15213c4cd"
     }
   ]
 }

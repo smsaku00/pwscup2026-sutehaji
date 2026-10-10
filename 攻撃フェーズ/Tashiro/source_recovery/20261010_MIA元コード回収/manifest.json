@@ -8,12 +8,13 @@
   "destination_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収",
   "original_bytes_preserved": true,
   "counts": {
-    "source_files": 252,
-    "python": 238,
+    "source_files": 260,
+    "python": 245,
     "calculation_json": 11,
     "requirements": 3,
     "requested_sources": 24,
-    "requested_missing": 0
+    "requested_missing": 0,
+    "javascript_mjs": 1
   },
   "sources": [
     {
@@ -106,6 +107,24 @@
       "syntax": "pass (ast.parse + compile; no import/execution)"
     },
     {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack.py",
+      "sha256": "5d69a236546303692cc1320111bdfd910950ce021b999efcb9fb3c3a488b406b",
+      "bytes": 7504,
+      "role": "followup_9_generator_or_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/build_attack2.py",
+      "sha256": "5c4fd31337ce98ce06103c1a0be9bd3d6091bec00d9b82bfb7d483a2156a5dad",
+      "bytes": 11271,
+      "role": "followup_9_generator_or_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
       "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
       "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
       "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/calibration.py",
@@ -193,6 +212,15 @@
       "sha256": "11564dd06d38ddda49141f03e7ac7506b7bc6c5e1390c0e1365b67d8d5cebd4e",
       "bytes": 20077,
       "role": "static_import_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+      "bundle_relative_path": "originals/アーカイブ/予備戦_攻撃フェーズ/work_20260901以前/verify_r1.py",
+      "sha256": "2e0a426937cbc0b2aecae7b2fe01564b905dd59d90997fc00135d9661b7f81c5",
+      "bytes": 2524,
+      "role": "followup_9_generator_or_dependency",
       "syntax": "pass (ast.parse + compile; no import/execution)"
     },
     {
@@ -790,6 +818,15 @@
       "syntax": "pass (ast.parse + compile; no import/execution)"
     },
     {
+      "original_relative_path": "予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/20_Team20希少のGenLRA検証/検証.py",
+      "sha256": "343edfc7c2e719a62980c3ceddcfc0129469a848be11cc3e4f7988955725872e",
+      "bytes": 13036,
+      "role": "followup_9_generator_or_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
       "original_relative_path": "予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
       "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
       "bundle_relative_path": "originals/予備戦/攻撃フェーズ/分析/21_MIA全体と希少のGenLRA比較/分析.py",
@@ -823,6 +860,41 @@
       "sha256": "b30920e31ef6d2674095658f3bbb14bf34b6c3e9f26c232f1748050d1456a7de",
       "bytes": 10326,
       "role": "catalog_runner_or_historical_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/CSV作成.mjs",
+      "sha256": "379007ee10c315dd7e8710ca68891a566f63c79fe718323601a72019995182c6",
+      "bytes": 2282,
+      "role": "followup_9_generator_or_dependency"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/作成.py",
+      "sha256": "5ff3b91f00b0f44fbc6e2c9a403522fd6ac4dcb83c44e6939360d068e96c92ae",
+      "bytes": 12552,
+      "role": "followup_9_generator_or_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "bundle_relative_path": "originals/予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/作成時記録/MIA/検証.py",
+      "sha256": "b869232bb851e2d62bbdb85d057ecf4ef649a4008b889b26dbce8500980822ce",
+      "bytes": 14346,
+      "role": "followup_9_generator_or_dependency",
+      "syntax": "pass (ast.parse + compile; no import/execution)"
+    },
+    {
+      "original_relative_path": "予備戦/結果分析/分析.py",
+      "repository_relative_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収/originals/予備戦/結果分析/分析.py",
+      "bundle_relative_path": "originals/予備戦/結果分析/分析.py",
+      "sha256": "ee397ffecdb7f5493091c20e67a04ce646d9dc2650d3a9f73b60babed9b78e12",
+      "bytes": 24180,
+      "role": "followup_9_generator_or_dependency",
       "syntax": "pass (ast.parse + compile; no import/execution)"
     },
     {
@@ -2435,5 +2507,15 @@
   "dependency_graph": "dependency_graph.json",
   "environment": "environment.json",
   "missing_files": "missing_files.json",
-  "verification_scope": "Byte-preserving SHA256 comparison, JSON parsing, Python static syntax compilation, catalog round-trip and credential-pattern screening. No functional MIA run or TPR validation in this recovery."
+  "verification_scope": "Byte-preserving SHA256 comparison, JSON parsing, Python static syntax compilation, catalog round-trip and credential-pattern screening. No functional MIA run or TPR validation in this recovery.",
+  "followup_9": {
+    "parent_recovery_commit": "7bed499c3a95a939ee4bc73e177ae38bd747fcdd",
+    "added_original_files": 8,
+    "previous_252_originals_unchanged": true,
+    "provenance_index": "provenance_followup_9/index.json",
+    "generator_located": 6,
+    "generator_not_found": 3,
+    "new_attack_calculations": 0
+  },
+  "dependency_graph_followup": "provenance_followup_9/dependency_graph.json"
 }

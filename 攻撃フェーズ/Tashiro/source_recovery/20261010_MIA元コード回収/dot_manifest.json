@@ -5,12 +5,13 @@
   "root_path": "攻撃フェーズ/Tashiro/source_recovery/20261010_MIA元コード回収",
   "scope": "Recovered sources/settings only. No experiment or prior unpublished report uploaded.",
   "counts": {
-    "source_files": 252,
-    "python": 238,
+    "source_files": 260,
+    "python": 245,
     "calculation_json": 11,
     "requirements": 3,
     "requested_sources": 24,
-    "requested_missing": 0
+    "requested_missing": 0,
+    "javascript_mjs": 1
   },
   "explicit_requested_sources": [
     {
@@ -196,5 +197,9 @@
     "tools/verify_recovery.py",
     "tools/restore_catalog.py",
     "tools/prepare_runtime.py"
-  ]
+  ],
+  "followup_9": "provenance_followup_9/index.json",
+  "followup_9_located": 6,
+  "followup_9_missing": 3,
+  "dependency_index_followup": "provenance_followup_9/dependency_graph.json"
 }

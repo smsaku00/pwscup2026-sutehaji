@@ -50,6 +50,13 @@
       "distribution": "PyYAML",
       "version": "6.0.3",
       "status": "installed"
+    },
+    {
+      "module": "openpyxl",
+      "distribution": "openpyxl",
+      "version": "3.1.5",
+      "status": "installed",
+      "added_for": "followup saved-result analysis"
     }
   ],
   "note": "Observed local versions at recovery time, not new experiment validation. Original requirements are separately retained.",
@@ -283,6 +290,26 @@
       "version": "2.2.2",
       "installed": true,
       "required_distributions": []
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "installed": true,
+      "required_distributions": [
+        "et_xmlfile"
+      ]
+    },
+    {
+      "name": "et_xmlfile",
+      "version": "2.0.0",
+      "installed": true,
+      "required_distributions": []
     }
-  ]
+  ],
+  "followup_node": {
+    "dependency": "@oai/artifact-tool",
+    "observed_current_version": "2.8.89",
+    "historical_generation_version": "not recorded",
+    "package_cache_not_uploaded": true
+  }
 }

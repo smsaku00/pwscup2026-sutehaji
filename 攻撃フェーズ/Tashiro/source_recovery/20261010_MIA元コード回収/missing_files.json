@@ -10,5 +10,27 @@
     "tokens/.env/keys",
     "historical submission ZIPs and answer CSVs"
   ],
-  "not_a_missing_source_claim": "Runtime inputs are excluded deliberately. Missing cache/output inputs must be supplied or generated externally before their dependent scripts can run."
+  "not_a_missing_source_claim": "Runtime inputs are excluded deliberately. Missing cache/output inputs must be supplied or generated externally before their dependent scripts can run.",
+  "followup_9_generator_missing": [
+    {
+      "id": "F_mia_zhou",
+      "code_filename": "mia_mixed_density_attack_improved.py",
+      "expected_sha256": "c3733d631da40b2450b3a085285428cba4a230f8bc0e7e04fcf6dda59400aa38",
+      "also_missing": "c_exclusion_candidates.csv"
+    },
+    {
+      "id": "legacy_submission_1",
+      "missing": "Source Python/script and authoritative full settings/input snapshot; documentation only"
+    },
+    {
+      "id": "legacy_submission_2",
+      "missing": "Source code and generation configuration; saved CSV/ZIP only"
+    }
+  ],
+  "followup_9_unrecovered_inputs": [
+    "pre-run work/attack_state.json snapshot for prelim_attack2/r1",
+    "exact old work/data_prelim_team05 layout/hash snapshot for r1",
+    "Zhou c_exclusion_candidates.csv and implementation",
+    "submission7/analysis21/22 person-level caches and historical CSV inputs intentionally not uploaded"
+  ]
 }

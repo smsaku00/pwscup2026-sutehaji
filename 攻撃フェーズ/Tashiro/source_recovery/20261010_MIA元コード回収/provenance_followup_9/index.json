@@ -1,0 +1,12 @@
+{
+  "parent_commit": "7bed499c3a95a939ee4bc73e177ae38bd747fcdd",
+  "targets_total": 9,
+  "generator_or_composition_located": 6,
+  "generator_missing": 3,
+  "new_original_files": 8,
+  "targets": "targets.json",
+  "input_hashes": "input_hashes.json",
+  "missing": "search_and_missing.json",
+  "fixed_settings_submission7": "submission7_fixed_settings.json",
+  "no_new_attack_computation": true
+}

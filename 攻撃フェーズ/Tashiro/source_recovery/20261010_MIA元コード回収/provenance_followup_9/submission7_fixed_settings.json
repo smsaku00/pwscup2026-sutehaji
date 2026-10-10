@@ -1,0 +1,44 @@
+{
+  "source": {
+    "original_relative_path": "予備戦/攻撃フェーズ/提出記録/7_20260907_GenLRA_Seo/MIA/計算条件.json",
+    "exists": true,
+    "sha256": "1d7f4d369fecf17f2a059bcbe378ea6b061e9fb29cad250e4a0d94c45393be9b",
+    "bytes": 33920
+  },
+  "projection": "Only method settings; person-ID lists, team score arrays and histories omitted",
+  "settings": {
+    "overall_method": "QI7/h1/k10/rho0.98; Team1,2 nonrare unchanged",
+    "rare_plan": "gen9_after48",
+    "numeric": [
+      "age",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT"
+    ],
+    "categorical": [
+      "sex",
+      "prefecture"
+    ],
+    "rare_numeric": [
+      "age",
+      "BMI",
+      "SBP",
+      "TG",
+      "HDL",
+      "ALT",
+      "FPG"
+    ],
+    "rare_categorical": [
+      "sex",
+      "prefecture"
+    ],
+    "log1p": [
+      "TG",
+      "ALT"
+    ],
+    "bandwidth_factor": 1,
+    "neighbors": 10,
+    "rho": 0.98
+  }
+}
