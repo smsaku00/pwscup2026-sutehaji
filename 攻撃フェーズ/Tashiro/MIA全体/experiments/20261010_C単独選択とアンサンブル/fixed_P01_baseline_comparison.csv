@@ -1,0 +1,46 @@
+view,strategy,targets,mean_tpr,TPR_ge010,TPR_gt010,fixed_P01_mean_tpr,delta_fixed_P01,wins,ties,losses,candidate_strategy_label_use
+primary18_train_and_test_without1_2,fixed_P01_prelimBG_all20inference,18,0.029775245330800885,2,2,0.029775245330800885,0,0,18,0,fixed pre-existing baseline; no membership-label training
+primary18_train_and_test_without1_2,global_train_best,18,0.0044444444444444444,0,0,0.029775245330800885,-0.02533080088635644,1,10,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,C_gate_fixed_k3_weight05,18,0.013162393162393165,0,0,0.029775245330800885,-0.016612852168407726,2,10,6,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,C_gate_nested,18,0.012918645140867364,0,0,0.029775245330800885,-0.016856600189933527,1,11,6,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,oracle_infeasible,18,0.14786641342196902,18,18,0.029775245330800885,0.1180911680911681,17,1,0,oracle not deployable
+primary18_train_and_test_without1_2,ensemble_train_champion_mean,18,0.021801202912314025,1,1,0.029775245330800885,-0.0079740424184868638,3,10,5,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,ensemble_train_champion_median,18,0.020112314023425133,0,0,0.029775245330800885,-0.0096629313073757529,4,9,5,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,ensemble_train_champion_max,18,0.01908842988287433,0,0,0.029775245330800885,-0.010686815447926559,5,6,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,ensemble_train_top3_families_mean,18,0.0041152263374485592,0,0,0.029775245330800885,-0.025660018993352327,1,10,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,ensemble_train_top5_families_mean,18,0.012997784108895221,0,0,0.029775245330800885,-0.016777461221905668,3,8,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,ensemble_train_champion_weighted,18,0.019578980690091802,0,0,0.029775245330800885,-0.010196264640709087,3,10,5,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,fixed_uniform_all_candidates,18,0.012912314023425136,0,0,0.029775245330800885,-0.016862931307375751,3,8,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,fixed_equal_family_background_mean,18,0.015134536245647359,0,0,0.029775245330800885,-0.014640709085153532,2,10,6,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,fixed_family_consensus_median,18,0.015134536245647359,0,0,0.029775245330800885,-0.014640709085153532,3,8,7,unchanged original frozen experimental strategy
+primary18_train_and_test_without1_2,fixed_family_consensus_max,18,0.010946502057613168,0,0,0.029775245330800885,-0.018828743273187717,3,7,8,unchanged original frozen experimental strategy
+all20_loto,fixed_P01_prelimBG_all20inference,20,0.08079772079772081,4,4,0.08079772079772081,0,0,20,0,fixed pre-existing baseline; no membership-label training
+all20_loto,global_train_best,20,0.089774928774928778,2,2,0.08079772079772081,0.0089772079772079769,2,10,8,unchanged original frozen experimental strategy
+all20_loto,C_gate_fixed_k3_weight05,20,0.077621082621082624,2,2,0.08079772079772081,-0.0031766381766381775,2,13,5,unchanged original frozen experimental strategy
+all20_loto,C_gate_nested,20,0.09177492877492878,2,2,0.08079772079772081,0.010977207977207975,4,8,8,unchanged original frozen experimental strategy
+all20_loto,oracle_infeasible,20,0.22507977207977206,20,20,0.08079772079772081,0.14428205128205129,19,1,0,oracle not deployable
+all20_loto,ensemble_train_champion_mean,20,0.035846153846153847,2,2,0.08079772079772081,-0.044951566951566956,3,9,8,unchanged original frozen experimental strategy
+all20_loto,ensemble_train_champion_median,20,0.077923076923076928,2,2,0.08079772079772081,-0.0028746438746438787,2,11,7,unchanged original frozen experimental strategy
+all20_loto,ensemble_train_champion_max,20,0.06187318274318275,2,2,0.08079772079772081,-0.018924538054538052,2,10,8,unchanged original frozen experimental strategy
+all20_loto,ensemble_train_top3_families_mean,20,0.091626780626780632,2,2,0.08079772079772081,0.010829059829059831,2,12,6,unchanged original frozen experimental strategy
+all20_loto,ensemble_train_top5_families_mean,20,0.087698005698005704,2,2,0.08079772079772081,0.0069002849002849035,2,13,5,unchanged original frozen experimental strategy
+all20_loto,ensemble_train_champion_weighted,20,0.065549857549857551,2,2,0.08079772079772081,-0.015247863247863249,1,12,7,unchanged original frozen experimental strategy
+all20_loto,fixed_uniform_all_candidates,20,0.013621082621082622,0,0,0.08079772079772081,-0.067176638176638187,3,8,9,unchanged original frozen experimental strategy
+all20_loto,fixed_equal_family_background_mean,20,0.017621082621082623,0,0,0.08079772079772081,-0.063176638176638183,2,10,8,unchanged original frozen experimental strategy
+all20_loto,fixed_family_consensus_median,20,0.023621082621082621,1,1,0.08079772079772081,-0.057176638176638185,3,8,9,unchanged original frozen experimental strategy
+all20_loto,fixed_family_consensus_max,20,0.01985185185185185,1,1,0.08079772079772081,-0.060945868945868953,3,7,10,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,fixed_P01_prelimBG_all20inference,18,0.029775245330800885,2,2,0.029775245330800885,0,0,18,0,fixed pre-existing baseline; no membership-label training
+all20_trained_summary_without1_2,global_train_best,18,0.004194365305476417,0,0,0.029775245330800885,-0.025580880025324475,0,10,8,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,C_gate_fixed_k3_weight05,18,0.012912314023425136,0,0,0.029775245330800885,-0.016862931307375751,1,12,5,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,C_gate_nested,18,0.0064165875276986396,0,0,0.029775245330800885,-0.023358657803102246,2,8,8,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,oracle_infeasible,18,0.14786641342196902,18,18,0.029775245330800885,0.1180911680911681,17,1,0,oracle not deployable
+all20_trained_summary_without1_2,ensemble_train_champion_mean,18,0.015384615384615385,0,0,0.029775245330800885,-0.0143906299461855,3,9,6,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,ensemble_train_champion_median,18,0.002136752136752137,0,0,0.029775245330800885,-0.027638493194048749,0,11,7,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,ensemble_train_champion_max,18,0.010436869714647492,0,0,0.029775245330800885,-0.019338375616153394,1,10,7,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,ensemble_train_top3_families_mean,18,0.0062519784742006961,0,0,0.029775245330800885,-0.023523266856600191,0,12,6,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,ensemble_train_top5_families_mean,18,0.0085533396644507757,0,0,0.029775245330800885,-0.021221905666350113,0,13,5,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,ensemble_train_champion_weighted,18,0.008388730610952834,0,0,0.029775245330800885,-0.021386514719848052,0,12,6,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,fixed_uniform_all_candidates,18,0.012912314023425136,0,0,0.029775245330800885,-0.016862931307375751,3,8,7,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,fixed_equal_family_background_mean,18,0.015134536245647359,0,0,0.029775245330800885,-0.014640709085153532,2,10,6,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,fixed_family_consensus_median,18,0.015134536245647359,0,0,0.029775245330800885,-0.014640709085153532,3,8,7,unchanged original frozen experimental strategy
+all20_trained_summary_without1_2,fixed_family_consensus_max,18,0.010946502057613168,0,0,0.029775245330800885,-0.018828743273187717,3,7,8,unchanged original frozen experimental strategy

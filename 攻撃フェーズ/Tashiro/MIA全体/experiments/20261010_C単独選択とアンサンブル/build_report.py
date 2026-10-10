@@ -139,12 +139,15 @@ Cそのものから、欠損率、全属性/QI7重複率、数値の一意値率
 
 個人別の予測、順位、membership正解は共有用ZIPに含めない。`private_cache/` は内部検証用であり公開対象外。
 '''
+from apply_fixed_P01_correction import corrected
+text=corrected(text)
 (R/'Cだけの方式選択とアンサンブル_検証結果.md').write_text(text)
-(R/'summary_ja.txt').write_text('主評価はTeam 1/2を訓練・評価から除いた18対象LOTO。TPR@FPR1%、全1049人。\n基準0.004444、C-only固定0.013162、内側調整0.012919。Cゲートの0.10超は0/18。\n訓練側8家族代表の順位平均0.021801、7勝10分1敗、Team13=0.12で0.10超1/18。\n改善は限定的。過去に予備戦正解を見て作られたグリッドでの追加検証であり、独立未使用データの汎化確認ではない。\n全43,148行列のハッシュと最終532予測の公式採点一致。\n')
+# summary_ja.txt is a separately reviewed corrective summary; preserve it.
+
 allowed=[p for p in R.iterdir() if p.is_file() and p.suffix in ['.py','.md','.txt','.csv','.json'] and p.name not in ['delivery_manifest.json']]
 files=[{'name':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(allowed)]
 manifest={'scope':'aggregate results and reproducibility code only','excluded':['private_cache/','per-person predictions','membership truth','source C row data'],'files':files}
 (R/'delivery_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-with zipfile.ZipFile(R/'C単独選択とアンサンブル_集約成果.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(R/'C単独選択とアンサンブル_集約成果_v2_固定P01比較.zip','w',zipfile.ZIP_DEFLATED) as z:
     for p in allowed+[R/'delivery_manifest.json']:z.write(p,p.name)
-print('REPORT',len(text),'ZIP',(R/'C単独選択とアンサンブル_集約成果.zip').stat().st_size)
+print('REPORT',len(text),'ZIP',(R/'C単独選択とアンサンブル_集約成果_v2_固定P01比較.zip').stat().st_size)
