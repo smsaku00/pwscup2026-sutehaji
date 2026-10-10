@@ -1,0 +1,130 @@
+{
+  "python_sources_parse": true,
+  "json_parse": true,
+  "csv_tables": [
+    {
+      "path": "prelim_under_main_rules_20261010/named_team_score_comparison_all22.csv",
+      "rows": 22,
+      "columns": 19
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/all22_utility_final.csv",
+      "rows": 22,
+      "columns": 49
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/all21_utility_final.csv",
+      "rows": 21,
+      "columns": 49
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/all22_utility_bounds.csv",
+      "rows": 22,
+      "columns": 44
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/all21_utility_bounds.csv",
+      "rows": 21,
+      "columns": 44
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/utility_comparison_compact.csv",
+      "rows": 22,
+      "columns": 12
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/self5_paired_scores.csv",
+      "rows": 5,
+      "columns": 7
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/self5_correlation_pair_differences.csv",
+      "rows": 36,
+      "columns": 5
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/prelim_background_overlap_diagnostic.csv",
+      "rows": 21,
+      "columns": 3
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/csv_parser_audit.csv",
+      "rows": 21,
+      "columns": 4
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/all21_C_ledger_binding_audit.csv",
+      "rows": 21,
+      "columns": 4
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/utility/prelim_official_utility_all22.csv",
+      "rows": 22,
+      "columns": 10
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/anonymity/main_rule_anonymity_bounds_all22.csv",
+      "rows": 22,
+      "columns": 32
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/anonymity/main_rule_anonymity_bounds_previous20.csv",
+      "rows": 20,
+      "columns": 32
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/チーム別_加工変更の可能性.csv",
+      "rows": 23,
+      "columns": 17
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/verified_team_crosswalk.csv",
+      "rows": 23,
+      "columns": 6
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/team_processing_evidence_metrics.csv",
+      "rows": 23,
+      "columns": 229
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/numeric_distribution_contrasts.csv",
+      "rows": 168,
+      "columns": 13
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/correlation_contrasts.csv",
+      "rows": 588,
+      "columns": 8
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/rounding_overlap_robustness.csv",
+      "rows": 132,
+      "columns": 11
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/own_team_exact_B_C_comparison.csv",
+      "rows": 26,
+      "columns": 8
+    },
+    {
+      "path": "prelim_under_main_rules_20261010/processing_changes/継続候補7チーム_公式台帳有用性の変化.csv",
+      "rows": 7,
+      "columns": 27
+    },
+    {
+      "path": "gmm_team_comparison_20261010/予備戦20チーム_固定GMM7背景と公式有用性_MIA被害_匿名性.csv",
+      "rows": 20,
+      "columns": 44
+    }
+  ],
+  "raw_participant_records_excluded": true,
+  "main_official_parser_used": true,
+  "portable_cli_reproduction": {
+    "utility_bounds": "byte-identical CSV and AST audit",
+    "self5": "byte-identical paired CSV and both breakdown JSONs",
+    "anonymity": "byte-identical two CSVs, data JSON and validation JSON",
+    "gmm": "20 teams x 7 backgrounds; all formula checks pass"
+  },
+  "scoring_semantics": "Frozen preliminary inputs. Ledger-conditional U bounds separate from C-only caps. Unknown preliminary phi is not substituted from main."
+}

@@ -1,0 +1,54 @@
+{
+  "official_result_sha256": "8d6380feafa50a850b28aa50eb4b04cd0ffe132ca15904dc0c84b85fd8ff6508",
+  "rows": 22,
+  "valid": 21,
+  "blank_official_team": 21,
+  "exact_Anon_teams": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    10,
+    13,
+    17,
+    24
+  ],
+  "phi_dependent_Anon_teams": [
+    5,
+    6,
+    7,
+    9,
+    12,
+    18,
+    19,
+    20,
+    22,
+    23,
+    26,
+    29
+  ],
+  "identical_attack_score_git_blob_all_three_phases": "d7fc73a993c66f2ce4b831053529c2eb4b46eac8",
+  "MIA_null_method": "Reuse official 20,000-replicate beta_chance; same historical submitted confidences, truth, rare flags and attacker set are held fixed. Null permutations were not rerun.",
+  "AIA_phi_method": "Unknown preliminary-world-specific calibration; no actual main-world phi is substituted.",
+  "bounds_meaning": "Logical bounds over 0 <= phi_i <= 1, not a confidence interval or prediction; endpoint attainability by the actual unknown calibration is not asserted.",
+  "AIA_missingness": "Defender 23 / attacker 4 is blank in the official AIA matrix (19 nonmissing values for defender 23; 20 otherwise). Reuse the official maximum over available entries; do not invent the missing attack result.",
+  "checks": [
+    "all stored official summary identities reproduce",
+    "all 420 per-attacker MIA t_j match max(all, rare) with no-rare fallback",
+    "all 21 beta_raw equal 20-attacker means",
+    "all 21 AIA maxima match the nonmissing entries in the published attacker matrix",
+    "same official attack_score.py in all three tags",
+    "K/FPR/AIA tolerance/rare deadzone identical",
+    "all bounds endpoints and monotonicity checked",
+    "source workbook unchanged"
+  ],
+  "formulae": {
+    "aia": "A_main_i(phi_i) = clip(A_pre_i - phi_i, 0, 1)",
+    "anonymity": "Anon_main_i(phi_i) = 1 - max(M_pre_i, A_main_i(phi_i))",
+    "anonymity_bounds": "Anon_pre_i <= Anon_main_i <= 1 - M_pre_i",
+    "score": "Score_i = min(U_main_i, Anon_main_i(phi_i))",
+    "score_bounds_U_exact": "[min(U_main_i, Anon_pre_i), min(U_main_i, 1-M_pre_i)]",
+    "score_bounds_U_interval": "If U_main_i in [L_i,H_i], Score_i in [min(L_i,Anon_pre_i),min(H_i,1-M_pre_i)]"
+  }
+}

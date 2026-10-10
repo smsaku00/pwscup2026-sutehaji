@@ -1,0 +1,21 @@
+{
+  "files": [
+    "チーム別_加工変更の可能性.md",
+    "チーム別_加工変更の可能性.csv",
+    "verified_team_crosswalk.csv",
+    "team_processing_evidence_metrics.csv",
+    "numeric_distribution_contrasts.csv",
+    "correlation_contrasts.csv",
+    "rounding_overlap_robustness.csv",
+    "own_team_exact_B_C_comparison.csv",
+    "public_provenance.json",
+    "README_REPRODUCE.md",
+    "compare_processing.py",
+    "check_robustness.py",
+    "write_report.py",
+    "継続候補7チーム_公式台帳有用性の変化.csv",
+    "validation.json"
+  ],
+  "excluded": "No row-level B, C, attack predictions or truth; no local path-bearing analysis_provenance.json.",
+  "classification": "qualitative evidence strength, not a calibrated probability or identified algorithm"
+}

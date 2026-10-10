@@ -1,0 +1,43 @@
+{
+  "counterfactual": "Keep each original preliminary C, B, utility reference, preliminary A_bg fixed; replace scoring code and config with main-process-20260912.",
+  "not_actual_main_leaderboard": true,
+  "not_new_main_cohorts": true,
+  "all21_exact_main_U_available": false,
+  "missing_B_and_reference_teams": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29
+  ],
+  "missing_C_team": 21,
+  "ledger_tolerance": 1e-09,
+  "bounds_do_not_estimate_unknown_B": true,
+  "no_fab_identity": "2 * preliminary U_valid - preliminary C-only censoring score",
+  "main_Uvalid_bounds": "(bounds of new censor + no_fab + exact no_dup + novel in [0,1])/4",
+  "main_U_upper": "min(preliminary U_gen, preliminary U_spec, preliminary U_rare, new U_valid upper); each ledger value enlarged by tolerance",
+  "main_U_lower": "0, because uncomputed added correlation/tail constraints can in principle bind at zero",
+  "main_U_C_only_upper": "(main censor-rowwise + exact no_dup + 2)/4; independent of any transferred ledger facet, B, and original utility reference",
+  "parser": "main official read_scoring_csv uses pandas float_precision=round_trip; preliminary adapter used default reader",
+  "runtime": "Exact C-only official _no_dup function executed by AST; no substitute scoring formulas for this term",
+  "ledger_source_sha256": "77ae2ac4b68373bfa6a799e8e062643dbde8f098935d808b9ab3c706d00ff853",
+  "code_sha256": {
+    "prelim": "b766cfa88991b4c57fdda4f41baf1de3e661a45a6b1f7a63f03aa3ffa9baa22a",
+    "main": "a16b94ed49bc656a770a7bdf95c30d04f1430f73c4c866ccd4fb7a58397a6932"
+  }
+}

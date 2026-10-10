@@ -1,0 +1,23 @@
+team,team_name,prelim_U,main_U_lower,main_U_upper,guaranteed_U_drop_at_least,n_duplicate_extra,main_no_dup_exact,n_admin_censored,main_cens_rowwise_exact,main_U_valid_upper,status
+1,Ritz,0.8256716976,0,0.8256716986,0,0,1,873,1,1,bounded_missing_B_and_reference
+2,HarunaDan@GU,0.9515747037,0,0.9515747047,0,0,1,877,1,1,bounded_missing_B_and_reference
+3,ふてねこ/HuteNeko,0.971877979,0,0.97187798,0,0,1,894,1,1,bounded_missing_B_and_reference
+4,アノニメイジング・PRIダーマン / The Anonymazing Prider-Man,0.9566146891,0,0.9566146901,0,0,1,884,0.9864253394,0.9911916197,bounded_missing_B_and_reference
+5,ステテコは恥だが役に立つ,0.9825875274,0,0.9825875284,0,0,1,886,1,1,bounded_missing_B_and_reference
+6,Trailblazer,0.9808388942,0,0.9808388952,0,1,0.9952335558,868,1,0.9984399661,bounded_missing_B_and_reference
+7,神神公社 / KU nu tau tau,0.9364156339,0,0.9364156349,0,0,1,841,1,0.9806783417,bounded_missing_B_and_reference
+8,CyberMantra,0.8827886389,0,0.8827886399,0,0,1,883,1,1,bounded_missing_B_and_reference
+9,あかぎ団＠群大/AkagiDan@GU,0.9612762311,0,0.9612762321,0,0,1,887,1,1,bounded_missing_B_and_reference
+10,『データ提供申請が半年経っても通らないので、もう全部生成することにしました ～合成データ研究者のスローライフ～』（全部生成） / JustGenerateIt,0.9783603432,0,0.9783603442,0,0,1,872,1,1,bounded_missing_B_and_reference
+12,k等分の花嫁,0.9687321258,0,0.9687321268,0,0,1,856,1,0.9996634055,bounded_missing_B_and_reference
+13,ステテコVanguard,0.9360358291,0,0.9360358301,0,0,1,878,1,0.9996712007,bounded_missing_B_and_reference
+17,あれ / are,0.9418734761,0,0.75,0.1918734751,0,1,0,0,0.75,bounded_missing_B_and_reference
+18,コログの森団/Koroks in the forest,0.9516682555,0,0.9516682565,0,0,1,868,1,1,bounded_missing_B_and_reference
+19,Asakatsu2026,0.9711889682,0,0.9463724241,0.02481654312,45,0.7855100095,811,1,0.9463724241,bounded_missing_B_and_reference
+20,さいふぉん-3/siphon-3,0.973593899,0,0.9735939,0,0,1,870,1,0.9998024772,bounded_missing_B_and_reference
+21,bot035,,,,,,,,,,missing_C_no_recomputation
+22,映画しろうと diabetes島のひみつ / Shiroto,0.4933900501,0,0.4933900511,0,0,1,841,1,1,bounded_missing_B_and_reference
+23,宮地研.exe,0.9110064935,0,0.9110064945,0,0,1,867,1,1,bounded_missing_B_and_reference
+24,アウトサイダー / outsider,0.5335902571,0,0.5335902581,0,0,1,889,1,0.9230456769,bounded_missing_B_and_reference
+26,グラブジャムン/GulabJamun,0.722627396,0,0.722627397,0,0,1,841,0.707491082,0.9268727705,bounded_missing_B_and_reference
+29,神ぼ大/jinbodai,0.9865575382,0,0.8605815062,0.125976031,117,0.4423260248,849,1,0.8605815062,bounded_missing_B_and_reference

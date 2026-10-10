@@ -1,0 +1,9 @@
+{
+  "onset": true,
+  "population": true,
+  "schema": true,
+  "km_tau_years": true,
+  "u_time": true,
+  "u_rare": true,
+  "no_fab": true
+}

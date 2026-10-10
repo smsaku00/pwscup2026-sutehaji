@@ -1,0 +1,25 @@
+{
+  "rows": 22,
+  "submitted": 21,
+  "missing": [
+    21
+  ],
+  "locally_recomputed_U": [
+    5
+  ],
+  "exact_total_zero": [
+    1,
+    2
+  ],
+  "guaranteed_U_drop": [
+    5,
+    17,
+    19,
+    29
+  ],
+  "guaranteed_total_drop": [
+    17
+  ],
+  "formula": "total bounds = [min(U_lower,Anon_lower), min(U_upper,Anon_upper)]",
+  "unobserved_data_imputed": false
+}

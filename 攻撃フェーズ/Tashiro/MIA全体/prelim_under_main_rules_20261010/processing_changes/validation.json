@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "44_input_hashes_verified": true,
+    "23_unique_named_main_teams": true,
+    "21_paired_Cs": true,
+    "classification_counts_expected": true,
+    "all_C_rows_1049": true,
+    "robust_Koroks_1049_to_0": true,
+    "Are_time_1049_to_169": true,
+    "7_ledger_minima_consistent": true,
+    "published_tables_no_record_id": true
+  },
+  "all_pass": true,
+  "row_level_inputs_published": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "phase": "prelim",
+    "path": "common/submission_schema.py",
+    "git_blob_sha": "aa2e7db935fb1c85a39d7f1c000e6d1142a3cde4",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/common/submission_schema.py"
+  },
+  {
+    "phase": "prelim",
+    "path": "kit/codabench/scoring_io.py",
+    "git_blob_sha": "8997fdcf6b44e5f4a67e1abb08c4a22144429a95",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/prelim-attack-20260825/starter/src/pwscup2026/kit/codabench/scoring_io.py"
+  },
+  {
+    "phase": "main",
+    "path": "common/submission_schema.py",
+    "git_blob_sha": "79f079f27fbd5a29c0cd7b3a38779dc90b670294",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/common/submission_schema.py"
+  },
+  {
+    "phase": "main",
+    "path": "kit/codabench/scoring_io.py",
+    "git_blob_sha": "6cf93250763b7ba51fc6e29050a275a0222d8e42",
+    "source_url": "https://github.com/pwscup/pwscup2026-kit/blob/main-process-20260912/starter/src/pwscup2026/kit/codabench/scoring_io.py"
+  }
+]
