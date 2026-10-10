@@ -1,0 +1,46 @@
+{
+  "round": 6,
+  "own_team": 28,
+  "date_jst": "2026-10-11",
+  "repository": "smsaku00/pwscup2026-sutehaji",
+  "github_folder": "攻撃フェーズ/MIA/6回目",
+  "status": "作成・独立検証済み、大会未提出",
+  "source_commit": "112c04593c27c1dad5f0f27bb11a3093f238a3af",
+  "source_cycle67_folder": "攻撃フェーズ/Yamazaki/第5回案/results/main/20261011_cycle67本戦適用",
+  "rare_source_folder": "攻撃フェーズ/Tashiro/MIA希少/第5回実結果_復号_20261010",
+  "F_mia_sha256": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+  "tournament_submitted": false,
+  "files": [
+    {
+      "path": "F_mia.csv",
+      "bytes": 394786,
+      "sha256": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+      "git_blob_sha1": "2c83d64b95ad13a7aeea45f78327152b3ef1d50d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4850,
+      "sha256": "0026ef8bea51bab55fca7331a2cc1350d92914b7dfd27e4f1b373da4b2df44c8",
+      "git_blob_sha1": "9981922444d836976a15c469e3cbcab8b2b598dd"
+    },
+    {
+      "path": "作成記録.json",
+      "bytes": 2738,
+      "sha256": "60959e66edf1e653f3072e461d24b69c7bf79d9bdd930ca8cb9707c74fb73422",
+      "git_blob_sha1": "cd4eaaf64dce688d22b3c5564031ae08619993d4"
+    },
+    {
+      "path": "希少変更36セル.csv",
+      "bytes": 1711,
+      "sha256": "3ecc34d237932b16a760f957356ceda2258177b828633a7bd94c781eb64680aa",
+      "git_blob_sha1": "20a127bb3796cb2a7fd7480724fc7f8b78bdbaa3"
+    },
+    {
+      "path": "独立監査.json",
+      "bytes": 12420,
+      "sha256": "bfc1a013673f125bba227537c49898a4fd66a095d786a2deb0bfd185b2415392",
+      "git_blob_sha1": "5c5c31273263d310ce8a9e82acad210159b407bb"
+    }
+  ],
+  "manifest_self_hash_excluded": true
+}

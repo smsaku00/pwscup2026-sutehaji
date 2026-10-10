@@ -1,0 +1,464 @@
+{
+  "audit_status": "PASS",
+  "audited_round": 6,
+  "question_index_zero_based": 3,
+  "verified_jst": "2026-10-11T00:34:38.984876+09:00",
+  "auditor_independence": "No builder or generated output settings imported/read; original exact-QI7 partition; independently fixed Q6/padding/count constants; pinned official validator/scorer/mean functions.",
+  "candidate": "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/結果/F_mia.csv",
+  "candidate_sha256": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+  "auditor_sha256": "03556a57c4c1c6910df28d006854785d5cb0a34b496b85b436d36f029f19de01",
+  "original_partition": {
+    "private": 163,
+    "rare": 24,
+    "known_ordinary": 150,
+    "unknown_ordinary": 875,
+    "unknown_rare_ids": [
+      47,
+      76,
+      90,
+      115,
+      169,
+      264,
+      304,
+      383,
+      462,
+      495,
+      675
+    ],
+    "known_negative_rare_ids": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440,
+      480,
+      625,
+      637,
+      643,
+      668,
+      814,
+      841
+    ]
+  },
+  "csv_validation": {
+    "rows": 1049,
+    "targets": 22,
+    "all_finite_in_unit_interval": true,
+    "record_id_and_target_order_exact": true,
+    "nonrare_cells_byte_exact": 22550,
+    "known_normal_zero_cells": 3300,
+    "unknown_normal_cells_in_range": 19250,
+    "unknown_normal_range": "(.6,.9]",
+    "rare_cells_exact": 528,
+    "rare_value_counts": {
+      "0.4": 53,
+      "0.1": 91,
+      "0": 384
+    },
+    "changed_cells_numeric_and_field_bytes": 36,
+    "only_expected_rare_cells_changed": true,
+    "changed_ids_per_active_target": {
+      "6": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ],
+      "10": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ],
+      "11": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ],
+      "16": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ],
+      "17": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ],
+      "25": [
+        47,
+        76,
+        115,
+        169,
+        304,
+        462
+      ]
+    }
+  },
+  "fixed_rare_question": {
+    "record_ids": [
+      47,
+      76,
+      264,
+      304,
+      383
+    ],
+    "active_targets": [
+      6,
+      10,
+      11,
+      16,
+      17,
+      25
+    ],
+    "member_counts": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "total_high_counts": [
+      6,
+      7,
+      7,
+      11,
+      10,
+      12
+    ],
+    "high_record_ids": {
+      "6": [
+        47,
+        76,
+        126,
+        264,
+        304,
+        383
+      ],
+      "10": [
+        47,
+        76,
+        126,
+        136,
+        264,
+        304,
+        383
+      ],
+      "11": [
+        47,
+        76,
+        126,
+        136,
+        264,
+        304,
+        383
+      ],
+      "16": [
+        47,
+        76,
+        126,
+        136,
+        264,
+        271,
+        273,
+        304,
+        317,
+        383,
+        440
+      ],
+      "17": [
+        47,
+        76,
+        126,
+        136,
+        264,
+        271,
+        273,
+        304,
+        317,
+        383
+      ],
+      "25": [
+        47,
+        76,
+        126,
+        136,
+        264,
+        271,
+        273,
+        304,
+        317,
+        383,
+        440,
+        480
+      ]
+    },
+    "high_value": 0.4,
+    "low_value": 0.1,
+    "other_target_rare_value": 0
+  },
+  "official_mia_format": {
+    "ok": true,
+    "errors": [],
+    "validator_path": "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py"
+  },
+  "hypothetical_round5_placements": {
+    "cases_checked": 16,
+    "full_1049_rows_scored": true,
+    "target_score_calls": 352,
+    "official_floats_exact": true,
+    "formula_matches": true,
+    "round6_branches": 6,
+    "branch_sizes": [
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+    ],
+    "worst_remaining_after_round6": 4,
+    "placements": [
+      {
+        "placement_id": "660",
+        "round6_exact": "233/18000",
+        "round6_official_float": "0.012944444444444444",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "663",
+        "round6_exact": "233/18000",
+        "round6_official_float": "0.012944444444444444",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "692",
+        "round6_exact": "107/9000",
+        "round6_official_float": "0.011888888888888892",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.0,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.022000000000000002
+        }
+      },
+      {
+        "placement_id": "695",
+        "round6_exact": "131/10800",
+        "round6_official_float": "0.012129629629629629",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.0,
+          "11": 0.03833333333333334,
+          "16": 0.024444444444444442,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "772",
+        "round6_exact": "13/1200",
+        "round6_official_float": "0.010833333333333334",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.044000000000000004,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "775",
+        "round6_exact": "13/1200",
+        "round6_official_float": "0.010833333333333334",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.044000000000000004,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "804",
+        "round6_exact": "77/9000",
+        "round6_official_float": "0.008555555555555558",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.022000000000000002
+        }
+      },
+      {
+        "placement_id": "807",
+        "round6_exact": "19/2160",
+        "round6_official_float": "0.008796296296296297",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.0,
+          "16": 0.024444444444444442,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1128",
+        "round6_exact": "233/18000",
+        "round6_official_float": "0.012944444444444444",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1133",
+        "round6_exact": "233/18000",
+        "round6_official_float": "0.012944444444444444",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1160",
+        "round6_exact": "107/9000",
+        "round6_official_float": "0.011888888888888892",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.0,
+          "11": 0.03833333333333334,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.022000000000000002
+        }
+      },
+      {
+        "placement_id": "1165",
+        "round6_exact": "131/10800",
+        "round6_official_float": "0.012129629629629629",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.0,
+          "11": 0.03833333333333334,
+          "16": 0.024444444444444442,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1240",
+        "round6_exact": "13/1200",
+        "round6_official_float": "0.010833333333333334",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.044000000000000004,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1245",
+        "round6_exact": "13/1200",
+        "round6_official_float": "0.010833333333333334",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.044000000000000004,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.01
+        }
+      },
+      {
+        "placement_id": "1272",
+        "round6_exact": "77/9000",
+        "round6_official_float": "0.008555555555555558",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.0,
+          "16": 0.011000000000000001,
+          "17": 0.0,
+          "25": 0.022000000000000002
+        }
+      },
+      {
+        "placement_id": "1277",
+        "round6_exact": "19/2160",
+        "round6_official_float": "0.008796296296296297",
+        "per_target_rare": {
+          "6": 0.0,
+          "10": 0.018333333333333337,
+          "11": 0.0,
+          "16": 0.024444444444444442,
+          "17": 0.0,
+          "25": 0.01
+        }
+      }
+    ],
+    "qualification": "Saved conditional hypothetical placements; these are not released or newly inferred true individual memberships."
+  },
+  "input_and_official_source_sha256": {
+    "/Users/taisei1105/pws2026-local/本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/aia_challenge_28.csv": "9d464fce3af708819cb6358c1ad33182472f37b9f26fc94fdcc7c769d70d4c26",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20260928_配布データ基本分析/入力/mia_columns.json": "bca9a100c90222eb774e57708db34ee3f0519a12abc0bb74d170bc68459ef181",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/入力/F_mia_cycle67.csv": "41e599b4873d1dcfce953f4e695aee9f6bc2c06d368cacf184df7cb00639b563",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/結果/F_mia.csv": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+    "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/validate.py": "1bd625c30e1d08e5377629fc461f48c4ebf634b291eb86a8afd033565724667e",
+    "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "/Users/taisei1105/pws2026-local/本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/入力/第5回復号と第6回設定.json": "15b4aad8f0226a9e9a3d3373012ed9ce5a6aafa52d452ffa00a563f3471c2c19",
+    "/Users/taisei1105/pws2026-local/本戦/攻撃フェーズ/Tashiro/20261011_第6回MIA_cycle67と固定5bit第4問/入力/第5回後16配置と予測.csv": "b59d9dfadd5787d20fee713b4e1353988cdb515e420b31549c1c918bdafb85b7"
+  },
+  "inputs_unchanged_during_audit": true,
+  "scope": "MIA CSV integration only; cycle67 method performance and full attack package are outside this audit.",
+  "tournament_submitted": false
+}

@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "round": 6,
+  "date_jst": "2026-10-11",
+  "own_team": 28,
+  "rows": 1049,
+  "target_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    22,
+    25,
+    26,
+    27
+  ],
+  "source_commit": "112c04593c27c1dad5f0f27bb11a3093f238a3af",
+  "source_repository": "smsaku00/pwscup2026-sutehaji",
+  "overall_method": "cycle67 背景LOOゲート＋縮約100",
+  "active_near_gate_target": 9,
+  "rare_method": "保存済み非適応固定5bit 第4問",
+  "rare_high_candidates": [
+    47,
+    76,
+    264,
+    304,
+    383
+  ],
+  "rare_padding_by_target": {
+    "6": [
+      126
+    ],
+    "10": [
+      126,
+      136
+    ],
+    "11": [
+      126,
+      136
+    ],
+    "16": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440
+    ],
+    "17": [
+      126,
+      136,
+      271,
+      273,
+      317
+    ],
+    "25": [
+      126,
+      136,
+      271,
+      273,
+      317,
+      440,
+      480
+    ]
+  },
+  "high_total_by_target": {
+    "6": 6,
+    "10": 7,
+    "11": 7,
+    "16": 11,
+    "17": 10,
+    "25": 12
+  },
+  "rare_counts": {
+    "rows": 24,
+    "cells": 528,
+    "high": 53,
+    "low": 91,
+    "zero": 384
+  },
+  "nonrare_lexical_preserved_cells": 22550,
+  "changed_cells_vs_cycle67": 36,
+  "changed_nonrare_cells": 0,
+  "F_mia_sha256": "a5c378d31b44f1bd4d63ab8e812a54cd34a5c5242d06cfc57917ce04c86d9918",
+  "source_cycle67_sha256": "41e599b4873d1dcfce953f4e695aee9f6bc2c06d368cacf184df7cb00639b563",
+  "input_sha256": {
+    "入力/F_mia_cycle67.csv": "41e599b4873d1dcfce953f4e695aee9f6bc2c06d368cacf184df7cb00639b563",
+    "入力/cycle67適用検証.json": "1b2a87d3e69b9f6ffe8b11ed341b75fde9d048879b391ee4bbc5315d00854c8c",
+    "入力/第5回復号と第6回設定.json": "15b4aad8f0226a9e9a3d3373012ed9ce5a6aafa52d452ffa00a563f3471c2c19",
+    "入力/第5回後16配置と予測.csv": "b59d9dfadd5787d20fee713b4e1353988cdb515e420b31549c1c918bdafb85b7",
+    "入力/第5回復号の説明.md": "4f33c571a26c633e1b4a7509564b4ffddbde1c3b480905ee29179b3c27c8f857",
+    "本戦/配布データ/PWSCup2026_final_team28_ステテコは恥だが役に立つ/B_self.csv": "1339042b4e1937d5fbf482aa8ce4de3f67a02e4694f8237894ca59bf3f0d52b1"
+  },
+  "builder_sha256": "47d9c44f2731994a254eb3303d00fa77fe9051cf6051648128997963d2ed83c2",
+  "main_truth_used": false,
+  "performance_evaluated": false,
+  "tournament_submitted": false,
+  "scope": "MIAのみ。AIA/token/大会提出ZIPは作成しない",
+  "known_members_not_overridden": "第5回で確定したID115/47も固定質問・paddingのまま",
+  "scientific_csv_precision": "非希少セルの元の17桁文字列と順序を完全保持"
+}
