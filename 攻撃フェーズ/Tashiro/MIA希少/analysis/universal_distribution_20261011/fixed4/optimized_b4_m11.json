@@ -1,0 +1,82 @@
+{
+  "a": 3,
+  "b": 4,
+  "total_members": 11,
+  "status": "SAT",
+  "pair_state_count": 415800,
+  "residual_keys_checked": 415800,
+  "fewest_collisions": 0,
+  "steps": 86,
+  "elapsed_seconds": 3.9813403749722056,
+  "pair_codewords": [
+    [
+      13,
+      7,
+      2,
+      8,
+      4,
+      9,
+      14,
+      1,
+      11,
+      0,
+      6
+    ],
+    [
+      1,
+      0,
+      4,
+      2,
+      7,
+      6,
+      11,
+      9,
+      13,
+      8,
+      14
+    ],
+    [
+      13,
+      11,
+      7,
+      6,
+      9,
+      0,
+      8,
+      2,
+      14,
+      4,
+      1
+    ],
+    [
+      11,
+      14,
+      6,
+      1,
+      2,
+      13,
+      0,
+      4,
+      9,
+      7,
+      8
+    ]
+  ],
+  "single_codewords": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13,
+    14
+  ],
+  "scope": "bounded local optimization, UNKNOWN is not UNSAT",
+  "original_metadata_source_path_sha256": "09416710f8977686d4661e4d091262d98067f1d7ed335e003adedb66eb319f76",
+  "executed_source_sha256": "07bd840e694805a35f1cc94912f915cbfe290a61227e5e17af34652bbf748735",
+  "metadata_correction": "Original source_sha256 hashed the path string. Renamed it and recorded the actual source hash of the executed pre-fix version. Certificates and collision counts were not changed."
+}

@@ -1,0 +1,43 @@
+﻿a,b,zero_targets,assigned_candidates,unassigned_candidates,fixed5,common_fixed4,target_specific_fixed4,adaptive4,fixed4_evidence,mean_response_count,mean_minimum_gap_exact
+0,0,22,0,11,TRIVIAL,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,1,
+1,0,21,1,10,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,2,23/400
+2,0,20,2,9,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,4,23/4000
+3,0,19,3,8,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,8,23/9000
+4,0,18,4,7,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,16,23/16800
+5,0,17,5,6,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,32,23/60000
+6,0,16,6,5,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,64,23/378000
+7,0,15,7,4,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,128,23/588000
+8,0,14,8,3,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,256,23/1056000
+9,0,13,9,2,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,512,23/36036000
+10,0,12,10,1,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,1024,23/40040000
+11,0,11,11,0,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,2048,23/44044000
+0,1,21,2,9,SAT,UNSAT,UNSAT,UNSAT,pair-collision embedding outside at most four candidates,3,11/400
+1,1,20,3,8,SAT,UNSAT,UNSAT,UNSAT,pair-collision embedding outside at most four candidates,6,7/1200
+2,1,19,4,7,SAT,UNSAT,UNSAT,UNSAT,pair-collision embedding outside at most four candidates,12,1/18000
+3,1,18,5,6,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,24,1/24000
+4,1,17,6,5,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,48,1/30000
+5,1,16,7,4,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,96,1/56000
+6,1,15,8,3,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,192,1/252000
+7,1,14,9,2,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,384,1/288000
+8,1,13,10,1,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,768,1/1188000
+9,1,12,11,0,SAT,SAT,SAT,SKIPPED_FIXED_SAT,common fixed code,1536,1/5460000
+0,2,20,4,7,SAT,UNSAT,UNSAT,UNSAT,pair-collision embedding outside at most four candidates,9,11/4000
+1,2,19,5,6,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,18,1/1200
+2,2,18,6,5,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,36,1/24000
+3,2,17,7,4,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,72,1/30000
+4,2,16,8,3,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,144,1/252000
+5,2,15,9,2,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,288,1/294000
+6,2,14,10,1,SAT,UNSAT,SAT,SKIPPED_FIXED_SAT,independent target-specific certificate,576,1/2016000
+7,2,13,11,0,SAT,UNSAT,SAT,SKIPPED_FIXED_SAT,independent target-specific certificate,1152,1/2268000
+0,3,19,6,5,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,27,11/31500
+1,3,18,7,4,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,54,1/33600
+2,3,17,8,3,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,108,1/105000
+3,3,16,9,2,SAT,UNSAT,UNSAT,SAT_OLD_CERTIFICATE,pair-collision embedding outside at most four candidates,216,1/126000
+4,3,15,10,1,SAT,UNSAT,UNKNOWN,SAT_FULL_MEAN_REPLAY,bounded fixed-code search; no impossibility claim,432,1/294000
+5,3,14,11,0,SAT,UNSAT,SAT,SKIPPED_FIXED_SAT,independent target-specific certificate,864,1/672000
+0,4,18,8,3,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,81,11/168000
+1,4,17,9,2,SAT,UNSAT,UNSAT,UNRESOLVED,pair-collision embedding outside at most four candidates,162,1/42000
+2,4,16,10,1,SAT,UNSAT,UNKNOWN,SAT_FULL_MEAN_REPLAY,bounded fixed-code search; no impossibility claim,324,1/252000
+3,4,15,11,0,SAT,UNSAT,SAT,SKIPPED_FIXED_SAT,independent target-specific certificate,648,1/588000
+0,5,17,10,1,SAT,UNSAT,UNKNOWN,SAT_FULL_MEAN_REPLAY,bounded fixed-code search; no impossibility claim,243,11/1260000
+1,5,16,11,0,SAT,UNSAT,UNKNOWN,SAT_FULL_MEAN_REPLAY,bounded fixed-code search; no impossibility claim,486,1/504000

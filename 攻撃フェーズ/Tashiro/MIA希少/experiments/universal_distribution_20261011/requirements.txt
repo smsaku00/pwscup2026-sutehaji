@@ -1,0 +1,2 @@
+# Python 3.12; basic read-only certificate replay and optional enumeration audit.
+numpy==2.4.6

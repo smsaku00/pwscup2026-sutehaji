@@ -8,6 +8,12 @@
 - 説明の入口：[MIA希少のREADME](../README.md)、[docsの索引](../docs/README.md)
 - 比較研究の適応4回質問木：`full_depth4_20261007/`
 
+## 全人数パターンの追加調査（2026-10-11）
+
+[universal_distribution_20261011](universal_distribution_20261011/README.md)に、全42型の判定、型別Mと固定5回の全平均回答、固定4回の証拠・下界、適応4回の新26代表証明書を保存しました。固定5回は82,995,960人数配置への合成保証、新4型は全9,979,200人物配置の平均再生を確認済みです。適応分類は23可能・4不可能・15未判定です。
+
+[発表用説明](../docs/19_全配布条件での適用範囲.md)／[再現方法](../experiments/universal_distribution_20261011/README.md)／[全人数列挙Release](https://github.com/smsaku00/pwscup2026-sutehaji/releases/tag/mia-universal-distribution-20261011)。既存の `(3,3)` 証明書と当時の記録は以下に保持します。
+
 ## 証明関連ファイルのハッシュ整理（2026-10-08）
 
 - **[更新前のハッシュ一覧を保存](full_depth4_20261007/proof_file_hashes_before_docs_move_20261008.json)**。この一覧にある`docs/16_追加4回完遂の全状態証明.md`のSHA-256は `7a261b1b394ce68749a34a040ea58396b5e729cfeb66c66b003921cfd16a16d9` です。**05〜15の移動前の時点から**現行の16番Markdownと一致していませんでした。

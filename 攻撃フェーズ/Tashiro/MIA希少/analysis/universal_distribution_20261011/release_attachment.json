@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "filename": "全人数パターン.uint64.gz",
+  "in_git_source_tree": false,
+  "release_upload_status": "SEE_LINKED_RELEASE",
+  "contains_clinical_records": false,
+  "model": "c in {0,1,2}^22, sum(c)<=11; labels are canonical target slots 0..21; unassigned candidates allowed",
+  "record_count": 82995960,
+  "exact11_record_count": 49402850,
+  "raw_bytes": 663967680,
+  "gzip_bytes": 131304256,
+  "raw_sha256": "9af4d125980ca96b41004e0eb22ac16f73d19bc408d5ad9b4692dd57d2968fc5",
+  "gzip_sha256": "89a3a9af6c465f6db673c5b3a0e879e8112447471a6b8394c243ed5a017f98e3",
+  "encoding": {
+    "dtype": "uint64",
+    "byte_order": "little",
+    "record_bytes": 8,
+    "one_member_mask_bits": [
+      0,
+      21
+    ],
+    "two_member_mask_bits": [
+      22,
+      43
+    ],
+    "unused_upper_bits": [
+      44,
+      63
+    ],
+    "code_formula": "mask1 | (mask2 << 22)"
+  },
+  "compression": {
+    "format": "concatenated gzip members",
+    "one_member_per_type": true,
+    "compresslevel": 1,
+    "mtime": 0,
+    "filename_header": ""
+  },
+  "enumeration_metadata": "fixed5/enumeration_manifest.json",
+  "independent_audit": "fixed5/independent_audit.json",
+  "block_order": "b ascending, then a ascending, a+2*b<=11",
+  "within_block_order": "mask2 numerically ascending; mask1 numerically ascending among a-bit masks disjoint from mask2; code=mask1|(mask2<<22)",
+  "regeneration": {
+    "inputs": [
+      "fixed5/results.json",
+      "fixed5/enumeration_manifest.json"
+    ],
+    "clinical_data_required": false,
+    "candidate_id_mapping_required": false,
+    "steps": [
+      "For each of 42 type blocks (a,b), enumerate every b-bit mask2 on 22 canonical target slots in strictly increasing numeric order.",
+      "For each mask2, enumerate every a-bit mask1 in its complement in strictly increasing numeric order.",
+      "Write code=mask1|(mask2<<22) as exactly 8 little-endian bytes, validating mask ranges, disjointness, and bit counts.",
+      "Compress each complete type block as one gzip member: level 1, mtime 0, empty filename header; concatenate the 42 members in block order.",
+      "Compare raw SHA, type-block raw SHA, counts and ordering against the published metadata. Gzip byte equality also depends on the deflate implementation; historical gzip SHA identifies the original saved payload.",
+      "Invoke the public audit.py with --enumeration-file PATH to independently read and verify every saved record."
+    ],
+    "canonical_raw_reproducibility": "independent of compression implementation",
+    "historical_gzip_reproducibility": "same input bytes, gzip member policy, and compatible deflate implementation required",
+    "command_from_repository_root": ".venv/bin/python -B 攻撃フェーズ/Tashiro/MIA希少/experiments/universal_distribution_20261011/enumerate.py --output-dir /tmp/mia-enumeration-new",
+    "audit_command_from_repository_root": ".venv/bin/python -B 攻撃フェーズ/Tashiro/MIA希少/experiments/universal_distribution_20261011/audit.py --enumeration-file /tmp/mia-enumeration-new/全人数パターン.uint64.gz",
+    "implementation": "../../experiments/universal_distribution_20261011/enumerate.py"
+  },
+  "label_policy": "The numeric target IDs recorded in the historical enumeration manifest are provenance labels. Reproduction uses the 22 bit positions only.",
+  "recommended_release_tag": "mia-universal-distribution-20261011",
+  "release_url": "https://github.com/smsaku00/pwscup2026-sutehaji/releases/tag/mia-universal-distribution-20261011",
+  "release_tag": "mia-universal-distribution-20261011",
+  "github_asset_name": "all-count-patterns.uint64.gz",
+  "github_asset_url": "https://github.com/smsaku00/pwscup2026-sutehaji/releases/download/mia-universal-distribution-20261011/all-count-patterns.uint64.gz"
+}

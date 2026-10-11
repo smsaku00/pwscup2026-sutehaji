@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_INDEPENDENT_PUBLIC_AUDIT",
+  "candidate_slots": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "target_slots": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "known_negative_row_slots": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "model": "Known target counts; 11 candidates, 22 targets, capacity two, unassigned allowed; binary high/low subset questions and unrounded rare-TPR mean",
+  "classification": "classification/results.json",
+  "type_table": "classification/types.csv",
+  "fixed5": {
+    "result": "fixed5/results.json",
+    "exact_answers": "fixed5/exact_answers.json",
+    "independent_audit": "fixed5/independent_audit.json",
+    "enumeration_manifest": "fixed5/enumeration_manifest.json",
+    "binary_payload_in_tree": false,
+    "release_attachment": "release_attachment.json"
+  },
+  "fixed4": {
+    "bounds": "fixed4/bounds.json",
+    "search": "fixed4/search.json",
+    "additional_optimized_SAT": "fixed4/optimized_b4_m11.json",
+    "independent_audit": "fixed4/independent_audit.json"
+  },
+  "adaptive4": {
+    "four_types_summary": "adaptive4/results.json",
+    "three_type_mean_replay": "adaptive4/mean_replay.json",
+    "a4b3_mean_replay": "adaptive4/a4b3/replay.json",
+    "a3b3_independent_replay": "adaptive4/a3b3/replay.json",
+    "representative_runs": [
+      {
+        "type": [
+          1,
+          5
+        ],
+        "run": "adaptive4/a1b5",
+        "representatives": 6,
+        "total_states": 1247400,
+        "manifest_schema": "original byte-identical final manifest; workspace paths are provenance only"
+      },
+      {
+        "type": [
+          2,
+          4
+        ],
+        "run": "adaptive4/a2b4",
+        "representatives": 14,
+        "total_states": 2494800,
+        "manifest_schema": "original byte-identical final manifest; workspace paths are provenance only"
+      },
+      {
+        "type": [
+          0,
+          5
+        ],
+        "run": "adaptive4/a0b5",
+        "representatives": 6,
+        "total_states": 1247400,
+        "manifest_schema": "original byte-identical final manifest; workspace paths are provenance only"
+      }
+    ],
+    "total_new_representatives": 26,
+    "total_new_concrete_states_replayed": 9979200,
+    "old_a3b3_dependency_directory": "../full_depth4_20261007"
+  },
+  "summary": {
+    "types": 42,
+    "common_fixed4": {
+      "SAT": 14,
+      "UNSAT": 28
+    },
+    "target_specific_fixed4": {
+      "SAT": 18,
+      "UNSAT": 20,
+      "UNKNOWN": 4
+    },
+    "adaptive4": {
+      "SKIPPED_FIXED_SAT": 18,
+      "UNSAT": 4,
+      "UNRESOLVED": 15,
+      "SAT_OLD_CERTIFICATE": 1,
+      "SAT_FULL_MEAN_REPLAY": 4
+    },
+    "all_types_fixed5_guaranteed": true,
+    "all_types_four_queries_guaranteed": false,
+    "minimum_queries_for_universal_guarantee_in_this_binary_model": 5,
+    "complete_adaptive_classification": false
+  },
+  "provenance": "provenance.json",
+  "path_policy": "Fields in this new manifest are portable public paths; historical path fields in unchanged source proof JSON are provenance only."
+}

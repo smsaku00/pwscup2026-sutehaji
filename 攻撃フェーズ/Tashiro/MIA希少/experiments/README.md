@@ -4,6 +4,7 @@
 
 | 実験 | 目的・状態 | 詳細 |
 |---|---|---|
+| [2026-10-11の全配布条件の再現](universal_distribution_20261011/README.md) | 配布CSVなしで固定5回全42型、固定4回の証拠・下界、新4型の適応4回全平均再生を監査。人数列挙の生成・読取も対応 | [主説明](../docs/19_全配布条件での適用範囲.md)／[証拠データ](../analysis/universal_distribution_20261011/README.md) |
 | [2026-10-07の高速探索](fast_solver_20261007/README.md) | 適応4回・5回案のAND/OR探索、独立checker、質問参照。適応4回は全状態replay済み | [全状態証明](../docs/16_追加4回完遂の全状態証明.md)／[保存結果](../analysis/README.md) |
 | [初期242組の分析](../archive/20260928_初期候補分析/README_20260928.md) | 2026-09-28時点の旧分析。コードと結果は役割別に保存 | [保存コード](../scripts/README.md)／[集計](../analysis/README.md) |
 

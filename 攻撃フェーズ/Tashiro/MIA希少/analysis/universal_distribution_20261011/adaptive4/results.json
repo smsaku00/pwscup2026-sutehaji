@@ -1,0 +1,86 @@
+{
+  "status": "PASS_ALL_FOUR_TYPES_ADAPTIVE4",
+  "scope": "Known counts; 11 candidates, 22 target teams; capacity at most two; each candidate belongs to at most one target; unassigned candidates allowed; binary subset questions; exact unrounded positive-target rare-TPR mean",
+  "summary": {
+    "requested_types": 4,
+    "adaptive4_SAT": 4,
+    "UNSAT": 0,
+    "UNKNOWN": 0,
+    "total_states": 9979200,
+    "mean_responses_replayed": 39916800,
+    "collisions": 0,
+    "maximum_total_queries": 4,
+    "fixed_SAT_types_searched": 0
+  },
+  "types": [
+    {
+      "a": 4,
+      "b": 3,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "fixed4": "UNKNOWN",
+      "adaptive4": "SAT",
+      "total_states": 4989600,
+      "maximum_total_queries": 4,
+      "collisions": 0,
+      "mean_responses_replayed": 19958400,
+      "method": "old_a3b3_certificate_lift",
+      "proof_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a4b3/結果/全配置再生証明.json",
+      "verification_status": "PASS_ALL_4989600_CONCRETE_ASSIGNMENTS"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "fixed4": "UNKNOWN",
+      "adaptive4": "SAT",
+      "total_states": 2494800,
+      "maximum_total_queries": 4,
+      "collisions": 0,
+      "mean_responses_replayed": 9979200,
+      "method": "old_solver_constructed_tree",
+      "proof_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/平均回答_全配置再生.json",
+      "verification_status": "PASS_ALL_CONCRETE_ASSIGNMENTS_EXACT_MEAN_REPLAY"
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "fixed4": "UNKNOWN",
+      "adaptive4": "SAT",
+      "total_states": 1247400,
+      "maximum_total_queries": 4,
+      "collisions": 0,
+      "mean_responses_replayed": 4989600,
+      "method": "old_solver_constructed_tree",
+      "proof_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/平均回答_全配置再生.json",
+      "verification_status": "PASS_ALL_CONCRETE_ASSIGNMENTS_EXACT_MEAN_REPLAY"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "fixed4": "UNKNOWN",
+      "adaptive4": "SAT",
+      "total_states": 1247400,
+      "maximum_total_queries": 4,
+      "collisions": 0,
+      "mean_responses_replayed": 4989600,
+      "method": "old_solver_constructed_tree",
+      "proof_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/平均回答_全配置再生.json",
+      "verification_status": "PASS_ALL_CONCRETE_ASSIGNMENTS_EXACT_MEAN_REPLAY"
+    }
+  ],
+  "fixed4_status_changed": false,
+  "minimum_query_count_claim": "At most four is proved for each requested type; fixed-four existence and minimum required depth are not decided by these certificates",
+  "solver_policy": "Historical solver files remain unchanged; CAPS is set in memory. Original AND/OR recursion and exact exclusions are preserved. Faster bounded query proposals can prove SAT only after independent witness validation. Unsuccessful bounded proposals are never global UNSAT",
+  "inputs_sha256": {
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a4b3/結果/全配置再生証明.json": "6d8c6a65b50643a1f1a16ab48b107bac6e0f3802d80ff4e2c23498903c1676a2",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/平均回答_全配置再生.json": "f22c9fb238cc67c22f6522dea6ccd405cde8759ecc1f5ac5d22de484b3c60369"
+  },
+  "analysis_source_sha256": "8a6d8db1c6985f13496ee3e7c7eef053616be96b1662ff23cea6fa0cde27bc98",
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]"
+}

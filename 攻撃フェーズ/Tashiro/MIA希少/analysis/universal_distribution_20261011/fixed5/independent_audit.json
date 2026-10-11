@@ -1,0 +1,2236 @@
+{
+  "status": "PASS",
+  "official_formula": {
+    "status": "PASS",
+    "cases": 84,
+    "positive_cases": 70,
+    "maximum_float_error": 1.3877787807814457e-17,
+    "all_zero_official_mean": 0.0
+  },
+  "type_certificates": {
+    "status": "PASS",
+    "all_types": 42,
+    "nonzero_types": 41,
+    "all_independent_response_answers": 13103,
+    "single_code_count": 11,
+    "pair_code_count": 55,
+    "candidate_code_collisions": 0,
+    "response_collisions": 0,
+    "worst_minimum_gap_exact": "1/5460000",
+    "maximum_official_mean_error": 1.3877787807814457e-17,
+    "source_result_sha256": "e939d3bd8d4eabd8e8a5367985ad16ad0fa9bf89acc4e4d262f356febdd5ceb3",
+    "source_analysis_sha256": "448489c0831e02e739cc7acaf93c62780e1321c5c87dd2e61a96455b9b5f7729"
+  },
+  "proofs": [
+    {
+      "a": 0,
+      "b": 0,
+      "proof_type_index": 0,
+      "M": [],
+      "padding": [],
+      "response_count": 1,
+      "status": "PASS_TRIVIAL_NO_MEMBERS"
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "proof_type_index": 1,
+      "M": [
+        5
+      ],
+      "padding": [
+        0
+      ],
+      "response_count": 2,
+      "minimum_gap_exact": "23/400",
+      "alphabet_sha256": "8d7867cb7c9d1df6e8564735850aa3add9ba1cb7d45134dfea6db6631aeea3a1",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "proof_type_index": 2,
+      "M": [
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1
+      ],
+      "response_count": 4,
+      "minimum_gap_exact": "23/4000",
+      "alphabet_sha256": "15b833a895753e7e315bd92f969a858422d7e1eb9b5575ee117dcd556e5fa9d4",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 3,
+      "b": 0,
+      "proof_type_index": 3,
+      "M": [
+        5,
+        6,
+        7
+      ],
+      "padding": [
+        0,
+        1,
+        2
+      ],
+      "response_count": 8,
+      "minimum_gap_exact": "23/9000",
+      "alphabet_sha256": "1bba321430aba2103d60259cde0d36b8093532788224f2188527509e091dcfbe",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 4,
+      "b": 0,
+      "proof_type_index": 4,
+      "M": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "response_count": 16,
+      "minimum_gap_exact": "23/16800",
+      "alphabet_sha256": "8cdd88b001ac210e0d87249eba11afbedd48ebaf537eb36ed3fddabaf36d2680",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 5,
+      "b": 0,
+      "proof_type_index": 5,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "response_count": 32,
+      "minimum_gap_exact": "23/60000",
+      "alphabet_sha256": "0b887c04212ba1c8d0c1d3caa19075c5d16e853999f88331d166a8262a0a9535",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 6,
+      "b": 0,
+      "proof_type_index": 6,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "response_count": 64,
+      "minimum_gap_exact": "23/378000",
+      "alphabet_sha256": "3a49e2cf68df6d020fd702a2f89100c0d4d71ce51f74d418ba919ef754f6f44b",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 7,
+      "b": 0,
+      "proof_type_index": 7,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "response_count": 128,
+      "minimum_gap_exact": "23/588000",
+      "alphabet_sha256": "e59eeb0857be61f22984f7b56846258176d0d598e101c56fcf652e748e25c4c7",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 8,
+      "b": 0,
+      "proof_type_index": 8,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "response_count": 256,
+      "minimum_gap_exact": "23/1056000",
+      "alphabet_sha256": "ffbe92ddac71d1993a5d0de847892c5ac57230f4702e164ba7768c271d93878c",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 9,
+      "b": 0,
+      "proof_type_index": 9,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "response_count": 512,
+      "minimum_gap_exact": "23/36036000",
+      "alphabet_sha256": "c31ef6fb77cb0a4e6ff6ba4753ec0a4d189c3d8261a3fac7de57eb7fd2644bc4",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 10,
+      "b": 0,
+      "proof_type_index": 10,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "response_count": 1024,
+      "minimum_gap_exact": "23/40040000",
+      "alphabet_sha256": "3219993bcb70fca4e66a4f6ba7584df5d9207a227ed2a05f5fde8b645a7b63cc",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 11,
+      "b": 0,
+      "proof_type_index": 11,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        17
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "response_count": 2048,
+      "minimum_gap_exact": "23/44044000",
+      "alphabet_sha256": "5dacf751614102017a533ec34d43243410371b9c4c291fa54e7922b8e7d4d7d1",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "proof_type_index": 12,
+      "M": [
+        5
+      ],
+      "padding": [
+        0
+      ],
+      "response_count": 3,
+      "minimum_gap_exact": "11/400",
+      "alphabet_sha256": "a4cccb0bf651fc7621372e88654b093a8fc2a2729eca3b31ca0961fe2b2e4dbf",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "proof_type_index": 13,
+      "M": [
+        5,
+        5
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "response_count": 6,
+      "minimum_gap_exact": "7/1200",
+      "alphabet_sha256": "1c133e57f41ad6d330e9c16ac610e32f239db5143abb930388e64cdc428d6cec",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "proof_type_index": 14,
+      "M": [
+        5,
+        6,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        0
+      ],
+      "response_count": 12,
+      "minimum_gap_exact": "1/18000",
+      "alphabet_sha256": "89a5391e68e3e488f6ca32934c4c2631ac4af050541d88e15c7d44006ae03d2a",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "proof_type_index": 15,
+      "M": [
+        5,
+        6,
+        7,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "response_count": 24,
+      "minimum_gap_exact": "1/24000",
+      "alphabet_sha256": "b1d88834df6336618240a2f0c4708aea4d3ff85485dc1be9a86c40c84352c52e",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "proof_type_index": 16,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "response_count": 48,
+      "minimum_gap_exact": "1/30000",
+      "alphabet_sha256": "e339aabad9cb0eac4b8f39a23b7f81d568b29711d8cd2a8564a1ca6f4b5568a7",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 5,
+      "b": 1,
+      "proof_type_index": 17,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "response_count": 96,
+      "minimum_gap_exact": "1/56000",
+      "alphabet_sha256": "2859f8f6e7a35c29f1405e111837f331a49e0d26873af337f2fde1f9a07261ad",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 6,
+      "b": 1,
+      "proof_type_index": 18,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "response_count": 192,
+      "minimum_gap_exact": "1/252000",
+      "alphabet_sha256": "f5cf69105c2cdd7bd18f6646167d57944e0ed470018d2d8eb46f912e657690ca",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 7,
+      "b": 1,
+      "proof_type_index": 19,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        0
+      ],
+      "response_count": 384,
+      "minimum_gap_exact": "1/288000",
+      "alphabet_sha256": "f870533314df7e7e5149168a87363676f867ae5e5a4c1414c4fcab02969bb68c",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 8,
+      "b": 1,
+      "proof_type_index": 20,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        0
+      ],
+      "response_count": 768,
+      "minimum_gap_exact": "1/1188000",
+      "alphabet_sha256": "c3c249dced2fd5df0b0295eecd6a89c47777e5f16ed671930e9ae8074f34a36f",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 9,
+      "b": 1,
+      "proof_type_index": 21,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        5
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        0
+      ],
+      "response_count": 1536,
+      "minimum_gap_exact": "1/5460000",
+      "alphabet_sha256": "3c4496017de6651302deb21cd80bbf6c51cbaeef329f028370c8ef3f74836584",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "proof_type_index": 22,
+      "M": [
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1
+      ],
+      "response_count": 9,
+      "minimum_gap_exact": "11/4000",
+      "alphabet_sha256": "6ea1224ec8d010c2a84505ccdb2a1da68a16a1c4ff40857dd34543d4d913a6d5",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "proof_type_index": 23,
+      "M": [
+        5,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        0,
+        1
+      ],
+      "response_count": 18,
+      "minimum_gap_exact": "1/1200",
+      "alphabet_sha256": "202b212b500e2cb4da44ca8c039a5f6aba9750bbe16883629244556ec1d21059",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "proof_type_index": 24,
+      "M": [
+        5,
+        6,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "response_count": 36,
+      "minimum_gap_exact": "1/24000",
+      "alphabet_sha256": "6738721f234053b4a60afff185281448a51b23ce8f46ccdee449d14b980910dd",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "proof_type_index": 25,
+      "M": [
+        5,
+        6,
+        7,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "response_count": 72,
+      "minimum_gap_exact": "1/30000",
+      "alphabet_sha256": "23f162c107f8ca038e7fc20188802e63255ead28f89ae916aa50c2e14b91d953",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "proof_type_index": 26,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "response_count": 144,
+      "minimum_gap_exact": "1/252000",
+      "alphabet_sha256": "f8216a1c0a30db3f60c9c5bdea31b25f8dfd3605233f7e09004424eee58518a8",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 5,
+      "b": 2,
+      "proof_type_index": 27,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1
+      ],
+      "response_count": 288,
+      "minimum_gap_exact": "1/294000",
+      "alphabet_sha256": "163920c731b6b4cdfa47c175566bddfeba0f22f7155482bc48d4385608f88b79",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 6,
+      "b": 2,
+      "proof_type_index": 28,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        0,
+        1
+      ],
+      "response_count": 576,
+      "minimum_gap_exact": "1/2016000",
+      "alphabet_sha256": "381cf4a30a96a0b02e3116b656f53a67cb9aa0b9f71fd6013777767ed60935b6",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "proof_type_index": 29,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        5,
+        6
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        0,
+        1
+      ],
+      "response_count": 1152,
+      "minimum_gap_exact": "1/2268000",
+      "alphabet_sha256": "4cacf2eb517a7459caefffee7a9004b17c9099a792c26413f9b1af30d2a03854",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "proof_type_index": 30,
+      "M": [
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        3
+      ],
+      "response_count": 27,
+      "minimum_gap_exact": "11/31500",
+      "alphabet_sha256": "2cdc13420ee1b37f792e2cf52aa8c1e4ffe912feeec9580de456c92a419257d9",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "proof_type_index": 31,
+      "M": [
+        5,
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "response_count": 54,
+      "minimum_gap_exact": "1/33600",
+      "alphabet_sha256": "62cc9c8776cc89b415406af9c62d1641b7717d52e1e05485c415c7541b0b9745",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "proof_type_index": 32,
+      "M": [
+        5,
+        6,
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        0,
+        1,
+        3
+      ],
+      "response_count": 108,
+      "minimum_gap_exact": "1/105000",
+      "alphabet_sha256": "1ec65a08f55411660ce10d95c83079d7fd4b6a0a49e2f4c02a321ffd920dc994",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "proof_type_index": 33,
+      "M": [
+        5,
+        6,
+        7,
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        3
+      ],
+      "response_count": 216,
+      "minimum_gap_exact": "1/126000",
+      "alphabet_sha256": "e38527b98a127e9156e547e11d73ec2620b756e3b861a3d4ef216ed0bc333fbd",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "proof_type_index": 34,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        3
+      ],
+      "response_count": 432,
+      "minimum_gap_exact": "1/294000",
+      "alphabet_sha256": "6785235deda48bc0ae797ff8b80275da55962e24f64fde8933dacf9302a97960",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "proof_type_index": 35,
+      "M": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        5,
+        6,
+        8
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        3
+      ],
+      "response_count": 864,
+      "minimum_gap_exact": "1/672000",
+      "alphabet_sha256": "b794965d6d7de360f37f9bcbd3db474dc8b8e547a9009afacbce56fd3937a1cf",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 0,
+      "b": 4,
+      "proof_type_index": 36,
+      "M": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "response_count": 81,
+      "minimum_gap_exact": "11/168000",
+      "alphabet_sha256": "e581d934fff17a71bda131a353425c9ba7b62d683182d0549017078741f5e582",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "proof_type_index": 37,
+      "M": [
+        5,
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding": [
+        0,
+        0,
+        1,
+        3,
+        4
+      ],
+      "response_count": 162,
+      "minimum_gap_exact": "1/42000",
+      "alphabet_sha256": "d1e7c4cd286f2a4333b79a2b8968d3bb9b246934e5221f294e95aaafe267966c",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "proof_type_index": 38,
+      "M": [
+        5,
+        6,
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding": [
+        0,
+        1,
+        0,
+        1,
+        3,
+        4
+      ],
+      "response_count": 324,
+      "minimum_gap_exact": "1/252000",
+      "alphabet_sha256": "bf254d9c4e22ad06876ba53636a4fed502ed97160a2f6480b28fc7f57b9b6759",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "proof_type_index": 39,
+      "M": [
+        5,
+        6,
+        7,
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      "response_count": 648,
+      "minimum_gap_exact": "1/588000",
+      "alphabet_sha256": "51511cc2abcc9b8713aa03842e00677133c32ce3e2d7237fb58400a0547e50dd",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "proof_type_index": 40,
+      "M": [
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "padding": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "response_count": 243,
+      "minimum_gap_exact": "11/1260000",
+      "alphabet_sha256": "4f1ae6fa7401c55fe4455750ad93e74e5628a31fd2ebbdcc2de3d2ee48fffa8f",
+      "status": "PASS_BY_COMPOSITION"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "proof_type_index": 41,
+      "M": [
+        5,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "padding": [
+        0,
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "response_count": 486,
+      "minimum_gap_exact": "1/504000",
+      "alphabet_sha256": "01385e7c6393ee98e221edf650f3a417342865b5b98b661fcfca02fd47f11b12",
+      "status": "PASS_BY_COMPOSITION"
+    }
+  ],
+  "generator_imported": false,
+  "analysis_imported": false,
+  "official_source_sha256": {
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/scoring/attack_score.py": "1e62a591bf5f564eef30bd64edb4e8146563ab497a249ac15230ef61178186c6",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/codabench/scoring_io.py": "32df3a36762ca876449f6c635f4ed8d5fc3ecb5f322697ff167d6c17949d5a9b",
+    "本戦/配布データ/pwscup2026-kit-main_revised0912/starter/src/pwscup2026/kit/kit_config.yaml": "aa48ad314091e56e5b4b83241a741a7bf6cab717627cb4949bbe1465c4909157"
+  },
+  "saved_enumeration": {
+    "status": "PASS",
+    "blocks": [
+      {
+        "a": 0,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1,
+        "expected_vectors": 1,
+        "minimum_code": 0,
+        "maximum_code": 0,
+        "raw_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+        "proof_type_index": 0,
+        "M": [],
+        "padding": [],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 22,
+        "expected_vectors": 22,
+        "minimum_code": 1,
+        "maximum_code": 2097152,
+        "raw_sha256": "30186a675d212d7d0e315075fb8abdb32906b65ed77975267c09555d425b874f",
+        "proof_type_index": 1,
+        "M": [
+          5
+        ],
+        "padding": [
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 231,
+        "expected_vectors": 231,
+        "minimum_code": 3,
+        "maximum_code": 3145728,
+        "raw_sha256": "f6a97d867545f3e1a2c4d33a524ccac8a1fe77ea782cf8d50054aa21477bc68b",
+        "proof_type_index": 2,
+        "M": [
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1540,
+        "expected_vectors": 1540,
+        "minimum_code": 7,
+        "maximum_code": 3670016,
+        "raw_sha256": "e1c7808e498f5081813f831860dc54dca2f8bf65930e1e1d96167cb3f9b407ae",
+        "proof_type_index": 3,
+        "M": [
+          5,
+          6,
+          7
+        ],
+        "padding": [
+          0,
+          1,
+          2
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 4,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 7315,
+        "expected_vectors": 7315,
+        "minimum_code": 15,
+        "maximum_code": 3932160,
+        "raw_sha256": "03a25f3b8acf33e04921b14349821c018dfbe521def4ef32680e662722775acb",
+        "proof_type_index": 4,
+        "M": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 26334,
+        "expected_vectors": 26334,
+        "minimum_code": 31,
+        "maximum_code": 4063232,
+        "raw_sha256": "60551e6b5086cea26686d28b2e3542231a88c33ba4271ba55db4cde228c72559",
+        "proof_type_index": 5,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 6,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 74613,
+        "expected_vectors": 74613,
+        "minimum_code": 63,
+        "maximum_code": 4128768,
+        "raw_sha256": "0e28265b47f7d9b88a9c2ebd3cd86ecb26810fbbf88ce8e78fbaf24657235667",
+        "proof_type_index": 6,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 7,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 170544,
+        "expected_vectors": 170544,
+        "minimum_code": 127,
+        "maximum_code": 4161536,
+        "raw_sha256": "80d89f35e063434347cb8448673f196398f0f2264311c838831c589203211f0b",
+        "proof_type_index": 7,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 8,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 319770,
+        "expected_vectors": 319770,
+        "minimum_code": 255,
+        "maximum_code": 4177920,
+        "raw_sha256": "a09d255a71a245900ad137bc595b4d32eef231b6fe289662e060c89b92917bab",
+        "proof_type_index": 8,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 9,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 497420,
+        "expected_vectors": 497420,
+        "minimum_code": 511,
+        "maximum_code": 4186112,
+        "raw_sha256": "e38fcfc5618ef11a8a3a4460a200333999ca419225d2b7d73df95e65392c3626",
+        "proof_type_index": 9,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 10,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 646646,
+        "expected_vectors": 646646,
+        "minimum_code": 1023,
+        "maximum_code": 4190208,
+        "raw_sha256": "d6501e77c78df1102980813ddb18d1f8572c68b6323a7683fb5f419218cf2d40",
+        "proof_type_index": 10,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 11,
+        "b": 0,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 705432,
+        "expected_vectors": 705432,
+        "minimum_code": 2047,
+        "maximum_code": 4192256,
+        "raw_sha256": "f4a5f8f3ed341309f7b001f195915671c1b33b4a02c6fa3db6263efbd8570ccb",
+        "proof_type_index": 11,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          17
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      },
+      {
+        "a": 0,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 22,
+        "expected_vectors": 22,
+        "minimum_code": 4194304,
+        "maximum_code": 8796093022208,
+        "raw_sha256": "5af93e0ad8c437235cd0bd05d399f14ed0ae926728179d71d14008259255c8b2",
+        "proof_type_index": 12,
+        "M": [
+          5
+        ],
+        "padding": [
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 462,
+        "expected_vectors": 462,
+        "minimum_code": 4194306,
+        "maximum_code": 8796094070784,
+        "raw_sha256": "c100100bd1e33cd47bea2bdaa6ffd1b9f9aab955fe080d84c4d1065610200c30",
+        "proof_type_index": 13,
+        "M": [
+          5,
+          5
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 4620,
+        "expected_vectors": 4620,
+        "minimum_code": 4194310,
+        "maximum_code": 8796094595072,
+        "raw_sha256": "c16fc54aec1baa4ad99a2e854a3c5ad8884b76adfa44c9bc6c376869f40cf571",
+        "proof_type_index": 14,
+        "M": [
+          5,
+          6,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 29260,
+        "expected_vectors": 29260,
+        "minimum_code": 4194318,
+        "maximum_code": 8796094857216,
+        "raw_sha256": "8d994fa6b5bffa613e9391937179172844ca8869ea24b8a02bbfeab407af40c7",
+        "proof_type_index": 15,
+        "M": [
+          5,
+          6,
+          7,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 131670,
+        "expected_vectors": 131670,
+        "minimum_code": 4194334,
+        "maximum_code": 8796094988288,
+        "raw_sha256": "b45b65b196bc2ccddccc7ad2bfdbe76a44f85032fdae541ab6292e575b8295b2",
+        "proof_type_index": 16,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 5,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 447678,
+        "expected_vectors": 447678,
+        "minimum_code": 4194366,
+        "maximum_code": 8796095053824,
+        "raw_sha256": "f93d2390b2dea00b5b9f5672813d6645101710253f8e52517665cb9b33eea344",
+        "proof_type_index": 17,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 6,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1193808,
+        "expected_vectors": 1193808,
+        "minimum_code": 4194430,
+        "maximum_code": 8796095086592,
+        "raw_sha256": "65baa3c09d728c74aa701555b762cfdad56dbdb65cbfa027209cf314d3623aa2",
+        "proof_type_index": 18,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 7,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 2558160,
+        "expected_vectors": 2558160,
+        "minimum_code": 4194558,
+        "maximum_code": 8796095102976,
+        "raw_sha256": "ff4c482c98527ca1e79c34ad35edf2ee253ab913ff4ac870f066c3fcee400397",
+        "proof_type_index": 19,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 8,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 4476780,
+        "expected_vectors": 4476780,
+        "minimum_code": 4194814,
+        "maximum_code": 8796095111168,
+        "raw_sha256": "ad3f52dded78af30b444f8cc96917e747d6ccebf8107b0f67c94a4613b05b4a8",
+        "proof_type_index": 20,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 9,
+        "b": 1,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 6466460,
+        "expected_vectors": 6466460,
+        "minimum_code": 4195326,
+        "maximum_code": 8796095115264,
+        "raw_sha256": "20a9da832a1b390639d516bf87b566386088dbd0e46079a2ba3026d6b1511064",
+        "proof_type_index": 21,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          5
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          0
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      },
+      {
+        "a": 0,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 231,
+        "expected_vectors": 231,
+        "minimum_code": 12582912,
+        "maximum_code": 13194139533312,
+        "raw_sha256": "c1d7aae3148cb8ed843bbdded0574c0f355ea4a6ef7b8b4015b7fd95680fe725",
+        "proof_type_index": 22,
+        "M": [
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 4620,
+        "expected_vectors": 4620,
+        "minimum_code": 12582916,
+        "maximum_code": 13194140057600,
+        "raw_sha256": "8b389f70cae29135ae178732b5ac235d60ed5d453d547f895bf79111052e6d7f",
+        "proof_type_index": 23,
+        "M": [
+          5,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 43890,
+        "expected_vectors": 43890,
+        "minimum_code": 12582924,
+        "maximum_code": 13194140319744,
+        "raw_sha256": "ca4d177b8429955e7ed37a6889c027f6b976e0e7448c72406c731e432946e79a",
+        "proof_type_index": 24,
+        "M": [
+          5,
+          6,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 263340,
+        "expected_vectors": 263340,
+        "minimum_code": 12582940,
+        "maximum_code": 13194140450816,
+        "raw_sha256": "0b02511783842f3adef5ed31b0494751e007384f6bb16a74aa9c8db80c135f7b",
+        "proof_type_index": 25,
+        "M": [
+          5,
+          6,
+          7,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1119195,
+        "expected_vectors": 1119195,
+        "minimum_code": 12582972,
+        "maximum_code": 13194140516352,
+        "raw_sha256": "939507a7ab98fb2d86b7a5748904df3f3fbec4df7cac7e56426e0082711d1faf",
+        "proof_type_index": 26,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 5,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 3581424,
+        "expected_vectors": 3581424,
+        "minimum_code": 12583036,
+        "maximum_code": 13194140549120,
+        "raw_sha256": "c0747e0e0936ef9ca2c65e37bb524dbccfa23f38aa45e863344e583b2b4e24e3",
+        "proof_type_index": 27,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 6,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 8953560,
+        "expected_vectors": 8953560,
+        "minimum_code": 12583164,
+        "maximum_code": 13194140565504,
+        "raw_sha256": "a4f8810895373c0691fd4e77e1cbe590309ca7d93deb694fff3ca9e40ab244bf",
+        "proof_type_index": 28,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 7,
+        "b": 2,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 17907120,
+        "expected_vectors": 17907120,
+        "minimum_code": 12583420,
+        "maximum_code": 13194140573696,
+        "raw_sha256": "13bc313f6b2fb5c281f7f0c961f9e51473535640090a13c84e5201a8c4b84da8",
+        "proof_type_index": 29,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          1
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1540,
+        "expected_vectors": 1540,
+        "minimum_code": 29360128,
+        "maximum_code": 15393162788864,
+        "raw_sha256": "cde85c81052077a731a09a1947e0f10570345a17be32ed2da383841dabdfa800",
+        "proof_type_index": 30,
+        "M": [
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 29260,
+        "expected_vectors": 29260,
+        "minimum_code": 29360136,
+        "maximum_code": 15393163051008,
+        "raw_sha256": "511dc8eb1fbe125496e99a0c512c87c4aaec390e2206e36f02196462aafb3c7a",
+        "proof_type_index": 31,
+        "M": [
+          5,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 263340,
+        "expected_vectors": 263340,
+        "minimum_code": 29360152,
+        "maximum_code": 15393163182080,
+        "raw_sha256": "bb6ef9f8de001ef552b8b1f98574d3a63a6ae2454f9ba8bfc235b197c6275878",
+        "proof_type_index": 32,
+        "M": [
+          5,
+          6,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1492260,
+        "expected_vectors": 1492260,
+        "minimum_code": 29360184,
+        "maximum_code": 15393163247616,
+        "raw_sha256": "664520efee82a79c7b92b3893c76d7a0c52a20728c20dfc9d7b3e458668106e9",
+        "proof_type_index": 33,
+        "M": [
+          5,
+          6,
+          7,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 5969040,
+        "expected_vectors": 5969040,
+        "minimum_code": 29360248,
+        "maximum_code": 15393163280384,
+        "raw_sha256": "2a04385be82cc98103c4091e020e791d82171d2107ca8ca2e7da3e079ff54666",
+        "proof_type_index": 34,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 5,
+        "b": 3,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 17907120,
+        "expected_vectors": 17907120,
+        "minimum_code": 29360376,
+        "maximum_code": 15393163296768,
+        "raw_sha256": "9b3ff663d529dc80170e7addab7ec0487613bfa927b9ea6e574d7a0a6c91566c",
+        "proof_type_index": 35,
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1,
+          3
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      },
+      {
+        "a": 0,
+        "b": 4,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 7315,
+        "expected_vectors": 7315,
+        "minimum_code": 62914560,
+        "maximum_code": 16492674416640,
+        "raw_sha256": "784e00fdaecb1ccf008ad98a6aa4d2568ebe0fcd78fcb0908d193aa2f6829790",
+        "proof_type_index": 36,
+        "M": [
+          5,
+          6,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 131670,
+        "expected_vectors": 131670,
+        "minimum_code": 62914576,
+        "maximum_code": 16492674547712,
+        "raw_sha256": "d9dda9e5b0e6c07bb59380dbdbd1d18a45ea7022ab48c8820f123eaf1a1ae609",
+        "proof_type_index": 37,
+        "M": [
+          5,
+          5,
+          6,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          0,
+          1,
+          3,
+          4
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 1119195,
+        "expected_vectors": 1119195,
+        "minimum_code": 62914608,
+        "maximum_code": 16492674613248,
+        "raw_sha256": "8537912c5ac9b5b0f4a788d32d6a3f633f8caac4cfa4380cdc00649f15e711ef",
+        "proof_type_index": 38,
+        "M": [
+          5,
+          6,
+          5,
+          6,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          0,
+          1,
+          3,
+          4
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 5969040,
+        "expected_vectors": 5969040,
+        "minimum_code": 62914672,
+        "maximum_code": 16492674646016,
+        "raw_sha256": "b8e2d57e182182a8454dcd31d712d91ea7707860cd33381e35c13f24db7f1547",
+        "proof_type_index": 39,
+        "M": [
+          5,
+          6,
+          7,
+          5,
+          6,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          3,
+          4
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      },
+      {
+        "a": 0,
+        "b": 5,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 26334,
+        "expected_vectors": 26334,
+        "minimum_code": 130023424,
+        "maximum_code": 17042430230528,
+        "raw_sha256": "9040d69596e2b303d641dd486236da21f02370f54e0bbf5392b29ae2504fb638",
+        "proof_type_index": 40,
+        "M": [
+          5,
+          6,
+          8,
+          9,
+          11
+        ],
+        "padding": [
+          0,
+          1,
+          3,
+          4,
+          6
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": false
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "status": "PASS_EXHAUSTIVE_LABELLED_VECTORS",
+        "vectors_read": 447678,
+        "expected_vectors": 447678,
+        "minimum_code": 130023456,
+        "maximum_code": 17042430296064,
+        "raw_sha256": "181da53bff74ab3cdc0ebed3e44e72f2dd17f59d4b007135b68c6bff7dd9ae12",
+        "proof_type_index": 41,
+        "M": [
+          5,
+          5,
+          6,
+          8,
+          9,
+          11
+        ],
+        "padding": [
+          0,
+          0,
+          1,
+          3,
+          4,
+          6
+        ],
+        "all_vector_label_padding_assignments_checked": true,
+        "is_exact11_subset": true
+      }
+    ],
+    "all_blocks": 42,
+    "every_saved_vector_read": true,
+    "saved_vectors": 82995960,
+    "independent_expected_vectors": 82995960,
+    "exact11_vectors": 49402850,
+    "independent_expected_exact11_vectors": 49402850,
+    "exact11_type_count": 6,
+    "nonzero_target_label_settings_checked": 673842730,
+    "strict_order_and_valid_cardinality_prove_exhaustive_coverage": true,
+    "whole_raw_sha256": "9af4d125980ca96b41004e0eb22ac16f73d19bc408d5ad9b4692dd57d2968fc5",
+    "gzip_file_sha256": "89a3a9af6c465f6db673c5b3a0e879e8112447471a6b8394c243ed5a017f98e3",
+    "metadata_sha256": "bc0b5fd85bf9bac882ddb2779c747dcd2b32a1be85f29d25f0650c69b54c0ee6",
+    "label_padding_rule": "For label j with n=1, rank=popcount(mask1 & ((1<<j)-1)); for n=2, rank=a+popcount(mask2 & ((1<<j)-1)). Assign M[type][rank], padding=M-5. n=0 labels are omitted from the rare average",
+    "candidate_questions_remain_actual_fixed_five": true,
+    "per_target_padding_is_same_for_all_five_questions": true,
+    "proof_transfer": "Every saved vector has its exact (a,b) certificate, and every active label receives exactly one canonical M. Each full per-question answer is uniquely decoded, then each five-answer single/pair signature uniquely identifies membership",
+    "all_individual_membership_assignments_directly_replayed": false
+  },
+  "elapsed_seconds": 10.460353000031319,
+  "audit_source_sha256": "ea6b9057699a3d045df05a1e06904edd89a5b22c835258b1642551ffa83f146a",
+  "writes_files": true
+}

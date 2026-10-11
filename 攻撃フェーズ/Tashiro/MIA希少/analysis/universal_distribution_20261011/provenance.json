@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "scope": "New public packaging metadata. Sources and certificates were not modified. Workspace-relative source paths and embedded absolute paths identify historical inputs only; no public audit depends on those paths.",
+  "original_files": [
+    {
+      "path": "classification/results.json",
+      "bytes": 22510,
+      "sha256": "948e1210a3541e89b748866a492cdc918e59b4bfee347f412c54bcafa349533f",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/総合結果.json",
+      "source_sha256": "948e1210a3541e89b748866a492cdc918e59b4bfee347f412c54bcafa349533f",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "latest 42-type scope-separated classification"
+    },
+    {
+      "path": "classification/types.csv",
+      "bytes": 4201,
+      "sha256": "03320b4c8d4ab063f2663b9d7e725bb73726aa26d69dc2f2b337a40850acde1b",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/42型の4回5回判定.csv",
+      "source_sha256": "03320b4c8d4ab063f2663b9d7e725bb73726aa26d69dc2f2b337a40850acde1b",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "latest 42-type classification table"
+    },
+    {
+      "path": "fixed5/results.json",
+      "bytes": 31215,
+      "sha256": "f4c75b723434da919dc17246aac9cca43bfcbd0fe310799f4427751ba0dee771",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/集計/results.json",
+      "source_sha256": "f4c75b723434da919dc17246aac9cca43bfcbd0fe310799f4427751ba0dee771",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "abstract fixed-five composition proof and type-specific M settings"
+    },
+    {
+      "path": "fixed5/types.csv",
+      "bytes": 3692,
+      "sha256": "3ce4ad35eb42185cf3854de0da13dcda317f252c92ba964bdbc64532f000b5c6",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/集計/人数型別結果.csv",
+      "source_sha256": "3ce4ad35eb42185cf3854de0da13dcda317f252c92ba964bdbc64532f000b5c6",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "42 count-type combinatorial cardinalities"
+    },
+    {
+      "path": "fixed5/enumeration_manifest.json",
+      "bytes": 50278,
+      "sha256": "bc0b5fd85bf9bac882ddb2779c747dcd2b32a1be85f29d25f0650c69b54c0ee6",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/結果/列挙記録.json",
+      "source_sha256": "bc0b5fd85bf9bac882ddb2779c747dcd2b32a1be85f29d25f0650c69b54c0ee6",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "original enumeration metadata; clinical data not included"
+    },
+    {
+      "path": "fixed5/independent_audit.json",
+      "bytes": 48895,
+      "sha256": "74a821ffe2a4c6050972ee2e12f6cf7637db007619572d1c94f058375ce4b292",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/結果/独立監査.json",
+      "source_sha256": "74a821ffe2a4c6050972ee2e12f6cf7637db007619572d1c94f058375ce4b292",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "original independent enumeration and Fraction audit"
+    },
+    {
+      "path": "fixed4/bounds.json",
+      "bytes": 76944,
+      "sha256": "6d2c542053d79eb74c18924ec6bae61df6cf5c1e1eba2c021b60457895dd00ed",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/固定4bitと単対象下界.json",
+      "source_sha256": "6d2c542053d79eb74c18924ec6bae61df6cf5c1e1eba2c021b60457895dd00ed",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "complete common fixed-four bounds and target-specific collision lower bounds"
+    },
+    {
+      "path": "fixed4/search.json",
+      "bytes": 6754,
+      "sha256": "e270d87aab4926f8b4d1a3119728dff8fe2ee90f2c53094600f97174a40643f4",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/対象別固定4探索.json",
+      "source_sha256": "e270d87aab4926f8b4d1a3119728dff8fe2ee90f2c53094600f97174a40643f4",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "three target-specific fixed-four SAT codebooks, bounded UNKNOWN distinguished"
+    },
+    {
+      "path": "fixed4/optimized_b4_m11.json",
+      "bytes": 1278,
+      "sha256": "4b4ae4382d30041dfd392112a324114ff2322afdad9e7d78dfca2bee05c5ac39",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/固定4最適化_b4_m11.json",
+      "source_sha256": "4b4ae4382d30041dfd392112a324114ff2322afdad9e7d78dfca2bee05c5ac39",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "fourth target-specific fixed-four SAT codebook"
+    },
+    {
+      "path": "fixed4/independent_audit.json",
+      "bytes": 20940,
+      "sha256": "af5d747965c5abf6c3f5148994ed8bf827d83f53938ca22409770bf7140edf71",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/対象別固定4独立監査.json",
+      "source_sha256": "af5d747965c5abf6c3f5148994ed8bf827d83f53938ca22409770bf7140edf71",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "independent four SAT certificate verification"
+    },
+    {
+      "path": "adaptive4/results.json",
+      "bytes": 4191,
+      "sha256": "570c1d3a0eccc59c4eb90e6c33d806a80710c9d6731c471870f250718b72189a",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/4型総合結果.json",
+      "source_sha256": "570c1d3a0eccc59c4eb90e6c33d806a80710c9d6731c471870f250718b72189a",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "four completed adaptive-four type summary"
+    },
+    {
+      "path": "adaptive4/mean_replay.json",
+      "bytes": 208613,
+      "sha256": "f22c9fb238cc67c22f6522dea6ccd405cde8759ecc1f5ac5d22de484b3c60369",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/結果/平均回答_全配置再生.json",
+      "source_sha256": "f22c9fb238cc67c22f6522dea6ccd405cde8759ecc1f5ac5d22de484b3c60369",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "three types independent concrete mean replay"
+    },
+    {
+      "path": "adaptive4/a4b3/replay.json",
+      "bytes": 123671,
+      "sha256": "6d8c6a65b50643a1f1a16ab48b107bac6e0f3802d80ff4e2c23498903c1676a2",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a4b3/結果/全配置再生証明.json",
+      "source_sha256": "6d8c6a65b50643a1f1a16ab48b107bac6e0f3802d80ff4e2c23498903c1676a2",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "fourth type historical-tree lift concrete mean replay"
+    },
+    {
+      "path": "adaptive4/a3b3/replay.json",
+      "bytes": 102824,
+      "sha256": "aa621947b84f0ec28e98540e51de281bc38572a560ce871826d697c7d2f1d690",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/旧a3b3木の独立再検証.json",
+      "source_sha256": "aa621947b84f0ec28e98540e51de281bc38572a560ce871826d697c7d2f1d690",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "historical a3b3 complete independent replay report"
+    },
+    {
+      "path": "adaptive4/bounds/anchor_a1b1.json.gz",
+      "bytes": 4723,
+      "sha256": "f0d88a53871229be449229f50a299b19dd97c46cd5f2db6ad145657c346a70d6",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/anchor_a1b1.json.gz",
+      "source_sha256": "f0d88a53871229be449229f50a299b19dd97c46cd5f2db6ad145657c346a70d6",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "single-plus-pair adaptive-four UNSAT anchor"
+    },
+    {
+      "path": "adaptive4/bounds/anchor_b2.json.gz",
+      "bytes": 2696,
+      "sha256": "36d010a52ba416382a42aa4da34bfbe3027a286de33b880904dee4a4fb5336a9",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/anchor_b2.json.gz",
+      "source_sha256": "36d010a52ba416382a42aa4da34bfbe3027a286de33b880904dee4a4fb5336a9",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "two-pair adaptive-four UNSAT anchor"
+    },
+    {
+      "path": "adaptive4/a1b5/manifest.json.gz",
+      "bytes": 1174,
+      "sha256": "4541196c8731a5a854bb0c7040799cee031ac9d2f5c0bd120a71c24006c76f84",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/manifest.json.gz",
+      "source_sha256": "4541196c8731a5a854bb0c7040799cee031ac9d2f5c0bd120a71c24006c76f84",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final representative-to-branch transport manifest"
+    },
+    {
+      "path": "adaptive4/a1b5/363/certificate.json.gz",
+      "bytes": 360655,
+      "sha256": "3d3146df1c886176916139fbb6e1fce740582eca05686811c84c545c7861211e",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/363/certificate.json.gz",
+      "source_sha256": "3d3146df1c886176916139fbb6e1fce740582eca05686811c84c545c7861211e",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a1b5/361/certificate.json.gz",
+      "bytes": 168224,
+      "sha256": "85a3b447c12b1c504f924efe84fefe3951f8414f20c4712a0788e9f6f3a1d5c0",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/361/certificate.json.gz",
+      "source_sha256": "85a3b447c12b1c504f924efe84fefe3951f8414f20c4712a0788e9f6f3a1d5c0",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a1b5/603/certificate.json.gz",
+      "bytes": 77414,
+      "sha256": "45282fc4ad3c1d951967539dfedcd6ccfbe3686a51efca1ce7f1d2adcc037edc",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/603/certificate.json.gz",
+      "source_sha256": "45282fc4ad3c1d951967539dfedcd6ccfbe3686a51efca1ce7f1d2adcc037edc",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a1b5/595/certificate.json.gz",
+      "bytes": 45567,
+      "sha256": "d6fc2e1556675071e23124538c7761046819c752b4070a3ed8bb700e2a6cb327",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/595/certificate.json.gz",
+      "source_sha256": "d6fc2e1556675071e23124538c7761046819c752b4070a3ed8bb700e2a6cb327",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a1b5/675/certificate.json.gz",
+      "bytes": 16753,
+      "sha256": "edab98a947f9647411c46f99a72611fadc212efff93bca544eeb8a0ad00830ae",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/675/certificate.json.gz",
+      "source_sha256": "edab98a947f9647411c46f99a72611fadc212efff93bca544eeb8a0ad00830ae",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a1b5/649/certificate.json.gz",
+      "bytes": 8084,
+      "sha256": "ef0922fb953c1026476895e7145c73b7ca417ee176137a056935003244d3ae9c",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/649/certificate.json.gz",
+      "source_sha256": "ef0922fb953c1026476895e7145c73b7ca417ee176137a056935003244d3ae9c",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/manifest.json.gz",
+      "bytes": 1289,
+      "sha256": "b1044ed3c90507a8f89a4ee4025e770a3ce3ce3c5b2fa4baff867186190334a9",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/manifest.json.gz",
+      "source_sha256": "b1044ed3c90507a8f89a4ee4025e770a3ce3ce3c5b2fa4baff867186190334a9",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final representative-to-branch transport manifest"
+    },
+    {
+      "path": "adaptive4/a2b4/360/certificate.json.gz",
+      "bytes": 112431,
+      "sha256": "cd2ca87e8d93e87131005e6a25ad8ea5d7c50fa55eccbaee60e4ae820aeb85b4",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/360/certificate.json.gz",
+      "source_sha256": "cd2ca87e8d93e87131005e6a25ad8ea5d7c50fa55eccbaee60e4ae820aeb85b4",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/363/certificate.json.gz",
+      "bytes": 319541,
+      "sha256": "244c4280002242af69bb373a30c263d8ec9bb3ada56d25a0bd63d32eeac5d425",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/363/certificate.json.gz",
+      "source_sha256": "244c4280002242af69bb373a30c263d8ec9bb3ada56d25a0bd63d32eeac5d425",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/354/certificate.json.gz",
+      "bytes": 171467,
+      "sha256": "c81dd4d8198177e2da37c6017656b38db4d188452aa3ef2ef1971b891000b9a7",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/354/certificate.json.gz",
+      "source_sha256": "c81dd4d8198177e2da37c6017656b38db4d188452aa3ef2ef1971b891000b9a7",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/355/certificate.json.gz",
+      "bytes": 183259,
+      "sha256": "51ea1f3fde559faf6a99f1b3c7068870b1ec957b8383eeffc8c78c7f3ffce744",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/355/certificate.json.gz",
+      "source_sha256": "51ea1f3fde559faf6a99f1b3c7068870b1ec957b8383eeffc8c78c7f3ffce744",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/603/certificate.json.gz",
+      "bytes": 189844,
+      "sha256": "a3551eaf5b8061b8b73b8755ae88392957bf36d91b8e87f246972d1521c721af",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/603/certificate.json.gz",
+      "source_sha256": "a3551eaf5b8061b8b73b8755ae88392957bf36d91b8e87f246972d1521c721af",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/328/certificate.json.gz",
+      "bytes": 94259,
+      "sha256": "394d3258c371a06ed68849bba693ea87d5d2227f1d74b413e7b5de5a4b28f735",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/328/certificate.json.gz",
+      "source_sha256": "394d3258c371a06ed68849bba693ea87d5d2227f1d74b413e7b5de5a4b28f735",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/594/certificate.json.gz",
+      "bytes": 96462,
+      "sha256": "7acd162503975b93aff7759af863e7b5c68b3a4b272ad0122e773a8c15c8089d",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/594/certificate.json.gz",
+      "source_sha256": "7acd162503975b93aff7759af863e7b5c68b3a4b272ad0122e773a8c15c8089d",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/597/certificate.json.gz",
+      "bytes": 92789,
+      "sha256": "b873cfa5688a934fbfa94e0db4ad484b1334478381f3fa22209e4389c7b62fd5",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/597/certificate.json.gz",
+      "source_sha256": "b873cfa5688a934fbfa94e0db4ad484b1334478381f3fa22209e4389c7b62fd5",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/570/certificate.json.gz",
+      "bytes": 49420,
+      "sha256": "b2e2c822a3a2d437a4ba8ef156f3d0cddc4c17c9797526fa1ea88c0ff896e35d",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/570/certificate.json.gz",
+      "source_sha256": "b2e2c822a3a2d437a4ba8ef156f3d0cddc4c17c9797526fa1ea88c0ff896e35d",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/571/certificate.json.gz",
+      "bytes": 49034,
+      "sha256": "8dfa463850360f1e89e743e48eee72a4ff4769eb4b010cbb500df114ecaf0601",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/571/certificate.json.gz",
+      "source_sha256": "8dfa463850360f1e89e743e48eee72a4ff4769eb4b010cbb500df114ecaf0601",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/675/certificate.json.gz",
+      "bytes": 48359,
+      "sha256": "3db690d7dd764583cb83fcd6a4daea8006174f3cc11077f2ba748be65be718b3",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/675/certificate.json.gz",
+      "source_sha256": "3db690d7dd764583cb83fcd6a4daea8006174f3cc11077f2ba748be65be718b3",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/490/certificate.json.gz",
+      "bytes": 7537,
+      "sha256": "b9c8dc27d46f54629e5ec3f0794fe346a557327a955092f7e9dc4f339f7b17ae",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/490/certificate.json.gz",
+      "source_sha256": "b9c8dc27d46f54629e5ec3f0794fe346a557327a955092f7e9dc4f339f7b17ae",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/648/certificate.json.gz",
+      "bytes": 6605,
+      "sha256": "c2a1d6010a1b577e16016506a62f0b33755bb10e510a4c867c88e701e168850b",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/648/certificate.json.gz",
+      "source_sha256": "c2a1d6010a1b577e16016506a62f0b33755bb10e510a4c867c88e701e168850b",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a2b4/651/certificate.json.gz",
+      "bytes": 7012,
+      "sha256": "d324cae8f58a2c7c80ec4ea7f9ddbe5e86c318ad8c8c79b4575b3f6709228963",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/651/certificate.json.gz",
+      "source_sha256": "d324cae8f58a2c7c80ec4ea7f9ddbe5e86c318ad8c8c79b4575b3f6709228963",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/manifest.json.gz",
+      "bytes": 1311,
+      "sha256": "7ec9d9ef5b532a335afd18e4c57dda2b8cd166e3e194d0fcaf2526a3dc56eebc",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/manifest.json.gz",
+      "source_sha256": "7ec9d9ef5b532a335afd18e4c57dda2b8cd166e3e194d0fcaf2526a3dc56eebc",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final representative-to-branch transport manifest"
+    },
+    {
+      "path": "adaptive4/a0b5/8/certificate.json.gz",
+      "bytes": 9773,
+      "sha256": "e674f19ef44fc14f05744c01f1a9d42d43a807880f05ed656497444d3f8a39b7",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/8/certificate.json.gz",
+      "source_sha256": "e674f19ef44fc14f05744c01f1a9d42d43a807880f05ed656497444d3f8a39b7",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/17/certificate.json.gz",
+      "bytes": 22577,
+      "sha256": "7a7e0c3460902a4a2917d1f0adbb7a1b43f2c27488ad8f7163d069e811605908",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/17/certificate.json.gz",
+      "source_sha256": "7a7e0c3460902a4a2917d1f0adbb7a1b43f2c27488ad8f7163d069e811605908",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/14/certificate.json.gz",
+      "bytes": 41089,
+      "sha256": "84b79441079b8e16eebf94f6f2241be0ee8b8fb254006698fe694ee7b11f1461",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/14/certificate.json.gz",
+      "source_sha256": "84b79441079b8e16eebf94f6f2241be0ee8b8fb254006698fe694ee7b11f1461",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/41/certificate.json.gz",
+      "bytes": 79159,
+      "sha256": "d05ee5d11954a5f76289bf20cfddc0494609ea5f181baf441537e8e5974a4ad5",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/41/certificate.json.gz",
+      "source_sha256": "d05ee5d11954a5f76289bf20cfddc0494609ea5f181baf441537e8e5974a4ad5",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/40/certificate.json.gz",
+      "bytes": 134254,
+      "sha256": "4f1d94e50438f7890bd040f8ed97b636f4fbacbaceb5dd6cf98d79e6495aeb20",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/40/certificate.json.gz",
+      "source_sha256": "4f1d94e50438f7890bd040f8ed97b636f4fbacbaceb5dd6cf98d79e6495aeb20",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    },
+    {
+      "path": "adaptive4/a0b5/121/certificate.json.gz",
+      "bytes": 245760,
+      "sha256": "f9945b772db20abe40d8871618a7dfe10e6eb6bd23ea67ab53fedf0a612469e8",
+      "source_workspace_relative_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/121/certificate.json.gz",
+      "source_sha256": "f9945b772db20abe40d8871618a7dfe10e6eb6bd23ea67ab53fedf0a612469e8",
+      "transformation": "NONE_BYTE_IDENTICAL",
+      "role": "final SAT remaining-depth-three representative witness"
+    }
+  ],
+  "excluded_original_source_hashes": {
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/分析.py": "448489c0831e02e739cc7acaf93c62780e1321c5c87dd2e61a96455b9b5f7729",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/rules.md": "351ad2ee6ac481c4494f84f6e343d307dc2ab40a4bd31403a399e7f2dca3276a",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/rule_constraints.json": "309c5b45e37616413870d9e05cc0234941ea1a0a2379e024fda494fbae9def61",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/結果/results.json": "e939d3bd8d4eabd8e8a5367985ad16ad0fa9bf89acc4e4d262f356febdd5ceb3",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/列挙.py": "a27117ae2182e32f43f6242e9e06421d4293b9d5321ca8da7827ada391e8dfe8",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/監査.py": "ea6b9057699a3d045df05a1e06904edd89a5b22c835258b1642551ffa83f146a",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/分析.py": "de5fa8d9b7b6c3b625d9c1f50df3724983ef9dc892429e61eb808d8d176027fb",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/fixed_binary_bounds.py": "f82cd3147c382ecec6078019e0fcd6442fe1a65a763eebfe2416fb8a5e4d709c",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/fixed_team_search.py": "b541d53575b61da82db0b12b4d9f5071af0c7453d6e4c37d2a9c59ff3575f2de",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/fixed_team_optimize.py": "bd660802b65a4b0e98103643a118fcabdf3fafc9e9625daec6d345af201893c5",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/independent_fixed_audit.py": "d70e556b7eac3f901c0084e5b9c0d05a893019f8d359c970a4ab54075543d473",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/分析.py": "2c0840feb844e6c882f0f80e5611f97cf54bde23ba9cf2fdd31ef48bbde3585b",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/平均回答再生.py": "9db754739ae28bb62bed332f7779a978c205e99693ecab7408768b08db8aa8df",
+    "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a4b3/分析.py": "180fe018f250e6be3fa6f1877e0cfcbdce62b583e887e0c9df2acce15f8baa99"
+  },
+  "embedded_historical_hash_maps": [
+    {
+      "public_proof": "adaptive4/a4b3/replay.json",
+      "original_field": "historical_sources_sha256",
+      "hashes": {
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/manifest.json": "b2ade400fef7c89de3bd270df40beed9d18e802c1a6635e099945bd6c881abe8",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/結果/旧a3b3木の独立再検証.json": "aa621947b84f0ec28e98540e51de281bc38572a560ce871826d697c7d2f1d690",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/283/certificate.json.gz": "2bfb02566e0b56e7d6ded45965edc99912ab678ea775f8d79978cb772b7ded96",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/274/certificate.json.gz": "c015e1875e3c56f8dc107cc560104e8cd3564cc6f9dbbb65b0b92959f0162060",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/273/certificate.json.gz": "11c75fa3aee7e18513f0fae349ed78ea425340e17edbfdd22f0169ff156073dc",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/30/certificate.json.gz": "8c631d6011f524166225f52052cd34f9fcadd9ed90ad891c1051d371750ba00b",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/364/certificate.json.gz": "263fbff718dc5243b515de43f0228fca7aee5f8c4802db7ce7042c7d6b5d967e",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/39/certificate.json.gz": "db16a67ed42244a43ada2197df6aa909d2deb0e914b40f712fcf3a9534fd6578",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/31/certificate.json.gz": "f575d895435bd0673d5e6af0aec8ed07af2b337ac044e1559d57523b3d3847fc",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/3/certificate.json.gz": "b85267bd3bea1d13ce8cb275563c2c3f7ae53e8e0a0000edf3be3c1523469fe0",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/120/certificate.json.gz": "347427fdabc5143def8ba56579a99266ad6bedc63d80c1ee79e2bb381ba323b1",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/40/certificate.json.gz": "81f750651c4ead3b2dc8d09b1128e70042b04059877f1cc97f6411307965d2f9",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/367/certificate.json.gz": "55ddc2294330038bffde7b924de0cb56525666a7d7f42830cf14edb69314120b",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/286/certificate.json.gz": "aed409ea6a5d458b16b12e27124d3cfcc23935ce529686ff2f6fbcc8cdf4f2ba",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/310/certificate.json.gz": "d436e4ae9eb3ddfe4ce514eb37b923f2b9dc68fe8f64c807bbee8b1ca5313d78",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/285/certificate.json.gz": "a114ccd87cd1950d2c76ca49c1bb7b0d868e82b3f9c5fde916d60bcaf6659fb9",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/12/certificate.json.gz": "16cc4754f256429a06556461b57df6ab916161e7eb1bca145e97d15d18c23a5f",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/42/certificate.json.gz": "3b2a3703e8354012a7f8c756ae002e3d0ed7d71bcbced1371ffa35b327726f16",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/123/certificate.json.gz": "4882136e124b11b0acf0d9b3d31f710ae3ba47dd25cdd675a368432c4550a8d3",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/4/certificate.json.gz": "e677a0ef318344f25094a6594434b2d595b9f3fe0eed6d1b437a846b5b73c77c",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/277/certificate.json.gz": "24f8d3b1a08a9ca052f6a090b75d76c71a5d06c4cfb9148b8f2d019edc8196ac",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/66/certificate.json.gz": "f01624ad93ec90a7b8bced51c266909760f0a6a0d696c444088a4786760d0e4f",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/43/certificate.json.gz": "9c1244199be382ccb79f02e6fb3bf6c2e4f3957b71eadbcfe73037b085695da9",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/67/certificate.json.gz": "c3a983c37c0b8183dbc1d4a94cc5425bd98860855b88527b8047d75b2b24a345",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/33/certificate.json.gz": "df7c6a0d69e79e1832f9cdf7403e41fa3084d4801756e658f1e7fa6a73d3c3a5",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/276/certificate.json.gz": "130fe4c9f0165b6be012f814e06d4c164c93678edab05031f0f5fd3ae98f0b98",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/15/certificate.json.gz": "c47bc35d33cc46f1e443bef46c859bb6342342d755199cb7a3190b0d34a6564c",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/6/certificate.json.gz": "ded29bc843f6cbe1eb539fda070b6b8c7d8a4657114711ef2e711d8358460ee7",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/124/certificate.json.gz": "0df201fd7783dcae82b37cf5bb91e97015cd7a8012cff8426273aa7b30334194",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/34/certificate.json.gz": "c50515b4f5580e3a8830b4f27cf555c698dd58b072993cf5375325cb34c13db7",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/0/certificate.json.gz": "55ab34b51c3151ee9c7ff559ff31fd508fd67e2a91bb5c82f18d1377ae2a50e3",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/7/certificate.json.gz": "49d1dc4a0ee0a87311afbab9cc10375e057e4b7432ea3a068648b8760cb97cd3",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/121/certificate.json.gz": "7590e178ba46db0258b90d9041d40a520936967539f10c30ada689e338b00879",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/394/certificate.json.gz": "d9c0d60005ee38e06d8f3e4c4c2b9ae78b080d8777c069f0aeb8ff556ab22a74",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/16/certificate.json.gz": "8898ec3f419538f78a3206d18913f6b3a88c97ca65be75c3c4bc93e02589302a",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/64/certificate.json.gz": "e6e0757a3c0fbd1042ad4815ef77d7378ccca2375d2827741e6e5f4111118946",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/150/certificate.json.gz": "2629415c43a6f80db416c9e9246244b6dc69fa0c986f3f97834fda67c887c3ae",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/151/certificate.json.gz": "bda3e150e9c4f9f7129a77ce5ac2a4b96f0e2690414dda2433c71103c32944c6",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/393/certificate.json.gz": "582dfa800892fa56fa97e5ab99617c56a731d0a28d95cdf1333fe3feac59a288",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/13/certificate.json.gz": "9fef550c1d9307c367df7cba83edfeeae7d6e7081468277f3468c8ae03cdd98e",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/313/certificate.json.gz": "fa769cad630810bc4b047ab3c738aae10d53c7b7787ff2db55b95ac7a99f312f",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/37/certificate.json.gz": "05afa3c876954c4bcd19dc624830ead97aab6fba1f63e02bd4e2e780f4d017dc",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/70/certificate.json.gz": "cc79310f9bf2a21e6ab2f8a999eb76952fb830a92229ef204983f4a0073ba3ae",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/69/certificate.json.gz": "6684070949d314d5928d8849ee5bc9468c4dac42383f08622b05ec5f766239b8",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/312/certificate.json.gz": "b71b8ac4a05be666cf458aba25c4efa5d37137c31a7fe2986d0bd8ca914e03ab",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/1/certificate.json.gz": "c71e873fd0f7c91d36283f3d099ba18a5df87bc96d56add41e4d6aae47c5fb66",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/304/certificate.json.gz": "642d534ef064f99bbb24b0af9be5f0ff270c3b4f41d5e71f82fec90d5216fc93",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/60/certificate.json.gz": "91b496bad2eeeccb196a3d1c85946c91510ac94aa2d7ebb8bef87c622385088d",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/97/certificate.json.gz": "968f5c57cc4dd669151fcdf12a32168ab3a7938462d62d2c1d6b238130a2ef6a",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/303/certificate.json.gz": "eed53c3e9e789f301f439f2a7ffd9ab60de3b3fabede0f4db389f5e7385716c8",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/61/certificate.json.gz": "b2c70c080bd096a3e147c6ca838d2fa7a3537c2e8a0e25109566830095340446",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/637/certificate.json.gz": "edf80eb61b104a8238e35402bb2c02cc1a7b3653452f67198d51ee9f2f9d15e4",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/556/certificate.json.gz": "18e7e08ebbb8020972773aa6bf7e7da086809b8042dc7d2eaa0b1c263b66fd0d",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/547/certificate.json.gz": "c1a4700139d209f076a25e4727c2a9d0810f9d66a40c9572239460e42d9e853f",
+        "GitHub作業/MIA希少_説明更新_20261007/攻撃フェーズ/Tashiro/MIA希少/analysis/full_depth4_20261007/orbits/546/certificate.json.gz": "46aa32cbb8861ca555a5514d1bdd3f51a555014baaa30a61e74b9345ae609eaf"
+      }
+    },
+    {
+      "public_proof": "adaptive4/mean_replay.json",
+      "original_field": "sources_sha256",
+      "hashes": {
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/manifest.json.gz": "4541196c8731a5a854bb0c7040799cee031ac9d2f5c0bd120a71c24006c76f84",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/363/certificate.json.gz": "3d3146df1c886176916139fbb6e1fce740582eca05686811c84c545c7861211e",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/361/certificate.json.gz": "85a3b447c12b1c504f924efe84fefe3951f8414f20c4712a0788e9f6f3a1d5c0",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/603/certificate.json.gz": "45282fc4ad3c1d951967539dfedcd6ccfbe3686a51efca1ce7f1d2adcc037edc",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/595/certificate.json.gz": "d6fc2e1556675071e23124538c7761046819c752b4070a3ed8bb700e2a6cb327",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/675/certificate.json.gz": "edab98a947f9647411c46f99a72611fadc212efff93bca544eeb8a0ad00830ae",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a1b5/実行_20261011_02/649/certificate.json.gz": "ef0922fb953c1026476895e7145c73b7ca417ee176137a056935003244d3ae9c",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/manifest.json.gz": "b1044ed3c90507a8f89a4ee4025e770a3ce3ce3c5b2fa4baff867186190334a9",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/360/certificate.json.gz": "cd2ca87e8d93e87131005e6a25ad8ea5d7c50fa55eccbaee60e4ae820aeb85b4",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/363/certificate.json.gz": "244c4280002242af69bb373a30c263d8ec9bb3ada56d25a0bd63d32eeac5d425",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/354/certificate.json.gz": "c81dd4d8198177e2da37c6017656b38db4d188452aa3ef2ef1971b891000b9a7",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/355/certificate.json.gz": "51ea1f3fde559faf6a99f1b3c7068870b1ec957b8383eeffc8c78c7f3ffce744",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/603/certificate.json.gz": "a3551eaf5b8061b8b73b8755ae88392957bf36d91b8e87f246972d1521c721af",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/328/certificate.json.gz": "394d3258c371a06ed68849bba693ea87d5d2227f1d74b413e7b5de5a4b28f735",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/594/certificate.json.gz": "7acd162503975b93aff7759af863e7b5c68b3a4b272ad0122e773a8c15c8089d",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/597/certificate.json.gz": "b873cfa5688a934fbfa94e0db4ad484b1334478381f3fa22209e4389c7b62fd5",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/570/certificate.json.gz": "b2e2c822a3a2d437a4ba8ef156f3d0cddc4c17c9797526fa1ea88c0ff896e35d",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/571/certificate.json.gz": "8dfa463850360f1e89e743e48eee72a4ff4769eb4b010cbb500df114ecaf0601",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/675/certificate.json.gz": "3db690d7dd764583cb83fcd6a4daea8006174f3cc11077f2ba748be65be718b3",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/490/certificate.json.gz": "b9c8dc27d46f54629e5ec3f0794fe346a557327a955092f7e9dc4f339f7b17ae",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/648/certificate.json.gz": "c2a1d6010a1b577e16016506a62f0b33755bb10e510a4c867c88e701e168850b",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a2b4/complete_001/651/certificate.json.gz": "d324cae8f58a2c7c80ec4ea7f9ddbe5e86c318ad8c8c79b4575b3f6709228963",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/manifest.json.gz": "7ec9d9ef5b532a335afd18e4c57dda2b8cd166e3e194d0fcaf2526a3dc56eebc",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/8/certificate.json.gz": "e674f19ef44fc14f05744c01f1a9d42d43a807880f05ed656497444d3f8a39b7",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/17/certificate.json.gz": "7a7e0c3460902a4a2917d1f0adbb7a1b43f2c27488ad8f7163d069e811605908",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/14/certificate.json.gz": "84b79441079b8e16eebf94f6f2241be0ee8b8fb254006698fe694ee7b11f1461",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/41/certificate.json.gz": "d05ee5d11954a5f76289bf20cfddc0494609ea5f181baf441537e8e5974a4ad5",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/40/certificate.json.gz": "4f1d94e50438f7890bd040f8ed97b636f4fbacbaceb5dd6cf98d79e6495aeb20",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a0b5/run_001/121/certificate.json.gz": "f9945b772db20abe40d8871618a7dfe10e6eb6bd23ea67ab53fedf0a612469e8",
+        "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/集計/results.json": "f4c75b723434da919dc17246aac9cca43bfcbd0fe310799f4427751ba0dee771"
+      }
+    },
+    {
+      "public_proof": "adaptive4/a1b5/manifest.json.gz",
+      "original_field": "old_sources_sha256",
+      "hashes": {
+        "model.py": "8f034458b1f3cb1d5fb29605c31b4c407a3badc09a9ea53d7e167427d928a7e6",
+        "solver.py": "dda0a50cfad52b22aedd776c771c071f4c80fc3687274d622fda1b7f363729a0",
+        "solve_all_orbits.py": "08159dc9d4d6a8bba622770fedf6675a073d700c94af5c23abe86e2c91d1807f",
+        "solve_two_cegis.py": "e1ebc4d08db23676bd81ef4961f9af7a908c9c5a1d4f22eac9b4f7f3c5cbba81"
+      }
+    },
+    {
+      "public_proof": "adaptive4/a2b4/manifest.json.gz",
+      "original_field": "old_sources_sha256",
+      "hashes": {
+        "model.py": "8f034458b1f3cb1d5fb29605c31b4c407a3badc09a9ea53d7e167427d928a7e6",
+        "solver.py": "dda0a50cfad52b22aedd776c771c071f4c80fc3687274d622fda1b7f363729a0",
+        "solve_all_orbits.py": "08159dc9d4d6a8bba622770fedf6675a073d700c94af5c23abe86e2c91d1807f",
+        "solve_two_cegis.py": "e1ebc4d08db23676bd81ef4961f9af7a908c9c5a1d4f22eac9b4f7f3c5cbba81"
+      }
+    },
+    {
+      "public_proof": "adaptive4/a0b5/manifest.json.gz",
+      "original_field": "original_hashes",
+      "hashes": {
+        "model.py": "8f034458b1f3cb1d5fb29605c31b4c407a3badc09a9ea53d7e167427d928a7e6",
+        "solver.py": "dda0a50cfad52b22aedd776c771c071f4c80fc3687274d622fda1b7f363729a0",
+        "solve_two_cegis.py": "e1ebc4d08db23676bd81ef4961f9af7a908c9c5a1d4f22eac9b4f7f3c5cbba81",
+        "solve_all_orbits.py": "08159dc9d4d6a8bba622770fedf6675a073d700c94af5c23abe86e2c91d1807f"
+      }
+    }
+  ],
+  "privacy_exclusions": [
+    "competition CSVs and patient attributes",
+    "submission ZIPs and tokens",
+    "reference-patient-ID mapping and QI preprocessing material",
+    "search histories and duplicate global trees",
+    "125 MiB count-vector payload"
+  ],
+  "existing_repository_dependency": {
+    "public_relative_directory": "../full_depth4_20261007",
+    "purpose": "old a3b3 certificate replay and a4b3 lift",
+    "candidate_identity_policy": "Read candidate slots 0..10 only; candidate_ids are not inputs to the public audit. No old manifest was newly copied into this bundle.",
+    "files": "existing manifest.json, universal_score_encoding.json and 53 orbits/<rep>/certificate.json.gz; exact source hashes pinned inside adaptive4/a4b3/replay.json"
+  },
+  "runtime_input_policy": "Public scripts resolve public relative paths, never source_workspace_relative_path or historical *_path fields."
+}

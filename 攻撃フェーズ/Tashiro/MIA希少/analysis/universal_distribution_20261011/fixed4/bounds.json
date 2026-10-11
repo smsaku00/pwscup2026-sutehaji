@@ -1,0 +1,3656 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_BOUNDS",
+  "model": "11 candidates; known per-target count 0,1,2; total<=11; each candidate belongs to at most one target; binary subset/count queries",
+  "fixed4_binary_code_bound": {
+    "status": "EXACT_MAXIMUM_PROVED",
+    "dimension": 4,
+    "binary_codeword_universe": 16,
+    "all_subsets_directly_tested": 65536,
+    "valid_subsets_by_cardinality": [
+      1,
+      16,
+      120,
+      560,
+      1720,
+      3168,
+      2368,
+      240,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "invalid_subsets_by_cardinality": [
+      0,
+      0,
+      0,
+      0,
+      100,
+      1200,
+      5640,
+      11200,
+      12870,
+      11440,
+      8008,
+      4368,
+      1820,
+      560,
+      120,
+      16,
+      1
+    ],
+    "maximum_codewords_with_unique_distinct_pair_sums": 7,
+    "maximum_witness_decimal": [
+      0,
+      1,
+      3,
+      7,
+      9,
+      10,
+      12
+    ],
+    "maximum_witness_bits": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "independent_dfs_valid_prefixes": 8193,
+    "direct_and_dfs_histograms_equal": true,
+    "eight_codeword_subsets_tested": 12870,
+    "valid_eight_codeword_subsets": 0,
+    "eleven_candidate_single_and_pair_fixed4_possible": false,
+    "scope": "Nonadaptive binary subset questions; distinct candidate codewords; unordered pairs of two different candidates; member count is known, so single/pair cross-cardinality collisions are irrelevant"
+  },
+  "single_pair_adaptive_lower_bound": {
+    "status": "ADAPTIVE_FOUR_COUNT_QUERIES_IMPOSSIBLE",
+    "count_type": {
+      "a": 0,
+      "b": 1
+    },
+    "candidate_count": 11,
+    "possible_pairs": 55,
+    "all_first_query_sizes": [
+      {
+        "selected_candidates": 0,
+        "h0_pairs": 55,
+        "h1_pairs": 0,
+        "h2_pairs": 0,
+        "largest_branch": 55
+      },
+      {
+        "selected_candidates": 1,
+        "h0_pairs": 45,
+        "h1_pairs": 10,
+        "h2_pairs": 0,
+        "largest_branch": 45
+      },
+      {
+        "selected_candidates": 2,
+        "h0_pairs": 36,
+        "h1_pairs": 18,
+        "h2_pairs": 1,
+        "largest_branch": 36
+      },
+      {
+        "selected_candidates": 3,
+        "h0_pairs": 28,
+        "h1_pairs": 24,
+        "h2_pairs": 3,
+        "largest_branch": 28
+      },
+      {
+        "selected_candidates": 4,
+        "h0_pairs": 21,
+        "h1_pairs": 28,
+        "h2_pairs": 6,
+        "largest_branch": 28
+      },
+      {
+        "selected_candidates": 5,
+        "h0_pairs": 15,
+        "h1_pairs": 30,
+        "h2_pairs": 10,
+        "largest_branch": 30
+      },
+      {
+        "selected_candidates": 6,
+        "h0_pairs": 10,
+        "h1_pairs": 30,
+        "h2_pairs": 15,
+        "largest_branch": 30
+      },
+      {
+        "selected_candidates": 7,
+        "h0_pairs": 6,
+        "h1_pairs": 28,
+        "h2_pairs": 21,
+        "largest_branch": 28
+      },
+      {
+        "selected_candidates": 8,
+        "h0_pairs": 3,
+        "h1_pairs": 24,
+        "h2_pairs": 28,
+        "largest_branch": 28
+      },
+      {
+        "selected_candidates": 9,
+        "h0_pairs": 1,
+        "h1_pairs": 18,
+        "h2_pairs": 36,
+        "largest_branch": 36
+      },
+      {
+        "selected_candidates": 10,
+        "h0_pairs": 0,
+        "h1_pairs": 10,
+        "h2_pairs": 45,
+        "largest_branch": 45
+      },
+      {
+        "selected_candidates": 11,
+        "h0_pairs": 0,
+        "h1_pairs": 0,
+        "h2_pairs": 55,
+        "largest_branch": 55
+      }
+    ],
+    "minimum_possible_largest_first_branch": 28,
+    "remaining_three_query_leaf_upper_bound": 27,
+    "minimum_binary_count_queries": 5,
+    "proof": "Every first subset leaves at least 28 pairs in one branch; each subsequent query returns at most three counts, so three remaining queries distinguish at most 27 pairs",
+    "other_targets": "All other targets have zero members, so supply no extra membership-dependent responses",
+    "scope": "Adaptive binary subset/count questions, including team-specific padding; not an impossibility theorem for arbitrary multi-level confidence submissions or other returned channels"
+  },
+  "balanced_all_single_fixed4": {
+    "status": "BALANCED_SINGLE_MEMBER_FIXED4_CONSTRUCTED",
+    "codewords_decimal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      10,
+      13,
+      14,
+      15
+    ],
+    "codewords_bits": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "four_questions_candidate_slots": [
+      [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      [
+        2,
+        3,
+        7,
+        9,
+        10
+      ],
+      [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    ],
+    "candidates_selected_per_query": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "local_single_signature_count": 11,
+    "local_single_signature_collisions": 0,
+    "positive_single_only_types": [
+      {
+        "a": 1,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5
+        ],
+        "padding": [
+          0
+        ],
+        "response_count": 2,
+        "minimum_mean_gap_exact": "23/400"
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1
+        ],
+        "response_count": 4,
+        "minimum_mean_gap_exact": "23/4000"
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7
+        ],
+        "padding": [
+          0,
+          1,
+          2
+        ],
+        "response_count": 8,
+        "minimum_mean_gap_exact": "23/9000"
+      },
+      {
+        "a": 4,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "response_count": 16,
+        "minimum_mean_gap_exact": "23/16800"
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "response_count": 32,
+        "minimum_mean_gap_exact": "23/60000"
+      },
+      {
+        "a": 6,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "response_count": 64,
+        "minimum_mean_gap_exact": "23/378000"
+      },
+      {
+        "a": 7,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "response_count": 128,
+        "minimum_mean_gap_exact": "23/588000"
+      },
+      {
+        "a": 8,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "response_count": 256,
+        "minimum_mean_gap_exact": "23/1056000"
+      },
+      {
+        "a": 9,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9
+        ],
+        "response_count": 512,
+        "minimum_mean_gap_exact": "23/36036000"
+      },
+      {
+        "a": 10,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "response_count": 1024,
+        "minimum_mean_gap_exact": "23/40040000"
+      },
+      {
+        "a": 11,
+        "b": 0,
+        "status": "FIXED_FOUR_PROVED_BY_COMPOSITION",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          17
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12
+        ],
+        "response_count": 2048,
+        "minimum_mean_gap_exact": "23/44044000"
+      }
+    ],
+    "mean_score_domain": "24 rare rows, 11 candidate rows and 13 known negative rows; TPR at FPR .01; unrounded mean; known per-target counts",
+    "target_policy": "Assign M in ascending positive-target ID order; keep M and the four candidate subsets fixed",
+    "scope": "Every all-single type (a,0), 1<=a<=11, and every compatible disjoint individual assignment; this is a new fixed-four code, not deletion of one bit from the actually used fixed-five code"
+  },
+  "type_classification_by_proved_bounds": {
+    "scope": "Targets may use different four fixed binary subsets; full per-target count responses are granted, a stronger observation than their average",
+    "local_fiber_proof": "Fix the memberships of all targets except one two-member target. They consume m-2 candidates, leaving 11-(m-2)=13-m choices. Any nonadaptive four-query policy gives these choices binary four-bit words. A duplicate word yields a pair collision; otherwise the Sidon maximum seven implies a collision whenever 13-m>=8. Keep all other memberships fixed to obtain two disjoint legal full assignments with identical responses to every query",
+    "stronger_embedding_proof": "Choose one two-member target before fixing the other memberships. If its eleven words repeat, add any common third candidate to the two repeated words to obtain two pairs with equal sums and a three-candidate union. If all words differ, the exact Sidon maximum seven gives two colliding pairs with a four-candidate union. For m<=9, assign the other m-2 candidates identically outside that union: at least seven candidates are available. All other targets then have the same memberships and thus the same responses even when they use different questions. Every query's complete per-target responses and the average are equal",
+    "impossible_nonadaptive_condition": "b>0 and m=a+2*b<=9",
+    "local_fiber_only_condition": "b>0 and m<=5 (six types); subsumed by the stronger twenty-type embedding bound",
+    "why_not_an_adaptive_fiber_proof": "In an adaptive policy the pair-target questions may change after earlier answers; one fixed four-bit code does not represent all paths",
+    "types": [
+      {
+        "a": 0,
+        "b": 0,
+        "total_members": 0,
+        "nonadaptive_four_status": "TRIVIAL_NO_MEMBERS",
+        "adaptive_four_status": "TRIVIAL_NO_MEMBERS",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "total_members": 1,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "total_members": 2,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "total_members": 3,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 4,
+        "b": 0,
+        "total_members": 4,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "total_members": 5,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 6,
+        "b": 0,
+        "total_members": 6,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 7,
+        "b": 0,
+        "total_members": 7,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 8,
+        "b": 0,
+        "total_members": 8,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 9,
+        "b": 0,
+        "total_members": 9,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 10,
+        "b": 0,
+        "total_members": 10,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 11,
+        "b": 0,
+        "total_members": 11,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_ALL_SINGLE",
+        "remaining_candidates_in_pair_target_fiber": null
+      },
+      {
+        "a": 0,
+        "b": 1,
+        "total_members": 2,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "ADAPTIVE_FOUR_IMPOSSIBLE_BY_FIRST_BRANCH_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 11
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "total_members": 3,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 10
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "total_members": 4,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 9
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "total_members": 5,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 8
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "total_members": 6,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 7
+      },
+      {
+        "a": 5,
+        "b": 1,
+        "total_members": 7,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 6
+      },
+      {
+        "a": 6,
+        "b": 1,
+        "total_members": 8,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 5
+      },
+      {
+        "a": 7,
+        "b": 1,
+        "total_members": 9,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 4
+      },
+      {
+        "a": 8,
+        "b": 1,
+        "total_members": 10,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_COMMON_CODE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_COMMON_CODE",
+        "remaining_candidates_in_pair_target_fiber": 3
+      },
+      {
+        "a": 9,
+        "b": 1,
+        "total_members": 11,
+        "nonadaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_COMMON_CODE",
+        "adaptive_four_status": "FOUR_QUERIES_CONSTRUCTED_COMMON_CODE",
+        "remaining_candidates_in_pair_target_fiber": 2
+      },
+      {
+        "a": 0,
+        "b": 2,
+        "total_members": 4,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 9
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "total_members": 5,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 8
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "total_members": 6,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 7
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "total_members": 7,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 6
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "total_members": 8,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 5
+      },
+      {
+        "a": 5,
+        "b": 2,
+        "total_members": 9,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 4
+      },
+      {
+        "a": 6,
+        "b": 2,
+        "total_members": 10,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 3
+      },
+      {
+        "a": 7,
+        "b": 2,
+        "total_members": 11,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 2
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "total_members": 6,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 7
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "total_members": 7,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 6
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "total_members": 8,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 5
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "total_members": 9,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 4
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "total_members": 10,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 3
+      },
+      {
+        "a": 5,
+        "b": 3,
+        "total_members": 11,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 2
+      },
+      {
+        "a": 0,
+        "b": 4,
+        "total_members": 8,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 5
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "total_members": 9,
+        "nonadaptive_four_status": "NONADAPTIVE_FOUR_IMPOSSIBLE_BY_PAIR_COLLISION_EMBEDDING",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 4
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "total_members": 10,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 3
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "total_members": 11,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 2
+      },
+      {
+        "a": 0,
+        "b": 5,
+        "total_members": 10,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 3
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "total_members": 11,
+        "nonadaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "adaptive_four_status": "NOT_DECIDED_BY_THIS_BOUND",
+        "remaining_candidates_in_pair_target_fiber": 2
+      }
+    ],
+    "summary": {
+      "types": 42,
+      "all_single_positive_fixed4_constructed": 11,
+      "nonadaptive_types_impossible_by_embedding": 20,
+      "local_fiber_only_types": 6,
+      "positive_types_constructed_fixed4": 13,
+      "fixed4_types_not_decided_by_this_bound": 8,
+      "adaptive_types_impossible_by_first_branch": 1,
+      "zero_types": 1
+    }
+  },
+  "complete_common_fixed4_classification": {
+    "scope": "All targets use the same four fixed binary candidate subsets; target-specific padding may differ. Full per-target counts are granted. This is distinct from four fixed team-specific subsets and from adaptive search",
+    "unique_codewords_necessary": "For m<=10, put one of two equal-code candidates in a target and leave the other unassigned, then exchange them while fixing all other memberships. For m=11, put them in distinct targets and exchange them. Such target positions always exist because every target has at most two members. Thus any universally identifying common codebook must have eleven distinct words",
+    "all_eleven_word_subsets_checked": 4368,
+    "all_eleven_word_subsets_have_disjoint_pair_collision": true,
+    "eleven_word_collision_witness_stream_sha256": "d445652ba75b92f9ede01ee9d136f8a2f3e5dd8bf048bc1cea25fd36e06c8f57",
+    "why_collision_pairs_disjoint": "Cancelling a shared codeword from x+y=x+z would give y=z, contrary to distinct codewords",
+    "counterexample_template_1": "For b>=1 and m<=9, put colliding pair X or Y in one two-member target. Assign the other m-2 members identically from the seven candidates outside X union Y. The unused alternative pair changes no other target response",
+    "counterexample_template_2": "For b>=2 and m in {10,11}, put disjoint colliding pairs X,Y in two two-member targets and swap them. Assign the other m-4 members identically from the remaining seven candidates",
+    "positive_template": "b=0 uses the distinct four-bit singleton code. For (a,b)=(8,1),(9,1), recover the eight/nine singleton targets first; then recover the pair among the remaining three/two candidates",
+    "positive_average_encoder": "Use the existing injective type-specific M certificate; each new four-query subset selects exactly five candidates, so the same score formula and 13-negative padding remain applicable",
+    "example_common_codewords_decimal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      10,
+      13,
+      14,
+      15
+    ],
+    "example_disjoint_colliding_pairs_candidate_slots": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "example_equal_pair_four_response": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "types": [
+      {
+        "a": 0,
+        "b": 0,
+        "total_members": 0,
+        "status": "TRIVIAL_NO_MEMBERS",
+        "proof_kind": "no members",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "total_members": 1,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "total_members": 2,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "total_members": 3,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 4,
+        "b": 0,
+        "total_members": 4,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "total_members": 5,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 6,
+        "b": 0,
+        "total_members": 6,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 7,
+        "b": 0,
+        "total_members": 7,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 8,
+        "b": 0,
+        "total_members": 8,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 9,
+        "b": 0,
+        "total_members": 9,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 10,
+        "b": 0,
+        "total_members": 10,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 11,
+        "b": 0,
+        "total_members": 11,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "distinct single codewords",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 0,
+        "b": 1,
+        "total_members": 2,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "total_members": 3,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "total_members": 4,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "total_members": 5,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "total_members": 6,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 5,
+        "b": 1,
+        "total_members": 7,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 6,
+        "b": 1,
+        "total_members": 8,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 7,
+        "b": 1,
+        "total_members": 9,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 8,
+        "b": 1,
+        "total_members": 10,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "decode all singles first; remaining candidate pool has at most three; pair sums of distinct codewords among three candidates are unique",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 9,
+        "b": 1,
+        "total_members": 11,
+        "status": "SAT_COMMON_FIXED4",
+        "proof_kind": "decode all singles first; remaining candidate pool has at most three; pair sums of distinct codewords among three candidates are unique",
+        "counterexample_template_instance": null
+      },
+      {
+        "a": 0,
+        "b": 2,
+        "total_members": 4,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ]
+          ],
+          "counts": [
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "total_members": 5,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "counts": [
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "total_members": 6,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "total_members": 7,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "total_members": 8,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 5,
+        "b": 2,
+        "total_members": 9,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 6,
+        "b": 2,
+        "total_members": 10,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 7,
+        "b": 2,
+        "total_members": 11,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "total_members": 6,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ]
+          ],
+          "counts": [
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "total_members": 7,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "total_members": 8,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 3,
+        "b": 3,
+        "total_members": 9,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "total_members": 10,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 5,
+        "b": 3,
+        "total_members": 11,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 0,
+        "b": 4,
+        "total_members": 8,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "total_members": 9,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "one-pair-target substitution; the alternative colliding pair is unassigned",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "total_members": 10,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "total_members": 11,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 0,
+        "b": 5,
+        "total_members": 10,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      },
+      {
+        "a": 1,
+        "b": 5,
+        "total_members": 11,
+        "status": "UNSAT_COMMON_FIXED4",
+        "proof_kind": "two-pair-target exchange",
+        "counterexample_template_instance": {
+          "state_1_candidate_slots": [
+            [
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "state_2_candidate_slots": [
+            [
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "identical_four_responses_per_target": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              2
+            ]
+          ],
+          "counts": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "synthetic_truth_only": true
+        }
+      }
+    ],
+    "summary": {
+      "all_types": 42,
+      "SAT_including_zero": 14,
+      "nonzero_SAT": 13,
+      "UNSAT": 28,
+      "unresolved": 0
+    },
+    "no_adaptive_inference": "UNSAT here does not establish adaptive UNSAT; adaptive (0,1) is proved separately by the first-branch bound"
+  },
+  "target_permutation_symmetry": "For known counts, zero targets can be removed and targets permuted together with their queries, M values, and decoded responses. Type-level feasibility is invariant; labelled target positions need not be re-enumerated. Real queries still map the canonical targets back to their labelled IDs",
+  "non_claims": [
+    "No universal four-query guarantee: type (0,1) disproves it in this count-query model",
+    "Unknown classifications are not impossibility results",
+    "No impossibility claim for arbitrary multilevel confidence scores",
+    "New balanced fixed-four questions are distinct from the used fixed-five questions"
+  ],
+  "source_sha256": "f82cd3147c382ecec6078019e0fcd6442fe1a65a763eebfe2416fb8a5e4d709c",
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "elapsed_seconds": 0.31426320801256225
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "derivative_modules": {
+    "adaptive_three.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/平均回答再生.py",
+      "original_sha256": "9db754739ae28bb62bed332f7779a978c205e99693ecab7408768b08db8aa8df",
+      "adaptation": "Read-only functions ported; historical absolute paths and writing CLI removed; relative public bundle paths used."
+    },
+    "adaptive_lift.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/未判定4型の適応検証/a4b3/分析.py",
+      "original_sha256": "180fe018f250e6be3fa6f1877e0cfcbdce62b583e887e0c9df2acce15f8baa99",
+      "adaptation": "Read-only functions ported; historical absolute paths and writing CLI removed; relative public bundle paths used."
+    },
+    "fixed_certificates.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/independent_fixed_audit.py",
+      "original_sha256": "d70e556b7eac3f901c0084e5b9c0d05a893019f8d359c970a4ab54075543d473",
+      "adaptation": "Read-only functions ported; historical absolute paths and writing CLI removed; relative public bundle paths used."
+    },
+    "binary_bounds.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/fixed_binary_bounds.py",
+      "original_sha256": "f82cd3147c382ecec6078019e0fcd6442fe1a65a763eebfe2416fb8a5e4d709c",
+      "adaptation": "Read-only functions ported; historical absolute paths and writing CLI removed; relative public bundle paths used."
+    },
+    "scalar_bounds.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/4回可能性検証/anchor_a1b1.py",
+      "original_sha256": "c6c8f115ec6aa64b691c153e187e74d5e64f18cd8650fc9d9423fbfdcb8c4333",
+      "adaptation": "Only independent scalar proof functions; all historical Solver imports and writes removed."
+    },
+    "enumeration.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/監査.py",
+      "original_sha256": "ea6b9057699a3d045df05a1e06904edd89a5b22c835258b1642551ffa83f146a",
+      "adaptation": "Chunk payload check and label padding only; official-kit imports/verification removed. Preserved original producer/result SHA256 literals validate release provenance. Historical gzip ranges are retained when bytes match; otherwise concatenated decompression is partitioned by exact certified raw block counts and all raw SHA256 values must match."
+    },
+    "enumerate.py": {
+      "original_path": "攻撃フェーズ/Tashiro/MIA希少/20261011_全配布パターンMIA希少調査/22チーム全列挙/列挙.py",
+      "original_sha256": "a27117ae2182e32f43f6242e9e06421d4293b9d5321ca8da7827ada391e8dfe8",
+      "adaptation": "Original enumeration helpers reused; clinical/reference ID fields, fixed output destination and absolute environment constraint removed. Public abstract metadata is read relatively. Explicit --output-dir required and existing output rejected."
+    }
+  },
+  "old_solver_original_hashes": {
+    "model.py": "8f034458b1f3cb1d5fb29605c31b4c407a3badc09a9ea53d7e167427d928a7e6",
+    "solver.py": "dda0a50cfad52b22aedd776c771c071f4c80fc3687274d622fda1b7f363729a0"
+  },
+  "relocation_map": {
+    "original_BASE/22チーム全列挙/集計/results.json": "../../analysis/universal_distribution_20261011/fixed5/results.json",
+    "original_BASE/4回可能性検証/結果/対象別固定4探索.json": "../../analysis/universal_distribution_20261011/fixed4/search.json",
+    "original_BASE/4回可能性検証/結果/固定4bitと単対象下界.json": "../../analysis/universal_distribution_20261011/fixed4/bounds.json",
+    "original_BASE/4回可能性検証/未判定4型の適応検証/{a1b5,a2b4,a0b5}": "../../analysis/universal_distribution_20261011/adaptive4/{a1b5,a2b4,a0b5}",
+    "old full_depth4_20261007": "../../analysis/full_depth4_20261007"
+  },
+  "new_source_sha256": {
+    "adaptive_lift.py": "aee648ce6ef8c924586fdbdea611c31f95ab611f396e8e70c02311cac0a841b0",
+    "adaptive_three.py": "5ddfe3176e26d6b0dcda59fcb70ed0a28c5e4d61c21cec783336182df3cdad1c",
+    "audit.py": "d399b9a892489e937fef025008b64e3d0efb7be4e04c82d3bc52c18a1512ecf3",
+    "binary_bounds.py": "78de631446a6fae6d0f97122145fed3258b8b2c44c07264830728d0d04c0d4bf",
+    "enumerate.py": "e19a3158dc1c8797bc0a8ad9c31cd68c13f7af4ccd9571cd74d46c95ce220879",
+    "enumeration.py": "a5051c3188c9f28a15e2d7be239d9698822d943de364b6da2a9b8e1eb8442622",
+    "fixed_certificates.py": "696653881738ec947436daa0ecf80606250e8a3873ea93d05c48ee0dc17bd7a3",
+    "scalar_bounds.py": "60b549069f22900e9858cc9afebdf728258bc4f8d4af74d6ad1f64d2436b59ae"
+  },
+  "runtime_policy": "Python 3.12 with -B. audit.py defaults read-only; files are generated only for an explicit new --output-dir. No competition CSV, official kit or candidate record IDs are used. Solver source bytes are checked but solver code is not imported by the audit."
+}

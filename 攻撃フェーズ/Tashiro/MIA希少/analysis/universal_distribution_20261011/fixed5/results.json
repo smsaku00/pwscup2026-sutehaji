@@ -1,0 +1,1443 @@
+{
+  "status": "PASS",
+  "model": "11 candidates, 22 labelled targets, capacity 2, each candidate in at most one target, unassigned allowed",
+  "uses_C_or_public_attribute_matching": false,
+  "fixed_candidate_questions": [
+    [
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    [
+      0,
+      3,
+      6,
+      8,
+      10
+    ],
+    [
+      0,
+      2,
+      5,
+      8,
+      9
+    ],
+    [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  ],
+  "known_count_stage": true,
+  "scoring_convention": "24 rare rows: 11 candidate rows and 13 known nonmember rows; unrounded mean TPR at FPR .01",
+  "padding_policy": "1-person targets by ID, then 2-person targets by ID; attach the type-specific M; keep it for all five questions",
+  "proof": [
+    "Every saved labelled count vector has a valid unique two-mask representation and belongs to one audited type block",
+    "Each nonzero type has injective exact one-query mean values for all independent per-target counts",
+    "Relabelling targets with their M values does not change the mean response table",
+    "The five per-target recovered counts have unique signatures for all 11 single candidates and all 55 pairs",
+    "Composing these properties guarantees recovery of every disjoint individual assignment compatible with each count vector"
+  ],
+  "direct_replay_of_every_individual_assignment": false,
+  "types": [
+    {
+      "type_id": "a0_b0",
+      "a": 0,
+      "b": 0,
+      "zero_targets": 22,
+      "assigned_candidates": 0,
+      "unassigned_candidates": 11,
+      "labelled_patterns": 1,
+      "first_pattern_id": 1,
+      "last_pattern_id": 1,
+      "fixed_five_questions": "TRIVIAL_NO_MEMBERS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [],
+      "independent_response_count": 1,
+      "minimum_gap_exact": null
+    },
+    {
+      "type_id": "a1_b0",
+      "a": 1,
+      "b": 0,
+      "zero_targets": 21,
+      "assigned_candidates": 1,
+      "unassigned_candidates": 10,
+      "labelled_patterns": 22,
+      "first_pattern_id": 2,
+      "last_pattern_id": 23,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 2,
+      "minimum_gap_exact": "23/400"
+    },
+    {
+      "type_id": "a2_b0",
+      "a": 2,
+      "b": 0,
+      "zero_targets": 20,
+      "assigned_candidates": 2,
+      "unassigned_candidates": 9,
+      "labelled_patterns": 231,
+      "first_pattern_id": 24,
+      "last_pattern_id": 254,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 4,
+      "minimum_gap_exact": "23/4000"
+    },
+    {
+      "type_id": "a3_b0",
+      "a": 3,
+      "b": 0,
+      "zero_targets": 19,
+      "assigned_candidates": 3,
+      "unassigned_candidates": 8,
+      "labelled_patterns": 1540,
+      "first_pattern_id": 255,
+      "last_pattern_id": 1794,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 8,
+      "minimum_gap_exact": "23/9000"
+    },
+    {
+      "type_id": "a4_b0",
+      "a": 4,
+      "b": 0,
+      "zero_targets": 18,
+      "assigned_candidates": 4,
+      "unassigned_candidates": 7,
+      "labelled_patterns": 7315,
+      "first_pattern_id": 1795,
+      "last_pattern_id": 9109,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 16,
+      "minimum_gap_exact": "23/16800"
+    },
+    {
+      "type_id": "a5_b0",
+      "a": 5,
+      "b": 0,
+      "zero_targets": 17,
+      "assigned_candidates": 5,
+      "unassigned_candidates": 6,
+      "labelled_patterns": 26334,
+      "first_pattern_id": 9110,
+      "last_pattern_id": 35443,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 32,
+      "minimum_gap_exact": "23/60000"
+    },
+    {
+      "type_id": "a6_b0",
+      "a": 6,
+      "b": 0,
+      "zero_targets": 16,
+      "assigned_candidates": 6,
+      "unassigned_candidates": 5,
+      "labelled_patterns": 74613,
+      "first_pattern_id": 35444,
+      "last_pattern_id": 110056,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 64,
+      "minimum_gap_exact": "23/378000"
+    },
+    {
+      "type_id": "a7_b0",
+      "a": 7,
+      "b": 0,
+      "zero_targets": 15,
+      "assigned_candidates": 7,
+      "unassigned_candidates": 4,
+      "labelled_patterns": 170544,
+      "first_pattern_id": 110057,
+      "last_pattern_id": 280600,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 128,
+      "minimum_gap_exact": "23/588000"
+    },
+    {
+      "type_id": "a8_b0",
+      "a": 8,
+      "b": 0,
+      "zero_targets": 14,
+      "assigned_candidates": 8,
+      "unassigned_candidates": 3,
+      "labelled_patterns": 319770,
+      "first_pattern_id": 280601,
+      "last_pattern_id": 600370,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 256,
+      "minimum_gap_exact": "23/1056000"
+    },
+    {
+      "type_id": "a9_b0",
+      "a": 9,
+      "b": 0,
+      "zero_targets": 13,
+      "assigned_candidates": 9,
+      "unassigned_candidates": 2,
+      "labelled_patterns": 497420,
+      "first_pattern_id": 600371,
+      "last_pattern_id": 1097790,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 512,
+      "minimum_gap_exact": "23/36036000"
+    },
+    {
+      "type_id": "a10_b0",
+      "a": 10,
+      "b": 0,
+      "zero_targets": 12,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 646646,
+      "first_pattern_id": 1097791,
+      "last_pattern_id": 1744436,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 1024,
+      "minimum_gap_exact": "23/40040000"
+    },
+    {
+      "type_id": "a11_b0",
+      "a": 11,
+      "b": 0,
+      "zero_targets": 11,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 705432,
+      "first_pattern_id": 1744437,
+      "last_pattern_id": 2449868,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        17
+      ],
+      "M_2person_targets_in_ID_order": [],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "padding_2person_targets": [],
+      "independent_response_count": 2048,
+      "minimum_gap_exact": "23/44044000"
+    },
+    {
+      "type_id": "a0_b1",
+      "a": 0,
+      "b": 1,
+      "zero_targets": 21,
+      "assigned_candidates": 2,
+      "unassigned_candidates": 9,
+      "labelled_patterns": 22,
+      "first_pattern_id": 2449869,
+      "last_pattern_id": 2449890,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 3,
+      "minimum_gap_exact": "11/400"
+    },
+    {
+      "type_id": "a1_b1",
+      "a": 1,
+      "b": 1,
+      "zero_targets": 20,
+      "assigned_candidates": 3,
+      "unassigned_candidates": 8,
+      "labelled_patterns": 462,
+      "first_pattern_id": 2449891,
+      "last_pattern_id": 2450352,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 6,
+      "minimum_gap_exact": "7/1200"
+    },
+    {
+      "type_id": "a2_b1",
+      "a": 2,
+      "b": 1,
+      "zero_targets": 19,
+      "assigned_candidates": 4,
+      "unassigned_candidates": 7,
+      "labelled_patterns": 4620,
+      "first_pattern_id": 2450353,
+      "last_pattern_id": 2454972,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 12,
+      "minimum_gap_exact": "1/18000"
+    },
+    {
+      "type_id": "a3_b1",
+      "a": 3,
+      "b": 1,
+      "zero_targets": 18,
+      "assigned_candidates": 5,
+      "unassigned_candidates": 6,
+      "labelled_patterns": 29260,
+      "first_pattern_id": 2454973,
+      "last_pattern_id": 2484232,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 24,
+      "minimum_gap_exact": "1/24000"
+    },
+    {
+      "type_id": "a4_b1",
+      "a": 4,
+      "b": 1,
+      "zero_targets": 17,
+      "assigned_candidates": 6,
+      "unassigned_candidates": 5,
+      "labelled_patterns": 131670,
+      "first_pattern_id": 2484233,
+      "last_pattern_id": 2615902,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 48,
+      "minimum_gap_exact": "1/30000"
+    },
+    {
+      "type_id": "a5_b1",
+      "a": 5,
+      "b": 1,
+      "zero_targets": 16,
+      "assigned_candidates": 7,
+      "unassigned_candidates": 4,
+      "labelled_patterns": 447678,
+      "first_pattern_id": 2615903,
+      "last_pattern_id": 3063580,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 96,
+      "minimum_gap_exact": "1/56000"
+    },
+    {
+      "type_id": "a6_b1",
+      "a": 6,
+      "b": 1,
+      "zero_targets": 15,
+      "assigned_candidates": 8,
+      "unassigned_candidates": 3,
+      "labelled_patterns": 1193808,
+      "first_pattern_id": 3063581,
+      "last_pattern_id": 4257388,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 192,
+      "minimum_gap_exact": "1/252000"
+    },
+    {
+      "type_id": "a7_b1",
+      "a": 7,
+      "b": 1,
+      "zero_targets": 14,
+      "assigned_candidates": 9,
+      "unassigned_candidates": 2,
+      "labelled_patterns": 2558160,
+      "first_pattern_id": 4257389,
+      "last_pattern_id": 6815548,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 384,
+      "minimum_gap_exact": "1/288000"
+    },
+    {
+      "type_id": "a8_b1",
+      "a": 8,
+      "b": 1,
+      "zero_targets": 13,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 4476780,
+      "first_pattern_id": 6815549,
+      "last_pattern_id": 11292328,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 768,
+      "minimum_gap_exact": "1/1188000"
+    },
+    {
+      "type_id": "a9_b1",
+      "a": 9,
+      "b": 1,
+      "zero_targets": 12,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 6466460,
+      "first_pattern_id": 11292329,
+      "last_pattern_id": 17758788,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "M_2person_targets_in_ID_order": [
+        5
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "padding_2person_targets": [
+        0
+      ],
+      "independent_response_count": 1536,
+      "minimum_gap_exact": "1/5460000"
+    },
+    {
+      "type_id": "a0_b2",
+      "a": 0,
+      "b": 2,
+      "zero_targets": 20,
+      "assigned_candidates": 4,
+      "unassigned_candidates": 7,
+      "labelled_patterns": 231,
+      "first_pattern_id": 17758789,
+      "last_pattern_id": 17759019,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 9,
+      "minimum_gap_exact": "11/4000"
+    },
+    {
+      "type_id": "a1_b2",
+      "a": 1,
+      "b": 2,
+      "zero_targets": 19,
+      "assigned_candidates": 5,
+      "unassigned_candidates": 6,
+      "labelled_patterns": 4620,
+      "first_pattern_id": 17759020,
+      "last_pattern_id": 17763639,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 18,
+      "minimum_gap_exact": "1/1200"
+    },
+    {
+      "type_id": "a2_b2",
+      "a": 2,
+      "b": 2,
+      "zero_targets": 18,
+      "assigned_candidates": 6,
+      "unassigned_candidates": 5,
+      "labelled_patterns": 43890,
+      "first_pattern_id": 17763640,
+      "last_pattern_id": 17807529,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 36,
+      "minimum_gap_exact": "1/24000"
+    },
+    {
+      "type_id": "a3_b2",
+      "a": 3,
+      "b": 2,
+      "zero_targets": 17,
+      "assigned_candidates": 7,
+      "unassigned_candidates": 4,
+      "labelled_patterns": 263340,
+      "first_pattern_id": 17807530,
+      "last_pattern_id": 18070869,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 72,
+      "minimum_gap_exact": "1/30000"
+    },
+    {
+      "type_id": "a4_b2",
+      "a": 4,
+      "b": 2,
+      "zero_targets": 16,
+      "assigned_candidates": 8,
+      "unassigned_candidates": 3,
+      "labelled_patterns": 1119195,
+      "first_pattern_id": 18070870,
+      "last_pattern_id": 19190064,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 144,
+      "minimum_gap_exact": "1/252000"
+    },
+    {
+      "type_id": "a5_b2",
+      "a": 5,
+      "b": 2,
+      "zero_targets": 15,
+      "assigned_candidates": 9,
+      "unassigned_candidates": 2,
+      "labelled_patterns": 3581424,
+      "first_pattern_id": 19190065,
+      "last_pattern_id": 22771488,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 288,
+      "minimum_gap_exact": "1/294000"
+    },
+    {
+      "type_id": "a6_b2",
+      "a": 6,
+      "b": 2,
+      "zero_targets": 14,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 8953560,
+      "first_pattern_id": 22771489,
+      "last_pattern_id": 31725048,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 576,
+      "minimum_gap_exact": "1/2016000"
+    },
+    {
+      "type_id": "a7_b2",
+      "a": 7,
+      "b": 2,
+      "zero_targets": 13,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 17907120,
+      "first_pattern_id": 31725049,
+      "last_pattern_id": 49632168,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "padding_2person_targets": [
+        0,
+        1
+      ],
+      "independent_response_count": 1152,
+      "minimum_gap_exact": "1/2268000"
+    },
+    {
+      "type_id": "a0_b3",
+      "a": 0,
+      "b": 3,
+      "zero_targets": 19,
+      "assigned_candidates": 6,
+      "unassigned_candidates": 5,
+      "labelled_patterns": 1540,
+      "first_pattern_id": 49632169,
+      "last_pattern_id": 49633708,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 27,
+      "minimum_gap_exact": "11/31500"
+    },
+    {
+      "type_id": "a1_b3",
+      "a": 1,
+      "b": 3,
+      "zero_targets": 18,
+      "assigned_candidates": 7,
+      "unassigned_candidates": 4,
+      "labelled_patterns": 29260,
+      "first_pattern_id": 49633709,
+      "last_pattern_id": 49662968,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 54,
+      "minimum_gap_exact": "1/33600"
+    },
+    {
+      "type_id": "a2_b3",
+      "a": 2,
+      "b": 3,
+      "zero_targets": 17,
+      "assigned_candidates": 8,
+      "unassigned_candidates": 3,
+      "labelled_patterns": 263340,
+      "first_pattern_id": 49662969,
+      "last_pattern_id": 49926308,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [
+        0,
+        1
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 108,
+      "minimum_gap_exact": "1/105000"
+    },
+    {
+      "type_id": "a3_b3",
+      "a": 3,
+      "b": 3,
+      "zero_targets": 16,
+      "assigned_candidates": 9,
+      "unassigned_candidates": 2,
+      "labelled_patterns": 1492260,
+      "first_pattern_id": 49926309,
+      "last_pattern_id": 51418568,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 216,
+      "minimum_gap_exact": "1/126000"
+    },
+    {
+      "type_id": "a4_b3",
+      "a": 4,
+      "b": 3,
+      "zero_targets": 15,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 5969040,
+      "first_pattern_id": 51418569,
+      "last_pattern_id": 57387608,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 432,
+      "minimum_gap_exact": "1/294000"
+    },
+    {
+      "type_id": "a5_b3",
+      "a": 5,
+      "b": 3,
+      "zero_targets": 14,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 17907120,
+      "first_pattern_id": 57387609,
+      "last_pattern_id": 75294728,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3
+      ],
+      "independent_response_count": 864,
+      "minimum_gap_exact": "1/672000"
+    },
+    {
+      "type_id": "a0_b4",
+      "a": 0,
+      "b": 4,
+      "zero_targets": 18,
+      "assigned_candidates": 8,
+      "unassigned_candidates": 3,
+      "labelled_patterns": 7315,
+      "first_pattern_id": 75294729,
+      "last_pattern_id": 75302043,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "independent_response_count": 81,
+      "minimum_gap_exact": "11/168000"
+    },
+    {
+      "type_id": "a1_b4",
+      "a": 1,
+      "b": 4,
+      "zero_targets": 17,
+      "assigned_candidates": 9,
+      "unassigned_candidates": 2,
+      "labelled_patterns": 131670,
+      "first_pattern_id": 75302044,
+      "last_pattern_id": 75433713,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "independent_response_count": 162,
+      "minimum_gap_exact": "1/42000"
+    },
+    {
+      "type_id": "a2_b4",
+      "a": 2,
+      "b": 4,
+      "zero_targets": 16,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 1119195,
+      "first_pattern_id": 75433714,
+      "last_pattern_id": 76552908,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding_1person_targets": [
+        0,
+        1
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "independent_response_count": 324,
+      "minimum_gap_exact": "1/252000"
+    },
+    {
+      "type_id": "a3_b4",
+      "a": 3,
+      "b": 4,
+      "zero_targets": 15,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 5969040,
+      "first_pattern_id": 76552909,
+      "last_pattern_id": 82521948,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5,
+        6,
+        7
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "padding_1person_targets": [
+        0,
+        1,
+        2
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "independent_response_count": 648,
+      "minimum_gap_exact": "1/588000"
+    },
+    {
+      "type_id": "a0_b5",
+      "a": 0,
+      "b": 5,
+      "zero_targets": 17,
+      "assigned_candidates": 10,
+      "unassigned_candidates": 1,
+      "labelled_patterns": 26334,
+      "first_pattern_id": 82521949,
+      "last_pattern_id": 82548282,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "padding_1person_targets": [],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "independent_response_count": 243,
+      "minimum_gap_exact": "11/1260000"
+    },
+    {
+      "type_id": "a1_b5",
+      "a": 1,
+      "b": 5,
+      "zero_targets": 16,
+      "assigned_candidates": 11,
+      "unassigned_candidates": 0,
+      "labelled_patterns": 447678,
+      "first_pattern_id": 82548283,
+      "last_pattern_id": 82995960,
+      "fixed_five_questions": "PASS",
+      "M_1person_targets_in_ID_order": [
+        5
+      ],
+      "M_2person_targets_in_ID_order": [
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "padding_1person_targets": [
+        0
+      ],
+      "padding_2person_targets": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "independent_response_count": 486,
+      "minimum_gap_exact": "1/504000"
+    }
+  ],
+  "counts_by_assigned_candidates": {
+    "0": 1,
+    "1": 22,
+    "2": 253,
+    "3": 2002,
+    "4": 12166,
+    "5": 60214,
+    "6": 251713,
+    "7": 910822,
+    "8": 2903428,
+    "9": 8260934,
+    "10": 21191555,
+    "11": 49402850
+  },
+  "summary": {
+    "all_labelled_patterns": 82995960,
+    "nonzero_patterns_proved": 82995959,
+    "zero_patterns_trivial": 1,
+    "types": 42,
+    "nonzero_types_proved": 41,
+    "exactly_11_patterns": 49402850,
+    "exactly_11_types": 6,
+    "failed_patterns": 0,
+    "unresolved_patterns": 0,
+    "independent_mean_answers_recomputed": 13103,
+    "local_signatures_unique": {
+      "1": 11,
+      "2": 55
+    },
+    "minimum_mean_gap_exact": "1/5460000"
+  },
+  "input_sha256": {
+    "parent/結果/results.json": "e939d3bd8d4eabd8e8a5367985ad16ad0fa9bf89acc4e4d262f356febdd5ceb3",
+    "結果/列挙記録.json": "bc0b5fd85bf9bac882ddb2779c747dcd2b32a1be85f29d25f0650c69b54c0ee6",
+    "結果/独立監査.json": "74a821ffe2a4c6050972ee2e12f6cf7637db007619572d1c94f058375ce4b292"
+  },
+  "analysis_source_sha256": "de5fa8d9b7b6c3b625d9c1f50df3724983ef9dc892429e61eb808d8d176027fb",
+  "python_version": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]"
+}

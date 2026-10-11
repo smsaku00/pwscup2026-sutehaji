@@ -1,0 +1,848 @@
+{
+  "status": "PASS_AUDIT_OF_AVAILABLE_FIXED4_CERTIFICATES",
+  "scope": "Known counts, eleven candidates, at most two members per target, no overlapping target memberships, at most eleven members in all targets; target-specific fixed four binary questions; exact mean responses; only the eight types with b>=2 and m in {10,11}",
+  "excluded_claims": [
+    "UNKNOWN is not UNSAT",
+    "No proof of adaptive impossibility from this audit",
+    "No claim about arbitrary multilevel confidence submissions",
+    "No claim that four displayed decimal digits suffice",
+    "No direct enumeration of all singleton permutations: they are covered by unique singleton words and residual-key composition"
+  ],
+  "inputs": [
+    {
+      "path": "結果/対象別固定4探索.json",
+      "sha256": "e270d87aab4926f8b4d1a3119728dff8fe2ee90f2c53094600f97174a40643f4"
+    },
+    {
+      "path": "../結果/results.json",
+      "sha256": "e939d3bd8d4eabd8e8a5367985ad16ad0fa9bf89acc4e4d262f356febdd5ceb3"
+    },
+    {
+      "path": "結果/固定4最適化_b3_m10.json",
+      "sha256": "9159414fbdbd3cfb611e88b65625514154658036e68b471adc44a4259d7621cb"
+    },
+    {
+      "path": "結果/固定4最適化_b4_m10.json",
+      "sha256": "7146705536cff2206545bd69c2805c2d18a3e534e89aefaa1e47e1b8451ef378"
+    },
+    {
+      "path": "結果/固定4最適化_b4_m11.json",
+      "sha256": "4b4ae4382d30041dfd392112a324114ff2322afdad9e7d78dfca2bee05c5ac39"
+    },
+    {
+      "path": "結果/固定4最適化_b5_m11.json",
+      "sha256": "572ee630d0d8cde39888a31ef45cce0f1ac5fc1691d9a9d3c1d04ef211ba4f6f"
+    }
+  ],
+  "source_search_sha256": "b541d53575b61da82db0b12b4d9f5071af0c7453d6e4c37d2a9c59ff3575f2de",
+  "source_audit_sha256": "d70e556b7eac3f901c0084e5b9c0d05a893019f8d359c970a4ab54075543d473",
+  "attempts": [
+    {
+      "a": 7,
+      "b": 2,
+      "status": "SAT",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Constructive certificate independently checked"
+    },
+    {
+      "a": 6,
+      "b": 2,
+      "status": "SAT",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Constructive certificate independently checked"
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "status": "SAT",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Constructive certificate independently checked"
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "status": "UNKNOWN",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "status": "UNKNOWN",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "status": "UNKNOWN",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "status": "UNKNOWN",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "status": "UNKNOWN",
+      "source": "結果/対象別固定4探索.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "status": "UNKNOWN",
+      "source": "結果/固定4最適化_b3_m10.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "status": "UNKNOWN",
+      "source": "結果/固定4最適化_b4_m10.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "status": "SAT",
+      "source": "結果/固定4最適化_b4_m11.json",
+      "interpretation": "Constructive certificate independently checked"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "status": "UNKNOWN",
+      "source": "結果/固定4最適化_b5_m11.json",
+      "interpretation": "Bounded search did not find a solution; no impossibility conclusion"
+    }
+  ],
+  "certificate_audits": [
+    {
+      "a": 7,
+      "b": 2,
+      "total_members": 11,
+      "status": "PASS_INDEPENDENT_FULL_PAIR_RESIDUAL_CERTIFICATE",
+      "certificate_source": "結果/対象別固定4探索.json",
+      "pair_state_count": 1980,
+      "residual_keys_checked": 1980,
+      "distinct_residual_keys": 1980,
+      "collisions": 0,
+      "independent_key_stream_sha256": "1c5e91f26856e1417cc3f4aedbfed4fd445731a763f31b215fc4e2cc5df98c5d",
+      "key_encoding": "four-bit OR + four-bit AND per labelled pair target, eight-bit blocks; then eleven-bit residual candidate mask",
+      "single_questions_by_round": [
+        [
+          1,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          8,
+          10
+        ],
+        [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "pair_questions_by_round": [
+        [
+          [
+            2,
+            3,
+            6,
+            9,
+            10
+          ],
+          [
+            0,
+            3,
+            4,
+            5,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          [
+            0,
+            2,
+            3,
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            3,
+            4,
+            8,
+            10
+          ],
+          [
+            1,
+            2,
+            3,
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5,
+            6,
+            9,
+            10
+          ],
+          [
+            0,
+            2,
+            4,
+            5,
+            10
+          ]
+        ]
+      ],
+      "full_disjoint_assignment_count_covered_by_composition": 9979200,
+      "mean_encoder": {
+        "status": "PASS_EXACT_FRACTION_ALPHABET",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          1
+        ],
+        "response_count": 1152,
+        "minimum_gap_exact": "1/2268000",
+        "candidate_high_count_each_round": 5,
+        "known_negative_count": 13,
+        "formula": "per-target (24-n)*h/[100*n*(M-h)], averaged over positive targets",
+        "construction": "For each target and each round select the five code-bit candidates and the first M-5 known nonmembers; every remaining row is low. The same per-target M is used in all four rounds",
+        "scope": "Exact unrounded mean response; lower-precision leaderboard display alone is not assumed sufficient"
+      },
+      "composition_proof": "The exact mean alphabet recovers all per-target counts in each round. Unique single-target words recover each singleton identity. Their complement R is therefore fixed. For m=11, R is the pair-used mask; for m=10, R consists of the pair-used mask and one unassigned candidate. The exhaustive residual-key check proves that each possible R and all four pair-target responses identify at most one ordered collection of disjoint pairs. Thus every full assignment is identified, including all singleton target permutations",
+      "elapsed_seconds": 0.008379750011954457
+    },
+    {
+      "a": 6,
+      "b": 2,
+      "total_members": 10,
+      "status": "PASS_INDEPENDENT_FULL_PAIR_RESIDUAL_CERTIFICATE",
+      "certificate_source": "結果/対象別固定4探索.json",
+      "pair_state_count": 1980,
+      "residual_keys_checked": 13860,
+      "distinct_residual_keys": 13860,
+      "collisions": 0,
+      "independent_key_stream_sha256": "f6c45d8e76bd41cec000be3758e94844f0074010145a31e4b057a65cb999f162",
+      "key_encoding": "four-bit OR + four-bit AND per labelled pair target, eight-bit blocks; then eleven-bit residual candidate mask",
+      "single_questions_by_round": [
+        [
+          1,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          8,
+          10
+        ],
+        [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "pair_questions_by_round": [
+        [
+          [
+            0,
+            1,
+            3,
+            4,
+            8
+          ],
+          [
+            0,
+            1,
+            3,
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            4,
+            5,
+            6,
+            9
+          ],
+          [
+            1,
+            3,
+            4,
+            6,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            3,
+            5,
+            6,
+            10
+          ],
+          [
+            0,
+            1,
+            4,
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            7
+          ]
+        ]
+      ],
+      "full_disjoint_assignment_count_covered_by_composition": 9979200,
+      "mean_encoder": {
+        "status": "PASS_EXACT_FRACTION_ALPHABET",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          5,
+          6
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          1
+        ],
+        "response_count": 576,
+        "minimum_gap_exact": "1/2016000",
+        "candidate_high_count_each_round": 5,
+        "known_negative_count": 13,
+        "formula": "per-target (24-n)*h/[100*n*(M-h)], averaged over positive targets",
+        "construction": "For each target and each round select the five code-bit candidates and the first M-5 known nonmembers; every remaining row is low. The same per-target M is used in all four rounds",
+        "scope": "Exact unrounded mean response; lower-precision leaderboard display alone is not assumed sufficient"
+      },
+      "composition_proof": "The exact mean alphabet recovers all per-target counts in each round. Unique single-target words recover each singleton identity. Their complement R is therefore fixed. For m=11, R is the pair-used mask; for m=10, R consists of the pair-used mask and one unassigned candidate. The exhaustive residual-key check proves that each possible R and all four pair-target responses identify at most one ordered collection of disjoint pairs. Thus every full assignment is identified, including all singleton target permutations",
+      "elapsed_seconds": 0.007079667004290968
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "total_members": 11,
+      "status": "PASS_INDEPENDENT_FULL_PAIR_RESIDUAL_CERTIFICATE",
+      "certificate_source": "結果/対象別固定4探索.json",
+      "pair_state_count": 41580,
+      "residual_keys_checked": 41580,
+      "distinct_residual_keys": 41580,
+      "collisions": 0,
+      "independent_key_stream_sha256": "0c3783d17d8e06ffef44a11059dadf68243a25cab38a7417a775be408535c747",
+      "key_encoding": "four-bit OR + four-bit AND per labelled pair target, eight-bit blocks; then eleven-bit residual candidate mask",
+      "single_questions_by_round": [
+        [
+          1,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          8,
+          10
+        ],
+        [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "pair_questions_by_round": [
+        [
+          [
+            4,
+            5,
+            8,
+            9,
+            10
+          ],
+          [
+            1,
+            3,
+            5,
+            6,
+            8
+          ],
+          [
+            1,
+            6,
+            8,
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            3,
+            4,
+            6,
+            10
+          ],
+          [
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          [
+            1,
+            4,
+            5,
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            2,
+            4,
+            6,
+            8
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            10
+          ],
+          [
+            2,
+            4,
+            5,
+            6,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            5,
+            8,
+            10
+          ],
+          [
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            0,
+            1,
+            5,
+            6,
+            9
+          ]
+        ]
+      ],
+      "full_disjoint_assignment_count_covered_by_composition": 4989600,
+      "mean_encoder": {
+        "status": "PASS_EXACT_FRACTION_ALPHABET",
+        "M": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          5,
+          6,
+          8
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1,
+          3
+        ],
+        "response_count": 864,
+        "minimum_gap_exact": "1/672000",
+        "candidate_high_count_each_round": 5,
+        "known_negative_count": 13,
+        "formula": "per-target (24-n)*h/[100*n*(M-h)], averaged over positive targets",
+        "construction": "For each target and each round select the five code-bit candidates and the first M-5 known nonmembers; every remaining row is low. The same per-target M is used in all four rounds",
+        "scope": "Exact unrounded mean response; lower-precision leaderboard display alone is not assumed sufficient"
+      },
+      "composition_proof": "The exact mean alphabet recovers all per-target counts in each round. Unique single-target words recover each singleton identity. Their complement R is therefore fixed. For m=11, R is the pair-used mask; for m=10, R consists of the pair-used mask and one unassigned candidate. The exhaustive residual-key check proves that each possible R and all four pair-target responses identify at most one ordered collection of disjoint pairs. Thus every full assignment is identified, including all singleton target permutations",
+      "elapsed_seconds": 0.03278441698057577
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "total_members": 11,
+      "status": "PASS_INDEPENDENT_FULL_PAIR_RESIDUAL_CERTIFICATE",
+      "certificate_source": "結果/固定4最適化_b4_m11.json",
+      "pair_state_count": 415800,
+      "residual_keys_checked": 415800,
+      "distinct_residual_keys": 415800,
+      "collisions": 0,
+      "independent_key_stream_sha256": "8284295a9a55f13f0bf24f9c0f2331eff84fb62baac37745b958d6b2a0256601",
+      "key_encoding": "four-bit OR + four-bit AND per labelled pair target, eight-bit blocks; then eleven-bit residual candidate mask",
+      "single_questions_by_round": [
+        [
+          1,
+          5,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          4,
+          5,
+          8,
+          10
+        ],
+        [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "pair_questions_by_round": [
+        [
+          [
+            0,
+            1,
+            5,
+            7,
+            8
+          ],
+          [
+            0,
+            4,
+            6,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            4,
+            10
+          ],
+          [
+            0,
+            3,
+            5,
+            8,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            2,
+            6,
+            8,
+            10
+          ],
+          [
+            3,
+            4,
+            5,
+            6,
+            10
+          ],
+          [
+            1,
+            2,
+            3,
+            7,
+            8
+          ],
+          [
+            0,
+            1,
+            2,
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            4,
+            6,
+            10
+          ],
+          [
+            2,
+            4,
+            5,
+            8,
+            10
+          ],
+          [
+            0,
+            2,
+            3,
+            8,
+            9
+          ],
+          [
+            1,
+            2,
+            5,
+            7,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            3,
+            5,
+            6,
+            8
+          ],
+          [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          [
+            0,
+            1,
+            4,
+            6,
+            8
+          ],
+          [
+            0,
+            1,
+            5,
+            8,
+            10
+          ]
+        ]
+      ],
+      "full_disjoint_assignment_count_covered_by_composition": 2494800,
+      "mean_encoder": {
+        "status": "PASS_EXACT_FRACTION_ALPHABET",
+        "M": [
+          5,
+          6,
+          7,
+          5,
+          6,
+          8,
+          9
+        ],
+        "padding": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          3,
+          4
+        ],
+        "response_count": 648,
+        "minimum_gap_exact": "1/588000",
+        "candidate_high_count_each_round": 5,
+        "known_negative_count": 13,
+        "formula": "per-target (24-n)*h/[100*n*(M-h)], averaged over positive targets",
+        "construction": "For each target and each round select the five code-bit candidates and the first M-5 known nonmembers; every remaining row is low. The same per-target M is used in all four rounds",
+        "scope": "Exact unrounded mean response; lower-precision leaderboard display alone is not assumed sufficient"
+      },
+      "composition_proof": "The exact mean alphabet recovers all per-target counts in each round. Unique single-target words recover each singleton identity. Their complement R is therefore fixed. For m=11, R is the pair-used mask; for m=10, R consists of the pair-used mask and one unassigned candidate. The exhaustive residual-key check proves that each possible R and all four pair-target responses identify at most one ordered collection of disjoint pairs. Thus every full assignment is identified, including all singleton target permutations",
+      "elapsed_seconds": 0.29521650000242516
+    }
+  ],
+  "types": [
+    {
+      "a": 6,
+      "b": 2,
+      "total_members": 10,
+      "status": "SAT_INDEPENDENTLY_VERIFIED",
+      "verified_certificate_count": 1
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "total_members": 11,
+      "status": "SAT_INDEPENDENTLY_VERIFIED",
+      "verified_certificate_count": 1
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "total_members": 10,
+      "status": "UNKNOWN",
+      "verified_certificate_count": 0
+    },
+    {
+      "a": 5,
+      "b": 3,
+      "total_members": 11,
+      "status": "SAT_INDEPENDENTLY_VERIFIED",
+      "verified_certificate_count": 1
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "total_members": 10,
+      "status": "UNKNOWN",
+      "verified_certificate_count": 0
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "total_members": 11,
+      "status": "SAT_INDEPENDENTLY_VERIFIED",
+      "verified_certificate_count": 1
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "total_members": 10,
+      "status": "UNKNOWN",
+      "verified_certificate_count": 0
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "total_members": 11,
+      "status": "UNKNOWN",
+      "verified_certificate_count": 0
+    }
+  ],
+  "summary": {
+    "types": 8,
+    "independently_verified_SAT_types": 4,
+    "preserved_UNKNOWN_types": 4,
+    "independently_verified_certificates": 4,
+    "total_pair_states_checked": 461340,
+    "total_residual_keys_checked": 473220,
+    "total_collisions": 0
+  },
+  "python": "3.12.15 (main, Sep 30 2026, 22:04:19) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "elapsed_seconds": 0.3461793329915963
+}
