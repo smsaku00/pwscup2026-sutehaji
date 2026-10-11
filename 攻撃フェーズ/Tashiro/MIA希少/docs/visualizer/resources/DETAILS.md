@@ -41,6 +41,10 @@ TPR@FPR=0.01 = 0.01 × (h/m) ÷ ((n−h)/(24−m))
 
 第1・2回の実設定・102通り・出典のGit blobは [intro_history.json](intro_history.json) に保存しています。[実履歴の導出](../../../../../MIA/第1回と第2回からの希少MIA人数の導出.md)／[公式採点コード](https://github.com/pwscup/pwscup2026-kit/blob/main-attack-20260928/starter/src/pwscup2026/scoring/attack_score.py)／[ROCの定義](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html)。ROCと実履歴の操作を見ても、教材の所属ID・結果・平均点入力は変わりません。
 
+「人数を自分で選ぶ」では、保存済み102配置以外のm配置も試せます。22チームそれぞれの0・1・2人を変更し、`K＝mが正のチーム数` と2回の予測平均を同時に確認します。2回とも同じm配置を使い、各回の既知の提出設定nからTPRを計算します。1人を2人に変えるとTPRが変わり、Kは同じです。0人と1・2人を切り替えるとKも変わります。分母は所属人数の合計ではありません。各予測平均は正確な分数でも表示します。
+
+自分で変更したm配置は段階を進めても保存され、各回の実値との一致／不一致を確認できます。K＝0の平均は未定義と表示し、ゼロとして照合しません。合計11人超の配置は共有条件の外と表示します。候補11人の所属人数を表す仮定であり、個人IDの特定ではありません。
+
 ## 非適応5回版と候補の絞り込みの使い方
 
 1. 導入の説明から **⓪ 5回に振り分ける** に進みます。1レコードを選び、5回のどこに含めるかを横に読みます。**IDを振り分ける** で、そのIDが含める列の下へ移動します。次のクリックは **次のレコードを見る** ところで止まります。11レコードを進めると、各列の対象IDが5件ずつ集まります。同じレコードを複数の提出に含める構成です。**11レコードを順に再生** は1レコードにつき約3.4秒で自動表示し、停止・選択変更・リセット・別画面への移動で止まります。**全部の振り分けを見る** も選べます。**① 提出結果へ** で全体表に進みます。**② 候補の絞り込み** と **両方** も選べます。①・②・両方の切り替えでは、Team・表示済みの結果・候補数・再生中の進行を引き継ぎます。ROCの説明や⓪に戻ると結果の自動再生を止め、表示中の結果を手動で絞れる状態に戻します。振り分けの進行は、所属ID・結果の説明例とは別に保持します。
@@ -111,6 +115,7 @@ GitHubは100 MiBを超える通常ファイルを拒否するため、このサ�
 - 5回版は、全11＋55候補・49質問ノード・66葉・深さ上限・padding・216平均点・説明経路を照合しています。[5回版の検証記録](../../../tools/visualizer/validation_five_core.json)。操作処理の記録は [validation_five_ui.json](../../../tools/visualizer/validation_five_ui.json) に保存しています。
 - 従来の適応版2列の教材は、全11人・55組それぞれの5行の質問ID、前後の候補数、回答別の全列挙、候補カードの色と合成結果、途中で確定した行、例の切り替えを照合済みです。[適応教材の検証記録](../../../tools/visualizer/validation_lesson_ui.json)
 - ROCは63通りの人数設定について、24行の確信度を並べて同点をまとめる独立計算と照合しました。全102配置の第1・2回予測平均点、全22チームの実同点人数、第2回でN015だけ一致すること、教材の15種類のチームTPR、平均点から横6桁へ読む例、手動進行と状態の保持も確認しています。[ROC・実履歴の検証記録](../../../tools/visualizer/validation_fixed_intro.json)。実ブラウザの描画確認ではなく、模擬DOMと数値の照合です。
+- 第1・2回の人数選択は、22チーム×0・1・2人の66操作、保存済み102配置の読み込み、その他の人数配置、K＝0、合計11人の境界と条件外、段階を変えたときの仮定の保持、手動操作でタイマーがないことを検証しました。各回の予測平均は24行のROCから独立計算して照合しています。[人数選択の検証記録](../../../tools/visualizer/validation_fixed_counts.json)
 - 非適応版の固定コードは、全11人・55組の整数回答列の一意性、330個の途中候補集合、padding、216平均点を照合済みです。[固定コードの検証記録](../../../tools/visualizer/validation_fixed_core.json)。振り分けの表示は、11レコード×5提出の55セル、各列の対象ID、手動11回・自動11回、停止・画面切替・選択・リセット時に古い再生が反映されないことを照合しました。候補の教材は、全11人・55組×6段階を全6チームで確認し、手動・自動それぞれ全330回の「結果表示 → 不一致の行・線を候補から外す → 候補集合の更新」を独立した列挙と照合しました。55本の線と2人組の一対一対応、候補外の行を薄く残す表示、未表示結果の空欄、上部のTeam・ID・人数の切り替え、①のみ・②のみ・両方の切り替えと状態の引き継ぎ、3段階の速度、手動の待機中にタイマーがないこと、途中停止からの手動への引き継ぎ、変更・停止・リセット、平均点照合1,080ケースも検証しています。[候補線の検証記録](../../../tools/visualizer/validation_fixed_ui.json)。
 - 足し算の旧表示は [validation_fixed_patterns_ui.json](../../../tools/visualizer/validation_fixed_patterns_ui.json)、55組の旧表示は [validation_fixed_pairs_ui.json](../../../tools/visualizer/validation_fixed_pairs_ui.json)、長い旧資料は [validation_fixed_reference_ui.json](../../../tools/visualizer/validation_fixed_reference_ui.json) で照合しています。旧表示の移動に伴う相対リンク以外は、旧HTMLとのbyte一致を確認しました。SVGの接続位置と曲線の範囲は数式と模擬DOMで検証し、実ブラウザの描画確認とは区別しています。
 - GitHubのmain `5abecbc7efd8cc626b8bd9d517dd477ad1ae9267` にある元証明書と、使用したローカル証明書のGit blob SHA一致も確認しました。
@@ -132,6 +137,9 @@ node tools/visualizer/test_five_ui.cjs --write-report
 node tools/visualizer/test_lesson_ui.cjs --write-report
 node tools/visualizer/test_fixed_core.cjs --write-report
 node tools/visualizer/test_fixed_ui.cjs --write-report
+node tools/visualizer/test_fixed_intro.cjs --write-report
+node tools/visualizer/test_fixed_mean.cjs --write-report
+node tools/visualizer/test_fixed_counts.cjs --write-report
 node tools/visualizer/test_fixed_pairs_ui.cjs --write-report
 node tools/visualizer/test_fixed_patterns_ui.cjs --write-report
 node tools/visualizer/test_fixed_reference_ui.cjs --write-report

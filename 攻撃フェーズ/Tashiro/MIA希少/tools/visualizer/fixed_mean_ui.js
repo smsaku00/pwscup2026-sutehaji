@@ -32,7 +32,8 @@
     const c = data.intro.conditions, sizes = c[round === 1 ? 'round1_sizes' : 'round2_sizes'];
     const active = c.teams.map((team, i) => ({team, members: row.counts[team], high: sizes[i]})).filter(x => x.members);
     const scores = active.map(x => score(x.high, x.members, x.members)), total = sum(scores);
-    return {contributions: active.map((x, i) => ({...x, exact: text(scores[i]), value: number(scores[i])})), denominator: active.length, excluded: c.teams.length - active.length, sumExact: text(total), meanExact: text(fraction(total.n, total.d * BigInt(active.length))), meanValue: number(total) / active.length};
+    const average = active.length ? fraction(total.n, total.d * BigInt(active.length)) : null;
+    return {contributions: active.map((x, i) => ({...x, exact: text(scores[i]), value: number(scores[i])})), denominator: active.length, excluded: c.teams.length - active.length, sumExact: text(total), meanExact: average ? text(average) : null, meanValue: average ? number(average) : null};
   }
   function candidatePlot() {
     const sorted = candidates.slice().sort((a, b) => a.meanValue - b.meanValue), max = sorted[sorted.length - 1].meanValue;

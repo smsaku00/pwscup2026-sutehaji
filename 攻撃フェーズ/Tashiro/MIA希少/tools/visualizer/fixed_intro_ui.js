@@ -3,9 +3,9 @@
   'use strict';
   const el = id => document.getElementById(id), history = data.intro, conditions = history.conditions;
   let page = 'roc', stage = 0, caseID = history.cases[0].case_id, team = '6';
-  let historyView = 'mean', historyRound = 1;
+  let historyView = 'editor', historyRound = 1, customCounts = null, editingRequested = false;
   let mode = 'population', members = 1, high = 11, hits = 1, plot = 'full';
-  const decimal = n => Number(n.toPrecision(12)).toString();
+  const decimal = n => n === null ? '未定義' : Number(n.toPrecision(12)).toString();
   function rocModel() {
     const x = (high - hits) / (24 - members), y = hits / members;
     return {mode, members, high, hits, highMembers: hits, highNonmembers: high - hits,
@@ -13,18 +13,24 @@
       points: [[0, 0], [x, y], [1, 1]], targetFPR: .01, score: .01 * y / x, plot};
   }
   function teamScore(n, m) {return m ? (24 - m) / (100 * (n - m)) : null;}
-  function mean(row, round) {
-    const sizes = conditions[round === 1 ? 'round1_sizes' : 'round2_sizes'];
-    const active = conditions.teams.map((t, i) => ({n: sizes[i], m: row.counts[t]})).filter(x => x.m);
-    return active.reduce((sum, x) => sum + teamScore(x.n, x.m), 0) / active.length;
+  function historyRow() {
+    const counts = customCounts || history.cases.find(x => x.case_id === caseID).counts;
+    return {case_id: customCounts ? null : caseID, counts: {...counts},
+      active_teams: conditions.teams.filter(t => counts[t] > 0).length,
+      total_members: conditions.teams.reduce((sum, t) => sum + counts[t], 0)};
   }
   function historyModel() {
-    const row = history.cases.find(x => x.case_id === caseID);
-    return {stage, caseID, team, counts: {...row.counts}, activeTeams: row.active_teams, totalMembers: row.total_members,
-      predicted: [mean(row, 1), mean(row, 2)], observed: [stage >= 1 ? conditions.round1_rare_score : null, stage >= 2 ? conditions.round2_rare_score : null],
+    const row = historyRow(), predictions = [1, 2].map(r => globalThis.MIA_FIXED_MEAN.historyPrediction(row, r));
+    const valid = row.total_members <= 11, defined = row.active_teams > 0;
+    const observed = [stage >= 1 ? conditions.round1_rare_score : null, stage >= 2 ? conditions.round2_rare_score : null];
+    const checks = predictions.map((x, r) => !valid ? '条件外' : !defined ? '未定義' : observed[r] === null ? '未表示' : Math.abs(x.meanValue - observed[r]) < conditions.score_match_tolerance ? '一致' : '不一致');
+    return {stage, caseID: row.case_id, team, counts: {...row.counts}, activeTeams: row.active_teams, totalMembers: row.total_members,
+      source: customCounts ? 'custom' : 'saved', valid, defined, checks,
+      predicted: predictions.map(x => x.meanValue), predictions, observed,
       remaining: stage === 0 ? null : stage === 1 ? history.cases.length : 1,
-      matchesSecond: Math.abs(mean(row, 2) - conditions.round2_rare_score) < conditions.score_match_tolerance,
-      meanView: historyView, meanRound: historyRound, meanDetails: globalThis.MIA_FIXED_MEAN.historyPrediction(row, historyRound)};
+      matchesFirst: valid && defined && Math.abs(predictions[0].meanValue - conditions.round1_rare_score) < conditions.score_match_tolerance,
+      matchesSecond: valid && defined && Math.abs(predictions[1].meanValue - conditions.round2_rare_score) < conditions.score_match_tolerance,
+      meanView: historyView, meanRound: historyRound, meanDetails: predictions[historyRound - 1]};
   }
   function graph(model, zoom) {
     const left = 56, top = 60, width = 330, height = 160;
@@ -72,33 +78,46 @@
     return `<svg viewBox="0 0 640 185" role="img" aria-label="102通りの第2回予測点数。点数はすべて異なる。${stage === 2 ? '実値と一致するのはN015のみ。' : ''}"><path d="M42,134 H592" class="roc-axis"/>${circles}${marker}<text x="42" y="177">${decimal(lo)}</text><text x="592" y="177" text-anchor="end">${decimal(hi)} → 第2回予測点</text></svg>`;
   }
   function renderHistory() {
-    const state = historyModel(), row = history.cases.find(x => x.case_id === caseID), i = conditions.teams.indexOf(team);
-    const n1 = conditions.round1_sizes[i], n2 = conditions.round2_sizes[i];
+    const state = historyModel(), row = historyRow(), i = conditions.teams.indexOf(team);
+    const n1 = conditions.round1_sizes[i], n2 = conditions.round2_sizes[i], editor = historyView === 'editor';
+    el('history-workspace').setAttribute('data-history-view', historyView);
     el('history-team').innerHTML = conditions.teams.map(t => `<option value="${t}"${t === team ? ' selected' : ''}>Team ${t}</option>`).join(''); el('history-team').value = team;
-    el('history-case').innerHTML = history.cases.map(x => `<option value="${x.case_id}"${x.case_id === caseID ? ' selected' : ''}>${x.case_id}（${x.active_teams}チーム・${x.total_members}人）</option>`).join(''); el('history-case').value = caseID;
+    el('history-case').innerHTML = (customCounts ? '<option value="" selected>自分で仮置きした人数配置</option>' : '') + history.cases.map(x => `<option value="${x.case_id}"${x.case_id === state.caseID ? ' selected' : ''}>${x.case_id}（${x.active_teams}チーム・${x.total_members}人）</option>`).join(''); el('history-case').value = state.caseID || '';
     el('history-case-controls').hidden = stage === 0;
     for (let s = 0; s < 3; s++) el(`history-stage-${s}`).setAttribute('aria-pressed', String(s === stage));
     el('history-setting').innerHTML = `<h3>Team ${team} の提出設定</h3>` + [n1, n2].map((n, r) => `<div class="history-submission"><b>第${r + 1}回</b><span class="history-unknown">候補11人<br>全員0.4</span><b>＋</b><span>既知非所属${n - 11}人<br>同じ0.4</span><b>＝ 高側${n}人</b><small>残る${24 - n}人は0.1</small></div>`).join('');
-    el('history-hypotheses').innerHTML = '<table><caption>所属人数を仮置きした、そのチームの予測TPR</caption><thead><tr><th>仮定</th><th>第1回</th><th>第2回</th></tr></thead><tbody><tr><td>0人</td><td colspan="2">平均の対象から外れる</td></tr>' + [1, 2].map(m => `<tr><td>${m}人</td><td>${decimal(teamScore(n1, m))}</td><td>${decimal(teamScore(n2, m))}</td></tr>`).join('') + '</tbody></table>';
+    el('history-hypotheses').innerHTML = `<table><caption>Team ${team}：仮置きした m＝${row.counts[team]}人の行を強調</caption><thead><tr><th>仮定</th><th>第1回TPR</th><th>第2回TPR</th></tr></thead><tbody><tr${row.counts[team] === 0 ? ' class="selected-count"' : ''}><td>0人</td><td colspan="2">平均の対象から外れる</td></tr>` + [1, 2].map(m => `<tr${row.counts[team] === m ? ' class="selected-count"' : ''}><td>${m}人</td><td>${decimal(teamScore(n1, m))}</td><td>${decimal(teamScore(n2, m))}</td></tr>`).join('') + '</tbody></table>';
     const headings = ['まず、22チームの人数を仮置きする', '第1回の平均点に合う人数配置は102通り', '第2回も合う配置は1通り：N015'];
-    el('history-heading').textContent = headings[stage];
+    el('history-heading').textContent = editor ? '人数を変えて、2回の予測平均を見比べる' : headings[stage];
     el('history-score').innerHTML = stage === 0 ? '<b>条件：各チーム0・1・2人、合計11人以下</b><span>該当チーム数を6つと決めずに探索。個人IDは全員同点なので区別できません。</span>' : `<b>第1回の実値 ${conditions.round1_rare_score}</b>` + (stage === 2 ? `<b>第2回の実値 ${conditions.round2_rare_score}</b>` : '<span>この点数だけでは、6チームの配置も7チームの配置も残ります。</span>');
-    el('history-team-grid').hidden = stage > 0 && historyView === 'mean';
-    el('history-team-grid').innerHTML = conditions.teams.map(t => `<div class="history-team-cell${stage && row.counts[t] ? ' active' : ''}${stage === 2 && !state.matchesSecond ? ' comparison' : ''}"><span>Team ${t}</span><b>${stage ? row.counts[t] + '人' : '0 / 1 / 2 ?'}</b></div>`).join('');
-    el('history-selected-caption').textContent = stage === 0 ? '人数はまだ不明。全22チームを対象に考えます。' : stage === 1 ? `${caseID}を仮置き：${row.active_teams}チーム・${row.total_members}人（102通りのうちの1例）` : `${caseID}：${state.matchesSecond ? '第2回まで一致 → 残る人数配置' : '第2回が不一致 → 残らない比較例'}`;
-    el('history-case-plot').hidden = stage === 0 || historyView === 'mean';
+    el('history-team-grid').hidden = historyView !== 'configurations';
+    el('history-team-grid').innerHTML = conditions.teams.map(t => `<div class="history-team-cell${row.counts[t] ? ' active' : ''}${stage === 2 && !state.matchesSecond ? ' comparison' : ''}"><span>Team ${t}</span><b>${row.counts[t]}人</b></div>`).join('');
+    el('history-selected-caption').textContent = customCounts ? '自分で仮置きした配置。保存済み102配置とは別に、2回の平均点に合うか試せます。' : stage === 0 ? `${caseID}を初期例として仮置き。各チームの人数を自由に変更できます。` : stage === 1 ? `${caseID}を仮置き：${row.active_teams}チーム・${row.total_members}人（102通りのうちの1例）` : `${caseID}：${state.matchesSecond ? '第2回まで一致 → 残る人数配置' : '第2回が不一致 → 残らない比較例'}`;
+    el('history-case-plot').hidden = stage === 0 || historyView !== 'configurations';
     el('history-case-plot').innerHTML = casePlot(row);
-    el('history-predicted').hidden = stage === 0 || historyView === 'mean';
-    el('history-predicted').innerHTML = `<span>選んだ配置の予測平均：第1回 <b>${decimal(state.predicted[0])}</b> ／ 第2回 <b>${row.round2_score_exact}</b> ≈ ${decimal(state.predicted[1])}</span>`;
-    el('history-view-controls').hidden = stage === 0;
-    el('history-show-mean').setAttribute('aria-pressed', String(historyView === 'mean')); el('history-show-configurations').setAttribute('aria-pressed', String(historyView === 'configurations'));
-    el('history-mean-panel').hidden = stage === 0 || historyView !== 'mean';
+    el('history-predicted').hidden = stage === 0 || historyView !== 'configurations';
+    el('history-predicted').innerHTML = `<span>選んだ配置の予測平均：第1回 <b>${decimal(state.predicted[0])}</b> ／ 第2回 <b>${state.predictions[1].meanExact || '未定義'}</b> ≈ ${decimal(state.predicted[1])}</span>`;
+    el('history-view-controls').hidden = false;
+    for (const [view, id] of [['editor', 'editor'], ['mean', 'mean'], ['configurations', 'configurations']]) el(`history-show-${id}`).setAttribute('aria-pressed', String(historyView === view));
+    el('history-editor-panel').hidden = !editor;
+    conditions.teams.forEach(t => {
+      el(`history-count-${t}`).value = String(row.counts[t]);
+      el(`history-count-cell-${t}`).setAttribute('data-included', String(row.counts[t] > 0));
+      el(`history-count-status-${t}`).textContent = row.counts[t] ? '平均に入る' : '平均から外す';
+    });
+    el('history-count-summary').setAttribute('data-valid', String(state.valid));
+    el('history-count-summary').innerHTML = `<b>平均に入る K＝${state.activeTeams}チーム</b><span>外れる ${22 - state.activeTeams}チーム ／ 所属人数の合計 ${state.totalMembers}人</span>` + (!state.valid ? '<strong>合計11人を超えています。計算例は表示しますが、共有条件に合う候補ではありません。</strong>' : !state.defined ? '<strong>K＝0：平均に入るチームがないため、予測平均は未定義です。</strong>' : '');
+    state.predictions.forEach((x, r) => {
+      const observed = state.observed[r], check = state.checks[r];
+      el(`history-live-mean-${r + 1}`).setAttribute('data-check', check);
+      el(`history-live-mean-${r + 1}`).innerHTML = `<h4>第${r + 1}回の予測平均</h4><b>${decimal(x.meanValue)}</b>` + (state.defined ? `<span>TPRの合計 ${x.sumExact}<br>÷ <strong>${x.denominator}チーム</strong> ＝ ${x.meanExact}</span>` : '<span>0で割る平均は計算できません。</span>') + `<small>${observed === null ? '実値はまだ表示していません。上の段階ボタンで進めます。' : `実値 ${decimal(observed)} → <strong>${check}</strong>`}</small>`;
+    });
+    el('history-mean-panel').hidden = historyView !== 'mean';
     for (const r of [1, 2]) el(`history-mean-round-${r}`).setAttribute('aria-pressed', String(historyRound === r));
     const details = state.meanDetails, observed = state.observed[historyRound - 1];
     el('history-mean-contributions').innerHTML = details.contributions.map(x => `<div data-mean-team="${x.team}" data-mean-tpr="${x.exact}"><b>Team ${x.team}</b><span>仮定 m＝${x.members}人 ／ 高側 n＝${x.high}人</span><b>TPR＝${x.exact}</b><span> ≈ ${decimal(x.value)}</span></div>`).join('');
-    const checks = state.predicted.map((value, r) => state.observed[r] === null ? '未表示' : Math.abs(value - state.observed[r]) < conditions.score_match_tolerance ? '一致' : '不一致');
-    el('history-mean-equation').innerHTML = `<b>第${historyRound}回：mの配置を照合（h＝m）</b><br><span>この仮定ではK＝${details.denominator}チームに所属者がいる。m＝0の${details.excluded}チームは平均から外れる。</span><br>（${details.contributions.map(x => x.exact).join(' ＋ ')}）<br>÷ <b>${details.denominator}チーム</b> ＝ <b>${details.meanExact}</b> ≈ ${decimal(details.meanValue)}<br>` + (observed === null ? `第${historyRound}回の返却点はまだ表示していません。` : `<b>${Math.abs(details.meanValue - observed) < conditions.score_match_tolerance ? '一致' : '不一致'}</b>：第${historyRound}回の返却点 ${decimal(observed)} と照合`) + `<br><span class="history-joint-check">同じm配置を確認：第1回 ${checks[0]} ／ 第2回 ${checks[1]}${stage === 2 ? checks.every(value => value === '一致') ? ' → 両方一致する配置を残す' : ' → 不一致の配置を外す' : ''}</span>`;
-    el('history-conclusion').textContent = stage === 0 ? 'ここでは、22チームの所属人数mを探します。各チームの点数は個別に返らず、m＞0のチームの平均点が返ります。同じmなら個人を入れ替えても同点です。' : stage === 1 ? '第1回の平均点に合うmの配置は102通り。この中にはK＝6とK＝7の仮定が残ります。同じm配置に第2回の設定nを当てはめ、2つの平均点の両方に合う配置を探します。' : '第2回でmが確定：Team 6・11・17は各1人、10・16・25は各2人、他16チームは0人。合計9人。次はmと対象6チームを固定し、提出対象の所属人数hを読んで個人IDを絞ります。';
+    el('history-mean-equation').innerHTML = `<b>第${historyRound}回：mの配置を照合（h＝m）</b><br><span>この仮定ではK＝${details.denominator}チームに所属者がいる。m＝0の${details.excluded}チームは平均から外れる。</span><br>` + (state.defined ? `（${details.contributions.map(x => x.exact).join(' ＋ ')}）<br>÷ <b>${details.denominator}チーム</b> ＝ <b>${details.meanExact}</b> ≈ ${decimal(details.meanValue)}<br>` : 'K＝0のため予測平均は未定義です。<br>') + (observed === null ? `第${historyRound}回の返却点はまだ表示していません。` : `<b>${state.checks[historyRound - 1]}</b>：第${historyRound}回の返却点 ${decimal(observed)} と照合`) + `<br><span class="history-joint-check">同じm配置を確認：第1回 ${state.checks[0]} ／ 第2回 ${state.checks[1]}${stage === 2 && state.valid && state.defined ? state.checks.every(value => value === '一致') ? ' → 両方一致する配置を残す' : ' → 不一致の配置を外す' : ''}</span>`;
+    el('history-conclusion').textContent = customCounts ? '人数を変えると、そのチームのTPRと、平均の分母Kを再計算します。上の第1回・第2回ボタンは実値を表示する段階だけを変え、仮置きした人数を保ちます。' : stage === 0 ? 'ここでは、22チームの所属人数mを探します。各チームの点数は個別に返らず、m＞0のチームの平均点が返ります。同じmなら個人を入れ替えても同点です。' : stage === 1 ? '第1回の平均点に合うmの配置は102通り。この中にはK＝6とK＝7の仮定が残ります。同じm配置に第2回の設定nを当てはめ、2つの平均点の両方に合う配置を探します。' : '第2回でmが確定：Team 6・11・17は各1人、10・16・25は各2人、他16チームは0人。合計9人。次はmと対象6チームを固定し、提出対象の所属人数hを読んで個人IDを絞ります。';
   }
   function bridgeModel() {
     const state = globalThis.MIA_FIXED_LESSON.snapshot();
@@ -117,8 +136,16 @@
     renderROC(); renderHistory(); renderBridge();
   }
   function setPage(value) {if (!['roc', 'history', 'bridge'].includes(value)) throw Error('説明ページを選んでください。'); page = value; render();}
-  function setStage(value) {if (![0, 1, 2].includes(value)) throw Error('第1・2回の段階を選んでください。'); stage = value; if (stage > 0) {historyRound = stage; historyView = 'mean';} if (stage === 2) caseID = history.winner; render();}
-  function setCase(value) {if (!history.cases.some(x => x.case_id === value)) throw Error('人数配置を選んでください。'); caseID = value; render();}
+  function setStage(value) {if (![0, 1, 2].includes(value)) throw Error('第1・2回の段階を選んでください。'); stage = value; if (stage > 0) {historyRound = stage; if (!editingRequested) historyView = 'mean';} if (stage === 2 && !editingRequested) caseID = history.winner; render();}
+  function setCase(value) {if (!history.cases.some(x => x.case_id === value)) throw Error('人数配置を選んでください。'); caseID = value; customCounts = null; render();}
+  function setCounts(values) {
+    if (!values || typeof values !== 'object' || Array.isArray(values) || Object.keys(values).length !== conditions.teams.length || conditions.teams.some(t => !Object.hasOwn(values, t) || ![0, 1, 2].includes(values[t]))) throw Error('全22チームの所属人数を0・1・2人から選んでください。');
+    customCounts = {...values}; historyView = 'editor'; editingRequested = true; render();
+  }
+  function setCount(t, value) {
+    if (!conditions.teams.includes(t) || ![0, 1, 2].includes(value)) throw Error('チームと所属人数を確認してください。');
+    team = t; setCounts({...historyRow().counts, [t]: value});
+  }
   function setROC(next) {
     const values = {...rocModel(), ...next};
     if (!['population', 'subset'].includes(values.mode) || ![1, 2].includes(values.members) || !Number.isInteger(values.high) || values.high < (values.mode === 'population' ? 11 : 6) || values.high > (values.mode === 'population' ? 24 : 12) || !Number.isInteger(values.hits) || values.hits < 0 || values.hits > values.members) throw Error('ROCの人数設定を確認してください。');
@@ -131,12 +158,16 @@
   el('roc-show-full').onclick = () => {plot = 'full'; render();}; el('roc-show-zoom').onclick = () => {plot = 'zoom'; render();};
   for (const value of ['roc', 'history', 'bridge']) el(`intro-tab-${value}`).onclick = () => setPage(value);
   for (let s = 0; s < 3; s++) el(`history-stage-${s}`).onclick = () => setStage(s);
+  el('history-show-editor').onclick = () => {historyView = 'editor'; editingRequested = true; render();};
+  el('history-count-zero').onclick = () => setCounts(Object.fromEntries(conditions.teams.map(t => [t, 0])));
+  el('history-count-winner').onclick = () => {historyView = 'editor'; editingRequested = true; setCase(history.winner);};
+  conditions.teams.forEach(t => {el(`history-count-${t}`).onchange = () => setCount(t, Number(el(`history-count-${t}`).value));});
   el('history-show-mean').onclick = () => {historyView = 'mean'; render();}; el('history-show-configurations').onclick = () => {historyView = 'configurations'; render();};
   for (const r of [1, 2]) el(`history-mean-round-${r}`).onclick = () => {historyRound = r; render();};
-  el('history-team').onchange = () => {team = el('history-team').value; render();}; el('history-case').onchange = () => setCase(el('history-case').value);
+  el('history-team').onchange = () => {team = el('history-team').value; render();}; el('history-case').onchange = () => {if (el('history-case').value) setCase(el('history-case').value);};
   el('history-case-plot').onclick = event => {const target = event.target.closest('[data-history-case]'); if (target) setCase(target.dataset.historyCase);};
   el('intro-next').onclick = () => {if (page === 'roc') setPage('history'); else if (page === 'history' && stage < 2) setStage(stage + 1); else if (page === 'history') setPage('bridge'); else if (globalThis.MIA_FIXED_MEAN.model().stage < 3) globalThis.MIA_FIXED_MEAN.setStage(globalThis.MIA_FIXED_MEAN.model().stage + 1); else globalThis.MIA_FIXED_OVERVIEW.setView('assignment');};
   el('intro-prev').onclick = () => {if (page === 'bridge' && globalThis.MIA_FIXED_MEAN.model().stage > 0) globalThis.MIA_FIXED_MEAN.setStage(globalThis.MIA_FIXED_MEAN.model().stage - 1); else if (page === 'history' && stage > 0) setStage(stage - 1); else setPage(page === 'bridge' ? 'history' : 'roc');};
-  globalThis.MIA_FIXED_INTRO = Object.freeze({setPage, setStage, setCase, setROC, render, rocModel, historyModel, bridgeModel, snapshot: () => ({page, stage, caseID, team, roc: rocModel(), historical: historyModel()})});
+  globalThis.MIA_FIXED_INTRO = Object.freeze({setPage, setStage, setCase, setCount, setCounts, setROC, render, rocModel, historyModel, bridgeModel, snapshot: () => ({page, stage, caseID, team, roc: rocModel(), historical: historyModel()})});
   render();
 })();
