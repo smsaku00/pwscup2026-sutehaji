@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "validation_date": "2026-10-13",
+  "scope": "Published aggregate consistency and conditional statistics only",
+  "private_inputs_used": false,
+  "individual_predictions_recomputed": false,
+  "baseline_predictions_recomputed": false,
+  "original_experiment_rerun": false,
+  "panels": 300,
+  "cases": 2,
+  "attacks": 12,
+  "aggregate_AIA_scores_recomputed_from_hit_counts": 7200,
+  "baseline_rows_checked": 300,
+  "table_rows_checked": {
+    "全7200採点": 7200,
+    "各パネルの基準値": 300,
+    "パネル別比較": 600,
+    "候補別要約": 10,
+    "高スコアの発生率": 6,
+    "2案の対応差": 300,
+    "手法別要約": 24
+  },
+  "paired_tests": {
+    "raw": {
+      "mean_difference_11_minus_04": -0.007521440391791258,
+      "sd": 0.035649745206440944,
+      "standard_error": 0.0020582389991480247,
+      "ci95_low": -0.011571909984242686,
+      "ci95_high": -0.00347097079933983,
+      "p_two_sided": 0.00030448415685143537,
+      "bootstrap95_low": -0.011572742313656365,
+      "bootstrap95_high": -0.0035373219188478805,
+      "Zhang11_better": 132,
+      "ties": 60,
+      "Zhang04_better": 108,
+      "primary": false
+    },
+    "adjusted": {
+      "mean_difference_11_minus_04": -0.007294742131693279,
+      "sd": 0.03343424500158578,
+      "standard_error": 0.0019303270351817448,
+      "ci95_low": -0.011093489975227005,
+      "ci95_high": -0.0034959942881595514,
+      "p_two_sided": 0.00019002837532941492,
+      "bootstrap95_low": -0.011094836376749889,
+      "bootstrap95_high": -0.003544839595369961,
+      "Zhang11_better": 125,
+      "ties": 83,
+      "Zhang04_better": 92,
+      "primary": true
+    },
+    "minus_constant": {
+      "mean_difference_11_minus_04": -0.007693110432059312,
+      "sd": 0.03497728571938134,
+      "standard_error": 0.002019414532560727,
+      "ci95_low": -0.011667176204827948,
+      "ci95_high": -0.003719044659290676,
+      "p_two_sided": 0.00016897131432870412,
+      "bootstrap95_low": -0.01165767590622486,
+      "bootstrap95_high": -0.003790206110408606,
+      "Zhang11_better": 129,
+      "ties": 69,
+      "Zhang04_better": 102,
+      "primary": false
+    },
+    "minus_background": {
+      "mean_difference_11_minus_04": -0.007189385088772707,
+      "sd": 0.03408673933030945,
+      "standard_error": 0.0019679988128150764,
+      "ci95_low": -0.011062268341197511,
+      "ci95_high": -0.003316501836347902,
+      "p_two_sided": 0.0003058080822196701,
+      "bootstrap95_low": -0.011061178792594347,
+      "bootstrap95_high": -0.003355019136618135,
+      "Zhang11_better": 128,
+      "ties": 74,
+      "Zhang04_better": 98,
+      "primary": false
+    },
+    "minus_phi": {
+      "mean_difference_11_minus_04": -0.004594382283063519,
+      "sd": 0.02839712653211709,
+      "standard_error": 0.0016395088647529665,
+      "ci95_low": -0.007820820420707057,
+      "ci95_high": -0.001367944145419981,
+      "p_two_sided": 0.005405375497912111,
+      "bootstrap95_low": -0.00776635923067048,
+      "bootstrap95_high": -0.0013853827488805803,
+      "Zhang11_better": 112,
+      "ties": 101,
+      "Zhang04_better": 87,
+      "primary": false
+    }
+  },
+  "official_anonymity_score": false,
+  "tolerance_absolute": 1e-12,
+  "environment": {
+    "python": "3.12.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "published_files_sha256": {
+    "集計/2案の対応差.csv": "60575b45734b73f9c5bd4c194a45a0c6706bd617e267ef712cacc136ae124299",
+    "集計/パネル別比較.csv": "7dbf089234929c63d282c7f8c417f114d88f6227a0882bb2ec0b43a2b9bbd1a9",
+    "集計/候補別要約.csv": "4b3f02f8009e79231f184a8ca86323e552a406596c84ffb3f60ff736bed22a72",
+    "集計/全7200採点.csv": "297edf8f81c3c8cc22fe996bd6380eef336d4f96672372d80f634a36c1861d7a",
+    "集計/各パネルの基準値.csv": "01afa4f62f0df55b6b3ee61174070b57b223464534a9d921937d3f6c68a5fa33",
+    "集計/手法別要約.csv": "31cdc1915a9a976e6673e0a055ece73f4999522bab24be256866010a69835224",
+    "集計/高スコアの発生率.csv": "32bffa6c16290558edf4ae8fe617d44721e7cecd82ba7abd795e8afab52fb828",
+    "実行条件.json": "1e1d46a5877225864caa30b4fbe6557973b5750730db964f3922ef4b448f986e",
+    "分析.py": "409217fb3c09a0ac2efe66272e6513cef51a40590045c9a71d75f1f3afd967c5"
+  }
+}

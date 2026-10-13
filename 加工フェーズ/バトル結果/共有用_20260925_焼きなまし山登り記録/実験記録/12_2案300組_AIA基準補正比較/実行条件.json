@@ -1,0 +1,206 @@
+{
+  "experiment_date": "2026-09-25",
+  "publication_date": "2026-10-13",
+  "cases": [
+    {
+      "id": "C27",
+      "name": "Zhang04-HCv2-3",
+      "sha256": "f8a9c86f3079fe455db210da8586ad6ce0e21ba16a7e6271af6bba06dbd9d7ed"
+    },
+    {
+      "id": "C26",
+      "name": "Zhang11-HCv2-1",
+      "sha256": "a7e601b30ba6c2120f370de2e47b432fc9f082b85642787b98a32e87a5cb8091"
+    }
+  ],
+  "panel_count": 300,
+  "targets_per_panel": 163,
+  "controls_per_panel": 163,
+  "target_strata": {
+    "normal_no_onset": 138,
+    "normal_onset": 12,
+    "rare_no_onset": 9,
+    "rare_onset": 4
+  },
+  "panel_seeds": {
+    "first": 202609251001,
+    "last": 202609251300,
+    "step": 1
+  },
+  "case_order": [
+    "C27",
+    "C26"
+  ],
+  "attacks": [
+    {
+      "id": "A01",
+      "name": "TT-01-部分属性照合"
+    },
+    {
+      "id": "A02",
+      "name": "TT-02-全体対応推定"
+    },
+    {
+      "id": "A03",
+      "name": "TT-03-条件分布推定"
+    },
+    {
+      "id": "A04",
+      "name": "seo-01-近傍対比と条件付時間窓"
+    },
+    {
+      "id": "A05",
+      "name": "seo-02-多尺度密度比と差分時間窓"
+    },
+    {
+      "id": "A06",
+      "name": "seo-03-正則化生成比と全体割当"
+    },
+    {
+      "id": "A07",
+      "name": "seo-04b-容量付き全体割当AIA"
+    },
+    {
+      "id": "A08",
+      "name": "seo-01-部分対応AIA"
+    },
+    {
+      "id": "A09",
+      "name": "seo-02-時間窓BoostingAIA"
+    },
+    {
+      "id": "A10",
+      "name": "seo-03-Shadow窓順位AIA"
+    },
+    {
+      "id": "A11",
+      "name": "seo-04-選別最近傍AIA"
+    },
+    {
+      "id": "A12",
+      "name": "公式参照1NN_AIA"
+    }
+  ],
+  "primary_metric": "max(0, max_12_AIA - max(constant10, background1NN))",
+  "difference_direction": "Zhang11-HCv2-1 minus Zhang04-HCv2-3",
+  "phi_reference": 0.089047,
+  "alpha": 0.05,
+  "test": "two-sided paired t, 95% CI; paired panel bootstrap sensitivity only",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 202609251999,
+  "secondary_metrics": [
+    "raw",
+    "minus_constant",
+    "minus_background",
+    "minus_phi"
+  ],
+  "exploratory_tail_thresholds": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "early_stopping": false,
+  "old_results_in_primary": false,
+  "original_workers": 16,
+  "original_environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3"
+  },
+  "original_elapsed_seconds": 414.0099917501211,
+  "local_utility": {
+    "C27": {
+      "utility": 0.9219987812309569,
+      "facets": {
+        "U_gen": 0.9365619257678839,
+        "U_spec": 0.9404861959400372,
+        "U_rare": 0.9219987812309569,
+        "U_valid": 1.0
+      }
+    },
+    "C26": {
+      "utility": 0.9219987812309569,
+      "facets": {
+        "U_gen": 0.9365353145591871,
+        "U_spec": 0.9597756026939498,
+        "U_rare": 0.9219987812309569,
+        "U_valid": 1.0
+      }
+    }
+  },
+  "reported_paired_tests": {
+    "raw": {
+      "mean_difference_11_minus_04": -0.007521440391791258,
+      "sd": 0.035649745206440944,
+      "standard_error": 0.0020582389991480247,
+      "ci95_low": -0.011571909984242686,
+      "ci95_high": -0.00347097079933983,
+      "p_two_sided": 0.00030448415685143537,
+      "bootstrap95_low": -0.011572742313656365,
+      "bootstrap95_high": -0.0035373219188478805,
+      "Zhang11_better": 132,
+      "ties": 60,
+      "Zhang04_better": 108,
+      "primary": false
+    },
+    "adjusted": {
+      "mean_difference_11_minus_04": -0.007294742131693279,
+      "sd": 0.03343424500158578,
+      "standard_error": 0.0019303270351817448,
+      "ci95_low": -0.011093489975227005,
+      "ci95_high": -0.0034959942881595514,
+      "p_two_sided": 0.00019002837532941492,
+      "bootstrap95_low": -0.011094836376749889,
+      "bootstrap95_high": -0.003544839595369961,
+      "Zhang11_better": 125,
+      "ties": 83,
+      "Zhang04_better": 92,
+      "primary": true
+    },
+    "minus_constant": {
+      "mean_difference_11_minus_04": -0.007693110432059312,
+      "sd": 0.03497728571938134,
+      "standard_error": 0.002019414532560727,
+      "ci95_low": -0.011667176204827948,
+      "ci95_high": -0.003719044659290676,
+      "p_two_sided": 0.00016897131432870412,
+      "bootstrap95_low": -0.01165767590622486,
+      "bootstrap95_high": -0.003790206110408606,
+      "Zhang11_better": 129,
+      "ties": 69,
+      "Zhang04_better": 102,
+      "primary": false
+    },
+    "minus_background": {
+      "mean_difference_11_minus_04": -0.007189385088772707,
+      "sd": 0.03408673933030945,
+      "standard_error": 0.0019679988128150764,
+      "ci95_low": -0.011062268341197511,
+      "ci95_high": -0.003316501836347902,
+      "p_two_sided": 0.0003058080822196701,
+      "bootstrap95_low": -0.011061178792594347,
+      "bootstrap95_high": -0.003355019136618135,
+      "Zhang11_better": 128,
+      "ties": 74,
+      "Zhang04_better": 98,
+      "primary": false
+    },
+    "minus_phi": {
+      "mean_difference_11_minus_04": -0.004594382283063519,
+      "sd": 0.02839712653211709,
+      "standard_error": 0.0016395088647529665,
+      "ci95_low": -0.007820820420707057,
+      "ci95_high": -0.001367944145419981,
+      "p_two_sided": 0.005405375497912111,
+      "bootstrap95_low": -0.00776635923067048,
+      "bootstrap95_high": -0.0013853827488805803,
+      "Zhang11_better": 112,
+      "ties": 101,
+      "Zhang04_better": 87,
+      "primary": false
+    }
+  },
+  "inference_scope": "Monte Carlo uncertainty conditional on this panel generator and fixed inputs, not official anonymity",
+  "public_validation_scope": "Recompute AIA from published aggregate hit counts, rebuild all seven summary tables, and compare conditional paired t/bootstrap statistics. Baseline values are read from published panel aggregates. Individual hit decisions and attack predictions cannot be recomputed without excluded private records."
+}
