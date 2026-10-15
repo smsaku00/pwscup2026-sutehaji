@@ -1,0 +1,392 @@
+{
+  "model": "Uniform over all legal assignments of11 distinguishable candidates to22 labelled targets(capacity2) or one unassigned pool; known target counts for identification.",
+  "source_classification_git_blob": "d354c0e0ec4b3cd041ee1a214d860f15145aaab0",
+  "computed_during_poster_supplement_update": "2026-10-16",
+  "four_query_proved_types": 23,
+  "all_types": 42,
+  "success_weight": 693923736288333,
+  "total_weight": 744055184418613,
+  "ratio_exact": "693923736288333/744055184418613",
+  "ratio_decimal": "0.9326240187823548",
+  "percentage": 93.26240187823548,
+  "types": [
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 0,
+      "unassigned_candidates": 11,
+      "target_label_choices": 1,
+      "assignments_per_labelled_type": 1,
+      "weighted_assignments": 1,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 0,
+      "unassigned_candidates": 10,
+      "target_label_choices": 22,
+      "assignments_per_labelled_type": 11,
+      "weighted_assignments": 242,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 2,
+      "two_member_teams": 0,
+      "unassigned_candidates": 9,
+      "target_label_choices": 231,
+      "assignments_per_labelled_type": 110,
+      "weighted_assignments": 25410,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 3,
+      "two_member_teams": 0,
+      "unassigned_candidates": 8,
+      "target_label_choices": 1540,
+      "assignments_per_labelled_type": 990,
+      "weighted_assignments": 1524600,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 4,
+      "two_member_teams": 0,
+      "unassigned_candidates": 7,
+      "target_label_choices": 7315,
+      "assignments_per_labelled_type": 7920,
+      "weighted_assignments": 57934800,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 5,
+      "two_member_teams": 0,
+      "unassigned_candidates": 6,
+      "target_label_choices": 26334,
+      "assignments_per_labelled_type": 55440,
+      "weighted_assignments": 1459956960,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 6,
+      "two_member_teams": 0,
+      "unassigned_candidates": 5,
+      "target_label_choices": 74613,
+      "assignments_per_labelled_type": 332640,
+      "weighted_assignments": 24819268320,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 7,
+      "two_member_teams": 0,
+      "unassigned_candidates": 4,
+      "target_label_choices": 170544,
+      "assignments_per_labelled_type": 1663200,
+      "weighted_assignments": 283648780800,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 8,
+      "two_member_teams": 0,
+      "unassigned_candidates": 3,
+      "target_label_choices": 319770,
+      "assignments_per_labelled_type": 6652800,
+      "weighted_assignments": 2127365856000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 9,
+      "two_member_teams": 0,
+      "unassigned_candidates": 2,
+      "target_label_choices": 497420,
+      "assignments_per_labelled_type": 19958400,
+      "weighted_assignments": 9927707328000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 10,
+      "two_member_teams": 0,
+      "unassigned_candidates": 1,
+      "target_label_choices": 646646,
+      "assignments_per_labelled_type": 39916800,
+      "weighted_assignments": 25812039052800,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 11,
+      "two_member_teams": 0,
+      "unassigned_candidates": 0,
+      "target_label_choices": 705432,
+      "assignments_per_labelled_type": 39916800,
+      "weighted_assignments": 28158588057600,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 1,
+      "unassigned_candidates": 9,
+      "target_label_choices": 22,
+      "assignments_per_labelled_type": 55,
+      "weighted_assignments": 1210,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 1,
+      "unassigned_candidates": 8,
+      "target_label_choices": 462,
+      "assignments_per_labelled_type": 495,
+      "weighted_assignments": 228690,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 2,
+      "two_member_teams": 1,
+      "unassigned_candidates": 7,
+      "target_label_choices": 4620,
+      "assignments_per_labelled_type": 3960,
+      "weighted_assignments": 18295200,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 3,
+      "two_member_teams": 1,
+      "unassigned_candidates": 6,
+      "target_label_choices": 29260,
+      "assignments_per_labelled_type": 27720,
+      "weighted_assignments": 811087200,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 4,
+      "two_member_teams": 1,
+      "unassigned_candidates": 5,
+      "target_label_choices": 131670,
+      "assignments_per_labelled_type": 166320,
+      "weighted_assignments": 21899354400,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 5,
+      "two_member_teams": 1,
+      "unassigned_candidates": 4,
+      "target_label_choices": 447678,
+      "assignments_per_labelled_type": 831600,
+      "weighted_assignments": 372289024800,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 6,
+      "two_member_teams": 1,
+      "unassigned_candidates": 3,
+      "target_label_choices": 1193808,
+      "assignments_per_labelled_type": 3326400,
+      "weighted_assignments": 3971082931200,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 7,
+      "two_member_teams": 1,
+      "unassigned_candidates": 2,
+      "target_label_choices": 2558160,
+      "assignments_per_labelled_type": 9979200,
+      "weighted_assignments": 25528390272000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 8,
+      "two_member_teams": 1,
+      "unassigned_candidates": 1,
+      "target_label_choices": 4476780,
+      "assignments_per_labelled_type": 19958400,
+      "weighted_assignments": 89349365952000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 9,
+      "two_member_teams": 1,
+      "unassigned_candidates": 0,
+      "target_label_choices": 6466460,
+      "assignments_per_labelled_type": 19958400,
+      "weighted_assignments": 129060195264000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 2,
+      "unassigned_candidates": 7,
+      "target_label_choices": 231,
+      "assignments_per_labelled_type": 1980,
+      "weighted_assignments": 457380,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 2,
+      "unassigned_candidates": 6,
+      "target_label_choices": 4620,
+      "assignments_per_labelled_type": 13860,
+      "weighted_assignments": 64033200,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 2,
+      "two_member_teams": 2,
+      "unassigned_candidates": 5,
+      "target_label_choices": 43890,
+      "assignments_per_labelled_type": 83160,
+      "weighted_assignments": 3649892400,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 3,
+      "two_member_teams": 2,
+      "unassigned_candidates": 4,
+      "target_label_choices": 263340,
+      "assignments_per_labelled_type": 415800,
+      "weighted_assignments": 109496772000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 4,
+      "two_member_teams": 2,
+      "unassigned_candidates": 3,
+      "target_label_choices": 1119195,
+      "assignments_per_labelled_type": 1663200,
+      "weighted_assignments": 1861445124000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 5,
+      "two_member_teams": 2,
+      "unassigned_candidates": 2,
+      "target_label_choices": 3581424,
+      "assignments_per_labelled_type": 4989600,
+      "weighted_assignments": 17869873190400,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 6,
+      "two_member_teams": 2,
+      "unassigned_candidates": 1,
+      "target_label_choices": 8953560,
+      "assignments_per_labelled_type": 9979200,
+      "weighted_assignments": 89349365952000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 7,
+      "two_member_teams": 2,
+      "unassigned_candidates": 0,
+      "target_label_choices": 17907120,
+      "assignments_per_labelled_type": 9979200,
+      "weighted_assignments": 178698731904000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 3,
+      "unassigned_candidates": 5,
+      "target_label_choices": 1540,
+      "assignments_per_labelled_type": 41580,
+      "weighted_assignments": 64033200,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 3,
+      "unassigned_candidates": 4,
+      "target_label_choices": 29260,
+      "assignments_per_labelled_type": 207900,
+      "weighted_assignments": 6083154000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 2,
+      "two_member_teams": 3,
+      "unassigned_candidates": 3,
+      "target_label_choices": 263340,
+      "assignments_per_labelled_type": 831600,
+      "weighted_assignments": 218993544000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 3,
+      "two_member_teams": 3,
+      "unassigned_candidates": 2,
+      "target_label_choices": 1492260,
+      "assignments_per_labelled_type": 2494800,
+      "weighted_assignments": 3722890248000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 4,
+      "two_member_teams": 3,
+      "unassigned_candidates": 1,
+      "target_label_choices": 5969040,
+      "assignments_per_labelled_type": 4989600,
+      "weighted_assignments": 29783121984000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 5,
+      "two_member_teams": 3,
+      "unassigned_candidates": 0,
+      "target_label_choices": 17907120,
+      "assignments_per_labelled_type": 4989600,
+      "weighted_assignments": 89349365952000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 4,
+      "unassigned_candidates": 3,
+      "target_label_choices": 7315,
+      "assignments_per_labelled_type": 415800,
+      "weighted_assignments": 3041577000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 4,
+      "unassigned_candidates": 2,
+      "target_label_choices": 131670,
+      "assignments_per_labelled_type": 1247400,
+      "weighted_assignments": 164245158000,
+      "four_queries_proved": false
+    },
+    {
+      "one_member_teams": 2,
+      "two_member_teams": 4,
+      "unassigned_candidates": 1,
+      "target_label_choices": 1119195,
+      "assignments_per_labelled_type": 2494800,
+      "weighted_assignments": 2792167686000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 3,
+      "two_member_teams": 4,
+      "unassigned_candidates": 0,
+      "target_label_choices": 5969040,
+      "assignments_per_labelled_type": 2494800,
+      "weighted_assignments": 14891560992000,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 0,
+      "two_member_teams": 5,
+      "unassigned_candidates": 1,
+      "target_label_choices": 26334,
+      "assignments_per_labelled_type": 1247400,
+      "weighted_assignments": 32849031600,
+      "four_queries_proved": true
+    },
+    {
+      "one_member_teams": 1,
+      "two_member_teams": 5,
+      "unassigned_candidates": 0,
+      "target_label_choices": 447678,
+      "assignments_per_labelled_type": 1247400,
+      "weighted_assignments": 558433537200,
+      "four_queries_proved": true
+    }
+  ]
+}
