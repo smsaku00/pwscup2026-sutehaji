@@ -1,0 +1,106 @@
+{
+  "status": "OK",
+  "conditions": {
+    "teams": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      22,
+      25,
+      26,
+      27
+    ],
+    "members_per_team": [
+      0,
+      1,
+      2
+    ],
+    "maximum_members_total": 11,
+    "score_match_tolerance": "1/10000000000000",
+    "zero_member_teams_excluded_from_mean": true
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "candidate_count": 102,
+      "row_counts": {
+        "R1-A": 32,
+        "R1-B": 16,
+        "R1-C": 8,
+        "R1-D": 8,
+        "R1-E": 24,
+        "R1-F": 8,
+        "R1-G": 2,
+        "R1-H": 4
+      },
+      "official_raw_mean": "0.014934210526315791",
+      "exact_mathematical_mean": "227/15200",
+      "exhaustive_matches_csv": true,
+      "expanded_rows_match_csv": true,
+      "missing": 0,
+      "extraneous": 0,
+      "duplicates": 0
+    },
+    {
+      "round": 2,
+      "candidate_count": 52,
+      "row_counts": {
+        "R2-A": 24,
+        "R2-B": 12,
+        "R2-C": 8,
+        "R2-D": 8
+      },
+      "official_raw_mean": "0.014445669283130584",
+      "exact_mathematical_mean": "110863/7674480",
+      "exhaustive_matches_csv": true,
+      "expanded_rows_match_csv": true,
+      "missing": 0,
+      "extraneous": 0,
+      "duplicates": 0
+    }
+  ],
+  "intersection_count": 1,
+  "common_team_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 1,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 1,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 2,
+    "17": 1,
+    "22": 0,
+    "25": 2,
+    "26": 0,
+    "27": 0
+  },
+  "common_active_teams": 6,
+  "common_total_members": 9,
+  "fixed_five_team_slice_checked": true,
+  "method": "standard-library exact Fraction arithmetic; independent exhaustive meet-in-the-middle enumeration from official raw means with tolerance1e-13; compare exhaustive set, CSV, and table expansion"
+}
