@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "document": "PWS Cup 2026 チーム別サマリー（紙6ページ）",
+    "document_date": "2026-10-20",
+    "transcribed_on": "2026-10-20",
+    "team_name": "ステテコは恥だが役に立つ",
+    "presentation_no": 8,
+    "main_cohort_id": 28,
+    "preliminary_cohort_id": 5,
+    "repository": "smsaku00/pwscup2026-sutehaji",
+    "reference_commit": "c7133b28366e2c1882e297fdd6898bd333d1c192",
+    "number_policy": "紙の数値は表示桁を保つ文字列。—、本戦から、同率、記号を保持。既存公式JSONの未丸め値は別出典として区別する。",
+    "identity_policy": "紙のNo.は発表順。既存対応表の登録順で結合し、各行に本戦・予備戦コホート番号を追加した。原紙のチーム名と公式対応表の名称は別フィールド。",
+    "image_policy": "元画像は改名コピーのみ。再圧縮、回転、切り抜き、画素編集を行っていない。",
+    "method": "分担目視転記、拡大再照合、別担当による数値・解釈確認。再集計は再集計.py。",
+    "sources": [
+      {
+        "path": "攻撃フェーズ/参加チーム対応表.csv",
+        "git_blob_sha1": "cb72b54c8323c640a3fe4cfe73e161706d0359aa"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/採点結果/解析結果.json",
+        "git_blob_sha1": "be7c68733253fbdb3a2e45afa001bd865fa32e95"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/採点結果/scores.json",
+        "git_blob_sha1": "22a6567b64e0e5abc07701371b3ae93779ec6cea"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/README.md",
+        "git_blob_sha1": "2587e6032927955930f9dea0c9c9b12ee594bd39"
+      }
+    ],
+    "official_team_list": "https://www.iwsec.org/pws/2026/cup26.html#参加チーム"
+  },
+  "images": [
+    {
+      "page": 1,
+      "section": "summary",
+      "original_filename": "IMG_8744.jpg",
+      "renamed_path": "画像/01_最終順位と得点.jpg",
+      "bytes": 286286,
+      "sha256": "4d75afa0decbb0e54ff129139a22c903f32a7b1608e022f764739e0d39207bcc",
+      "git_blob_sha1": "7429603cc1de75ede0094630edfbaeb281764c71",
+      "content_unchanged": true
+    },
+    {
+      "page": 2,
+      "section": "utility",
+      "original_filename": "IMG_8748.jpg",
+      "renamed_path": "画像/02_有用性内訳.jpg",
+      "bytes": 475993,
+      "sha256": "b67715a5304a223fcbfedb321754c20d9910e0b63df06aac28940a24b1e1ac5b",
+      "git_blob_sha1": "2092642b5b83f67da1963dee35000d22f25f57df",
+      "content_unchanged": true
+    },
+    {
+      "page": 3,
+      "section": "main_anonymity",
+      "original_filename": "IMG_8749.jpg",
+      "renamed_path": "画像/03_本戦_匿名性と被攻撃内訳.jpg",
+      "bytes": 435359,
+      "sha256": "52df494f2aeb19546089a0f5035d20a23efdd8db4974fb2bfc0b7de78b572ec6",
+      "git_blob_sha1": "aa3fc9c96c5cbb7549f815591ea18ad54762747f",
+      "content_unchanged": true
+    },
+    {
+      "page": 4,
+      "section": "main_attack",
+      "original_filename": "IMG_8745.jpg",
+      "renamed_path": "画像/04_本戦_攻撃力と標的別成績.jpg",
+      "bytes": 412152,
+      "sha256": "85fe9ad320eb0a08fd5bac500d7b49cadcda12b600b5b14f4490aed1f7c2c817",
+      "git_blob_sha1": "58dd2cb8d14e2108a0c0d266fb2497f745b2da6f",
+      "content_unchanged": true
+    },
+    {
+      "page": 5,
+      "section": "preliminary_defense",
+      "original_filename": "IMG_8746.jpg",
+      "renamed_path": "画像/05_予備戦_匿名性と被攻撃内訳.jpg",
+      "bytes": 391042,
+      "sha256": "4fefaadabdbbb5953aa9bbbbfb25d7c8bce4c8e1a382bdcc3bcc784488ebecd7",
+      "git_blob_sha1": "a8d4f0f52d0be9ae0cf1be4a0fa7f88459ddf5c5",
+      "content_unchanged": true
+    },
+    {
+      "page": 6,
+      "section": "preliminary_attack",
+      "original_filename": "IMG_8747.jpg",
+      "renamed_path": "画像/06_予備戦_攻撃力と標的別成績.jpg",
+      "bytes": 401592,
+      "sha256": "e5bfab64b600f0bb1c621ac17841ac02f3fa9a62dc15fa5227343e093e001c07",
+      "git_blob_sha1": "9053ecc289b2dad4b76d8395ff3e87e5c53d26ee",
+      "content_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,3023 @@
+{
+  "status": "PASS",
+  "check_count": 623,
+  "failure_count": 0,
+  "basis_commit": "c7133b28366e2c1882e297fdd6898bd333d1c192",
+  "precision_policy": {
+    "paper": "3桁表示値はそのまま保持。加算・減算・平均は各入力±0.0005の区間の重なりで検査。端点は保守的に含む。",
+    "official": "第8回JSONの未丸め数値をDecimalで読み、浮動小数の集計差は1e-15未満で照合。全標的AIAは0.001へ丸めて一致を確認。",
+    "counterfactuals": "紙の表示値を使い、指定した指標以外を固定した算術例。新加工による達成値・順位予測ではない。",
+    "not_inferred": "ROC補間があるためTPR×人数から確定ヒット人数を復元しない。第1〜7回の対象別最良回も算出しない。"
+  },
+  "row_counts": {
+    "main_attack": 22,
+    "preliminary_attack": 20,
+    "main_anonymity": 22,
+    "preliminary_defense": 20,
+    "utility": 24
+  },
+  "images": [
+    {
+      "path": "画像/01_最終順位と得点.jpg",
+      "bytes": 286286,
+      "sha256": "4d75afa0decbb0e54ff129139a22c903f32a7b1608e022f764739e0d39207bcc",
+      "git_blob_sha1": "7429603cc1de75ede0094630edfbaeb281764c71"
+    },
+    {
+      "path": "画像/02_有用性内訳.jpg",
+      "bytes": 475993,
+      "sha256": "b67715a5304a223fcbfedb321754c20d9910e0b63df06aac28940a24b1e1ac5b",
+      "git_blob_sha1": "2092642b5b83f67da1963dee35000d22f25f57df"
+    },
+    {
+      "path": "画像/03_本戦_匿名性と被攻撃内訳.jpg",
+      "bytes": 435359,
+      "sha256": "52df494f2aeb19546089a0f5035d20a23efdd8db4974fb2bfc0b7de78b572ec6",
+      "git_blob_sha1": "aa3fc9c96c5cbb7549f815591ea18ad54762747f"
+    },
+    {
+      "path": "画像/04_本戦_攻撃力と標的別成績.jpg",
+      "bytes": 412152,
+      "sha256": "85fe9ad320eb0a08fd5bac500d7b49cadcda12b600b5b14f4490aed1f7c2c817",
+      "git_blob_sha1": "58dd2cb8d14e2108a0c0d266fb2497f745b2da6f"
+    },
+    {
+      "path": "画像/05_予備戦_匿名性と被攻撃内訳.jpg",
+      "bytes": 391042,
+      "sha256": "4fefaadabdbbb5953aa9bbbbfb25d7c8bce4c8e1a382bdcc3bcc784488ebecd7",
+      "git_blob_sha1": "a8d4f0f52d0be9ae0cf1be4a0fa7f88459ddf5c5"
+    },
+    {
+      "path": "画像/06_予備戦_攻撃力と標的別成績.jpg",
+      "bytes": 401592,
+      "sha256": "e5bfab64b600f0bb1c621ac17841ac02f3fa9a62dc15fa5227343e093e001c07",
+      "git_blob_sha1": "9053ecc289b2dad4b76d8395ff3e87e5c53d26ee"
+    }
+  ],
+  "round8_aia_target_matches": [
+    {
+      "cohort_id": 26,
+      "official_full_precision": "0.22510896738250644",
+      "paper": "0.225",
+      "match": true
+    },
+    {
+      "cohort_id": 27,
+      "official_full_precision": "0.2173142958566527",
+      "paper": "0.217",
+      "match": true
+    },
+    {
+      "cohort_id": 15,
+      "official_full_precision": "0.19039066390239273",
+      "paper": "0.190",
+      "match": true
+    },
+    {
+      "cohort_id": 13,
+      "official_full_precision": "0.14146731892983327",
+      "paper": "0.141",
+      "match": true
+    },
+    {
+      "cohort_id": 9,
+      "official_full_precision": "0.7522338155494697",
+      "paper": "0.752",
+      "match": true
+    },
+    {
+      "cohort_id": 22,
+      "official_full_precision": "0.13819971999944577",
+      "paper": "0.138",
+      "match": true
+    },
+    {
+      "cohort_id": 3,
+      "official_full_precision": "0.2069833125245568",
+      "paper": "0.207",
+      "match": true
+    },
+    {
+      "cohort_id": 4,
+      "official_full_precision": "0.20915107823156465",
+      "paper": "0.209",
+      "match": true
+    },
+    {
+      "cohort_id": 5,
+      "official_full_precision": "0.0341408690483874",
+      "paper": "0.034",
+      "match": true
+    },
+    {
+      "cohort_id": 7,
+      "official_full_precision": "0.03451292988790697",
+      "paper": "0.035",
+      "match": true
+    },
+    {
+      "cohort_id": 1,
+      "official_full_precision": "0.1637143657376881",
+      "paper": "0.164",
+      "match": true
+    },
+    {
+      "cohort_id": 0,
+      "official_full_precision": "0.06473858879629824",
+      "paper": "0.065",
+      "match": true
+    },
+    {
+      "cohort_id": 8,
+      "official_full_precision": "0.05732317488141874",
+      "paper": "0.057",
+      "match": true
+    },
+    {
+      "cohort_id": 16,
+      "official_full_precision": "0.23718638592669977",
+      "paper": "0.237",
+      "match": true
+    },
+    {
+      "cohort_id": 6,
+      "official_full_precision": "0.11695611340175327",
+      "paper": "0.117",
+      "match": true
+    },
+    {
+      "cohort_id": 12,
+      "official_full_precision": "0.05285730977287794",
+      "paper": "0.053",
+      "match": true
+    },
+    {
+      "cohort_id": 17,
+      "official_full_precision": "0.013279993588023373",
+      "paper": "0.013",
+      "match": true
+    },
+    {
+      "cohort_id": 10,
+      "official_full_precision": "0.055080120152619844",
+      "paper": "0.055",
+      "match": true
+    },
+    {
+      "cohort_id": 25,
+      "official_full_precision": "0.1347411133708944",
+      "paper": "0.135",
+      "match": true
+    },
+    {
+      "cohort_id": 2,
+      "official_full_precision": "0.3745253114173855",
+      "paper": "0.375",
+      "match": true
+    },
+    {
+      "cohort_id": 14,
+      "official_full_precision": "0.4630940201477701",
+      "paper": "0.463",
+      "match": true
+    },
+    {
+      "cohort_id": 11,
+      "official_full_precision": "0.4610009139476726",
+      "paper": "0.461",
+      "match": true
+    }
+  ],
+  "aggregates_from_printed_cells": {
+    "main_attack": {
+      "mia_t": {
+        "mean_of_printed_cells": "0.3254545454545454545454545454545454545455",
+        "printed_mean": "0.325",
+        "difference": "0.0004545454545454545454545454545454545455"
+      },
+      "aia_r_minus_phi": {
+        "mean_of_printed_cells": "0.1974090909090909090909090909090909090909",
+        "printed_mean": "0.197",
+        "difference": "0.0004090909090909090909090909090909090909"
+      },
+      "total": {
+        "mean_of_printed_cells": "0.5228636363636363636363636363636363636364",
+        "printed_mean": "0.523",
+        "difference": "-0.0001363636363636363636363636363636363636"
+      }
+    },
+    "preliminary_attack": {
+      "mia_t": {
+        "mean_of_printed_cells": "0.1516",
+        "printed_mean": "0.152",
+        "difference": "-0.0004"
+      },
+      "aia_R": {
+        "mean_of_printed_cells": "0.1782",
+        "printed_mean": "0.178",
+        "difference": "0.0002"
+      },
+      "total": {
+        "mean_of_printed_cells": "0.3298",
+        "printed_mean": "0.330",
+        "difference": "-0.0002"
+      }
+    },
+    "main_anonymity": {
+      "mean_of_printed_mia_t_j": "0.079",
+      "printed_beta_raw": "0.079",
+      "mia_component_from_printed_beta": "0.1727272727272727272727272727272727272727",
+      "paper_mia_component": "0.174",
+      "warning": "表示丸め値を代入した再計算値は公式未丸め計算を置換しない。"
+    },
+    "preliminary_defense": {
+      "mean_of_printed_mia_t_j": "0.02565",
+      "printed_beta_raw": "0.026",
+      "mia_component_from_printed_beta": "0",
+      "paper_mia_component": "0.000",
+      "warning": "表示丸め値を代入した再計算値は公式未丸め計算を置換しない。"
+    }
+  },
+  "contributions_from_official_round8": {
+    "attack_total": "0.5229091082933554",
+    "mia_power": "0.32545454545454544",
+    "aia_power": "0.1974545628388099",
+    "mia_prior_record_exact_fraction": "179/550",
+    "other_16_mia_term_exact_fraction": "29/550",
+    "mia_whole_channel_mean": "0.0715047915047915",
+    "mia_rare_channel_mean": "1.0",
+    "mia_fraction_of_attack_percent": "62.23921907131197453467887804621958097391",
+    "aia_fraction_of_attack_percent": "37.76078092868801399105168422587398640845",
+    "rare_mia_term_fraction": "6/22",
+    "rare_mia_term": "0.2727272727272727272727272727272727272727",
+    "rare_mia_term_percent_of_attack": "52.15577017149048378462565965841791856475",
+    "rare_mia_term_percent_of_mia": "83.79888268156424955525732655035752202267",
+    "other_16_mia_term": "0.0527272727272727127272727272727272727273",
+    "rare_max_uplift_over_whole_channel": "0.25394975394975394",
+    "rare_max_uplift_percent_of_attack": "48.56479834106972211456709842046263041191",
+    "whole_channel_plus_aia_arithmetic": "0.2689593543436014",
+    "uplift_interpretation": "同じ第8回回答のmax(全体,希少)集計と全体のみの集計との差。希少攻撃未実施の実験・因果効果ではない。",
+    "rare_targets": [
+      {
+        "presentation_no": 15,
+        "main_cohort_id": 16,
+        "name": "あれ / are",
+        "rank": "1",
+        "rare_members": 2,
+        "paper_rare_tpr": "1.000"
+      },
+      {
+        "presentation_no": 16,
+        "main_cohort_id": 6,
+        "name": "k等分の花嫁",
+        "rank": "1",
+        "rare_members": 1,
+        "paper_rare_tpr": "1.000"
+      },
+      {
+        "presentation_no": 18,
+        "main_cohort_id": 17,
+        "name": "bot035",
+        "rank": "2",
+        "rare_members": 1,
+        "paper_rare_tpr": "1.000"
+      },
+      {
+        "presentation_no": 19,
+        "main_cohort_id": 10,
+        "name": "アウトサイダー / outsider",
+        "rank": "1",
+        "rare_members": 2,
+        "paper_rare_tpr": "1.000"
+      },
+      {
+        "presentation_no": 20,
+        "main_cohort_id": 25,
+        "name": "映画しろうと diabetes島のひみつ / Shiroto",
+        "rank": "1",
+        "rare_members": 2,
+        "paper_rare_tpr": "1.000"
+      },
+      {
+        "presentation_no": 23,
+        "main_cohort_id": 11,
+        "name": "HiddenMetrics",
+        "rank": "3",
+        "rare_members": 1,
+        "paper_rare_tpr": "1.000"
+      }
+    ]
+  },
+  "target_results": {
+    "main_aia_decisive_stars": [
+      {
+        "presentation_no": 1,
+        "main_cohort_id": 26,
+        "name": "宮地研.exe",
+        "rank": "3"
+      },
+      {
+        "presentation_no": 3,
+        "main_cohort_id": 15,
+        "name": "さいふぉん-3/siphon-3",
+        "rank": "2"
+      },
+      {
+        "presentation_no": 7,
+        "main_cohort_id": 3,
+        "name": "神ぼ大/jinbodai",
+        "rank": "3"
+      },
+      {
+        "presentation_no": 9,
+        "main_cohort_id": 4,
+        "name": "ステテコVanguard",
+        "rank": "2"
+      }
+    ],
+    "main_total_first_places": [
+      {
+        "presentation_no": 15,
+        "main_cohort_id": 16,
+        "name": "あれ / are",
+        "rank": "1"
+      },
+      {
+        "presentation_no": 16,
+        "main_cohort_id": 6,
+        "name": "k等分の花嫁",
+        "rank": "1"
+      },
+      {
+        "presentation_no": 19,
+        "main_cohort_id": 10,
+        "name": "アウトサイダー / outsider",
+        "rank": "1"
+      },
+      {
+        "presentation_no": 20,
+        "main_cohort_id": 25,
+        "name": "映画しろうと diabetes島のひみつ / Shiroto",
+        "rank": "1"
+      }
+    ],
+    "preliminary_total_first_places_including_ties": [
+      {
+        "presentation_no": 5,
+        "main_cohort_id": 9,
+        "name": "HarunaDan@GU",
+        "rank": "1（同率） / 20"
+      },
+      {
+        "presentation_no": 10,
+        "main_cohort_id": 5,
+        "name": "神神公社 / KU nu tau tau",
+        "rank": "1 / 20"
+      },
+      {
+        "presentation_no": 20,
+        "main_cohort_id": 25,
+        "name": "映画しろうと diabetes島のひみつ / Shiroto",
+        "rank": "1 / 20"
+      }
+    ],
+    "haruna": {
+      "presentation_no": 5,
+      "main_cohort_id": 9,
+      "name": "HarunaDan@GU",
+      "rank": "14",
+      "mia_all": "0.720",
+      "aia_r_minus_phi": "0.752",
+      "total": "1.472",
+      "target_rank_denominator": "22"
+    },
+    "main_mia_whole_printed_zero_count": 8
+  },
+  "conditional_scenarios_from_paper": {
+    "current_anon": "0.797",
+    "lower_only_max_aia_to_at_most_second": {
+      "remaining_max_R": "0.278",
+      "remaining_max_attacker": "神ぼ大/jinbodai",
+      "remaining_aia_component": "0.189",
+      "anon": "0.811",
+      "condition": "最大攻撃者のRだけを次点以下に下げ、他攻撃者・phi・MIA成分・Uを固定。"
+    },
+    "lower_all_aia_to_at_most_mia": {
+      "anon_ceiling": "0.826",
+      "final_score_arithmetic_gain": "0.0261",
+      "condition": "MIA成分0.174とU=0.922を固定し、AIA最大成分だけを0.174以下に下げる。"
+    },
+    "improve_only_profile_to_one": {
+      "U_ceiling": "0.937",
+      "overall_score_if_anon_unchanged": "0.797",
+      "condition": "prof_calだけを1へ上げ、他の有用性項目・匿名性を固定。U_gen=0.937が次の制約。"
+    }
+  },
+  "checks": [
+    {
+      "name": "row_count:main_attack",
+      "status": "PASS",
+      "expected": 22,
+      "observed": 22
+    },
+    {
+      "name": "row_count:preliminary_attack",
+      "status": "PASS",
+      "expected": 20,
+      "observed": 20
+    },
+    {
+      "name": "row_count:main_anonymity",
+      "status": "PASS",
+      "expected": 22,
+      "observed": 22
+    },
+    {
+      "name": "row_count:preliminary_defense",
+      "status": "PASS",
+      "expected": 20,
+      "observed": 20
+    },
+    {
+      "name": "row_count:utility",
+      "status": "PASS",
+      "expected": 24,
+      "observed": 24
+    },
+    {
+      "name": "six_pages",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:summary",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:utility",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:main_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unresolved_cells:preliminary_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/01_最終順位と得点.jpg",
+      "status": "PASS",
+      "bytes": 286286,
+      "sha256": "4d75afa0decbb0e54ff129139a22c903f32a7b1608e022f764739e0d39207bcc",
+      "git_blob_sha1": "7429603cc1de75ede0094630edfbaeb281764c71"
+    },
+    {
+      "name": "image_page_binding:summary",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/02_有用性内訳.jpg",
+      "status": "PASS",
+      "bytes": 475993,
+      "sha256": "b67715a5304a223fcbfedb321754c20d9910e0b63df06aac28940a24b1e1ac5b",
+      "git_blob_sha1": "2092642b5b83f67da1963dee35000d22f25f57df"
+    },
+    {
+      "name": "image_page_binding:utility",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/03_本戦_匿名性と被攻撃内訳.jpg",
+      "status": "PASS",
+      "bytes": 435359,
+      "sha256": "52df494f2aeb19546089a0f5035d20a23efdd8db4974fb2bfc0b7de78b572ec6",
+      "git_blob_sha1": "aa3fc9c96c5cbb7549f815591ea18ad54762747f"
+    },
+    {
+      "name": "image_page_binding:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/04_本戦_攻撃力と標的別成績.jpg",
+      "status": "PASS",
+      "bytes": 412152,
+      "sha256": "85fe9ad320eb0a08fd5bac500d7b49cadcda12b600b5b14f4490aed1f7c2c817",
+      "git_blob_sha1": "58dd2cb8d14e2108a0c0d266fb2497f745b2da6f"
+    },
+    {
+      "name": "image_page_binding:main_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/05_予備戦_匿名性と被攻撃内訳.jpg",
+      "status": "PASS",
+      "bytes": 391042,
+      "sha256": "4fefaadabdbbb5953aa9bbbbfb25d7c8bce4c8e1a382bdcc3bcc784488ebecd7",
+      "git_blob_sha1": "a8d4f0f52d0be9ae0cf1be4a0fa7f88459ddf5c5"
+    },
+    {
+      "name": "image_page_binding:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "image_integrity:画像/06_予備戦_攻撃力と標的別成績.jpg",
+      "status": "PASS",
+      "bytes": 401592,
+      "sha256": "e5bfab64b600f0bb1c621ac17841ac02f3fa9a62dc15fa5227343e093e001c07",
+      "git_blob_sha1": "9053ecc289b2dad4b76d8395ff3e87e5c53d26ee"
+    },
+    {
+      "name": "image_page_binding:preliminary_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "six_unique_images",
+      "status": "PASS"
+    },
+    {
+      "name": "reference_blob:攻撃フェーズ/参加チーム対応表.csv",
+      "status": "PASS",
+      "expected": "cb72b54c8323c640a3fe4cfe73e161706d0359aa",
+      "observed": "cb72b54c8323c640a3fe4cfe73e161706d0359aa"
+    },
+    {
+      "name": "reference_blob:攻撃フェーズ/MIA/8回目/採点結果/解析結果.json",
+      "status": "PASS",
+      "expected": "be7c68733253fbdb3a2e45afa001bd865fa32e95",
+      "observed": "be7c68733253fbdb3a2e45afa001bd865fa32e95"
+    },
+    {
+      "name": "reference_blob:攻撃フェーズ/MIA/8回目/採点結果/scores.json",
+      "status": "PASS",
+      "expected": "22a6567b64e0e5abc07701371b3ae93779ec6cea",
+      "observed": "22a6567b64e0e5abc07701371b3ae93779ec6cea"
+    },
+    {
+      "name": "reference_blob:攻撃フェーズ/MIA/8回目/README.md",
+      "status": "PASS",
+      "expected": "2587e6032927955930f9dea0c9c9b12ee594bd39",
+      "observed": "2587e6032927955930f9dea0c9c9b12ee594bd39"
+    },
+    {
+      "name": "own_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "identities_unique_complete:main_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:18",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:18",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:18",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:18",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_attack:23",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_attack:23",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_attack:23",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_attack:23",
+      "status": "PASS"
+    },
+    {
+      "name": "identities_unique_complete:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:1",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:1",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:2",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:2",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:3",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:3",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:4",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:4",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:5",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:5",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:6",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:6",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:7",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:7",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:9",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:9",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:10",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:10",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:11",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:11",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:12",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:12",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:13",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:13",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:14",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:14",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:15",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:15",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:16",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:16",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:17",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:17",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:18",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:18",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:18",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:18",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:19",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:19",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:20",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:20",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:21",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:21",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:22",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:22",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:main_anonymity:23",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:main_anonymity:23",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:main_anonymity:23",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:main_anonymity:23",
+      "status": "PASS"
+    },
+    {
+      "name": "identities_unique_complete:preliminary_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:1",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:2",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:3",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:4",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:5",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:6",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:7",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:9",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:10",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:11",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:12",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:13",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:14",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:15",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:16",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:17",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:19",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:20",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:21",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_attack:22",
+      "status": "PASS"
+    },
+    {
+      "name": "identities_unique_complete:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:1",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:1",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:1",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:2",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:2",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:2",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:3",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:3",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:3",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:4",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:4",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:4",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:5",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:5",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:5",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:6",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:6",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:6",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:7",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:7",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:7",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:9",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:9",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:9",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:10",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:10",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:10",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:11",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:11",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:11",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:12",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:12",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:12",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:13",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:13",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:13",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:14",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:14",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:14",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:15",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:15",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:15",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:16",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:16",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:16",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:17",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:17",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:17",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:19",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:19",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:19",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:20",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:20",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:20",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:21",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:21",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:21",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:preliminary_defense:22",
+      "status": "PASS"
+    },
+    {
+      "name": "membership_count:preliminary_defense:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_missing_rare:preliminary_defense:22",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_max:preliminary_defense:22",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:26",
+      "status": "PASS",
+      "official_full_precision": "0.22510896738250644",
+      "official_rounded": "0.225",
+      "paper": "0.225"
+    },
+    {
+      "name": "aia_subtraction_rounding:26",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:26",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:26",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:27",
+      "status": "PASS",
+      "official_full_precision": "0.2173142958566527",
+      "official_rounded": "0.217",
+      "paper": "0.217"
+    },
+    {
+      "name": "aia_subtraction_rounding:27",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:27",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:27",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:15",
+      "status": "PASS",
+      "official_full_precision": "0.19039066390239273",
+      "official_rounded": "0.190",
+      "paper": "0.190"
+    },
+    {
+      "name": "aia_subtraction_rounding:15",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:15",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:15",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:13",
+      "status": "PASS",
+      "official_full_precision": "0.14146731892983327",
+      "official_rounded": "0.141",
+      "paper": "0.141"
+    },
+    {
+      "name": "aia_subtraction_rounding:13",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:13",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:13",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:9",
+      "status": "PASS",
+      "official_full_precision": "0.7522338155494697",
+      "official_rounded": "0.752",
+      "paper": "0.752"
+    },
+    {
+      "name": "aia_subtraction_rounding:9",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:9",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:9",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:22",
+      "status": "PASS",
+      "official_full_precision": "0.13819971999944577",
+      "official_rounded": "0.138",
+      "paper": "0.138"
+    },
+    {
+      "name": "aia_subtraction_rounding:22",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:22",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:22",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:3",
+      "status": "PASS",
+      "official_full_precision": "0.2069833125245568",
+      "official_rounded": "0.207",
+      "paper": "0.207"
+    },
+    {
+      "name": "aia_subtraction_rounding:3",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:3",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:3",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:4",
+      "status": "PASS",
+      "official_full_precision": "0.20915107823156465",
+      "official_rounded": "0.209",
+      "paper": "0.209"
+    },
+    {
+      "name": "aia_subtraction_rounding:4",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:4",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:4",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:5",
+      "status": "PASS",
+      "official_full_precision": "0.0341408690483874",
+      "official_rounded": "0.034",
+      "paper": "0.034"
+    },
+    {
+      "name": "aia_subtraction_rounding:5",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:5",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:5",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:7",
+      "status": "PASS",
+      "official_full_precision": "0.03451292988790697",
+      "official_rounded": "0.035",
+      "paper": "0.035"
+    },
+    {
+      "name": "aia_subtraction_rounding:7",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:7",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:7",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:1",
+      "status": "PASS",
+      "official_full_precision": "0.1637143657376881",
+      "official_rounded": "0.164",
+      "paper": "0.164"
+    },
+    {
+      "name": "aia_subtraction_rounding:1",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:1",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:1",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:0",
+      "status": "PASS",
+      "official_full_precision": "0.06473858879629824",
+      "official_rounded": "0.065",
+      "paper": "0.065"
+    },
+    {
+      "name": "aia_subtraction_rounding:0",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:0",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:0",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:8",
+      "status": "PASS",
+      "official_full_precision": "0.05732317488141874",
+      "official_rounded": "0.057",
+      "paper": "0.057"
+    },
+    {
+      "name": "aia_subtraction_rounding:8",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:8",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:8",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:16",
+      "status": "PASS",
+      "official_full_precision": "0.23718638592669977",
+      "official_rounded": "0.237",
+      "paper": "0.237"
+    },
+    {
+      "name": "aia_subtraction_rounding:16",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:16",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:16",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:6",
+      "status": "PASS",
+      "official_full_precision": "0.11695611340175327",
+      "official_rounded": "0.117",
+      "paper": "0.117"
+    },
+    {
+      "name": "aia_subtraction_rounding:6",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:6",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:6",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:12",
+      "status": "PASS",
+      "official_full_precision": "0.05285730977287794",
+      "official_rounded": "0.053",
+      "paper": "0.053"
+    },
+    {
+      "name": "aia_subtraction_rounding:12",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:12",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:12",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:17",
+      "status": "PASS",
+      "official_full_precision": "0.013279993588023373",
+      "official_rounded": "0.013",
+      "paper": "0.013"
+    },
+    {
+      "name": "aia_subtraction_rounding:17",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:17",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:17",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:10",
+      "status": "PASS",
+      "official_full_precision": "0.055080120152619844",
+      "official_rounded": "0.055",
+      "paper": "0.055"
+    },
+    {
+      "name": "aia_subtraction_rounding:10",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:10",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:10",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:25",
+      "status": "PASS",
+      "official_full_precision": "0.1347411133708944",
+      "official_rounded": "0.135",
+      "paper": "0.135"
+    },
+    {
+      "name": "aia_subtraction_rounding:25",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:25",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:25",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:2",
+      "status": "PASS",
+      "official_full_precision": "0.3745253114173855",
+      "official_rounded": "0.375",
+      "paper": "0.375"
+    },
+    {
+      "name": "aia_subtraction_rounding:2",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:2",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:2",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:14",
+      "status": "PASS",
+      "official_full_precision": "0.4630940201477701",
+      "official_rounded": "0.463",
+      "paper": "0.463"
+    },
+    {
+      "name": "aia_subtraction_rounding:14",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:14",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:14",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_round8:11",
+      "status": "PASS",
+      "official_full_precision": "0.4610009139476726",
+      "official_rounded": "0.461",
+      "paper": "0.461"
+    },
+    {
+      "name": "aia_subtraction_rounding:11",
+      "status": "PASS"
+    },
+    {
+      "name": "main_target_total_rounding:11",
+      "status": "PASS"
+    },
+    {
+      "name": "main_rank_range:11",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_all_targets_covered",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:1",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:1",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:2",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:2",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:3",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:3",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:4",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:4",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:5",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:5",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:6",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:6",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:7",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:7",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:9",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:9",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:10",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:10",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:11",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:11",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:12",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:12",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:13",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:13",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:14",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:14",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:15",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:15",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:16",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:16",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:17",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:17",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:19",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:19",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:20",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:20",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:21",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:21",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_target_total_rounding:22",
+      "status": "PASS"
+    },
+    {
+      "name": "prelim_rank_range:22",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:1",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:2",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:3",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:4",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:5",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:6",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:7",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:9",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:10",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:11",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:12",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:13",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:14",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:15",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:16",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:17",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:18",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:19",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:20",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:21",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:22",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:main_anonymity:23",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:1",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:2",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:3",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:4",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:5",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:6",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:7",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:9",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:10",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:11",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:12",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:13",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:14",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:15",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:16",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:17",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:19",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:20",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:21",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_max:preliminary_defense:22",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:attacker_count",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:mia_component",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:beta_raw",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:beta_chance",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:beta",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:aia_component",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:anon",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:max_aia_r",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:target_phi",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_main_defense_duplicate:max_aia_attacker",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:preliminary:score",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:preliminary:median",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:preliminary:rank",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_anonymity_duplicate:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "overall_min:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:main:score",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:main:median",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_utility_duplicate:main:rank",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_anonymity_duplicate:main",
+      "status": "PASS"
+    },
+    {
+      "name": "overall_min:main",
+      "status": "PASS"
+    },
+    {
+      "name": "final_weight_rounding:総合得点",
+      "status": "PASS",
+      "arithmetic_using_printed_values": "0.7711",
+      "paper": "0.771"
+    },
+    {
+      "name": "final_box_duplicate:総合得点",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_overall_duplicate:main",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_overall_duplicate:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "final_weight_rounding:攻撃力",
+      "status": "PASS",
+      "arithmetic_using_printed_values": "0.5037",
+      "paper": "0.504"
+    },
+    {
+      "name": "final_box_duplicate:攻撃力",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_attack_duplicate:main",
+      "status": "PASS"
+    },
+    {
+      "name": "summary_attack_duplicate:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:main_attack:mia_t",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:main_attack:aia_r_minus_phi",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:main_attack:total",
+      "status": "PASS"
+    },
+    {
+      "name": "attack_sum_rounding:main_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:preliminary_attack:mia_t",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:preliminary_attack:aia_R",
+      "status": "PASS"
+    },
+    {
+      "name": "table_mean_rounding:preliminary_attack:total",
+      "status": "PASS"
+    },
+    {
+      "name": "attack_sum_rounding:preliminary_attack",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_max_aia:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_max_attacker:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_component:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_attacker_count:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_beta_raw_mean_rounding:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_beta_rounding:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_mia_component_rounding:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_anon:main_anonymity",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_max_aia:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_max_attacker:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_aia_component:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_attacker_count:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_beta_raw_mean_rounding:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_beta_rounding:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_mia_component_rounding:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "defense_anon:preliminary_defense",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:preliminary:U",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:preliminary:U_gen",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:preliminary:U_spec",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:preliminary:U_rare",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_valid_mean:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_marginal_10_columns:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_marginal_mean_rounding:preliminary",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:U",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:U_gen",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:U_spec",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:U_rare",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:corr",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_min:main:tail",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_valid_mean:main",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_marginal_10_columns:main",
+      "status": "PASS"
+    },
+    {
+      "name": "utility_marginal_mean_rounding:main",
+      "status": "PASS"
+    },
+    {
+      "name": "official_json_score_agreement",
+      "status": "PASS"
+    },
+    {
+      "name": "official_aia_mean",
+      "status": "PASS"
+    },
+    {
+      "name": "official_total_components",
+      "status": "PASS"
+    },
+    {
+      "name": "official_main_aggregate_rounding:0.325",
+      "status": "PASS"
+    },
+    {
+      "name": "official_main_aggregate_rounding:0.197",
+      "status": "PASS"
+    },
+    {
+      "name": "official_main_aggregate_rounding:0.523",
+      "status": "PASS"
+    },
+    {
+      "name": "official_whole_mia_vs_paper_rounding",
+      "status": "PASS"
+    },
+    {
+      "name": "rare_six_targets_perfect",
+      "status": "PASS"
+    },
+    {
+      "name": "rare_nine_members",
+      "status": "PASS"
+    },
+    {
+      "name": "mia_recorded_exact_fraction",
+      "status": "PASS"
+    },
+    {
+      "name": "main_aia_four_decisive_stars",
+      "status": "PASS"
+    },
+    {
+      "name": "main_four_target_first_places",
+      "status": "PASS"
+    },
+    {
+      "name": "haruna_high_value_but_rank14",
+      "status": "PASS"
+    },
+    {
+      "name": "conditional_scenarios",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "数値検証は転記の整合性検査であり、画像の自動OCR再認識ではない。画像は別途目視で照合済み。",
+    "紙の攻撃力順位1位は予備戦10%・本戦90%の最終順位。本戦単独の攻撃力順位は紙にない。",
+    "他チームの総合点・攻撃力の全順位表は含まれず、2位との差や反実仮想の順位は求められない。",
+    "画像のハッシュは出典台帳との一致を検証。元の添付写真はリポジトリ外なので再実行時には不要。"
+  ]
+}

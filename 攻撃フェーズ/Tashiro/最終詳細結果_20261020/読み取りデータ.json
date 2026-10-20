@@ -1,0 +1,2479 @@
+{
+  "metadata": {
+    "document": "PWS Cup 2026 チーム別サマリー（紙6ページ）",
+    "document_date": "2026-10-20",
+    "transcribed_on": "2026-10-20",
+    "team_name": "ステテコは恥だが役に立つ",
+    "presentation_no": 8,
+    "main_cohort_id": 28,
+    "preliminary_cohort_id": 5,
+    "repository": "smsaku00/pwscup2026-sutehaji",
+    "reference_commit": "c7133b28366e2c1882e297fdd6898bd333d1c192",
+    "number_policy": "紙の数値は表示桁を保つ文字列。—、本戦から、同率、記号を保持。既存公式JSONの未丸め値は別出典として区別する。",
+    "identity_policy": "紙のNo.は発表順。既存対応表の登録順で結合し、各行に本戦・予備戦コホート番号を追加した。原紙のチーム名と公式対応表の名称は別フィールド。",
+    "image_policy": "元画像は改名コピーのみ。再圧縮、回転、切り抜き、画素編集を行っていない。",
+    "method": "分担目視転記、拡大再照合、別担当による数値・解釈確認。再集計は再集計.py。",
+    "sources": [
+      {
+        "path": "攻撃フェーズ/参加チーム対応表.csv",
+        "git_blob_sha1": "cb72b54c8323c640a3fe4cfe73e161706d0359aa"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/採点結果/解析結果.json",
+        "git_blob_sha1": "be7c68733253fbdb3a2e45afa001bd865fa32e95"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/採点結果/scores.json",
+        "git_blob_sha1": "22a6567b64e0e5abc07701371b3ae93779ec6cea"
+      },
+      {
+        "path": "攻撃フェーズ/MIA/8回目/README.md",
+        "git_blob_sha1": "2587e6032927955930f9dea0c9c9b12ee594bd39"
+      }
+    ],
+    "official_team_list": "https://www.iwsec.org/pws/2026/cup26.html#参加チーム"
+  },
+  "pages": {
+    "summary": {
+      "source_file": "IMG_8744.jpg",
+      "page": "1",
+      "title": "PWS Cup 2026 チーム別サマリー",
+      "team": "ステテコは恥だが役に立つ",
+      "presentation_order": "8",
+      "date_printed": "発表会 2026年10月20日",
+      "overall_rank": "5",
+      "overall_rank_denominator": "23",
+      "overall_final_score": "0.771",
+      "attack_rank": "1",
+      "attack_rank_denominator": "23",
+      "attack_final_score": "0.504",
+      "final_score_formula": "0.1×予備戦+0.9×本戦",
+      "final_score_rows": [
+        {
+          "metric": "総合得点",
+          "preliminary": "0.538",
+          "main": "0.797",
+          "final": "0.771"
+        },
+        {
+          "metric": "攻撃力",
+          "preliminary": "0.330",
+          "main": "0.523",
+          "final": "0.504"
+        }
+      ],
+      "overall_formula": "総合得点 = min(有用性 U, 匿名性 Anon)",
+      "round_scores": [
+        {
+          "round": "予備戦",
+          "team_count": "21",
+          "metric": "有用性 U",
+          "score": "0.983",
+          "median": "0.952",
+          "rank": "2",
+          "min_selected": false
+        },
+        {
+          "round": "予備戦",
+          "team_count": "21",
+          "metric": "匿名性 Anon",
+          "score": "0.538",
+          "median": "0.679",
+          "rank": "16",
+          "min_selected": true
+        },
+        {
+          "round": "予備戦",
+          "team_count": "21",
+          "metric": "総合得点",
+          "score": "0.538",
+          "median": "0.660",
+          "rank": "15",
+          "min_selected": false
+        },
+        {
+          "round": "本戦",
+          "team_count": "23",
+          "metric": "有用性 U",
+          "score": "0.922",
+          "median": "0.922",
+          "rank": "12",
+          "min_selected": false
+        },
+        {
+          "round": "本戦",
+          "team_count": "23",
+          "metric": "匿名性 Anon",
+          "score": "0.797",
+          "median": "0.603",
+          "rank": "4",
+          "min_selected": true
+        },
+        {
+          "round": "本戦",
+          "team_count": "23",
+          "metric": "総合得点",
+          "score": "0.797",
+          "median": "0.603",
+          "rank": "4",
+          "min_selected": false
+        }
+      ],
+      "score_note": "▼は min で採られた値（小さいほう）です。中央値と順位はその回の全チームの中での値で、他チームの得点は載せていません。",
+      "main_anonymity": {
+        "mia_component": "0.174",
+        "attacker_count": "22",
+        "beta_raw": "0.079",
+        "beta_chance": "0.060",
+        "beta": "0.029",
+        "beta_formula": "β = max(β_raw − β_chance + 0.01, 0.01)",
+        "mia_formula": "MIA 成分 = clip((β/0.01 − 1)/11, 0, 1)",
+        "aia_component": "0.203",
+        "max_aia_r": "0.292",
+        "target_phi": "0.089",
+        "max_aia_attacker": "コログの森団/Koroks in the forest",
+        "aia_explanation": "Rが最も大きかった攻撃者の R 0.292 から、あなたのコホートの差し引く水準 φ 0.089 を引いた値",
+        "anon": "0.797",
+        "decisive_component": "AIA",
+        "anon_formula": "Anon = 1 − max(MIA 成分, AIA 成分)"
+      },
+      "page_guide": "2ページ目に有用性の内訳、3〜4ページ目に本戦の匿名性と攻撃力の内訳、5〜6ページ目に予備戦の匿名性と攻撃力の内訳があります。",
+      "uncertainties": [],
+      "source": "画像/01_最終順位と得点.jpg",
+      "page_number": 1
+    },
+    "utility": {
+      "source_image": "IMG_8748.jpg",
+      "document_title": "PWS Cup 2026 チーム別サマリー",
+      "team": "ステテコは恥だが役に立つ",
+      "presentation_no": "8",
+      "event_date": "2026年10月20日",
+      "section_title": "有用性 Uの内訳（ルールブック §6.1）",
+      "preliminary_team_count": "21",
+      "main_team_count": "23",
+      "rows": [
+        {
+          "label": "有用性 U",
+          "metric": "U",
+          "level": 0,
+          "preliminary_score": "0.983",
+          "preliminary_median": "0.952",
+          "preliminary_rank": "2",
+          "preliminary_min_mark": "",
+          "main_score": "0.922",
+          "main_median": "0.922",
+          "main_rank": "12",
+          "main_min_mark": ""
+        },
+        {
+          "label": "U_gen 一般有用性",
+          "metric": "U_gen",
+          "level": 1,
+          "preliminary_score": "0.987",
+          "preliminary_median": "0.972",
+          "preliminary_rank": "2",
+          "preliminary_min_mark": "",
+          "main_score": "0.937",
+          "main_median": "0.948",
+          "main_rank": "14",
+          "main_min_mark": ""
+        },
+        {
+          "label": "周辺分布の一致",
+          "metric": "marginal",
+          "level": 2,
+          "preliminary_score": "0.987",
+          "preliminary_median": "0.972",
+          "preliminary_rank": "2",
+          "preliminary_min_mark": "▼",
+          "main_score": "0.980",
+          "main_median": "0.973",
+          "main_rank": "6",
+          "main_min_mark": ""
+        },
+        {
+          "label": "順位相関構造の一致",
+          "metric": "corr",
+          "level": 2,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "0.937",
+          "main_median": "0.956",
+          "main_rank": "14",
+          "main_min_mark": "▼"
+        },
+        {
+          "label": "平均相関差のスコア",
+          "metric": "corr_mean",
+          "level": 3,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "0.937",
+          "main_median": "0.956",
+          "main_rank": "14",
+          "main_min_mark": "▼"
+        },
+        {
+          "label": "上位相関差のスコア",
+          "metric": "corr_tail",
+          "level": 3,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "0.942",
+          "main_median": "0.958",
+          "main_rank": "14",
+          "main_min_mark": ""
+        },
+        {
+          "label": "同時分布の一致",
+          "metric": "pMSE",
+          "level": 2,
+          "preliminary_score": "0.995",
+          "preliminary_median": "0.997",
+          "preliminary_rank": "12（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "0.999",
+          "main_median": "0.998",
+          "main_rank": "7（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "発症曲線の一致",
+          "metric": "time_dz",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "裾の一致",
+          "metric": "tail",
+          "level": 2,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "系統的なずれ",
+          "metric": "U_shift",
+          "level": 3,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "局所的なずれ",
+          "metric": "U_spike",
+          "level": 3,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "U_spec 特定タスクでの結果忠実度",
+          "metric": "U_spec",
+          "level": 1,
+          "preliminary_score": "0.983",
+          "preliminary_median": "0.957",
+          "preliminary_rank": "2",
+          "preliminary_min_mark": "▼",
+          "main_score": "0.960",
+          "main_median": "0.952",
+          "main_rank": "8",
+          "main_min_mark": ""
+        },
+        {
+          "label": "結論一致",
+          "metric": "IO",
+          "level": 2,
+          "preliminary_score": "0.983",
+          "preliminary_median": "0.957",
+          "preliminary_rank": "2",
+          "preliminary_min_mark": "▼",
+          "main_score": "0.960",
+          "main_median": "0.952",
+          "main_rank": "8",
+          "main_min_mark": "▼"
+        },
+        {
+          "label": "判別再現",
+          "metric": "tstr_cal",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "12",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "U_rare 希少群の有用性",
+          "metric": "U_rare",
+          "level": 1,
+          "preliminary_score": "0.998",
+          "preliminary_median": "0.971",
+          "preliminary_rank": "4",
+          "preliminary_min_mark": "",
+          "main_score": "0.922",
+          "main_median": "0.961",
+          "main_rank": "17",
+          "main_min_mark": "▼"
+        },
+        {
+          "label": "希少率",
+          "metric": "mass_star",
+          "level": 2,
+          "preliminary_score": "0.998",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "18",
+          "preliminary_min_mark": "▼",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "プロファイル",
+          "metric": "prof_cal",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "0.974",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "0.922",
+          "main_median": "0.978",
+          "main_rank": "21",
+          "main_min_mark": "▼"
+        },
+        {
+          "label": "発症",
+          "metric": "onset_cal",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "同時分布",
+          "metric": "c2st_cal",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "U_valid 妥当性（平均）",
+          "metric": "U_valid",
+          "level": 1,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "0.998",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "打ち切り整合",
+          "metric": "cens",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "0.996",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "関係の非捏造",
+          "metric": "no_fab",
+          "level": 2,
+          "preliminary_score": "1.000",
+          "preliminary_median": "1.000",
+          "preliminary_rank": "1（同率）",
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "重複行",
+          "metric": "no_dup",
+          "level": 2,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        },
+        {
+          "label": "行の新規性",
+          "metric": "novel",
+          "level": 2,
+          "preliminary_score": "本戦から",
+          "preliminary_median": null,
+          "preliminary_rank": null,
+          "preliminary_min_mark": "",
+          "main_score": "1.000",
+          "main_median": "1.000",
+          "main_rank": "1（同率）",
+          "main_min_mark": ""
+        }
+      ],
+      "notes": [
+        "▼はその段のminで採られた値です（U=4観点のmin、U_gen・U_spec・U_rareはその下の観点のmin、corrとtailはさらにその下の2つのmin）。値がすべて同じとき（すべて1.000など）は付けていません。U_validは平均なので印を付けていません。予備戦ではU_genが3つ（marginal・pMSE・time_dz）、U_validが2つ（cens・no_fab）の観点でした。この表の値は、公式の匿名化データCを採点プログラムにもう一度通して取り出したもので、Uと4観点はリーダーボードの値と一致します。"
+      ],
+      "marginal_columns": {
+        "title": "周辺分布の一致の列ごとの値（連続7列は1−KS、カテゴリ3列は1−TVD）",
+        "columns": [
+          "age",
+          "BMI",
+          "SBP",
+          "TG",
+          "HDL",
+          "ALT",
+          "FPG",
+          "sex",
+          "smoking",
+          "prefecture"
+        ],
+        "preliminary_values": {
+          "age": "1.000",
+          "BMI": "0.987",
+          "SBP": "0.990",
+          "TG": "0.988",
+          "HDL": "0.928",
+          "ALT": "0.990",
+          "FPG": "0.991",
+          "sex": "1.000",
+          "smoking": "1.000",
+          "prefecture": "1.000"
+        },
+        "main_values": {
+          "age": "0.977",
+          "BMI": "0.974",
+          "SBP": "0.976",
+          "TG": "0.977",
+          "HDL": "0.973",
+          "ALT": "0.966",
+          "FPG": "0.966",
+          "sex": "0.989",
+          "smoking": "0.998",
+          "prefecture": "1.000"
+        },
+        "preliminary_bold_min_columns": [
+          "HDL"
+        ],
+        "main_bold_min_columns": [
+          "ALT",
+          "FPG"
+        ],
+        "note": "太字はその回で最も低い列です。marginalは10列の平均です。"
+      },
+      "raw_scoring_values": {
+        "title": "有用性の採点で使った値",
+        "rows": [
+          {
+            "metric": "rare_rows_C",
+            "label": "希少と判定された行の数（あなたのC）",
+            "preliminary": "51",
+            "main": "45"
+          },
+          {
+            "metric": "rare_rows_B",
+            "label": "希少と判定された行の数（元データB）",
+            "preliminary": "67",
+            "main": "51"
+          },
+          {
+            "metric": "cindex_C_to_B",
+            "label": "判別再現のc-index（Cで学習しBで測定）",
+            "preliminary": "0.910",
+            "main": "0.893"
+          },
+          {
+            "metric": "cindex_B_to_B",
+            "label": "判別再現のc-index（Bで学習しBで測定）",
+            "preliminary": "0.910",
+            "main": "0.893"
+          },
+          {
+            "metric": "duplicate_fraction",
+            "label": "重複している行の割合",
+            "preliminary": "本戦から",
+            "main": "0.000"
+          },
+          {
+            "metric": "novel_D_plus",
+            "label": "行の新規性のD+（A_bgの側へのはみ出し量）",
+            "preliminary": "本戦から",
+            "main": "0.003"
+          }
+        ],
+        "note": "Cの中で希少と判定される行が8人に満たないと、同時分布（c2st_cal）が0点になります（§6.1.3）。判別再現は（Cで学習したc-index − 0.5）÷（Bで学習したc-index − 0.5）です（§6.1.2）。"
+      },
+      "transcription_notes": [
+        "原資料の表示桁を文字列で保持。",
+        "予備戦tstr_calは得点・中央値とも1.000だが順位は「12」（同率記載なし）と印刷されており、そのまま保持。",
+        "本戦から導入された項目の予備戦欄は3セル結合の「本戦から」。JSONではpreliminary_scoreにその文字列、median/rankはnullで保持。"
+      ],
+      "uncertain_cells": [],
+      "source": "画像/02_有用性内訳.jpg",
+      "page_number": 2
+    },
+    "main_anonymity": {
+      "source_image": "IMG_8749.jpg",
+      "document_title": "PWS Cup 2026 チーム別サマリー",
+      "team": "ステテコは恥だが役に立つ",
+      "presentation_no": "8",
+      "event_date": "2026年10月20日",
+      "section_title": "匿名性 Anonの内訳（本戦）：あなたの匿名化データCに対する各攻撃者の攻撃の成功度",
+      "rows": [
+        {
+          "presentation_no": "1",
+          "attacker": "宮地研.exe",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_R_all": "0.135",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.135",
+          "mark": "",
+          "identity": {
+            "presentation_no": 1,
+            "main_cohort_id": 26,
+            "preliminary_cohort_id": 23,
+            "official_team_name": "宮地研.exe",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "2",
+          "attacker": "Asakatsu2026",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.214",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.214",
+          "mark": "",
+          "identity": {
+            "presentation_no": 2,
+            "main_cohort_id": 27,
+            "preliminary_cohort_id": 19,
+            "official_team_name": "Asakatsu2026",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "3",
+          "attacker": "さいふぉん-3/siphon-3",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.241",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.241",
+          "mark": "",
+          "identity": {
+            "presentation_no": 3,
+            "main_cohort_id": 15,
+            "preliminary_cohort_id": 20,
+            "official_team_name": "さいふぉん-3/siphon-3",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "4",
+          "attacker": "あかぎ団@群大/AkagiDan@GU",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.240",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.240",
+          "mark": "",
+          "identity": {
+            "presentation_no": 4,
+            "main_cohort_id": 13,
+            "preliminary_cohort_id": 9,
+            "official_team_name": "あかぎ団＠群大/AkagiDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "5",
+          "attacker": "HarunaDan@GU",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.184",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.184",
+          "mark": "",
+          "identity": {
+            "presentation_no": 5,
+            "main_cohort_id": 9,
+            "preliminary_cohort_id": 2,
+            "official_team_name": "HarunaDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "6",
+          "attacker": "ふてねこ/HuteNeko",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_R_all": "0.021",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.021",
+          "mark": "",
+          "identity": {
+            "presentation_no": 6,
+            "main_cohort_id": 22,
+            "preliminary_cohort_id": 3,
+            "official_team_name": "ふてねこ/HuteNeko",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "7",
+          "attacker": "神ぼ大/jinbodai",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.080",
+          "mia_rare": "—",
+          "mia_t_j": "0.080",
+          "aia_R_all": "0.278",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.278",
+          "mark": "",
+          "identity": {
+            "presentation_no": 7,
+            "main_cohort_id": 3,
+            "preliminary_cohort_id": 29,
+            "official_team_name": "神ぼ大/jinbodai",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "9",
+          "attacker": "ステテコVanguard",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.194",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.194",
+          "mark": "",
+          "identity": {
+            "presentation_no": 9,
+            "main_cohort_id": 4,
+            "preliminary_cohort_id": 13,
+            "official_team_name": "ステテコVanguard",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "10",
+          "attacker": "神神公社 / KU nu tau tau",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.145",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.145",
+          "mark": "",
+          "identity": {
+            "presentation_no": 10,
+            "main_cohort_id": 5,
+            "preliminary_cohort_id": 7,
+            "official_team_name": "神神公社 / KU nu tau tau",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "11",
+          "attacker": "Trailblazer",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.222",
+          "aia_R_rare": "0.119",
+          "aia_R": "0.222",
+          "mark": "",
+          "identity": {
+            "presentation_no": 11,
+            "main_cohort_id": 7,
+            "preliminary_cohort_id": 6,
+            "official_team_name": "Trailblazer",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "12",
+          "attacker": "CyberMantra",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_R_all": "0.000",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.000",
+          "mark": "",
+          "identity": {
+            "presentation_no": 12,
+            "main_cohort_id": 1,
+            "preliminary_cohort_id": 8,
+            "official_team_name": "CyberMantra",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "13",
+          "attacker": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.135",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.135",
+          "mark": "",
+          "identity": {
+            "presentation_no": 13,
+            "main_cohort_id": 0,
+            "preliminary_cohort_id": 4,
+            "official_team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "14",
+          "attacker": "グラブジャムン/GulabJamun",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.033",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.033",
+          "mark": "",
+          "identity": {
+            "presentation_no": 14,
+            "main_cohort_id": 8,
+            "preliminary_cohort_id": 26,
+            "official_team_name": "グラブジャムン/GulabJamun",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "15",
+          "attacker": "あれ / are",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.500",
+          "mia_t_j": "0.500",
+          "aia_R_all": "0.148",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.148",
+          "mark": "",
+          "identity": {
+            "presentation_no": 15,
+            "main_cohort_id": 16,
+            "preliminary_cohort_id": 17,
+            "official_team_name": "あれ / are",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "16",
+          "attacker": "k等分の花嫁",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.077",
+          "mia_rare": "1.000",
+          "mia_t_j": "1.000",
+          "aia_R_all": "0.128",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.128",
+          "mark": "",
+          "identity": {
+            "presentation_no": 16,
+            "main_cohort_id": 6,
+            "preliminary_cohort_id": 12,
+            "official_team_name": "k等分の花嫁",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "17",
+          "attacker": "Ritz",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.195",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.195",
+          "mark": "",
+          "identity": {
+            "presentation_no": 17,
+            "main_cohort_id": 12,
+            "preliminary_cohort_id": 1,
+            "official_team_name": "Ritz",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "18",
+          "attacker": "bot035",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.038",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.038",
+          "aia_R_all": "0.180",
+          "aia_R_rare": "0.014",
+          "aia_R": "0.180",
+          "mark": "",
+          "identity": {
+            "presentation_no": 18,
+            "main_cohort_id": 17,
+            "preliminary_cohort_id": 21,
+            "official_team_name": "bot035",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "19",
+          "attacker": "アウトサイダー / outsider",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.035",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.035",
+          "mark": "",
+          "identity": {
+            "presentation_no": 19,
+            "main_cohort_id": 10,
+            "preliminary_cohort_id": 24,
+            "official_team_name": "アウトサイダー / outsider",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "20",
+          "attacker": "映画しろうと diabetes島のひみつ / Shiroto",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.176",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.176",
+          "mark": "",
+          "identity": {
+            "presentation_no": 20,
+            "main_cohort_id": 25,
+            "preliminary_cohort_id": 22,
+            "official_team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "21",
+          "attacker": "コログの森団/Koroks in the forest",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.292",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.292",
+          "mark": "★",
+          "identity": {
+            "presentation_no": 21,
+            "main_cohort_id": 2,
+            "preliminary_cohort_id": 18,
+            "official_team_name": "コログの森団/Koroks in the forest",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "22",
+          "attacker": "（全部生成） / JustGenerateIt",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.124",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.124",
+          "mark": "",
+          "identity": {
+            "presentation_no": 22,
+            "main_cohort_id": 14,
+            "preliminary_cohort_id": 10,
+            "official_team_name": "『データ提供申請が半年経っても通らないので、もう全部生成することにしました ～合成データ研究者のスローライフ～』（全部生成） / JustGenerateIt",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "23",
+          "attacker": "HiddenMetrics",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_R_all": "0.164",
+          "aia_R_rare": "0.000",
+          "aia_R": "0.164",
+          "mark": "",
+          "identity": {
+            "presentation_no": 23,
+            "main_cohort_id": 11,
+            "preliminary_cohort_id": null,
+            "official_team_name": "HiddenMetrics",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        }
+      ],
+      "printed_summary": {
+        "attacker_count": "22",
+        "mia_component": "0.174",
+        "beta_raw": "0.079",
+        "beta_chance": "0.060",
+        "beta": "0.029",
+        "aia_component": "0.203",
+        "maximum_R": "0.292",
+        "phi": "0.089",
+        "maximum_R_attacker": "コログの森団/Koroks in the forest",
+        "anon": "0.797",
+        "determining_component": "AIA成分"
+      },
+      "printed_formulas": [
+        "β = max(β_raw − β_chance + 0.01, 0.01) = 0.029",
+        "MIA成分 = clip((β/0.01 − 1)/11, 0, 1)",
+        "AIA成分 = 0.203（Rが最も大きかった攻撃者のR 0.292から、あなたのコホートの差し引く水準φ 0.089を引いた値）",
+        "Anon = 1 − max(MIA成分, AIA成分) = 0.797"
+      ],
+      "notes": [
+        "No.は発表順です。「候補のメンバー数」は、その攻撃者が受け取ったMIAの候補に入っていたあなたのチームのメンバーの人数と、そのうち希少な患者の人数です。MIAの全体・希少はFPR=0.01でのTPR（偶然の水準は0.01）で、t_jはその大きいほうです。希少な候補のなかにメンバーが1人もいない攻撃者は、全体の値をそのままt_jにしています（§6.2.1）。AIAのRは対照を超えて当てた割合で、全体と希少（誤差の範囲を除いた値）の大きいほうです（§6.2.2）。",
+        "★ Rが最も大きかった攻撃者で、AIA成分があなたのAnonを決めました。☆ Rが最も大きかった攻撃者ですが、AnonはMIA成分で決まりました。"
+      ],
+      "transcription_notes": [
+        "原資料の表示桁を文字列で保持。",
+        "表示されたβ等の3桁値を代入してもMIA成分0.174には厳密一致しない。紙面は丸め値のため、0.174を勝手に再計算値で置き換えない。"
+      ],
+      "uncertain_cells": [],
+      "source": "画像/03_本戦_匿名性と被攻撃内訳.jpg",
+      "page_number": 3
+    },
+    "main_attack": {
+      "source_file": "IMG_8745.jpg",
+      "page": "4",
+      "title": "攻撃力の内訳（本戦）：各標的に対するあなたの攻撃の成功度",
+      "columns_printed": [
+        "No.",
+        "標的",
+        "候補のメンバー数（うち希少）",
+        "MIA 全体",
+        "MIA 希少",
+        "MIA t",
+        "AIA R",
+        "標的の φ",
+        "AIA R − φ",
+        "合計",
+        "この標的での順位",
+        "記号"
+      ],
+      "rows": [
+        {
+          "no": "1",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_r": "0.293",
+          "target_phi": "0.068",
+          "aia_r_minus_phi": "0.225",
+          "total": "0.265",
+          "target_rank": "3",
+          "target_rank_denominator": "22",
+          "marker": "★",
+          "team_name": "宮地研.exe",
+          "identity": {
+            "presentation_no": 1,
+            "main_cohort_id": 26,
+            "preliminary_cohort_id": 23,
+            "official_team_name": "宮地研.exe",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "2",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.222",
+          "target_phi": "0.005",
+          "aia_r_minus_phi": "0.217",
+          "total": "0.217",
+          "target_rank": "7",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "Asakatsu2026",
+          "identity": {
+            "presentation_no": 2,
+            "main_cohort_id": 27,
+            "preliminary_cohort_id": 19,
+            "official_team_name": "Asakatsu2026",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "3",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.265",
+          "target_phi": "0.074",
+          "aia_r_minus_phi": "0.190",
+          "total": "0.190",
+          "target_rank": "2",
+          "target_rank_denominator": "22",
+          "marker": "★",
+          "team_name": "さいふぉん-3/siphon-3",
+          "identity": {
+            "presentation_no": 3,
+            "main_cohort_id": 15,
+            "preliminary_cohort_id": 20,
+            "official_team_name": "さいふぉん-3/siphon-3",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "4",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.318",
+          "target_phi": "0.177",
+          "aia_r_minus_phi": "0.141",
+          "total": "0.141",
+          "target_rank": "12",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "あかぎ団@群大/AkagiDan@GU",
+          "identity": {
+            "presentation_no": 4,
+            "main_cohort_id": 13,
+            "preliminary_cohort_id": 9,
+            "official_team_name": "あかぎ団＠群大/AkagiDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "5",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.720",
+          "mia_rare": "—",
+          "mia_t": "0.720",
+          "aia_r": "0.790",
+          "target_phi": "0.038",
+          "aia_r_minus_phi": "0.752",
+          "total": "1.472",
+          "target_rank": "14",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "HarunaDan@GU",
+          "identity": {
+            "presentation_no": 5,
+            "main_cohort_id": 9,
+            "preliminary_cohort_id": 2,
+            "official_team_name": "HarunaDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "6",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.178",
+          "target_phi": "0.040",
+          "aia_r_minus_phi": "0.138",
+          "total": "0.138",
+          "target_rank": "4",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "ふてねこ/HuteNeko",
+          "identity": {
+            "presentation_no": 6,
+            "main_cohort_id": 22,
+            "preliminary_cohort_id": 3,
+            "official_team_name": "ふてねこ/HuteNeko",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "7",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_r": "0.275",
+          "target_phi": "0.068",
+          "aia_r_minus_phi": "0.207",
+          "total": "0.247",
+          "target_rank": "3",
+          "target_rank_denominator": "22",
+          "marker": "★",
+          "team_name": "神ぼ大/jinbodai",
+          "identity": {
+            "presentation_no": 7,
+            "main_cohort_id": 3,
+            "preliminary_cohort_id": 29,
+            "official_team_name": "神ぼ大/jinbodai",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "9",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_r": "0.257",
+          "target_phi": "0.048",
+          "aia_r_minus_phi": "0.209",
+          "total": "0.249",
+          "target_rank": "2",
+          "target_rank_denominator": "22",
+          "marker": "★",
+          "team_name": "ステテコVanguard",
+          "identity": {
+            "presentation_no": 9,
+            "main_cohort_id": 4,
+            "preliminary_cohort_id": 13,
+            "official_team_name": "ステテコVanguard",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "10",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.058",
+          "target_phi": "0.024",
+          "aia_r_minus_phi": "0.034",
+          "total": "0.034",
+          "target_rank": "17",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "神神公社 / KU nu tau tau",
+          "identity": {
+            "presentation_no": 10,
+            "main_cohort_id": 5,
+            "preliminary_cohort_id": 7,
+            "official_team_name": "神神公社 / KU nu tau tau",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "11",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.080",
+          "mia_rare": "—",
+          "mia_t": "0.080",
+          "aia_r": "0.164",
+          "target_phi": "0.129",
+          "aia_r_minus_phi": "0.035",
+          "total": "0.115",
+          "target_rank": "2",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "Trailblazer",
+          "identity": {
+            "presentation_no": 11,
+            "main_cohort_id": 7,
+            "preliminary_cohort_id": 6,
+            "official_team_name": "Trailblazer",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "12",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.120",
+          "mia_rare": "—",
+          "mia_t": "0.120",
+          "aia_r": "0.212",
+          "target_phi": "0.048",
+          "aia_r_minus_phi": "0.164",
+          "total": "0.284",
+          "target_rank": "2",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "CyberMantra",
+          "identity": {
+            "presentation_no": 12,
+            "main_cohort_id": 1,
+            "preliminary_cohort_id": 8,
+            "official_team_name": "CyberMantra",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "13",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.225",
+          "target_phi": "0.160",
+          "aia_r_minus_phi": "0.065",
+          "total": "0.065",
+          "target_rank": "16",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+          "identity": {
+            "presentation_no": 13,
+            "main_cohort_id": 0,
+            "preliminary_cohort_id": 4,
+            "official_team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "14",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.091",
+          "target_phi": "0.034",
+          "aia_r_minus_phi": "0.057",
+          "total": "0.057",
+          "target_rank": "16",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "グラブジャムン/GulabJamun",
+          "identity": {
+            "presentation_no": 14,
+            "main_cohort_id": 8,
+            "preliminary_cohort_id": 26,
+            "official_team_name": "グラブジャムン/GulabJamun",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "15",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.111",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.309",
+          "target_phi": "0.072",
+          "aia_r_minus_phi": "0.237",
+          "total": "1.237",
+          "target_rank": "1",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "あれ / are",
+          "identity": {
+            "presentation_no": 15,
+            "main_cohort_id": 16,
+            "preliminary_cohort_id": 17,
+            "official_team_name": "あれ / are",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "16",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.038",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.152",
+          "target_phi": "0.035",
+          "aia_r_minus_phi": "0.117",
+          "total": "1.117",
+          "target_rank": "1",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "k等分の花嫁",
+          "identity": {
+            "presentation_no": 16,
+            "main_cohort_id": 6,
+            "preliminary_cohort_id": 12,
+            "official_team_name": "k等分の花嫁",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "17",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.080",
+          "mia_rare": "—",
+          "mia_t": "0.080",
+          "aia_r": "0.086",
+          "target_phi": "0.033",
+          "aia_r_minus_phi": "0.053",
+          "total": "0.133",
+          "target_rank": "5",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "Ritz",
+          "identity": {
+            "presentation_no": 17,
+            "main_cohort_id": 12,
+            "preliminary_cohort_id": 1,
+            "official_team_name": "Ritz",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "18",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.077",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.017",
+          "target_phi": "0.003",
+          "aia_r_minus_phi": "0.013",
+          "total": "1.013",
+          "target_rank": "2",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "bot035",
+          "identity": {
+            "presentation_no": 18,
+            "main_cohort_id": 17,
+            "preliminary_cohort_id": 21,
+            "official_team_name": "bot035",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "19",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.074",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.082",
+          "target_phi": "0.027",
+          "aia_r_minus_phi": "0.055",
+          "total": "1.055",
+          "target_rank": "1",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "アウトサイダー / outsider",
+          "identity": {
+            "presentation_no": 19,
+            "main_cohort_id": 10,
+            "preliminary_cohort_id": 24,
+            "official_team_name": "アウトサイダー / outsider",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "20",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.074",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.169",
+          "target_phi": "0.034",
+          "aia_r_minus_phi": "0.135",
+          "total": "1.135",
+          "target_rank": "1",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+          "identity": {
+            "presentation_no": 20,
+            "main_cohort_id": 25,
+            "preliminary_cohort_id": 22,
+            "official_team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "21",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_r": "0.425",
+          "target_phi": "0.050",
+          "aia_r_minus_phi": "0.375",
+          "total": "0.415",
+          "target_rank": "6",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "コログの森団/Koroks in the forest",
+          "identity": {
+            "presentation_no": 21,
+            "main_cohort_id": 2,
+            "preliminary_cohort_id": 18,
+            "official_team_name": "コログの森団/Koroks in the forest",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "22",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_r": "0.519",
+          "target_phi": "0.055",
+          "aia_r_minus_phi": "0.463",
+          "total": "0.463",
+          "target_rank": "10",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "（全部生成） / JustGenerateIt",
+          "identity": {
+            "presentation_no": 22,
+            "main_cohort_id": 14,
+            "preliminary_cohort_id": 10,
+            "official_team_name": "『データ提供申請が半年経っても通らないので、もう全部生成することにしました ～合成データ研究者のスローライフ～』（全部生成） / JustGenerateIt",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "23",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.038",
+          "mia_rare": "1.000",
+          "mia_t": "1.000",
+          "aia_r": "0.525",
+          "target_phi": "0.064",
+          "aia_r_minus_phi": "0.461",
+          "total": "1.461",
+          "target_rank": "3",
+          "target_rank_denominator": "22",
+          "marker": "",
+          "team_name": "HiddenMetrics",
+          "identity": {
+            "presentation_no": 23,
+            "main_cohort_id": 11,
+            "preliminary_cohort_id": null,
+            "official_team_name": "HiddenMetrics",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        }
+      ],
+      "mean_label": "22チームの平均",
+      "printed_means": {
+        "mia_t": "0.325",
+        "aia_r_minus_phi": "0.197",
+        "total": "0.523"
+      },
+      "printed_attack_formula": "攻撃力 = MIA の平均 0.325 + AIA（R − φ）の平均 0.197 = 0.523（ルールブック §6.3）",
+      "notes": [
+        "No. は発表順です。",
+        "「候補のメンバー数」は、あなたが受け取った MIA の候補に入っていた標的のチームのメンバーの人数と、そのうち希少な患者の人数です。",
+        "「合計」はその標的に対する MIA の t と AIA の R − φ の和、「この標的での順位」は、その標的を攻撃した全チームの中での「合計」の順位です。",
+        "攻撃力では、AIA の R から標的のコホートの φ を（攻撃者, 標的）の対ごとに引きます（§6.3）。",
+        "★ この標的への攻撃の中で、あなたの R が最も大きく、AIA 成分が相手の Anon を決めました。",
+        "☆ あなたの R が最も大きかったものの、相手の Anon は MIA 成分で決まりました。"
+      ],
+      "uncertainties": [],
+      "transcription_cautions": [
+        "表示された小数3桁をそのまま記録。R−φ、合計、平均は未丸め原値で計算されている可能性があるため、表示値の差や和と0.001程度ずれる箇所を修正しない。",
+        "No. は発表順であり、コホート番号ではない。"
+      ],
+      "source": "画像/04_本戦_攻撃力と標的別成績.jpg",
+      "page_number": 4
+    },
+    "preliminary_defense": {
+      "source_file": "IMG_8746.jpg",
+      "page": "5",
+      "title": "匿名性 Anon の内訳（予備戦）：あなたの匿名化データ C に対する各攻撃者の攻撃の成功度",
+      "columns_printed": [
+        "No.",
+        "攻撃者",
+        "候補のメンバー数（うち希少）",
+        "MIA 全体",
+        "MIA 希少",
+        "MIA t_j",
+        "AIA R 全体",
+        "AIA R 希少",
+        "AIA R",
+        "記号"
+      ],
+      "rows": [
+        {
+          "no": "1",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.462",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.462",
+          "marker": "★",
+          "team_name": "宮地研.exe",
+          "identity": {
+            "presentation_no": 1,
+            "main_cohort_id": 26,
+            "preliminary_cohort_id": 23,
+            "official_team_name": "宮地研.exe",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "2",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.108",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.108",
+          "marker": "",
+          "team_name": "Asakatsu2026",
+          "identity": {
+            "presentation_no": 2,
+            "main_cohort_id": 27,
+            "preliminary_cohort_id": 19,
+            "official_team_name": "Asakatsu2026",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "3",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.074",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.074",
+          "marker": "",
+          "team_name": "さいふぉん-3/siphon-3",
+          "identity": {
+            "presentation_no": 3,
+            "main_cohort_id": 15,
+            "preliminary_cohort_id": 20,
+            "official_team_name": "さいふぉん-3/siphon-3",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "4",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.349",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.349",
+          "marker": "",
+          "team_name": "あかぎ団@群大/AkagiDan@GU",
+          "identity": {
+            "presentation_no": 4,
+            "main_cohort_id": 13,
+            "preliminary_cohort_id": 9,
+            "official_team_name": "あかぎ団＠群大/AkagiDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "5",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.286",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.286",
+          "marker": "",
+          "team_name": "HarunaDan@GU",
+          "identity": {
+            "presentation_no": 5,
+            "main_cohort_id": 9,
+            "preliminary_cohort_id": 2,
+            "official_team_name": "HarunaDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "6",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.080",
+          "mia_rare": "—",
+          "mia_t_j": "0.080",
+          "aia_r_all": "0.149",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.149",
+          "marker": "",
+          "team_name": "ふてねこ/HuteNeko",
+          "identity": {
+            "presentation_no": 6,
+            "main_cohort_id": 22,
+            "preliminary_cohort_id": 3,
+            "official_team_name": "ふてねこ/HuteNeko",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "7",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.233",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.233",
+          "marker": "",
+          "team_name": "神ぼ大/jinbodai",
+          "identity": {
+            "presentation_no": 7,
+            "main_cohort_id": 3,
+            "preliminary_cohort_id": 29,
+            "official_team_name": "神ぼ大/jinbodai",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "9",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.357",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.357",
+          "marker": "",
+          "team_name": "ステテコVanguard",
+          "identity": {
+            "presentation_no": 9,
+            "main_cohort_id": 4,
+            "preliminary_cohort_id": 13,
+            "official_team_name": "ステテコVanguard",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "10",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.122",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.122",
+          "marker": "",
+          "team_name": "神神公社 / KU nu tau tau",
+          "identity": {
+            "presentation_no": 10,
+            "main_cohort_id": 5,
+            "preliminary_cohort_id": 7,
+            "official_team_name": "神神公社 / KU nu tau tau",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "11",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.080",
+          "mia_rare": "—",
+          "mia_t_j": "0.080",
+          "aia_r_all": "0.293",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.293",
+          "marker": "",
+          "team_name": "Trailblazer",
+          "identity": {
+            "presentation_no": 11,
+            "main_cohort_id": 7,
+            "preliminary_cohort_id": 6,
+            "official_team_name": "Trailblazer",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "12",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.359",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.359",
+          "marker": "",
+          "team_name": "CyberMantra",
+          "identity": {
+            "presentation_no": 12,
+            "main_cohort_id": 1,
+            "preliminary_cohort_id": 8,
+            "official_team_name": "CyberMantra",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "13",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.240",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.240",
+          "marker": "",
+          "team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+          "identity": {
+            "presentation_no": 13,
+            "main_cohort_id": 0,
+            "preliminary_cohort_id": 4,
+            "official_team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "14",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.191",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.191",
+          "marker": "",
+          "team_name": "グラブジャムン/GulabJamun",
+          "identity": {
+            "presentation_no": 14,
+            "main_cohort_id": 8,
+            "preliminary_cohort_id": 26,
+            "official_team_name": "グラブジャムン/GulabJamun",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "15",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t_j": "0.040",
+          "aia_r_all": "0.286",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.286",
+          "marker": "",
+          "team_name": "あれ / are",
+          "identity": {
+            "presentation_no": 15,
+            "main_cohort_id": 16,
+            "preliminary_cohort_id": 17,
+            "official_team_name": "あれ / are",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "16",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.038",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.038",
+          "aia_r_all": "0.191",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.191",
+          "marker": "",
+          "team_name": "k等分の花嫁",
+          "identity": {
+            "presentation_no": 16,
+            "main_cohort_id": 6,
+            "preliminary_cohort_id": 12,
+            "official_team_name": "k等分の花嫁",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "17",
+          "candidate_members": "25",
+          "rare_members": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.028",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.028",
+          "marker": "",
+          "team_name": "Ritz",
+          "identity": {
+            "presentation_no": 17,
+            "main_cohort_id": 12,
+            "preliminary_cohort_id": 1,
+            "official_team_name": "Ritz",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "19",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.130",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.130",
+          "marker": "",
+          "team_name": "アウトサイダー / outsider",
+          "identity": {
+            "presentation_no": 19,
+            "main_cohort_id": 10,
+            "preliminary_cohort_id": 24,
+            "official_team_name": "アウトサイダー / outsider",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "20",
+          "candidate_members": "27",
+          "rare_members": "2",
+          "mia_all": "0.037",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.037",
+          "aia_r_all": "0.132",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.132",
+          "marker": "",
+          "team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+          "identity": {
+            "presentation_no": 20,
+            "main_cohort_id": 25,
+            "preliminary_cohort_id": 22,
+            "official_team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "21",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.038",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.038",
+          "aia_r_all": "0.191",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.191",
+          "marker": "",
+          "team_name": "コログの森団/Koroks in the forest",
+          "identity": {
+            "presentation_no": 21,
+            "main_cohort_id": 2,
+            "preliminary_cohort_id": 18,
+            "official_team_name": "コログの森団/Koroks in the forest",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "no": "22",
+          "candidate_members": "26",
+          "rare_members": "1",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t_j": "0.000",
+          "aia_r_all": "0.191",
+          "aia_r_rare": "0.000",
+          "aia_r": "0.191",
+          "marker": "",
+          "team_name": "（全部生成） / JustGenerateIt",
+          "identity": {
+            "presentation_no": 22,
+            "main_cohort_id": 14,
+            "preliminary_cohort_id": 10,
+            "official_team_name": "『データ提供申請が半年経っても通らないので、もう全部生成することにしました ～合成データ研究者のスローライフ～』（全部生成） / JustGenerateIt",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        }
+      ],
+      "anonymity": {
+        "mia_component": "0.000",
+        "attacker_count": "20",
+        "beta_raw": "0.026",
+        "beta_chance": "0.064",
+        "beta": "0.010",
+        "beta_formula": "β = max(β_raw − β_chance + 0.01, 0.01)",
+        "mia_formula": "MIA 成分 = clip((β/0.01 − 1)/11, 0, 1)",
+        "aia_component": "0.462",
+        "max_aia_r": "0.462",
+        "max_aia_attacker": "宮地研.exe",
+        "aia_explanation": "Rが最も大きかった攻撃者のR",
+        "anon": "0.538",
+        "decisive_component": "AIA",
+        "anon_formula": "Anon = 1 − max(MIA 成分, AIA 成分)"
+      },
+      "notes": [
+        "No. は発表順です。",
+        "「候補のメンバー数」は、その攻撃者が受け取った MIA の候補に入っていたあなたのチームのメンバーの人数と、そのうち希少な患者の人数です。",
+        "MIA の全体・希少は FPR=0.01 での TPR（偶然の水準は 0.01）で、t_j はその大きいほうです。",
+        "希少な候補のなかにメンバーが1人もいない攻撃者は、全体の値をそのまま t_j にしています（§6.2.1）。",
+        "AIA の R は対照を超えて当てた割合で、全体と希少（誤差の範囲を除いた値）の大きいほうです（§6.2.2）。",
+        "★ R が最も大きかった攻撃者で、AIA 成分があなたの Anon を決めました。",
+        "☆ R が最も大きかった攻撃者ですが、Anon は MIA 成分で決まりました。"
+      ],
+      "uncertainties": [],
+      "transcription_cautions": [
+        "予備戦の AIA R 希少は20行とも0.000。No.16も拡大再照合により0.000と確認。",
+        "予備戦20攻撃者の表には発表順18と23が含まれていない。欠損として追加しない。"
+      ],
+      "source": "画像/05_予備戦_匿名性と被攻撃内訳.jpg",
+      "page_number": 5
+    },
+    "preliminary_attack": {
+      "source_image": "IMG_8747.jpg",
+      "document_title": "PWS Cup 2026 チーム別サマリー",
+      "team": "ステテコは恥だが役に立つ",
+      "presentation_no": "8",
+      "event_date": "2026年10月20日",
+      "section_title": "攻撃力の内訳（予備戦）：各標的に対するあなたの攻撃の成功度",
+      "rows": [
+        {
+          "presentation_no": "1",
+          "target": "宮地研.exe",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.102",
+          "total": "0.102",
+          "target_rank": "13 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 1,
+            "main_cohort_id": 26,
+            "preliminary_cohort_id": 23,
+            "official_team_name": "宮地研.exe",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "2",
+          "target": "Asakatsu2026",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.020",
+          "total": "0.020",
+          "target_rank": "15 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 2,
+            "main_cohort_id": 27,
+            "preliminary_cohort_id": 19,
+            "official_team_name": "Asakatsu2026",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "3",
+          "target": "さいふぉん-3/siphon-3",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.037",
+          "mia_rare": "0.000",
+          "mia_t": "0.037",
+          "aia_R": "0.074",
+          "total": "0.111",
+          "target_rank": "5 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 3,
+            "main_cohort_id": 15,
+            "preliminary_cohort_id": 20,
+            "official_team_name": "さいふぉん-3/siphon-3",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "4",
+          "target": "あかぎ団@群大/AkagiDan@GU",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.040",
+          "total": "0.040",
+          "target_rank": "9（同率） / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 4,
+            "main_cohort_id": 13,
+            "preliminary_cohort_id": 9,
+            "official_team_name": "あかぎ団＠群大/AkagiDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "5",
+          "target": "HarunaDan@GU",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "1.000",
+          "mia_rare": "—",
+          "mia_t": "1.000",
+          "aia_R": "1.000",
+          "total": "2.000",
+          "target_rank": "1（同率） / 20",
+          "mark": "☆",
+          "identity": {
+            "presentation_no": 5,
+            "main_cohort_id": 9,
+            "preliminary_cohort_id": 2,
+            "official_team_name": "HarunaDan@GU",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "6",
+          "target": "ふてねこ/HuteNeko",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.124",
+          "total": "0.124",
+          "target_rank": "11 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 6,
+            "main_cohort_id": 22,
+            "preliminary_cohort_id": 3,
+            "official_team_name": "ふてねこ/HuteNeko",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "7",
+          "target": "神ぼ大/jinbodai",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.181",
+          "total": "0.181",
+          "target_rank": "2（同率） / 20",
+          "mark": "★",
+          "identity": {
+            "presentation_no": 7,
+            "main_cohort_id": 3,
+            "preliminary_cohort_id": 29,
+            "official_team_name": "神ぼ大/jinbodai",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "9",
+          "target": "ステテコVanguard",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.078",
+          "total": "0.078",
+          "target_rank": "8 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 9,
+            "main_cohort_id": 4,
+            "preliminary_cohort_id": 13,
+            "official_team_name": "ステテコVanguard",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "10",
+          "target": "神神公社 / KU nu tau tau",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_R": "0.102",
+          "total": "0.142",
+          "target_rank": "1 / 20",
+          "mark": "★",
+          "identity": {
+            "presentation_no": 10,
+            "main_cohort_id": 5,
+            "preliminary_cohort_id": 7,
+            "official_team_name": "神神公社 / KU nu tau tau",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "11",
+          "target": "Trailblazer",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.030",
+          "total": "0.030",
+          "target_rank": "10 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 11,
+            "main_cohort_id": 7,
+            "preliminary_cohort_id": 6,
+            "official_team_name": "Trailblazer",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "12",
+          "target": "CyberMantra",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.009",
+          "total": "0.009",
+          "target_rank": "13 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 12,
+            "main_cohort_id": 1,
+            "preliminary_cohort_id": 8,
+            "official_team_name": "CyberMantra",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "13",
+          "target": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.208",
+          "total": "0.208",
+          "target_rank": "10（同率） / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 13,
+            "main_cohort_id": 0,
+            "preliminary_cohort_id": 4,
+            "official_team_name": "アノニメイジング・PRIダーマン / The Anonymazing Prider-Man",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "14",
+          "target": "グラブジャムン/GulabJamun",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.000",
+          "mia_rare": "—",
+          "mia_t": "0.000",
+          "aia_R": "0.029",
+          "total": "0.029",
+          "target_rank": "15（同率） / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 14,
+            "main_cohort_id": 8,
+            "preliminary_cohort_id": 26,
+            "official_team_name": "グラブジャムン/GulabJamun",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "15",
+          "target": "あれ / are",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.040",
+          "mia_rare": "—",
+          "mia_t": "0.040",
+          "aia_R": "0.054",
+          "total": "0.094",
+          "target_rank": "7 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 15,
+            "main_cohort_id": 16,
+            "preliminary_cohort_id": 17,
+            "official_team_name": "あれ / are",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "16",
+          "target": "k等分の花嫁",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.000",
+          "mia_rare": "0.000",
+          "mia_t": "0.000",
+          "aia_R": "0.021",
+          "total": "0.021",
+          "target_rank": "13 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 16,
+            "main_cohort_id": 6,
+            "preliminary_cohort_id": 12,
+            "official_team_name": "k等分の花嫁",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "17",
+          "target": "Ritz",
+          "member_count": "25",
+          "rare_member_count": "0",
+          "mia_all": "0.800",
+          "mia_rare": "—",
+          "mia_t": "0.800",
+          "aia_R": "1.000",
+          "total": "1.800",
+          "target_rank": "3（同率） / 20",
+          "mark": "☆",
+          "identity": {
+            "presentation_no": 17,
+            "main_cohort_id": 12,
+            "preliminary_cohort_id": 1,
+            "official_team_name": "Ritz",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "19",
+          "target": "アウトサイダー / outsider",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.111",
+          "mia_rare": "0.500",
+          "mia_t": "0.500",
+          "aia_R": "0.200",
+          "total": "0.700",
+          "target_rank": "2 / 20",
+          "mark": "☆",
+          "identity": {
+            "presentation_no": 19,
+            "main_cohort_id": 10,
+            "preliminary_cohort_id": 24,
+            "official_team_name": "アウトサイダー / outsider",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "20",
+          "target": "映画しろうと diabetes島のひみつ / Shiroto",
+          "member_count": "27",
+          "rare_member_count": "2",
+          "mia_all": "0.000",
+          "mia_rare": "0.500",
+          "mia_t": "0.500",
+          "aia_R": "0.105",
+          "total": "0.605",
+          "target_rank": "1 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 20,
+            "main_cohort_id": 25,
+            "preliminary_cohort_id": 22,
+            "official_team_name": "映画しろうと diabetes島のひみつ / Shiroto",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "21",
+          "target": "コログの森団/Koroks in the forest",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.038",
+          "mia_rare": "0.000",
+          "mia_t": "0.038",
+          "aia_R": "0.077",
+          "total": "0.115",
+          "target_rank": "10 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 21,
+            "main_cohort_id": 2,
+            "preliminary_cohort_id": 18,
+            "official_team_name": "コログの森団/Koroks in the forest",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        },
+        {
+          "presentation_no": "22",
+          "target": "（全部生成） / JustGenerateIt",
+          "member_count": "26",
+          "rare_member_count": "1",
+          "mia_all": "0.077",
+          "mia_rare": "0.000",
+          "mia_t": "0.077",
+          "aia_R": "0.110",
+          "total": "0.187",
+          "target_rank": "4 / 20",
+          "mark": "",
+          "identity": {
+            "presentation_no": 22,
+            "main_cohort_id": 14,
+            "preliminary_cohort_id": 10,
+            "official_team_name": "『データ提供申請が半年経っても通らないので、もう全部生成することにしました ～合成データ研究者のスローライフ～』（全部生成） / JustGenerateIt",
+            "mapping_source": "../../参加チーム対応表.csv"
+          }
+        }
+      ],
+      "printed_summary": {
+        "target_count": "20",
+        "mia_mean": "0.152",
+        "aia_R_mean": "0.178",
+        "attack_score": "0.330",
+        "formula": "攻撃力 = MIAの平均 0.152 + AIA（R）の平均 0.178 = 0.330（ルールブック §6.3）"
+      },
+      "notes": [
+        "No.は発表順です。「候補のメンバー数」は、あなたが受け取ったMIAの候補に入っていた標的のチームのメンバーの人数と、そのうち希少な患者の人数です。「合計」はその標的に対するMIAのtとAIAのRの和、「この標的での順位」は、その標的を攻撃した全チームの中での「合計」の順位です。",
+        "★ この標的への攻撃の中で、あなたのRが最も大きく、AIA成分が相手のAnonを決めました。☆ あなたのRが最も大きかったものの、相手のAnonはMIA成分で決まりました。"
+      ],
+      "transcription_notes": [
+        "脚注の左端がわずかに画角外（2行目冒頭「で」、★の一部、最終行冒頭「成」）になっているため、自然なつながりを補って記録。数値表は全セル読める。",
+        "No.は発表順であり、CodaBenchのコホートIDとは別。",
+        "原資料に印刷された表示桁を文字列で保持。紙面ではMIA希少の対象なしは横線で表示される。"
+      ],
+      "uncertain_cells": [],
+      "source": "画像/06_予備戦_攻撃力と標的別成績.jpg",
+      "page_number": 6
+    }
+  }
+}
