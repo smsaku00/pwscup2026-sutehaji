@@ -1,0 +1,28 @@
+stage,panel,comparison,metric,baseline,candidate_or_actual,difference_candidate_minus_baseline,direction,basis
+official_main_20261020,23 teams,Team28 score,utility_U,,0.922,,higher,official paper 1&2
+official_main_20261020,23 teams,Team28 score,anonymity,,0.797,,higher,official paper 1&3
+official_main_20261020,22 attackers,Team28 attacked,AIA_R_max,,0.292,,lower,official paper 3
+official_main_20261020,22 attackers,Team28 attacked,AIA_phi,,0.089,,,official paper 1
+official_main_20261020,22 attackers,Team28 attacked,AIA_penalty,,0.203,,lower,official paper 1
+official_main_20261020,22 attackers,Team28 attacked,MIA_penalty,,0.174,,lower,official paper 1
+official_main_20261020,22 attackers,Team28 attacked,MIA_all_max,,0.080,,lower,official paper 3
+official_main_20261020,22 attackers,k等分の花嫁,MIA_rare_TPR,,1.000,,lower,official paper 3
+official_main_20261020,22 attackers,あれ/are,MIA_rare_TPR,,0.500,,lower,official paper 3
+local_20,387 target weighted,Zhang11→HCv2-1,AIA_raw_mean,0.102013,0.089843,-0.012170,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_20,387 target weighted,Zhang11→HCv2-1,AIA_baseline_subtracted_mean,0.028974,0.018009,-0.010965,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_20,163 target sampled,Zhang11→HCv2-1,AIA_raw_mean,0.153092,0.139680,-0.013412,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_20,163 target sampled,Zhang11→HCv2-1,AIA_baseline_subtracted_mean,0.033534,0.020122,-0.013412,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_20,20 panels whole MIA,Zhang11→HCv2-1,MIA_all_mean,0.148077,0.148077,0,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_20,20 panels whole MIA,Zhang11→HCv2-1,MIA_all_max,0.307692,0.307692,0,lower,加工フェーズ/Zhang11-HCv2-1/README.md
+local_300,300x163,Zhang04-HCv2-3→Zhang11-HCv2-1,AIA_baseline_subtracted_mean,0.043086649564355269,0.035791907432661987,-0.007294742131693279,lower,加工フェーズ/バトル結果/共有用_20260925_焼きなまし山登り記録/実験記録/12_2案300組_AIA基準補正比較/実行条件.json
+local_300,300x163,Zhang04-HCv2-3→Zhang11-HCv2-1,AIA_raw_p95,0.30015151515151517,0.29065020161290339,-0.00950131353861178,lower,候補別要約.csv
+local_300,300x163,Zhang04-HCv2-3→Zhang11-HCv2-1,AIA_phi_subtracted_p95,0.21110451515151521,0.20160320161290338,-0.00950131353861183,lower,候補別要約.csv
+local_100,fixed real target imputed controls,Zhang11→HCv2-1,AIA_phi_subtracted_mean,0.007911583191125043,0.006449060510472358,-0.001462522680652685,lower,加工フェーズ/Zhang11-HCv2-1/検証結果/20260928_配布課題固定_対照100通り補完/比較結果.json
+local_100,fixed real target imputed controls,HCv2-1 only,AIA_phi_subtracted_max,,0.10014218918918906,,lower,same
+local_rare_72,24 positives and 48 controls,Zhang11 hill→hill+rare smoothing,MIA_rare_max,0.041667,0.083333,0.041666,lower,加工フェーズ/バトル結果/共有用_20260925_焼きなまし山登り記録/実験記録/10_希少対策との組合せ/説明.md
+official_main_attack_20261011,22 targets,predicted vs scored,rare_MIA_mean,1.0,1.0,0,higher,攻撃フェーズ/Tashiro/第8回実結果_20261011/README.md
+official_main_attack_20261011,22 targets,predicted vs scored,MIA_power,0.32545454545454544,0.32545454545454544,0,higher,same
+official_main_attack_20261011,22 targets,predicted vs scored,AIA_power_adjusted,0.1974545628388099,0.1974545628388099,0,higher,same
+official_main_attack_20261011,22 targets,predicted vs scored,attack_power,0.5229091082933554,0.5229091082933554,0,higher,same
+official_final_20261020,23 teams,0.1 preliminary + 0.9 main,overall,,0.771,,higher,official paper 1
+official_final_20261020,23 teams,0.1 preliminary + 0.9 main,attack_power,,0.504,,higher,official paper 1

@@ -1,0 +1,10 @@
+topic,expectation,observation,judgment,evidence_scope
+AIA_swap_utility,preserve U,original and HCv2-1 both 0.9219987812309569,match,official U score of both proposals
+AIA_swap_mean,mean AIA improves,local 20 panels and new 300-panel comparison improved,match_local_only,cannot identify official final counterfactual
+MIA_swap,could improve MIA,local mean and max MIA unchanged,no_evidence,paired local experiment
+AIA_real_fixed_prediction,low official AIA loss,imputation mean 0.006449 versus official 0.203,underestimated,different attack and controls
+AIA_tail,rare high loss possible,local phi-deducted p95 0.201603 and official 0.203,qualitative_match,different panel and attack populations
+MIA_all,whole MIA would be low,max official whole MIA TPR 0.080,qualitative_match,no official no-treatment comparator
+MIA_rare,rare cohort sufficiently shielded,TPR 1.0 and 0.5 from two attackers,not_match,official final paper
+MIA_rare_smoothing,additional 6-row smoothing improves rare MIA,max 0.041667 to 0.083333 worsened,hypothesis_not_supported_not_adopted,local only
+Attack_round8,4 components can be exactly predicted,rare 1.0; MIA 0.32545454545454544; AIA 0.1974545628388099; total 0.5229091082933554,all_match,official round8 values

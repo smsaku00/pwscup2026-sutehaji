@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="ローカル比較のAIA平均">
+<rect width="960" height="600" fill="#ffffff"/>
+<text x="52" y="55" font-family="sans-serif" font-size="26" font-weight="700" fill="#222">AIA：事前ローカル評価での改善</text>
+<text x="52" y="88" font-family="sans-serif" font-size="16" fill="#555">低いほど良い／指標は基準差引後AIA平均</text>
+<text x="52" y="145" font-family="sans-serif" font-size="21" font-weight="700" fill="#222">元のZhang11 と HCv2-1（追加20組）</text>
+<text x="54" y="198" font-family="sans-serif" font-size="17" fill="#333">387人方式</text>
+<rect x="244" y="175" width="435" height="18" rx="4" fill="#dedede"/><rect x="244" y="199" width="270" height="18" rx="4" fill="#555555"/>
+<text x="693" y="190" font-family="sans-serif" font-size="17" fill="#333">0.028974 元案</text><text x="528" y="217" font-family="sans-serif" font-size="17" fill="#222">0.018009 HCv2-1</text>
+<text x="54" y="300" font-family="sans-serif" font-size="17" fill="#333">163人方式</text>
+<rect x="244" y="279" width="503" height="18" rx="4" fill="#dedede"/><rect x="244" y="303" width="302" height="18" rx="4" fill="#555555"/>
+<text x="761" y="294" font-family="sans-serif" font-size="17" fill="#333">0.033534 元案</text><text x="560" y="321" font-family="sans-serif" font-size="17" fill="#222">0.020122 HCv2-1</text>
+<path d="M52 364H908" stroke="#bbbbbb"/>
+<text x="52" y="404" font-family="sans-serif" font-size="21" font-weight="700" fill="#222">別案 Zhang04-HCv2-3 と HCv2-1（新300組）</text>
+<text x="54" y="459" font-family="sans-serif" font-size="17" fill="#333">300組／163人</text>
+<rect x="244" y="438" width="600" height="18" rx="4" fill="#dedede"/><rect x="244" y="462" width="498" height="18" rx="4" fill="#555555"/>
+<text x="756" y="480" font-family="sans-serif" font-size="17" fill="#222">0.035792 HCv2-1</text>
+<text x="655" y="435" font-family="sans-serif" font-size="17" fill="#333">0.043087 Zhang04</text>
+<text x="52" y="531" font-family="sans-serif" font-size="15" fill="#666">図中の棒は各段の相対値。300組比較の相手は元Zhang11ではない。</text>
+<text x="52" y="559" font-family="sans-serif" font-size="15" fill="#666">ローカル自作パネルの結果であり、最終公式失点・本戦の因果効果ではない。</text>
+</svg>

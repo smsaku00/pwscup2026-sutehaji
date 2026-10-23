@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="本戦被攻撃の匿名性減点">
+<rect width="960" height="540" fill="#ffffff"/>
+<text x="52" y="56" font-family="sans-serif" font-size="27" font-weight="700" fill="#222">本戦の匿名性を制約したのはAIA</text>
+<text x="52" y="90" font-family="sans-serif" font-size="16" fill="#555">2026年10月20日公式サマリー／減点は高いほど不利</text>
+<text x="56" y="179" font-family="sans-serif" font-size="22" fill="#222">AIA成分</text>
+<rect x="245" y="146" width="609" height="48" rx="7" fill="#444444"/>
+<text x="865" y="179" font-family="sans-serif" font-size="22" font-weight="700" fill="#222">0.203</text>
+<text x="56" y="265" font-family="sans-serif" font-size="22" fill="#222">MIA成分</text>
+<rect x="245" y="232" width="522" height="48" rx="7" fill="#b8b8b8"/>
+<text x="780" y="265" font-family="sans-serif" font-size="22" font-weight="700" fill="#222">0.174</text>
+<path d="M52 337H908" stroke="#bbbbbb"/>
+<text x="52" y="392" font-family="sans-serif" font-size="22" fill="#222">匿名性</text><text x="230" y="392" font-family="sans-serif" font-size="26" font-weight="700" fill="#222">1 − max(0.203, 0.174) = 0.797</text>
+<text x="52" y="444" font-family="sans-serif" font-size="20" fill="#333">有用性 U 0.922　＞　匿名性 0.797</text>
+<text x="52" y="476" font-family="sans-serif" font-size="19" fill="#333">本戦総合 = min(0.922, 0.797) = 0.797（4位 / 23）</text>
+<text x="52" y="513" font-family="sans-serif" font-size="15" fill="#666">MIA希少でTPR 1.000・0.500の攻撃があったが、正規化後のMIA減点はAIAを下回った。</text>
+</svg>
