@@ -1,0 +1,151 @@
+{
+  "publication_date": "2026-10-26",
+  "cohorts": 23,
+  "verified_mia_cells": 506,
+  "verified_aia_cells": 506,
+  "scorer_max_absolute_error": {
+    "MIA_n_members": 0.0,
+    "MIA_n_rare_members": 0.0,
+    "MIA_tpr_all": 6.938893903907228e-18,
+    "MIA_tpr_score": 6.938893903907228e-18,
+    "MIA_auc": 5.551115123125783e-17,
+    "AIA_aia_all": 5.551115123125783e-17,
+    "AIA_aia_rare": 5.551115123125783e-17,
+    "AIA_aia_rare_raw": 5.551115123125783e-17,
+    "AIA_p_m": 5.551115123125783e-17,
+    "AIA_p_c": 5.551115123125783e-17,
+    "AIA_p_m_rare": 5.551115123125783e-17,
+    "AIA_p_c_rare": 5.551115123125783e-17,
+    "MIA_tpr_rare": 6.938893903907228e-18,
+    "ATTACK_POWER": 1.6653345369377348e-16
+  },
+  "team28": {
+    "mia_power": 0.32545454545454544,
+    "aia_power": 0.19745456283880988,
+    "attack_power": 0.5229091082933554,
+    "mean_tpr_all": 0.0715047915047915,
+    "mean_tpr_rare": 1.0,
+    "rare_candidates": 24,
+    "rare_target_memberships": 9,
+    "rare_target_count": 6,
+    "rare_targets": [
+      6,
+      10,
+      11,
+      16,
+      17,
+      25
+    ],
+    "rare_record_count_with_positive": 9,
+    "rare_matrix_classification_errors": 0,
+    "nonrare_mia_mean": 0.0725,
+    "rare_target_mia_mean": 1.0,
+    "aia_member_accuracy_mean": 0.685164528722811,
+    "aia_control_accuracy_mean": 0.5716675962074735,
+    "aia_floor_mean": 0.05846738323227998,
+    "mia_first_place_target_count": 7,
+    "aia_first_place_target_count": 4,
+    "positive_aia_targets": 22
+  },
+  "leaderboard_top5": [
+    {
+      "rank": 1,
+      "cohort": 28,
+      "power": 0.5229091082933554
+    },
+    {
+      "rank": 2,
+      "cohort": 7,
+      "power": 0.46862598836470065
+    },
+    {
+      "rank": 3,
+      "cohort": 17,
+      "power": 0.4217770327535436
+    },
+    {
+      "rank": 4,
+      "cohort": 27,
+      "power": 0.30408567300577605
+    },
+    {
+      "rank": 5,
+      "cohort": 4,
+      "power": 0.2958762749213448
+    }
+  ],
+  "fpr_sweep": [
+    {
+      "fpr": 0.005,
+      "mia_all_mean": 0.05514115514115514,
+      "mia_rare_mean": 1.0,
+      "mia_rare_targets": 6
+    },
+    {
+      "fpr": 0.01,
+      "mia_all_mean": 0.0715047915047915,
+      "mia_rare_mean": 1.0,
+      "mia_rare_targets": 6
+    },
+    {
+      "fpr": 0.02,
+      "mia_all_mean": 0.08214452214452214,
+      "mia_rare_mean": 1.0,
+      "mia_rare_targets": 6
+    },
+    {
+      "fpr": 0.05,
+      "mia_all_mean": 0.1178943278943279,
+      "mia_rare_mean": 1.0,
+      "mia_rare_targets": 6
+    }
+  ],
+  "aia_ensemble_by_method": {
+    "median": {
+      "mean": 0.11777282398356176,
+      "median": 0.07200544648989368
+    },
+    "mean": {
+      "mean": 0.07990277531149388,
+      "median": 0.01849844100882
+    }
+  },
+  "aia_leave_target_out": {
+    "mean": 0.20991520406665537,
+    "selection_frequency": {
+      "7": 22,
+      "17": 1
+    }
+  },
+  "team28_vs_competitors": {
+    "margin_to_second": 0.0542831199286547,
+    "top_other_mia": [
+      [
+        7,
+        0.2526573426573427
+      ],
+      [
+        17,
+        0.21959077959077958
+      ],
+      [
+        2,
+        0.17134421134421135
+      ]
+    ],
+    "top_other_aia": [
+      [
+        7,
+        0.21596864570735796
+      ],
+      [
+        17,
+        0.20218625316276403
+      ],
+      [
+        13,
+        0.19244598235719915
+      ]
+    ]
+  }
+}

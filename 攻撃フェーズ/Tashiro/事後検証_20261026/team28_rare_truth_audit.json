@@ -1,0 +1,182 @@
+[
+  {
+    "record_id": 47,
+    "pool_id": 30653,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 76,
+    "pool_id": 29814,
+    "member_targets": [
+      16
+    ],
+    "score1_targets": [
+      16
+    ]
+  },
+  {
+    "record_id": 90,
+    "pool_id": 30222,
+    "member_targets": [
+      6
+    ],
+    "score1_targets": [
+      6
+    ]
+  },
+  {
+    "record_id": 115,
+    "pool_id": 30376,
+    "member_targets": [
+      17
+    ],
+    "score1_targets": [
+      17
+    ]
+  },
+  {
+    "record_id": 126,
+    "pool_id": 29535,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 136,
+    "pool_id": 31421,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 169,
+    "pool_id": 30542,
+    "member_targets": [
+      11
+    ],
+    "score1_targets": [
+      11
+    ]
+  },
+  {
+    "record_id": 264,
+    "pool_id": 31691,
+    "member_targets": [
+      25
+    ],
+    "score1_targets": [
+      25
+    ]
+  },
+  {
+    "record_id": 271,
+    "pool_id": 31826,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 273,
+    "pool_id": 29874,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 304,
+    "pool_id": 30491,
+    "member_targets": [
+      10
+    ],
+    "score1_targets": [
+      10
+    ]
+  },
+  {
+    "record_id": 317,
+    "pool_id": 31423,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 383,
+    "pool_id": 31591,
+    "member_targets": [
+      10
+    ],
+    "score1_targets": [
+      10
+    ]
+  },
+  {
+    "record_id": 440,
+    "pool_id": 30930,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 462,
+    "pool_id": 31810,
+    "member_targets": [
+      16
+    ],
+    "score1_targets": [
+      16
+    ]
+  },
+  {
+    "record_id": 480,
+    "pool_id": 30865,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 495,
+    "pool_id": 31175,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 625,
+    "pool_id": 31616,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 637,
+    "pool_id": 29888,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 643,
+    "pool_id": 29935,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 668,
+    "pool_id": 29965,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 675,
+    "pool_id": 30002,
+    "member_targets": [
+      25
+    ],
+    "score1_targets": [
+      25
+    ]
+  },
+  {
+    "record_id": 814,
+    "pool_id": 31359,
+    "member_targets": [],
+    "score1_targets": []
+  },
+  {
+    "record_id": 841,
+    "pool_id": 31196,
+    "member_targets": [],
+    "score1_targets": []
+  }
+]
