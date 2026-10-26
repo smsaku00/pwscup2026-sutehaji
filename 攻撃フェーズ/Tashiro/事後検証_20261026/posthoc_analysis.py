@@ -240,6 +240,22 @@ def run():
         'top_other_aia':sorted([(a,by_att[a]['aia_power']) for a in ID if a!=28],key=lambda p:-p[1])[:3],
       }
     }
+    # Score-channel ablation: replace Team28 max(MIA_all, MIA_rare) with MIA_all only.
+    # This is an arithmetic counterfactual for Team28, not a resubmitted attack or
+    # an official competition reranking (other teams' scoring remains unchanged).
+    mia_all28 = agg['team28']['mean_tpr_all']
+    aia28 = by_att[28]['aia_power']
+    all_only_attack = mia_all28 + aia28
+    rarity_gain = by_att[28]['mia_power'] - mia_all28
+    simulated_rank = 1+sum(r['attack_power'] > all_only_attack for r in rows if r['cohort'] != 28)
+    agg['team28'].update({
+        'mia_rare_increment_over_all_only': rarity_gain,
+        'fraction_of_total_attack_power_from_mia_rare_increment': rarity_gain / by_att[28]['attack_power'],
+        'all_only_channel_hypothetical_attack_power': all_only_attack,
+        'all_only_channel_hypothetical_rank_others_unchanged': simulated_rank,
+        'aia_power_rank': 1+sum(by_att[a]['aia_power'] > aia28 for a in ID if a != 28),
+        'mia_power_rank': 1+sum(by_att[a]['mia_power'] > by_att[28]['mia_power'] for a in ID if a != 28),
+    })
     (HERE/'experiment_results.json').write_text(json.dumps(agg,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf8')
     (HERE/'team28_rare_truth_audit.json').write_text(json.dumps(rare_detail,ensure_ascii=False,indent=2),encoding='utf8')
     print(json.dumps(agg,ensure_ascii=False,indent=2))

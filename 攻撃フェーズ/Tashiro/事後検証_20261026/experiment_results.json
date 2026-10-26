@@ -45,7 +45,13 @@
     "aia_floor_mean": 0.05846738323227998,
     "mia_first_place_target_count": 7,
     "aia_first_place_target_count": 4,
-    "positive_aia_targets": 22
+    "positive_aia_targets": 22,
+    "mia_rare_increment_over_all_only": 0.25394975394975394,
+    "fraction_of_total_attack_power_from_mia_rare_increment": 0.48564798341069726,
+    "all_only_channel_hypothetical_attack_power": 0.2689593543436014,
+    "all_only_channel_hypothetical_rank_others_unchanged": 8,
+    "aia_power_rank": 3,
+    "mia_power_rank": 1
   },
   "leaderboard_top5": [
     {
